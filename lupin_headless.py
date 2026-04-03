@@ -1,21 +1,13 @@
 import os
 import re
 import time
-import random
 import requests
-from datetime import datetime
 from camoufox.sync_api import Camoufox
 
 # --- CONFIGURAZIONE ---
-# Usiamo le 'Secrets' di GitHub per non mostrare i token in chiaro
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 FILE_MEMORIA = "annunci_inviati.txt"
-
-MEDIE = {
-    "Milano": 5200, "Roma": 3500, "Torino": 1900,
-    "Bologna": 3200, "Napoli": 2500, "Firenze": 3900
-}
 
 POSTI_PRINCIPALI = [
     {"nome": "Milano", "url": "https://www.wikicasa.it/vendita-case/milano", "media": 5200},
@@ -35,44 +27,55 @@ def salva_inviato(id_annuncio):
     with open(FILE_MEMORIA, "a") as f:
         f.write(id_annuncio + "\n")
 
-def invia_telegram(messaggio, path_foto=None):
+def invia_telegram(messaggio):
     url_msg = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
-    url_photo = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendPhoto"
     try:
-        if path_foto and os.path.exists(path_foto):
-            with open(path_foto, 'rb') as f:
-                requests.post(url_photo, data={"chat_id": TELEGRAM_CHAT_ID}, files={"photo": f})
-        requests.post(url_msg, json={"chat_id": TELEGRAM_CHAT_ID, "text": messaggio, "parse_mode": "Markdown"})
+        requests.post(url_msg, json={"chat_id": TELEGRAM_CHAT_ID, "text": messaggio, "parse_mode": "Markdown"}, timeout=15)
     except: pass
 
 def missione_lupin(target):
-    nome, url, media = target['nome'], target['url'], target['media']
+    nome, url_citta, media = target['nome'], target['url'], target['media']
     trovati = 0
+    
     with Camoufox(headless=True) as browser:
         page = browser.new_page()
         try:
-            page.goto(url, wait_until="networkidle", timeout=60000)
-            page.evaluate("window.scrollTo(0, 1000)")
-            time.sleep(5)
-            testo = page.locator("body").inner_text()
+            page.goto(url_citta, wait_until="networkidle", timeout=60000)
+            # Cerchiamo tutti i link che portano a un annuncio specifico
+            # Solitamente su Wikicasa hanno un pattern specifico
+            cards = page.locator("a[href*='/vendita-case/']").all()
             
-            prezzi = re.findall(r'(?:€\s*)?(\d{1,3}(?:\.\d{3})+)', testo)
-            for p_str in prezzi:
-                valore = int(p_str.replace('.', ''))
-                if valore < 45000 or valore > 5000000: continue
+            for card in cards:
+                href = card.get_attribute("href")
+                if not href or href == url_citta or "/milano" == href or len(href) < 30: 
+                    continue # Salta i link generici
                 
-                # Logica semplificata per velocità su GitHub
-                id_an = f"{valore}_{nome}"
-                if not gia_inviato(id_an):
-                    # Qui potresti aggiungere il calcolo MQ se necessario
-                    invia_telegram(f"🚨 POTENZIALE AFFARE A {nome.upper()}!\nPrezzo: €{valore:,}\nLink: {url}")
-                    salva_inviato(id_an)
-                    trovati += 1
-        except: pass
+                full_link = f"https://www.wikicasa.it{href}" if href.startswith("/") else href
+                
+                # Per brevità, usiamo l'URL come ID unico
+                if not gia_inviato(full_link):
+                    # Estraiamo il prezzo dal testo della card (se possibile) o andiamo a intuito
+                    testo_card = card.inner_text()
+                    prezzo_m = re.search(r'(\d{1,3}(?:\.\d{3})+)', testo_card)
+                    
+                    if prezzo_m:
+                        valore = int(prezzo_m.group(1).replace('.', ''))
+                        # Filtro base
+                        if valore < 45000: continue
+                        
+                        msg = (f"🚨 *AFFARE IDENTIFICATO - {nome.upper()}*\n"
+                               f"💰 Prezzo: €{valore:,}\n"
+                               f"🔗 [VEDI CASA ORA]({full_link})")
+                        
+                        invia_telegram(msg)
+                        salva_inviato(full_link)
+                        trovati += 1
+                        time.sleep(1) # Piccola pausa tra invii
+        except Exception as e:
+            print(f"Errore su {nome}: {e}")
     return trovati
 
 if __name__ == "__main__":
-    totale = 0
     for t in POSTI_PRINCIPALI:
-        totale += missione_lupin(t)
-    print(f"Fine giro. Trovati: {totale}")
+        print(f"Scansione {t['nome']}...")
+        missione_lupin(t)
