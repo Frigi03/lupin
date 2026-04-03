@@ -41,36 +41,33 @@ def missione_lupin(target):
         page = browser.new_page()
         try:
             page.goto(url_citta, wait_until="networkidle", timeout=60000)
-            # Cerchiamo tutti i link che portano a un annuncio specifico
-            # Solitamente su Wikicasa hanno un pattern specifico
-            cards = page.locator("a[href*='/vendita-case/']").all()
+            # Cerchiamo i link che contengono la parola 'annuncio' o il pattern di wikicasa
+            # Questo selettore punta direttamente alle card degli immobili
+            annunci = page.locator("a[href*='/vendita-case/']").all()
             
-            for card in cards:
-                href = card.get_attribute("href")
-                if not href or href == url_citta or "/milano" == href or len(href) < 30: 
-                    continue # Salta i link generici
+            for a in annunci:
+                href = a.get_attribute("href")
+                if not href or len(href) < 40 or "quotazioni" in href: 
+                    continue
                 
                 full_link = f"https://www.wikicasa.it{href}" if href.startswith("/") else href
                 
-                # Per brevità, usiamo l'URL come ID unico
                 if not gia_inviato(full_link):
-                    # Estraiamo il prezzo dal testo della card (se possibile) o andiamo a intuito
-                    testo_card = card.inner_text()
+                    testo_card = a.inner_text()
                     prezzo_m = re.search(r'(\d{1,3}(?:\.\d{3})+)', testo_card)
                     
                     if prezzo_m:
                         valore = int(prezzo_m.group(1).replace('.', ''))
-                        # Filtro base
-                        if valore < 45000: continue
+                        if valore < 45000: continue # Filtro box/cantine
                         
-                        msg = (f"🚨 *AFFARE IDENTIFICATO - {nome.upper()}*\n"
+                        msg = (f"🚨 *LUPIN ALERT: {nome.upper()}*\n"
                                f"💰 Prezzo: €{valore:,}\n"
-                               f"🔗 [VEDI CASA ORA]({full_link})")
+                               f"🔗 [APRI ANNUNCIO DIRETTO]({full_link})")
                         
                         invia_telegram(msg)
                         salva_inviato(full_link)
                         trovati += 1
-                        time.sleep(1) # Piccola pausa tra invii
+                        time.sleep(1)
         except Exception as e:
             print(f"Errore su {nome}: {e}")
     return trovati
