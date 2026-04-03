@@ -18,14 +18,14 @@ POSTI_PRINCIPALI = [
     {"nome": "Firenze", "url": "https://www.wikicasa.it/vendita-case/firenze", "media": 3900}
 ]
 
-def gia_inviato(id_annuncio):
+def gia_inviato(url):
     if not os.path.exists(FILE_MEMORIA): return False
     with open(FILE_MEMORIA, "r") as f:
-        return id_annuncio in f.read()
+        return url in f.read()
 
-def salva_inviato(id_annuncio):
+def salva_inviato(url):
     with open(FILE_MEMORIA, "a") as f:
-        f.write(id_annuncio + "\n")
+        f.write(url + "\n")
 
 def invia_telegram(messaggio):
     url_msg = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
@@ -40,39 +40,46 @@ def missione_lupin(target):
     with Camoufox(headless=True) as browser:
         page = browser.new_page()
         try:
+            # User agent realistico per evitare blocchi
             page.goto(url_citta, wait_until="networkidle", timeout=60000)
-            # Cerchiamo i link che contengono la parola 'annuncio' o il pattern di wikicasa
-            # Questo selettore punta direttamente alle card degli immobili
-            annunci = page.locator("a[href*='/vendita-case/']").all()
             
-            for a in annunci:
-                href = a.get_attribute("href")
-                if not href or len(href) < 40 or "quotazioni" in href: 
+            # 1. Identifichiamo tutte le 'Card' degli annunci
+            # Wikicasa usa spesso tag article o div con classi specifiche per le proprietà
+            items = page.locator("a[href*='/vendita-case/']").all()
+            
+            for item in items:
+                href = item.get_attribute("href")
+                
+                # PULIZIA LINK: 
+                # Un link di un annuncio vero è lungo e ha un ID o un indirizzo specifico.
+                # Se il link contiene solo la città o 'quotazioni', è un filtro e lo scartiamo.
+                if not href or len(href.split('/')) < 6 or "quotazioni" in href or "napoli" == href.split('/')[-1]:
                     continue
                 
                 full_link = f"https://www.wikicasa.it{href}" if href.startswith("/") else href
                 
                 if not gia_inviato(full_link):
-                    testo_card = a.inner_text()
+                    # Proviamo a prendere il prezzo dal testo dentro la card
+                    testo_card = item.inner_text()
                     prezzo_m = re.search(r'(\d{1,3}(?:\.\d{3})+)', testo_card)
                     
                     if prezzo_m:
                         valore = int(prezzo_m.group(1).replace('.', ''))
-                        if valore < 45000: continue # Filtro box/cantine
+                        if valore < 40000: continue
                         
-                        msg = (f"🚨 *LUPIN ALERT: {nome.upper()}*\n"
+                        msg = (f"🚨 *LUPIN: NUOVO ANNUNCIO A {nome.upper()}*\n"
                                f"💰 Prezzo: €{valore:,}\n"
-                               f"🔗 [APRI ANNUNCIO DIRETTO]({full_link})")
+                               f"📍 [CLICCA QUI PER L'ANNUNCIO DIRETTO]({full_link})")
                         
                         invia_telegram(msg)
                         salva_inviato(full_link)
                         trovati += 1
-                        time.sleep(1)
+                        time.sleep(1.5) # Evitiamo lo spam selvaggio
         except Exception as e:
             print(f"Errore su {nome}: {e}")
     return trovati
 
 if __name__ == "__main__":
     for t in POSTI_PRINCIPALI:
-        print(f"Scansione {t['nome']}...")
+        print(f"[*] Analisi: {t['nome']}")
         missione_lupin(t)
