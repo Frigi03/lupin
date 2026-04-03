@@ -1,8 +1,11 @@
 name: Lupin Grand Tour
 on:
   schedule:
-    - cron: '0 */2 * * *' # Corri ogni 2 ore
-  workflow_dispatch: # Permette di lanciarlo a mano per prova
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write # IMPORTANTE: Permette a GitHub di salvare la memoria
 
 jobs:
   build:
@@ -31,6 +34,9 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          # Crea il file se non esiste per evitare errori al primo avvio
+          touch annunci_inviati.txt
           git add annunci_inviati.txt
-          git commit -m "Update memoria" || echo "Nulla da cambiare"
-          git push
+          # Commit e Push con gestione errore 128 (se non ci sono modifiche)
+          git commit -m "Update memoria [skip ci]" || exit 0
+          git push origin main
