@@ -1,0 +1,36 @@
+name: Lupin Grand Tour
+on:
+  schedule:
+    - cron: '0 */2 * * *' # Corri ogni 2 ore
+  workflow_dispatch: # Permette di lanciarlo a mano per prova
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout codice
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Installazione dipendenze
+        run: |
+          pip install requests camoufox playwright
+          playwright install chromium
+
+      - name: Esecuzione Lupin
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python lupin_headless.py
+
+      - name: Salva memoria annunci
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add annunci_inviati.txt
+          git commit -m "Update memoria" || echo "Nulla da cambiare"
+          git push
