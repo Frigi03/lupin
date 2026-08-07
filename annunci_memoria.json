@@ -448,5 +448,23 @@
   },
   "30624517": {
     "prima_vista": "2026-08-07T02:42:18.613966+00:00"
+  },
+  "30627193": {
+    "città": "Firenze",
+    "mq": 131,
+    "prezzo": 388000,
+    "prezzo_mq": 2962,
+    "prima_vista": "2026-08-07T05:40:42.853968+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Bernardo Pasquini 6, Firenze"
+  },
+  "30627862": {
+    "città": "Torino",
+    "mq": 85,
+    "prezzo": 99000,
+    "prezzo_mq": 1165,
+    "prima_vista": "2026-08-07T05:39:58.256518+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Antonio Cecchi 59, Torino"
   }
 }
