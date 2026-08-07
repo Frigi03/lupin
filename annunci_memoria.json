@@ -502,5 +502,50 @@
     "prima_vista": "2026-08-07T10:52:09.866380+00:00",
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Viale Francesco Redi, Firenze"
+  },
+  "30631381": {
+    "città": "Torino",
+    "mq": 75,
+    "prezzo": 109000,
+    "prezzo_mq": 1453,
+    "prima_vista": "2026-08-07T14:51:38.483587+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Nuda proprietà, Via Luini 45/C, Torino"
+  },
+  "30631531": {
+    "città": "Napoli",
+    "mq": 60,
+    "prezzo": 160000,
+    "prezzo_mq": 2667,
+    "prima_vista": "2026-08-07T14:51:57.143709+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Circunvallazione della Caserma di Cavalleria 51/a6, Napoli"
+  },
+  "30631534": {
+    "città": "Napoli",
+    "mq": 60,
+    "prezzo": 170000,
+    "prezzo_mq": 2833,
+    "prima_vista": "2026-08-07T14:51:55.339835+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Sanita 38a, Napoli"
+  },
+  "30631954": {
+    "città": "Napoli",
+    "mq": 60,
+    "prezzo": 150000,
+    "prezzo_mq": 2500,
+    "prima_vista": "2026-08-07T14:51:53.538519+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Brigata Bologna, Napoli"
+  },
+  "30631957": {
+    "città": "Torino",
+    "mq": 80,
+    "prezzo": 179000,
+    "prezzo_mq": 2238,
+    "prima_vista": "2026-08-07T14:51:36.586038+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Foligno 104, Torino"
   }
 }
