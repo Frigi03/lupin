@@ -1,42 +1,44 @@
 name: Lupin Grand Tour
+
 on:
   schedule:
-    - cron: '0 */2 * * *'
-  workflow_dispatch:
+    - cron: '0 */2 * * *'   # ogni 2 ore
+  workflow_dispatch:        # avvio manuale
 
 permissions:
-  contents: write # IMPORTANTE: Permette a GitHub di salvare la memoria
+  contents: write
 
 jobs:
-  build:
+  run:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
+
     steps:
-      - name: Checkout codice
-        uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.11'
+          cache: 'pip'
 
-      - name: Installazione dipendenze
+      - name: Installa dipendenze
         run: |
-          pip install requests camoufox playwright
-          playwright install chromium
+          pip install requests playwright
+          playwright install --with-deps chromium
 
-      - name: Esecuzione Lupin
+      - name: Esegui Lupin
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python lupin_headless.py
 
-      - name: Salva memoria annunci
+      - name: Salva memoria
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          # Crea il file se non esiste per evitare errori al primo avvio
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           touch annunci_inviati.txt
           git add annunci_inviati.txt
-          # Commit e Push con gestione errore 128 (se non ci sono modifiche)
-          git commit -m "Update memoria [skip ci]" || exit 0
+          git commit -m "chore: update memoria annunci [skip ci]" || exit 0
           git push origin main
