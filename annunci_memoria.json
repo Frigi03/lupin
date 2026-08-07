@@ -74,6 +74,24 @@
   "30506256": {
     "prima_vista": "2026-08-07T02:42:18.613540+00:00"
   },
+  "30523431": {
+    "città": "Roma",
+    "mq": 100,
+    "prezzo": 330000,
+    "prezzo_mq": 3300,
+    "prima_vista": "2026-08-07T16:53:05.250311+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Marco Celio Rufo 48, Roma"
+  },
+  "30523434": {
+    "città": "Roma",
+    "mq": 100,
+    "prezzo": 370000,
+    "prezzo_mq": 3700,
+    "prima_vista": "2026-08-07T16:53:03.615984+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Marco Celio Rufo 48, Roma"
+  },
   "30526764": {
     "prima_vista": "2026-08-07T02:42:18.613543+00:00"
   },
@@ -547,5 +565,32 @@
     "prima_vista": "2026-08-07T14:51:36.586038+00:00",
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via Foligno 104, Torino"
+  },
+  "30632272": {
+    "città": "Milano",
+    "mq": 90,
+    "prezzo": 439000,
+    "prezzo_mq": 4878,
+    "prima_vista": "2026-08-07T16:52:48.332351+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Leoncavallo 8, Milano"
+  },
+  "30632479": {
+    "città": "Milano",
+    "mq": 40,
+    "prezzo": 125000,
+    "prezzo_mq": 3125,
+    "prima_vista": "2026-08-07T16:52:46.689007+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Busseto 4, Milano"
+  },
+  "30632680": {
+    "città": "Torino",
+    "mq": 149,
+    "prezzo": 499000,
+    "prezzo_mq": 3349,
+    "prima_vista": "2026-08-07T16:53:19.883673+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via dei Quartieri, Torino"
   }
 }
