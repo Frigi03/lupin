@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '0 */2 * * *'   # ogni 2 ore
   workflow_dispatch:        # avvio manuale
+    inputs:
+      dry_run:
+        description: 'ModalitÃ  test (nessun messaggio Telegram reale)'
+        type: boolean
+        default: true
 
 permissions:
   contents: write
@@ -31,13 +36,14 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DRY_RUN: ${{ github.event.inputs.dry_run || '0' }}
         run: python lupin_headless.py
 
       - name: Salva memoria
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          touch annunci_inviati.txt
-          git add annunci_inviati.txt
+          touch annunci_memoria.json
+          git add annunci_memoria.json
           git commit -m "chore: update memoria annunci [skip ci]" || exit 0
           git push origin main
