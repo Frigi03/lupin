@@ -475,5 +475,23 @@
     "prima_vista": "2026-08-07T08:57:43.918735+00:00",
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Corso di Porta Nuova 46, Milano"
+  },
+  "30629272": {
+    "città": "Milano",
+    "mq": 43,
+    "prezzo": 260000,
+    "prezzo_mq": 6047,
+    "prima_vista": "2026-08-07T10:50:58.719920+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Luigi Porro Lambertenghi 3, Milano"
+  },
+  "30630025": {
+    "città": "Firenze",
+    "mq": 70,
+    "prezzo": 315000,
+    "prezzo_mq": 4500,
+    "prima_vista": "2026-08-07T10:52:09.866380+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Viale Francesco Redi, Firenze"
   }
 }
