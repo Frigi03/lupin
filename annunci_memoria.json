@@ -592,5 +592,32 @@
     "prima_vista": "2026-08-07T16:53:19.883673+00:00",
     "sotto_media": false,
     "titolo": "Quadrilocale in Vendita, Via dei Quartieri, Torino"
+  },
+  "30635515": {
+    "città": "Milano",
+    "mq": 120,
+    "prezzo": 1200000,
+    "prezzo_mq": 10000,
+    "prima_vista": "2026-08-08T04:55:00.705498+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Corso di Porta Romana 117, Milano"
+  },
+  "30635605": {
+    "città": "Firenze",
+    "mq": 60,
+    "prezzo": 320000,
+    "prezzo_mq": 5333,
+    "prima_vista": "2026-08-08T04:56:16.984815+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Santa Monaca 23, Firenze"
+  },
+  "30635614": {
+    "città": "Firenze",
+    "mq": 177,
+    "prezzo": 786000,
+    "prezzo_mq": 4441,
+    "prima_vista": "2026-08-08T04:56:15.200023+00:00",
+    "sotto_media": false,
+    "titolo": "Terratetto unifamiliare in Vendita, Via Niccolò da Uzzano 83, Firenze"
   }
 }
