@@ -628,5 +628,14 @@
     "prima_vista": "2026-08-11T10:49:25.900621+00:00",
     "sotto_media": false,
     "titolo": "Villa in Vendita, Via Giovanni l'Eltore 38, Roma"
+  },
+  "30643591": {
+    "città": "Torino",
+    "mq": 100,
+    "prezzo": 178000,
+    "prezzo_mq": 1780,
+    "prima_vista": "2026-08-11T14:57:03.836327+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Malone 44/B, Torino"
   }
 }
