@@ -646,5 +646,23 @@
     "prima_vista": "2026-08-12T04:06:40.657854+00:00",
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via della Stazione di Cesano 583, Roma"
+  },
+  "30645913": {
+    "città": "Milano",
+    "mq": 45,
+    "prezzo": 199000,
+    "prezzo_mq": 4422,
+    "prima_vista": "2026-08-12T09:09:32.488406+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Ada Negri 2, Milano"
+  },
+  "30645922": {
+    "città": "Milano",
+    "mq": 35,
+    "prezzo": 189000,
+    "prezzo_mq": 5400,
+    "prima_vista": "2026-08-12T09:09:30.729088+00:00",
+    "sotto_media": false,
+    "titolo": "Monolocale in Vendita, Ada Negri 2, Milano"
   }
 }
