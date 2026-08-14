@@ -673,5 +673,23 @@
     "prima_vista": "2026-08-14T04:08:32.484327+00:00",
     "sotto_media": false,
     "titolo": "Quadrilocale in Vendita, Via Quintino Sella 49, Firenze"
+  },
+  "30652066": {
+    "città": "Torino",
+    "mq": 93,
+    "prezzo": 235000,
+    "prezzo_mq": 2527,
+    "prima_vista": "2026-08-14T16:51:12.077115+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Corso Galileo Ferraris, Torino"
+  },
+  "30652186": {
+    "città": "Torino",
+    "mq": 55,
+    "prezzo": 235000,
+    "prezzo_mq": 4273,
+    "prima_vista": "2026-08-14T16:51:10.317317+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Giuseppe Parini 12, Torino"
   }
 }
