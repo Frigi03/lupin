@@ -691,5 +691,14 @@
     "prima_vista": "2026-08-14T16:51:10.317317+00:00",
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Giuseppe Parini 12, Torino"
+  },
+  "30652198": {
+    "città": "Torino",
+    "mq": 60,
+    "prezzo": 57900,
+    "prezzo_mq": 965,
+    "prima_vista": "2026-08-14T18:53:27.257276+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Renato Martorelli 52, Torino"
   }
 }
