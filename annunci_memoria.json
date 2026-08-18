@@ -754,5 +754,14 @@
     "prima_vista": "2026-08-18T04:34:47.609482+00:00",
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Santa Monaca 23, Firenze"
+  },
+  "30657394": {
+    "città": "Milano",
+    "mq": 60,
+    "prezzo": 215000,
+    "prezzo_mq": 3583,
+    "prima_vista": "2026-08-18T14:31:27.469907+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Padova 68, Milano"
   }
 }
