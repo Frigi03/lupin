@@ -763,5 +763,50 @@
     "prima_vista": "2026-08-18T14:31:27.469907+00:00",
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Padova 68, Milano"
+  },
+  "30657508": {
+    "città": "Milano",
+    "mq": 100,
+    "prezzo": 595000,
+    "prezzo_mq": 5950,
+    "prima_vista": "2026-08-18T16:31:01.125021+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Privata Sanremo 14, Milano"
+  },
+  "30657628": {
+    "città": "Milano",
+    "mq": 20,
+    "prezzo": 510000,
+    "prezzo_mq": 25500,
+    "prima_vista": "2026-08-18T16:30:59.462002+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Rovetta 34, Milano"
+  },
+  "30657688": {
+    "città": "Milano",
+    "mq": 125,
+    "prezzo": 379000,
+    "prezzo_mq": 3032,
+    "prima_vista": "2026-08-18T16:30:57.806671+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Leoncavallo 39, Milano"
+  },
+  "30657766": {
+    "città": "Milano",
+    "mq": 55,
+    "prezzo": 330000,
+    "prezzo_mq": 6000,
+    "prima_vista": "2026-08-18T16:30:56.107629+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Pompeo Cambiasi 14, Milano"
+  },
+  "30657817": {
+    "città": "Milano",
+    "mq": 55,
+    "prezzo": 330000,
+    "prezzo_mq": 6000,
+    "prima_vista": "2026-08-18T16:30:54.405288+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Pompeo Cambiasi 14, Milano"
   }
 }
