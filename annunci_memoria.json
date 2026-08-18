@@ -727,5 +727,32 @@
     "prima_vista": "2026-08-17T14:25:46.590325+00:00",
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Paolo Lomazzo 16, Milano"
+  },
+  "30656071": {
+    "città": "Firenze",
+    "mq": 177,
+    "prezzo": 785000,
+    "prezzo_mq": 4435,
+    "prima_vista": "2026-08-18T04:34:51.256629+00:00",
+    "sotto_media": false,
+    "titolo": "Terratetto unifamiliare in Vendita, Via Niccolò da Uzzano 83, Firenze"
+  },
+  "30656074": {
+    "città": "Firenze",
+    "mq": 22,
+    "prezzo": 443000,
+    "prezzo_mq": 20136,
+    "prima_vista": "2026-08-18T04:34:49.460155+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Guelfa 6, Firenze"
+  },
+  "30656077": {
+    "città": "Firenze",
+    "mq": 60,
+    "prezzo": 320000,
+    "prezzo_mq": 5333,
+    "prima_vista": "2026-08-18T04:34:47.609482+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Santa Monaca 23, Firenze"
   }
 }
