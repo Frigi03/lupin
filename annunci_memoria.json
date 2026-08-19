@@ -925,5 +925,23 @@
     "prima_vista": "2026-08-19T16:32:30.325964+00:00",
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Corso Grosseto 151, Torino"
+  },
+  "30660895": {
+    "città": "Torino",
+    "mq": 75,
+    "prezzo": 129000,
+    "prezzo_mq": 1720,
+    "prima_vista": "2026-08-19T18:36:15.324520+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Francesco Petrarca 18, Torino"
+  },
+  "30661045": {
+    "città": "Milano",
+    "mq": 80,
+    "prezzo": 450000,
+    "prezzo_mq": 5625,
+    "prima_vista": "2026-08-19T18:35:46.742002+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Giuseppe Giacosa 52, Milano"
   }
 }
