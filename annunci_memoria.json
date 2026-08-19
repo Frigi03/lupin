@@ -446,6 +446,33 @@
   "30621481": {
     "prima_vista": "2026-08-07T02:42:18.613947+00:00"
   },
+  "30621487": {
+    "città": "Napoli",
+    "mq": 48,
+    "prezzo": 150000,
+    "prezzo_mq": 3125,
+    "prima_vista": "2026-08-19T10:41:45.704438+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Antonino Pio, Napoli"
+  },
+  "30621511": {
+    "città": "Napoli",
+    "mq": 130,
+    "prezzo": 290000,
+    "prezzo_mq": 2231,
+    "prima_vista": "2026-08-19T10:41:44.056369+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Giustiniano, Napoli"
+  },
+  "30621526": {
+    "città": "Napoli",
+    "mq": 130,
+    "prezzo": 285000,
+    "prezzo_mq": 2192,
+    "prima_vista": "2026-08-19T10:41:42.286746+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Sandro Botticelli, Napoli"
+  },
   "30621601": {
     "prima_vista": "2026-08-07T02:42:18.613950+00:00"
   },
