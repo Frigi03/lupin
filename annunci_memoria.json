@@ -844,5 +844,68 @@
     "prima_vista": "2026-08-18T20:21:16.937095+00:00",
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Via Padova 100, Milano"
+  },
+  "30660436": {
+    "città": "Milano",
+    "mq": 15,
+    "prezzo": 314000,
+    "prezzo_mq": 20933,
+    "prima_vista": "2026-08-19T14:32:47.900750+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Paisiello 22, Milano"
+  },
+  "30660451": {
+    "città": "Milano",
+    "mq": 85,
+    "prezzo": 439000,
+    "prezzo_mq": 5165,
+    "prima_vista": "2026-08-19T14:32:46.138528+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Piazzale Martesana 4, Milano"
+  },
+  "30660484": {
+    "città": "Milano",
+    "mq": 40,
+    "prezzo": 199000,
+    "prezzo_mq": 4975,
+    "prima_vista": "2026-08-19T14:32:44.355317+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Padova 82, Milano"
+  },
+  "30660526": {
+    "città": "Milano",
+    "mq": 80,
+    "prezzo": 375000,
+    "prezzo_mq": 4688,
+    "prima_vista": "2026-08-19T14:32:42.585125+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Perini 21, Milano"
+  },
+  "30660562": {
+    "città": "Milano",
+    "mq": 90,
+    "prezzo": 385000,
+    "prezzo_mq": 4278,
+    "prima_vista": "2026-08-19T14:32:40.837297+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via dei Transiti 23, Milano"
+  },
+  "30660580": {
+    "città": "Torino",
+    "mq": 70,
+    "prezzo": 139000,
+    "prezzo_mq": 1986,
+    "prima_vista": "2026-08-19T14:33:22.803784+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Michele Lessona 35, Torino"
+  },
+  "30660613": {
+    "città": "Milano",
+    "mq": 50,
+    "prezzo": 280000,
+    "prezzo_mq": 5600,
+    "prima_vista": "2026-08-19T14:32:39.046742+00:00",
+    "sotto_media": true,
+    "titolo": "Monolocale in Vendita, Via dei Transiti 1, Milano"
   }
 }
