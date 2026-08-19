@@ -907,5 +907,23 @@
     "prima_vista": "2026-08-19T14:32:39.046742+00:00",
     "sotto_media": true,
     "titolo": "Monolocale in Vendita, Via dei Transiti 1, Milano"
+  },
+  "30660787": {
+    "città": "Milano",
+    "mq": 45,
+    "prezzo": 238000,
+    "prezzo_mq": 5289,
+    "prima_vista": "2026-08-19T16:32:02.168909+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Pietro Crespi 11, Milano"
+  },
+  "30660811": {
+    "città": "Torino",
+    "mq": 45,
+    "prezzo": 59000,
+    "prezzo_mq": 1311,
+    "prima_vista": "2026-08-19T16:32:30.325964+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Corso Grosseto 151, Torino"
   }
 }
