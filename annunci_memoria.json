@@ -952,5 +952,23 @@
     "prima_vista": "2026-08-20T10:28:09.324433+00:00",
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Passo Rolle , Milano"
+  },
+  "30663511": {
+    "città": "Torino",
+    "mq": 72,
+    "prezzo": 155000,
+    "prezzo_mq": 2153,
+    "prima_vista": "2026-08-20T14:34:58.459817+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Quadrone 20, Torino"
+  },
+  "30663562": {
+    "città": "Milano",
+    "mq": 63,
+    "prezzo": 349000,
+    "prezzo_mq": 5540,
+    "prima_vista": "2026-08-20T14:34:23.115275+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Milano"
   }
 }
