@@ -970,5 +970,14 @@
     "prima_vista": "2026-08-20T14:34:23.115275+00:00",
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Milano"
+  },
+  "30663664": {
+    "città": "Napoli",
+    "mq": 60,
+    "prezzo": 165000,
+    "prezzo_mq": 2750,
+    "prima_vista": "2026-08-20T16:33:38.954942+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Napoli"
   }
 }
