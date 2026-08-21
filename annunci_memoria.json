@@ -997,5 +997,14 @@
     "prima_vista": "2026-08-21T14:33:16.801652+00:00",
     "sotto_media": false,
     "titolo": "Monolocale in Vendita, Viale Monza 58, Milano"
+  },
+  "30667294": {
+    "città": "Milano",
+    "mq": 75,
+    "prezzo": 250000,
+    "prezzo_mq": 3333,
+    "prima_vista": "2026-08-21T18:34:12.384644+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Arquà 22, Milano"
   }
 }
