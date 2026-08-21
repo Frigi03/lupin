@@ -979,5 +979,23 @@
     "prima_vista": "2026-08-20T16:33:38.954942+00:00",
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Napoli"
+  },
+  "30666766": {
+    "città": "Milano",
+    "mq": 50,
+    "prezzo": 295000,
+    "prezzo_mq": 5900,
+    "prima_vista": "2026-08-21T14:33:18.644944+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Viale Monza 58, Milano"
+  },
+  "30666892": {
+    "città": "Milano",
+    "mq": 35,
+    "prezzo": 235000,
+    "prezzo_mq": 6714,
+    "prima_vista": "2026-08-21T14:33:16.801652+00:00",
+    "sotto_media": false,
+    "titolo": "Monolocale in Vendita, Viale Monza 58, Milano"
   }
 }
