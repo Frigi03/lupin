@@ -110,6 +110,15 @@
   "30553803": {
     "prima_vista": "2026-08-07T02:42:18.613556+00:00"
   },
+  "30553848": {
+    "città": "Roma",
+    "mq": 100,
+    "prezzo": 449000,
+    "prezzo_mq": 4490,
+    "prima_vista": "2026-08-22T10:21:25.997574+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Quirino Majorana 178, Roma"
+  },
   "30557310": {
     "prima_vista": "2026-08-07T02:42:18.613560+00:00"
   },
@@ -1024,5 +1033,23 @@
     "prima_vista": "2026-08-22T04:30:56.344343+00:00",
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Corso Guglielmo Marconi 11, Torino"
+  },
+  "30668824": {
+    "città": "Napoli",
+    "mq": 140,
+    "prezzo": 190000,
+    "prezzo_mq": 1357,
+    "prima_vista": "2026-08-22T10:21:56.761410+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Rotondella ai Camaldoli 40, Napoli"
+  },
+  "30668869": {
+    "città": "Napoli",
+    "mq": 150,
+    "prezzo": 275000,
+    "prezzo_mq": 1833,
+    "prima_vista": "2026-08-22T10:21:54.876705+00:00",
+    "sotto_media": true,
+    "titolo": "Villa in Vendita, Via Comunale Tavernola Snc, Napoli"
   }
 }
