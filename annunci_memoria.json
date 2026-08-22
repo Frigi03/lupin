@@ -1006,5 +1006,14 @@
     "prima_vista": "2026-08-21T18:34:12.384644+00:00",
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Arquà 22, Milano"
+  },
+  "30668305": {
+    "città": "Torino",
+    "mq": 70,
+    "prezzo": 239000,
+    "prezzo_mq": 3414,
+    "prima_vista": "2026-08-22T04:30:56.344343+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Corso Guglielmo Marconi 11, Torino"
   }
 }
