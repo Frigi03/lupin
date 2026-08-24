@@ -1159,5 +1159,32 @@
     "prima_vista": "2026-08-24T14:39:39.680452+00:00",
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Viale Monza 90, Milano"
+  },
+  "30672550": {
+    "città": "Milano",
+    "mq": 70,
+    "prezzo": 285000,
+    "prezzo_mq": 4071,
+    "prima_vista": "2026-08-24T16:35:06.061866+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Monfalcone 10, Milano"
+  },
+  "30672655": {
+    "città": "Milano",
+    "mq": 110,
+    "prezzo": 550000,
+    "prezzo_mq": 5000,
+    "prima_vista": "2026-08-24T16:35:04.299370+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Viale dell'Innovazione 22, Milano"
+  },
+  "30673189": {
+    "città": "Roma",
+    "mq": 140,
+    "prezzo": 255000,
+    "prezzo_mq": 1821,
+    "prima_vista": "2026-08-24T16:35:22.793718+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Piazza Ormea, Roma"
   }
 }
