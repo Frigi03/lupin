@@ -1186,5 +1186,14 @@
     "prima_vista": "2026-08-24T16:35:22.793718+00:00",
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Piazza Ormea, Roma"
+  },
+  "30673726": {
+    "città": "Torino",
+    "mq": 167,
+    "prezzo": 420000,
+    "prezzo_mq": 2515,
+    "prima_vista": "2026-08-24T20:28:29.822551+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Nizza 29, Torino"
   }
 }
