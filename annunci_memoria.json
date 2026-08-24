@@ -1060,5 +1060,77 @@
     "prima_vista": "2026-08-22T14:20:02.297546+00:00",
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Vittoria 17, Torino"
+  },
+  "30670960": {
+    "città": "Roma",
+    "mq": 80,
+    "prezzo": 519000,
+    "prezzo_mq": 6488,
+    "prima_vista": "2026-08-24T10:35:53.023207+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Innocenzo XI, Roma"
+  },
+  "30671161": {
+    "città": "Milano",
+    "mq": 94,
+    "prezzo": 544000,
+    "prezzo_mq": 5787,
+    "prima_vista": "2026-08-24T10:35:26.130424+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Luisa Sanfelice, Milano"
+  },
+  "30671176": {
+    "città": "Milano",
+    "mq": 90,
+    "prezzo": 515000,
+    "prezzo_mq": 5722,
+    "prima_vista": "2026-08-24T10:35:24.169276+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Tito Livio 22, Milano"
+  },
+  "30671254": {
+    "città": "Roma",
+    "mq": 67,
+    "prezzo": 230000,
+    "prezzo_mq": 3433,
+    "prima_vista": "2026-08-24T10:35:51.203132+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Vincenzo Maculani, Roma"
+  },
+  "30671257": {
+    "città": "Roma",
+    "mq": 87,
+    "prezzo": 359000,
+    "prezzo_mq": 4126,
+    "prima_vista": "2026-08-24T10:35:49.346907+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Roberto Malatesta, Roma"
+  },
+  "30671263": {
+    "città": "Roma",
+    "mq": 38,
+    "prezzo": 239000,
+    "prezzo_mq": 6289,
+    "prima_vista": "2026-08-24T10:35:47.548441+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Caltanissetta, Roma"
+  },
+  "30671287": {
+    "città": "Roma",
+    "mq": 40,
+    "prezzo": 165000,
+    "prezzo_mq": 4125,
+    "prima_vista": "2026-08-24T10:35:45.712127+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Perugia, Roma"
+  },
+  "30671296": {
+    "città": "Roma",
+    "mq": 67,
+    "prezzo": 239000,
+    "prezzo_mq": 3567,
+    "prima_vista": "2026-08-24T10:35:43.845995+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Natale Palli, Roma"
   }
 }
