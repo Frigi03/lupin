@@ -1195,5 +1195,23 @@
     "prima_vista": "2026-08-24T20:28:29.822551+00:00",
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Via Nizza 29, Torino"
+  },
+  "30675172": {
+    "città": "Milano",
+    "mq": 71,
+    "prezzo": 575000,
+    "prezzo_mq": 8099,
+    "prima_vista": "2026-08-25T02:56:53.381492+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Antonio Tantardini 7, Milano"
+  },
+  "30675178": {
+    "città": "Milano",
+    "mq": 133,
+    "prezzo": 990000,
+    "prezzo_mq": 7444,
+    "prima_vista": "2026-08-25T02:56:51.673192+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Corso di Porta Vigentina 2, Milano"
   }
 }
