@@ -1474,5 +1474,14 @@
     "prima_vista": "2026-08-25T14:42:48.479125+00:00",
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Via Padova 76, Milano"
+  },
+  "30679797": {
+    "città": "Milano",
+    "mq": 186,
+    "prezzo": 1390000,
+    "prezzo_mq": 7473,
+    "prima_vista": "2026-08-25T18:37:07.844992+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Piazza Firenze 19, Milano"
   }
 }
