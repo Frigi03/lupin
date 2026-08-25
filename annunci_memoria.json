@@ -1213,5 +1213,23 @@
     "prima_vista": "2026-08-25T02:56:51.673192+00:00",
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Corso di Porta Vigentina 2, Milano"
+  },
+  "30675475": {
+    "città": "Milano",
+    "mq": 60,
+    "prezzo": 199000,
+    "prezzo_mq": 3317,
+    "prima_vista": "2026-08-25T04:37:08.759713+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Viale Ungheria 46, Milano"
+  },
+  "30675478": {
+    "città": "Milano",
+    "mq": 55,
+    "prezzo": 320000,
+    "prezzo_mq": 5818,
+    "prima_vista": "2026-08-25T04:37:06.916700+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Cenisio 32, Milano"
   }
 }
