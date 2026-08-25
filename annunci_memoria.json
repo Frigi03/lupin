@@ -1240,5 +1240,14 @@
     "prima_vista": "2026-08-25T06:43:22.934449+00:00",
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Via Giovanni Battista Morgagni 32, Roma"
+  },
+  "30676504": {
+    "città": "Milano",
+    "mq": 57,
+    "prezzo": 400000,
+    "prezzo_mq": 7018,
+    "prima_vista": "2026-08-25T08:39:54.860292+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Lepontina 11, Milano"
   }
 }
