@@ -1591,5 +1591,32 @@
     "prima_vista": "2026-08-26T08:41:58.127436+00:00",
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via Francesco Fracanzano 22, Napoli"
+  },
+  "30683853": {
+    "città": "Napoli",
+    "mq": 135,
+    "prezzo": 510000,
+    "prezzo_mq": 3778,
+    "prima_vista": "2026-08-26T10:34:02.693445+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via San Domenico 38, Napoli"
+  },
+  "30684027": {
+    "città": "Bologna",
+    "mq": 93,
+    "prezzo": 269000,
+    "prezzo_mq": 2892,
+    "prima_vista": "2026-08-26T10:34:18.546412+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Agucchi 241, Bologna"
+  },
+  "30684084": {
+    "città": "Firenze",
+    "mq": 60,
+    "prezzo": 275000,
+    "prezzo_mq": 4583,
+    "prima_vista": "2026-08-26T10:34:33.562220+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Mario Ulivelli, Firenze"
   }
 }
