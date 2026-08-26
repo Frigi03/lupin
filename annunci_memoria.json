@@ -1636,5 +1636,14 @@
     "prima_vista": "2026-08-26T12:49:08.877759+00:00",
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via San Giacomo dei Capri 125, Napoli"
+  },
+  "30685518": {
+    "città": "Firenze",
+    "mq": 44,
+    "prezzo": 220000,
+    "prezzo_mq": 5000,
+    "prima_vista": "2026-08-26T14:43:56.380566+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Mario Morosi, Firenze"
   }
 }
