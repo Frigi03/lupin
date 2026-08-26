@@ -1645,5 +1645,23 @@
     "prima_vista": "2026-08-26T14:43:56.380566+00:00",
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Via Mario Morosi, Firenze"
+  },
+  "30685953": {
+    "città": "Bologna",
+    "mq": 108,
+    "prezzo": 269000,
+    "prezzo_mq": 2491,
+    "prima_vista": "2026-08-26T16:47:51.416136+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Enrico De Nicola 17, Bologna"
+  },
+  "30686070": {
+    "città": "Milano",
+    "mq": 67,
+    "prezzo": 410000,
+    "prezzo_mq": 6119,
+    "prima_vista": "2026-08-26T16:46:52.329859+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Cenisio 77, Milano"
   }
 }
