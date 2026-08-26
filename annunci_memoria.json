@@ -1519,5 +1519,23 @@
     "prima_vista": "2026-08-26T03:03:01.520237+00:00",
     "sotto_media": true,
     "titolo": "Appartamento in Vendita, Via Pria Forà, Milano"
+  },
+  "30682560": {
+    "città": "Firenze",
+    "mq": 137,
+    "prezzo": 565000,
+    "prezzo_mq": 4124,
+    "prima_vista": "2026-08-26T04:38:33.227957+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Giandomenico Romagnosi 7, Firenze"
+  },
+  "30682575": {
+    "città": "Firenze",
+    "mq": 105,
+    "prezzo": 859000,
+    "prezzo_mq": 8181,
+    "prima_vista": "2026-08-26T04:38:31.480545+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via della Vigna Nuova 17, Firenze"
   }
 }
