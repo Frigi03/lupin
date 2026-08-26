@@ -1618,5 +1618,23 @@
     "prima_vista": "2026-08-26T10:34:33.562220+00:00",
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Mario Ulivelli, Firenze"
+  },
+  "30684756": {
+    "città": "Bologna",
+    "mq": 82,
+    "prezzo": 275000,
+    "prezzo_mq": 3354,
+    "prima_vista": "2026-08-26T12:49:24.897382+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Bologna"
+  },
+  "30684873": {
+    "città": "Napoli",
+    "mq": 77,
+    "prezzo": 280000,
+    "prezzo_mq": 3636,
+    "prima_vista": "2026-08-26T12:49:08.877759+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via San Giacomo dei Capri 125, Napoli"
   }
 }
