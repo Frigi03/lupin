@@ -1555,5 +1555,41 @@
     "prima_vista": "2026-08-26T04:38:31.480545+00:00",
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via della Vigna Nuova 17, Firenze"
+  },
+  "30683592": {
+    "città": "Milano",
+    "mq": 55,
+    "prezzo": 295000,
+    "prezzo_mq": 5364,
+    "prima_vista": "2026-08-26T08:41:11.353386+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Caracciolo 66, Milano"
+  },
+  "30683595": {
+    "città": "Milano",
+    "mq": 67,
+    "prezzo": 410000,
+    "prezzo_mq": 6119,
+    "prima_vista": "2026-08-26T08:41:09.529376+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Cenisio 77, Milano"
+  },
+  "30683598": {
+    "città": "Milano",
+    "mq": 50,
+    "prezzo": 227000,
+    "prezzo_mq": 4540,
+    "prima_vista": "2026-08-26T08:41:07.609135+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Gran San Bernardo 11/a, Milano"
+  },
+  "30683784": {
+    "città": "Napoli",
+    "mq": 83,
+    "prezzo": 390000,
+    "prezzo_mq": 4699,
+    "prima_vista": "2026-08-26T08:41:58.127436+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Francesco Fracanzano 22, Napoli"
   }
 }
