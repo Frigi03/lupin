@@ -1483,5 +1483,41 @@
     "prima_vista": "2026-08-25T18:37:07.844992+00:00",
     "sotto_media": false,
     "titolo": "Quadrilocale in Vendita, Piazza Firenze 19, Milano"
+  },
+  "30681927": {
+    "città": "Roma",
+    "mq": 128,
+    "prezzo": 329000,
+    "prezzo_mq": 2570,
+    "prima_vista": "2026-08-26T03:03:18.382725+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Piazza di Cinecitta' 32, Roma"
+  },
+  "30682023": {
+    "città": "Milano",
+    "mq": 110,
+    "prezzo": 390000,
+    "prezzo_mq": 3545,
+    "prima_vista": "2026-08-26T03:03:04.930642+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Catalani 63, Milano"
+  },
+  "30682077": {
+    "città": "Milano",
+    "mq": 60,
+    "prezzo": 290000,
+    "prezzo_mq": 4833,
+    "prima_vista": "2026-08-26T03:03:03.268330+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Viale Certosa 135, Milano"
+  },
+  "30682299": {
+    "città": "Milano",
+    "mq": 330,
+    "prezzo": 1540000,
+    "prezzo_mq": 4667,
+    "prima_vista": "2026-08-26T03:03:01.520237+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Pria Forà, Milano"
   }
 }
