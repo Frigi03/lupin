@@ -1690,5 +1690,41 @@
     "prima_vista": "2026-08-26T19:46:49.872763+00:00",
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Napoli"
+  },
+  "30689040": {
+    "città": "Firenze",
+    "mq": 85,
+    "prezzo": 468000,
+    "prezzo_mq": 5506,
+    "prima_vista": "2026-08-27T07:26:14.720719+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Quintino Sella 49, Firenze"
+  },
+  "30689043": {
+    "città": "Firenze",
+    "mq": 60,
+    "prezzo": 320000,
+    "prezzo_mq": 5333,
+    "prima_vista": "2026-08-27T07:26:12.863256+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Santa Monaca 23, Firenze"
+  },
+  "30689046": {
+    "città": "Firenze",
+    "mq": 177,
+    "prezzo": 784000,
+    "prezzo_mq": 4429,
+    "prima_vista": "2026-08-27T07:26:10.994650+00:00",
+    "sotto_media": true,
+    "titolo": "Terratetto unifamiliare in Vendita, Via Niccolò da Uzzano 83, Firenze"
+  },
+  "30689055": {
+    "città": "Firenze",
+    "mq": 22,
+    "prezzo": 442000,
+    "prezzo_mq": 20091,
+    "prima_vista": "2026-08-27T07:26:09.056421+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Guelfa 6, Firenze"
   }
 }
