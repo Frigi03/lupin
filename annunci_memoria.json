@@ -1691,6 +1691,42 @@
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Napoli"
   },
+  "30688290": {
+    "città": "Milano",
+    "mq": 60,
+    "prezzo": 249000,
+    "prezzo_mq": 4150,
+    "prima_vista": "2026-08-27T18:51:21.059304+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via degli Astri 22, Milano"
+  },
+  "30688293": {
+    "città": "Milano",
+    "mq": 47,
+    "prezzo": 245000,
+    "prezzo_mq": 5213,
+    "prima_vista": "2026-08-27T18:51:19.301425+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Giuseppe Arimondi 31, Milano"
+  },
+  "30688770": {
+    "città": "Milano",
+    "mq": 90,
+    "prezzo": 850000,
+    "prezzo_mq": 9444,
+    "prima_vista": "2026-08-27T18:51:17.570274+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Lecco 11, Milano"
+  },
+  "30688917": {
+    "città": "Milano",
+    "mq": 170,
+    "prezzo": 1050000,
+    "prezzo_mq": 6176,
+    "prima_vista": "2026-08-27T18:51:15.823407+00:00",
+    "sotto_media": false,
+    "titolo": "Attico in Vendita, Milano"
+  },
   "30689040": {
     "città": "Firenze",
     "mq": 85,
@@ -1726,5 +1762,113 @@
     "prima_vista": "2026-08-27T07:26:09.056421+00:00",
     "sotto_media": false,
     "titolo": "Quadrilocale in Vendita, Via Guelfa 6, Firenze"
+  },
+  "30689802": {
+    "città": "Milano",
+    "mq": 50,
+    "prezzo": 227000,
+    "prezzo_mq": 4540,
+    "prima_vista": "2026-08-27T18:51:13.920355+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Gran San Bernardo 11/a, Milano"
+  },
+  "30689805": {
+    "città": "Milano",
+    "mq": 55,
+    "prezzo": 295000,
+    "prezzo_mq": 5364,
+    "prima_vista": "2026-08-27T18:51:12.185016+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Caracciolo 66, Milano"
+  },
+  "30690486": {
+    "città": "Firenze",
+    "mq": 50,
+    "prezzo": 238000,
+    "prezzo_mq": 4760,
+    "prima_vista": "2026-08-27T18:52:45.831780+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Viale Belfiore, Firenze"
+  },
+  "30691506": {
+    "città": "Bologna",
+    "mq": 85,
+    "prezzo": 189000,
+    "prezzo_mq": 2224,
+    "prima_vista": "2026-08-27T18:52:28.414166+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Agucchi 231, Bologna"
+  },
+  "30691629": {
+    "città": "Napoli",
+    "mq": 95,
+    "prezzo": 230000,
+    "prezzo_mq": 2421,
+    "prima_vista": "2026-08-27T18:52:08.692787+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Sant'Antonio a Capodimonte 46, Napoli"
+  },
+  "30692208": {
+    "città": "Bologna",
+    "mq": 70,
+    "prezzo": 244000,
+    "prezzo_mq": 3486,
+    "prima_vista": "2026-08-27T18:52:26.669286+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via dell'Arcoveggio, Bologna"
+  },
+  "30692421": {
+    "città": "Milano",
+    "mq": 107,
+    "prezzo": 729000,
+    "prezzo_mq": 6813,
+    "prima_vista": "2026-08-27T18:51:10.453252+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Luigi Galvani 21, Milano"
+  },
+  "30692592": {
+    "città": "Roma",
+    "mq": 93,
+    "prezzo": 219000,
+    "prezzo_mq": 2355,
+    "prima_vista": "2026-08-27T18:51:37.901425+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Roma"
+  },
+  "30692892": {
+    "città": "Milano",
+    "mq": 18,
+    "prezzo": 1250000,
+    "prezzo_mq": 69444,
+    "prima_vista": "2026-08-27T18:51:08.735477+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Verbano 1, Milano"
+  },
+  "30693330": {
+    "città": "Milano",
+    "mq": 115,
+    "prezzo": 498000,
+    "prezzo_mq": 4330,
+    "prima_vista": "2026-08-27T18:51:06.943158+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Giulio Belinzaghi 16, Milano"
+  },
+  "30693381": {
+    "città": "Torino",
+    "mq": 56,
+    "prezzo": 83000,
+    "prezzo_mq": 1482,
+    "prima_vista": "2026-08-27T18:51:53.838140+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Solari 27, Torino"
+  },
+  "30693462": {
+    "città": "Milano",
+    "mq": 90,
+    "prezzo": 650000,
+    "prezzo_mq": 7222,
+    "prima_vista": "2026-08-27T18:51:05.105905+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Viale Stelvio 53, Milano"
   }
 }
