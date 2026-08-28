@@ -1870,5 +1870,86 @@
     "prima_vista": "2026-08-27T18:51:05.105905+00:00",
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Viale Stelvio 53, Milano"
+  },
+  "30696717": {
+    "città": "Bologna",
+    "mq": 140,
+    "prezzo": 279000,
+    "prezzo_mq": 1993,
+    "prima_vista": "2026-08-28T18:14:28.882540+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Bologna"
+  },
+  "30697200": {
+    "città": "Milano",
+    "mq": 100,
+    "prezzo": 399000,
+    "prezzo_mq": 3990,
+    "prima_vista": "2026-08-28T18:13:20.330101+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Passo Mendola, Milano"
+  },
+  "30697443": {
+    "città": "Torino",
+    "mq": 134,
+    "prezzo": 239000,
+    "prezzo_mq": 1784,
+    "prima_vista": "2026-08-28T18:13:57.609843+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Sanremo 24, Torino"
+  },
+  "30697500": {
+    "città": "Torino",
+    "mq": 57,
+    "prezzo": 229000,
+    "prezzo_mq": 4018,
+    "prima_vista": "2026-08-28T18:13:55.986620+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Vincenzo Gioberti 78, Torino"
+  },
+  "30697503": {
+    "città": "Torino",
+    "mq": 77,
+    "prezzo": 299000,
+    "prezzo_mq": 3883,
+    "prima_vista": "2026-08-28T18:13:54.367167+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Vincenzo Gioberti 78, Torino"
+  },
+  "30697506": {
+    "città": "Torino",
+    "mq": 221,
+    "prezzo": 829000,
+    "prezzo_mq": 3751,
+    "prima_vista": "2026-08-28T18:13:52.710360+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Vincenzo Gioberti 78, Torino"
+  },
+  "30698088": {
+    "città": "Napoli",
+    "mq": 12,
+    "prezzo": null,
+    "prezzo_mq": null,
+    "prima_vista": "2026-08-28T18:14:10.826372+00:00",
+    "sotto_media": false,
+    "titolo": "Monolocale in Vendita, Via Carlo Pecchia 15, Napoli"
+  },
+  "30698373": {
+    "città": "Bologna",
+    "mq": 82,
+    "prezzo": 375000,
+    "prezzo_mq": 4573,
+    "prima_vista": "2026-08-28T18:14:27.241176+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Francesco Orsoni, Bologna"
+  },
+  "30699282": {
+    "città": "Torino",
+    "mq": 100,
+    "prezzo": 385000,
+    "prezzo_mq": 3850,
+    "prima_vista": "2026-08-28T18:13:51.047214+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Mazzini 47, Torino"
   }
 }
