@@ -1960,5 +1960,41 @@
     "prima_vista": "2026-08-29T02:43:14.888964+00:00",
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Corso Giacomo Matteotti 59, Torino"
+  },
+  "30704961": {
+    "città": "Milano",
+    "mq": 48,
+    "prezzo": 250000,
+    "prezzo_mq": 5208,
+    "prima_vista": "2026-08-29T10:48:37.212175+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Conte Rosso 20, Milano"
+  },
+  "30704964": {
+    "città": "Milano",
+    "mq": 83,
+    "prezzo": 318000,
+    "prezzo_mq": 3831,
+    "prima_vista": "2026-08-29T10:48:35.562347+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Caduti di Marcinelle 10, Milano"
+  },
+  "30704982": {
+    "città": "Milano",
+    "mq": 50,
+    "prezzo": 178000,
+    "prezzo_mq": 3560,
+    "prima_vista": "2026-08-29T10:48:33.916479+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Privata Luigi Borgomainerio 14, Milano"
+  },
+  "30705315": {
+    "città": "Milano",
+    "mq": 70,
+    "prezzo": 239000,
+    "prezzo_mq": 3414,
+    "prima_vista": "2026-08-29T10:48:31.866179+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Ugo Betti, Milano"
   }
 }
