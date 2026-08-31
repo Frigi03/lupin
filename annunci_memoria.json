@@ -2131,5 +2131,140 @@
     "prima_vista": "2026-08-31T10:34:08.124333+00:00",
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Amedeo Cencelli, Roma"
+  },
+  "30709713": {
+    "città": "Roma",
+    "mq": 67,
+    "prezzo": 230000,
+    "prezzo_mq": 3433,
+    "prima_vista": "2026-08-31T18:49:00.979574+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Vincenzo Maculani, Roma"
+  },
+  "30709716": {
+    "città": "Roma",
+    "mq": 83,
+    "prezzo": 259000,
+    "prezzo_mq": 3120,
+    "prima_vista": "2026-08-31T18:48:59.242069+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Casilina, Roma"
+  },
+  "30709719": {
+    "città": "Roma",
+    "mq": 87,
+    "prezzo": 359000,
+    "prezzo_mq": 4126,
+    "prima_vista": "2026-08-31T18:48:57.461087+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Roberto Malatesta, Roma"
+  },
+  "30709722": {
+    "città": "Roma",
+    "mq": 40,
+    "prezzo": 165000,
+    "prezzo_mq": 4125,
+    "prima_vista": "2026-08-31T18:48:55.684212+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Perugia, Roma"
+  },
+  "30709728": {
+    "città": "Roma",
+    "mq": 67,
+    "prezzo": 239000,
+    "prezzo_mq": 3567,
+    "prima_vista": "2026-08-31T18:48:53.930987+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Natale Palli, Roma"
+  },
+  "30709731": {
+    "città": "Roma",
+    "mq": 78,
+    "prezzo": 309000,
+    "prezzo_mq": 3962,
+    "prima_vista": "2026-08-31T18:48:52.193902+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Piazza Giuseppe Cardinali, Roma"
+  },
+  "30709734": {
+    "città": "Roma",
+    "mq": 38,
+    "prezzo": 239000,
+    "prezzo_mq": 6289,
+    "prima_vista": "2026-08-31T18:48:50.444248+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Caltanissetta, Roma"
+  },
+  "30709902": {
+    "città": "Torino",
+    "mq": 90,
+    "prezzo": 139000,
+    "prezzo_mq": 1544,
+    "prima_vista": "2026-08-31T18:49:20.032050+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Corso Canonico Giuseppe Allamano, Torino"
+  },
+  "30710052": {
+    "città": "Torino",
+    "mq": 183,
+    "prezzo": 410000,
+    "prezzo_mq": 2240,
+    "prima_vista": "2026-08-31T18:49:18.284912+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Nuda proprietà, Via Assarotti 14 Bis, Torino"
+  },
+  "30710079": {
+    "città": "Napoli",
+    "mq": 137,
+    "prezzo": 450000,
+    "prezzo_mq": 3285,
+    "prima_vista": "2026-08-31T18:49:47.683348+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Bernardo Cavallino 89, Napoli"
+  },
+  "30710802": {
+    "città": "Napoli",
+    "mq": 135,
+    "prezzo": 350000,
+    "prezzo_mq": 2593,
+    "prima_vista": "2026-08-31T18:49:45.947010+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Napoli"
+  },
+  "30711849": {
+    "città": "Napoli",
+    "mq": 95,
+    "prezzo": 210000,
+    "prezzo_mq": 2211,
+    "prima_vista": "2026-08-31T18:49:44.120771+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Giacomo Savarese 52, Napoli"
+  },
+  "30711876": {
+    "città": "Roma",
+    "mq": 60,
+    "prezzo": 239000,
+    "prezzo_mq": 3983,
+    "prima_vista": "2026-08-31T18:48:48.653981+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Carmelo Maestrini 276, Roma"
+  },
+  "30711993": {
+    "città": "Roma",
+    "mq": 135,
+    "prezzo": 677000,
+    "prezzo_mq": 5015,
+    "prima_vista": "2026-08-31T18:48:46.815160+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Aladino Govoni 9, Roma"
+  },
+  "30712239": {
+    "città": "Napoli",
+    "mq": 30,
+    "prezzo": 83000,
+    "prezzo_mq": 2767,
+    "prima_vista": "2026-08-31T18:49:42.358924+00:00",
+    "sotto_media": false,
+    "titolo": "Monolocale in Vendita, Via Francesco Solimena 80, Napoli"
   }
 }
