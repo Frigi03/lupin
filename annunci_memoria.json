@@ -2204,6 +2204,15 @@
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Corso Canonico Giuseppe Allamano, Torino"
   },
+  "30709914": {
+    "città": "Torino",
+    "mq": 60,
+    "prezzo": 109000,
+    "prezzo_mq": 1817,
+    "prima_vista": "2026-09-01T09:12:55.597806+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Strada del Portone, Torino"
+  },
   "30710052": {
     "città": "Torino",
     "mq": 183,
@@ -2329,5 +2338,41 @@
     "prima_vista": "2026-09-01T03:42:31.822018+00:00",
     "sotto_media": true,
     "titolo": "Appartamento in Vendita, Via Bernardo Pasquini 6, Firenze"
+  },
+  "30717741": {
+    "città": "Torino",
+    "mq": 100,
+    "prezzo": 170000,
+    "prezzo_mq": 1700,
+    "prima_vista": "2026-09-01T09:12:53.938367+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Exilles 45, Torino"
+  },
+  "30718215": {
+    "città": "Torino",
+    "mq": 80,
+    "prezzo": 129000,
+    "prezzo_mq": 1612,
+    "prima_vista": "2026-09-01T09:12:52.267961+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Gaspare Gorresio 12, Torino"
+  },
+  "30718302": {
+    "città": "Torino",
+    "mq": 90,
+    "prezzo": 289000,
+    "prezzo_mq": 3211,
+    "prima_vista": "2026-09-01T09:12:50.501838+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Carlo Vidua 2, Torino"
+  },
+  "30718491": {
+    "città": "Roma",
+    "mq": 95,
+    "prezzo": 345000,
+    "prezzo_mq": 3632,
+    "prima_vista": "2026-09-01T09:12:33.994381+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via dei Sulpici 90, Roma"
   }
 }
