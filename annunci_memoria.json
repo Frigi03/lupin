@@ -2266,5 +2266,68 @@
     "prima_vista": "2026-08-31T18:49:42.358924+00:00",
     "sotto_media": false,
     "titolo": "Monolocale in Vendita, Via Francesco Solimena 80, Napoli"
+  },
+  "30714597": {
+    "città": "Roma",
+    "mq": 107,
+    "prezzo": 580000,
+    "prezzo_mq": 5421,
+    "prima_vista": "2026-09-01T03:40:07.324593+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Acqui 10, Roma"
+  },
+  "30715494": {
+    "città": "Milano",
+    "mq": 141,
+    "prezzo": 1410000,
+    "prezzo_mq": 10000,
+    "prima_vista": "2026-09-01T03:39:51.733798+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Giasone del Maino 21, Milano"
+  },
+  "30715656": {
+    "città": "Firenze",
+    "mq": 128,
+    "prezzo": 428000,
+    "prezzo_mq": 3344,
+    "prima_vista": "2026-09-01T03:42:38.873897+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Faenza 66, Firenze"
+  },
+  "30715662": {
+    "città": "Firenze",
+    "mq": 68,
+    "prezzo": 222000,
+    "prezzo_mq": 3265,
+    "prima_vista": "2026-09-01T03:42:37.186148+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via San Bartolo 1, Firenze"
+  },
+  "30715665": {
+    "città": "Firenze",
+    "mq": 144,
+    "prezzo": 358000,
+    "prezzo_mq": 2486,
+    "prima_vista": "2026-09-01T03:42:35.509676+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via a. Modigliani 212, Firenze"
+  },
+  "30715668": {
+    "città": "Firenze",
+    "mq": 81,
+    "prezzo": 377000,
+    "prezzo_mq": 4654,
+    "prima_vista": "2026-09-01T03:42:33.811109+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Faentina 10, Firenze"
+  },
+  "30715674": {
+    "città": "Firenze",
+    "mq": 131,
+    "prezzo": 388000,
+    "prezzo_mq": 2962,
+    "prima_vista": "2026-09-01T03:42:31.822018+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Bernardo Pasquini 6, Firenze"
   }
 }
