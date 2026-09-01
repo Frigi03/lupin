@@ -2339,6 +2339,15 @@
     "sotto_media": true,
     "titolo": "Appartamento in Vendita, Via Bernardo Pasquini 6, Firenze"
   },
+  "30717657": {
+    "città": "Milano",
+    "mq": 325,
+    "prezzo": 1100000,
+    "prezzo_mq": 3385,
+    "prima_vista": "2026-09-01T14:31:39.845912+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Bramante 37, Milano"
+  },
   "30717741": {
     "città": "Torino",
     "mq": 100,
@@ -2347,6 +2356,15 @@
     "prima_vista": "2026-09-01T09:12:53.938367+00:00",
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Exilles 45, Torino"
+  },
+  "30717777": {
+    "città": "Napoli",
+    "mq": 70,
+    "prezzo": 180000,
+    "prezzo_mq": 2571,
+    "prima_vista": "2026-09-01T14:32:41.351168+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Corso Vittorio Emanuele 171, Napoli"
   },
   "30718215": {
     "città": "Torino",
@@ -2374,5 +2392,104 @@
     "prima_vista": "2026-09-01T09:12:33.994381+00:00",
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Via dei Sulpici 90, Roma"
+  },
+  "30718857": {
+    "città": "Firenze",
+    "mq": 133,
+    "prezzo": 398000,
+    "prezzo_mq": 2992,
+    "prima_vista": "2026-09-01T14:33:15.681931+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Viale Alessandro Guidoni, Firenze"
+  },
+  "30719370": {
+    "città": "Firenze",
+    "mq": 65,
+    "prezzo": 271000,
+    "prezzo_mq": 4169,
+    "prima_vista": "2026-09-01T14:33:13.879172+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Viale Belfiore, Firenze"
+  },
+  "30719607": {
+    "città": "Napoli",
+    "mq": 120,
+    "prezzo": 525000,
+    "prezzo_mq": 4375,
+    "prima_vista": "2026-09-01T14:32:39.516121+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Corso Vittorio Emanuele 481, Napoli"
+  },
+  "30719796": {
+    "città": "Napoli",
+    "mq": 130,
+    "prezzo": 510000,
+    "prezzo_mq": 3923,
+    "prima_vista": "2026-09-01T14:32:37.737086+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Duomo 89 , Napoli"
+  },
+  "30719844": {
+    "città": "Milano",
+    "mq": 35,
+    "prezzo": 265000,
+    "prezzo_mq": 7571,
+    "prima_vista": "2026-09-01T14:31:38.117107+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Viale Certosa 41, Milano"
+  },
+  "30719862": {
+    "città": "Napoli",
+    "mq": 25,
+    "prezzo": 400000,
+    "prezzo_mq": 16000,
+    "prima_vista": "2026-09-01T14:32:35.890786+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Vico Paradiso alla Salute 25, Napoli"
+  },
+  "30719889": {
+    "città": "Milano",
+    "mq": 90,
+    "prezzo": 239000,
+    "prezzo_mq": 2656,
+    "prima_vista": "2026-09-01T14:31:36.390492+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Gaetano Salvemini, Milano"
+  },
+  "30719946": {
+    "città": "Torino",
+    "mq": 110,
+    "prezzo": 179000,
+    "prezzo_mq": 1627,
+    "prima_vista": "2026-09-01T14:32:16.187108+00:00",
+    "sotto_media": true,
+    "titolo": "Attico in Vendita, Via Cirenaica 9, Torino"
+  },
+  "30720168": {
+    "città": "Napoli",
+    "mq": 14,
+    "prezzo": 690000,
+    "prezzo_mq": 49286,
+    "prima_vista": "2026-09-01T14:32:34.159360+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Luigi Caldieri 132, Napoli"
+  },
+  "30720702": {
+    "città": "Torino",
+    "mq": 40,
+    "prezzo": 79000,
+    "prezzo_mq": 1975,
+    "prima_vista": "2026-09-01T14:32:14.421578+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Villar 47, Torino"
+  },
+  "30721038": {
+    "città": "Milano",
+    "mq": 50,
+    "prezzo": 380000,
+    "prezzo_mq": 7600,
+    "prima_vista": "2026-09-01T14:31:34.569072+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Aleardo Aleardi 9, Milano"
   }
 }
