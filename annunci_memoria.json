@@ -2681,6 +2681,15 @@
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Via Speranzella 5, Napoli"
   },
+  "30730989": {
+    "città": "Torino",
+    "mq": 30,
+    "prezzo": 49000,
+    "prezzo_mq": 1633,
+    "prima_vista": "2026-09-02T19:14:05.310255+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Domodossola 74, Torino"
+  },
   "30731154": {
     "città": "Napoli",
     "mq": 120,
@@ -2806,5 +2815,95 @@
     "prima_vista": "2026-09-02T14:06:00.086944+00:00",
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Via Sirte 11, Milano"
+  },
+  "30733317": {
+    "città": "Milano",
+    "mq": 65,
+    "prezzo": 165000,
+    "prezzo_mq": 2538,
+    "prima_vista": "2026-09-02T19:13:29.344718+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Val Trompia 33, Milano"
+  },
+  "30733320": {
+    "città": "Torino",
+    "mq": 97,
+    "prezzo": 250000,
+    "prezzo_mq": 2577,
+    "prima_vista": "2026-09-02T19:14:03.685489+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Giovanni Ribet 20, Torino"
+  },
+  "30733395": {
+    "città": "Napoli",
+    "mq": 103,
+    "prezzo": 359000,
+    "prezzo_mq": 3485,
+    "prima_vista": "2026-09-02T19:14:25.208395+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Corso Amedeo di Savoia Duca d\\'Aosta 210, Napoli"
+  },
+  "30733719": {
+    "città": "Napoli",
+    "mq": 170,
+    "prezzo": 595000,
+    "prezzo_mq": 3500,
+    "prima_vista": "2026-09-02T19:14:23.505885+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Pietro Castellino 88, Napoli"
+  },
+  "30734169": {
+    "città": "Milano",
+    "mq": 28,
+    "prezzo": 110000,
+    "prezzo_mq": 3929,
+    "prima_vista": "2026-09-02T19:13:27.705942+00:00",
+    "sotto_media": true,
+    "titolo": "Monolocale in Vendita, Via Ruggero Leoncavallo 37, Milano"
+  },
+  "30734529": {
+    "città": "Milano",
+    "mq": 70,
+    "prezzo": 340000,
+    "prezzo_mq": 4857,
+    "prima_vista": "2026-09-02T19:13:26.042200+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Rancati 6, Milano"
+  },
+  "30734622": {
+    "città": "Napoli",
+    "mq": 50,
+    "prezzo": 320000,
+    "prezzo_mq": 6400,
+    "prima_vista": "2026-09-02T19:14:21.880212+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Vico dei Corrieri 30, Napoli"
+  },
+  "30734856": {
+    "città": "Napoli",
+    "mq": 50,
+    "prezzo": 320000,
+    "prezzo_mq": 6400,
+    "prima_vista": "2026-09-02T19:14:20.196793+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Vico Corrieri 30, Napoli"
+  },
+  "30734913": {
+    "città": "Torino",
+    "mq": 86,
+    "prezzo": 485000,
+    "prezzo_mq": 5640,
+    "prima_vista": "2026-09-02T19:14:02.032177+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Giuseppe Luigi Lagrange 34, Torino"
+  },
+  "30734916": {
+    "città": "Torino",
+    "mq": 85,
+    "prezzo": 950000,
+    "prezzo_mq": 11176,
+    "prima_vista": "2026-09-02T19:14:00.385714+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Piazza San Carlo 161, Torino"
   }
 }
