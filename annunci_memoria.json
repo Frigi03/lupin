@@ -2653,5 +2653,158 @@
     "prima_vista": "2026-09-02T08:24:50.693891+00:00",
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Via Brigata Bologna, Napoli"
+  },
+  "30730455": {
+    "città": "Napoli",
+    "mq": 80,
+    "prezzo": 460000,
+    "prezzo_mq": 5750,
+    "prima_vista": "2026-09-02T14:08:34.267452+00:00",
+    "sotto_media": false,
+    "titolo": "Attico in Vendita, Via Luigi Caldieri 35, Napoli"
+  },
+  "30730551": {
+    "città": "Napoli",
+    "mq": 150,
+    "prezzo": 350000,
+    "prezzo_mq": 2333,
+    "prima_vista": "2026-09-02T14:08:32.426998+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Salvator Rosa 296, Napoli"
+  },
+  "30730572": {
+    "città": "Napoli",
+    "mq": 80,
+    "prezzo": 325000,
+    "prezzo_mq": 4062,
+    "prima_vista": "2026-09-02T14:08:30.522645+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Speranzella 5, Napoli"
+  },
+  "30731154": {
+    "città": "Napoli",
+    "mq": 120,
+    "prezzo": 525000,
+    "prezzo_mq": 4375,
+    "prima_vista": "2026-09-02T14:08:28.685516+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Corso Vittorio Emanuele 481, Napoli"
+  },
+  "30731157": {
+    "città": "Napoli",
+    "mq": 35,
+    "prezzo": 105000,
+    "prezzo_mq": 3000,
+    "prima_vista": "2026-09-02T14:08:26.830163+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Vico Lungo Sant'Agostino degli Scalzi 20, Napoli"
+  },
+  "30731376": {
+    "città": "Napoli",
+    "mq": 120,
+    "prezzo": 590000,
+    "prezzo_mq": 4917,
+    "prima_vista": "2026-09-02T14:08:25.013196+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Francesco Cilea 145, Napoli"
+  },
+  "30731448": {
+    "città": "Napoli",
+    "mq": 50,
+    "prezzo": 120000,
+    "prezzo_mq": 2400,
+    "prima_vista": "2026-09-02T14:08:23.153083+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Giacomo Leopardi, Napoli"
+  },
+  "30731457": {
+    "città": "Napoli",
+    "mq": 125,
+    "prezzo": 750000,
+    "prezzo_mq": 6000,
+    "prima_vista": "2026-09-02T14:08:21.250506+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Luca Giordano 51, Napoli"
+  },
+  "30731499": {
+    "città": "Napoli",
+    "mq": 105,
+    "prezzo": 375000,
+    "prezzo_mq": 3571,
+    "prima_vista": "2026-09-02T14:08:19.397012+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Fabio Massimo 46, Napoli"
+  },
+  "30731745": {
+    "città": "Bologna",
+    "mq": 40,
+    "prezzo": 149000,
+    "prezzo_mq": 3725,
+    "prima_vista": "2026-09-02T14:08:52.860077+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Ercole Nani, Bologna"
+  },
+  "30731892": {
+    "città": "Roma",
+    "mq": 116,
+    "prezzo": 230000,
+    "prezzo_mq": 1983,
+    "prima_vista": "2026-09-02T14:06:17.855364+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Roma"
+  },
+  "30732009": {
+    "città": "Milano",
+    "mq": 53,
+    "prezzo": 249000,
+    "prezzo_mq": 4698,
+    "prima_vista": "2026-09-02T14:06:02.057042+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Viale Monza 23, Milano"
+  },
+  "30732087": {
+    "città": "Napoli",
+    "mq": 122,
+    "prezzo": 495000,
+    "prezzo_mq": 4057,
+    "prima_vista": "2026-09-02T14:08:17.516885+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Napoli"
+  },
+  "30732093": {
+    "città": "Napoli",
+    "mq": 95,
+    "prezzo": 315000,
+    "prezzo_mq": 3316,
+    "prima_vista": "2026-09-02T14:08:14.997648+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Napoli"
+  },
+  "30732096": {
+    "città": "Napoli",
+    "mq": 140,
+    "prezzo": 540000,
+    "prezzo_mq": 3857,
+    "prima_vista": "2026-09-02T14:08:13.165620+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Napoli"
+  },
+  "30732099": {
+    "città": "Napoli",
+    "mq": 140,
+    "prezzo": 650000,
+    "prezzo_mq": 4643,
+    "prima_vista": "2026-09-02T14:08:11.152329+00:00",
+    "sotto_media": false,
+    "titolo": "Attico in Vendita, Napoli"
+  },
+  "30732756": {
+    "città": "Milano",
+    "mq": 65,
+    "prezzo": 270000,
+    "prezzo_mq": 4154,
+    "prima_vista": "2026-09-02T14:06:00.086944+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Sirte 11, Milano"
   }
 }
