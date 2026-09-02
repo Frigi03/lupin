@@ -2572,5 +2572,86 @@
     "prima_vista": "2026-09-02T02:58:35.567562+00:00",
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via Eusebio Bava, Torino"
+  },
+  "30727539": {
+    "città": "Milano",
+    "mq": 50,
+    "prezzo": 379000,
+    "prezzo_mq": 7580,
+    "prima_vista": "2026-09-02T08:24:05.413022+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Sangallo 7, Milano"
+  },
+  "30727545": {
+    "città": "Milano",
+    "mq": 69,
+    "prezzo": 199000,
+    "prezzo_mq": 2884,
+    "prima_vista": "2026-09-02T08:24:03.720370+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Pismonte 2, Milano"
+  },
+  "30727554": {
+    "città": "Milano",
+    "mq": 90,
+    "prezzo": 629000,
+    "prezzo_mq": 6989,
+    "prima_vista": "2026-09-02T08:24:02.058019+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Pietro Borsieri 25, Milano"
+  },
+  "30727569": {
+    "città": "Roma",
+    "mq": 105,
+    "prezzo": 339000,
+    "prezzo_mq": 3229,
+    "prima_vista": "2026-09-02T08:24:20.379615+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Paolo Buzzi 79, Roma"
+  },
+  "30727578": {
+    "città": "Milano",
+    "mq": 55,
+    "prezzo": 300000,
+    "prezzo_mq": 5455,
+    "prima_vista": "2026-09-02T08:24:00.424750+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Cenisio 32, Milano"
+  },
+  "30727581": {
+    "città": "Milano",
+    "mq": 80,
+    "prezzo": 365000,
+    "prezzo_mq": 4562,
+    "prima_vista": "2026-09-02T08:23:58.779894+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Privata Ferdinando Lassalle 12, Milano"
+  },
+  "30727590": {
+    "città": "Milano",
+    "mq": 60,
+    "prezzo": 289000,
+    "prezzo_mq": 4817,
+    "prima_vista": "2026-09-02T08:23:57.107258+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Illirico 3, Milano"
+  },
+  "30728694": {
+    "città": "Torino",
+    "mq": 78,
+    "prezzo": 235000,
+    "prezzo_mq": 3013,
+    "prima_vista": "2026-09-02T08:24:34.440285+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Tripoli 28//8, Torino"
+  },
+  "30729342": {
+    "città": "Napoli",
+    "mq": 117,
+    "prezzo": 305000,
+    "prezzo_mq": 2607,
+    "prima_vista": "2026-09-02T08:24:50.693891+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Brigata Bologna, Napoli"
   }
 }
