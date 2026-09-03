@@ -2870,6 +2870,15 @@
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Rancati 6, Milano"
   },
+  "30734556": {
+    "città": "Roma",
+    "mq": 157,
+    "prezzo": 469000,
+    "prezzo_mq": 2987,
+    "prima_vista": "2026-09-03T14:09:58.576343+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Roma"
+  },
   "30734622": {
     "città": "Napoli",
     "mq": 50,
@@ -2941,5 +2950,185 @@
     "prima_vista": "2026-09-03T08:34:20.158030+00:00",
     "sotto_media": true,
     "titolo": "Appartamento in Vendita, Via Girolamo Santacroce 19g, Napoli"
+  },
+  "30742131": {
+    "città": "Milano",
+    "mq": 55,
+    "prezzo": 285000,
+    "prezzo_mq": 5182,
+    "prima_vista": "2026-09-03T14:09:43.285023+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Giuseppe Arimondi 29, Milano"
+  },
+  "30742134": {
+    "città": "Milano",
+    "mq": 81,
+    "prezzo": 389000,
+    "prezzo_mq": 4802,
+    "prima_vista": "2026-09-03T14:09:41.629102+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Arnaboldi 2, Milano"
+  },
+  "30742140": {
+    "città": "Milano",
+    "mq": 82,
+    "prezzo": 355000,
+    "prezzo_mq": 4329,
+    "prima_vista": "2026-09-03T14:09:39.997595+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Nuda proprietà, Via Michelino da Besozzo 10, Milano"
+  },
+  "30742143": {
+    "città": "Milano",
+    "mq": 50,
+    "prezzo": 190000,
+    "prezzo_mq": 3800,
+    "prima_vista": "2026-09-03T14:09:38.341266+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Viale Certosa 45, Milano"
+  },
+  "30742146": {
+    "città": "Milano",
+    "mq": 86,
+    "prezzo": 329000,
+    "prezzo_mq": 3826,
+    "prima_vista": "2026-09-03T14:09:36.677287+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Traiano 60, Milano"
+  },
+  "30742149": {
+    "città": "Milano",
+    "mq": 93,
+    "prezzo": 390000,
+    "prezzo_mq": 4194,
+    "prima_vista": "2026-09-03T14:09:35.010012+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Viale Certosa 21, Milano"
+  },
+  "30742155": {
+    "città": "Milano",
+    "mq": 120,
+    "prezzo": 469000,
+    "prezzo_mq": 3908,
+    "prima_vista": "2026-09-03T14:09:33.109926+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Bartolini 39, Milano"
+  },
+  "30742158": {
+    "città": "Milano",
+    "mq": 60,
+    "prezzo": 650000,
+    "prezzo_mq": 10833,
+    "prima_vista": "2026-09-03T14:09:31.381547+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Traiano 37, Milano"
+  },
+  "30742161": {
+    "città": "Milano",
+    "mq": 70,
+    "prezzo": 240000,
+    "prezzo_mq": 3429,
+    "prima_vista": "2026-09-03T14:09:29.677135+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Chiari 1, Milano"
+  },
+  "30742164": {
+    "città": "Milano",
+    "mq": 85,
+    "prezzo": 335000,
+    "prezzo_mq": 3941,
+    "prima_vista": "2026-09-03T14:09:28.012576+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Teodorico 26, Milano"
+  },
+  "30742242": {
+    "città": "Milano",
+    "mq": 60,
+    "prezzo": 215000,
+    "prezzo_mq": 3583,
+    "prima_vista": "2026-09-03T14:09:26.342703+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Michelino da Besozzo 18, Milano"
+  },
+  "30742245": {
+    "città": "Milano",
+    "mq": 77,
+    "prezzo": 293000,
+    "prezzo_mq": 3805,
+    "prima_vista": "2026-09-03T14:09:24.694004+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Monte Generoso 53, Milano"
+  },
+  "30742248": {
+    "città": "Milano",
+    "mq": 20,
+    "prezzo": 315000,
+    "prezzo_mq": 15750,
+    "prima_vista": "2026-09-03T14:09:23.022523+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Lorenzo Bartolini 3, Milano"
+  },
+  "30742251": {
+    "città": "Milano",
+    "mq": 63,
+    "prezzo": 309000,
+    "prezzo_mq": 4905,
+    "prima_vista": "2026-09-03T14:09:21.355840+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Melchiorre Delfico 18, Milano"
+  },
+  "30742254": {
+    "città": "Milano",
+    "mq": 186,
+    "prezzo": 1190000,
+    "prezzo_mq": 6398,
+    "prima_vista": "2026-09-03T14:09:19.707981+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Piazza Firenze 19, Milano"
+  },
+  "30742257": {
+    "città": "Milano",
+    "mq": 40,
+    "prezzo": 275000,
+    "prezzo_mq": 6875,
+    "prima_vista": "2026-09-03T14:09:18.073581+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Giuseppe Arimondi 41, Milano"
+  },
+  "30742260": {
+    "città": "Milano",
+    "mq": 75,
+    "prezzo": 499000,
+    "prezzo_mq": 6653,
+    "prima_vista": "2026-09-03T14:09:16.394124+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Traiano 33, Milano"
+  },
+  "30742269": {
+    "città": "Milano",
+    "mq": 88,
+    "prezzo": 369000,
+    "prezzo_mq": 4193,
+    "prima_vista": "2026-09-03T14:09:14.721701+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Generale Mac Mahon 117, Milano"
+  },
+  "30743406": {
+    "città": "Milano",
+    "mq": 75,
+    "prezzo": 655000,
+    "prezzo_mq": 8733,
+    "prima_vista": "2026-09-03T14:09:13.058129+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Principe Eugenio 3, Milano"
+  },
+  "30744237": {
+    "città": "Torino",
+    "mq": 40,
+    "prezzo": 72000,
+    "prezzo_mq": 1800,
+    "prima_vista": "2026-09-03T14:10:13.404608+00:00",
+    "sotto_media": true,
+    "titolo": "Monolocale in Vendita, Via Bistagno 25, Torino"
   }
 }
