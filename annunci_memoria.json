@@ -2905,5 +2905,41 @@
     "prima_vista": "2026-09-02T19:14:00.385714+00:00",
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Piazza San Carlo 161, Torino"
+  },
+  "30738576": {
+    "città": "Napoli",
+    "mq": 142,
+    "prezzo": 495000,
+    "prezzo_mq": 3486,
+    "prima_vista": "2026-09-03T08:34:18.292600+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Domenico Fontana 126/128, Napoli"
+  },
+  "30740043": {
+    "città": "Torino",
+    "mq": 70,
+    "prezzo": 129000,
+    "prezzo_mq": 1843,
+    "prima_vista": "2026-09-03T08:34:02.507758+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Giovanni Pacini 37, Torino"
+  },
+  "30740241": {
+    "città": "Bologna",
+    "mq": 50,
+    "prezzo": 164000,
+    "prezzo_mq": 3280,
+    "prima_vista": "2026-09-03T08:34:35.710701+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via dell'Argine 41, Bologna"
+  },
+  "30740553": {
+    "città": "Napoli",
+    "mq": 130,
+    "prezzo": 495000,
+    "prezzo_mq": 3808,
+    "prima_vista": "2026-09-03T08:34:20.158030+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Girolamo Santacroce 19g, Napoli"
   }
 }
