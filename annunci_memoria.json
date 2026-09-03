@@ -2501,6 +2501,15 @@
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Aleardo Aleardi 9, Milano"
   },
+  "30721716": {
+    "città": "Torino",
+    "mq": 117,
+    "prezzo": 195000,
+    "prezzo_mq": 1667,
+    "prima_vista": "2026-09-03T19:06:53.271020+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Nuda proprietà, Via Tripoli 119, Torino"
+  },
   "30721926": {
     "città": "Roma",
     "mq": 81,
@@ -3130,5 +3139,68 @@
     "prima_vista": "2026-09-03T14:10:13.404608+00:00",
     "sotto_media": true,
     "titolo": "Monolocale in Vendita, Via Bistagno 25, Torino"
+  },
+  "30744417": {
+    "città": "Roma",
+    "mq": 65,
+    "prezzo": 250000,
+    "prezzo_mq": 3846,
+    "prima_vista": "2026-09-03T19:06:28.614313+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via dei Juvenci 9, Roma"
+  },
+  "30744828": {
+    "città": "Napoli",
+    "mq": 143,
+    "prezzo": 650000,
+    "prezzo_mq": 4545,
+    "prima_vista": "2026-09-03T19:07:10.634923+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Napoli"
+  },
+  "30744912": {
+    "città": "Torino",
+    "mq": 85,
+    "prezzo": 169000,
+    "prezzo_mq": 1988,
+    "prima_vista": "2026-09-03T19:06:51.489807+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Mombasiglio 78, Torino"
+  },
+  "30745257": {
+    "città": "Napoli",
+    "mq": 107,
+    "prezzo": 330000,
+    "prezzo_mq": 3084,
+    "prima_vista": "2026-09-03T19:07:08.822701+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via San Domenico 38, Napoli"
+  },
+  "30745638": {
+    "città": "Milano",
+    "mq": 70,
+    "prezzo": 370000,
+    "prezzo_mq": 5286,
+    "prima_vista": "2026-09-03T19:06:12.494715+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Vico Magistretti 3, Milano"
+  },
+  "30745845": {
+    "città": "Torino",
+    "mq": 82,
+    "prezzo": 175000,
+    "prezzo_mq": 2134,
+    "prima_vista": "2026-09-03T19:06:49.659215+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Corso Principe Eugenio, Torino"
+  },
+  "30746283": {
+    "città": "Torino",
+    "mq": 101,
+    "prezzo": 79900,
+    "prezzo_mq": 791,
+    "prima_vista": "2026-09-03T19:06:47.859182+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Piazza Francesco Crispi 55, Torino"
   }
 }
