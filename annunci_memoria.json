@@ -3211,5 +3211,23 @@
     "prima_vista": "2026-09-03T22:18:43.976002+00:00",
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Corso Vittorio Emanuele Snc, Napoli"
+  },
+  "30748428": {
+    "città": "Napoli",
+    "mq": 167,
+    "prezzo": 515000,
+    "prezzo_mq": 3084,
+    "prima_vista": "2026-09-04T03:00:44.044269+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Discesa Calata San Francesco 59, Napoli"
+  },
+  "30749298": {
+    "città": "Milano",
+    "mq": 130,
+    "prezzo": 690000,
+    "prezzo_mq": 5308,
+    "prima_vista": "2026-09-04T03:00:03.265841+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Santa Lucia 7, Milano"
   }
 }
