@@ -3247,5 +3247,77 @@
     "prima_vista": "2026-09-04T08:28:56.399250+00:00",
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Milano"
+  },
+  "30751047": {
+    "città": "Torino",
+    "mq": 52,
+    "prezzo": 139000,
+    "prezzo_mq": 2673,
+    "prima_vista": "2026-09-04T14:01:25.477223+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Nicola Fabrizi 53, Torino"
+  },
+  "30751125": {
+    "città": "Torino",
+    "mq": 51,
+    "prezzo": 109000,
+    "prezzo_mq": 2137,
+    "prima_vista": "2026-09-04T14:01:23.673508+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Buronzo 4, Torino"
+  },
+  "30751296": {
+    "città": "Torino",
+    "mq": 84,
+    "prezzo": 149000,
+    "prezzo_mq": 1774,
+    "prima_vista": "2026-09-04T14:01:21.844843+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Verolengo 90, Torino"
+  },
+  "30751728": {
+    "città": "Milano",
+    "mq": 50,
+    "prezzo": 198000,
+    "prezzo_mq": 3960,
+    "prima_vista": "2026-09-04T14:00:48.023050+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Privata Eugenio Brizi 1, Milano"
+  },
+  "30751842": {
+    "città": "Napoli",
+    "mq": 105,
+    "prezzo": 285000,
+    "prezzo_mq": 2714,
+    "prima_vista": "2026-09-04T14:01:45.537305+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Epomeo, Napoli"
+  },
+  "30751884": {
+    "città": "Napoli",
+    "mq": 110,
+    "prezzo": 239000,
+    "prezzo_mq": 2173,
+    "prima_vista": "2026-09-04T14:01:43.725790+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Napoli"
+  },
+  "30751887": {
+    "città": "Napoli",
+    "mq": 183,
+    "prezzo": 420000,
+    "prezzo_mq": 2295,
+    "prima_vista": "2026-09-04T14:01:41.861807+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Ponti Rossi 188, Napoli"
+  },
+  "30752916": {
+    "città": "Bologna",
+    "mq": 100,
+    "prezzo": 249000,
+    "prezzo_mq": 2490,
+    "prima_vista": "2026-09-04T14:02:03.248151+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Bologna"
   }
 }
