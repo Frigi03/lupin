@@ -3229,5 +3229,23 @@
     "prima_vista": "2026-09-04T03:00:03.265841+00:00",
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Santa Lucia 7, Milano"
+  },
+  "30749799": {
+    "città": "Milano",
+    "mq": 25,
+    "prezzo": 180000,
+    "prezzo_mq": 7200,
+    "prima_vista": "2026-09-04T08:28:58.142151+00:00",
+    "sotto_media": false,
+    "titolo": "Monolocale in Vendita, Via Luigi Federico Menabrea, Milano"
+  },
+  "30750573": {
+    "città": "Milano",
+    "mq": 60,
+    "prezzo": 269000,
+    "prezzo_mq": 4483,
+    "prima_vista": "2026-09-04T08:28:56.399250+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Milano"
   }
 }
