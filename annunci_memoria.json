@@ -3517,5 +3517,41 @@
     "prima_vista": "2026-09-05T08:03:26.133615+00:00",
     "sotto_media": false,
     "titolo": "Monolocale in Vendita, Viale Umbria 58, Milano"
+  },
+  "30760044": {
+    "città": "Bologna",
+    "mq": 53,
+    "prezzo": 209000,
+    "prezzo_mq": 3943,
+    "prima_vista": "2026-09-05T13:17:41.413819+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Bologna"
+  },
+  "30760101": {
+    "città": "Napoli",
+    "mq": 120,
+    "prezzo": 290000,
+    "prezzo_mq": 2417,
+    "prima_vista": "2026-09-05T13:17:25.192609+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Stella, Napoli"
+  },
+  "30760362": {
+    "città": "Napoli",
+    "mq": 100,
+    "prezzo": 125000,
+    "prezzo_mq": 1250,
+    "prima_vista": "2026-09-05T13:17:23.376784+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Augusto Righi 31, Napoli"
+  },
+  "30761328": {
+    "città": "Napoli",
+    "mq": 90,
+    "prezzo": 390000,
+    "prezzo_mq": 4333,
+    "prima_vista": "2026-09-05T13:17:21.533141+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Rodi con Box Auto 4, Napoli"
   }
 }
