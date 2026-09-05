@@ -3391,5 +3391,23 @@
     "prima_vista": "2026-09-04T18:49:45.562537+00:00",
     "sotto_media": false,
     "titolo": "Quadrilocale in Vendita, Via Giovanni Francesco Napione 24, Torino"
+  },
+  "30757929": {
+    "città": "Napoli",
+    "mq": 65,
+    "prezzo": 480000,
+    "prezzo_mq": 7385,
+    "prima_vista": "2026-09-05T03:02:23.477280+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Francesco Petrarca 93, Napoli"
+  },
+  "30758238": {
+    "città": "Torino",
+    "mq": 145,
+    "prezzo": 445000,
+    "prezzo_mq": 3069,
+    "prima_vista": "2026-09-05T03:02:07.933254+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Principe Tommaso 39, Torino"
   }
 }
