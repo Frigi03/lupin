@@ -3545,6 +3545,24 @@
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Augusto Righi 31, Napoli"
   },
+  "30760746": {
+    "città": "Torino",
+    "mq": 50,
+    "prezzo": 79000,
+    "prezzo_mq": 1580,
+    "prima_vista": "2026-09-05T19:58:19.205852+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Luini 146, Torino"
+  },
+  "30761298": {
+    "città": "Torino",
+    "mq": 65,
+    "prezzo": 149000,
+    "prezzo_mq": 2292,
+    "prima_vista": "2026-09-05T19:58:17.417114+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Paolo Gaidano, Torino"
+  },
   "30761328": {
     "città": "Napoli",
     "mq": 90,
@@ -3553,5 +3571,23 @@
     "prima_vista": "2026-09-05T13:17:21.533141+00:00",
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via Rodi con Box Auto 4, Napoli"
+  },
+  "30762021": {
+    "città": "Torino",
+    "mq": 65,
+    "prezzo": 210000,
+    "prezzo_mq": 3231,
+    "prima_vista": "2026-09-05T19:58:15.564175+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Perugia 6, Torino"
+  },
+  "30762567": {
+    "città": "Torino",
+    "mq": 80,
+    "prezzo": 119000,
+    "prezzo_mq": 1488,
+    "prima_vista": "2026-09-05T19:58:13.642038+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Chiesa della Salute 67, Torino"
   }
 }
