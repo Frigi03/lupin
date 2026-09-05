@@ -35,6 +35,33 @@
   "30438468": {
     "prima_vista": "2026-08-07T02:42:18.613494+00:00"
   },
+  "30440949": {
+    "città": "Firenze",
+    "mq": 120,
+    "prezzo": 310000,
+    "prezzo_mq": 2583,
+    "prima_vista": "2026-09-05T08:04:56.052244+00:00",
+    "sotto_media": true,
+    "titolo": "Terratetto in Vendita, Via Reginaldo Giuliani, Firenze"
+  },
+  "30441801": {
+    "città": "Firenze",
+    "mq": 125,
+    "prezzo": 350000,
+    "prezzo_mq": 2800,
+    "prima_vista": "2026-09-05T08:04:54.410753+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Nuda proprietà, Viale Giovanni Battista Morgagni, Firenze"
+  },
+  "30443340": {
+    "città": "Firenze",
+    "mq": 76,
+    "prezzo": 339000,
+    "prezzo_mq": 4461,
+    "prima_vista": "2026-09-05T08:04:52.728757+00:00",
+    "sotto_media": true,
+    "titolo": "Attico in Vendita, Piazza Valdelsa, Firenze"
+  },
   "30449076": {
     "prima_vista": "2026-08-07T02:42:18.613497+00:00"
   },
@@ -68,11 +95,29 @@
   "30460869": {
     "prima_vista": "2026-08-07T02:42:18.613535+00:00"
   },
+  "30491649": {
+    "città": "Firenze",
+    "mq": 74,
+    "prezzo": 285000,
+    "prezzo_mq": 3851,
+    "prima_vista": "2026-09-05T08:04:51.040553+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via del Pesciolino, Firenze"
+  },
   "30500667": {
     "prima_vista": "2026-08-07T02:42:18.613538+00:00"
   },
   "30506256": {
     "prima_vista": "2026-08-07T02:42:18.613540+00:00"
+  },
+  "30517917": {
+    "città": "Firenze",
+    "mq": 100,
+    "prezzo": 430000,
+    "prezzo_mq": 4300,
+    "prima_vista": "2026-09-05T08:04:49.312960+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Claudio Monteverdi, Firenze"
   },
   "30523431": {
     "città": "Roma",
@@ -3409,5 +3454,68 @@
     "prima_vista": "2026-09-05T03:02:07.933254+00:00",
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Via Principe Tommaso 39, Torino"
+  },
+  "30758868": {
+    "città": "Roma",
+    "mq": 37,
+    "prezzo": 155000,
+    "prezzo_mq": 4189,
+    "prima_vista": "2026-09-05T08:03:47.155076+00:00",
+    "sotto_media": false,
+    "titolo": "Monolocale in Vendita, Via del Podere di San Giusto 120, Roma"
+  },
+  "30758898": {
+    "città": "Firenze",
+    "mq": 101,
+    "prezzo": 318000,
+    "prezzo_mq": 3149,
+    "prima_vista": "2026-09-05T08:04:47.596184+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via dei Querci 4/C, Firenze"
+  },
+  "30758916": {
+    "città": "Milano",
+    "mq": 34,
+    "prezzo": 129000,
+    "prezzo_mq": 3794,
+    "prima_vista": "2026-09-05T08:03:29.640151+00:00",
+    "sotto_media": true,
+    "titolo": "Monolocale in Vendita, Via Ernesto Teodoro Moneta 5, Milano"
+  },
+  "30758925": {
+    "città": "Milano",
+    "mq": 83,
+    "prezzo": 239000,
+    "prezzo_mq": 2880,
+    "prima_vista": "2026-09-05T08:03:27.984034+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Darix Togni 2, Milano"
+  },
+  "30758964": {
+    "città": "Roma",
+    "mq": 125,
+    "prezzo": 679000,
+    "prezzo_mq": 5432,
+    "prima_vista": "2026-09-05T08:03:45.515461+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Ruzzante 10, Roma"
+  },
+  "30758976": {
+    "città": "Roma",
+    "mq": 67,
+    "prezzo": 195000,
+    "prezzo_mq": 2910,
+    "prima_vista": "2026-09-05T08:03:43.882156+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via delle Oceanine 7, Roma"
+  },
+  "30759720": {
+    "città": "Milano",
+    "mq": 25,
+    "prezzo": 205000,
+    "prezzo_mq": 8200,
+    "prima_vista": "2026-09-05T08:03:26.133615+00:00",
+    "sotto_media": false,
+    "titolo": "Monolocale in Vendita, Viale Umbria 58, Milano"
   }
 }
