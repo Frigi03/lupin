@@ -3589,5 +3589,23 @@
     "prima_vista": "2026-09-05T19:58:13.642038+00:00",
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Chiesa della Salute 67, Torino"
+  },
+  "30766065": {
+    "città": "Napoli",
+    "mq": 162,
+    "prezzo": 950000,
+    "prezzo_mq": 5864,
+    "prima_vista": "2026-09-07T08:58:10.809628+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Michele Kerbaker, Napoli"
+  },
+  "30766233": {
+    "città": "Napoli",
+    "mq": 25,
+    "prezzo": 90000,
+    "prezzo_mq": 3600,
+    "prima_vista": "2026-09-07T08:58:08.865102+00:00",
+    "sotto_media": true,
+    "titolo": "Monolocale in Vendita, Via Ribera 3, Napoli"
   }
 }
