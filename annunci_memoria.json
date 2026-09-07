@@ -3590,6 +3590,15 @@
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Chiesa della Salute 67, Torino"
   },
+  "30766017": {
+    "città": "Torino",
+    "mq": 61,
+    "prezzo": 135000,
+    "prezzo_mq": 2213,
+    "prima_vista": "2026-09-07T15:32:50.441849+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Saluzzo 19, Torino"
+  },
   "30766065": {
     "città": "Napoli",
     "mq": 162,
@@ -3607,5 +3616,140 @@
     "prima_vista": "2026-09-07T08:58:08.865102+00:00",
     "sotto_media": true,
     "titolo": "Monolocale in Vendita, Via Ribera 3, Napoli"
+  },
+  "30766299": {
+    "città": "Napoli",
+    "mq": 70,
+    "prezzo": 285000,
+    "prezzo_mq": 4071,
+    "prima_vista": "2026-09-07T15:33:09.446389+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Pigna 76, Napoli"
+  },
+  "30766332": {
+    "città": "Napoli",
+    "mq": 120,
+    "prezzo": 565000,
+    "prezzo_mq": 4708,
+    "prima_vista": "2026-09-07T15:33:07.711030+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Francesco Cilea 145, Napoli"
+  },
+  "30766365": {
+    "città": "Milano",
+    "mq": 68,
+    "prezzo": 475000,
+    "prezzo_mq": 6985,
+    "prima_vista": "2026-09-07T15:30:53.694479+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Cenisio 14, Milano"
+  },
+  "30766509": {
+    "città": "Milano",
+    "mq": 75,
+    "prezzo": 249000,
+    "prezzo_mq": 3320,
+    "prima_vista": "2026-09-07T15:30:51.990005+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Comasina, Milano"
+  },
+  "30766881": {
+    "città": "Torino",
+    "mq": 116,
+    "prezzo": 239000,
+    "prezzo_mq": 2060,
+    "prima_vista": "2026-09-07T15:32:48.743907+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Baltimora 29, Torino"
+  },
+  "30767067": {
+    "città": "Milano",
+    "mq": 73,
+    "prezzo": 359000,
+    "prezzo_mq": 4918,
+    "prima_vista": "2026-09-07T15:30:50.285238+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Comune Antico 52, Milano"
+  },
+  "30767142": {
+    "città": "Bologna",
+    "mq": 68,
+    "prezzo": 239000,
+    "prezzo_mq": 3515,
+    "prima_vista": "2026-09-07T15:33:28.499265+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Tito Azzolini 6, Bologna"
+  },
+  "30767166": {
+    "città": "Napoli",
+    "mq": 74,
+    "prezzo": 295000,
+    "prezzo_mq": 3986,
+    "prima_vista": "2026-09-07T15:33:05.975451+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Napoli"
+  },
+  "30768183": {
+    "città": "Bologna",
+    "mq": 55,
+    "prezzo": 180000,
+    "prezzo_mq": 3273,
+    "prima_vista": "2026-09-07T15:33:26.783815+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Emilia Ponente 312, Bologna"
+  },
+  "30768360": {
+    "città": "Torino",
+    "mq": 50,
+    "prezzo": 79000,
+    "prezzo_mq": 1580,
+    "prima_vista": "2026-09-07T15:32:47.042832+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Luini 146, Torino"
+  },
+  "30768414": {
+    "città": "Torino",
+    "mq": 70,
+    "prezzo": 175000,
+    "prezzo_mq": 2500,
+    "prima_vista": "2026-09-07T15:32:45.326921+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Frassineto 36, Torino"
+  },
+  "30768711": {
+    "città": "Firenze",
+    "mq": 44,
+    "prezzo": 220000,
+    "prezzo_mq": 5000,
+    "prima_vista": "2026-09-07T15:33:47.713737+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Mario Morosi, Firenze"
+  },
+  "30768798": {
+    "città": "Torino",
+    "mq": 65,
+    "prezzo": 259000,
+    "prezzo_mq": 3985,
+    "prima_vista": "2026-09-07T15:32:43.595272+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Corso Raffaello 28, Torino"
+  },
+  "30769008": {
+    "città": "Milano",
+    "mq": 87,
+    "prezzo": 470000,
+    "prezzo_mq": 5402,
+    "prima_vista": "2026-09-07T15:30:48.507572+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Ruggero Leoncavallo 30, Milano"
+  },
+  "30769059": {
+    "città": "Firenze",
+    "mq": 130,
+    "prezzo": 398000,
+    "prezzo_mq": 3062,
+    "prima_vista": "2026-09-07T15:33:45.993005+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via San Iacopino, Firenze"
   }
 }
