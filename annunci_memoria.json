@@ -3716,6 +3716,15 @@
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via Frassineto 36, Torino"
   },
+  "30768573": {
+    "città": "Roma",
+    "mq": 85,
+    "prezzo": 249000,
+    "prezzo_mq": 2929,
+    "prima_vista": "2026-09-07T19:36:21.672015+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Carignano, Roma"
+  },
   "30768711": {
     "città": "Firenze",
     "mq": 44,
@@ -3751,5 +3760,95 @@
     "prima_vista": "2026-09-07T15:33:45.993005+00:00",
     "sotto_media": true,
     "titolo": "Appartamento in Vendita, Via San Iacopino, Firenze"
+  },
+  "30769161": {
+    "città": "Torino",
+    "mq": null,
+    "prezzo": 119000,
+    "prezzo_mq": null,
+    "prima_vista": "2026-09-07T19:36:40.569990+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Ormea 164, Torino"
+  },
+  "30769275": {
+    "città": "Milano",
+    "mq": 50,
+    "prezzo": 395000,
+    "prezzo_mq": 7900,
+    "prima_vista": "2026-09-07T19:36:02.072623+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Viale Monte Nero 50, Milano"
+  },
+  "30769281": {
+    "città": "Milano",
+    "mq": 123,
+    "prezzo": 620000,
+    "prezzo_mq": 5041,
+    "prima_vista": "2026-09-07T19:36:00.162034+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Pacinotti 15, Milano"
+  },
+  "30769440": {
+    "città": "Roma",
+    "mq": 126,
+    "prezzo": 650000,
+    "prezzo_mq": 5159,
+    "prima_vista": "2026-09-07T19:36:19.155903+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Muggia, Roma"
+  },
+  "30769530": {
+    "città": "Torino",
+    "mq": 90,
+    "prezzo": 259000,
+    "prezzo_mq": 2878,
+    "prima_vista": "2026-09-07T19:36:38.640998+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Madama Cristina 116, Torino"
+  },
+  "30769554": {
+    "città": "Bologna",
+    "mq": 55,
+    "prezzo": 215000,
+    "prezzo_mq": 3909,
+    "prima_vista": "2026-09-07T19:37:13.419061+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Aldo Pio Manuzio 8/d, Bologna"
+  },
+  "30769611": {
+    "città": "Torino",
+    "mq": 67,
+    "prezzo": 89000,
+    "prezzo_mq": 1328,
+    "prima_vista": "2026-09-07T19:36:36.840996+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Borgaro 93, Torino"
+  },
+  "30769701": {
+    "città": "Milano",
+    "mq": 52,
+    "prezzo": 235000,
+    "prezzo_mq": 4519,
+    "prima_vista": "2026-09-07T19:35:57.201527+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Viale Fulvio Testi 210, Milano"
+  },
+  "30769881": {
+    "città": "Firenze",
+    "mq": 72,
+    "prezzo": 260000,
+    "prezzo_mq": 3611,
+    "prima_vista": "2026-09-07T19:37:31.169223+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Felice Brancacci, Firenze"
+  },
+  "30769962": {
+    "città": "Napoli",
+    "mq": 65,
+    "prezzo": 260000,
+    "prezzo_mq": 4000,
+    "prima_vista": "2026-09-07T19:36:58.515402+00:00",
+    "sotto_media": false,
+    "titolo": "Attico in Vendita, Napoli"
   }
 }
