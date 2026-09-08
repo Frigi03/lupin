@@ -3374,6 +3374,15 @@
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Bologna"
   },
+  "30753309": {
+    "città": "Torino",
+    "mq": 95,
+    "prezzo": 329000,
+    "prezzo_mq": 3463,
+    "prima_vista": "2026-09-08T14:09:54.817535+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Corso Galileo Ferraris 77, Torino"
+  },
   "30753483": {
     "città": "Torino",
     "mq": 58,
@@ -4003,5 +4012,77 @@
     "prima_vista": "2026-09-08T08:37:30.979173+00:00",
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via Pietro Giuria 23, Torino"
+  },
+  "30775128": {
+    "città": "Milano",
+    "mq": 200,
+    "prezzo": 1190000,
+    "prezzo_mq": 5950,
+    "prima_vista": "2026-09-08T14:09:17.532716+00:00",
+    "sotto_media": false,
+    "titolo": "Villa unifamiliare in Vendita, Via Carissimi 15, Milano"
+  },
+  "30775590": {
+    "città": "Torino",
+    "mq": 100,
+    "prezzo": 165000,
+    "prezzo_mq": 1650,
+    "prima_vista": "2026-09-08T14:09:53.094439+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Corso Eusebio Giambone 46/17, Torino"
+  },
+  "30775692": {
+    "città": "Milano",
+    "mq": 45,
+    "prezzo": 219000,
+    "prezzo_mq": 4867,
+    "prima_vista": "2026-09-08T14:09:15.804401+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Piazzale Nizza 5, Milano"
+  },
+  "30776442": {
+    "città": "Roma",
+    "mq": 90,
+    "prezzo": 209000,
+    "prezzo_mq": 2322,
+    "prima_vista": "2026-09-08T14:09:35.916676+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Roma"
+  },
+  "30776475": {
+    "città": "Bologna",
+    "mq": 140,
+    "prezzo": 419000,
+    "prezzo_mq": 2993,
+    "prima_vista": "2026-09-08T14:10:31.677819+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via da Messina Antonello 3, Bologna"
+  },
+  "30776589": {
+    "città": "Milano",
+    "mq": 56,
+    "prezzo": 275000,
+    "prezzo_mq": 4911,
+    "prima_vista": "2026-09-08T14:09:14.057265+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Viale Certosa 30, Milano"
+  },
+  "30776946": {
+    "città": "Napoli",
+    "mq": 80,
+    "prezzo": 445000,
+    "prezzo_mq": 5562,
+    "prima_vista": "2026-09-08T14:10:13.053257+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Alessandro Scarlatti 32, Napoli"
+  },
+  "30777576": {
+    "città": "Milano",
+    "mq": 110,
+    "prezzo": 800000,
+    "prezzo_mq": 7273,
+    "prima_vista": "2026-09-08T14:09:12.299539+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Settembrini 46, Milano"
   }
 }
