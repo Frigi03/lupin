@@ -4084,5 +4084,86 @@
     "prima_vista": "2026-09-08T14:09:12.299539+00:00",
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via Settembrini 46, Milano"
+  },
+  "30778005": {
+    "città": "Torino",
+    "mq": 138,
+    "prezzo": 450000,
+    "prezzo_mq": 3261,
+    "prima_vista": "2026-09-08T19:16:21.699770+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Saluzzo 21, Torino"
+  },
+  "30778848": {
+    "città": "Torino",
+    "mq": 125,
+    "prezzo": 259000,
+    "prezzo_mq": 2072,
+    "prima_vista": "2026-09-08T19:16:19.984019+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Corso Eusebio Giambone 71, Torino"
+  },
+  "30778887": {
+    "città": "Torino",
+    "mq": 45,
+    "prezzo": 115000,
+    "prezzo_mq": 2556,
+    "prima_vista": "2026-09-08T19:16:18.267611+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Crevacuore 65, Torino"
+  },
+  "30779037": {
+    "città": "Milano",
+    "mq": 106,
+    "prezzo": 489000,
+    "prezzo_mq": 4613,
+    "prima_vista": "2026-09-08T19:15:44.632314+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Ponte Seveso 36, Milano"
+  },
+  "30779247": {
+    "città": "Milano",
+    "mq": 80,
+    "prezzo": 290000,
+    "prezzo_mq": 3625,
+    "prima_vista": "2026-09-08T19:15:42.987580+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Viale Ungheria, Milano"
+  },
+  "30779250": {
+    "città": "Milano",
+    "mq": 92,
+    "prezzo": 390000,
+    "prezzo_mq": 4239,
+    "prima_vista": "2026-09-08T19:15:41.334518+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Laurana 2, Milano"
+  },
+  "30779253": {
+    "città": "Torino",
+    "mq": 175,
+    "prezzo": 449000,
+    "prezzo_mq": 2566,
+    "prima_vista": "2026-09-08T19:16:16.615003+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Postumia 26, Torino"
+  },
+  "30779484": {
+    "città": "Milano",
+    "mq": 43,
+    "prezzo": 180000,
+    "prezzo_mq": 4186,
+    "prima_vista": "2026-09-08T19:15:39.673543+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Padova 82, Milano"
+  },
+  "30779634": {
+    "città": "Milano",
+    "mq": 132,
+    "prezzo": 950000,
+    "prezzo_mq": 7197,
+    "prima_vista": "2026-09-08T19:15:37.944180+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Viale Coni Zugna 36, Milano"
   }
 }
