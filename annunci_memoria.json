@@ -3850,5 +3850,32 @@
     "prima_vista": "2026-09-07T19:36:58.515402+00:00",
     "sotto_media": false,
     "titolo": "Attico in Vendita, Napoli"
+  },
+  "30772152": {
+    "città": "Napoli",
+    "mq": 50,
+    "prezzo": 69000,
+    "prezzo_mq": 1380,
+    "prima_vista": "2026-09-08T03:09:48.069562+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Raffaele Testa 2-4-6, Napoli"
+  },
+  "30772998": {
+    "città": "Milano",
+    "mq": 88,
+    "prezzo": 400000,
+    "prezzo_mq": 4545,
+    "prima_vista": "2026-09-08T03:09:03.345320+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via San Giusto 16, Milano"
+  },
+  "30773280": {
+    "città": "Milano",
+    "mq": 68,
+    "prezzo": 315000,
+    "prezzo_mq": 4632,
+    "prima_vista": "2026-09-08T03:09:01.466204+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via della Torre 9, Milano"
   }
 }
