@@ -4319,6 +4319,24 @@
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Via Torquato Tasso 292bis, Napoli"
   },
+  "30790221": {
+    "città": "Roma",
+    "mq": 125,
+    "prezzo": 750000,
+    "prezzo_mq": 6000,
+    "prima_vista": "2026-09-09T22:16:46.193209+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Bernardino Telesio, Roma"
+  },
+  "30790431": {
+    "città": "Roma",
+    "mq": 90,
+    "prezzo": 370000,
+    "prezzo_mq": 4111,
+    "prima_vista": "2026-09-09T22:16:44.509904+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Viale Spartaco 30/E, Roma"
+  },
   "30790701": {
     "città": "Napoli",
     "mq": 130,
@@ -4327,5 +4345,14 @@
     "prima_vista": "2026-09-09T19:07:36.278401+00:00",
     "sotto_media": true,
     "titolo": "Quadrilocale in Nuda proprietà, Via Santa Lucia 133, Napoli"
+  },
+  "30791166": {
+    "città": "Roma",
+    "mq": 70,
+    "prezzo": 849000,
+    "prezzo_mq": 12129,
+    "prima_vista": "2026-09-09T22:16:42.725567+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Viale Egeo 137, Roma"
   }
 }
