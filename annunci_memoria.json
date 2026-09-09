@@ -4228,5 +4228,77 @@
     "prima_vista": "2026-09-09T08:39:29.071058+00:00",
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, 2ª Traversa Divisione Siena, Napoli"
+  },
+  "30785769": {
+    "città": "Milano",
+    "mq": 52,
+    "prezzo": 209000,
+    "prezzo_mq": 4019,
+    "prima_vista": "2026-09-09T14:10:03.155302+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Monte Velino 15, Milano"
+  },
+  "30786459": {
+    "città": "Torino",
+    "mq": 55,
+    "prezzo": 159000,
+    "prezzo_mq": 2891,
+    "prima_vista": "2026-09-09T14:10:42.462427+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Tunisi 95, Torino"
+  },
+  "30786684": {
+    "città": "Milano",
+    "mq": 45,
+    "prezzo": 275000,
+    "prezzo_mq": 6111,
+    "prima_vista": "2026-09-09T14:10:01.186751+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Guido Guinizelli 3, Milano"
+  },
+  "30786783": {
+    "città": "Torino",
+    "mq": 85,
+    "prezzo": 115000,
+    "prezzo_mq": 1353,
+    "prima_vista": "2026-09-09T14:10:40.653133+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Gaspare Gorresio 7, Torino"
+  },
+  "30786855": {
+    "città": "Milano",
+    "mq": 110,
+    "prezzo": 479000,
+    "prezzo_mq": 4355,
+    "prima_vista": "2026-09-09T14:09:59.376197+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Vincenzo Russo 7, Milano"
+  },
+  "30786966": {
+    "città": "Napoli",
+    "mq": 105,
+    "prezzo": 359000,
+    "prezzo_mq": 3419,
+    "prima_vista": "2026-09-09T14:10:57.963762+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Filippo Bottazzi 70, Napoli"
+  },
+  "30787020": {
+    "città": "Torino",
+    "mq": 80,
+    "prezzo": 249000,
+    "prezzo_mq": 3112,
+    "prima_vista": "2026-09-09T14:10:38.825872+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Corso Regina Margherita 231, Torino"
+  },
+  "30787497": {
+    "città": "Roma",
+    "mq": 126,
+    "prezzo": 169000,
+    "prezzo_mq": 1341,
+    "prima_vista": "2026-09-09T14:10:21.238877+00:00",
+    "sotto_media": true,
+    "titolo": "Villa bifamiliare in Vendita, Via Caldarola 57, Roma"
   }
 }
