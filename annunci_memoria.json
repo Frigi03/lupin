@@ -4165,5 +4165,23 @@
     "prima_vista": "2026-09-08T19:15:37.944180+00:00",
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Viale Coni Zugna 36, Milano"
+  },
+  "30783171": {
+    "città": "Milano",
+    "mq": 135,
+    "prezzo": 1280000,
+    "prezzo_mq": 9481,
+    "prima_vista": "2026-09-09T03:11:02.505690+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Alfonso Lamarmora 3, Milano"
+  },
+  "30783174": {
+    "città": "Milano",
+    "mq": 175,
+    "prezzo": 1200000,
+    "prezzo_mq": 6857,
+    "prima_vista": "2026-09-09T03:11:00.713480+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Mario Giuriati 17, Milano"
   }
 }
