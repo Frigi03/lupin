@@ -4300,5 +4300,32 @@
     "prima_vista": "2026-09-09T14:10:21.238877+00:00",
     "sotto_media": true,
     "titolo": "Villa bifamiliare in Vendita, Via Caldarola 57, Roma"
+  },
+  "30789705": {
+    "città": "Napoli",
+    "mq": 110,
+    "prezzo": 560000,
+    "prezzo_mq": 5091,
+    "prima_vista": "2026-09-09T19:07:39.654296+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Piazzetta Arenella, Napoli"
+  },
+  "30790161": {
+    "città": "Napoli",
+    "mq": 230,
+    "prezzo": 1980000,
+    "prezzo_mq": 8609,
+    "prima_vista": "2026-09-09T19:07:37.994577+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Torquato Tasso 292bis, Napoli"
+  },
+  "30790701": {
+    "città": "Napoli",
+    "mq": 130,
+    "prezzo": 320000,
+    "prezzo_mq": 2462,
+    "prima_vista": "2026-09-09T19:07:36.278401+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Nuda proprietà, Via Santa Lucia 133, Napoli"
   }
 }
