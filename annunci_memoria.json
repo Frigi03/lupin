@@ -4183,5 +4183,50 @@
     "prima_vista": "2026-09-09T03:11:00.713480+00:00",
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Via Mario Giuriati 17, Milano"
+  },
+  "30783930": {
+    "città": "Napoli",
+    "mq": 80,
+    "prezzo": 349000,
+    "prezzo_mq": 4362,
+    "prima_vista": "2026-09-09T08:39:30.842046+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Enea 28, Napoli"
+  },
+  "30784173": {
+    "città": "Torino",
+    "mq": 88,
+    "prezzo": 225000,
+    "prezzo_mq": 2557,
+    "prima_vista": "2026-09-09T08:39:13.643257+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Corso Giovanni Agnelli 60, Torino"
+  },
+  "30784188": {
+    "città": "Milano",
+    "mq": 60,
+    "prezzo": 298000,
+    "prezzo_mq": 4967,
+    "prima_vista": "2026-09-09T08:38:45.869735+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Privata Lugo 4, Milano"
+  },
+  "30784629": {
+    "città": "Bologna",
+    "mq": 77,
+    "prezzo": 249000,
+    "prezzo_mq": 3234,
+    "prima_vista": "2026-09-09T08:39:47.907790+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via della Beverara 155, Bologna"
+  },
+  "30784992": {
+    "città": "Napoli",
+    "mq": 100,
+    "prezzo": 335000,
+    "prezzo_mq": 3350,
+    "prima_vista": "2026-09-09T08:39:29.071058+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, 2ª Traversa Divisione Siena, Napoli"
   }
 }
