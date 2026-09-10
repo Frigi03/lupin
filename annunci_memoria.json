@@ -4633,5 +4633,86 @@
     "prima_vista": "2026-09-10T14:04:38.992644+00:00",
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Via Pusiano 1, Milano"
+  },
+  "30798114": {
+    "città": "Napoli",
+    "mq": 60,
+    "prezzo": 285000,
+    "prezzo_mq": 4750,
+    "prima_vista": "2026-09-10T18:58:13.452884+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Saverio Altamura, Napoli"
+  },
+  "30798210": {
+    "città": "Milano",
+    "mq": 65,
+    "prezzo": 319000,
+    "prezzo_mq": 4908,
+    "prima_vista": "2026-09-10T18:57:18.241241+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Viale Monza 81, Milano"
+  },
+  "30798213": {
+    "città": "Torino",
+    "mq": 152,
+    "prezzo": 795000,
+    "prezzo_mq": 5230,
+    "prima_vista": "2026-09-10T18:57:56.178044+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Ettore Perrone, Torino"
+  },
+  "30798744": {
+    "città": "Milano",
+    "mq": 85,
+    "prezzo": 495000,
+    "prezzo_mq": 5824,
+    "prima_vista": "2026-09-10T18:57:16.436645+00:00",
+    "sotto_media": false,
+    "titolo": "Attico in Vendita, Via Francesco Paolo Michetti 1, Milano"
+  },
+  "30798966": {
+    "città": "Roma",
+    "mq": 105,
+    "prezzo": 339000,
+    "prezzo_mq": 3229,
+    "prima_vista": "2026-09-10T18:57:34.462307+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via delle Cave, Roma"
+  },
+  "30799089": {
+    "città": "Torino",
+    "mq": 87,
+    "prezzo": 70000,
+    "prezzo_mq": 805,
+    "prima_vista": "2026-09-10T18:57:53.999930+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Nuda proprietà, Corso Casale 91, Torino"
+  },
+  "30799092": {
+    "città": "Torino",
+    "mq": 38,
+    "prezzo": 50000,
+    "prezzo_mq": 1316,
+    "prima_vista": "2026-09-10T18:57:52.288874+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Nuda proprietà, Corso Casale 86, Torino"
+  },
+  "30799170": {
+    "città": "Torino",
+    "mq": 120,
+    "prezzo": 329000,
+    "prezzo_mq": 2742,
+    "prima_vista": "2026-09-10T18:57:50.524431+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Fidia 8, Torino"
+  },
+  "30799632": {
+    "città": "Napoli",
+    "mq": 65,
+    "prezzo": 190000,
+    "prezzo_mq": 2923,
+    "prima_vista": "2026-09-10T18:58:11.683447+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Pasquale Leonardi Cattolica, Napoli"
   }
 }
