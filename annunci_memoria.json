@@ -4363,5 +4363,41 @@
     "prima_vista": "2026-09-10T03:11:03.474469+00:00",
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Corso Rosselli 73, Torino"
+  },
+  "30794418": {
+    "città": "Roma",
+    "mq": 108,
+    "prezzo": 360000,
+    "prezzo_mq": 3333,
+    "prima_vista": "2026-09-10T08:39:55.353885+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Appia Nuova, Roma"
+  },
+  "30794511": {
+    "città": "Milano",
+    "mq": 55,
+    "prezzo": 279000,
+    "prezzo_mq": 5073,
+    "prima_vista": "2026-09-10T08:39:39.929278+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Veglia 7, Milano"
+  },
+  "30794550": {
+    "città": "Roma",
+    "mq": 130,
+    "prezzo": 449000,
+    "prezzo_mq": 3454,
+    "prima_vista": "2026-09-10T08:39:53.684763+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Albano, Roma"
+  },
+  "30794844": {
+    "città": "Torino",
+    "mq": 90,
+    "prezzo": 189000,
+    "prezzo_mq": 2100,
+    "prima_vista": "2026-09-10T08:40:13.647260+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Corso Sebastopoli 310, Torino"
   }
 }
