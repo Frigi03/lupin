@@ -4724,6 +4724,15 @@
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Via Pasquale Leonardi Cattolica, Napoli"
   },
+  "30803064": {
+    "città": "Milano",
+    "mq": 42,
+    "prezzo": 120000,
+    "prezzo_mq": 2857,
+    "prima_vista": "2026-09-11T18:59:12.677800+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Monteoliveto 13, Milano"
+  },
   "30803070": {
     "città": "Firenze",
     "mq": 68,
@@ -4732,6 +4741,33 @@
     "prima_vista": "2026-09-11T03:10:24.367748+00:00",
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via San Bartolo 1, Firenze"
+  },
+  "30803094": {
+    "città": "Milano",
+    "mq": 70,
+    "prezzo": 419000,
+    "prezzo_mq": 5986,
+    "prima_vista": "2026-09-11T18:59:10.858561+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Lorenteggio 38, Milano"
+  },
+  "30803787": {
+    "città": "Milano",
+    "mq": 28,
+    "prezzo": 440000,
+    "prezzo_mq": 15714,
+    "prima_vista": "2026-09-11T18:59:09.031552+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Giampietro Lucini 4, Milano"
+  },
+  "30805236": {
+    "città": "Milano",
+    "mq": 38,
+    "prezzo": 220000,
+    "prezzo_mq": 5789,
+    "prima_vista": "2026-09-11T18:59:07.258749+00:00",
+    "sotto_media": false,
+    "titolo": "Monolocale in Vendita, Via Ferrante Aporti 12, Milano"
   },
   "30805263": {
     "città": "Napoli",
@@ -4742,6 +4778,15 @@
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Via Piscinola 13, Napoli"
   },
+  "30805341": {
+    "città": "Milano",
+    "mq": 40,
+    "prezzo": 275000,
+    "prezzo_mq": 6875,
+    "prima_vista": "2026-09-11T18:59:05.498466+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Ferrante Aporti 12, Milano"
+  },
   "30807345": {
     "città": "Torino",
     "mq": 39,
@@ -4750,5 +4795,104 @@
     "prima_vista": "2026-09-11T14:06:51.375706+00:00",
     "sotto_media": false,
     "titolo": "Monolocale in Vendita, Via Corte d'Appello, Torino"
+  },
+  "30808065": {
+    "città": "Milano",
+    "mq": 50,
+    "prezzo": 335000,
+    "prezzo_mq": 6700,
+    "prima_vista": "2026-09-11T18:59:03.683791+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Padova 167, Milano"
+  },
+  "30808428": {
+    "città": "Milano",
+    "mq": 40,
+    "prezzo": 257000,
+    "prezzo_mq": 6425,
+    "prima_vista": "2026-09-11T18:59:01.904214+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Marco Aurelio 64, Milano"
+  },
+  "30808431": {
+    "città": "Torino",
+    "mq": 63,
+    "prezzo": 159000,
+    "prezzo_mq": 2524,
+    "prima_vista": "2026-09-11T18:59:51.047224+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Quincinetto 33/5, Torino"
+  },
+  "30808797": {
+    "città": "Roma",
+    "mq": 106,
+    "prezzo": 329000,
+    "prezzo_mq": 3104,
+    "prima_vista": "2026-09-11T18:59:28.711644+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Rocca di Papa, Roma"
+  },
+  "30809124": {
+    "città": "Torino",
+    "mq": 50,
+    "prezzo": 89000,
+    "prezzo_mq": 1780,
+    "prima_vista": "2026-09-11T18:59:49.276457+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Corso Potenza 123/B, Torino"
+  },
+  "30809232": {
+    "città": "Torino",
+    "mq": 58,
+    "prezzo": 155000,
+    "prezzo_mq": 2672,
+    "prima_vista": "2026-09-11T18:59:47.455751+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Corso Regina Margherita 220, Torino"
+  },
+  "30809373": {
+    "città": "Torino",
+    "mq": 66,
+    "prezzo": 149000,
+    "prezzo_mq": 2258,
+    "prima_vista": "2026-09-11T18:59:45.671069+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Asiago 24/a, Torino"
+  },
+  "30809649": {
+    "città": "Milano",
+    "mq": 55,
+    "prezzo": 229000,
+    "prezzo_mq": 4164,
+    "prima_vista": "2026-09-11T18:59:00.110001+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Mamiani 4, Milano"
+  },
+  "30809955": {
+    "città": "Roma",
+    "mq": 85,
+    "prezzo": 379000,
+    "prezzo_mq": 4459,
+    "prima_vista": "2026-09-11T18:59:26.925832+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Alberto Litta Modignani 32, Roma"
+  },
+  "30810033": {
+    "città": "Torino",
+    "mq": 54,
+    "prezzo": 179000,
+    "prezzo_mq": 3315,
+    "prima_vista": "2026-09-11T18:59:43.906537+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Valperga Caluso 1, Torino"
+  },
+  "30810396": {
+    "città": "Napoli",
+    "mq": 68,
+    "prezzo": 235000,
+    "prezzo_mq": 3456,
+    "prima_vista": "2026-09-11T19:00:08.890678+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Napoli"
   }
 }
