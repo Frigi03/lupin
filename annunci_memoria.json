@@ -4732,5 +4732,23 @@
     "prima_vista": "2026-09-11T03:10:24.367748+00:00",
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via San Bartolo 1, Firenze"
+  },
+  "30805263": {
+    "città": "Napoli",
+    "mq": 105,
+    "prezzo": 129000,
+    "prezzo_mq": 1229,
+    "prima_vista": "2026-09-11T14:07:05.870080+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Piscinola 13, Napoli"
+  },
+  "30807345": {
+    "città": "Torino",
+    "mq": 39,
+    "prezzo": 135000,
+    "prezzo_mq": 3462,
+    "prima_vista": "2026-09-11T14:06:51.375706+00:00",
+    "sotto_media": false,
+    "titolo": "Monolocale in Vendita, Via Corte d'Appello, Torino"
   }
 }
