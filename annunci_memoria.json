@@ -4894,5 +4894,41 @@
     "prima_vista": "2026-09-11T19:00:08.890678+00:00",
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Napoli"
+  },
+  "30814713": {
+    "città": "Napoli",
+    "mq": 80,
+    "prezzo": 295000,
+    "prezzo_mq": 3688,
+    "prima_vista": "2026-09-12T13:24:50.331433+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Piazza Gabriele d'Annunzio, Napoli"
+  },
+  "30814908": {
+    "città": "Napoli",
+    "mq": 130,
+    "prezzo": 395000,
+    "prezzo_mq": 3038,
+    "prima_vista": "2026-09-12T13:24:48.483721+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Michele Guadagno, Napoli"
+  },
+  "30815433": {
+    "città": "Roma",
+    "mq": 40,
+    "prezzo": 139000,
+    "prezzo_mq": 3475,
+    "prima_vista": "2026-09-12T13:22:58.002578+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Perugia, Roma"
+  },
+  "30815466": {
+    "città": "Roma",
+    "mq": 116,
+    "prezzo": 329000,
+    "prezzo_mq": 2836,
+    "prima_vista": "2026-09-12T13:22:56.092434+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Casilina, Roma"
   }
 }
