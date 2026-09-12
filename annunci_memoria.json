@@ -4904,6 +4904,15 @@
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Piazza Gabriele d'Annunzio, Napoli"
   },
+  "30814761": {
+    "città": "Bologna",
+    "mq": 148,
+    "prezzo": 480000,
+    "prezzo_mq": 3243,
+    "prima_vista": "2026-09-12T16:46:51.014996+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Fondazza, Bologna"
+  },
   "30814908": {
     "città": "Napoli",
     "mq": 130,
@@ -4912,6 +4921,15 @@
     "prima_vista": "2026-09-12T13:24:48.483721+00:00",
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Michele Guadagno, Napoli"
+  },
+  "30815109": {
+    "città": "Milano",
+    "mq": 42,
+    "prezzo": 315000,
+    "prezzo_mq": 7500,
+    "prima_vista": "2026-09-12T16:45:54.463039+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Corsico 9, Milano"
   },
   "30815433": {
     "città": "Roma",
@@ -4930,5 +4948,14 @@
     "prima_vista": "2026-09-12T13:22:56.092434+00:00",
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Via Casilina, Roma"
+  },
+  "30816399": {
+    "città": "Torino",
+    "mq": 60,
+    "prezzo": 89000,
+    "prezzo_mq": 1483,
+    "prima_vista": "2026-09-12T16:46:24.824987+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Onorato Vigliani 217, Torino"
   }
 }
