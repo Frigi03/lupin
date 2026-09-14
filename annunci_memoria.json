@@ -2033,6 +2033,15 @@
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Via Privata Luigi Borgomainerio 14, Milano"
   },
+  "30704988": {
+    "città": "Bologna",
+    "mq": 240,
+    "prezzo": 618000,
+    "prezzo_mq": 2575,
+    "prima_vista": "2026-09-14T16:13:49.375488+00:00",
+    "sotto_media": true,
+    "titolo": "Villa a schiera in Vendita, Bologna"
+  },
   "30705315": {
     "città": "Milano",
     "mq": 70,
@@ -4787,6 +4796,15 @@
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Ferrante Aporti 12, Milano"
   },
+  "30807198": {
+    "città": "Torino",
+    "mq": 79,
+    "prezzo": 139000,
+    "prezzo_mq": 1759,
+    "prima_vista": "2026-09-14T16:13:17.190975+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Omegna 10/Sx, Torino"
+  },
   "30807345": {
     "città": "Torino",
     "mq": 39,
@@ -4993,5 +5011,50 @@
     "prima_vista": "2026-09-14T09:36:15.681927+00:00",
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Via Dardanelli, Roma"
+  },
+  "30819723": {
+    "città": "Torino",
+    "mq": 190,
+    "prezzo": 879000,
+    "prezzo_mq": 4626,
+    "prima_vista": "2026-09-14T16:13:15.556568+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Monte di Pietà 8, Torino"
+  },
+  "30820074": {
+    "città": "Napoli",
+    "mq": 125,
+    "prezzo": 550000,
+    "prezzo_mq": 4400,
+    "prima_vista": "2026-09-14T16:13:33.525145+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Riviera di Chiaia 114, Napoli"
+  },
+  "30820197": {
+    "città": "Napoli",
+    "mq": 105,
+    "prezzo": 230000,
+    "prezzo_mq": 2190,
+    "prima_vista": "2026-09-14T16:13:31.863696+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Napoli"
+  },
+  "30821499": {
+    "città": "Torino",
+    "mq": 75,
+    "prezzo": 64900,
+    "prezzo_mq": 865,
+    "prima_vista": "2026-09-14T16:13:13.885666+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Ozegna 2, Torino"
+  },
+  "30821916": {
+    "città": "Torino",
+    "mq": 60,
+    "prezzo": 139000,
+    "prezzo_mq": 2317,
+    "prima_vista": "2026-09-14T16:13:12.207548+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Buenos Aires 70, Torino"
   }
 }
