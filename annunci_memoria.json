@@ -4796,6 +4796,15 @@
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Ferrante Aporti 12, Milano"
   },
+  "30806652": {
+    "città": "Milano",
+    "mq": 87,
+    "prezzo": 299000,
+    "prezzo_mq": 3437,
+    "prima_vista": "2026-09-15T00:18:19.548357+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via del Turchino 3, Milano"
+  },
   "30807198": {
     "città": "Torino",
     "mq": 79,
@@ -4985,6 +4994,24 @@
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Via Fratelli Garrone 79, Torino"
   },
+  "30818889": {
+    "città": "Milano",
+    "mq": 90,
+    "prezzo": 289000,
+    "prezzo_mq": 3211,
+    "prima_vista": "2026-09-15T00:18:17.746910+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Francesco Cilea, Milano"
+  },
+  "30818913": {
+    "città": "Milano",
+    "mq": 60,
+    "prezzo": 225000,
+    "prezzo_mq": 3750,
+    "prima_vista": "2026-09-15T00:18:15.933822+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Piazza Pietro Gasparri, Milano"
+  },
   "30819072": {
     "città": "Firenze",
     "mq": 40,
@@ -5011,6 +5038,15 @@
     "prima_vista": "2026-09-14T09:36:15.681927+00:00",
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Via Dardanelli, Roma"
+  },
+  "30819519": {
+    "città": "Milano",
+    "mq": 55,
+    "prezzo": 230000,
+    "prezzo_mq": 4182,
+    "prima_vista": "2026-09-15T00:18:14.133454+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Pasteur 24, Milano"
   },
   "30819723": {
     "città": "Torino",
@@ -5047,6 +5083,33 @@
     "prima_vista": "2026-09-14T16:13:31.863696+00:00",
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Napoli"
+  },
+  "30820254": {
+    "città": "Milano",
+    "mq": 65,
+    "prezzo": 299000,
+    "prezzo_mq": 4600,
+    "prima_vista": "2026-09-15T00:18:12.318149+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Assab 15, Milano"
+  },
+  "30820467": {
+    "città": "Milano",
+    "mq": 55,
+    "prezzo": 279000,
+    "prezzo_mq": 5073,
+    "prima_vista": "2026-09-15T00:18:10.535957+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Piazzale Loreto 9, Milano"
+  },
+  "30820488": {
+    "città": "Milano",
+    "mq": 55,
+    "prezzo": 279000,
+    "prezzo_mq": 5073,
+    "prima_vista": "2026-09-15T00:18:08.694428+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Padova 26, Milano"
   },
   "30821499": {
     "città": "Torino",
