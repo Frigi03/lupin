@@ -4814,6 +4814,15 @@
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via del Turchino 3, Milano"
   },
+  "30807072": {
+    "città": "Milano",
+    "mq": 58,
+    "prezzo": 215000,
+    "prezzo_mq": 3707,
+    "prima_vista": "2026-09-15T17:56:05.451522+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Piazza Angilberto 8, Milano"
+  },
   "30807198": {
     "città": "Torino",
     "mq": 79,
@@ -5318,6 +5327,33 @@
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Viale dei Caduti nella Guerra di Liberazione 241, Roma"
   },
+  "30827538": {
+    "città": "Milano",
+    "mq": 87,
+    "prezzo": 299000,
+    "prezzo_mq": 3437,
+    "prima_vista": "2026-09-15T17:56:03.769337+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via del Turchino 3, Milano"
+  },
+  "30827613": {
+    "città": "Milano",
+    "mq": 50,
+    "prezzo": 325000,
+    "prezzo_mq": 6500,
+    "prima_vista": "2026-09-15T17:56:02.122190+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Valassina 45/V, Milano"
+  },
+  "30827760": {
+    "città": "Milano",
+    "mq": 10,
+    "prezzo": 405000,
+    "prezzo_mq": 40500,
+    "prima_vista": "2026-09-15T17:56:00.494854+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Valassina 45/V, Milano"
+  },
   "30827862": {
     "città": "Torino",
     "mq": 110,
@@ -5381,6 +5417,15 @@
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Via Ponti Rossi 112/113, Napoli"
   },
+  "30829707": {
+    "città": "Milano",
+    "mq": 100,
+    "prezzo": 410000,
+    "prezzo_mq": 4100,
+    "prima_vista": "2026-09-15T17:55:58.808775+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Piazzale Vincenzo Cuoco 4, Milano"
+  },
   "30829902": {
     "città": "Bologna",
     "mq": 132,
@@ -5399,6 +5444,15 @@
     "sotto_media": true,
     "titolo": "Appartamento in Vendita, Via Ettore Arena 201, Roma"
   },
+  "30829983": {
+    "città": "Milano",
+    "mq": 37,
+    "prezzo": 210000,
+    "prezzo_mq": 5676,
+    "prima_vista": "2026-09-15T17:55:57.174391+00:00",
+    "sotto_media": false,
+    "titolo": "Monolocale in Vendita, Via Padova 26, Milano"
+  },
   "30830106": {
     "città": "Torino",
     "mq": 42,
@@ -5407,5 +5461,77 @@
     "prima_vista": "2026-09-15T13:10:51.164387+00:00",
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Vincenzo Gioberti 80, Torino"
+  },
+  "30831591": {
+    "città": "Napoli",
+    "mq": 60,
+    "prezzo": 180000,
+    "prezzo_mq": 3000,
+    "prima_vista": "2026-09-15T17:56:49.639614+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Brigata Bologna, Napoli"
+  },
+  "30831900": {
+    "città": "Torino",
+    "mq": 56,
+    "prezzo": 69000,
+    "prezzo_mq": 1232,
+    "prima_vista": "2026-09-15T17:56:32.718969+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Foligno 108, Torino"
+  },
+  "30832086": {
+    "città": "Milano",
+    "mq": 115,
+    "prezzo": 350000,
+    "prezzo_mq": 3043,
+    "prima_vista": "2026-09-15T17:55:55.564205+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Arquà 14, Milano"
+  },
+  "30832182": {
+    "città": "Milano",
+    "mq": 135,
+    "prezzo": 290000,
+    "prezzo_mq": 2148,
+    "prima_vista": "2026-09-15T17:55:53.763480+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via F. R. Lamennais 13, Milano"
+  },
+  "30832722": {
+    "città": "Torino",
+    "mq": 50,
+    "prezzo": 152000,
+    "prezzo_mq": 3040,
+    "prima_vista": "2026-09-15T17:56:31.050069+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Giovanni Francesco Napione 27, Torino"
+  },
+  "30832902": {
+    "città": "Firenze",
+    "mq": 50,
+    "prezzo": 490000,
+    "prezzo_mq": 9800,
+    "prima_vista": "2026-09-15T17:58:42.100556+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Enrico Forlanini, Firenze"
+  },
+  "30833079": {
+    "città": "Napoli",
+    "mq": 66,
+    "prezzo": 170000,
+    "prezzo_mq": 2576,
+    "prima_vista": "2026-09-15T17:56:47.976513+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Cardinale Paolo d'Arezzo 29, Napoli"
+  },
+  "30833184": {
+    "città": "Firenze",
+    "mq": 43,
+    "prezzo": 250000,
+    "prezzo_mq": 5814,
+    "prima_vista": "2026-09-15T17:58:40.402565+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Enrico Forlanini, Firenze"
   }
 }
