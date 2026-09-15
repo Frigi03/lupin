@@ -467,6 +467,15 @@
   "30610291": {
     "prima_vista": "2026-08-07T02:42:18.613819+00:00"
   },
+  "30610684": {
+    "città": "Bologna",
+    "mq": 90,
+    "prezzo": 340000,
+    "prezzo_mq": 3778,
+    "prima_vista": "2026-09-15T13:11:36.992608+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Libia, Bologna"
+  },
   "30610777": {
     "prima_vista": "2026-08-07T02:42:18.613822+00:00"
   },
@@ -5308,5 +5317,95 @@
     "prima_vista": "2026-09-15T07:13:13.263216+00:00",
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Viale dei Caduti nella Guerra di Liberazione 241, Roma"
+  },
+  "30827862": {
+    "città": "Torino",
+    "mq": 110,
+    "prezzo": 299000,
+    "prezzo_mq": 2718,
+    "prima_vista": "2026-09-15T13:10:56.378946+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Strada Comunale di Mirafiori 34, Torino"
+  },
+  "30828279": {
+    "città": "Torino",
+    "mq": 120,
+    "prezzo": 319000,
+    "prezzo_mq": 2658,
+    "prima_vista": "2026-09-15T13:10:54.696172+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Luigi Capriolo 17, Torino"
+  },
+  "30828801": {
+    "città": "Torino",
+    "mq": 93,
+    "prezzo": 169000,
+    "prezzo_mq": 1817,
+    "prima_vista": "2026-09-15T13:10:53.050395+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Francesco De Sanctis 63, Torino"
+  },
+  "30829212": {
+    "città": "Napoli",
+    "mq": 110,
+    "prezzo": 200000,
+    "prezzo_mq": 1818,
+    "prima_vista": "2026-09-15T13:11:18.966285+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Domenico Padula, Napoli"
+  },
+  "30829254": {
+    "città": "Napoli",
+    "mq": 70,
+    "prezzo": 200000,
+    "prezzo_mq": 2857,
+    "prima_vista": "2026-09-15T13:11:17.255493+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, I Traversa Paolo della Valle, Napoli"
+  },
+  "30829332": {
+    "città": "Napoli",
+    "mq": 60,
+    "prezzo": 175000,
+    "prezzo_mq": 2917,
+    "prima_vista": "2026-09-15T13:11:15.561288+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via dell'Epomeo , Napoli"
+  },
+  "30829653": {
+    "città": "Napoli",
+    "mq": 120,
+    "prezzo": 465000,
+    "prezzo_mq": 3875,
+    "prima_vista": "2026-09-15T13:11:13.868599+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Ponti Rossi 112/113, Napoli"
+  },
+  "30829902": {
+    "città": "Bologna",
+    "mq": 132,
+    "prezzo": 470000,
+    "prezzo_mq": 3561,
+    "prima_vista": "2026-09-15T13:11:35.336426+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Piazza San Martino 1/a, Bologna"
+  },
+  "30829947": {
+    "città": "Roma",
+    "mq": 112,
+    "prezzo": 225000,
+    "prezzo_mq": 2009,
+    "prima_vista": "2026-09-15T13:10:32.980302+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Ettore Arena 201, Roma"
+  },
+  "30830106": {
+    "città": "Torino",
+    "mq": 42,
+    "prezzo": 159000,
+    "prezzo_mq": 3786,
+    "prima_vista": "2026-09-15T13:10:51.164387+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Vincenzo Gioberti 80, Torino"
   }
 }
