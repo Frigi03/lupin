@@ -5164,5 +5164,149 @@
     "prima_vista": "2026-09-14T21:34:02.530039+00:00",
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Eurialo, Napoli"
+  },
+  "30825996": {
+    "città": "Milano",
+    "mq": 185,
+    "prezzo": 1390000,
+    "prezzo_mq": 7514,
+    "prima_vista": "2026-09-15T07:12:58.167759+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Filippino Lippi 28, Milano"
+  },
+  "30826335": {
+    "città": "Roma",
+    "mq": 70,
+    "prezzo": 279000,
+    "prezzo_mq": 3986,
+    "prima_vista": "2026-09-15T07:13:16.922603+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Courmayeur 12, Roma"
+  },
+  "30826377": {
+    "città": "Milano",
+    "mq": 65,
+    "prezzo": 460000,
+    "prezzo_mq": 7077,
+    "prima_vista": "2026-09-15T07:12:56.315885+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Teodosio 13, Milano"
+  },
+  "30826380": {
+    "città": "Firenze",
+    "mq": 128,
+    "prezzo": 428000,
+    "prezzo_mq": 3344,
+    "prima_vista": "2026-09-15T07:15:53.195888+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Faenza 66, Firenze"
+  },
+  "30826383": {
+    "città": "Firenze",
+    "mq": 101,
+    "prezzo": 318000,
+    "prezzo_mq": 3149,
+    "prima_vista": "2026-09-15T07:15:51.249633+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via dei Querci 4/C, Firenze"
+  },
+  "30826389": {
+    "città": "Milano",
+    "mq": 45,
+    "prezzo": 209000,
+    "prezzo_mq": 4644,
+    "prima_vista": "2026-09-15T07:12:54.492037+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Viale Monza 154, Milano"
+  },
+  "30826398": {
+    "città": "Firenze",
+    "mq": 131,
+    "prezzo": 386000,
+    "prezzo_mq": 2947,
+    "prima_vista": "2026-09-15T07:15:49.429015+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Bernardo Pasquini 6, Firenze"
+  },
+  "30826401": {
+    "città": "Firenze",
+    "mq": 81,
+    "prezzo": 375000,
+    "prezzo_mq": 4630,
+    "prima_vista": "2026-09-15T07:15:47.599792+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Faentina 10, Firenze"
+  },
+  "30826407": {
+    "città": "Firenze",
+    "mq": 22,
+    "prezzo": 440000,
+    "prezzo_mq": 20000,
+    "prima_vista": "2026-09-15T07:15:45.734640+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Guelfa 6, Firenze"
+  },
+  "30826410": {
+    "città": "Firenze",
+    "mq": 177,
+    "prezzo": 782000,
+    "prezzo_mq": 4418,
+    "prima_vista": "2026-09-15T07:15:43.774363+00:00",
+    "sotto_media": true,
+    "titolo": "Terratetto unifamiliare in Vendita, Via Niccolò da Uzzano 83, Firenze"
+  },
+  "30826413": {
+    "città": "Firenze",
+    "mq": 144,
+    "prezzo": 356000,
+    "prezzo_mq": 2472,
+    "prima_vista": "2026-09-15T07:15:41.798981+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via a. Modigliani 212, Firenze"
+  },
+  "30826425": {
+    "città": "Roma",
+    "mq": 84,
+    "prezzo": 375000,
+    "prezzo_mq": 4464,
+    "prima_vista": "2026-09-15T07:13:15.103265+00:00",
+    "sotto_media": false,
+    "titolo": "Villa a schiera in Vendita, Via di Mezzocammino 121, Roma"
+  },
+  "30826431": {
+    "città": "Milano",
+    "mq": 60,
+    "prezzo": 299000,
+    "prezzo_mq": 4983,
+    "prima_vista": "2026-09-15T07:12:52.520773+00:00",
+    "sotto_media": true,
+    "titolo": "Monolocale in Vendita, Via Matteo Civitali 23, Milano"
+  },
+  "30826779": {
+    "città": "Torino",
+    "mq": 87,
+    "prezzo": 163000,
+    "prezzo_mq": 1874,
+    "prima_vista": "2026-09-15T07:13:32.682489+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Corso Brianza 30, Torino"
+  },
+  "30826782": {
+    "città": "Torino",
+    "mq": 65,
+    "prezzo": 139000,
+    "prezzo_mq": 2138,
+    "prima_vista": "2026-09-15T07:13:30.806782+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Corso Svizzera 153, Torino"
+  },
+  "30827019": {
+    "città": "Roma",
+    "mq": 100,
+    "prezzo": 279000,
+    "prezzo_mq": 2790,
+    "prima_vista": "2026-09-15T07:13:13.263216+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Viale dei Caduti nella Guerra di Liberazione 241, Roma"
   }
 }
