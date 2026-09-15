@@ -5462,6 +5462,24 @@
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Vincenzo Gioberti 80, Torino"
   },
+  "30830973": {
+    "città": "Bologna",
+    "mq": 46,
+    "prezzo": 185000,
+    "prezzo_mq": 4022,
+    "prima_vista": "2026-09-15T20:55:40.838051+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Pontevecchio 29, Bologna"
+  },
+  "30831348": {
+    "città": "Bologna",
+    "mq": 70,
+    "prezzo": 157000,
+    "prezzo_mq": 2243,
+    "prima_vista": "2026-09-15T20:55:39.014301+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Antonio Cavalieri Ducati, Bologna"
+  },
   "30831591": {
     "città": "Napoli",
     "mq": 60,
@@ -5533,5 +5551,14 @@
     "prima_vista": "2026-09-15T17:58:40.402565+00:00",
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Enrico Forlanini, Firenze"
+  },
+  "30833565": {
+    "città": "Napoli",
+    "mq": 108,
+    "prezzo": 320000,
+    "prezzo_mq": 2963,
+    "prima_vista": "2026-09-15T20:55:21.626254+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Antonio Beccadelli 31, Napoli"
   }
 }
