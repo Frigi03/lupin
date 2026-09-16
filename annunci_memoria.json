@@ -5183,6 +5183,15 @@
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Eurialo, Napoli"
   },
+  "30825717": {
+    "città": "Milano",
+    "mq": 65,
+    "prezzo": 380000,
+    "prezzo_mq": 5846,
+    "prima_vista": "2026-09-16T04:17:15.694475+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Mac Mahon 44, Milano"
+  },
   "30825996": {
     "città": "Milano",
     "mq": 185,
@@ -5560,5 +5569,32 @@
     "prima_vista": "2026-09-15T20:55:21.626254+00:00",
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Via Antonio Beccadelli 31, Napoli"
+  },
+  "30836571": {
+    "città": "Milano",
+    "mq": 40,
+    "prezzo": 320000,
+    "prezzo_mq": 8000,
+    "prima_vista": "2026-09-16T04:17:14.066153+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Lazzaro Palazzi 4, Milano"
+  },
+  "30836577": {
+    "città": "Milano",
+    "mq": 58,
+    "prezzo": 430000,
+    "prezzo_mq": 7414,
+    "prima_vista": "2026-09-16T04:17:12.407383+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Lazzaro Palazzi 4, Milano"
+  },
+  "30836592": {
+    "città": "Roma",
+    "mq": 82,
+    "prezzo": 259000,
+    "prezzo_mq": 3159,
+    "prima_vista": "2026-09-16T04:17:30.947604+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Roma"
   }
 }
