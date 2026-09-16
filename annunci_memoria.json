@@ -5624,6 +5624,15 @@
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Mercadante 46, Torino"
   },
+  "30840363": {
+    "città": "Roma",
+    "mq": 181,
+    "prezzo": 419000,
+    "prezzo_mq": 2315,
+    "prima_vista": "2026-09-16T20:54:07.575774+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Guido da Verona 70, Roma"
+  },
   "30840573": {
     "città": "Milano",
     "mq": 85,
@@ -5704,5 +5713,59 @@
     "prima_vista": "2026-09-16T16:12:31.502119+00:00",
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Piazza Tommaso Campanella, Torino"
+  },
+  "30843081": {
+    "città": "Napoli",
+    "mq": 34,
+    "prezzo": 148000,
+    "prezzo_mq": 4353,
+    "prima_vista": "2026-09-16T20:54:44.328003+00:00",
+    "sotto_media": false,
+    "titolo": "Monolocale in Vendita, Vico dei Carbonari 9, Napoli"
+  },
+  "30843327": {
+    "città": "Torino",
+    "mq": 70,
+    "prezzo": 159000,
+    "prezzo_mq": 2271,
+    "prima_vista": "2026-09-16T20:54:25.859020+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Pagno 3, Torino"
+  },
+  "30843360": {
+    "città": "Torino",
+    "mq": 77,
+    "prezzo": 79000,
+    "prezzo_mq": 1026,
+    "prima_vista": "2026-09-16T20:54:24.108223+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Corso Toscana 112, Torino"
+  },
+  "30843630": {
+    "città": "Milano",
+    "mq": 55,
+    "prezzo": 268000,
+    "prezzo_mq": 4873,
+    "prima_vista": "2026-09-16T20:53:47.465563+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Merano 19, Milano"
+  },
+  "30843648": {
+    "città": "Roma",
+    "mq": 53,
+    "prezzo": 259000,
+    "prezzo_mq": 4887,
+    "prima_vista": "2026-09-16T20:54:05.922138+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Roma"
+  },
+  "30843948": {
+    "città": "Napoli",
+    "mq": 45,
+    "prezzo": 175000,
+    "prezzo_mq": 3889,
+    "prima_vista": "2026-09-16T20:54:42.631114+00:00",
+    "sotto_media": false,
+    "titolo": "Monolocale in Vendita, Viale Campi Flegrei, Napoli"
   }
 }
