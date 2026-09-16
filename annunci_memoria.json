@@ -5596,5 +5596,23 @@
     "prima_vista": "2026-09-16T04:17:30.947604+00:00",
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Roma"
+  },
+  "30838413": {
+    "città": "Bologna",
+    "mq": 106,
+    "prezzo": 385000,
+    "prezzo_mq": 3632,
+    "prima_vista": "2026-09-16T10:56:41.703597+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Fondazza, Bologna"
+  },
+  "30838794": {
+    "città": "Bologna",
+    "mq": 33,
+    "prezzo": 139000,
+    "prezzo_mq": 4212,
+    "prima_vista": "2026-09-16T10:56:39.817144+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Pontevecchio 66, Bologna"
   }
 }
