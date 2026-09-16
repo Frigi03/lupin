@@ -5614,5 +5614,95 @@
     "prima_vista": "2026-09-16T10:56:39.817144+00:00",
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Pontevecchio 66, Bologna"
+  },
+  "30839616": {
+    "città": "Torino",
+    "mq": 70,
+    "prezzo": 109000,
+    "prezzo_mq": 1557,
+    "prima_vista": "2026-09-16T16:12:36.870452+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Mercadante 46, Torino"
+  },
+  "30840573": {
+    "città": "Milano",
+    "mq": 85,
+    "prezzo": 339000,
+    "prezzo_mq": 3988,
+    "prima_vista": "2026-09-16T16:10:39.665526+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Viale Monza 117, Milano"
+  },
+  "30840702": {
+    "città": "Bologna",
+    "mq": 83,
+    "prezzo": 270000,
+    "prezzo_mq": 3253,
+    "prima_vista": "2026-09-16T16:13:06.793669+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Bologna"
+  },
+  "30840762": {
+    "città": "Milano",
+    "mq": 50,
+    "prezzo": 185000,
+    "prezzo_mq": 3700,
+    "prima_vista": "2026-09-16T16:10:37.900178+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Padova 76, Milano"
+  },
+  "30841383": {
+    "città": "Milano",
+    "mq": 42,
+    "prezzo": 378000,
+    "prezzo_mq": 9000,
+    "prima_vista": "2026-09-16T16:10:36.103680+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Giovanni Battista Pergolesi 5, Milano"
+  },
+  "30841470": {
+    "città": "Torino",
+    "mq": 66,
+    "prezzo": 165000,
+    "prezzo_mq": 2500,
+    "prima_vista": "2026-09-16T16:12:35.044941+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Luigi Capriolo 11, Torino"
+  },
+  "30841569": {
+    "città": "Torino",
+    "mq": 80,
+    "prezzo": 199000,
+    "prezzo_mq": 2488,
+    "prima_vista": "2026-09-16T16:12:33.278511+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Tripoli 155, Torino"
+  },
+  "30842046": {
+    "città": "Milano",
+    "mq": 80,
+    "prezzo": 350000,
+    "prezzo_mq": 4375,
+    "prima_vista": "2026-09-16T16:10:34.324453+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Pasteur 16, Milano"
+  },
+  "30842427": {
+    "città": "Milano",
+    "mq": 88,
+    "prezzo": 349000,
+    "prezzo_mq": 3966,
+    "prima_vista": "2026-09-16T16:10:32.537476+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Chiari 3, Milano"
+  },
+  "30842721": {
+    "città": "Torino",
+    "mq": 50,
+    "prezzo": 89000,
+    "prezzo_mq": 1780,
+    "prima_vista": "2026-09-16T16:12:31.502119+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Piazza Tommaso Campanella, Torino"
   }
 }
