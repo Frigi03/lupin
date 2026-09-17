@@ -5777,6 +5777,15 @@
     "sotto_media": false,
     "titolo": "Monolocale in Vendita, Viale Campi Flegrei, Napoli"
   },
+  "30845187": {
+    "città": "Napoli",
+    "mq": 75,
+    "prezzo": 380000,
+    "prezzo_mq": 5067,
+    "prima_vista": "2026-09-17T21:02:09.541224+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Corso Umberto I 22, Napoli"
+  },
   "30846291": {
     "città": "Bologna",
     "mq": 88,
@@ -5786,6 +5795,24 @@
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via De’ Monari, Bologna"
   },
+  "30846639": {
+    "città": "Torino",
+    "mq": 80,
+    "prezzo": 185000,
+    "prezzo_mq": 2312,
+    "prima_vista": "2026-09-17T21:01:47.935823+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Corso Bramante 6, Torino"
+  },
+  "30847350": {
+    "città": "Torino",
+    "mq": 86,
+    "prezzo": 169000,
+    "prezzo_mq": 1965,
+    "prima_vista": "2026-09-17T21:01:46.296185+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Piazza Stampalia 7, Torino"
+  },
   "30847506": {
     "città": "Firenze",
     "mq": 10,
@@ -5794,6 +5821,42 @@
     "prima_vista": "2026-09-17T13:11:53.451675+00:00",
     "sotto_media": false,
     "titolo": "Monolocale in Vendita, Via Panciatichi, Firenze"
+  },
+  "30847851": {
+    "città": "Napoli",
+    "mq": 90,
+    "prezzo": 309000,
+    "prezzo_mq": 3433,
+    "prima_vista": "2026-09-17T21:02:07.887955+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via dell'Epomeo 180, Napoli"
+  },
+  "30847935": {
+    "città": "Napoli",
+    "mq": 35,
+    "prezzo": 85000,
+    "prezzo_mq": 2429,
+    "prima_vista": "2026-09-17T21:02:06.229591+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Napoli"
+  },
+  "30848481": {
+    "città": "Napoli",
+    "mq": 35,
+    "prezzo": 108000,
+    "prezzo_mq": 3086,
+    "prima_vista": "2026-09-17T21:02:04.597156+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Trinita\\' degli Spagnoli 23, Napoli"
+  },
+  "30848571": {
+    "città": "Torino",
+    "mq": 85,
+    "prezzo": 175000,
+    "prezzo_mq": 2059,
+    "prima_vista": "2026-09-17T21:01:44.640212+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Bussoleno 34, Torino"
   },
   "30849390": {
     "città": "Milano",
@@ -6029,6 +6092,33 @@
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Via Crespi 11, Milano"
   },
+  "30850671": {
+    "città": "Napoli",
+    "mq": 70,
+    "prezzo": 225000,
+    "prezzo_mq": 3214,
+    "prima_vista": "2026-09-17T21:02:02.942378+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Piazzetta Solofrano 6, Napoli"
+  },
+  "30850746": {
+    "città": "Torino",
+    "mq": 75,
+    "prezzo": 135000,
+    "prezzo_mq": 1800,
+    "prima_vista": "2026-09-17T21:01:43.014293+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Carlo Capelli 38, Torino"
+  },
+  "30850818": {
+    "città": "Torino",
+    "mq": 90,
+    "prezzo": 220000,
+    "prezzo_mq": 2444,
+    "prima_vista": "2026-09-17T21:01:41.341474+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Corso Sebastopoli 297, Torino"
+  },
   "30851355": {
     "città": "Firenze",
     "mq": 55,
@@ -6046,5 +6136,14 @@
     "prima_vista": "2026-09-17T18:01:53.841849+00:00",
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via Giuseppe Albini 13, Bologna"
+  },
+  "30852789": {
+    "città": "Milano",
+    "mq": 94,
+    "prezzo": 820000,
+    "prezzo_mq": 8723,
+    "prima_vista": "2026-09-17T20:59:45.389738+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Archimede 121, Milano"
   }
 }
