@@ -4985,6 +4985,15 @@
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Via Perugia, Roma"
   },
+  "30815463": {
+    "città": "Roma",
+    "mq": 110,
+    "prezzo": 470000,
+    "prezzo_mq": 4273,
+    "prima_vista": "2026-09-18T14:08:15.768605+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Viale Tito Labieno 15, Roma"
+  },
   "30815466": {
     "città": "Roma",
     "mq": 116,
@@ -6029,6 +6038,15 @@
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Via Vico Magistretti 3, Milano"
   },
+  "30849918": {
+    "città": "Roma",
+    "mq": 110,
+    "prezzo": 319000,
+    "prezzo_mq": 2900,
+    "prima_vista": "2026-09-18T14:08:14.060294+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Luigi Piccinato 4, Roma"
+  },
   "30849945": {
     "città": "Milano",
     "mq": 125,
@@ -6145,5 +6163,14 @@
     "prima_vista": "2026-09-17T20:59:45.389738+00:00",
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via Archimede 121, Milano"
+  },
+  "30858213": {
+    "città": "Roma",
+    "mq": 141,
+    "prezzo": 700000,
+    "prezzo_mq": 4965,
+    "prima_vista": "2026-09-18T14:08:12.333763+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Onorio 2, Roma"
   }
 }
