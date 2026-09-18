@@ -5390,6 +5390,15 @@
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Via Luigi Capriolo 17, Torino"
   },
+  "30828318": {
+    "città": "Torino",
+    "mq": 80,
+    "prezzo": 175000,
+    "prezzo_mq": 2188,
+    "prima_vista": "2026-09-18T18:56:28.705685+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Corso Orbassano 207, Torino"
+  },
   "30828801": {
     "città": "Torino",
     "mq": 93,
@@ -6164,6 +6173,78 @@
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via Archimede 121, Milano"
   },
+  "30853884": {
+    "città": "Bologna",
+    "mq": 93,
+    "prezzo": 259000,
+    "prezzo_mq": 2785,
+    "prima_vista": "2026-09-18T18:57:08.102672+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Vasco De Gama 3, Bologna"
+  },
+  "30855297": {
+    "città": "Torino",
+    "mq": 39,
+    "prezzo": 69900,
+    "prezzo_mq": 1792,
+    "prima_vista": "2026-09-18T18:56:26.803854+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Luigi Salvatore Cherubini 55, Torino"
+  },
+  "30855384": {
+    "città": "Bologna",
+    "mq": 55,
+    "prezzo": 169000,
+    "prezzo_mq": 3073,
+    "prima_vista": "2026-09-18T18:57:06.281079+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Normandia, Bologna"
+  },
+  "30855927": {
+    "città": "Torino",
+    "mq": 81,
+    "prezzo": 169000,
+    "prezzo_mq": 2086,
+    "prima_vista": "2026-09-18T18:56:24.974869+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Corso Peschiera 335, Torino"
+  },
+  "30856065": {
+    "città": "Torino",
+    "mq": 53,
+    "prezzo": 389000,
+    "prezzo_mq": 7340,
+    "prima_vista": "2026-09-18T18:56:23.128316+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via degli Stampatori, Torino"
+  },
+  "30856737": {
+    "città": "Torino",
+    "mq": 51,
+    "prezzo": 135000,
+    "prezzo_mq": 2647,
+    "prima_vista": "2026-09-18T18:56:21.278005+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Ludovico Bellardi 13/B, Torino"
+  },
+  "30857187": {
+    "città": "Torino",
+    "mq": 80,
+    "prezzo": 134000,
+    "prezzo_mq": 1675,
+    "prima_vista": "2026-09-18T18:56:19.442727+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Corso Traiano 158, Torino"
+  },
+  "30857415": {
+    "città": "Torino",
+    "mq": 65,
+    "prezzo": 94000,
+    "prezzo_mq": 1446,
+    "prima_vista": "2026-09-18T18:56:17.572636+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Sette Comuni 86, Torino"
+  },
   "30858213": {
     "città": "Roma",
     "mq": 141,
@@ -6172,5 +6253,77 @@
     "prima_vista": "2026-09-18T14:08:12.333763+00:00",
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Via Onorio 2, Roma"
+  },
+  "30859038": {
+    "città": "Torino",
+    "mq": 60,
+    "prezzo": 69000,
+    "prezzo_mq": 1150,
+    "prima_vista": "2026-09-18T18:56:15.669318+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Camillo Riccio 45, Torino"
+  },
+  "30859353": {
+    "città": "Firenze",
+    "mq": 203,
+    "prezzo": 990000,
+    "prezzo_mq": 4877,
+    "prima_vista": "2026-09-18T18:57:22.778727+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Pietro Toselli, Firenze"
+  },
+  "30859461": {
+    "città": "Napoli",
+    "mq": 85,
+    "prezzo": 110000,
+    "prezzo_mq": 1294,
+    "prima_vista": "2026-09-18T18:56:47.235807+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Luigi Martucci 50, Napoli"
+  },
+  "30859488": {
+    "città": "Torino",
+    "mq": 105,
+    "prezzo": 179000,
+    "prezzo_mq": 1705,
+    "prima_vista": "2026-09-18T18:56:13.795286+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Corso Toscana 110, Torino"
+  },
+  "30859578": {
+    "città": "Napoli",
+    "mq": 88,
+    "prezzo": 350000,
+    "prezzo_mq": 3977,
+    "prima_vista": "2026-09-18T18:56:45.289954+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Viale Colli Aminei 279, Napoli"
+  },
+  "30860046": {
+    "città": "Torino",
+    "mq": 50,
+    "prezzo": 54900,
+    "prezzo_mq": 1098,
+    "prima_vista": "2026-09-18T18:56:11.876747+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Corso Giulio Cesare 120, Torino"
+  },
+  "30860493": {
+    "città": "Bologna",
+    "mq": 180,
+    "prezzo": 580000,
+    "prezzo_mq": 3222,
+    "prima_vista": "2026-09-18T18:57:04.392954+00:00",
+    "sotto_media": false,
+    "titolo": "Villa a schiera in Vendita, Bologna"
+  },
+  "30860796": {
+    "città": "Napoli",
+    "mq": 125,
+    "prezzo": 800000,
+    "prezzo_mq": 6400,
+    "prima_vista": "2026-09-18T18:56:43.442614+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Mattia Preti 4/d, Napoli"
   }
 }
