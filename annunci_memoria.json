@@ -6299,6 +6299,15 @@
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Viale Colli Aminei 279, Napoli"
   },
+  "30860043": {
+    "città": "Roma",
+    "mq": 75,
+    "prezzo": 210000,
+    "prezzo_mq": 2800,
+    "prima_vista": "2026-09-18T22:20:17.966009+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via del Monferrato, Monte dell'Ara-Valle Santa, Roma"
+  },
   "30860046": {
     "città": "Torino",
     "mq": 50,
@@ -6325,5 +6334,23 @@
     "prima_vista": "2026-09-18T18:56:43.442614+00:00",
     "sotto_media": false,
     "titolo": "Quadrilocale in Vendita, Via Mattia Preti 4/d, Napoli"
+  },
+  "30861366": {
+    "città": "Napoli",
+    "mq": 44,
+    "prezzo": 90000,
+    "prezzo_mq": 2045,
+    "prima_vista": "2026-09-18T22:22:12.135530+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Napoli"
+  },
+  "30861384": {
+    "città": "Napoli",
+    "mq": 240,
+    "prezzo": null,
+    "prezzo_mq": null,
+    "prima_vista": "2026-09-18T22:22:10.233708+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Napoli"
   }
 }
