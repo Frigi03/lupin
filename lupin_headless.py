@@ -18,6 +18,8 @@ Opzionali:
   DRY_RUN=1        → nessun invio Telegram reale
   AI_OFF=1         → disattiva la valutazione AI
   SOGLIA_SCORE=7   → notifica solo annunci con punteggio >= 7 (default 0 = tutti)
+  TEST_AI=3        → valuta 3 annunci già noti per città e stampa i punteggi nei log,
+                     senza notificare né toccare la memoria (serve solo a verificare l'AI)
 """
 
 import os
@@ -41,6 +43,7 @@ DRY_RUN = os.environ.get("DRY_RUN", "0") == "1"
 AI_OFF = os.environ.get("AI_OFF", "0") == "1"
 SOGLIA_SCORE = int(os.environ.get("SOGLIA_SCORE", "0"))  # 0 = notifica tutto
 MAX_CHIAMATE_AI = int(os.environ.get("MAX_CHIAMATE_AI", "60"))  # tetto costi per run
+TEST_AI = int(os.environ.get("TEST_AI", "0"))  # >0 = valuta N annunci già noti per città (solo test)
 MODELLO_AI = os.environ.get("MODELLO_AI", "claude-haiku-4-5-20251001")
 
 MIN_PREZZO = 40_000
@@ -338,11 +341,31 @@ def missione(citta: dict, memoria: dict) -> tuple[int, dict]:
         page = context.new_page()
 
         try:
-            page.goto(url, wait_until="networkidle", timeout=90_000)
-            page.wait_for_timeout(random.randint(2500, 4500))
+            # domcontentloaded + attesa esplicita degli annunci:
+            # networkidle su Wikicasa non arriva mai (script sempre attivi) → timeout
+            page.goto(url, wait_until="domcontentloaded", timeout=60_000)
+            try:
+                page.wait_for_selector(
+                    "article[data-cy='real-estate-insertion']", timeout=30_000
+                )
+            except PlaywrightTimeout:
+                log.error("  Nessun annuncio caricato su %s (selettore assente)", nome)
+                return inviati, aggiornamenti
+            page.wait_for_timeout(random.randint(1500, 3000))
 
             annunci = estrai_annunci(page)
             log.info("  %d annunci trovati", len(annunci))
+
+            # Modalità test AI: valuta annunci già in memoria solo per verificare
+            # che l'integrazione funzioni. Non notifica e non modifica la memoria.
+            if TEST_AI:
+                for a in annunci[:TEST_AI]:
+                    v = valuta_con_ai(a, nome, media_zona)
+                    if v:
+                        log.info("  [TEST AI] %d/10 – %s | %s",
+                                 v["score"], v["motivo"], a["titolo"][:50])
+                    else:
+                        log.warning("  [TEST AI] nessuna valutazione per %s", a["id"])
 
             for a in annunci:
                 if a["id"] in memoria:
