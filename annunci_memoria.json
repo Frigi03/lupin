@@ -6485,6 +6485,28 @@
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Viale Marche 40, Milano"
   },
+  "30864576": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 36% sotto media Milano. Monolocale compatto a prezzo vantaggioso.",
+    "mq": 30,
+    "prezzo": 115000,
+    "prezzo_mq": 3833,
+    "prima_vista": "2026-09-19T20:05:30.032709+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Monolocale in Vendita, Via Giorgio Stephenson 20, Milano"
+  },
+  "30864684": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 55% sotto media: segnali di rischio, verifica condizioni immobile",
+    "mq": 50,
+    "prezzo": 135000,
+    "prezzo_mq": 2700,
+    "prima_vista": "2026-09-19T20:05:27.106724+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Michele Lessona, Milano"
+  },
   "30864759": {
     "città": "Napoli",
     "motivo_ai": "Prezzo/mq 56% sotto media zona, annuncio sospetto o dati incompleti.",
@@ -6495,5 +6517,16 @@
     "score": 2,
     "sotto_media": true,
     "titolo": "Appartamento in Vendita, Via Bartolomeo Chioccarelli 44, Napoli"
+  },
+  "30865251": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 14% sopra media zona, monolocale piccolo ma posizionato decentemente.",
+    "mq": 44,
+    "prezzo": 119000,
+    "prezzo_mq": 2705,
+    "prima_vista": "2026-09-19T20:07:42.289025+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Monolocale in Vendita, Via Vignale 7, Torino"
   }
 }
