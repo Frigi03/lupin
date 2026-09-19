@@ -6429,5 +6429,16 @@
     "prima_vista": "2026-09-18T22:22:10.233708+00:00",
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Napoli"
+  },
+  "30861888": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo/mq 46% sotto media Roma. Sospetto annuncio obsoleto, dati inaccurati o proprietà con problemi.",
+    "mq": 105,
+    "prezzo": 240000,
+    "prezzo_mq": 2286,
+    "prima_vista": "2026-09-19T03:15:18.525656+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Frascineto 13, Roma"
   }
 }
