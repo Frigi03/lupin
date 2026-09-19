@@ -367,11 +367,24 @@ def diagnostica(page, nome: str) -> None:
     log.error("  [DIAG %s] body: %s", nome, testo)
 
 
+def attendi_annunci(page, timeout_ms: int) -> bool:
+    try:
+        page.wait_for_selector(SELETTORE_ANNUNCI, timeout=timeout_ms)
+        return True
+    except PlaywrightTimeout:
+        return False
+
+
 def apri_lista(page, url: str, nome: str) -> bool:
-    """Apre la pagina citta' e aspetta gli annunci. Due tentativi, poi diagnostica.
+    """Apre la pagina citta' e aspetta gli annunci.
 
     networkidle su Wikicasa non arriva mai (script sempre attivi) -> usiamo
     domcontentloaded + attesa esplicita del selettore degli annunci.
+
+    Ordine importante: prima si aspetta il selettore cosi' com'e' (percorso
+    veloce, quello che gia' funzionava). I rimedi - banner cookie, scroll -
+    partono SOLO se gli annunci non sono comparsi, per non disturbare le
+    pagine che caricano normalmente.
     """
     for tentativo in (1, 2):
         try:
@@ -380,22 +393,26 @@ def apri_lista(page, url: str, nome: str) -> bool:
             log.warning("  Tentativo %d: timeout nel caricamento di %s", tentativo, nome)
             continue
 
-        chiudi_consenso(page)
+        # 1) percorso veloce
+        if attendi_annunci(page, 15_000):
+            page.wait_for_timeout(random.randint(1200, 2500))
+            return True
 
-        # Alcune liste montano gli annunci solo dopo uno scroll
+        # 2) rimedi, solo se serve
+        log.info("  %s: annunci non visibili, provo banner cookie e scroll", nome)
+        chiudi_consenso(page)
         try:
             page.mouse.wheel(0, 1200)
         except Exception:
             pass
 
-        try:
-            page.wait_for_selector(SELETTORE_ANNUNCI, timeout=25_000)
+        if attendi_annunci(page, 20_000):
             page.wait_for_timeout(random.randint(1200, 2500))
             return True
-        except PlaywrightTimeout:
-            log.warning("  Tentativo %d: annunci non comparsi su %s", tentativo, nome)
-            if tentativo == 1:
-                page.wait_for_timeout(random.randint(3000, 6000))
+
+        log.warning("  Tentativo %d fallito su %s", tentativo, nome)
+        if tentativo == 1:
+            page.wait_for_timeout(random.randint(3000, 6000))
 
     diagnostica(page, nome)
     log.error("  Nessun annuncio caricato su %s", nome)
