@@ -13,6 +13,10 @@ on:
         description: 'Notifica solo annunci con punteggio AI >= questo valore (0 = tutti)'
         type: string
         default: '0'
+      test_ai:
+        description: 'Test AI: valuta N annunci già noti per città e stampa i punteggi nei log (0 = off)'
+        type: string
+        default: '0'
 
 permissions:
   contents: write
@@ -24,10 +28,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'
 
@@ -43,6 +47,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           DRY_RUN: ${{ github.event.inputs.dry_run || '0' }}
           SOGLIA_SCORE: ${{ github.event.inputs.soglia_score || '0' }}
+          TEST_AI: ${{ github.event.inputs.test_ai || '0' }}
           MAX_CHIAMATE_AI: '60'
         run: python lupin_headless.py
 
