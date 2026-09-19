@@ -1,19 +1,23 @@
 #!/usr/bin/env python3
 """
 Lupin – Scraper annunci Wikicasa → Telegram
-Versione con arricchimento dati (2026-08)
+Versione con valutazione AI (2026-09)
 
-Novità rispetto alla versione base:
-- Estrazione superficie (mq) dal testo dell'annuncio
-- Calcolo prezzo/mq
-- Giorni online: tracciati dalla prima volta che l'annuncio viene visto da Lupin
-  (proxy affidabile, perché Wikicasa non espone sempre la data di pubblicazione reale)
-- Confronto con la media prezzo/mq di zona (calcolata sugli annunci già in memoria
-  per la stessa città) → flag "sotto media" / "sopra media"
-- Memoria passata da lista di ID (.txt) a JSON strutturato, per conservare
-  prezzo, mq, prezzo/mq, città e data di prima vista di ogni annuncio
+Novità rispetto alla versione con arricchimento dati:
+- Valutazione LLM di ogni nuovo annuncio: punteggio 1-10 + motivazione breve
+  ("occasione", "prezzo giusto", "sopravvalutato", ecc.)
+- Il punteggio viene salvato in memoria insieme agli altri dati
+- Filtro opzionale: notifica solo annunci con punteggio >= SOGLIA_SCORE
+- Tetto massimo di chiamate AI per run (controllo costi)
+- Se manca la API key o l'AI fallisce, lo script continua a funzionare
+  esattamente come prima (fallback silenzioso)
 
-Il resto (Playwright, GitHub Actions, Telegram, DRY_RUN) resta invariato.
+Variabili d'ambiente richieste (GitHub Secrets):
+  TELEGRAM_TOKEN, TELEGRAM_CHAT_ID, ANTHROPIC_API_KEY
+Opzionali:
+  DRY_RUN=1        → nessun invio Telegram reale
+  AI_OFF=1         → disattiva la valutazione AI
+  SOGLIA_SCORE=7   → notifica solo annunci con punteggio >= 7 (default 0 = tutti)
 """
 
 import os
@@ -31,11 +35,17 @@ from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeo
 
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
-FILE_MEMORIA = Path("annunci_memoria.json")  # sostituisce annunci_inviati.txt
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+FILE_MEMORIA = Path("annunci_memoria.json")
 DRY_RUN = os.environ.get("DRY_RUN", "0") == "1"
+AI_OFF = os.environ.get("AI_OFF", "0") == "1"
+SOGLIA_SCORE = int(os.environ.get("SOGLIA_SCORE", "0"))  # 0 = notifica tutto
+MAX_CHIAMATE_AI = int(os.environ.get("MAX_CHIAMATE_AI", "60"))  # tetto costi per run
+MODELLO_AI = os.environ.get("MODELLO_AI", "claude-haiku-4-5-20251001")
+
 MIN_PREZZO = 40_000
 MAX_PREZZO = 2_500_000
-SOGLIA_SOTTO_MEDIA = 0.10  # 10% sotto la media di zona → segnalato come "occasione"
+SOGLIA_SOTTO_MEDIA = 0.10
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -58,9 +68,12 @@ logging.basicConfig(
 )
 log = logging.getLogger("lupin")
 
+# Contatore globale delle chiamate AI fatte in questo run
+_chiamate_ai = 0
+
 
 # ---------------------------------------------------------------------------
-# Memoria (ora JSON: id -> dati arricchiti)
+# Memoria (JSON: id -> dati arricchiti)
 # ---------------------------------------------------------------------------
 
 def carica_memoria() -> dict:
@@ -124,6 +137,100 @@ def invia_telegram(testo: str) -> bool:
 
 
 # ---------------------------------------------------------------------------
+# Valutazione AI
+# ---------------------------------------------------------------------------
+
+PROMPT_SISTEMA = (
+    "Sei un analista immobiliare italiano. Ricevi i dati grezzi di un annuncio "
+    "di vendita e lo valuti come farebbe un investitore esperto che cerca affari.\n"
+    "Assegna un punteggio da 1 a 10:\n"
+    "  9-10 = occasione rara, prezzo nettamente sotto mercato\n"
+    "  7-8  = buon affare, merita una visita\n"
+    "  5-6  = prezzo in linea col mercato, nulla di speciale\n"
+    "  3-4  = sopravvalutato o dati poco chiari\n"
+    "  1-2  = da evitare o annuncio sospetto\n"
+    "Considera: prezzo/mq rispetto alla media di zona, dimensione, "
+    "indizi nel titolo (da ristrutturare, asta, nuda proprietà, piano terra, "
+    "seminterrato, zona). Se mancano dati chiave (prezzo o mq), abbassa il punteggio "
+    "e segnalalo.\n"
+    "Rispondi SOLO con JSON valido, nessun altro testo:\n"
+    '{"score": <int 1-10>, "motivo": "<max 15 parole in italiano>"}'
+)
+
+
+def valuta_con_ai(annuncio: dict, citta: str, media_zona: float | None) -> dict | None:
+    """Chiede all'LLM un punteggio 1-10 + motivazione. Ritorna None se non disponibile."""
+    global _chiamate_ai
+
+    if AI_OFF or not ANTHROPIC_API_KEY:
+        return None
+    if _chiamate_ai >= MAX_CHIAMATE_AI:
+        return None
+
+    dati = [
+        f"Città: {citta}",
+        f"Titolo: {annuncio.get('titolo') or 'n/d'}",
+        f"Prezzo: {annuncio.get('prezzo') or 'n/d'} €",
+        f"Superficie: {annuncio.get('mq') or 'n/d'} mq",
+        f"Prezzo/mq: {annuncio.get('prezzo_mq') or 'n/d'} €/mq",
+    ]
+    if media_zona:
+        dati.append(f"Media prezzo/mq in città (dati Lupin): {media_zona} €/mq")
+    else:
+        dati.append("Media di zona: non ancora disponibile")
+
+    try:
+        _chiamate_ai += 1
+        r = requests.post(
+            "https://api.anthropic.com/v1/messages",
+            headers={
+                "x-api-key": ANTHROPIC_API_KEY,
+                "anthropic-version": "2023-06-01",
+                "content-type": "application/json",
+            },
+            json={
+                "model": MODELLO_AI,
+                "max_tokens": 150,
+                "system": PROMPT_SISTEMA,
+                "messages": [{"role": "user", "content": "\n".join(dati)}],
+            },
+            timeout=30,
+        )
+        if r.status_code != 200:
+            log.warning("    AI HTTP %s → %s", r.status_code, r.text[:160])
+            return None
+
+        testo = r.json()["content"][0]["text"].strip()
+        # Il modello a volte incapsula il JSON in un blocco markdown: lo ripuliamo
+        m = re.search(r"\{.*\}", testo, re.DOTALL)
+        if not m:
+            log.warning("    AI: risposta non interpretabile")
+            return None
+
+        parsed = json.loads(m.group(0))
+        score = int(parsed.get("score", 0))
+        motivo = str(parsed.get("motivo", "")).strip()
+        if not 1 <= score <= 10:
+            return None
+        return {"score": score, "motivo": motivo[:120]}
+
+    except Exception as e:
+        log.warning("    AI errore: %s", e)
+        return None
+
+
+def barra_score(score: int) -> str:
+    """Rappresentazione visiva del punteggio per Telegram."""
+    if score >= 9:
+        return "🟢🟢🟢"
+    if score >= 7:
+        return "🟢🟢"
+    if score >= 5:
+        return "🟡"
+    return "🔴"
+
+
+# ---------------------------------------------------------------------------
 # Estrazione e arricchimento
 # ---------------------------------------------------------------------------
 
@@ -133,7 +240,7 @@ def estrai_mq(text: str) -> int | None:
     if m:
         try:
             val = int(m.group(1))
-            if 10 <= val <= 2000:  # range plausibile per un'abitazione
+            if 10 <= val <= 2000:
                 return val
         except ValueError:
             pass
@@ -197,7 +304,7 @@ def media_prezzo_mq_zona(memoria: dict, citta: str) -> float | None:
         d["prezzo_mq"] for d in memoria.values()
         if d.get("città") == citta and d.get("prezzo_mq")
     ]
-    return round(mean(valori)) if len(valori) >= 5 else None  # servono almeno 5 dati per una media sensata
+    return round(mean(valori)) if len(valori) >= 5 else None
 
 
 def giorni_online(prima_vista_iso: str) -> int:
@@ -251,13 +358,29 @@ def missione(citta: dict, memoria: dict) -> tuple[int, dict]:
                     "titolo": a["titolo"],
                 }
 
-                # Etichetta "sotto media" solo se abbiamo sia il dato che una media di zona
                 sotto_media = False
                 if a["prezzo_mq"] and media_zona:
                     sotto_media = a["prezzo_mq"] <= media_zona * (1 - SOGLIA_SOTTO_MEDIA)
                 dati["sotto_media"] = sotto_media
 
+                # --- Valutazione AI ---
+                valutazione = valuta_con_ai(a, nome, media_zona)
+                if valutazione:
+                    dati["score"] = valutazione["score"]
+                    dati["motivo_ai"] = valutazione["motivo"]
+
+                # L'annuncio resta in memoria comunque (non lo rivalutiamo domani),
+                # ma sotto soglia non manda notifica.
+                if valutazione and valutazione["score"] < SOGLIA_SCORE:
+                    aggiornamenti[a["id"]] = dati
+                    log.info("  – %s scartato (score %d)", a["id"], valutazione["score"])
+                    continue
+
                 righe = [f"🚨 *LUPIN – Nuovo a {nome.upper()}*"]
+                if valutazione:
+                    righe.append(
+                        f"{barra_score(valutazione['score'])} *Punteggio {valutazione['score']}/10*"
+                    )
                 if a["prezzo"]:
                     righe.append(f"💰 *€{a['prezzo']:,}*".replace(",", "."))
                 if a["mq"]:
@@ -270,6 +393,8 @@ def missione(citta: dict, memoria: dict) -> tuple[int, dict]:
                     righe.append(f"📊 €{a['prezzo_mq']}/mq{extra}")
                 if sotto_media:
                     righe.append("✅ *Sotto media di zona*")
+                if valutazione and valutazione["motivo"]:
+                    righe.append(f"🤖 _{valutazione['motivo']}_")
                 righe.append(f"🏷 {a['titolo']}")
                 righe.append(f"🔗 [Apri annuncio]({a['url']})")
                 msg = "\n".join(righe)
@@ -300,6 +425,11 @@ def main():
     log.info("=== LUPIN %s ===", datetime.now().strftime("%Y-%m-%d %H:%M"))
     if DRY_RUN:
         log.info("Modalità DRY_RUN (nessun Telegram reale)")
+    if AI_OFF or not ANTHROPIC_API_KEY:
+        log.info("Valutazione AI disattivata")
+    else:
+        log.info("Valutazione AI attiva (modello %s, max %d chiamate, soglia score %d)",
+                 MODELLO_AI, MAX_CHIAMATE_AI, SOGLIA_SCORE)
 
     memoria = carica_memoria()
     log.info("Memoria iniziale: %d annunci", len(memoria))
@@ -312,9 +442,9 @@ def main():
         time.sleep(random.uniform(4, 8))
 
     salva_memoria(memoria)
-    log.info("=== Fine. Notifiche inviate: %d | Memoria: %d ===", totale, len(memoria))
+    log.info("=== Fine. Notifiche: %d | Memoria: %d | Chiamate AI: %d ===",
+             totale, len(memoria), _chiamate_ai)
 
 
 if __name__ == "__main__":
     main()
-    
