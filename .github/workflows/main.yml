@@ -6,9 +6,13 @@ on:
   workflow_dispatch:        # avvio manuale
     inputs:
       dry_run:
-        description: 'ModalitÃ  test (nessun messaggio Telegram reale)'
+        description: 'Modalità test (nessun messaggio Telegram reale)'
         type: boolean
         default: true
+      soglia_score:
+        description: 'Notifica solo annunci con punteggio AI >= questo valore (0 = tutti)'
+        type: string
+        default: '0'
 
 permissions:
   contents: write
@@ -36,7 +40,10 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           DRY_RUN: ${{ github.event.inputs.dry_run || '0' }}
+          SOGLIA_SCORE: ${{ github.event.inputs.soglia_score || '0' }}
+          MAX_CHIAMATE_AI: '60'
         run: python lupin_headless.py
 
       - name: Salva memoria
