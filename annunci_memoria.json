@@ -6182,6 +6182,28 @@
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Via Vasco De Gama 3, Bologna"
   },
+  "30854661": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo non disponibile, impossibile valutare. Dato cruciale mancante, annuncio incompleto.",
+    "mq": 153,
+    "prezzo": null,
+    "prezzo_mq": null,
+    "prima_vista": "2026-09-19T01:09:31.529262+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Soperga 10, Milano"
+  },
+  "30854994": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq del 21% sopra media Milano. Sopravvalutato rispetto mercato.",
+    "mq": 75,
+    "prezzo": 549000,
+    "prezzo_mq": 7320,
+    "prima_vista": "2026-09-19T01:09:28.946781+00:00",
+    "score": 4,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Pace 23, Milano"
+  },
   "30855297": {
     "città": "Torino",
     "mq": 39,
@@ -6199,6 +6221,28 @@
     "prima_vista": "2026-09-18T18:57:06.281079+00:00",
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Normandia, Bologna"
+  },
+  "30855549": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 13% sotto media milanese, bilocale piccolo ma conveniente in zona centrale",
+    "mq": 50,
+    "prezzo": 260000,
+    "prezzo_mq": 5200,
+    "prima_vista": "2026-09-19T01:09:26.410276+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Giovanni Battista Sammartini 35, Milano"
+  },
+  "30855741": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo sotto media zona (-16%), trilocale standard, buona opportunità Milano",
+    "mq": 85,
+    "prezzo": 430000,
+    "prezzo_mq": 5059,
+    "prima_vista": "2026-09-19T01:09:23.589474+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Milano"
   },
   "30855927": {
     "città": "Torino",
@@ -6226,6 +6270,17 @@
     "prima_vista": "2026-09-18T18:56:21.278005+00:00",
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Ludovico Bellardi 13/B, Torino"
+  },
+  "30857019": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 51% sotto media Milano: sospetto, verificare condizioni immobile",
+    "mq": 88,
+    "prezzo": 259000,
+    "prezzo_mq": 2943,
+    "prima_vista": "2026-09-19T01:09:20.967776+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Villapizzone 47, Milano"
   },
   "30857187": {
     "città": "Torino",
@@ -6298,6 +6353,28 @@
     "prima_vista": "2026-09-18T18:56:45.289954+00:00",
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Viale Colli Aminei 279, Napoli"
+  },
+  "30859764": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo leggermente sopra media zona, bilocale standard senza plus evidenti.",
+    "mq": 60,
+    "prezzo": 395000,
+    "prezzo_mq": 6583,
+    "prima_vista": "2026-09-19T01:09:18.429754+00:00",
+    "score": 5,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Giuseppe Giusti 37, Milano"
+  },
+  "30859869": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 20% sotto media Milano. Bilocale in zona centrale, buona opportunità.",
+    "mq": 68,
+    "prezzo": 329000,
+    "prezzo_mq": 4838,
+    "prima_vista": "2026-09-19T01:09:15.759827+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Pietro Crespi 10, Milano"
   },
   "30860043": {
     "città": "Roma",
