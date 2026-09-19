@@ -6484,5 +6484,16 @@
     "score": 7,
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Viale Marche 40, Milano"
+  },
+  "30864759": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo/mq 56% sotto media zona, annuncio sospetto o dati incompleti.",
+    "mq": 100,
+    "prezzo": 175000,
+    "prezzo_mq": 1750,
+    "prima_vista": "2026-09-19T17:05:11.059196+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Bartolomeo Chioccarelli 44, Napoli"
   }
 }
