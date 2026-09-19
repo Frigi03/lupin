@@ -316,6 +316,93 @@ def giorni_online(prima_vista_iso: str) -> int:
 
 
 # ---------------------------------------------------------------------------
+# Apertura pagina (robusta)
+# ---------------------------------------------------------------------------
+
+SELETTORE_ANNUNCI = "article[data-cy='real-estate-insertion']"
+
+# Pulsanti di consenso cookie visti su Wikicasa / CMP comuni
+SELETTORI_CONSENSO = [
+    "#onetrust-accept-btn-handler",
+    "button#didomi-notice-agree-button",
+    "button[aria-label*='Accetta']",
+    "button:has-text('Accetta tutto')",
+    "button:has-text('Accetta tutti')",
+    "button:has-text('Accetta')",
+    "button:has-text('Ho capito')",
+]
+
+
+def chiudi_consenso(page) -> bool:
+    """Prova a chiudere il banner cookie. True se ha cliccato qualcosa."""
+    for sel in SELETTORI_CONSENSO:
+        try:
+            loc = page.locator(sel).first
+            if loc.is_visible(timeout=1500):
+                loc.click(timeout=3000)
+                log.info("  Banner consenso chiuso (%s)", sel)
+                page.wait_for_timeout(1200)
+                return True
+        except Exception:
+            continue
+    return False
+
+
+def diagnostica(page, nome: str) -> None:
+    """Quando gli annunci non compaiono, stampa cosa c'e' davvero nella pagina."""
+    try:
+        titolo = page.title()
+    except Exception:
+        titolo = "?"
+    try:
+        url_finale = page.url
+    except Exception:
+        url_finale = "?"
+    try:
+        testo = (page.locator("body").inner_text(timeout=5000) or "").strip()
+        testo = " ".join(testo.split())[:300]
+    except Exception:
+        testo = "?"
+    log.error("  [DIAG %s] titolo=%r url=%s", nome, titolo, url_finale)
+    log.error("  [DIAG %s] body: %s", nome, testo)
+
+
+def apri_lista(page, url: str, nome: str) -> bool:
+    """Apre la pagina citta' e aspetta gli annunci. Due tentativi, poi diagnostica.
+
+    networkidle su Wikicasa non arriva mai (script sempre attivi) -> usiamo
+    domcontentloaded + attesa esplicita del selettore degli annunci.
+    """
+    for tentativo in (1, 2):
+        try:
+            page.goto(url, wait_until="domcontentloaded", timeout=60_000)
+        except PlaywrightTimeout:
+            log.warning("  Tentativo %d: timeout nel caricamento di %s", tentativo, nome)
+            continue
+
+        chiudi_consenso(page)
+
+        # Alcune liste montano gli annunci solo dopo uno scroll
+        try:
+            page.mouse.wheel(0, 1200)
+        except Exception:
+            pass
+
+        try:
+            page.wait_for_selector(SELETTORE_ANNUNCI, timeout=25_000)
+            page.wait_for_timeout(random.randint(1200, 2500))
+            return True
+        except PlaywrightTimeout:
+            log.warning("  Tentativo %d: annunci non comparsi su %s", tentativo, nome)
+            if tentativo == 1:
+                page.wait_for_timeout(random.randint(3000, 6000))
+
+    diagnostica(page, nome)
+    log.error("  Nessun annuncio caricato su %s", nome)
+    return False
+
+
+# ---------------------------------------------------------------------------
 # Missione per città
 # ---------------------------------------------------------------------------
 
@@ -341,17 +428,8 @@ def missione(citta: dict, memoria: dict) -> tuple[int, dict]:
         page = context.new_page()
 
         try:
-            # domcontentloaded + attesa esplicita degli annunci:
-            # networkidle su Wikicasa non arriva mai (script sempre attivi) → timeout
-            page.goto(url, wait_until="domcontentloaded", timeout=60_000)
-            try:
-                page.wait_for_selector(
-                    "article[data-cy='real-estate-insertion']", timeout=30_000
-                )
-            except PlaywrightTimeout:
-                log.error("  Nessun annuncio caricato su %s (selettore assente)", nome)
+            if not apri_lista(page, url, nome):
                 return inviati, aggiornamenti
-            page.wait_for_timeout(random.randint(1500, 3000))
 
             annunci = estrai_annunci(page)
             log.info("  %d annunci trovati", len(annunci))
