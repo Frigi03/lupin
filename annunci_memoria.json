@@ -1,18 +1,28 @@
 {
   "24271084": {
-    "prima_vista": "2026-08-07T02:42:18.613430+00:00"
+    "motivo_ai": "Dati mancanti: città, titolo, prezzo, superficie. Impossibile valutare.",
+    "prima_vista": "2026-08-07T02:42:18.613430+00:00",
+    "score": 1
   },
   "24793489": {
-    "prima_vista": "2026-08-07T02:42:18.613452+00:00"
+    "motivo_ai": "Dati completamente assenti. Impossibile valutare. Richiedi annuncio con informazioni complete.",
+    "prima_vista": "2026-08-07T02:42:18.613452+00:00",
+    "score": 1
   },
   "28976289": {
-    "prima_vista": "2026-08-07T02:42:18.613461+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, titolo, prezzo, superficie. Impossibile valutare.",
+    "prima_vista": "2026-08-07T02:42:18.613461+00:00",
+    "score": 1
   },
   "29004516": {
-    "prima_vista": "2026-08-07T02:42:18.613465+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, titolo, prezzo, superficie e media zona",
+    "prima_vista": "2026-08-07T02:42:18.613465+00:00",
+    "score": 1
   },
   "29335101": {
-    "prima_vista": "2026-08-07T02:42:18.613468+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, titolo, prezzo, superficie. Impossibile valutare.",
+    "prima_vista": "2026-08-07T02:42:18.613468+00:00",
+    "score": 1
   },
   "29708278": {
     "prima_vista": "2026-08-07T02:42:18.613471+00:00"
