@@ -23,6 +23,11 @@ Opzionali:
   NUM_PAGINE=1     → pagine massime da scorrere per città (default 1 = comportamento
                      originale; ATTENZIONE, valori >1 rischiano il blocco anti-bot
                      di Cloudflare su Wikicasa, vedi test del 2026-09-20)
+  BACKFILL_AI=20   → valuta retroattivamente N annunci già in memoria senza punteggio
+                     AI (i più vecchi non toccati dalla valutazione introdotta il
+                     2026-09-19). Non notifica nulla, aggiorna solo la memoria.
+                     Condivide il tetto MAX_CHIAMATE_AI con la valutazione normale
+                     ed è eseguito dopo di essa (priorità ai nuovi annunci).
 """
 
 import os
@@ -52,6 +57,7 @@ NUM_PAGINE = int(os.environ.get("NUM_PAGINE", "1"))  # pagine massime da scorrer
 # NB: test del 2026-09-20 mostra che richiedere ?pag=2 fa scattare il blocco anti-bot
 # di Cloudflare su Wikicasa (a volte anche sulla pag.1). Di default resta quindi 1
 # (comportamento invariato); alza NUM_PAGINE solo per test manuali consapevoli del rischio.
+BACKFILL_AI = int(os.environ.get("BACKFILL_AI", "0"))  # >0 = valuta N vecchi annunci senza punteggio AI
 
 MIN_PREZZO = 40_000
 MAX_PREZZO = 2_500_000
@@ -325,6 +331,46 @@ def media_prezzo_mq_zona(memoria: dict, citta: str) -> float | None:
     return round(mean(valori)) if len(valori) >= 5 else None
 
 
+def backfill_valutazioni(memoria: dict, limite: int) -> int:
+    """Valuta retroattivamente i vecchi annunci in memoria senza punteggio AI.
+
+    Non invia notifiche né tocca gli annunci già valutati: aggiorna solo la
+    memoria con score/motivo_ai. Condivide il tetto MAX_CHIAMATE_AI/run con
+    la valutazione normale (contatore globale in valuta_con_ai)."""
+    if limite <= 0 or AI_OFF or not ANTHROPIC_API_KEY:
+        return 0
+
+    da_valutare = [(aid, dati) for aid, dati in memoria.items() if "score" not in dati]
+    if not da_valutare:
+        return 0
+
+    log.info("Backfill AI: %d annunci senza punteggio (valuto al massimo %d)",
+              len(da_valutare), limite)
+
+    medie_cache: dict[str, float | None] = {}
+    valutati = 0
+    for aid, dati in da_valutare[:limite]:
+        citta = dati.get("città") or "n/d"
+        if citta not in medie_cache:
+            medie_cache[citta] = media_prezzo_mq_zona(memoria, citta)
+        media_zona = medie_cache[citta]
+
+        annuncio = {
+            "titolo": dati.get("titolo"),
+            "prezzo": dati.get("prezzo"),
+            "mq": dati.get("mq"),
+            "prezzo_mq": dati.get("prezzo_mq"),
+        }
+        valutazione = valuta_con_ai(annuncio, citta, media_zona)
+        if valutazione:
+            dati["score"] = valutazione["score"]
+            dati["motivo_ai"] = valutazione["motivo"]
+            valutati += 1
+
+    log.info("Backfill AI: %d annunci aggiornati con punteggio", valutati)
+    return valutati
+
+
 def giorni_online(prima_vista_iso: str) -> int:
     prima_vista = datetime.fromisoformat(prima_vista_iso)
     return (datetime.now(timezone.utc) - prima_vista).days
@@ -595,6 +641,9 @@ def main():
         memoria.update(aggiornamenti)
         totale += inviati
         time.sleep(random.uniform(4, 8))
+
+    if BACKFILL_AI:
+        backfill_valutazioni(memoria, BACKFILL_AI)
 
     salva_memoria(memoria)
     log.info("=== Fine. Notifiche: %d | Memoria: %d | Chiamate AI: %d ===",
