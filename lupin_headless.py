@@ -20,8 +20,9 @@ Opzionali:
   SOGLIA_SCORE=7   → notifica solo annunci con punteggio >= 7 (default 0 = tutti)
   TEST_AI=3        → valuta 3 annunci già noti per città e stampa i punteggi nei log,
                      senza notificare né toccare la memoria (serve solo a verificare l'AI)
-  NUM_PAGINE=3     → pagine massime da scorrere per città (default 3, prima erano
-                     sempre e solo 25 annunci = 1 pagina)
+  NUM_PAGINE=1     → pagine massime da scorrere per città (default 1 = comportamento
+                     originale; ATTENZIONE, valori >1 rischiano il blocco anti-bot
+                     di Cloudflare su Wikicasa, vedi test del 2026-09-20)
 """
 
 import os
@@ -47,7 +48,10 @@ SOGLIA_SCORE = int(os.environ.get("SOGLIA_SCORE", "0"))  # 0 = notifica tutto
 MAX_CHIAMATE_AI = int(os.environ.get("MAX_CHIAMATE_AI", "60"))  # tetto costi per run
 TEST_AI = int(os.environ.get("TEST_AI", "0"))  # >0 = valuta N annunci già noti per città (solo test)
 MODELLO_AI = os.environ.get("MODELLO_AI", "claude-haiku-4-5-20251001")
-NUM_PAGINE = int(os.environ.get("NUM_PAGINE", "3"))  # pagine massime da scorrere per città
+NUM_PAGINE = int(os.environ.get("NUM_PAGINE", "1"))  # pagine massime da scorrere per città
+# NB: test del 2026-09-20 mostra che richiedere ?pag=2 fa scattare il blocco anti-bot
+# di Cloudflare su Wikicasa (a volte anche sulla pag.1). Di default resta quindi 1
+# (comportamento invariato); alza NUM_PAGINE solo per test manuali consapevoli del rischio.
 
 MIN_PREZZO = 40_000
 MAX_PREZZO = 2_500_000

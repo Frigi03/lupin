@@ -17,6 +17,10 @@ on:
         description: 'Test AI: valuta N annunci già noti per città e stampa i punteggi nei log (0 = off)'
         type: string
         default: '0'
+      num_pagine:
+        description: 'Pagine da scorrere per città (ATTENZIONE: >1 rischia il blocco Cloudflare su Wikicasa)'
+        type: string
+        default: '1'
 
 permissions:
   contents: write
@@ -48,6 +52,7 @@ jobs:
           DRY_RUN: ${{ github.event.inputs.dry_run || '0' }}
           SOGLIA_SCORE: ${{ github.event.inputs.soglia_score || '0' }}
           TEST_AI: ${{ github.event.inputs.test_ai || '0' }}
+          NUM_PAGINE: ${{ github.event.inputs.num_pagine || '1' }}
           MAX_CHIAMATE_AI: '60'
         run: python lupin_headless.py
 
