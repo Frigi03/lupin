@@ -25,250 +25,370 @@
     "score": 1
   },
   "29708278": {
-    "prima_vista": "2026-08-07T02:42:18.613471+00:00"
+    "motivo_ai": "Dati completamente mancanti, impossibile valutare l'annuncio.",
+    "prima_vista": "2026-08-07T02:42:18.613471+00:00",
+    "score": 1
   },
   "30091309": {
-    "prima_vista": "2026-08-07T02:42:18.613475+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, titolo, prezzo, superficie. Impossibile valutare.",
+    "prima_vista": "2026-08-07T02:42:18.613475+00:00",
+    "score": 1
   },
   "30305838": {
-    "prima_vista": "2026-08-07T02:42:18.613481+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, titolo, prezzo, superficie e media zona",
+    "prima_vista": "2026-08-07T02:42:18.613481+00:00",
+    "score": 1
   },
   "30413409": {
-    "prima_vista": "2026-08-07T02:42:18.613485+00:00"
+    "motivo_ai": "Dati insufficienti: manca città, prezzo, superficie. Impossibile valutare.",
+    "prima_vista": "2026-08-07T02:42:18.613485+00:00",
+    "score": 1
   },
   "30420513": {
-    "prima_vista": "2026-08-07T02:42:18.613488+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, titolo, prezzo, superficie. Impossibile valutare.",
+    "prima_vista": "2026-08-07T02:42:18.613488+00:00",
+    "score": 1
   },
   "30421668": {
-    "prima_vista": "2026-08-07T02:42:18.613491+00:00"
+    "motivo_ai": "Dati assolutamente insufficienti: mancano città, titolo, prezzo, superficie e media di zona",
+    "prima_vista": "2026-08-07T02:42:18.613491+00:00",
+    "score": 1
   },
   "30438468": {
-    "prima_vista": "2026-08-07T02:42:18.613494+00:00"
+    "motivo_ai": "Dati completamente assenti. Impossibile valutare. Segnala annuncio incompleto.",
+    "prima_vista": "2026-08-07T02:42:18.613494+00:00",
+    "score": 1
   },
   "30440949": {
     "città": "Firenze",
+    "motivo_ai": "Prezzo/mq 53% sotto media: possibile danno strutturale, vincoli storici o ubicazione problematica",
     "mq": 120,
     "prezzo": 310000,
     "prezzo_mq": 2583,
     "prima_vista": "2026-09-05T08:04:56.052244+00:00",
+    "score": 2,
     "sotto_media": true,
     "titolo": "Terratetto in Vendita, Via Reginaldo Giuliani, Firenze"
   },
   "30441801": {
     "città": "Firenze",
+    "motivo_ai": "Nuda proprietà a 2800€/mq vs media 5562€/mq. Usufruttuario presente compromette godimento",
     "mq": 125,
     "prezzo": 350000,
     "prezzo_mq": 2800,
     "prima_vista": "2026-09-05T08:04:54.410753+00:00",
+    "score": 2,
     "sotto_media": true,
     "titolo": "Appartamento in Nuda proprietà, Viale Giovanni Battista Morgagni, Firenze"
   },
   "30443340": {
     "città": "Firenze",
+    "motivo_ai": "Prezzo sotto media zona (-20%), attico valorizzato, merita approfondimento",
     "mq": 76,
     "prezzo": 339000,
     "prezzo_mq": 4461,
     "prima_vista": "2026-09-05T08:04:52.728757+00:00",
+    "score": 7,
     "sotto_media": true,
     "titolo": "Attico in Vendita, Piazza Valdelsa, Firenze"
   },
   "30449076": {
-    "prima_vista": "2026-08-07T02:42:18.613497+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, prezzo, superficie e tutti gli indizi essenziali",
+    "prima_vista": "2026-08-07T02:42:18.613497+00:00",
+    "score": 1
   },
   "30452562": {
-    "prima_vista": "2026-08-07T02:42:18.613500+00:00"
+    "motivo_ai": "Annuncio incompleto: mancano tutti i dati essenziali per valutare",
+    "prima_vista": "2026-08-07T02:42:18.613500+00:00",
+    "score": 1
   },
   "30460500": {
-    "prima_vista": "2026-08-07T02:42:18.613502+00:00"
+    "motivo_ai": "Dati completamente assenti. Impossibile valutare. Annuncio incompleto o sospetto.",
+    "prima_vista": "2026-08-07T02:42:18.613502+00:00",
+    "score": 1
   },
   "30460584": {
-    "prima_vista": "2026-08-07T02:42:18.613510+00:00"
+    "motivo_ai": "Dati completamente mancanti: impossibile valutare. Richiedi informazioni essenziali.",
+    "prima_vista": "2026-08-07T02:42:18.613510+00:00",
+    "score": 1
   },
   "30460599": {
-    "prima_vista": "2026-08-07T02:42:18.613518+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, titolo, prezzo, superficie e media zona",
+    "prima_vista": "2026-08-07T02:42:18.613518+00:00",
+    "score": 1
   },
   "30460653": {
-    "prima_vista": "2026-08-07T02:42:18.613521+00:00"
+    "motivo_ai": "Dati completamente assenti, impossibile valutare. Annuncio incompleto e sospetto.",
+    "prima_vista": "2026-08-07T02:42:18.613521+00:00",
+    "score": 1
   },
   "30460668": {
-    "prima_vista": "2026-08-07T02:42:18.613524+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, titolo, prezzo, superficie e media zona",
+    "prima_vista": "2026-08-07T02:42:18.613524+00:00",
+    "score": 1
   },
   "30460755": {
-    "prima_vista": "2026-08-07T02:42:18.613526+00:00"
+    "motivo_ai": "Dati insufficienti: prezzo, superficie e città mancanti. Valutazione impossibile.",
+    "prima_vista": "2026-08-07T02:42:18.613526+00:00",
+    "score": 1
   },
   "30460806": {
-    "prima_vista": "2026-08-07T02:42:18.613529+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, titolo, prezzo, superficie. Impossibile valutare.",
+    "prima_vista": "2026-08-07T02:42:18.613529+00:00",
+    "score": 1
   },
   "30460812": {
-    "prima_vista": "2026-08-07T02:42:18.613532+00:00"
+    "motivo_ai": "Dati insufficienti: prezzo, superficie e zona mancanti completamente.",
+    "prima_vista": "2026-08-07T02:42:18.613532+00:00",
+    "score": 1
   },
   "30460869": {
-    "prima_vista": "2026-08-07T02:42:18.613535+00:00"
+    "motivo_ai": "Dati completamente assenti. Impossibile valutare. Richiedi informazioni dettagliate.",
+    "prima_vista": "2026-08-07T02:42:18.613535+00:00",
+    "score": 1
   },
   "30491649": {
     "città": "Firenze",
+    "motivo_ai": "Prezzo 31% sotto media Firenze. Trilocale 74mq a 3851€/mq, forte sconto apparente.",
     "mq": 74,
     "prezzo": 285000,
     "prezzo_mq": 3851,
     "prima_vista": "2026-09-05T08:04:51.040553+00:00",
+    "score": 9,
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via del Pesciolino, Firenze"
   },
   "30500667": {
-    "prima_vista": "2026-08-07T02:42:18.613538+00:00"
+    "motivo_ai": "Dati insufficienti. Impossibile valutare senza prezzo, metratura e localizzazione.",
+    "prima_vista": "2026-08-07T02:42:18.613538+00:00",
+    "score": 1
   },
   "30506256": {
-    "prima_vista": "2026-08-07T02:42:18.613540+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, titolo, prezzo, superficie e media di zona",
+    "prima_vista": "2026-08-07T02:42:18.613540+00:00",
+    "score": 1
   },
   "30517917": {
     "città": "Firenze",
+    "motivo_ai": "Prezzo 23% sotto media Firenze. Quadrilocale 100mq buona metratura. Affaire interessante.",
     "mq": 100,
     "prezzo": 430000,
     "prezzo_mq": 4300,
     "prima_vista": "2026-09-05T08:04:49.312960+00:00",
+    "score": 8,
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Via Claudio Monteverdi, Firenze"
   },
   "30523431": {
     "città": "Roma",
+    "motivo_ai": "Prezzo 22% sotto media Roma. Trilocale 100mq a 3300€/mq, buona opportunità.",
     "mq": 100,
     "prezzo": 330000,
     "prezzo_mq": 3300,
     "prima_vista": "2026-08-07T16:53:05.250311+00:00",
+    "score": 8,
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via Marco Celio Rufo 48, Roma"
   },
   "30523434": {
     "città": "Roma",
+    "motivo_ai": "Prezzo sottomercato 13%, buona dimensione. Verificare condizioni e piano.",
     "mq": 100,
     "prezzo": 370000,
     "prezzo_mq": 3700,
     "prima_vista": "2026-08-07T16:53:03.615984+00:00",
+    "score": 7,
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via Marco Celio Rufo 48, Roma"
   },
   "30526764": {
-    "prima_vista": "2026-08-07T02:42:18.613543+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, titolo, prezzo, superficie. Impossibile valutare.",
+    "prima_vista": "2026-08-07T02:42:18.613543+00:00",
+    "score": 1
   },
   "30531288": {
     "città": "Firenze",
+    "motivo_ai": "Prezzo leggermente sopra media zona (+10%). Monolocale piccolo, localizzazione centrale ma senza particolari vantaggi.",
     "mq": 36,
     "prezzo": 220000,
     "prezzo_mq": 6111,
     "prima_vista": "2026-08-26T06:46:15.295089+00:00",
+    "score": 6,
     "sotto_media": false,
     "titolo": "Monolocale in Vendita, Via Francesco Baracca, Firenze"
   },
   "30541371": {
-    "prima_vista": "2026-08-07T02:42:18.613546+00:00"
+    "motivo_ai": "Dati completamente mancanti. Impossibile valutare. Richiedi informazioni dettagliate.",
+    "prima_vista": "2026-08-07T02:42:18.613546+00:00",
+    "score": 1
   },
   "30542055": {
-    "prima_vista": "2026-08-07T02:42:18.613548+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, prezzo, superficie e comparabili. Impossibile valutare.",
+    "prima_vista": "2026-08-07T02:42:18.613548+00:00",
+    "score": 1
   },
   "30544470": {
-    "prima_vista": "2026-08-07T02:42:18.613551+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, titolo, prezzo, superficie. Impossibile valutare.",
+    "prima_vista": "2026-08-07T02:42:18.613551+00:00",
+    "score": 1
   },
   "30544815": {
-    "prima_vista": "2026-08-07T02:42:18.613553+00:00"
+    "motivo_ai": "Dati completamente assenti. Impossibile valutare. Annuncio incompleto e sospetto.",
+    "prima_vista": "2026-08-07T02:42:18.613553+00:00",
+    "score": 1
   },
   "30553803": {
-    "prima_vista": "2026-08-07T02:42:18.613556+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, titolo, prezzo, superficie, medie di zona. Impossibile valutare.",
+    "prima_vista": "2026-08-07T02:42:18.613556+00:00",
+    "score": 1
   },
   "30553848": {
     "città": "Roma",
+    "motivo_ai": "Prezzo leggermente sopra media Roma (+6%), quadrilocale spazioso ben proporzionato.",
     "mq": 100,
     "prezzo": 449000,
     "prezzo_mq": 4490,
     "prima_vista": "2026-08-22T10:21:25.997574+00:00",
+    "score": 7,
     "sotto_media": false,
     "titolo": "Quadrilocale in Vendita, Via Quirino Majorana 178, Roma"
   },
   "30556305": {
     "città": "Firenze",
+    "motivo_ai": "Prezzo 26% sotto media Firenze. Quadrilocale buona metratura. Visita consigliata.",
     "mq": 95,
     "prezzo": 390000,
     "prezzo_mq": 4105,
     "prima_vista": "2026-08-26T06:46:13.646227+00:00",
+    "score": 8,
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Viale della Toscana, Firenze"
   },
   "30557310": {
-    "prima_vista": "2026-08-07T02:42:18.613560+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, titolo, prezzo, superficie e media zona.",
+    "prima_vista": "2026-08-07T02:42:18.613560+00:00",
+    "score": 1
   },
   "30561486": {
-    "prima_vista": "2026-08-07T02:42:18.613563+00:00"
+    "motivo_ai": "Dati completamente assenti. Impossibile valutare. Annuncio incompleto o sospetto.",
+    "prima_vista": "2026-08-07T02:42:18.613563+00:00",
+    "score": 1
   },
   "30561489": {
-    "prima_vista": "2026-08-07T02:42:18.613566+00:00"
+    "motivo_ai": "Dati completamente mancanti. Impossibile valutare l'annuncio.",
+    "prima_vista": "2026-08-07T02:42:18.613566+00:00",
+    "score": 1
   },
   "30562638": {
-    "prima_vista": "2026-08-07T02:42:18.613569+00:00"
+    "motivo_ai": "Dati completamente assenti: impossibile valutare prezzo, superficie, zona. Annuncio incompleto.",
+    "prima_vista": "2026-08-07T02:42:18.613569+00:00",
+    "score": 1
   },
   "30563604": {
-    "prima_vista": "2026-08-07T02:42:18.613571+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, titolo, prezzo, superficie e media di zona",
+    "prima_vista": "2026-08-07T02:42:18.613571+00:00",
+    "score": 1
   },
   "30564018": {
-    "prima_vista": "2026-08-07T02:42:18.613574+00:00"
+    "motivo_ai": "Dati completamente assenti, impossibile valutare. Annuncio incompleto o sospetto.",
+    "prima_vista": "2026-08-07T02:42:18.613574+00:00",
+    "score": 1
   },
   "30564069": {
-    "prima_vista": "2026-08-07T02:42:18.613578+00:00"
+    "motivo_ai": "Dati completamente assenti. Impossibile valutare. Annuncio incompleto e non attendibile.",
+    "prima_vista": "2026-08-07T02:42:18.613578+00:00",
+    "score": 1
   },
   "30564540": {
-    "prima_vista": "2026-08-07T02:42:18.613581+00:00"
+    "motivo_ai": "Dati completamente assenti, impossibile valutare. Annuncio incompleto e sospetto.",
+    "prima_vista": "2026-08-07T02:42:18.613581+00:00",
+    "score": 1
   },
   "30565005": {
-    "prima_vista": "2026-08-07T02:42:18.613584+00:00"
+    "motivo_ai": "Dati mancanti: città, titolo, prezzo, superficie. Impossibile valutare.",
+    "prima_vista": "2026-08-07T02:42:18.613584+00:00",
+    "score": 1
   },
   "30565143": {
-    "prima_vista": "2026-08-07T02:42:18.613586+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, titolo, prezzo, superficie. Impossibile valutare.",
+    "prima_vista": "2026-08-07T02:42:18.613586+00:00",
+    "score": 1
   },
   "30565545": {
-    "prima_vista": "2026-08-07T02:42:18.613589+00:00"
+    "motivo_ai": "Dati insufficienti: manca prezzo, superficie, zona. Impossibile valutare.",
+    "prima_vista": "2026-08-07T02:42:18.613589+00:00",
+    "score": 1
   },
   "30567591": {
-    "prima_vista": "2026-08-07T02:42:18.613591+00:00"
+    "motivo_ai": "Dati assolutamente insufficienti. Nessuna informazione utile per valutazione.",
+    "prima_vista": "2026-08-07T02:42:18.613591+00:00",
+    "score": 1
   },
   "30573033": {
-    "prima_vista": "2026-08-07T02:42:18.613595+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, titolo, prezzo, superficie e media zona.",
+    "prima_vista": "2026-08-07T02:42:18.613595+00:00",
+    "score": 1
   },
   "30573888": {
-    "prima_vista": "2026-08-07T02:42:18.613598+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, titolo, prezzo, superficie. Impossibile valutare.",
+    "prima_vista": "2026-08-07T02:42:18.613598+00:00",
+    "score": 1
   },
   "30574011": {
-    "prima_vista": "2026-08-07T02:42:18.613601+00:00"
+    "motivo_ai": "Dati insufficienti. Mancano città, titolo, prezzo, superficie. Valutazione impossibile.",
+    "prima_vista": "2026-08-07T02:42:18.613601+00:00",
+    "score": 1
   },
   "30574326": {
-    "prima_vista": "2026-08-07T02:42:18.613604+00:00"
+    "motivo_ai": "Dati insufficienti. Mancano città, prezzo, superficie e informazioni essenziali valutazione.",
+    "prima_vista": "2026-08-07T02:42:18.613604+00:00",
+    "score": 1
   },
   "30576006": {
-    "prima_vista": "2026-08-07T02:42:18.613608+00:00"
+    "motivo_ai": "Dati completamente assenti. Impossibile valutare. Annuncio non valido.",
+    "prima_vista": "2026-08-07T02:42:18.613608+00:00",
+    "score": 1
   },
   "30576051": {
-    "prima_vista": "2026-08-07T02:42:18.613611+00:00"
+    "motivo_ai": "Dati insufficienti: mancano prezzo, superficie, città e titolo annuncio.",
+    "prima_vista": "2026-08-07T02:42:18.613611+00:00",
+    "score": 1
   },
   "30576510": {
-    "prima_vista": "2026-08-07T02:42:18.613613+00:00"
+    "motivo_ai": "Dati insufficienti per valutazione. Mancano città, prezzo, superficie e titolo.",
+    "prima_vista": "2026-08-07T02:42:18.613613+00:00",
+    "score": 1
   },
   "30577593": {
-    "prima_vista": "2026-08-07T02:42:18.613616+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, titolo, prezzo, superficie e media di zona.",
+    "prima_vista": "2026-08-07T02:42:18.613616+00:00",
+    "score": 1
   },
   "30582636": {
-    "prima_vista": "2026-08-07T02:42:18.613619+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, titolo, prezzo, superficie. Impossibile valutare.",
+    "prima_vista": "2026-08-07T02:42:18.613619+00:00",
+    "score": 1
   },
   "30582945": {
-    "prima_vista": "2026-08-07T02:42:18.613621+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, titolo, prezzo, superficie e media zona.",
+    "prima_vista": "2026-08-07T02:42:18.613621+00:00",
+    "score": 1
   },
   "30583182": {
     "città": "Roma",
+    "motivo_ai": "Prezzo/mq 47% sopra media Roma. Trilocale 80mq sopravvalutato rispetto mercato.",
     "mq": 80,
     "prezzo": 499000,
     "prezzo_mq": 6238,
     "prima_vista": "2026-08-22T08:27:01.403276+00:00",
+    "score": 3,
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via Avicenna 99, Roma"
   },
   "30583296": {
-    "prima_vista": "2026-08-07T02:42:18.613624+00:00"
+    "motivo_ai": "Dati insufficienti: mancano città, titolo, prezzo, superficie. Impossibile valutare.",
+    "prima_vista": "2026-08-07T02:42:18.613624+00:00",
+    "score": 1
   },
   "30584487": {
     "prima_vista": "2026-08-07T02:42:18.613627+00:00"
