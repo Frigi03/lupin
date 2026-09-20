@@ -20,6 +20,8 @@ Opzionali:
   SOGLIA_SCORE=7   → notifica solo annunci con punteggio >= 7 (default 0 = tutti)
   TEST_AI=3        → valuta 3 annunci già noti per città e stampa i punteggi nei log,
                      senza notificare né toccare la memoria (serve solo a verificare l'AI)
+  NUM_PAGINE=3     → pagine massime da scorrere per città (default 3, prima erano
+                     sempre e solo 25 annunci = 1 pagina)
 """
 
 import os
@@ -45,6 +47,7 @@ SOGLIA_SCORE = int(os.environ.get("SOGLIA_SCORE", "0"))  # 0 = notifica tutto
 MAX_CHIAMATE_AI = int(os.environ.get("MAX_CHIAMATE_AI", "60"))  # tetto costi per run
 TEST_AI = int(os.environ.get("TEST_AI", "0"))  # >0 = valuta N annunci già noti per città (solo test)
 MODELLO_AI = os.environ.get("MODELLO_AI", "claude-haiku-4-5-20251001")
+NUM_PAGINE = int(os.environ.get("NUM_PAGINE", "3"))  # pagine massime da scorrere per città
 
 MIN_PREZZO = 40_000
 MAX_PREZZO = 2_500_000
@@ -301,6 +304,14 @@ def estrai_annunci(page) -> list[dict]:
     return risultati
 
 
+def url_pagina(url_base: str, pagina: int) -> str:
+    """Costruisce l'URL della pagina N (schema ?pag=N usato dalla piattaforma Wikicasa/Immobiliare)."""
+    if pagina <= 1:
+        return url_base
+    sep = "&" if "?" in url_base else "?"
+    return f"{url_base}{sep}pag={pagina}"
+
+
 def media_prezzo_mq_zona(memoria: dict, citta: str) -> float | None:
     """Media prezzo/mq calcolata sugli annunci già noti per quella città."""
     valori = [
@@ -445,11 +456,33 @@ def missione(citta: dict, memoria: dict) -> tuple[int, dict]:
         page = context.new_page()
 
         try:
-            if not apri_lista(page, url, nome):
-                return inviati, aggiornamenti
+            annunci: list[dict] = []
+            id_visti_run: set[str] = set()
+            pagina = 1
+            for pagina in range(1, NUM_PAGINE + 1):
+                url_pag = url_pagina(url, pagina)
+                if not apri_lista(page, url_pag, f"{nome} (pag.{pagina})"):
+                    if pagina == 1:
+                        return inviati, aggiornamenti
+                    log.info("  pag.%d non disponibile, fine paginazione", pagina)
+                    break
 
-            annunci = estrai_annunci(page)
-            log.info("  %d annunci trovati", len(annunci))
+                trovati = estrai_annunci(page)
+                nuovi_in_pagina = [a for a in trovati if a["id"] not in id_visti_run]
+
+                if pagina > 1 and not nuovi_in_pagina:
+                    log.info("  pag.%d: nessun annuncio nuovo (paginazione esaurita o non supportata)", pagina)
+                    break
+
+                log.info("  pag.%d: %d annunci (%d nuovi)", pagina, len(trovati), len(nuovi_in_pagina))
+                for a in nuovi_in_pagina:
+                    id_visti_run.add(a["id"])
+                    annunci.append(a)
+
+                if not trovati:
+                    break
+
+            log.info("  %d annunci trovati in totale (%d pagina/e)", len(annunci), pagina)
 
             # Modalità test AI: valuta annunci già in memoria solo per verificare
             # che l'integrazione funzioni. Non notifica e non modifica la memoria.
