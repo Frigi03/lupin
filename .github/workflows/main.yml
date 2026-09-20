@@ -68,4 +68,4 @@ jobs:
           touch annunci_memoria.json
           git add annunci_memoria.json
           git commit -m "chore: update memoria annunci [skip ci]" || exit 0
-          git push origin main
+          git push origin HEAD:${{ github.ref_name }}
