@@ -116,9 +116,10 @@
   .log div{font-family:var(--font-mono);font-size:.75rem;color:var(--ink-dim);line-height:1.4;}
   .log div:first-child{color:var(--ink);}
 
-  /* ---------- reward overlay ---------- */
-  .reward-overlay{position:absolute;inset:0;background:rgba(20,17,13,.94);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:12px;overflow:hidden;}
-  .reward-overlay h3{color:var(--accent-2);}
+  /* ---------- reward panel ---------- */
+  .reward-panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:12px;}
+  .reward-panel h3{color:var(--accent-2);}
+  .placement-banner{background:var(--surface-2);border:1px dashed var(--accent-2);border-radius:10px;padding:8px 12px;color:var(--accent-2);font-size:.85rem;margin-bottom:8px;}
   .reward-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;}
   .reward-card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px;text-align:left;display:flex;flex-direction:column;gap:4px;border-top:3px solid var(--tag-color,var(--accent));}
   .reward-card:hover{border-color:var(--accent-2);}
@@ -189,14 +190,16 @@
       <div class="bar"><div class="bar-fill instability" id="instability-bar" style="width:0%"></div></div>
     </div>
 
-    <div class="board-wrap">
+    <div class="reward-panel" id="reward-panel" hidden>
+      <h3>Ricompensa</h3>
+      <div class="reward-grid" id="reward-grid"></div>
+      <div class="reward-note" id="reward-note"></div>
+      <button class="big-btn" id="continue-btn" data-action="continue-reward" hidden>Continua ▶</button>
+    </div>
+
+    <div class="board-wrap" id="board-wrap">
+      <div class="placement-banner" id="placement-banner" hidden></div>
       <div class="board" id="board"></div>
-      <div class="reward-overlay" id="reward-overlay" hidden>
-        <h3>Ricompensa</h3>
-        <div class="reward-grid" id="reward-grid"></div>
-        <div class="reward-note" id="reward-note"></div>
-        <button class="big-btn" id="continue-btn" data-action="continue-reward" hidden>Continua ▶</button>
-      </div>
     </div>
 
     <div class="log" id="log"></div>
@@ -830,23 +833,31 @@
 
     $('#board').innerHTML = state.grid.map((_,idx)=>tileHTML(idx)).join('');
 
-    const rewardOverlay = $('#reward-overlay');
-    if(state.rewardOptions.length){
-      rewardOverlay.hidden = false;
+    const rewardPanel = $('#reward-panel');
+    const boardWrap = $('#board-wrap');
+    const placementBanner = $('#placement-banner');
+    if(state.rewardOptions.length && state.pendingPlacement){
+      rewardPanel.hidden = true;
+      boardWrap.hidden = false;
+      placementBanner.hidden = false;
+      placementBanner.textContent = '📦 Griglia piena — tocca una cella per sostituirla.';
+    } else if(state.rewardOptions.length){
+      rewardPanel.hidden = false;
+      boardWrap.hidden = true;
+      placementBanner.hidden = true;
       $('#reward-grid').innerHTML = state.rewardOptions.map((o,ridx)=>`
         <button class="reward-card${o.picked?' picked':''}" data-ridx="${ridx}" style="--tag-color:${o.type==='element'?TAG_COLORS[o.tags[0]]:'var(--accent-2)'}" ${state.rewardDone?'disabled':''}>
           <span class="rt">${o.sym}</span>
           <span class="rn">${o.name}</span>
           <span class="rd">${o.type==='artifact'?o.desc:(o.desc+ ' · '+o.tags.map(t=>TAG_LABELS[t]).join(', ')+' · pot. '+o.power)}</span>
         </button>`).join('');
-      let note = '';
-      if(state.pendingPlacement) note = 'Griglia piena — scegli una tessera da sostituire.';
-      else if(state.rewardDone) note = 'Ricompensa raccolta.';
-      else note = 'Scegli una ricompensa.';
+      const note = state.rewardDone ? 'Ricompensa raccolta.' : 'Scegli una ricompensa.';
       $('#reward-note').textContent = note;
       $('#continue-btn').hidden = !state.rewardDone;
     } else {
-      rewardOverlay.hidden = true;
+      rewardPanel.hidden = true;
+      boardWrap.hidden = false;
+      placementBanner.hidden = true;
     }
 
     $('#log').innerHTML = state.log.slice().reverse().map(l=>`<div>${l}</div>`).join('');
