@@ -14,6 +14,7 @@
     --accent-2:#ffd23f;
     --danger:#ff5a5f;
     --good:#7ed99b;
+    --instability:#c86bff;
     --font-display:'Big Shoulders Display','Arial Narrow',sans-serif;
     --font-body:'Work Sans',system-ui,sans-serif;
     --font-mono:'IBM Plex Mono',ui-monospace,monospace;
@@ -86,7 +87,12 @@
   .bar-fill{height:100%;transition:width .35s ease;}
   .bar-fill.enemy{background:var(--danger);}
   .bar-fill.player{background:var(--good);}
+  .bar-fill.instability{background:var(--instability);}
+  .bar-fill.instability.critical{background:var(--danger);}
   .hp-readout{font-family:var(--font-mono);font-size:.78rem;color:var(--ink-dim);}
+  .instability-row{display:flex;flex-direction:column;gap:4px;}
+  .instability-row .lbl{display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:.72rem;color:var(--ink-dim);}
+  .instability-row .lbl b{color:var(--instability);}
   .chips{display:flex;flex-wrap:wrap;gap:6px;}
   .chip{font-size:.68rem;font-family:var(--font-mono);background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:2px 8px;color:var(--accent-2);}
 
@@ -146,10 +152,10 @@
     <div class="intro-card">
       <p>Sei l'ultimo alchimista di un laboratorio crollato su se stesso. Hai una manciata di elementi instabili e una griglia per combinarli. Sopravvivi a cinque creature e a ciò che si è risvegliato nel nucleo, costruendo la reazione a catena più assurda possibile prima che la run finisca.</p>
       <ol class="rules">
-        <li>Disponi gli elementi sulla griglia: le reazioni scattano tra tessere <b style="color:var(--ink)">adiacenti</b>.</li>
-        <li>Premi <b style="color:var(--ink)">REAGISCI</b> per infliggere danno base + tutte le reazioni a catena.</li>
-        <li>Il nemico contrattacca. Tra un combattimento e l'altro scegli nuovi elementi o artefatti.</li>
-        <li>Gli artefatti rompono le regole del gioco. Usali senza pietà.</li>
+        <li>Ogni elemento ha più <b style="color:var(--ink)">proprietà</b>: le reazioni scattano quando due tessere adiacenti coprono insieme la coppia di proprietà richiesta.</li>
+        <li>Le reazioni possono generare nuove proprietà sul campo, innescando altre reazioni a cascata: ogni reazione consecutiva aumenta il <b style="color:var(--ink)">moltiplicatore di danno</b> (fino a ×5).</li>
+        <li>Ogni reazione genera <b style="color:var(--ink)">Instabilità</b>. Oltre 100 scatta una <b style="color:var(--ink)">Overreaction</b>: un evento enorme, nel bene o nel male.</li>
+        <li>Tra un combattimento e l'altro scegli nuovi elementi o artefatti. Gli artefatti rompono le regole del gioco: usali senza pietà.</li>
       </ol>
       <div class="record" id="record-line"></div>
       <button class="big-btn" data-action="start-run">Inizia la run</button>
@@ -176,6 +182,11 @@
         <div class="hp-readout" id="player-hp"></div>
         <div class="chips" id="player-chips"></div>
       </div>
+    </div>
+
+    <div class="instability-row">
+      <div class="lbl"><span>Instabilità</span><b id="instability-value">0/100</b></div>
+      <div class="bar"><div class="bar-fill instability" id="instability-bar" style="width:0%"></div></div>
     </div>
 
     <div class="board-wrap">
@@ -213,41 +224,45 @@
   /* ================= DATA ================= */
 
   const TAG_LABELS = {
-    fuoco:'Fuoco', acqua:'Acqua', elettrico:'Elettrico', metallo:'Metallo', zolfo:'Zolfo',
-    ghiaccio:'Ghiaccio', veleno:'Veleno', terra:'Terra', aria:'Aria', luce:'Luce',
-    ombra:'Ombra', natura:'Natura', acido:'Acido', caos:'Caos'
+    FUOCO:'Fuoco', ACQUA:'Acqua', ELETTRICO:'Elettrico', METALLO:'Metallo', GHIACCIO:'Ghiaccio',
+    TOSSICO:'Tossico', TERRA:'Terra', ARIA:'Aria', NATURA:'Natura', VUOTO:'Vuoto',
+    LIQUIDO:'Liquido', COMBUSTIBILE:'Combustibile', SOLIDO:'Solido', ENERGIA:'Energia', CENERE:'Cenere'
   };
   const TAG_COLORS = {
-    fuoco:'#ff6a2b', acqua:'#3fb8d6', elettrico:'#ffd23f', metallo:'#b8b0a2', zolfo:'#d9c24a',
-    ghiaccio:'#a9e8f2', veleno:'#7fd858', terra:'#a97452', aria:'#d8e3e0', luce:'#fff2c2',
-    ombra:'#9b82d6', natura:'#6bcf7f', acido:'#c6ff4a', caos:'#ff4fd8'
+    FUOCO:'#ff6a2b', ACQUA:'#3fb8d6', ELETTRICO:'#ffd23f', METALLO:'#b8b0a2', GHIACCIO:'#a9e8f2',
+    TOSSICO:'#7fd858', TERRA:'#a97452', ARIA:'#d8e3e0', NATURA:'#6bcf7f', VUOTO:'#ff4fd8',
+    LIQUIDO:'#5ad1c8', COMBUSTIBILE:'#e0a23a', SOLIDO:'#9c8f7a', ENERGIA:'#ffe27a', CENERE:'#8a8378'
   };
 
   const ELEMENTS = [
-    {id:'fiamma', name:'Fiamma', sym:'🔥', tag:'fuoco', power:3, desc:'Danno base solido. Adora la compagnia infiammabile.'},
-    {id:'goccia', name:'Goccia', sym:'💧', tag:'acqua', power:2, desc:'Docile da sola, imprevedibile vicino all’elettricità.'},
-    {id:'scintilla', name:'Scintilla', sym:'⚡', tag:'elettrico', power:2, desc:'Salta da un bersaglio all’altro su un conduttore.'},
-    {id:'rottame', name:'Rottame', sym:'🔩', tag:'metallo', power:2, desc:'Conduce tutto ciò che gli sta vicino.'},
-    {id:'zolfo', name:'Zolfo', sym:'🟡', tag:'zolfo', power:1, desc:'Instabile. Tienilo lontano dal fuoco, o fallo apposta.'},
-    {id:'scheggia', name:'Scheggia di ghiaccio', sym:'❄️', tag:'ghiaccio', power:2, desc:'Fredda e tagliente, conduce se scossa.'},
-    {id:'spora', name:'Spora velenosa', sym:'☠️', tag:'veleno', power:1, desc:'Il danno vero arriva un turno alla volta.'},
-    {id:'zolla', name:'Zolla di terra', sym:'🪨', tag:'terra', power:3, desc:'Pesante, affidabile, poco chimica.'},
-    {id:'piuma', name:'Piuma', sym:'🪶', tag:'aria', power:1, desc:'Leggera, sa far propagare un incendio.'},
-    {id:'scaglia', name:'Scaglia di luce', sym:'✨', tag:'luce', power:2, desc:'Brilla di più accanto al suo opposto.'},
-    {id:'frammento', name:'Frammento d’ombra', sym:'🌑', tag:'ombra', power:2, desc:'Si nutre della luce vicina.'},
-    {id:'seme', name:'Seme', sym:'🌱', tag:'natura', power:1, desc:'Cresce e cura, se lo lasci fare.'},
-    {id:'fiala', name:'Fiala d’acido', sym:'🧪', tag:'acido', power:2, desc:'Corrode tutto ciò che è solido.'},
-    {id:'nucleo', name:'Nucleo instabile', sym:'☢️', tag:'caos', power:2, rarity:'rare', desc:'Reagisce con chiunque, in modi imprevedibili.'}
+    {id:'fiamma', name:'Fiamma', sym:'🔥', tags:['FUOCO','ENERGIA'], power:3, stability:55, desc:'La base di ogni incendio.'},
+    {id:'petrolio', name:'Petrolio', sym:'🛢️', tags:['COMBUSTIBILE','LIQUIDO'], power:1, stability:35, desc:'Innocuo finché non incontra una scintilla.'},
+    {id:'legno', name:'Legno', sym:'🪵', tags:['COMBUSTIBILE','NATURA'], power:1, stability:80, desc:'Combustibile lento e affidabile.'},
+    {id:'goccia', name:'Goccia d’acqua', sym:'💧', tags:['ACQUA','LIQUIDO'], power:2, stability:85, desc:'Spegne, raffredda, conduce se non stai attento.'},
+    {id:'cristallo', name:'Cristallo', sym:'🔷', tags:['SOLIDO','ENERGIA'], power:2, stability:60, desc:'Amplifica ciò che gli scorre dentro.'},
+    {id:'scintilla', name:'Scintilla', sym:'⚡', tags:['ELETTRICO','ENERGIA'], power:2, stability:45, desc:'Cerca un conduttore, sempre.'},
+    {id:'rottame', name:'Rottame di metallo', sym:'🔩', tags:['METALLO','SOLIDO'], power:2, stability:75, desc:'Conduce tutto ciò che gli sta vicino.'},
+    {id:'scheggia', name:'Scheggia di ghiaccio', sym:'❄️', tags:['GHIACCIO','ACQUA'], power:2, stability:70, desc:'Fredda, tagliente, rallenta ciò che tocca.'},
+    {id:'spora', name:'Spora tossica', sym:'☠️', tags:['TOSSICO','NATURA'], power:1, stability:50, desc:'Il danno vero arriva un turno alla volta.'},
+    {id:'zolla', name:'Zolla di terra', sym:'🪨', tags:['TERRA','SOLIDO'], power:3, stability:90, desc:'Pesante, affidabile, quasi immune al caos.'},
+    {id:'piuma', name:'Piuma', sym:'🪶', tags:['ARIA'], power:1, stability:65, desc:'Leggera, sa far propagare un incendio.'},
+    {id:'seme', name:'Seme', sym:'🌱', tags:['NATURA'], power:1, stability:80, desc:'Cresce e cura, se lo lasci fare.'},
+    {id:'batteria', name:'Batteria', sym:'⚙️', tags:['METALLO','ENERGIA'], power:2, stability:55, desc:'Immagazzina più di quanto sembri.'},
+    {id:'fiala', name:'Fiala d’acido', sym:'🧪', tags:['TOSSICO','LIQUIDO'], power:2, stability:40, desc:'Corrode tutto ciò che è solido.'},
+    {id:'carbone', name:'Carbone', sym:'⚫', tags:['COMBUSTIBILE','SOLIDO'], power:2, stability:65, desc:'Brucia più a lungo del legno.'},
+    {id:'essenza', name:'Essenza vuota', sym:'🌑', tags:['VUOTO'], power:2, stability:20, rarity:'rare', desc:'Reagisce con chiunque, in modi imprevedibili.'}
   ];
   const ELEMENTS_BY_ID = ELEMENTS.reduce((m,e)=>{m[e.id]=e;return m;},{});
 
   const ARTIFACTS = [
     {id:'amplificatore', name:'Amplificatore instabile', sym:'🔬', desc:'+30% al danno di ogni reazione.'},
-    {id:'catena_perpetua', name:'Catena perpetua', sym:'🔗', desc:'Le reazioni a catena contano il doppio delle tessere.'},
+    {id:'catena_perpetua', name:'Catena perpetua', sym:'🔗', desc:'Le reazioni a conteggio (Inferno, Gelo Conduttivo, Propagazione) contano il doppio delle tessere.'},
     {id:'rigenerazione', name:'Rigenerazione cellulare', sym:'💗', desc:'Guarisci 3 HP dopo ogni combattimento vinto.'},
     {id:'griglia_espansa', name:'Griglia espansa', sym:'🧱', desc:'Aggiunge subito 4 slot alla griglia.'},
     {id:'cuore_del_caos', name:'Cuore del caos', sym:'🌀', desc:'15% di possibilità che una reazione scatti due volte.'},
-    {id:'mano_fortunata', name:'Mano fortunata', sym:'🍀', desc:'Le ricompense mostrano 4 scelte invece di 3.'}
+    {id:'mano_fortunata', name:'Mano fortunata', sym:'🍀', desc:'Le ricompense mostrano 4 scelte invece di 3.'},
+    {id:'alambicco', name:'Alambicco instabile', sym:'🧪', desc:'+50% danno dalle reazioni, ma +50% Instabilità generata.'},
+    {id:'paradosso', name:'Paradosso', sym:'♾️', desc:'Le coppie che non reagiscono hanno il 25% di possibilità di generare comunque una reazione casuale.'}
   ];
   const ARTIFACTS_BY_ID = ARTIFACTS.reduce((m,a)=>{m[a.id]=a;return m;},{});
 
@@ -260,25 +275,59 @@
     {id:'primordiale', name:'Il Nucleo Primordiale', sym:'☢️', hp:70, dmg:7, boss:true, special:true}
   ];
 
-  const REACTIONS = {
-    'acqua|fuoco': {resolve:()=>({name:'Vapore bollente', icon:'♨️', dmg:4})},
-    'fuoco|zolfo': {consumesBoth:true, resolve:()=>({name:'Deflagrazione', icon:'💥', dmg:8, note:'entrambi gli elementi si consumano'})},
-    'fuoco|ghiaccio': {resolve:()=>({name:'Shock termico', icon:'🌫️', dmg:5})},
-    'aria|fuoco': {resolve:(ctx)=>{const c=countTag(ctx.grid,'fuoco');const m=ctx.chainBoost?2:1;return {name:'Incendio propagante', icon:'🔥', dmg:c*3*m, note:`si propaga su ${c} fiamme`};}},
-    'elettrico|metallo': {resolve:(ctx)=>{const j=findJumpTarget(ctx);return {name:'Sovraccarico', icon:'⚡', dmg:6+(j?3:0), note:j?`salta su ${ELEMENTS_BY_ID[j].name}`:undefined};}},
-    'acqua|elettrico': {resolve:()=>({name:'Elettroshock', icon:'🌩️', dmg:5, stun:true, note:'il nemico salta il prossimo attacco'})},
-    'acqua|veleno': {resolve:()=>({name:'Acqua tossica', icon:'☣️', dmg:3, poison:2})},
-    'acido|veleno': {resolve:()=>({name:'Melma corrosiva', icon:'🧫', dmg:4, poison:3})},
-    'metallo|terra': {resolve:()=>({name:'Bastione', icon:'🛡️', dmg:0, shield:4, note:'scudo per il prossimo colpo'})},
-    'acido|metallo': {resolve:()=>({name:'Corrosione', icon:'⚙️', dmg:4, armorShred:1, note:'il nemico resterà più vulnerabile'})},
-    'luce|ombra': {consumesBoth:true, resolve:()=>({name:'Implosione', icon:'🌀', dmg:10, note:'entrambi gli elementi si consumano'})},
-    'natura|veleno': {consumesBoth:true, resolve:()=>({name:'Contaminazione', icon:'🍄', dmg:5, poison:1})},
-    'acqua|natura': {resolve:()=>({name:'Crescita', icon:'🌿', dmg:0, heal:3})},
-    'elettrico|ghiaccio': {resolve:(ctx)=>{const c=countTag(ctx.grid,'ghiaccio');const m=ctx.chainBoost?2:1;return {name:'Gelo conduttivo', icon:'🧊', dmg:c*2*m, note:`conduce ${c} frammenti`};}},
-    'aria|terra': {resolve:()=>({name:'Tempesta di sabbia', icon:'🏜️', dmg:1, enemyDmgReduction:3, note:'il nemico colpirà più debolmente'})}
-  };
+  // Ogni regola scatta quando l'unione delle proprietà di due tessere adiacenti
+  // copre entrambe le tag richieste in `need` (o, se le due tag coincidono,
+  // quando ENTRAMBE le tessere la possiedono individualmente).
+  const REACTIONS = [
+    {need:['FUOCO','COMBUSTIBILE'], producesTags:['CENERE'], instability:8,
+      resolve:()=>({name:'Bruciatura', icon:'🔥', dmg:6})},
+    {need:['FUOCO','LIQUIDO'], producesTags:['ARIA'], instability:5,
+      resolve:()=>({name:'Vapore', icon:'♨️', dmg:4})},
+    {need:['ARIA','FUOCO'], instability:10,
+      resolve:(ctx)=>{const c=countTagActive(ctx.activeTags,'FUOCO');const m=ctx.chainBoost?2:1;return {name:'Propagazione', icon:'🌬️', dmg:c*3*m, note:`si propaga su ${c} fonti di fuoco`};}},
+    {need:['ELETTRICO','METALLO'], producesTags:['ENERGIA'], instability:12,
+      resolve:(ctx)=>{const j=findJumpTarget(ctx);return {name:'Sovraccarico', icon:'⚡', dmg:6+(j?3:0), note:j?`salta su ${ELEMENTS_BY_ID[j].name}`:undefined};}},
+    {need:['ACQUA','ELETTRICO'], instability:10,
+      resolve:()=>({name:'Elettroshock', icon:'🌩️', dmg:5, stun:true, note:'il nemico salta il prossimo attacco'})},
+    {need:['GHIACCIO','FUOCO'], producesTags:['LIQUIDO'], instability:9,
+      resolve:()=>({name:'Shock termico', icon:'🌫️', dmg:5})},
+    {need:['TOSSICO','LIQUIDO'], instability:6,
+      resolve:()=>({name:'Melma corrosiva', icon:'🧫', dmg:4, poison:3})},
+    {need:['TOSSICO','ACQUA'], instability:5,
+      resolve:()=>({name:'Acqua tossica', icon:'☣️', dmg:3, poison:2})},
+    {need:['TERRA','METALLO'], instability:2,
+      resolve:()=>({name:'Bastione', icon:'🛡️', dmg:0, shield:4, note:'scudo per il prossimo colpo'})},
+    {need:['TOSSICO','METALLO'], instability:6,
+      resolve:()=>({name:'Corrosione', icon:'⚙️', dmg:4, armorShred:1, note:'il nemico resterà più vulnerabile'})},
+    {need:['NATURA','ACQUA'], instability:2,
+      resolve:()=>({name:'Crescita', icon:'🌿', dmg:0, heal:3})},
+    {need:['NATURA','TOSSICO'], consumesBoth:true, instability:7,
+      resolve:()=>({name:'Contaminazione', icon:'🍄', dmg:5, poison:1})},
+    {need:['ENERGIA','SOLIDO'], producesTags:['ELETTRICO'], instability:8,
+      resolve:()=>({name:'Macchina', icon:'🤖', dmg:5})},
+    {need:['GHIACCIO','ELETTRICO'], instability:9,
+      resolve:(ctx)=>{const c=countTagActive(ctx.activeTags,'GHIACCIO');const m=ctx.chainBoost?2:1;return {name:'Gelo conduttivo', icon:'🧊', dmg:c*2*m, note:`conduce ${c} frammenti`};}},
+    {need:['TERRA','ARIA'], instability:4,
+      resolve:()=>({name:'Tempesta di sabbia', icon:'🏜️', dmg:1, enemyDmgReduction:3, note:'il nemico colpirà più debolmente'})},
+    {need:['CENERE','NATURA'], instability:1,
+      resolve:()=>({name:'Fertilizzazione', icon:'🌾', dmg:0, heal:2})},
+    {need:['FUOCO','FUOCO'], instability:10,
+      resolve:(ctx)=>{const c=countTagActive(ctx.activeTags,'FUOCO');return {name:'Inferno', icon:'🔥', dmg:c*2, note:`${c} fonti di fuoco in risonanza`};}},
+    {need:['METALLO','METALLO'], instability:3,
+      resolve:()=>({name:'Risonanza metallica', icon:'🔔', dmg:3, shield:2})}
+  ];
 
-  function countTag(grid, tag){return grid.filter(id=>id && ELEMENTS_BY_ID[id].tag===tag).length;}
+  function countTagActive(activeTags, tag){
+    return activeTags.filter(t=>t && t.includes(tag)).length;
+  }
+
+  function ruleMatches(rule, tagsA, tagsB){
+    const [x,y] = rule.need;
+    if(x===y) return tagsA.includes(x) && tagsB.includes(x);
+    const hasX = tagsA.includes(x) || tagsB.includes(x);
+    const hasY = tagsA.includes(y) || tagsB.includes(y);
+    return hasX && hasY;
+  }
 
   function findJumpTarget(ctx){
     const {grid,i,j,cols} = ctx;
@@ -298,23 +347,27 @@
   }
 
   function randomChaosReaction(){
-    return {resolve:()=>{
-      const dmg = 3 + Math.floor(Math.random()*10);
-      return {name:'Reazione instabile', icon:'☢️', dmg, note:'il Nucleo reagisce in modo imprevedibile'};
-    }};
+    const dmg = 3 + Math.floor(Math.random()*10);
+    return {name:'Distorsione', icon:'🌑', dmg, instability:15, note:'il Vuoto reagisce in modo imprevedibile'};
   }
 
   /* ================= REACTION ENGINE ================= */
 
-  function computeReactions(grid, artifacts){
+  const CHAIN_MULT = [1, 1.5, 2, 3, 5];
+
+  function computeReactions(grid, artifacts, mutations){
     const cols = 4;
     const rows = Math.ceil(grid.length/cols);
-    const amp = artifacts.includes('amplificatore') ? 1.3 : 1;
+    const ampBase = 1 + (artifacts.includes('amplificatore')?0.3:0) + (artifacts.includes('alambicco')?0.5:0);
+    const instMult = artifacts.includes('alambicco') ? 1.5 : 1;
     const chainBoost = artifacts.includes('catena_perpetua');
     const chaosHeart = artifacts.includes('cuore_del_caos');
+    const paradox = artifacts.includes('paradosso');
 
     let baseDamage = 0;
     grid.forEach(id=>{ if(id) baseDamage += ELEMENTS_BY_ID[id].power; });
+
+    const activeTags = grid.map((id,idx)=> id ? [...ELEMENTS_BY_ID[id].tags, ...((mutations && mutations[idx])||[])] : null);
 
     const pairs = [];
     for(let i=0;i<grid.length;i++){
@@ -323,17 +376,19 @@
       const right = col<cols-1 ? i+1 : -1;
       const down = row<rows-1 ? i+cols : -1;
       if(right>=0 && grid[right]) pairs.push([i,right]);
-      if(down>=0 && grid[down] !== undefined && grid[down]) pairs.push([i,down]);
+      if(down>=0 && grid[down]) pairs.push([i,down]);
     }
 
     const consumed = new Set();
+    const triggeredKeys = new Set();
     const log = [];
     let bonusDamage=0, heal=0, shield=0, stun=false, poisonAdd=0, enemyDmgReductionAdd=0, armorShredAdd=0;
-    let reactionsTriggered=0, biggestSingle=0;
+    let reactionsTriggered=0, biggestSingle=0, instabilityGain=0;
 
     function apply(res){
       reactionsTriggered++;
-      const dmg = Math.round((res.dmg||0)*amp);
+      const mult = CHAIN_MULT[Math.min(reactionsTriggered-1, CHAIN_MULT.length-1)];
+      const dmg = Math.round((res.dmg||0)*ampBase*mult);
       bonusDamage += dmg;
       biggestSingle = Math.max(biggestSingle, dmg);
       if(res.heal) heal += res.heal;
@@ -342,31 +397,75 @@
       if(res.poison) poisonAdd += res.poison;
       if(res.enemyDmgReduction) enemyDmgReductionAdd += res.enemyDmgReduction;
       if(res.armorShred) armorShredAdd += res.armorShred;
-      log.push(`${res.icon||'⚗️'} ${res.name}${dmg?` — +${dmg} danni`:''}${res.note?' · '+res.note:''}`);
+      instabilityGain += (res.instability||0);
+      const multTag = mult>1 ? ` ×${mult}` : '';
+      log.push(`${res.icon||'⚗️'} ${res.name}${multTag}${dmg?` — +${dmg} danni`:''}${res.note?' · '+res.note:''}`);
       if(chaosHeart && Math.random()<0.15){
-        bonusDamage += dmg;
         reactionsTriggered++;
+        bonusDamage += dmg;
         log.push(`🔁 Il Cuore del Caos duplica: ${res.name}!`);
       }
     }
 
-    pairs.forEach(([i,j])=>{
-      if(consumed.has(i) || consumed.has(j)) return;
-      const idA=grid[i], idB=grid[j];
-      const tagA=ELEMENTS_BY_ID[idA].tag, tagB=ELEMENTS_BY_ID[idB].tag;
-      const key=[tagA,tagB].sort().join('|');
-      let rule = REACTIONS[key];
-      if(!rule && (tagA==='caos'||tagB==='caos')) rule = randomChaosReaction();
-      if(!rule) return;
-      const res = rule.resolve({grid,i,j,cols,rows,chainBoost});
-      apply(res);
-      if(rule.consumesBoth){ consumed.add(i); consumed.add(j); }
-    });
+    let triggeredThisWave = true;
+    let wave = 0;
+    const MAX_WAVES = 6;
+    while(triggeredThisWave && wave < MAX_WAVES){
+      triggeredThisWave = false;
+      pairs.forEach(([i,j])=>{
+        if(consumed.has(i) || consumed.has(j)) return;
+        const tagsA = activeTags[i], tagsB = activeTags[j];
+        if(!tagsA || !tagsB) return;
+        let anyMatch = false;
+
+        REACTIONS.forEach((rule, ridx)=>{
+          const key = `${i}|${j}|${ridx}`;
+          if(triggeredKeys.has(key)) return;
+          if(!ruleMatches(rule, tagsA, tagsB)) return;
+          triggeredKeys.add(key);
+          triggeredThisWave = true;
+          anyMatch = true;
+          const res = rule.resolve({grid, i, j, cols, rows, activeTags, chainBoost});
+          if(res.instability===undefined) res.instability = rule.instability;
+          apply(res);
+          if(rule.consumesBoth){ consumed.add(i); consumed.add(j); }
+          if(rule.producesTags && !consumed.has(i) && !consumed.has(j)){
+            rule.producesTags.forEach(t=>{
+              if(!activeTags[i].includes(t)) activeTags[i].push(t);
+              if(!activeTags[j].includes(t)) activeTags[j].push(t);
+            });
+          }
+        });
+
+        if(!consumed.has(i) && !consumed.has(j) && (tagsA.includes('VUOTO') || tagsB.includes('VUOTO'))){
+          const key = `${i}|${j}|void`;
+          if(!triggeredKeys.has(key)){
+            triggeredKeys.add(key);
+            triggeredThisWave = true;
+            anyMatch = true;
+            apply(randomChaosReaction());
+          }
+        }
+
+        if(!anyMatch && paradox){
+          const key = `${i}|${j}|paradosso`;
+          if(!triggeredKeys.has(key) && Math.random()<0.25){
+            triggeredKeys.add(key);
+            triggeredThisWave = true;
+            const res = randomChaosReaction();
+            res.name = 'Paradosso — ' + res.name;
+            apply(res);
+          }
+        }
+      });
+      wave++;
+    }
 
     return {
       baseDamage, bonusDamage, totalDamage: baseDamage+bonusDamage, log,
       consumed:[...consumed], heal, shield, stun, poisonAdd,
-      enemyDmgReductionAdd, armorShredAdd, reactionsTriggered, biggestSingle
+      enemyDmgReductionAdd, armorShredAdd, reactionsTriggered, biggestSingle,
+      instabilityGain: Math.round(instabilityGain*instMult)
     };
   }
 
@@ -394,8 +493,9 @@
       enemyIndex:0,
       turn:1,
       shieldValue:0, enemyStunned:false, enemyDmgReductionTotal:0, armorShredTotal:0, poisonStacks:0,
+      instability:0, tileMutations:{},
       log:['🧪 Il laboratorio si accende. Prepara la tua prima reazione.'],
-      stats:{totalDamage:0, reactionsTriggered:0, biggestSingle:0, encountersCleared:0},
+      stats:{totalDamage:0, reactionsTriggered:0, biggestSingle:0, encountersCleared:0, overreactions:0},
       rewardOptions:[], pendingPlacement:null, rewardDone:false,
       bestScore: state ? state.bestScore : loadBestScore()
     };
@@ -506,6 +606,49 @@
     render();
   }
 
+  function triggerOverreaction(turnDamage){
+    state.stats.overreactions++;
+    pushLog('🌀 OVERREACTION! Il sistema perde il controllo...');
+    const outcome = ['mega','duplica','mutazione','perdita','random'][Math.floor(Math.random()*5)];
+    if(outcome==='mega'){
+      state.enemy.hp -= 25;
+      state.stats.totalDamage += 25;
+      pushLog('💥 Mega-esplosione — ulteriori 25 danni!');
+    } else if(outcome==='duplica'){
+      state.enemy.hp -= turnDamage;
+      state.stats.totalDamage += turnDamage;
+      pushLog(`🔁 Duplicazione — la reazione di questo turno si ripete: +${turnDamage} danni!`);
+    } else if(outcome==='mutazione'){
+      const idxs = state.grid.map((v,i)=>v!==null?i:null).filter(v=>v!==null);
+      if(idxs.length){
+        const idx = idxs[Math.floor(Math.random()*idxs.length)];
+        const pool = ['FUOCO','ACQUA','ELETTRICO','METALLO','GHIACCIO','TOSSICO','TERRA','ARIA','NATURA','ENERGIA'];
+        const tag = pool[Math.floor(Math.random()*pool.length)];
+        if(!state.tileMutations[idx]) state.tileMutations[idx] = [];
+        if(!state.tileMutations[idx].includes(tag)) state.tileMutations[idx].push(tag);
+        pushLog(`🧬 Mutazione — la cella ${idx+1} assorbe la proprietà ${TAG_LABELS[tag]}.`);
+      }
+    } else if(outcome==='perdita'){
+      const idxs = state.grid.map((v,i)=>v!==null?i:null).filter(v=>v!==null);
+      if(idxs.length){
+        const idx = idxs[Math.floor(Math.random()*idxs.length)];
+        const lost = ELEMENTS_BY_ID[state.grid[idx]].name;
+        state.grid[idx] = null;
+        delete state.tileMutations[idx];
+        pushLog(`💔 Perdita di materia — ${lost} si disintegra dalla griglia.`);
+      }
+    } else {
+      if(Math.random()<0.5){
+        state.enemy.hp -= 15;
+        state.stats.totalDamage += 15;
+        pushLog('⚡ Effetto casuale favorevole — +15 danni.');
+      } else {
+        state.playerHp = Math.max(0, state.playerHp-5);
+        pushLog('⚡ Effetto casuale avverso — subisci 5 danni di ritorno.');
+      }
+    }
+  }
+
   function doReact(){
     if(state.screen!=='run' || state.rewardOptions.length) return;
     if(state.playerHp<=0 || state.enemy.hp<=0) return;
@@ -523,11 +666,11 @@
       state.poisonStacks = Math.max(0, state.poisonStacks-1);
     }
 
-    const result = computeReactions(state.grid, state.artifacts);
+    const result = computeReactions(state.grid, state.artifacts, state.tileMutations);
     state.enemy.hp -= result.totalDamage;
     pushLog(`⚔️ Danno base: ${result.baseDamage}`);
     result.log.forEach(pushLog);
-    result.consumed.forEach(i=>{ state.grid[i]=null; });
+    result.consumed.forEach(i=>{ state.grid[i]=null; delete state.tileMutations[i]; });
     if(result.heal){ state.playerHp = Math.min(state.playerMaxHp, state.playerHp+result.heal); pushLog(`💗 Curi ${result.heal} HP`); }
     state.shieldValue += result.shield;
     if(result.stun) state.enemyStunned = true;
@@ -538,6 +681,19 @@
     state.stats.totalDamage += result.totalDamage;
     state.stats.reactionsTriggered += result.reactionsTriggered;
     state.stats.biggestSingle = Math.max(state.stats.biggestSingle, result.biggestSingle);
+
+    state.instability += result.instabilityGain;
+    while(state.instability>=100 && state.playerHp>0 && state.enemy.hp>0){
+      state.instability -= 100;
+      triggerOverreaction(result.totalDamage);
+    }
+
+    if(state.playerHp<=0){
+      state.playerHp = 0;
+      endRun(false);
+      render();
+      return;
+    }
 
     if(state.enemy.hp<=0){
       state.enemy.hp = 0;
@@ -585,7 +741,7 @@
 
   function endRun(victory){
     const s = state.stats;
-    const score = s.totalDamage + s.reactionsTriggered*5 + state.artifacts.length*20 + (victory?100:0);
+    const score = s.totalDamage + s.reactionsTriggered*5 + state.artifacts.length*20 + s.overreactions*30 + (victory?100:0);
     let rank;
     if(score<80) rank='Apprendista Distratto';
     else if(score<180) rank='Miscelatore Discreto';
@@ -616,8 +772,11 @@
       return `<button class="tile empty" data-idx="${idx}" title="Slot vuoto"></button>`;
     }
     const el = ELEMENTS_BY_ID[id];
+    const extraTags = (state.tileMutations && state.tileMutations[idx]) || [];
+    const tagLabel = [...el.tags, ...extraTags].map(t=>TAG_LABELS[t]).join(', ');
     const isSelected = state.selected===idx;
-    return `<button class="tile filled${isSelected?' selected':''}" data-idx="${idx}" style="--tag-color:${TAG_COLORS[el.tag]}" title="${el.name} — ${el.desc}">
+    const mutated = extraTags.length ? ' mutata' : '';
+    return `<button class="tile filled${isSelected?' selected':''}" data-idx="${idx}" style="--tag-color:${TAG_COLORS[el.tags[0]]}" title="${el.name}${mutated} — ${el.desc} (${tagLabel})">
       <span class="pw">${el.power}</span>
       <span class="sym">${el.sym}</span>
       <span class="nm">${el.name}</span>
@@ -627,14 +786,16 @@
   function renderIntro(){
     $('#record-line').textContent = state.bestScore>0 ? `Record personale: ${state.bestScore} punti caos` : 'Nessun record ancora. Sarai tu il primo?';
     $('#legend-elements').innerHTML = ELEMENTS.map(e=>
-      `<div class="legend-item" style="--tag-color:${TAG_COLORS[e.tag]}"><span>${e.sym}</span><span><b>${e.name}</b><br>${TAG_LABELS[e.tag]} · pot. ${e.power}</span></div>`
+      `<div class="legend-item" style="--tag-color:${TAG_COLORS[e.tags[0]]}"><span>${e.sym}</span><span><b>${e.name}</b><br>${e.tags.map(t=>TAG_LABELS[t]).join(' · ')} · pot. ${e.power} · stab. ${e.stability}</span></div>`
     ).join('');
-    const reactionRows = Object.keys(REACTIONS).map(key=>{
-      const [a,b] = key.split('|');
-      const dummyRes = REACTIONS[key].resolve({grid:[], i:0, j:0, cols:4, rows:1, chainBoost:false});
-      return `<div>${TAG_LABELS[a]} + ${TAG_LABELS[b]} → <span>${dummyRes.name}</span></div>`;
+    const reactionRows = REACTIONS.map(rule=>{
+      const dummyGrid = new Array(4).fill(null);
+      const dummyRes = rule.resolve({grid:dummyGrid, i:0, j:1, cols:4, rows:1, activeTags:[rule.need,rule.need], chainBoost:false});
+      return `<div>${TAG_LABELS[rule.need[0]]} + ${TAG_LABELS[rule.need[1]]} → <span>${dummyRes.name}</span></div>`;
     }).join('');
-    $('#legend-reactions').innerHTML = reactionRows + `<div>Caos + qualsiasi → <span>Reazione instabile</span></div>`;
+    $('#legend-reactions').innerHTML = reactionRows
+      + `<div>Vuoto + qualsiasi → <span>Distorsione</span></div>`
+      + `<div style="margin-top:8px;">Ogni reazione consecutiva aumenta il moltiplicatore: ×1 → ×1.5 → ×2 → ×3 → ×5. Alcune reazioni generano nuove proprietà (es. Cenere, Aria) che possono innescarne altre a cascata.</div>`;
   }
 
   function renderGame(){
@@ -656,6 +817,10 @@
     if(state.poisonStacks) enemyChips.push(`☣️ veleno x${state.poisonStacks}`);
     $('#enemy-chips').innerHTML = enemyChips.map(c=>`<span class="chip">${c}</span>`).join('');
 
+    $('#instability-bar').style.width = Math.min(100,state.instability) + '%';
+    $('#instability-bar').classList.toggle('critical', state.instability>=80);
+    $('#instability-value').textContent = `${state.instability}/100`;
+
     $('#player-bar').style.width = Math.max(0,(state.playerHp/state.playerMaxHp*100)) + '%';
     $('#player-hp').textContent = `HP ${Math.max(0,state.playerHp)}/${state.playerMaxHp}`;
     const playerChips = [];
@@ -669,10 +834,10 @@
     if(state.rewardOptions.length){
       rewardOverlay.hidden = false;
       $('#reward-grid').innerHTML = state.rewardOptions.map((o,ridx)=>`
-        <button class="reward-card${o.picked?' picked':''}" data-ridx="${ridx}" style="--tag-color:${o.type==='element'?TAG_COLORS[o.tag]:'var(--accent-2)'}" ${state.rewardDone?'disabled':''}>
+        <button class="reward-card${o.picked?' picked':''}" data-ridx="${ridx}" style="--tag-color:${o.type==='element'?TAG_COLORS[o.tags[0]]:'var(--accent-2)'}" ${state.rewardDone?'disabled':''}>
           <span class="rt">${o.sym}</span>
           <span class="rn">${o.name}</span>
-          <span class="rd">${o.type==='artifact'?o.desc:(o.desc+ ' · '+TAG_LABELS[o.tag]+' · pot. '+o.power)}</span>
+          <span class="rd">${o.type==='artifact'?o.desc:(o.desc+ ' · '+o.tags.map(t=>TAG_LABELS[t]).join(', ')+' · pot. '+o.power)}</span>
         </button>`).join('');
       let note = '';
       if(state.pendingPlacement) note = 'Griglia piena — scegli una tessera da sostituire.';
@@ -700,6 +865,7 @@
       <div class="stat"><div class="v">${s.totalDamage}</div><div class="l">danno totale</div></div>
       <div class="stat"><div class="v">${s.reactionsTriggered}</div><div class="l">reazioni scatenate</div></div>
       <div class="stat"><div class="v">${s.biggestSingle}</div><div class="l">reazione più forte</div></div>
+      <div class="stat"><div class="v">${s.overreactions}</div><div class="l">overreaction scatenate</div></div>
     `;
     const buildItems = state.grid.filter(Boolean).map(id=>ELEMENTS_BY_ID[id]);
     const artifactItems = state.artifacts.map(id=>ARTIFACTS_BY_ID[id]);
