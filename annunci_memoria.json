@@ -6528,5 +6528,38 @@
     "score": 6,
     "sotto_media": false,
     "titolo": "Monolocale in Vendita, Via Vignale 7, Torino"
+  },
+  "30867054": {
+    "città": "Bologna",
+    "motivo_ai": "Prezzo sotto media città, trilocale compatto, zona centrale interessante",
+    "mq": 62,
+    "prezzo": 199000,
+    "prezzo_mq": 3210,
+    "prima_vista": "2026-09-21T09:38:08.558632+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Agucchi, Bologna"
+  },
+  "30867663": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo sotto media zona (-18%). Bilocale 60mq a 4917€/mq, buona opportunità Milano.",
+    "mq": 60,
+    "prezzo": 295000,
+    "prezzo_mq": 4917,
+    "prima_vista": "2026-09-21T09:37:19.778992+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Bernardino Bellincione, Milano"
+  },
+  "30867828": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 32% sotto media zona, trilocale ampio, buona opportunità di acquisto",
+    "mq": 100,
+    "prezzo": 270000,
+    "prezzo_mq": 2700,
+    "prima_vista": "2026-09-21T09:37:55.240772+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Canonico Giovanni Scherillo, Napoli"
   }
 }
