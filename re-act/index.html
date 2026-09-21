@@ -1,0 +1,752 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RE:ACT</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+  :root{
+    --bg:#14110d;
+    --surface:#221b13;
+    --surface-2:#2c2116;
+    --line:#3d2e1d;
+    --ink:#f3e9d8;
+    --ink-dim:#a8977e;
+    --accent:#ff6a2b;
+    --accent-2:#ffd23f;
+    --danger:#ff5a5f;
+    --good:#7ed99b;
+    --font-display:'Big Shoulders Display','Arial Narrow',sans-serif;
+    --font-body:'Work Sans',system-ui,sans-serif;
+    --font-mono:'IBM Plex Mono',ui-monospace,monospace;
+  }
+  *{box-sizing:border-box;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--font-body);
+    margin:0;
+    min-height:100%;
+  }
+  .app{
+    max-width:640px;
+    margin:0 auto;
+    padding-inline:16px;
+    padding-block:20px 40px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+  }
+  [hidden]{display:none!important;}
+  h1,h2,h3{font-family:var(--font-display);font-weight:800;letter-spacing:.02em;margin:0;text-wrap:balance;}
+  button{font-family:inherit;color:inherit;cursor:pointer;}
+  button:focus-visible, .tile:focus-visible{outline:2px solid var(--accent-2);outline-offset:2px;}
+
+  /* ---------- header ---------- */
+  .masthead{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+  .masthead h1{font-size:clamp(2rem,8vw,2.6rem);color:var(--accent);}
+  .masthead .tag{color:var(--ink-dim);font-size:.85rem;}
+
+  /* ---------- intro ---------- */
+  .intro-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:14px;}
+  .intro-card p{margin:0;line-height:1.5;color:var(--ink-dim);}
+  .rules{margin:0;padding-left:1.1em;color:var(--ink-dim);line-height:1.6;display:flex;flex-direction:column;gap:4px;}
+  .record{font-family:var(--font-mono);color:var(--accent-2);font-size:.9rem;}
+  .big-btn{
+    background:var(--accent);color:#1c0f04;border:none;border-radius:10px;
+    padding:14px 20px;font-family:var(--font-display);font-size:1.3rem;font-weight:800;
+    letter-spacing:.03em;text-transform:uppercase;
+  }
+  .big-btn:hover{background:var(--accent-2);}
+  .big-btn:disabled{background:var(--surface-2);color:var(--ink-dim);cursor:not-allowed;}
+
+  details.legend{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px;}
+  details.legend summary{cursor:pointer;font-family:var(--font-display);font-size:1.05rem;letter-spacing:.02em;}
+  .legend-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin-top:12px;}
+  .legend-item{display:flex;gap:8px;align-items:center;font-size:.78rem;color:var(--ink-dim);border-left:3px solid var(--tag-color,var(--accent));padding-left:6px;}
+  .legend-item b{color:var(--ink);font-weight:600;}
+  .legend-reactions{margin-top:12px;display:flex;flex-direction:column;gap:6px;font-size:.8rem;color:var(--ink-dim);}
+  .legend-reactions div span{color:var(--ink);font-weight:600;}
+
+  /* ---------- progress dots ---------- */
+  .progress{display:flex;align-items:center;gap:6px;}
+  .dot{width:14px;height:14px;border-radius:50%;background:var(--surface-2);border:1px solid var(--line);}
+  .dot.done{background:var(--good);border-color:var(--good);}
+  .dot.current{background:var(--accent);border-color:var(--accent);box-shadow:0 0 0 3px rgba(255,106,43,.25);}
+  .dot.boss{width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:12px;background:var(--surface-2);}
+  .dot.boss.current{background:var(--danger);}
+  .dot.boss.done{background:var(--good);}
+
+  /* ---------- stage cards ---------- */
+  .stage{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  @media (max-width:480px){.stage{grid-template-columns:1fr;}}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:8px;}
+  .card .who{display:flex;align-items:center;gap:8px;}
+  .card .who .sym{font-size:1.6rem;}
+  .card .who .name{font-weight:600;font-size:.95rem;}
+  .bar{height:10px;border-radius:6px;background:var(--surface-2);overflow:hidden;}
+  .bar-fill{height:100%;transition:width .35s ease;}
+  .bar-fill.enemy{background:var(--danger);}
+  .bar-fill.player{background:var(--good);}
+  .hp-readout{font-family:var(--font-mono);font-size:.78rem;color:var(--ink-dim);}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;}
+  .chip{font-size:.68rem;font-family:var(--font-mono);background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:2px 8px;color:var(--accent-2);}
+
+  /* ---------- board ---------- */
+  .board-wrap{position:relative;}
+  .board{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;}
+  .tile{
+    aspect-ratio:1;border-radius:10px;border:1px solid var(--line);background:var(--surface);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;
+    position:relative;border-top:3px solid var(--tag-color,var(--line));
+  }
+  .tile.filled{background:var(--surface-2);}
+  .tile.empty{border-style:dashed;opacity:.5;}
+  .tile.selected{outline:2px solid var(--accent-2);outline-offset:-2px;}
+  .tile .sym{font-size:clamp(1.2rem,5vw,1.6rem);line-height:1;}
+  .tile .nm{font-size:.6rem;color:var(--ink-dim);text-align:center;line-height:1.1;padding-inline:2px;}
+  .tile .pw{position:absolute;top:2px;right:4px;font-family:var(--font-mono);font-size:.65rem;color:var(--accent-2);}
+
+  /* ---------- log ---------- */
+  .log{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px;height:130px;overflow-y:auto;display:flex;flex-direction:column-reverse;gap:4px;}
+  .log div{font-family:var(--font-mono);font-size:.75rem;color:var(--ink-dim);line-height:1.4;}
+  .log div:first-child{color:var(--ink);}
+
+  /* ---------- reward overlay ---------- */
+  .reward-overlay{position:absolute;inset:0;background:rgba(20,17,13,.94);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:12px;overflow:hidden;}
+  .reward-overlay h3{color:var(--accent-2);}
+  .reward-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;}
+  .reward-card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px;text-align:left;display:flex;flex-direction:column;gap:4px;border-top:3px solid var(--tag-color,var(--accent));}
+  .reward-card:hover{border-color:var(--accent-2);}
+  .reward-card.picked{outline:2px solid var(--accent-2);}
+  .reward-card .rt{font-size:1.4rem;}
+  .reward-card .rn{font-weight:600;font-size:.85rem;}
+  .reward-card .rd{font-size:.7rem;color:var(--ink-dim);line-height:1.3;}
+  .reward-note{font-size:.8rem;color:var(--accent-2);}
+
+  /* ---------- end screen ---------- */
+  .end-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:14px;}
+  .end-card h2{font-size:clamp(1.8rem,7vw,2.3rem);}
+  .end-card h2.win{color:var(--good);}
+  .end-card h2.lose{color:var(--danger);}
+  .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .stat{background:var(--surface-2);border-radius:10px;padding:10px;display:flex;flex-direction:column;gap:2px;}
+  .stat .v{font-family:var(--font-mono);font-size:1.3rem;font-variant-numeric:tabular-nums;}
+  .stat .l{font-size:.7rem;color:var(--ink-dim);text-transform:uppercase;letter-spacing:.05em;}
+  .rank{font-family:var(--font-display);font-size:1.5rem;color:var(--accent);}
+  .build-list{display:flex;flex-wrap:wrap;gap:6px;}
+  .build-list span{font-size:.75rem;background:var(--surface-2);border-radius:999px;padding:3px 10px;font-family:var(--font-mono);}
+</style>
+
+<div class="app" id="app">
+  <div class="masthead">
+    <h1>RE:ACT</h1>
+    <div class="tag">laboratorio di reazioni instabili</div>
+  </div>
+
+  <section id="screen-intro">
+    <div class="intro-card">
+      <p>Sei l'ultimo alchimista di un laboratorio crollato su se stesso. Hai una manciata di elementi instabili e una griglia per combinarli. Sopravvivi a cinque creature e a ciò che si è risvegliato nel nucleo, costruendo la reazione a catena più assurda possibile prima che la run finisca.</p>
+      <ol class="rules">
+        <li>Disponi gli elementi sulla griglia: le reazioni scattano tra tessere <b style="color:var(--ink)">adiacenti</b>.</li>
+        <li>Premi <b style="color:var(--ink)">REAGISCI</b> per infliggere danno base + tutte le reazioni a catena.</li>
+        <li>Il nemico contrattacca. Tra un combattimento e l'altro scegli nuovi elementi o artefatti.</li>
+        <li>Gli artefatti rompono le regole del gioco. Usali senza pietà.</li>
+      </ol>
+      <div class="record" id="record-line"></div>
+      <button class="big-btn" data-action="start-run">Inizia la run</button>
+    </div>
+    <details class="legend" style="margin-top:14px;">
+      <summary>Codice degli elementi &amp; reazioni note</summary>
+      <div class="legend-grid" id="legend-elements"></div>
+      <div class="legend-reactions" id="legend-reactions"></div>
+    </details>
+  </section>
+
+  <section id="screen-game" hidden>
+    <div class="progress" id="progress"></div>
+    <div class="stage">
+      <div class="card">
+        <div class="who"><span class="sym" id="enemy-sym"></span><span class="name" id="enemy-name"></span></div>
+        <div class="bar"><div class="bar-fill enemy" id="enemy-bar"></div></div>
+        <div class="hp-readout" id="enemy-hp"></div>
+        <div class="chips" id="enemy-chips"></div>
+      </div>
+      <div class="card">
+        <div class="who"><span class="sym">🧪</span><span class="name">Il tuo laboratorio</span></div>
+        <div class="bar"><div class="bar-fill player" id="player-bar"></div></div>
+        <div class="hp-readout" id="player-hp"></div>
+        <div class="chips" id="player-chips"></div>
+      </div>
+    </div>
+
+    <div class="board-wrap">
+      <div class="board" id="board"></div>
+      <div class="reward-overlay" id="reward-overlay" hidden>
+        <h3>Ricompensa</h3>
+        <div class="reward-grid" id="reward-grid"></div>
+        <div class="reward-note" id="reward-note"></div>
+        <button class="big-btn" id="continue-btn" data-action="continue-reward" hidden>Continua ▶</button>
+      </div>
+    </div>
+
+    <div class="log" id="log"></div>
+    <button class="big-btn" id="react-btn" data-action="react">Reagisci ⚗️</button>
+  </section>
+
+  <section id="screen-end" hidden>
+    <div class="end-card">
+      <h2 id="end-title"></h2>
+      <div class="rank" id="end-rank"></div>
+      <div class="stat-grid" id="end-stats"></div>
+      <div>
+        <div class="hp-readout" style="margin-bottom:6px;">Build finale</div>
+        <div class="build-list" id="end-build"></div>
+      </div>
+      <button class="big-btn" data-action="restart">Nuova run</button>
+    </div>
+  </section>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ================= DATA ================= */
+
+  const TAG_LABELS = {
+    fuoco:'Fuoco', acqua:'Acqua', elettrico:'Elettrico', metallo:'Metallo', zolfo:'Zolfo',
+    ghiaccio:'Ghiaccio', veleno:'Veleno', terra:'Terra', aria:'Aria', luce:'Luce',
+    ombra:'Ombra', natura:'Natura', acido:'Acido', caos:'Caos'
+  };
+  const TAG_COLORS = {
+    fuoco:'#ff6a2b', acqua:'#3fb8d6', elettrico:'#ffd23f', metallo:'#b8b0a2', zolfo:'#d9c24a',
+    ghiaccio:'#a9e8f2', veleno:'#7fd858', terra:'#a97452', aria:'#d8e3e0', luce:'#fff2c2',
+    ombra:'#9b82d6', natura:'#6bcf7f', acido:'#c6ff4a', caos:'#ff4fd8'
+  };
+
+  const ELEMENTS = [
+    {id:'fiamma', name:'Fiamma', sym:'🔥', tag:'fuoco', power:3, desc:'Danno base solido. Adora la compagnia infiammabile.'},
+    {id:'goccia', name:'Goccia', sym:'💧', tag:'acqua', power:2, desc:'Docile da sola, imprevedibile vicino all’elettricità.'},
+    {id:'scintilla', name:'Scintilla', sym:'⚡', tag:'elettrico', power:2, desc:'Salta da un bersaglio all’altro su un conduttore.'},
+    {id:'rottame', name:'Rottame', sym:'🔩', tag:'metallo', power:2, desc:'Conduce tutto ciò che gli sta vicino.'},
+    {id:'zolfo', name:'Zolfo', sym:'🟡', tag:'zolfo', power:1, desc:'Instabile. Tienilo lontano dal fuoco, o fallo apposta.'},
+    {id:'scheggia', name:'Scheggia di ghiaccio', sym:'❄️', tag:'ghiaccio', power:2, desc:'Fredda e tagliente, conduce se scossa.'},
+    {id:'spora', name:'Spora velenosa', sym:'☠️', tag:'veleno', power:1, desc:'Il danno vero arriva un turno alla volta.'},
+    {id:'zolla', name:'Zolla di terra', sym:'🪨', tag:'terra', power:3, desc:'Pesante, affidabile, poco chimica.'},
+    {id:'piuma', name:'Piuma', sym:'🪶', tag:'aria', power:1, desc:'Leggera, sa far propagare un incendio.'},
+    {id:'scaglia', name:'Scaglia di luce', sym:'✨', tag:'luce', power:2, desc:'Brilla di più accanto al suo opposto.'},
+    {id:'frammento', name:'Frammento d’ombra', sym:'🌑', tag:'ombra', power:2, desc:'Si nutre della luce vicina.'},
+    {id:'seme', name:'Seme', sym:'🌱', tag:'natura', power:1, desc:'Cresce e cura, se lo lasci fare.'},
+    {id:'fiala', name:'Fiala d’acido', sym:'🧪', tag:'acido', power:2, desc:'Corrode tutto ciò che è solido.'},
+    {id:'nucleo', name:'Nucleo instabile', sym:'☢️', tag:'caos', power:2, rarity:'rare', desc:'Reagisce con chiunque, in modi imprevedibili.'}
+  ];
+  const ELEMENTS_BY_ID = ELEMENTS.reduce((m,e)=>{m[e.id]=e;return m;},{});
+
+  const ARTIFACTS = [
+    {id:'amplificatore', name:'Amplificatore instabile', sym:'🔬', desc:'+30% al danno di ogni reazione.'},
+    {id:'catena_perpetua', name:'Catena perpetua', sym:'🔗', desc:'Le reazioni a catena contano il doppio delle tessere.'},
+    {id:'rigenerazione', name:'Rigenerazione cellulare', sym:'💗', desc:'Guarisci 3 HP dopo ogni combattimento vinto.'},
+    {id:'griglia_espansa', name:'Griglia espansa', sym:'🧱', desc:'Aggiunge subito 4 slot alla griglia.'},
+    {id:'cuore_del_caos', name:'Cuore del caos', sym:'🌀', desc:'15% di possibilità che una reazione scatti due volte.'},
+    {id:'mano_fortunata', name:'Mano fortunata', sym:'🍀', desc:'Le ricompense mostrano 4 scelte invece di 3.'}
+  ];
+  const ARTIFACTS_BY_ID = ARTIFACTS.reduce((m,a)=>{m[a.id]=a;return m;},{});
+
+  const ENEMIES = [
+    {id:'ratto', name:'Ratto radioattivo', sym:'🐀', hp:14, dmg:2},
+    {id:'sciame', name:'Sciame corrosivo', sym:'🦟', hp:20, dmg:3},
+    {id:'golem', name:'Golem di fango', sym:'🗿', hp:28, dmg:4},
+    {id:'cacciatore', name:'Cacciatore d’ombra', sym:'🕷️', hp:36, dmg:5},
+    {id:'chimera', name:'Chimera instabile', sym:'🐉', hp:46, dmg:6},
+    {id:'primordiale', name:'Il Nucleo Primordiale', sym:'☢️', hp:70, dmg:7, boss:true, special:true}
+  ];
+
+  const REACTIONS = {
+    'acqua|fuoco': {resolve:()=>({name:'Vapore bollente', icon:'♨️', dmg:4})},
+    'fuoco|zolfo': {consumesBoth:true, resolve:()=>({name:'Deflagrazione', icon:'💥', dmg:8, note:'entrambi gli elementi si consumano'})},
+    'fuoco|ghiaccio': {resolve:()=>({name:'Shock termico', icon:'🌫️', dmg:5})},
+    'aria|fuoco': {resolve:(ctx)=>{const c=countTag(ctx.grid,'fuoco');const m=ctx.chainBoost?2:1;return {name:'Incendio propagante', icon:'🔥', dmg:c*3*m, note:`si propaga su ${c} fiamme`};}},
+    'elettrico|metallo': {resolve:(ctx)=>{const j=findJumpTarget(ctx);return {name:'Sovraccarico', icon:'⚡', dmg:6+(j?3:0), note:j?`salta su ${ELEMENTS_BY_ID[j].name}`:undefined};}},
+    'acqua|elettrico': {resolve:()=>({name:'Elettroshock', icon:'🌩️', dmg:5, stun:true, note:'il nemico salta il prossimo attacco'})},
+    'acqua|veleno': {resolve:()=>({name:'Acqua tossica', icon:'☣️', dmg:3, poison:2})},
+    'acido|veleno': {resolve:()=>({name:'Melma corrosiva', icon:'🧫', dmg:4, poison:3})},
+    'metallo|terra': {resolve:()=>({name:'Bastione', icon:'🛡️', dmg:0, shield:4, note:'scudo per il prossimo colpo'})},
+    'acido|metallo': {resolve:()=>({name:'Corrosione', icon:'⚙️', dmg:4, armorShred:1, note:'il nemico resterà più vulnerabile'})},
+    'luce|ombra': {consumesBoth:true, resolve:()=>({name:'Implosione', icon:'🌀', dmg:10, note:'entrambi gli elementi si consumano'})},
+    'natura|veleno': {consumesBoth:true, resolve:()=>({name:'Contaminazione', icon:'🍄', dmg:5, poison:1})},
+    'acqua|natura': {resolve:()=>({name:'Crescita', icon:'🌿', dmg:0, heal:3})},
+    'elettrico|ghiaccio': {resolve:(ctx)=>{const c=countTag(ctx.grid,'ghiaccio');const m=ctx.chainBoost?2:1;return {name:'Gelo conduttivo', icon:'🧊', dmg:c*2*m, note:`conduce ${c} frammenti`};}},
+    'aria|terra': {resolve:()=>({name:'Tempesta di sabbia', icon:'🏜️', dmg:1, enemyDmgReduction:3, note:'il nemico colpirà più debolmente'})}
+  };
+
+  function countTag(grid, tag){return grid.filter(id=>id && ELEMENTS_BY_ID[id].tag===tag).length;}
+
+  function findJumpTarget(ctx){
+    const {grid,i,j,cols} = ctx;
+    const candidates = new Set();
+    [i,j].forEach(idx=>{
+      const row = Math.floor(idx/cols);
+      [idx-1, idx+1, idx-cols, idx+cols].forEach(n=>{
+        if(n<0 || n>=grid.length) return;
+        if((n===idx-1 || n===idx+1) && Math.floor(n/cols)!==row) return;
+        if(n===i || n===j) return;
+        if(grid[n]) candidates.add(n);
+      });
+    });
+    const arr = [...candidates];
+    if(!arr.length) return null;
+    return grid[arr[Math.floor(Math.random()*arr.length)]];
+  }
+
+  function randomChaosReaction(){
+    return {resolve:()=>{
+      const dmg = 3 + Math.floor(Math.random()*10);
+      return {name:'Reazione instabile', icon:'☢️', dmg, note:'il Nucleo reagisce in modo imprevedibile'};
+    }};
+  }
+
+  /* ================= REACTION ENGINE ================= */
+
+  function computeReactions(grid, artifacts){
+    const cols = 4;
+    const rows = Math.ceil(grid.length/cols);
+    const amp = artifacts.includes('amplificatore') ? 1.3 : 1;
+    const chainBoost = artifacts.includes('catena_perpetua');
+    const chaosHeart = artifacts.includes('cuore_del_caos');
+
+    let baseDamage = 0;
+    grid.forEach(id=>{ if(id) baseDamage += ELEMENTS_BY_ID[id].power; });
+
+    const pairs = [];
+    for(let i=0;i<grid.length;i++){
+      if(!grid[i]) continue;
+      const row = Math.floor(i/cols), col = i%cols;
+      const right = col<cols-1 ? i+1 : -1;
+      const down = row<rows-1 ? i+cols : -1;
+      if(right>=0 && grid[right]) pairs.push([i,right]);
+      if(down>=0 && grid[down] !== undefined && grid[down]) pairs.push([i,down]);
+    }
+
+    const consumed = new Set();
+    const log = [];
+    let bonusDamage=0, heal=0, shield=0, stun=false, poisonAdd=0, enemyDmgReductionAdd=0, armorShredAdd=0;
+    let reactionsTriggered=0, biggestSingle=0;
+
+    function apply(res){
+      reactionsTriggered++;
+      const dmg = Math.round((res.dmg||0)*amp);
+      bonusDamage += dmg;
+      biggestSingle = Math.max(biggestSingle, dmg);
+      if(res.heal) heal += res.heal;
+      if(res.shield) shield += res.shield;
+      if(res.stun) stun = true;
+      if(res.poison) poisonAdd += res.poison;
+      if(res.enemyDmgReduction) enemyDmgReductionAdd += res.enemyDmgReduction;
+      if(res.armorShred) armorShredAdd += res.armorShred;
+      log.push(`${res.icon||'⚗️'} ${res.name}${dmg?` — +${dmg} danni`:''}${res.note?' · '+res.note:''}`);
+      if(chaosHeart && Math.random()<0.15){
+        bonusDamage += dmg;
+        reactionsTriggered++;
+        log.push(`🔁 Il Cuore del Caos duplica: ${res.name}!`);
+      }
+    }
+
+    pairs.forEach(([i,j])=>{
+      if(consumed.has(i) || consumed.has(j)) return;
+      const idA=grid[i], idB=grid[j];
+      const tagA=ELEMENTS_BY_ID[idA].tag, tagB=ELEMENTS_BY_ID[idB].tag;
+      const key=[tagA,tagB].sort().join('|');
+      let rule = REACTIONS[key];
+      if(!rule && (tagA==='caos'||tagB==='caos')) rule = randomChaosReaction();
+      if(!rule) return;
+      const res = rule.resolve({grid,i,j,cols,rows,chainBoost});
+      apply(res);
+      if(rule.consumesBoth){ consumed.add(i); consumed.add(j); }
+    });
+
+    return {
+      baseDamage, bonusDamage, totalDamage: baseDamage+bonusDamage, log,
+      consumed:[...consumed], heal, shield, stun, poisonAdd,
+      enemyDmgReductionAdd, armorShredAdd, reactionsTriggered, biggestSingle
+    };
+  }
+
+  /* ================= STATE ================= */
+
+  let state = null;
+
+  function loadBestScore(){ try{ return Number(localStorage.getItem('react_best_score')||0); }catch(e){ return 0; } }
+  function saveBestScore(v){ try{ localStorage.setItem('react_best_score', String(v)); }catch(e){} }
+
+  function createInitialState(){
+    return {
+      screen:'intro',
+      bestScore: loadBestScore()
+    };
+  }
+
+  function startRun(){
+    state = {
+      screen:'run',
+      playerHp:30, playerMaxHp:30,
+      grid:['fiamma',null,'goccia',null,'scintilla',null,'rottame',null,'zolla',null,null,null],
+      artifacts:[],
+      selected:null,
+      enemyIndex:0,
+      turn:1,
+      shieldValue:0, enemyStunned:false, enemyDmgReductionTotal:0, armorShredTotal:0, poisonStacks:0,
+      log:['🧪 Il laboratorio si accende. Prepara la tua prima reazione.'],
+      stats:{totalDamage:0, reactionsTriggered:0, biggestSingle:0, encountersCleared:0},
+      rewardOptions:[], pendingPlacement:null, rewardDone:false,
+      bestScore: state ? state.bestScore : loadBestScore()
+    };
+    setEnemy(0);
+    render();
+  }
+
+  function setEnemy(idx){
+    const base = ENEMIES[idx];
+    state.enemyIndex = idx;
+    state.enemy = {...base, hp:base.hp, maxHp:base.hp};
+    state.turn = 1;
+    state.shieldValue = 0;
+    state.enemyStunned = false;
+    state.enemyDmgReductionTotal = 0;
+    state.armorShredTotal = 0;
+    state.poisonStacks = 0;
+    state.screen = 'run';
+    pushLog(`▶ Si avvicina: ${base.name} ${base.sym}`);
+  }
+
+  function pushLog(line){
+    state.log.push(line);
+    if(state.log.length>60) state.log.shift();
+  }
+
+  function pickElement(){
+    const common = ELEMENTS.filter(e=>e.rarity!=='rare');
+    const rare = ELEMENTS.filter(e=>e.rarity==='rare');
+    const weighted = common.flatMap(e=>[e,e,e]).concat(rare);
+    return weighted[Math.floor(Math.random()*weighted.length)];
+  }
+
+  function generateRewards(){
+    const n = state.artifacts.includes('mano_fortunata') ? 4 : 3;
+    const availableArtifacts = ARTIFACTS.filter(a=>!state.artifacts.includes(a.id));
+    const used = new Set();
+    const options = [];
+    for(let k=0;k<n;k++){
+      const canOfferArtifact = availableArtifacts.length>used.size && Math.random()<0.3;
+      if(canOfferArtifact){
+        const cand = availableArtifacts.filter(a=>!used.has(a.id));
+        const art = cand[Math.floor(Math.random()*cand.length)];
+        used.add(art.id);
+        options.push({type:'artifact', ...art});
+      } else {
+        const el = pickElement();
+        options.push({type:'element', ...el});
+      }
+    }
+    return options;
+  }
+
+  function applyArtifactImmediate(id){
+    if(id==='griglia_espansa') state.grid.push(null,null,null,null);
+  }
+
+  function onBoardClick(idx){
+    if(state.screen==='run' && state.pendingPlacement){
+      state.grid[idx] = state.pendingPlacement;
+      state.pendingPlacement = null;
+      state.rewardDone = true;
+      render();
+      return;
+    }
+    if(state.screen!=='run' || state.rewardOptions.length) return;
+    if(state.selected===null){
+      if(state.grid[idx]!==null) state.selected = idx;
+    } else if(state.selected===idx){
+      state.selected = null;
+    } else {
+      const tmp = state.grid[idx];
+      state.grid[idx] = state.grid[state.selected];
+      state.grid[state.selected] = tmp;
+      state.selected = null;
+    }
+    render();
+  }
+
+  function pickReward(ridx){
+    if(!state.rewardOptions.length || state.rewardDone) return;
+    const opt = state.rewardOptions[ridx];
+    state.rewardOptions.forEach(o=>o.picked=false);
+    opt.picked = true;
+    if(opt.type==='artifact'){
+      state.artifacts.push(opt.id);
+      applyArtifactImmediate(opt.id);
+      pushLog(`🧿 Artefatto ottenuto: ${opt.name}`);
+      state.rewardDone = true;
+    } else {
+      const empty = state.grid.findIndex(v=>v===null);
+      if(empty>=0){
+        state.grid[empty] = opt.id;
+        pushLog(`➕ ${opt.name} aggiunto alla griglia.`);
+        state.rewardDone = true;
+      } else {
+        state.pendingPlacement = opt.id;
+      }
+    }
+    render();
+  }
+
+  function continueAfterReward(){
+    if(!state.rewardDone) return;
+    state.rewardOptions = [];
+    state.rewardDone = false;
+    setEnemy(state.enemyIndex+1);
+    render();
+  }
+
+  function doReact(){
+    if(state.screen!=='run' || state.rewardOptions.length) return;
+    if(state.playerHp<=0 || state.enemy.hp<=0) return;
+
+    if(state.armorShredTotal>0){
+      state.enemy.hp -= state.armorShredTotal;
+      pushLog(`🩸 Corrosione residua — -${state.armorShredTotal} danni`);
+      state.stats.totalDamage += state.armorShredTotal;
+    }
+    if(state.poisonStacks>0){
+      const poisonDmg = state.poisonStacks*2;
+      state.enemy.hp -= poisonDmg;
+      pushLog(`☣️ Il veleno infligge ${poisonDmg} danni`);
+      state.stats.totalDamage += poisonDmg;
+      state.poisonStacks = Math.max(0, state.poisonStacks-1);
+    }
+
+    const result = computeReactions(state.grid, state.artifacts);
+    state.enemy.hp -= result.totalDamage;
+    pushLog(`⚔️ Danno base: ${result.baseDamage}`);
+    result.log.forEach(pushLog);
+    result.consumed.forEach(i=>{ state.grid[i]=null; });
+    if(result.heal){ state.playerHp = Math.min(state.playerMaxHp, state.playerHp+result.heal); pushLog(`💗 Curi ${result.heal} HP`); }
+    state.shieldValue += result.shield;
+    if(result.stun) state.enemyStunned = true;
+    state.poisonStacks += result.poisonAdd;
+    state.enemyDmgReductionTotal += result.enemyDmgReductionAdd;
+    state.armorShredTotal += result.armorShredAdd;
+
+    state.stats.totalDamage += result.totalDamage;
+    state.stats.reactionsTriggered += result.reactionsTriggered;
+    state.stats.biggestSingle = Math.max(state.stats.biggestSingle, result.biggestSingle);
+
+    if(state.enemy.hp<=0){
+      state.enemy.hp = 0;
+      state.stats.encountersCleared++;
+      pushLog(`☠️ ${state.enemy.name} sconfitto!`);
+      if(state.enemy.boss){
+        if(state.artifacts.includes('rigenerazione')) state.playerHp = Math.min(state.playerMaxHp, state.playerHp+3);
+        endRun(true);
+      } else {
+        if(state.artifacts.includes('rigenerazione')) state.playerHp = Math.min(state.playerMaxHp, state.playerHp+3);
+        state.rewardOptions = generateRewards();
+      }
+      render();
+      return;
+    }
+
+    let dmgDealt = state.enemy.dmg;
+    if(state.enemy.special && state.turn%3===0){
+      dmgDealt *= 2;
+      pushLog(`⚠️ ${state.enemy.name} impenna la sua instabilità: danno raddoppiato!`);
+    }
+    dmgDealt = Math.max(0, dmgDealt - state.enemyDmgReductionTotal);
+    if(state.enemyStunned){
+      pushLog(`😵 ${state.enemy.name} è stordito e salta il turno.`);
+      dmgDealt = 0;
+      state.enemyStunned = false;
+    } else if(state.shieldValue>0){
+      const absorbed = Math.min(state.shieldValue, dmgDealt);
+      state.shieldValue -= absorbed;
+      dmgDealt -= absorbed;
+      if(absorbed) pushLog(`🛡️ Lo scudo assorbe ${absorbed} danni`);
+    }
+    if(dmgDealt>0){
+      state.playerHp -= dmgDealt;
+      pushLog(`💢 Subisci ${dmgDealt} danni`);
+    }
+    state.turn++;
+
+    if(state.playerHp<=0){
+      state.playerHp = 0;
+      endRun(false);
+    }
+    render();
+  }
+
+  function endRun(victory){
+    const s = state.stats;
+    const score = s.totalDamage + s.reactionsTriggered*5 + state.artifacts.length*20 + (victory?100:0);
+    let rank;
+    if(score<80) rank='Apprendista Distratto';
+    else if(score<180) rank='Miscelatore Discreto';
+    else if(score<330) rank='Eretico della Materia';
+    else if(score<500) rank='Architetto del Caos';
+    else rank='Divinità Instabile';
+    const isRecord = score>state.bestScore;
+    if(isRecord){ state.bestScore = score; saveBestScore(score); }
+    state.screen = 'end';
+    state.result = {victory, score, rank, isRecord};
+  }
+
+  function resetToIntro(){
+    const best = state ? state.bestScore : loadBestScore();
+    state = createInitialState();
+    state.bestScore = best;
+    render();
+  }
+
+  /* ================= RENDER ================= */
+
+  const $ = sel => document.querySelector(sel);
+
+  function tileHTML(idx){
+    const id = state.grid[idx];
+    if(!id){
+      const sel = state.selected!==null || state.pendingPlacement;
+      return `<button class="tile empty" data-idx="${idx}" title="Slot vuoto"></button>`;
+    }
+    const el = ELEMENTS_BY_ID[id];
+    const isSelected = state.selected===idx;
+    return `<button class="tile filled${isSelected?' selected':''}" data-idx="${idx}" style="--tag-color:${TAG_COLORS[el.tag]}" title="${el.name} — ${el.desc}">
+      <span class="pw">${el.power}</span>
+      <span class="sym">${el.sym}</span>
+      <span class="nm">${el.name}</span>
+    </button>`;
+  }
+
+  function renderIntro(){
+    $('#record-line').textContent = state.bestScore>0 ? `Record personale: ${state.bestScore} punti caos` : 'Nessun record ancora. Sarai tu il primo?';
+    $('#legend-elements').innerHTML = ELEMENTS.map(e=>
+      `<div class="legend-item" style="--tag-color:${TAG_COLORS[e.tag]}"><span>${e.sym}</span><span><b>${e.name}</b><br>${TAG_LABELS[e.tag]} · pot. ${e.power}</span></div>`
+    ).join('');
+    const reactionRows = Object.keys(REACTIONS).map(key=>{
+      const [a,b] = key.split('|');
+      const dummyRes = REACTIONS[key].resolve({grid:[], i:0, j:0, cols:4, rows:1, chainBoost:false});
+      return `<div>${TAG_LABELS[a]} + ${TAG_LABELS[b]} → <span>${dummyRes.name}</span></div>`;
+    }).join('');
+    $('#legend-reactions').innerHTML = reactionRows + `<div>Caos + qualsiasi → <span>Reazione instabile</span></div>`;
+  }
+
+  function renderGame(){
+    const dotsHTML = ENEMIES.map((e,i)=>{
+      const cls = i<state.enemyIndex ? 'done' : (i===state.enemyIndex ? 'current' : '');
+      return `<span class="dot${e.boss?' boss':''} ${cls}">${e.boss?'☢':''}</span>`;
+    }).join('');
+    $('#progress').innerHTML = dotsHTML;
+
+    const enemy = state.enemy;
+    $('#enemy-sym').textContent = enemy.sym;
+    $('#enemy-name').textContent = enemy.name;
+    $('#enemy-bar').style.width = Math.max(0,(enemy.hp/enemy.maxHp*100)) + '%';
+    $('#enemy-hp').textContent = `HP ${Math.max(0,enemy.hp)}/${enemy.maxHp}`;
+    const enemyChips = [];
+    if(state.enemyStunned) enemyChips.push('😵 stordito');
+    if(state.enemyDmgReductionTotal) enemyChips.push(`🏜️ danno -${state.enemyDmgReductionTotal}`);
+    if(state.armorShredTotal) enemyChips.push(`⚙️ vulnerabile +${state.armorShredTotal}`);
+    if(state.poisonStacks) enemyChips.push(`☣️ veleno x${state.poisonStacks}`);
+    $('#enemy-chips').innerHTML = enemyChips.map(c=>`<span class="chip">${c}</span>`).join('');
+
+    $('#player-bar').style.width = Math.max(0,(state.playerHp/state.playerMaxHp*100)) + '%';
+    $('#player-hp').textContent = `HP ${Math.max(0,state.playerHp)}/${state.playerMaxHp}`;
+    const playerChips = [];
+    if(state.shieldValue) playerChips.push(`🛡️ scudo ${state.shieldValue}`);
+    state.artifacts.forEach(id=>playerChips.push(`${ARTIFACTS_BY_ID[id].sym} ${ARTIFACTS_BY_ID[id].name}`));
+    $('#player-chips').innerHTML = playerChips.map(c=>`<span class="chip">${c}</span>`).join('');
+
+    $('#board').innerHTML = state.grid.map((_,idx)=>tileHTML(idx)).join('');
+
+    const rewardOverlay = $('#reward-overlay');
+    if(state.rewardOptions.length){
+      rewardOverlay.hidden = false;
+      $('#reward-grid').innerHTML = state.rewardOptions.map((o,ridx)=>`
+        <button class="reward-card${o.picked?' picked':''}" data-ridx="${ridx}" style="--tag-color:${o.type==='element'?TAG_COLORS[o.tag]:'var(--accent-2)'}" ${state.rewardDone?'disabled':''}>
+          <span class="rt">${o.sym}</span>
+          <span class="rn">${o.name}</span>
+          <span class="rd">${o.type==='artifact'?o.desc:(o.desc+ ' · '+TAG_LABELS[o.tag]+' · pot. '+o.power)}</span>
+        </button>`).join('');
+      let note = '';
+      if(state.pendingPlacement) note = 'Griglia piena — scegli una tessera da sostituire.';
+      else if(state.rewardDone) note = 'Ricompensa raccolta.';
+      else note = 'Scegli una ricompensa.';
+      $('#reward-note').textContent = note;
+      $('#continue-btn').hidden = !state.rewardDone;
+    } else {
+      rewardOverlay.hidden = true;
+    }
+
+    $('#log').innerHTML = state.log.slice().reverse().map(l=>`<div>${l}</div>`).join('');
+    $('#react-btn').disabled = state.rewardOptions.length>0 || state.playerHp<=0 || state.enemy.hp<=0;
+  }
+
+  function renderEnd(){
+    const r = state.result;
+    const title = $('#end-title');
+    title.textContent = r.victory ? 'Run completata' : 'Il laboratorio è crollato';
+    title.className = r.victory ? 'win' : 'lose';
+    $('#end-rank').textContent = `${r.rank} — ${r.score} punti caos${r.isRecord?' · nuovo record!':''}`;
+    const s = state.stats;
+    $('#end-stats').innerHTML = `
+      <div class="stat"><div class="v">${s.encountersCleared}/${ENEMIES.length}</div><div class="l">nemici sconfitti</div></div>
+      <div class="stat"><div class="v">${s.totalDamage}</div><div class="l">danno totale</div></div>
+      <div class="stat"><div class="v">${s.reactionsTriggered}</div><div class="l">reazioni scatenate</div></div>
+      <div class="stat"><div class="v">${s.biggestSingle}</div><div class="l">reazione più forte</div></div>
+    `;
+    const buildItems = state.grid.filter(Boolean).map(id=>ELEMENTS_BY_ID[id]);
+    const artifactItems = state.artifacts.map(id=>ARTIFACTS_BY_ID[id]);
+    $('#end-build').innerHTML = buildItems.map(e=>`<span>${e.sym} ${e.name}</span>`).join('')
+      + artifactItems.map(a=>`<span>${a.sym} ${a.name}</span>`).join('');
+  }
+
+  function render(){
+    $('#screen-intro').hidden = state.screen!=='intro';
+    $('#screen-game').hidden = !(state.screen==='run');
+    $('#screen-end').hidden = state.screen!=='end';
+    if(state.screen==='intro') renderIntro();
+    if(state.screen==='run') renderGame();
+    if(state.screen==='end') renderEnd();
+    snapshotState();
+  }
+
+  function snapshotState(){
+    try{ window.claude?.hot?.snapshot?.(state); }catch(e){}
+  }
+
+  /* ================= EVENTS ================= */
+
+  document.addEventListener('click', e=>{
+    const tile = e.target.closest('.tile[data-idx]');
+    if(tile){ onBoardClick(Number(tile.dataset.idx)); return; }
+    const reward = e.target.closest('.reward-card[data-ridx]');
+    if(reward){ pickReward(Number(reward.dataset.ridx)); return; }
+    const actionBtn = e.target.closest('[data-action]');
+    if(actionBtn){
+      const action = actionBtn.dataset.action;
+      if(action==='start-run') startRun();
+      else if(action==='react') doReact();
+      else if(action==='continue-reward') continueAfterReward();
+      else if(action==='restart') resetToIntro();
+    }
+  });
+
+  /* ================= BOOT ================= */
+
+  function boot(saved){
+    state = (saved && saved.screen) ? saved : createInitialState();
+    render();
+  }
+  try{
+    if(window.claude?.hot?.ready) window.claude.hot.ready(boot);
+    else boot(window.claude?.hot?.data ?? null);
+  }catch(e){ boot(null); }
+})();
+</script>
