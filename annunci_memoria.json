@@ -6715,5 +6715,38 @@
     "score": 2,
     "sotto_media": false,
     "titolo": "Quadrilocale in Vendita, Via Somalia 10, Torino"
+  },
+  "30870762": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo/mq 54% sopra media cittadina. Bilocale piccolo, location standard. Sopravvalutato.",
+    "mq": 53,
+    "prezzo": 195000,
+    "prezzo_mq": 3679,
+    "prima_vista": "2026-09-21T21:43:56.244521+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via degli Stampatori, Torino"
+  },
+  "30871284": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 29% sotto media Napoli. Buone dimensioni, zona centrale. Ottimo affare",
+    "mq": 140,
+    "prezzo": 395000,
+    "prezzo_mq": 2821,
+    "prima_vista": "2026-09-21T21:44:14.784366+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Carlo Pisacane , Napoli"
+  },
+  "30872421": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo/mq 66% sotto media: segnali rossi, verificare condizioni, stato, legalità",
+    "mq": 60,
+    "prezzo": 80000,
+    "prezzo_mq": 1333,
+    "prima_vista": "2026-09-21T21:44:11.852157+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Villa S. Giovanni 117, Napoli"
   }
 }
