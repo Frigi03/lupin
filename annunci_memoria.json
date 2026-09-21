@@ -6561,5 +6561,159 @@
     "score": 9,
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Canonico Giovanni Scherillo, Napoli"
+  },
+  "30867942": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo per mq 35% sopra media Napoli. Sopravvalutato rispetto al mercato locale.",
+    "mq": 98,
+    "prezzo": 525000,
+    "prezzo_mq": 5357,
+    "prima_vista": "2026-09-21T16:14:18.155680+00:00",
+    "score": 4,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Roberto Bracco , Napoli"
+  },
+  "30868479": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 36% sotto media Napoli, bilocale a buon €/mq, occasione rara",
+    "mq": 65,
+    "prezzo": 165000,
+    "prezzo_mq": 2538,
+    "prima_vista": "2026-09-21T16:14:15.621513+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Annibale De Gasperis , Napoli"
+  },
+  "30868635": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo/mq 53% sotto media Napoli. Possibile asta, successione o importanti difetti nascosti.",
+    "mq": 85,
+    "prezzo": 159000,
+    "prezzo_mq": 1871,
+    "prima_vista": "2026-09-21T16:14:12.854492+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Sant' Antonio Abate , Napoli"
+  },
+  "30868884": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo sottomercato sospetto (47% sotto media). Dati incompleti o annuncio rischioso.",
+    "mq": 112,
+    "prezzo": 225000,
+    "prezzo_mq": 2009,
+    "prima_vista": "2026-09-21T16:12:50.638254+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Ettore Arena 201, Roma"
+  },
+  "30869580": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 33% sotto media zona, dati insufficienti su stato e ubicazione precisa.",
+    "mq": 90,
+    "prezzo": 359000,
+    "prezzo_mq": 3989,
+    "prima_vista": "2026-09-21T16:12:38.822634+00:00",
+    "score": 4,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Mario Borsa, Milano"
+  },
+  "30869739": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo sotto media zona (-10%), bilocale compatto, conveniente per investitori",
+    "mq": 51,
+    "prezzo": 109000,
+    "prezzo_mq": 2137,
+    "prima_vista": "2026-09-21T16:13:52.899772+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Anastasio Germonio 53, Torino"
+  },
+  "30869832": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo/mq 54% sopra media Napoli. Sopravvalutato rispetto mercato locale.",
+    "mq": 127,
+    "prezzo": 780000,
+    "prezzo_mq": 6142,
+    "prima_vista": "2026-09-21T16:14:10.293870+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Raffaele Morghen, Napoli"
+  },
+  "30870201": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo sotto media zona (-9%), bilocale compatto, buona opportunità",
+    "mq": 58,
+    "prezzo": 125000,
+    "prezzo_mq": 2155,
+    "prima_vista": "2026-09-21T16:13:50.151464+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Don Leonardo Murialdo 46, Torino"
+  },
+  "30870420": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 18% sotto media zona. Quadrilocale, buona metratura. Ubicazione Portici ordinaria.",
+    "mq": 170,
+    "prezzo": 550000,
+    "prezzo_mq": 3235,
+    "prima_vista": "2026-09-21T16:14:07.590957+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Provinciale Botteghelle di Portici 350, Napoli"
+  },
+  "30870501": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo perfettamente in linea con media Torino, nulla di eccezionale",
+    "mq": 100,
+    "prezzo": 239000,
+    "prezzo_mq": 2390,
+    "prima_vista": "2026-09-21T16:13:47.516029+00:00",
+    "score": 5,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Valentino Carrera 88, Torino"
+  },
+  "30870546": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 50% sotto media Torino. Occasione rara per investitore. Verificare condizioni immobile.",
+    "mq": 150,
+    "prezzo": 179000,
+    "prezzo_mq": 1193,
+    "prima_vista": "2026-09-21T16:13:44.649223+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Annie Vivanti 4, Torino"
+  },
+  "30870636": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo sotto media zona (-17%), trilocale ben dimensionato, posizione Viale Suzzani discreta.",
+    "mq": 78,
+    "prezzo": 389000,
+    "prezzo_mq": 4987,
+    "prima_vista": "2026-09-21T16:12:35.989316+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Viale Giovanni Suzzani, Milano"
+  },
+  "30870645": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo leggermente sopra media ma zona buona, trilocale ampio, affidabile",
+    "mq": 110,
+    "prezzo": 450000,
+    "prezzo_mq": 4091,
+    "prima_vista": "2026-09-21T16:14:05.146590+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Provinciale Botteghelle di Portici 350, Napoli"
+  },
+  "30870705": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo/mq 187% sopra media città. Superficie 22mq per quadrilocale: dati incoerenti o sospetti.",
+    "mq": 22,
+    "prezzo": 149000,
+    "prezzo_mq": 6773,
+    "prima_vista": "2026-09-21T16:13:41.862488+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Somalia 10, Torino"
   }
 }
