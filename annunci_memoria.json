@@ -6650,6 +6650,28 @@
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Don Leonardo Murialdo 46, Torino"
   },
+  "30870213": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 23% sotto media Milano, merita visita. Verificare condizioni.",
+    "mq": 50,
+    "prezzo": 229000,
+    "prezzo_mq": 4580,
+    "prima_vista": "2026-09-22T17:58:08.144947+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Crespi 11, Milano"
+  },
+  "30870252": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 44% sotto media Milano. Bilocale a 3333€/mq vs 5961€/mq. Occasione rara.",
+    "mq": 48,
+    "prezzo": 160000,
+    "prezzo_mq": 3333,
+    "prima_vista": "2026-09-22T17:58:05.476926+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Clitumno 19, Milano"
+  },
   "30870420": {
     "città": "Napoli",
     "motivo_ai": "Prezzo 18% sotto media zona. Quadrilocale, buona metratura. Ubicazione Portici ordinaria.",
@@ -6672,6 +6694,17 @@
     "sotto_media": false,
     "titolo": "Quadrilocale in Vendita, Via Valentino Carrera 88, Torino"
   },
+  "30870522": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq oltre il doppio della media Milano. Superficie microscopica sospetta.",
+    "mq": 15,
+    "prezzo": 199000,
+    "prezzo_mq": 13267,
+    "prima_vista": "2026-09-22T17:58:02.891892+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Arquà 18, Milano"
+  },
   "30870546": {
     "città": "Torino",
     "motivo_ai": "Prezzo 50% sotto media Torino. Occasione rara per investitore. Verificare condizioni immobile.",
@@ -6693,6 +6726,17 @@
     "score": 7,
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Viale Giovanni Suzzani, Milano"
+  },
+  "30870639": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo/mq 77% sopra media cittadina. Sopravvalutato o dati incongruenti.",
+    "mq": 70,
+    "prezzo": 295000,
+    "prezzo_mq": 4214,
+    "prima_vista": "2026-09-22T17:59:26.462324+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Antonio Bertola 17, Torino"
   },
   "30870645": {
     "città": "Napoli",
@@ -6748,6 +6792,17 @@
     "score": 8,
     "sotto_media": true,
     "titolo": "Appartamento in Vendita, Via Carlo Pisacane , Napoli"
+  },
+  "30871311": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 31% sotto media Torino. Trilocale ben dimensionato a prezzo attrattivo per investitori.",
+    "mq": 85,
+    "prezzo": 139000,
+    "prezzo_mq": 1635,
+    "prima_vista": "2026-09-22T17:59:23.730063+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Pergolesi 17, Torino"
   },
   "30872421": {
     "città": "Napoli",
@@ -6880,5 +6935,137 @@
     "score": 7,
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Ponti Rossi, Napoli"
+  },
+  "30876255": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq impossibile (34000 vs 5961 media). Dati incoerenti o annuncio fraudolento.",
+    "mq": 20,
+    "prezzo": 680000,
+    "prezzo_mq": 34000,
+    "prima_vista": "2026-09-22T17:58:00.201433+00:00",
+    "score": 1,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Soperga 32, Milano"
+  },
+  "30877179": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo/mq 11650€ quasi 3x sopra media Roma 4194€. Fortemente sopravvalutato.",
+    "mq": 60,
+    "prezzo": 699000,
+    "prezzo_mq": 11650,
+    "prima_vista": "2026-09-22T17:58:25.875532+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Mario Mencatelli 47, Roma"
+  },
+  "30877344": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 37% sotto media Milano, trilocale buona metratura, zona centrale Viale Cà Granda.",
+    "mq": 75,
+    "prezzo": 279000,
+    "prezzo_mq": 3720,
+    "prima_vista": "2026-09-22T17:57:57.559140+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Viale Cà Granda, Milano"
+  },
+  "30877524": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo sotto media zona (-13%), trilocale 125mq, ubicazione centrale Piazza Caiazzo.",
+    "mq": 125,
+    "prezzo": 645000,
+    "prezzo_mq": 5160,
+    "prima_vista": "2026-09-22T17:57:54.954237+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Piazza Caiazzo 2, Milano"
+  },
+  "30877821": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo in linea col mercato milanese, nessun elemento distintivo rilevante",
+    "mq": 88,
+    "prezzo": 529000,
+    "prezzo_mq": 6011,
+    "prima_vista": "2026-09-22T17:57:52.463933+00:00",
+    "score": 5,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Piazza Caiazzo 2, Milano"
+  },
+  "30878133": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 18% sotto media Milano. Trilocale 90mq centrale. Buon affare, merita visita.",
+    "mq": 90,
+    "prezzo": 439000,
+    "prezzo_mq": 4878,
+    "prima_vista": "2026-09-22T17:57:49.794841+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Leoncavallo 8, Milano"
+  },
+  "30878175": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 29% sotto media Milano, bilocale ben proporzionato, ottima opportunità investimento",
+    "mq": 76,
+    "prezzo": 320000,
+    "prezzo_mq": 4211,
+    "prima_vista": "2026-09-22T17:57:47.062871+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Arcivescovo Romilli 5, Milano"
+  },
+  "30879015": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 37% sopra media zona. 25mq per trilocale improbabile, dati sospetti.",
+    "mq": 25,
+    "prezzo": 205000,
+    "prezzo_mq": 8200,
+    "prima_vista": "2026-09-22T17:57:43.904036+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Chavez 20, Milano"
+  },
+  "30879051": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo in linea col mercato torinese, nessun elemento distintivo o anomalia rilevante",
+    "mq": 80,
+    "prezzo": 189000,
+    "prezzo_mq": 2362,
+    "prima_vista": "2026-09-22T17:59:21.180732+00:00",
+    "score": 5,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Luini 5, Torino"
+  },
+  "30879399": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 49% sotto media: sospetto asta, occupazione, vincoli legali",
+    "mq": 103,
+    "prezzo": 124000,
+    "prezzo_mq": 1204,
+    "prima_vista": "2026-09-22T17:59:18.401980+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Antonio E Vittorio Scialoja 22/Bis, Torino"
+  },
+  "30879462": {
+    "città": "Firenze",
+    "motivo_ai": "Prezzo 26% sotto media Firenze, trilocale a buon prezzo, zona centrale merita visita",
+    "mq": 70,
+    "prezzo": 285000,
+    "prezzo_mq": 4071,
+    "prima_vista": "2026-09-22T18:00:01.064863+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Francesco De Pinedo, Firenze"
+  },
+  "30879531": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo 15% sotto media Roma, trilocale 90mq a buon prezzo. Merita visita.",
+    "mq": 90,
+    "prezzo": 319000,
+    "prezzo_mq": 3544,
+    "prima_vista": "2026-09-22T17:58:23.192017+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Iris Versari 34, Roma"
   }
 }
