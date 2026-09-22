@@ -6727,6 +6727,17 @@
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via degli Stampatori, Torino"
   },
+  "30871245": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 7% sotto media zona, bilocale ben proporzionato, Milano centro.",
+    "mq": 63,
+    "prezzo": 349000,
+    "prezzo_mq": 5540,
+    "prima_vista": "2026-09-22T13:08:08.436834+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Tertulliano 57, Milano"
+  },
   "30871284": {
     "città": "Napoli",
     "motivo_ai": "Prezzo 29% sotto media Napoli. Buone dimensioni, zona centrale. Ottimo affare",
@@ -6748,5 +6759,126 @@
     "score": 2,
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Villa S. Giovanni 117, Napoli"
+  },
+  "30874050": {
+    "città": "Firenze",
+    "motivo_ai": "Prezzo/mq 45% sotto media: sospetto, probabilmente con difetti non dichiarati",
+    "mq": 124,
+    "prezzo": 380000,
+    "prezzo_mq": 3065,
+    "prima_vista": "2026-09-22T13:10:40.149592+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Riccardo Zandonai, Firenze"
+  },
+  "30874671": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 13% sopra media Milano. Trilocale buona metratura, posizione centrale. Nulla di eccezionale.",
+    "mq": 125,
+    "prezzo": 849000,
+    "prezzo_mq": 6792,
+    "prima_vista": "2026-09-22T13:08:05.677521+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Giovanni Pierluigi da Palestrina 14, Milano"
+  },
+  "30874749": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 25% sotto media Torino, trilocale 70mq conveniente, verifica stato conservazione",
+    "mq": 70,
+    "prezzo": 125000,
+    "prezzo_mq": 1786,
+    "prima_vista": "2026-09-22T13:09:20.217657+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Arnaldo da Brescia 12, Torino"
+  },
+  "30874983": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 29% sotto media Torino. Trilocale a 1700€/mq è occasione rara.",
+    "mq": 50,
+    "prezzo": 85000,
+    "prezzo_mq": 1700,
+    "prima_vista": "2026-09-22T13:09:17.447615+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Nicola Fabrizi 128, Torino"
+  },
+  "30875064": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 53% sotto media città. Probabile immobile con gravi difetti o zona critica.",
+    "mq": 108,
+    "prezzo": 200000,
+    "prezzo_mq": 1852,
+    "prima_vista": "2026-09-22T13:10:17.713411+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Tertulliano, Napoli"
+  },
+  "30875124": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 42% sotto media Milano. Bilocale 55mq a 3455€/mq vs 5981€/mq zona. Occasione rara.",
+    "mq": 55,
+    "prezzo": 190000,
+    "prezzo_mq": 3455,
+    "prima_vista": "2026-09-22T13:08:03.044763+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Carolina Invernizio 7, Milano"
+  },
+  "30875127": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo 14% sopra media Roma. Trilocale standard, nessun valore aggiunto visibile.",
+    "mq": 120,
+    "prezzo": 580000,
+    "prezzo_mq": 4833,
+    "prima_vista": "2026-09-22T13:09:03.365357+00:00",
+    "score": 5,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Tigrè 50, Roma"
+  },
+  "30875133": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 56% sotto media zona. Quadrilocale a 1737€/mq, occasione rara.",
+    "mq": 118,
+    "prezzo": 205000,
+    "prezzo_mq": 1737,
+    "prima_vista": "2026-09-22T13:10:15.111643+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Napoli"
+  },
+  "30875328": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 50% sottomedia zona, probabilmente seminterrato/con difetti non dichiarati",
+    "mq": 50,
+    "prezzo": 150000,
+    "prezzo_mq": 3000,
+    "prima_vista": "2026-09-22T13:08:00.011960+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Guido Ucelli di Nemi 43, Milano"
+  },
+  "30875496": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo 29% sotto media Roma. Trilocale 95mq a 3000€/mq è buon affare.",
+    "mq": 95,
+    "prezzo": 285000,
+    "prezzo_mq": 3000,
+    "prima_vista": "2026-09-22T13:09:00.641103+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Roma"
+  },
+  "30876009": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo sotto media zona (3299 vs 3936 €/mq). Trilocale buone dimensioni. Assenza info ristrutturazioni.",
+    "mq": 97,
+    "prezzo": 320000,
+    "prezzo_mq": 3299,
+    "prima_vista": "2026-09-22T13:10:11.952341+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Ponti Rossi, Napoli"
   }
 }
