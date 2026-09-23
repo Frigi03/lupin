@@ -7276,5 +7276,60 @@
     "score": 8,
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Piazza Imperatore Tito 5/B, Milano"
+  },
+  "30888096": {
+    "città": "Napoli",
+    "motivo_ai": "Zona Mergellina prestigiosa, prezzo 15% sopra media ma localizzazione compensante",
+    "mq": 100,
+    "prezzo": 450000,
+    "prezzo_mq": 4500,
+    "prima_vista": "2026-09-23T21:09:22.093539+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Mergellina, Napoli"
+  },
+  "30888405": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo lievemente sotto media Milano. Trilocale standard, nessun indicatore di opportunità eccezionale.",
+    "mq": 95,
+    "prezzo": 569000,
+    "prezzo_mq": 5989,
+    "prima_vista": "2026-09-23T21:06:51.692354+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Tito Livio 23, Milano"
+  },
+  "30888408": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo sottomercato 6%, buona metratura, zona centrale. Verifica condizioni.",
+    "mq": 100,
+    "prezzo": 365000,
+    "prezzo_mq": 3650,
+    "prima_vista": "2026-09-23T21:09:19.265789+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Viale Colli Aminei, Napoli"
+  },
+  "30888885": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo leggermente sopra media (+11%). Monolocale piccolo, zona non specificata, nulla di speciale.",
+    "mq": 40,
+    "prezzo": 269000,
+    "prezzo_mq": 6725,
+    "prima_vista": "2026-09-23T21:06:48.464879+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Monolocale in Vendita, Via Venosa 12, Milano"
+  },
+  "30888942": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 39% sotto media Torino. Trilocale 80mq a 1488€/mq, occasione rara",
+    "mq": 80,
+    "prezzo": 119000,
+    "prezzo_mq": 1488,
+    "prima_vista": "2026-09-23T21:08:26.634508+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Piazza Mattirolo 14, Torino"
   }
 }
