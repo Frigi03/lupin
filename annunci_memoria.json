@@ -6463,6 +6463,17 @@
     "sotto_media": true,
     "titolo": "Appartamento in Vendita, Via Alessandro Fleming 31, Torino"
   },
+  "30863316": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 58% sotto media Torino. Annuncio sospetto, dati incoerenti o asta/problema strutturale probabile.",
+    "mq": 110,
+    "prezzo": 115000,
+    "prezzo_mq": 1045,
+    "prima_vista": "2026-09-23T16:09:26.373035+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Nino Oxilia 4/a, Torino"
+  },
   "30863325": {
     "città": "Torino",
     "motivo_ai": "Prezzo 41% sotto media Torino. Possibile affare, verificare condizioni e location esatta.",
@@ -7101,6 +7112,28 @@
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Corso Vittorio Emanuele II 100, Torino"
   },
+  "30883134": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo sotto media Roma (-5.8%), bilocale standard. Dati completi ma senza peculiarità",
+    "mq": 79,
+    "prezzo": 319000,
+    "prezzo_mq": 4038,
+    "prima_vista": "2026-09-23T16:09:09.074048+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Cairano 30, Roma"
+  },
+  "30883689": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo sotto media Roma (-15%), trilocale 115mq, buon rapporto qualità-prezzo.",
+    "mq": 115,
+    "prezzo": 419000,
+    "prezzo_mq": 3643,
+    "prima_vista": "2026-09-23T16:09:06.300763+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Roma"
+  },
   "30884001": {
     "città": "Milano",
     "motivo_ai": "Prezzo/mq 32% sopra media Milano, 8000€/mq vs 6065€/mq. Sopravvalutato.",
@@ -7123,6 +7156,17 @@
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Domodossola 58, Torino"
   },
+  "30884178": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo/mq 20% sopra media Roma, zona non identificata chiaramente",
+    "mq": 97,
+    "prezzo": 499000,
+    "prezzo_mq": 5144,
+    "prima_vista": "2026-09-23T16:09:03.584471+00:00",
+    "score": 4,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Franco Bartoloni, Roma"
+  },
   "30884391": {
     "città": "Milano",
     "motivo_ai": "Prezzo leggermente sotto media di Milano, ma senza particolari vantaggi evidenti",
@@ -7133,5 +7177,104 @@
     "score": 5,
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via Perugino 24, Milano"
+  },
+  "30885288": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo sotto media zona (-7%), centrale Corso Umberto, superficie decente, buon affare",
+    "mq": 130,
+    "prezzo": 470000,
+    "prezzo_mq": 3615,
+    "prima_vista": "2026-09-23T16:09:41.344280+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Corso Umberto I 284, Napoli"
+  },
+  "30885315": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 20% sotto media Napoli, 124mq quadrilocale, buona opportunità",
+    "mq": 124,
+    "prezzo": 385000,
+    "prezzo_mq": 3105,
+    "prima_vista": "2026-09-23T16:09:38.800600+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Salvatore Ferrara 24, Napoli"
+  },
+  "30885492": {
+    "città": "Bologna",
+    "motivo_ai": "Prezzo 13% sopra media zona, mancano info su posizione e condizioni",
+    "mq": 73,
+    "prezzo": 270000,
+    "prezzo_mq": 3699,
+    "prima_vista": "2026-09-23T16:09:57.758409+00:00",
+    "score": 4,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Bologna"
+  },
+  "30885513": {
+    "città": "Bologna",
+    "motivo_ai": "Prezzo/mq quasi il doppio della media bolognese. Sopravvalutato o dati errati.",
+    "mq": 40,
+    "prezzo": 250000,
+    "prezzo_mq": 6250,
+    "prima_vista": "2026-09-23T16:09:55.103718+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Monolocale in Vendita, Via San Carlo, Bologna"
+  },
+  "30885798": {
+    "città": "Firenze",
+    "motivo_ai": "Prezzo sotto media zona (-10%), dimensione compatta ma gestibile, buon affare relativo",
+    "mq": 50,
+    "prezzo": 249000,
+    "prezzo_mq": 4980,
+    "prima_vista": "2026-09-23T16:10:17.322153+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via della Villa Demidoff, Firenze"
+  },
+  "30885876": {
+    "città": "Firenze",
+    "motivo_ai": "Prezzo 7% sotto media, bilocale compatto, buona posizione a Firenze",
+    "mq": 49,
+    "prezzo": 249000,
+    "prezzo_mq": 5082,
+    "prima_vista": "2026-09-23T16:10:14.689849+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via della Villa Demidoff, Firenze"
+  },
+  "30886029": {
+    "città": "Firenze",
+    "motivo_ai": "Prezzo in linea con mercato, nessun elemento di vantaggio o svantaggio rilevante.",
+    "mq": 70,
+    "prezzo": 390000,
+    "prezzo_mq": 5571,
+    "prima_vista": "2026-09-23T16:10:12.049074+00:00",
+    "score": 5,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via della Villa Demidoff, Firenze"
+  },
+  "30886941": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 51% sotto media cittadina, opportunità rara. Verificare condizioni immobile.",
+    "mq": 54,
+    "prezzo": 65000,
+    "prezzo_mq": 1204,
+    "prima_vista": "2026-09-23T16:09:23.789775+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Mercadante 57, Torino"
+  },
+  "30887685": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo sotto media zona (-12%), buona dimensione, ubicazione centrale Milano",
+    "mq": 56,
+    "prezzo": 299000,
+    "prezzo_mq": 5339,
+    "prima_vista": "2026-09-23T16:08:49.018488+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Piazza Imperatore Tito 5/B, Milano"
   }
 }
