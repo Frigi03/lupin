@@ -7078,5 +7078,27 @@
     "score": 8,
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Foligno 90, Torino"
+  },
+  "30881094": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo/mq 6.5x sopra media Torino. Dati incoerenti o annuncio sospetto.",
+    "mq": 45,
+    "prezzo": 695000,
+    "prezzo_mq": 15444,
+    "prima_vista": "2026-09-23T04:36:47.852089+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Strada delle Terrazze 56/12, Torino"
+  },
+  "30881196": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo/mq 52% sopra media zona. Sopravvalutato, evitare.",
+    "mq": 162,
+    "prezzo": 585000,
+    "prezzo_mq": 3611,
+    "prima_vista": "2026-09-23T04:36:44.926051+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Corso Vittorio Emanuele II 100, Torino"
   }
 }
