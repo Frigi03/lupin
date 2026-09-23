@@ -7100,5 +7100,38 @@
     "score": 2,
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Corso Vittorio Emanuele II 100, Torino"
+  },
+  "30884001": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 32% sopra media Milano, 8000€/mq vs 6065€/mq. Sopravvalutato.",
+    "mq": 40,
+    "prezzo": 320000,
+    "prezzo_mq": 8000,
+    "prima_vista": "2026-09-23T10:49:02.571684+00:00",
+    "score": 3,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Giulio Cesare Procaccini 54, Milano"
+  },
+  "30884007": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo leggermente sopra media (+9%), ma bilocale ben dimensionato in zona centrale Torino.",
+    "mq": 50,
+    "prezzo": 135000,
+    "prezzo_mq": 2700,
+    "prima_vista": "2026-09-23T10:50:37.542093+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Domodossola 58, Torino"
+  },
+  "30884391": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo leggermente sotto media di Milano, ma senza particolari vantaggi evidenti",
+    "mq": 83,
+    "prezzo": 495000,
+    "prezzo_mq": 5964,
+    "prima_vista": "2026-09-23T10:48:59.611178+00:00",
+    "score": 5,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Perugino 24, Milano"
   }
 }
