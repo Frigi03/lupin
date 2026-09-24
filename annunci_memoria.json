@@ -7331,5 +7331,93 @@
     "score": 9,
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Piazza Mattirolo 14, Torino"
+  },
+  "30892308": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 27% sotto media zona Napoli. Buon rapporto qualità-prezzo, merita visita.",
+    "mq": 140,
+    "prezzo": 395000,
+    "prezzo_mq": 2821,
+    "prima_vista": "2026-09-24T13:15:56.051130+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Carlo Pisacane , Napoli"
+  },
+  "30892365": {
+    "città": "Bologna",
+    "motivo_ai": "Prezzo leggermente sopra media zona, trilocale standard senza particolari vantaggi",
+    "mq": 72,
+    "prezzo": 250000,
+    "prezzo_mq": 3472,
+    "prima_vista": "2026-09-24T13:16:07.409976+00:00",
+    "score": 5,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Bologna"
+  },
+  "30892404": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo 43% sotto media Roma. Trilocale 103mq a 2417€/mq, occasione rara.",
+    "mq": 103,
+    "prezzo": 249000,
+    "prezzo_mq": 2417,
+    "prima_vista": "2026-09-24T13:14:50.731648+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Baveno, Roma"
+  },
+  "30892407": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo/mq 56% sotto media Roma. Trilocale 94mq a 175k€. Occasione rara.",
+    "mq": 94,
+    "prezzo": 175000,
+    "prezzo_mq": 1862,
+    "prima_vista": "2026-09-24T13:14:47.976786+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Rivoli, Roma"
+  },
+  "30892881": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo leggermente sopra media (+7%), quadrilocale ampio, zona centrale Roma, buon affare",
+    "mq": 150,
+    "prezzo": 689000,
+    "prezzo_mq": 4593,
+    "prima_vista": "2026-09-24T13:14:44.837175+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Guglielmo Pallavicini 19, Roma"
+  },
+  "30893544": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 53% sotto media Milano. Occasione rara, richiede verifica difetti/vincoli.",
+    "mq": 103,
+    "prezzo": 295000,
+    "prezzo_mq": 2864,
+    "prima_vista": "2026-09-24T13:14:31.441142+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Giovanni Montemartini 4, Milano"
+  },
+  "30893943": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 52% sotto media Napoli. Trilocale 85mq a 1871€/mq, buon affare potenziale.",
+    "mq": 85,
+    "prezzo": 159000,
+    "prezzo_mq": 1871,
+    "prima_vista": "2026-09-24T13:15:53.186145+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Sant' Antonio Abate , Napoli"
+  },
+  "30895521": {
+    "città": "Firenze",
+    "motivo_ai": "Prezzo sotto media zona (-15%), trilocale ordinario, zona centrale Firenze.",
+    "mq": 70,
+    "prezzo": 325000,
+    "prezzo_mq": 4643,
+    "prima_vista": "2026-09-24T13:16:59.968953+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Arcangelo Corelli, Firenze"
   }
 }
