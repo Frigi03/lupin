@@ -7969,5 +7969,71 @@
     "score": 9,
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Via Monte Piana 4, Milano"
+  },
+  "30918873": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo/mq 34% sopra media zona. Trilocale 60mq undersized. Sopravvalutato.",
+    "mq": 60,
+    "prezzo": 310000,
+    "prezzo_mq": 5167,
+    "prima_vista": "2026-09-25T15:02:00.064499+00:00",
+    "score": 3,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via dell'Epomeo 59, Napoli"
+  },
+  "30919134": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo leggermente sopra media zona (+9.8%). Quadrilocale standard, dati completi ma nessuna peculiarità rilevante.",
+    "mq": 105,
+    "prezzo": 445000,
+    "prezzo_mq": 4238,
+    "prima_vista": "2026-09-25T15:01:57.129808+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Napoli"
+  },
+  "30919161": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo sotto media di zona (-8%), trilocale ampio, buon affare potenziale",
+    "mq": 140,
+    "prezzo": 495000,
+    "prezzo_mq": 3536,
+    "prima_vista": "2026-09-25T15:01:54.429444+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Vico Cariati 4, Napoli"
+  },
+  "30919185": {
+    "città": "Torino",
+    "motivo_ai": "Sopravvalutato +15% rispetto media zona. Monolocale piccolo, prezzo al mq elevato.",
+    "mq": 46,
+    "prezzo": 129000,
+    "prezzo_mq": 2804,
+    "prima_vista": "2026-09-25T15:01:41.333026+00:00",
+    "score": 4,
+    "sotto_media": false,
+    "titolo": "Monolocale in Vendita, Via Saluzzo 72, Torino"
+  },
+  "30920598": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 44% sotto media Torino. Quadrilocale 95mq a 1358€/mq, occasione rara.",
+    "mq": 95,
+    "prezzo": 129000,
+    "prezzo_mq": 1358,
+    "prima_vista": "2026-09-25T15:01:38.348773+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Francesco Baracca 6, Torino"
+  },
+  "30921084": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 30% sotto media cittadina. Quadrilocale con buona metratura a prezzo interessante.",
+    "mq": 100,
+    "prezzo": 169000,
+    "prezzo_mq": 1690,
+    "prima_vista": "2026-09-25T15:01:35.177605+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Rubino, Torino"
   }
 }
