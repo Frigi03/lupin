@@ -8069,6 +8069,17 @@
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Francesco Rismondo 49, Torino"
   },
+  "30921561": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 24% sotto media Napoli. Trilocale 80mq conveniente, nessun problema evidente",
+    "mq": 80,
+    "prezzo": 235000,
+    "prezzo_mq": 2938,
+    "prima_vista": "2026-09-25T23:06:50.938576+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Tommaso Cornelio, Napoli"
+  },
   "30921972": {
     "città": "Torino",
     "motivo_ai": "Prezzo 45% sotto media Torino. Monolocale ben dimensionato, ottima occasione.",
@@ -8134,5 +8145,27 @@
     "score": 7,
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Corso Palermo 10, Torino"
+  },
+  "30923742": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo 18% sopra media Roma, nessun dettaglio rilevante nel titolo",
+    "mq": 92,
+    "prezzo": 449000,
+    "prezzo_mq": 4880,
+    "prima_vista": "2026-09-25T23:06:29.910121+00:00",
+    "score": 4,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Teodorico 14, Roma"
+  },
+  "30923910": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo in linea con media zona, nessun elemento speciale rilevato",
+    "mq": 150,
+    "prezzo": 620000,
+    "prezzo_mq": 4133,
+    "prima_vista": "2026-09-25T23:06:26.916871+00:00",
+    "score": 5,
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Circonvallazione Nomentana 402, Roma"
   }
 }
