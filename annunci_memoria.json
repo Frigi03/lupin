@@ -7870,5 +7870,104 @@
     "score": 6,
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Edoardo Bassini 47, Milano"
+  },
+  "30914241": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo leggermente sopra media zona (+5%). Quadrilocale standard, dati completi.",
+    "mq": 112,
+    "prezzo": 485000,
+    "prezzo_mq": 4330,
+    "prima_vista": "2026-09-25T09:24:25.214808+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Poggio Ameno 86, Roma"
+  },
+  "30914244": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo 30% sotto media Roma. Trilocale 99mq buona metratura. Opportunità interessante.",
+    "mq": 99,
+    "prezzo": 285000,
+    "prezzo_mq": 2879,
+    "prima_vista": "2026-09-25T09:24:22.150387+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Giacomo Bresadola 54, Roma"
+  },
+  "30914256": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 38% sotto media Torino. Trilocale 86mq a 1500€/mq, anomalia positiva rara.",
+    "mq": 86,
+    "prezzo": 129000,
+    "prezzo_mq": 1500,
+    "prima_vista": "2026-09-25T09:25:16.624678+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Sandro Botticelli 11/20, Torino"
+  },
+  "30916146": {
+    "città": "Bologna",
+    "motivo_ai": "Sopravvalutato del 28% rispetto media Bologna. Prezzo/mq alto per trilocale standard.",
+    "mq": 72,
+    "prezzo": 310000,
+    "prezzo_mq": 4306,
+    "prima_vista": "2026-09-25T09:25:43.965842+00:00",
+    "score": 4,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Val d'Aposa 4, Bologna"
+  },
+  "30916152": {
+    "città": "Bologna",
+    "motivo_ai": "Prezzo 9% sotto media, zona centrale, buon rapporto superficie-prezzo",
+    "mq": 95,
+    "prezzo": 289000,
+    "prezzo_mq": 3042,
+    "prima_vista": "2026-09-25T09:25:41.189404+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Cracovia 19, Bologna"
+  },
+  "30917040": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo sopra media (+9.6%), ma ubicazione centrale. Dati sufficienti, nulla di straordinario.",
+    "mq": 165,
+    "prezzo": 747000,
+    "prezzo_mq": 4527,
+    "prima_vista": "2026-09-25T09:24:19.213747+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Antonio De Viti De Marco, Roma"
+  },
+  "30917043": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 22% sotto media Milano, bilocale 90mq solido, zona da verificare",
+    "mq": 90,
+    "prezzo": 429000,
+    "prezzo_mq": 4767,
+    "prima_vista": "2026-09-25T09:24:05.815211+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Nicola d'Apulia 7/a, Milano"
+  },
+  "30917946": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo sotto media zona (3000 vs 3864 €/mq). Quadrilocale buon affare, ubicazione centrale.",
+    "mq": 120,
+    "prezzo": 360000,
+    "prezzo_mq": 3000,
+    "prima_vista": "2026-09-25T09:25:28.162529+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Vincenzo Tiberio, Napoli"
+  },
+  "30917952": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 30% sotto media Milano. Bilocale compatto a 4314€/mq vs 6146€/mq zona. Occasione rara.",
+    "mq": 51,
+    "prezzo": 220000,
+    "prezzo_mq": 4314,
+    "prima_vista": "2026-09-25T09:24:02.605079+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Monte Piana 4, Milano"
   }
 }
