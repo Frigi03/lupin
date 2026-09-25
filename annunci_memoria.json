@@ -7672,5 +7672,203 @@
     "score": 2,
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Chiaia 120, Napoli"
+  },
+  "30905832": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 54% sotto mercato Milano. Probabile seminterrato, cantina o superficie non abitabile.",
+    "mq": 53,
+    "prezzo": 150000,
+    "prezzo_mq": 2830,
+    "prima_vista": "2026-09-25T03:32:24.433445+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Loft in Vendita, Via Lodovico Il Moro 159, Milano"
+  },
+  "30908202": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 37% sotto media zona Napoli. Bilocale compatto a prezzo eccezionale.",
+    "mq": 65,
+    "prezzo": 160000,
+    "prezzo_mq": 2462,
+    "prima_vista": "2026-09-25T03:34:00.978503+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Vico Concordia, Napoli"
+  },
+  "30908205": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 58% sotto media: segnala urgentemente problemi strutturali/legali",
+    "mq": 34,
+    "prezzo": 55000,
+    "prezzo_mq": 1618,
+    "prima_vista": "2026-09-25T03:33:58.200067+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Luca Samuele Cagnazzi, Napoli"
+  },
+  "30908208": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo/mq 45% sopra media Napoli. Sopravvalutato o zona premium non specificata.",
+    "mq": 60,
+    "prezzo": 340000,
+    "prezzo_mq": 5667,
+    "prima_vista": "2026-09-25T03:33:55.263963+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via San Giacomo dei Capri, Napoli"
+  },
+  "30908211": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 51% sotto media zona. Monolocale piccolo ma conveniente, merita visita",
+    "mq": 21,
+    "prezzo": 40000,
+    "prezzo_mq": 1905,
+    "prima_vista": "2026-09-25T03:33:52.251007+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Monolocale in Vendita, Via Luca Samuele Cagnazzi, Napoli"
+  },
+  "30908265": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 39% sopra media città. Sopravvalutato rispetto a mercato milanese.",
+    "mq": 111,
+    "prezzo": 950000,
+    "prezzo_mq": 8559,
+    "prima_vista": "2026-09-25T03:32:21.579292+00:00",
+    "score": 3,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Giuseppe Ripamonti 30, Milano"
+  },
+  "30908298": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 27% sopra media Milano, 7805€/mq vs 6140€/mq. Sopravvalutato.",
+    "mq": 82,
+    "prezzo": 640000,
+    "prezzo_mq": 7805,
+    "prima_vista": "2026-09-25T03:32:18.683071+00:00",
+    "score": 3,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Luca Signorelli 12, Milano"
+  },
+  "30909735": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 33% sotto media Milano. Buona opportunità in zona centrale, merita visita.",
+    "mq": 60,
+    "prezzo": 245000,
+    "prezzo_mq": 4083,
+    "prima_vista": "2026-09-25T03:32:15.796294+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Monolocale in Vendita, Viale Fulvio Testi 84, Milano"
+  },
+  "30909738": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 27% sotto media Milano. Bilocale 66mq a 4470€/mq, buona opportunità.",
+    "mq": 66,
+    "prezzo": 295000,
+    "prezzo_mq": 4470,
+    "prima_vista": "2026-09-25T03:32:12.915855+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via dei Tulipani 18, Milano"
+  },
+  "30909744": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo 43% sotto media Roma. Trilocale 110mq a 2409€/mq è occasione rara.",
+    "mq": 110,
+    "prezzo": 265000,
+    "prezzo_mq": 2409,
+    "prima_vista": "2026-09-25T03:33:26.629082+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Giuseppe Cantagalli 22, Roma"
+  },
+  "30909756": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo/mq 63% sotto media Roma. Probabilmente asta, pignoramento o gravi problemi strutturali.",
+    "mq": 76,
+    "prezzo": 119000,
+    "prezzo_mq": 1566,
+    "prima_vista": "2026-09-25T03:33:23.759291+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Gibellina 3, Roma"
+  },
+  "30909789": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo 27% sotto media Roma. Villa schiera 121mq a 3050€/mq. Occasione interessante.",
+    "mq": 121,
+    "prezzo": 369000,
+    "prezzo_mq": 3050,
+    "prima_vista": "2026-09-25T03:33:20.830319+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Villa a schiera in Vendita, Via Leonardo Mellano 43/C, Roma"
+  },
+  "30909804": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 20% sotto media Milano, trilocale ampio a via accessibile",
+    "mq": 112,
+    "prezzo": 549000,
+    "prezzo_mq": 4902,
+    "prima_vista": "2026-09-25T03:32:10.120550+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Passo di Brizio 2, Milano"
+  },
+  "30909879": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 54% sotto media Milano. Occasione rara, verificare condizioni",
+    "mq": 90,
+    "prezzo": 254900,
+    "prezzo_mq": 2832,
+    "prima_vista": "2026-09-25T03:32:07.195517+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Appennini 67, Milano"
+  },
+  "30909885": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo 26% sotto media Roma, buona metratura, zona centrale prestigiosa",
+    "mq": 177,
+    "prezzo": 549000,
+    "prezzo_mq": 3102,
+    "prima_vista": "2026-09-25T03:33:18.039109+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Piazza Filippo Andrea Doria Pamphili 2, Roma"
+  },
+  "30909888": {
+    "città": "Firenze",
+    "motivo_ai": "Prezzo/mq 54% sotto media zona. Dati sospetti, verificare superficie e condizioni reali.",
+    "mq": 201,
+    "prezzo": 498000,
+    "prezzo_mq": 2478,
+    "prima_vista": "2026-09-25T03:34:25.696851+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via dell'Argingrosso 105, Firenze"
+  },
+  "30909909": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 2,5x sopra media Milano. 25mq per trilocale è impossibile. Dati incoerenti, annuncio sospetto.",
+    "mq": 25,
+    "prezzo": 385000,
+    "prezzo_mq": 15400,
+    "prima_vista": "2026-09-25T03:32:04.125712+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Emilio Lussu 6, Milano"
+  },
+  "30909924": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo leggermente sotto media zona, metratura ridotta, buona posizione Bassini",
+    "mq": 53,
+    "prezzo": 318000,
+    "prezzo_mq": 6000,
+    "prima_vista": "2026-09-25T03:32:00.966349+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Edoardo Bassini 47, Milano"
   }
 }
