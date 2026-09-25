@@ -7970,6 +7970,17 @@
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Via Monte Piana 4, Milano"
   },
+  "30918429": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 38% sotto media Milano. Bilocale ben dimensionato, buona opportunità investimento.",
+    "mq": 60,
+    "prezzo": 229000,
+    "prezzo_mq": 3817,
+    "prima_vista": "2026-09-25T19:50:44.426683+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Bessarione 16, Milano"
+  },
   "30918873": {
     "città": "Napoli",
     "motivo_ai": "Prezzo/mq 34% sopra media zona. Trilocale 60mq undersized. Sopravvalutato.",
@@ -8014,6 +8025,17 @@
     "sotto_media": false,
     "titolo": "Monolocale in Vendita, Via Saluzzo 72, Torino"
   },
+  "30919227": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 32% sopra media Milano. 50mq troppo piccolo per trilocale. Sopravvalutato.",
+    "mq": 50,
+    "prezzo": 405000,
+    "prezzo_mq": 8100,
+    "prima_vista": "2026-09-25T19:50:41.736184+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Lecco 5, Milano"
+  },
   "30920598": {
     "città": "Torino",
     "motivo_ai": "Prezzo 44% sotto media Torino. Quadrilocale 95mq a 1358€/mq, occasione rara.",
@@ -8035,5 +8057,82 @@
     "score": 8,
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Via Rubino, Torino"
+  },
+  "30921138": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 25% sotto media Torino. Trilocale 85mq a 1812€/mq, occasione interessante.",
+    "mq": 85,
+    "prezzo": 154000,
+    "prezzo_mq": 1812,
+    "prima_vista": "2026-09-25T19:53:11.220421+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Francesco Rismondo 49, Torino"
+  },
+  "30921972": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 45% sotto media Torino. Monolocale ben dimensionato, ottima occasione.",
+    "mq": 98,
+    "prezzo": 129900,
+    "prezzo_mq": 1326,
+    "prima_vista": "2026-09-25T19:53:08.431542+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Monolocale in Vendita, Via Bra 3, Torino"
+  },
+  "30921984": {
+    "città": "Firenze",
+    "motivo_ai": "Prezzo sotto media zona (-9%), buona dimensione trilocale, opportunità interessante",
+    "mq": 50,
+    "prezzo": 245000,
+    "prezzo_mq": 4900,
+    "prima_vista": "2026-09-25T19:54:58.178359+00:00",
+    "score": 8,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Umberto Maddalena, Firenze"
+  },
+  "30922086": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 43% sotto media Torino. Bilocale a prezzo eccezionale, merita approfondimento urgente.",
+    "mq": 65,
+    "prezzo": 89000,
+    "prezzo_mq": 1369,
+    "prima_vista": "2026-09-25T19:53:05.453993+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Corso Orbassano, Torino"
+  },
+  "30922890": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 37% sotto media Milano. Bilocale 75mq a 3853€/mq, buon affare.",
+    "mq": 75,
+    "prezzo": 289000,
+    "prezzo_mq": 3853,
+    "prima_vista": "2026-09-25T19:50:38.940055+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Don Giovanni Calabria 20, Milano"
+  },
+  "30923319": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo leggermente sopra media zona. Bilocale piccolissimo, 40mq poco versatile.",
+    "mq": 40,
+    "prezzo": 269000,
+    "prezzo_mq": 6725,
+    "prima_vista": "2026-09-25T19:50:35.838229+00:00",
+    "score": 5,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Venosa 12, Milano"
+  },
+  "30923610": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo leggermente sopra media ma ubicazione centrale, dimensione standard, buon potenziale",
+    "mq": 85,
+    "prezzo": 215000,
+    "prezzo_mq": 2529,
+    "prima_vista": "2026-09-25T19:53:02.494821+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Corso Palermo 10, Torino"
   }
 }
