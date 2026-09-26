@@ -8552,5 +8552,16 @@
     "score": 9,
     "sotto_media": true,
     "titolo": "Appartamento in Vendita, Via Nicola Nicolini 68, Napoli"
+  },
+  "30933546": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo 27% sotto media Roma. Trilocale 100mq a buon affare.",
+    "mq": 100,
+    "prezzo": 299000,
+    "prezzo_mq": 2990,
+    "prima_vista": "2026-09-26T22:23:56.666753+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Roma"
   }
 }
