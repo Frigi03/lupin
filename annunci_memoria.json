@@ -8167,5 +8167,27 @@
     "score": 5,
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Circonvallazione Nomentana 402, Roma"
+  },
+  "30929244": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo 34% sotto media Roma, quadrilocale 142mq a 2746€/mq. Buon affare.",
+    "mq": 142,
+    "prezzo": 390000,
+    "prezzo_mq": 2746,
+    "prima_vista": "2026-09-26T03:39:32.849533+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Ubaldino Peruzzi 63, Roma"
+  },
+  "30929268": {
+    "città": "Firenze",
+    "motivo_ai": "Prezzo 17% sotto media Firenze. Quadrilocale compatto, buon rapporto prezzo/mq.",
+    "mq": 81,
+    "prezzo": 364000,
+    "prezzo_mq": 4494,
+    "prima_vista": "2026-09-26T03:43:20.275154+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Faentina 10, Firenze"
   }
 }
