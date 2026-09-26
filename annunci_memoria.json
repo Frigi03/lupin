@@ -8189,5 +8189,49 @@
     "score": 7,
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Via Faentina 10, Firenze"
+  },
+  "30930027": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo straordinariamente sotto mercato, 71% sotto media Roma. Villa 1000mq a 1190€/mq eccezionale.",
+    "mq": 1000,
+    "prezzo": 1190000,
+    "prezzo_mq": 1190,
+    "prima_vista": "2026-09-26T09:09:46.608914+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Villa in Vendita, Via Sergio Amidei 51, Roma"
+  },
+  "30930033": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 41% sotto media Torino, bilocale a 1412€/mq. Occasione concreta.",
+    "mq": 68,
+    "prezzo": 96000,
+    "prezzo_mq": 1412,
+    "prima_vista": "2026-09-26T09:10:00.263359+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Monfalcone 128, Torino"
+  },
+  "30930210": {
+    "città": "Bologna",
+    "motivo_ai": "Prezzo 31% sopra media città. Bilocale piccolo, posizionamento sfavorevole.",
+    "mq": 86,
+    "prezzo": 380000,
+    "prezzo_mq": 4419,
+    "prima_vista": "2026-09-26T09:11:06.448399+00:00",
+    "score": 4,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Domenico Guglielmini 19, Bologna"
+  },
+  "30931893": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 42% sotto media città. Trilocale 85mq a 1400€/mq: occasione rara.",
+    "mq": 85,
+    "prezzo": 119000,
+    "prezzo_mq": 1400,
+    "prima_vista": "2026-09-26T09:09:57.582391+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Piazza Bruno Caccia, Torino"
   }
 }
