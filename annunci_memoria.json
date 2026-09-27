@@ -8563,5 +8563,16 @@
     "score": 8,
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Roma"
+  },
+  "30935088": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo/mq impossibile (21600 €/mq vs 4072 media). Superficie 10 mq per trilocale: dati incoerenti/errati.",
+    "mq": 10,
+    "prezzo": 216000,
+    "prezzo_mq": 21600,
+    "prima_vista": "2026-09-27T15:00:20.419363+00:00",
+    "score": 1,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Pietro Sommariva 80, Roma"
   }
 }
