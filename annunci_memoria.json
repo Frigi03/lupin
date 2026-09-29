@@ -8871,5 +8871,38 @@
     "score": 8,
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Vico Lungo Pontecorvo 4, Napoli"
+  },
+  "30944124": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 42% sopra media Milano. Sopravvalutato rispetto al mercato.",
+    "mq": 92,
+    "prezzo": 780000,
+    "prezzo_mq": 8478,
+    "prima_vista": "2026-09-29T07:54:46.392984+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Viale Bligny 60, Milano"
+  },
+  "30944292": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo sotto media zona (-12%), buona metratura, posizione Milano centro. Merita approfondimento.",
+    "mq": 105,
+    "prezzo": 555000,
+    "prezzo_mq": 5286,
+    "prima_vista": "2026-09-29T07:54:43.420666+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Assietta 16, Milano"
+  },
+  "30945444": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo sotto media Milano (4909 vs 5985 €/mq). Bilocale compatto, buon affare potenziale.",
+    "mq": 55,
+    "prezzo": 270000,
+    "prezzo_mq": 4909,
+    "prima_vista": "2026-09-29T07:54:38.970270+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Giuseppe Arimondi 29, Milano"
   }
 }
