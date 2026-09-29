@@ -8904,5 +8904,181 @@
     "score": 7,
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Via Giuseppe Arimondi 29, Milano"
+  },
+  "30945678": {
+    "città": "Firenze",
+    "motivo_ai": "Prezzo 21% sotto media Firenze. Trilocale ben dimensionato, buona opportunità.",
+    "mq": 74,
+    "prezzo": 310000,
+    "prezzo_mq": 4189,
+    "prima_vista": "2026-09-29T14:42:57.876469+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via delle Panche, Firenze"
+  },
+  "30947688": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo leggermente sotto media zona Milano, bilocale compatto 40mq, nulla eccezionale.",
+    "mq": 40,
+    "prezzo": 229000,
+    "prezzo_mq": 5725,
+    "prima_vista": "2026-09-29T14:38:26.368353+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Guido Guinizelli 13, Milano"
+  },
+  "30947724": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo in linea col mercato. Bilocale standard senza particolari vantaggi o criticità.",
+    "mq": 60,
+    "prezzo": 230000,
+    "prezzo_mq": 3833,
+    "prima_vista": "2026-09-29T14:42:31.225403+00:00",
+    "score": 5,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via San Liborio 27, Napoli"
+  },
+  "30948081": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 37% sotto media Napoli. Trilocale 70mq a buon prezzo, merita visita.",
+    "mq": 70,
+    "prezzo": 169000,
+    "prezzo_mq": 2414,
+    "prima_vista": "2026-09-29T14:42:28.556955+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Benedetto Cairoli 1bis , Napoli"
+  },
+  "30948606": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo sotto media zona (-19%), trilocale ben dimensionato, ubicazione centrale San Domenico",
+    "mq": 107,
+    "prezzo": 330000,
+    "prezzo_mq": 3084,
+    "prima_vista": "2026-09-29T14:42:25.691370+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via San Domenico 38, Napoli"
+  },
+  "30948612": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 47% sotto media zona, bilocale compatto a prezzo eccezionale",
+    "mq": 64,
+    "prezzo": 130000,
+    "prezzo_mq": 2031,
+    "prima_vista": "2026-09-29T14:42:23.032641+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Filippo Maria Briganti 149, Napoli"
+  },
+  "30948615": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo in linea con mercato napolettano, nulla di particolare. Verificare stato immobile.",
+    "mq": 135,
+    "prezzo": 510000,
+    "prezzo_mq": 3778,
+    "prima_vista": "2026-09-29T14:41:37.835994+00:00",
+    "score": 5,
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via San Domenico 38, Napoli"
+  },
+  "30948843": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 16% sotto media Napoli, bilocale ben dimensionato, zona centrale",
+    "mq": 70,
+    "prezzo": 225000,
+    "prezzo_mq": 3214,
+    "prima_vista": "2026-09-29T14:42:20.252733+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Piazzetta Solofrano 6, Napoli"
+  },
+  "30948846": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 35% sopra media zona. Sopravvalutato rispetto mercato napolitano.",
+    "mq": 191,
+    "prezzo": 985000,
+    "prezzo_mq": 5157,
+    "prima_vista": "2026-09-29T14:42:15.557372+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Vico Santo Spirito di Palazzo 46, Napoli"
+  },
+  "30948855": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo/mq 2.3x superiore alla media città. 40mq per quadrilocale implausibile.",
+    "mq": 40,
+    "prezzo": 350000,
+    "prezzo_mq": 8750,
+    "prima_vista": "2026-09-29T14:42:08.038353+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Nuova Toscanella 32, Napoli"
+  },
+  "30948873": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 48% sotto media zona Napoli, buona metratura, occasione rara",
+    "mq": 150,
+    "prezzo": 295000,
+    "prezzo_mq": 1967,
+    "prima_vista": "2026-09-29T14:42:00.534100+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Nicola Nicolini 68, Napoli"
+  },
+  "30948879": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo in linea con mercato, nessun elemento di eccezionalità rilevato",
+    "mq": 90,
+    "prezzo": 350000,
+    "prezzo_mq": 3889,
+    "prima_vista": "2026-09-29T14:41:53.165724+00:00",
+    "score": 5,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Santa Chiara 26, Napoli"
+  },
+  "30949707": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo leggermente sopra media zona (+7%), bilocale piccolo, ubicazione via Padova accettabile",
+    "mq": 50,
+    "prezzo": 320000,
+    "prezzo_mq": 6400,
+    "prima_vista": "2026-09-29T14:38:18.728046+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Padova 167, Milano"
+  },
+  "30951198": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo/mq 72% sopra media Napoli. Sopravvalutato o dati incompleti.",
+    "mq": 75,
+    "prezzo": 490000,
+    "prezzo_mq": 6533,
+    "prima_vista": "2026-09-29T14:41:45.713381+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Rampe Brancaccio 9, Napoli"
+  },
+  "30951201": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 28% sotto media Milano. Bilocale a 4300€/mq è buon affare, merita visita.",
+    "mq": 60,
+    "prezzo": 258000,
+    "prezzo_mq": 4300,
+    "prima_vista": "2026-09-29T14:38:10.788201+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Democrito 9, Milano"
+  },
+  "30951435": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo sotto media zona (-4.4%), ma senza dettagli su condizioni/ubicazione precisa",
+    "mq": 140,
+    "prezzo": 510000,
+    "prezzo_mq": 3643,
+    "prima_vista": "2026-09-29T14:41:29.910390+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via San Domenico 80, Napoli"
   }
 }
