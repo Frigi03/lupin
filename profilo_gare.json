@@ -1,9 +1,24 @@
 {
   "_nota": "Profilo di ESEMPIO: modificalo con i dati dell'azienda cliente. Liste vuote = nessun filtro; importo 0 = nessun limite.",
   "descrizione_azienda": "Piccola impresa edile: ristrutturazioni, manutenzione di edifici e scuole, piccole opere stradali. Fatturato circa 1 milione di euro, lavora in un raggio di 100 km.",
-  "parole_chiave": ["manutenzione", "ristrutturazione", "riqualificazione", "lavori edili", "adeguamento", "messa in sicurezza"],
-  "parole_escluse": ["fornitura di farmaci", "servizio mensa"],
-  "cpv_prefissi": ["45"],
+  "parole_chiave": [
+    "manutenzione",
+    "ristrutturazione",
+    "riqualificazione",
+    "lavori edili",
+    "adeguamento",
+    "messa in sicurezza",
+    "edifici civili",
+    "opere stradali",
+    "edilizia"
+  ],
+  "parole_escluse": [
+    "fornitura di farmaci",
+    "servizio mensa"
+  ],
+  "cpv_prefissi": [
+    "45"
+  ],
   "luoghi": [],
   "importo_min": 20000,
   "importo_max": 1500000
