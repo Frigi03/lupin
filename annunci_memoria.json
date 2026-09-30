@@ -8949,6 +8949,17 @@
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Boston 22//6, Torino"
   },
+  "30946632": {
+    "città": "Roma",
+    "motivo_ai": "Sovrapprezzo 32% rispetto media Roma. Bilocale 70mq non giustifica margine.",
+    "mq": 70,
+    "prezzo": 389000,
+    "prezzo_mq": 5557,
+    "prima_vista": "2026-09-30T01:05:27.628757+00:00",
+    "score": 3,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Viale dell'Umanesimo, Roma"
+  },
   "30947208": {
     "città": "Torino",
     "motivo_ai": "Prezzo non disponibile. Impossibile valutare. Dato critico mancante.",
@@ -8959,6 +8970,17 @@
     "score": 2,
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Carlo Capelli 27, Torino"
+  },
+  "30947670": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo leggermente sopra media Roma. Trilocale 65mq standard, nessun elemento speciale",
+    "mq": 65,
+    "prezzo": 280000,
+    "prezzo_mq": 4308,
+    "prima_vista": "2026-09-30T01:05:24.529114+00:00",
+    "score": 5,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Berengario 10, Roma"
   },
   "30947688": {
     "città": "Milano",
@@ -9158,6 +9180,17 @@
     "sotto_media": false,
     "titolo": "Monolocale in Vendita, Via Padova 51, Milano"
   },
+  "30951849": {
+    "città": "Bologna",
+    "motivo_ai": "Prezzo 28% sotto media Bologna, 118 mq ben dimensionati, affare interessante.",
+    "mq": 118,
+    "prezzo": 289000,
+    "prezzo_mq": 2449,
+    "prima_vista": "2026-09-30T01:06:00.010728+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Antoniotto Usodimare 8, Bologna"
+  },
   "30952059": {
     "città": "Napoli",
     "motivo_ai": "Prezzo sotto media zona (-20%), buona metratura, ubicazione storica interessante",
@@ -9168,6 +9201,28 @@
     "score": 7,
     "sotto_media": true,
     "titolo": "Appartamento in Vendita, Via San Gregorio Armeno 41, Napoli"
+  },
+  "30952092": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo 23% sotto media Roma. Quadrilocale 85mq a 3235€/mq è occasione rara.",
+    "mq": 85,
+    "prezzo": 275000,
+    "prezzo_mq": 3235,
+    "prima_vista": "2026-09-30T01:05:21.806362+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Mongrando, Roma"
+  },
+  "30952095": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo 33% sotto media Roma. Trilocale 85mq a 2824€/mq, opportunità significativa.",
+    "mq": 85,
+    "prezzo": 240000,
+    "prezzo_mq": 2824,
+    "prima_vista": "2026-09-30T01:05:18.638605+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Mongrando, Roma"
   },
   "30952152": {
     "città": "Milano",
@@ -9256,6 +9311,17 @@
     "score": 5,
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Via Padova 95, Milano"
+  },
+  "30953175": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo sospettosamente basso, 35% sotto media. Verificare se nuda proprietà, asta o ristrutturazione.",
+    "mq": 65,
+    "prezzo": 179000,
+    "prezzo_mq": 2754,
+    "prima_vista": "2026-09-30T01:05:15.525603+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Roma"
   },
   "30953301": {
     "città": "Milano",
