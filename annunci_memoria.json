@@ -9432,5 +9432,148 @@
     "score": 7,
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Via Bartolini 39, Milano"
+  },
+  "30959166": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 20% sotto media zona Torino, trilocale 93mq solido, buon affare potenziale",
+    "mq": 93,
+    "prezzo": 179000,
+    "prezzo_mq": 1925,
+    "prima_vista": "2026-09-30T14:53:21.856558+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Terni 37, Torino"
+  },
+  "30959169": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 51% sotto media città. Bilocale compatto ma occasione rara con potenziale.",
+    "mq": 55,
+    "prezzo": 65000,
+    "prezzo_mq": 1182,
+    "prima_vista": "2026-09-30T14:53:18.998510+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Cardinale Guglielmo Massaia, Torino"
+  },
+  "30959925": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo/mq 45% sopra media città. Bilocale molto piccolo, sopravvalutato.",
+    "mq": 38,
+    "prezzo": 210000,
+    "prezzo_mq": 5526,
+    "prima_vista": "2026-09-30T14:53:38.707305+00:00",
+    "score": 3,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Torquato Tasso 194, Napoli"
+  },
+  "30959928": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo/mq 29% sotto media Napoli, quadrilocale a buon prezzo",
+    "mq": 92,
+    "prezzo": 250000,
+    "prezzo_mq": 2717,
+    "prima_vista": "2026-09-30T14:53:35.919404+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Pietro Castellino 88, Napoli"
+  },
+  "30959973": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 31% sotto media Napoli. Trilocale buona metratura. Ottima opportunità.",
+    "mq": 91,
+    "prezzo": 240000,
+    "prezzo_mq": 2637,
+    "prima_vista": "2026-09-30T14:53:53.030936+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Viale Kennedy 405, Napoli"
+  },
+  "30960153": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 31% sotto media Napoli. Bilocale a 2633€/mq. Occasione interessante.",
+    "mq": 30,
+    "prezzo": 79000,
+    "prezzo_mq": 2633,
+    "prima_vista": "2026-09-30T14:53:50.028639+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Vico Annibale De Gasperis, Napoli"
+  },
+  "30960159": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo/mq impossibile (21364 vs 3821 media). Dati incoerenti o annuncio fraudolento.",
+    "mq": 22,
+    "prezzo": 470000,
+    "prezzo_mq": 21364,
+    "prima_vista": "2026-09-30T14:53:47.200735+00:00",
+    "score": 1,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Alessandro Scarlatti 200, Napoli"
+  },
+  "30960162": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo/mq 15% sopra media Napoli. Ubicazione buona ma prezzi elevati ristretto",
+    "mq": 100,
+    "prezzo": 440000,
+    "prezzo_mq": 4400,
+    "prima_vista": "2026-09-30T14:53:44.271018+00:00",
+    "score": 4,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Corso Umberto I 237, Napoli"
+  },
+  "30960234": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 61% sotto media zona: possibile errore annuncio o grave difetto",
+    "mq": 101,
+    "prezzo": 235000,
+    "prezzo_mq": 2327,
+    "prima_vista": "2026-09-30T14:52:12.148702+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Val Lagarina 39, Milano"
+  },
+  "30960588": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo sotto media Milano (-10%), attico in zona residenziale, merita visita",
+    "mq": 106,
+    "prezzo": 570000,
+    "prezzo_mq": 5377,
+    "prima_vista": "2026-09-30T14:52:09.315963+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Attico in Vendita, Taliedo 2, Milano"
+  },
+  "30960594": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo sotto media zona (-10%), trilocale ampio, buon rapporto qualità-prezzo",
+    "mq": 106,
+    "prezzo": 570000,
+    "prezzo_mq": 5377,
+    "prima_vista": "2026-09-30T14:52:06.056592+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Milano"
+  },
+  "30961485": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo/mq doppio della media cittadina. Sopravvalutato o dati errati.",
+    "mq": 50,
+    "prezzo": 375000,
+    "prezzo_mq": 7500,
+    "prima_vista": "2026-09-30T14:53:41.551310+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Chiaia 120, Napoli"
+  },
+  "30962547": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo/mq 24% sotto media cittadina, trilocale di buone dimensioni. Buon affare.",
+    "mq": 85,
+    "prezzo": 155000,
+    "prezzo_mq": 1824,
+    "prima_vista": "2026-09-30T14:53:16.029193+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Terni 42, Torino"
   }
 }
