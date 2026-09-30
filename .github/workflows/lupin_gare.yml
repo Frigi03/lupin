@@ -1,0 +1,72 @@
+name: Lupin Gare (ANAC)
+
+on:
+  # Programmazione disattivata finché il test manuale non conferma che i dati ANAC
+  # vengono letti bene. Per attivarla togli il commento alle due righe sotto.
+  # schedule:
+  #   - cron: '30 6,12,18 * * *'   # 3 volte al giorno
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Modalità test (nessun messaggio Telegram reale, memoria non salvata)'
+        type: boolean
+        default: true
+      esplora:
+        description: 'Stampa nei log la struttura grezza dei dati ANAC'
+        type: boolean
+        default: true
+      soglia_score:
+        description: 'Notifica solo gare con punteggio AI >= questo valore (0 = tutte)'
+        type: string
+        default: '0'
+      giorni_indietro:
+        description: 'Quanti giorni di pubblicazioni scaricare'
+        type: string
+        default: '2'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lupin-memoria
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: Installa dipendenze
+        run: pip install requests
+
+      - name: Esegui Lupin Gare
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_CHAT_ID_GARE: ${{ secrets.TELEGRAM_CHAT_ID_GARE }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DRY_RUN: ${{ github.event_name == 'schedule' && '0' || (github.event.inputs.dry_run == 'true' && '1' || '0') }}
+          ESPLORA: ${{ github.event.inputs.esplora == 'true' && '1' || '0' }}
+          SOGLIA_SCORE: ${{ github.event.inputs.soglia_score || '0' }}
+          GIORNI_INDIETRO: ${{ github.event.inputs.giorni_indietro || '2' }}
+          MAX_CHIAMATE_AI: '60'
+        run: python lupin_gare.py
+
+      - name: Salva memoria
+        run: |
+          [ -f gare_memoria.json ] || exit 0
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add gare_memoria.json
+          git commit -m "chore: update memoria gare [skip ci]" || exit 0
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
