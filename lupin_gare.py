@@ -28,8 +28,10 @@ Opzionali:
   AI_OFF=1         → disattiva la valutazione AI
   SOGLIA_SCORE=6   → notifica solo gare con punteggio >= 6 (default 0 = tutte)
   GIORNI_INDIETRO=2 → quanti giorni di pubblicazioni scaricare (default 2)
-  ESPLORA=1        → stampa nei log la struttura grezza dei primi avvisi e
-                     controlla quali sorgenti rispondono (sonda)
+  ESPLORA=1        → stampa nei log esempi grezzi degli avvisi e
+                     prova filtri e sorgenti (sonda)
+  ANAC_SCHEDE=P    → tipi di scheda ANAC da tenere (prefissi, separati da virgola)
+  ANAC_MAX_PAGINE=80 → massimo di pagine ANAC da 100 avvisi per avvio
   SORGENTE=auto    → anac | ted | auto (ANAC e, se non risponde, TED)
   ANAC_API_URL     → endpoint degli avvisi (default: Pubblicità Legale ANAC)
 """
@@ -78,6 +80,12 @@ HEADERS_BROWSER = {
 }
 DIMENSIONE_PAGINA = 100
 MAX_PAGINE = 30
+# ANAC pubblica migliaia di avvisi al giorno (soprattutto affidamenti diretti
+# già conclusi): servono più pagine e si tengono solo i tipi di scheda utili.
+ANAC_MAX_PAGINE = int(os.environ.get("ANAC_MAX_PAGINE", "80"))
+# Prefissi di codiceScheda da tenere. "P" = bandi e avvisi di gara (P1_16,
+# P2_16, P2_19...). AD = affidamenti diretti, A = esiti, M = modifiche.
+ANAC_SCHEDE = [x.strip() for x in os.environ.get("ANAC_SCHEDE", "P").split(",") if x.strip()]
 
 logging.basicConfig(
     level=logging.INFO,
@@ -201,27 +209,75 @@ def a_data(val) -> date | None:
         return None
 
 
+def a_datetime(val) -> datetime | None:
+    if not val:
+        return None
+    try:
+        d = datetime.fromisoformat(str(val).replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return d if d.tzinfo else d.replace(tzinfo=timezone.utc)
+
+
+def _template_anac(avviso: dict) -> dict:
+    for t in avviso.get("templates") or avviso.get("template") or []:
+        if isinstance(t, dict) and isinstance(t.get("template"), dict):
+            return t["template"]
+    return {}
+
+
+def _items_anac(tpl: dict) -> list[dict]:
+    items = []
+    for sez in tpl.get("sections") or []:
+        for it in sez.get("items") or []:
+            if isinstance(it, dict):
+                items.append(it)
+    return items
+
+
 def normalizza(avviso: dict) -> dict:
-    """Estrae dai dati grezzi i campi che servono a Lupin."""
-    cig = cerca(avviso, "cig")
-    id_avviso = cerca(avviso, "idAvviso", "id_avviso", "idScheda", "codiceScheda")
-    oggetto = cerca(avviso, "oggetto_gara", "oggettoGara", "oggetto_lotto", "oggetto", "descrizione", "titolo")
+    """Estrae dai dati grezzi ANAC (Pubblicità Legale) i campi che servono.
+
+    Struttura reale vista a settembre 2026: campi di testata (idAvviso,
+    codiceScheda, tipologia, dataScadenza, dataPubblicazione) e
+    templates[0].template con metadata.descrizione e sections[] (SEZ. A
+    committente, SEZ. B dati generali, SEZ. C oggetto con items[] per lotto)."""
+    tpl = _template_anac(avviso)
+    meta = tpl.get("metadata") or {}
+    items = _items_anac(tpl)
+
+    cig = cerca(items, "cig") or cerca(avviso, "cig")
+    oggetto = (meta.get("descrizione") or meta.get("titolo")
+               or next((it.get("descrizione") for it in items if it.get("descrizione")), None)
+               or cerca(avviso, "oggetto_gara", "oggetto_lotto", "descrizione", "titolo"))
     ente = cerca(avviso, "denominazione_amministrazione", "denominazioneAmministrazione",
-                 "stazione_appaltante", "denominazione", "amministrazione")
-    importo = a_numero(cerca(avviso, "importo_complessivo", "valore_complessivo",
-                             "importo_totale", "importo_lotto", "importo", "valore"))
-    scadenza = a_data(cerca(avviso, "termine_ricezione", "terminericezione", "scadenza",
-                            "data_scadenza", "termine_presentazione"))
-    pubblicazione = a_data(cerca(avviso, "data_pubblicazione", "dataPubblicazione"))
+                 "stazione_appaltante", "amministrazione")
+    importo = a_numero(cerca(items or avviso, "importo_complessivo", "valore_complessivo",
+                             "importo_totale", "valore_stimato", "importo_base", "importo_lotto",
+                             "valore_affidamento", "importo", "valore"))
+    scadenza = a_data(avviso.get("dataScadenza") or cerca(
+        avviso, "termine_ricezione", "terminericezione", "data_scadenza", "scadenza",
+        "termine_presentazione"))
+    pubblicazione = a_datetime(avviso.get("dataPubblicazione")) or a_datetime(
+        cerca(avviso, "data_pubblicazione", "dataPubblicazione"))
     cpv = list(dict.fromkeys(str(c) for c in cerca(avviso, "cpv", tutti=True)))[:5]
-    luogo = cerca(avviso, "luogo_esecuzione", "luogo", "provincia", "comune", "regione", "nuts")
-    tipo = cerca(avviso, "tipo_appalto", "tipologia", "oggetto_principale_contratto", "tipo")
+    categorie = []
+    for it in items:
+        for c in it.get("categorie") or []:
+            if isinstance(c, dict) and c.get("codice"):
+                voce = f"{c['codice']} {c.get('descrizione') or ''}".strip()
+                if voce not in categorie:
+                    categorie.append(voce)
+    luogo = cerca(items or avviso, "luogo_istat", "luogo_esecuzione", "luogo", "comune",
+                  "provincia", "regione", "nuts")
+    tipo = avviso.get("tipologia") or cerca(items, "natura_principale")
     url = None
-    for v in cerca(avviso, "url", "link", "indirizzo", tutti=True):
+    for v in cerca(avviso, "documenti_di_gara_link", "link", "url", tutti=True):
         if isinstance(v, str) and v.startswith("http"):
             url = v
             break
 
+    id_avviso = avviso.get("idAvviso") or cerca(avviso, "idAvviso", "id_avviso")
     if id_avviso:
         gid = f"A{id_avviso}"
     elif cig:
@@ -232,14 +288,16 @@ def normalizza(avviso: dict) -> dict:
     return {
         "id": gid,
         "cig": str(cig) if cig else None,
-        "oggetto": str(oggetto or "Oggetto non indicato").strip()[:400],
+        "oggetto": " ".join(str(oggetto or "Oggetto non indicato").split())[:400],
         "ente": str(ente or "Ente non indicato").strip()[:150],
         "importo": importo,
         "scadenza": scadenza.isoformat() if scadenza else None,
-        "pubblicazione": pubblicazione.isoformat() if pubblicazione else None,
+        "pubblicazione": pubblicazione.date().isoformat() if pubblicazione else None,
         "cpv": cpv,
+        "categorie": categorie[:4],
         "luogo": str(luogo)[:80] if luogo else None,
         "tipo": str(tipo)[:60] if tipo else None,
+        "scheda": avviso.get("codiceScheda"),
         "url": url or URL_RICERCA_ANAC,
     }
 
@@ -276,79 +334,107 @@ def _get_anac(params: dict):
         return None, f"risposta non JSON → {' '.join(r.text.split())[:200]}"
 
 
-def _esplora_pagina_anac(lista: list[dict], pagina: int) -> None:
+def _pubblicazione(a: dict) -> datetime | None:
+    return a_datetime(a.get("dataPubblicazione"))
+
+
+def _conta_schede(lista: list[dict]) -> dict[str, int]:
     schede: dict[str, int] = {}
-    date_pub = []
     for a in lista:
         k = str(a.get("codiceScheda"))
         schede[k] = schede.get(k, 0) + 1
-        d = a_data(cerca(a, "data_pubblicazione", "dataPubblicazione"))
-        if d:
-            date_pub.append(d)
+    return dict(sorted(schede.items(), key=lambda x: -x[1]))
+
+
+def _esplora_pagina_anac(lista: list[dict], pagina: int) -> None:
+    date_pub = [d for d in (_pubblicazione(a) for a in lista) if d]
     log.info("[ESPLORA] ANAC pagina %d: tipi scheda %s | pubblicazione da %s a %s",
-             pagina, schede, min(date_pub, default=None), max(date_pub, default=None))
-    if pagina == 0:
-        for i, a in enumerate(lista[:2]):
-            log.info("[ESPLORA] ANAC avviso %d grezzo:\n%s", i,
-                     json.dumps(a, ensure_ascii=False, indent=1)[:6000])
-            log.info("[ESPLORA] ANAC avviso %d normalizzato: %s", i,
-                     json.dumps(normalizza(a), ensure_ascii=False))
+             pagina, _conta_schede(lista),
+             min(date_pub, default=None), max(date_pub, default=None))
 
 
-def scarica_avvisi_anac() -> list[dict] | None:
-    """Ritorna la lista avvisi, oppure None se ANAC non risponde.
+_esempi_stampati: set[str] = set()
 
-    Prima prova il filtro per data lato server. Se ANAC lo rifiuta (finora
-    risponde HTTP 500), scarica le pagine senza filtro e scarta in locale gli
-    avvisi più vecchi di GIORNI_INDIETRO, fermandosi alla prima pagina
-    interamente vecchia."""
-    oggi = datetime.now(timezone.utc).date()
-    inizio = oggi - timedelta(days=GIORNI_INDIETRO)
+
+def _esplora_esempio(a: dict) -> None:
+    """Stampa un esempio grezzo per ciascun tipo di scheda tenuto."""
+    k = str(a.get("codiceScheda"))
+    if k in _esempi_stampati or len(_esempi_stampati) >= 4:
+        return
+    _esempi_stampati.add(k)
+    log.info("[ESPLORA] ANAC esempio scheda %s grezzo:\n%s", k,
+             json.dumps(a, ensure_ascii=False, indent=1)[:7000])
+    log.info("[ESPLORA] ANAC esempio scheda %s normalizzato: %s", k,
+             json.dumps(normalizza(a), ensure_ascii=False))
+
+
+def scheda_utile(a: dict) -> bool:
+    k = str(a.get("codiceScheda") or "")
+    return not ANAC_SCHEDE or any(k.startswith(p) for p in ANAC_SCHEDE)
+
+
+def scarica_avvisi_anac(dal: datetime | None = None) -> tuple[list[dict] | None, datetime | None]:
+    """Ritorna (avvisi utili, data di pubblicazione più recente vista).
+    avvisi è None se ANAC non risponde.
+
+    Il filtro per data lato server fa rispondere ANAC con HTTP 500, quindi si
+    scaricano le pagine più recenti (in ordine di pubblicazione decrescente) e
+    ci si ferma alla prima pagina interamente più vecchia di `dal` (ultimo
+    avvio) o, al primo avvio, di GIORNI_INDIETRO giorni."""
+    limite = dal or (datetime.now(timezone.utc) - timedelta(days=GIORNI_INDIETRO))
     base = {"size": DIMENSIONE_PAGINA}
-    filtro_date = {
-        "dataPubblicazioneStart": inizio.isoformat(),
-        "dataPubblicazioneEnd": oggi.isoformat(),
-    }
-
-    dati, errore = _get_anac({**base, **filtro_date, "page": 0})
-    usa_filtro = dati is not None
-    if not usa_filtro:
-        log.warning("ANAC con filtro date: %s", errore)
-        log.info("Riprovo ANAC senza filtro date (filtro in locale)")
-        dati, errore = _get_anac({**base, "page": 0})
-        if dati is None:
-            log.error("ANAC %s", errore)
-            return None
 
     avvisi: list[dict] = []
-    for pagina in range(MAX_PAGINE):
+    piu_recente: datetime | None = None
+    totale_schede: dict[str, int] = {}
+    arrivato_al_limite = False
+
+    for pagina in range(ANAC_MAX_PAGINE):
         if pagina > 0:
-            time.sleep(1)
-            params = {**base, "page": pagina, **(filtro_date if usa_filtro else {})}
-            dati, errore = _get_anac(params)
-            if dati is None:
-                log.error("ANAC pagina %d: %s", pagina, errore)
-                break
+            time.sleep(0.5)
+        dati, errore = _get_anac({**base, "page": pagina})
+        if dati is None:
+            log.error("ANAC pagina %d: %s", pagina, errore)
+            if pagina == 0:
+                return None, None
+            break
 
         lista, altre = _estrai_lista(dati)
         if ESPLORA and pagina < 3:
             _esplora_pagina_anac(lista, pagina)
+        for k, v in _conta_schede(lista).items():
+            totale_schede[k] = totale_schede.get(k, 0) + v
 
-        recenti = lista
-        if not usa_filtro:
-            recenti = []
-            for a in lista:
-                d = a_data(cerca(a, "data_pubblicazione", "dataPubblicazione"))
-                if d is None or d >= inizio:
-                    recenti.append(a)
-        avvisi.extend(recenti)
-        log.info("  ANAC pagina %d: %d avvisi (%d recenti)", pagina, len(lista), len(recenti))
+        nuovi = 0
+        for a in lista:
+            d = _pubblicazione(a)
+            if d and (piu_recente is None or d > piu_recente):
+                piu_recente = d
+            if d and d < limite:
+                continue
+            nuovi += 1
+            if scheda_utile(a):
+                avvisi.append(a)
+                if ESPLORA:
+                    _esplora_esempio(a)
+        if pagina % 10 == 0 or not nuovi:
+            log.info("  ANAC pagina %d: %d avvisi, %d nel periodo, %d utili finora",
+                     pagina, len(lista), nuovi, len(avvisi))
 
         if not altre or not lista:
+            arrivato_al_limite = True
             break
-        if not usa_filtro and not recenti:
-            break  # pagina interamente più vecchia del periodo richiesto
-    return avvisi
+        if not nuovi:
+            arrivato_al_limite = True
+            break
+
+    if not arrivato_al_limite:
+        log.warning("ANAC: raggiunto il massimo di %d pagine prima di arrivare al %s; "
+                    "alcuni avvisi più vecchi non sono stati letti",
+                    ANAC_MAX_PAGINE, limite.isoformat(timespec="minutes"))
+    log.info("ANAC tipi scheda letti: %s | tenuti (prefissi %s): %d",
+             totale_schede, ",".join(ANAC_SCHEDE) or "tutti", len(avvisi))
+    return avvisi, piu_recente
 
 
 # ---------------------------------------------------------------------------
@@ -403,6 +489,8 @@ def normalizza_ted(n: dict) -> dict:
         "scadenza": _iso(a_data(_testo_ted(n.get("deadline-receipt-tender-date-lot")))),
         "pubblicazione": _iso(a_data(_testo_ted(n.get("publication-date")))),
         "cpv": list(dict.fromkeys(str(c) for c in cpv))[:5],
+        "categorie": [],
+        "scheda": None,
         "luogo": _testo_ted(n.get("buyer-city")) or _testo_ted(n.get("place-of-performance")),
         "tipo": _testo_ted(n.get("notice-type")),
         "url": f"https://ted.europa.eu/it/notice/-/detail/{pub}" if pub else "https://ted.europa.eu",
@@ -443,12 +531,16 @@ def scarica_avvisi_ted() -> list[dict]:
     return avvisi
 
 
-def scarica_gare() -> list[dict]:
-    """Ritorna le gare già normalizzate dalla sorgente scelta."""
+def scarica_gare(stato: dict) -> list[dict]:
+    """Ritorna le gare già normalizzate dalla sorgente scelta. Aggiorna `stato`
+    con la data dell'avviso ANAC più recente, da cui ripartire la volta dopo."""
     if SORGENTE in ("anac", "auto"):
-        grezzi = scarica_avvisi_anac()
+        dal = a_datetime(stato.get("anac_ultima_pubblicazione"))
+        grezzi, piu_recente = scarica_avvisi_anac(dal)
         if grezzi is not None:
-            log.info("Sorgente ANAC: %d avvisi", len(grezzi))
+            if piu_recente:
+                stato["anac_ultima_pubblicazione"] = piu_recente.isoformat()
+            log.info("Sorgente ANAC: %d avvisi utili", len(grezzi))
             return [normalizza(a) for a in grezzi]
         if SORGENTE == "anac":
             return []
@@ -458,33 +550,74 @@ def scarica_gare() -> list[dict]:
     return [normalizza_ted(a) for a in grezzi]
 
 
-def _stampa_parametri_api(r) -> None:
-    """Dalla documentazione OpenAPI stampa i parametri accettati per gli avvisi."""
-    try:
-        doc = r.json()
-    except ValueError:
-        return
-    for path, metodi in (doc.get("paths") or {}).items():
-        if "avvis" not in path.lower():
+def _prova_parametri_anac() -> None:
+    """Prova filtri candidati sull'API avvisi e riassume cosa cambia nei risultati.
+    Serve a scoprire come filtrare lato server (tipo di scheda, date, dimensione
+    pagina), così da non dover scaricare migliaia di affidamenti diretti."""
+    ieri = (datetime.now(timezone.utc) - timedelta(days=1)).date()
+    candidati = [
+        {},
+        {"size": 1000},
+        {"codiceScheda": "P2_16"},
+        {"codiceScheda": "P"},
+        {"tipo": "bando"},
+        {"tipologia": "BANDO"},
+        {"sort": "dataPubblicazione,asc"},
+        {"dataPubblicazioneStart": f"{ieri}T00:00:00"},
+        {"dataPubblicazioneStart": f"{ieri}T00:00:00.000Z"},
+        {"dataPubblicazioneDa": ieri.isoformat()},
+        {"dataDa": ieri.isoformat()},
+        {"dataPubblicazione": ieri.isoformat()},
+        {"q": "manutenzione"},
+    ]
+    for extra in candidati:
+        params = {"page": 0, "size": 20, **extra}
+        dati, errore = _get_anac(params)
+        if dati is None:
+            log.info("[SONDA] ANAC %s → %s", extra, errore[:80])
             continue
-        for metodo, op in metodi.items():
-            nomi = [f"{x.get('name')}({(x.get('schema') or {}).get('type', '?')}"
-                    f"{'/' + (x.get('schema') or {}).get('format') if (x.get('schema') or {}).get('format') else ''})"
-                    for x in op.get("parameters", []) if isinstance(x, dict)]
-            log.info("[SONDA] API %s %s → parametri: %s", metodo.upper(), path, ", ".join(nomi))
+        lista, _ = _estrai_lista(dati)
+        date_pub = [d for d in (_pubblicazione(a) for a in lista) if d]
+        tot = {k: dati.get(k) for k in ("totalElements", "totalPages") if isinstance(dati, dict)}
+        log.info("[SONDA] ANAC %s → %d avvisi %s | schede %s | date %s → %s",
+                 extra, len(lista), tot, _conta_schede(lista),
+                 min(date_pub, default=None), max(date_pub, default=None))
+
+
+def _cerca_api_nel_sito() -> None:
+    """Legge il codice JavaScript del sito Pubblicità Legale per trovare gli
+    indirizzi e i parametri che usa la pagina di ricerca bandi."""
+    radice = "https://pubblicitalegale.anticorruzione.it/"
+    try:
+        pagina = requests.get(radice + "bandi", headers=HEADERS_BROWSER, timeout=20).text
+    except Exception as e:
+        log.info("[SONDA] sito: errore %s", e)
+        return
+    script = re.findall(r'src="([^"]+\.js)"', pagina)
+    log.info("[SONDA] sito: script %s", script)
+    trovati: list[str] = []
+    for src in script:
+        url = src if src.startswith("http") else radice + src.lstrip("/")
+        try:
+            js = requests.get(url, headers=HEADERS_BROWSER, timeout=30).text
+        except Exception:
+            continue
+        for m in re.finditer(r"api/v\d[^\"'`\s]{0,120}", js):
+            if m.group(0) not in trovati:
+                trovati.append(m.group(0))
+        for m in re.finditer(r"avvisi", js):
+            frammento = " ".join(js[max(0, m.start() - 250): m.end() + 350].split())
+            if len(trovati) < 60:
+                trovati.append("…" + frammento + "…")
+    for t in trovati[:60]:
+        log.info("[SONDA] sito: %s", t)
 
 
 def sonda() -> None:
     """Diagnostica: quali sorgenti rispondono da qui (solo con ESPLORA=1)."""
     prove = [
-        ("GET", "https://pubblicitalegale.anticorruzione.it/"),
-        ("GET", "https://pubblicitalegale.anticorruzione.it/bandi"),
         ("GET", ANAC_API_URL + "?page=0&size=1"),
-        ("GET", "https://pubblicitalegale.anticorruzione.it/api/v0/v3/api-docs"),
-        ("GET", "https://pubblicitalegale.anticorruzione.it/v3/api-docs"),
-        ("GET", "https://pubblicitalegale.anticorruzione.it/api/v3/api-docs"),
         ("GET", "https://dati.anticorruzione.it/opendata/api/3/action/package_list"),
-        ("GET", "https://www.anticorruzione.it/"),
         ("POST", TED_API_URL),
     ]
     for metodo, url in prove:
@@ -494,17 +627,11 @@ def sonda() -> None:
             else:
                 r = requests.post(url, timeout=20, json={
                     "query": "buyer-country IN (ITA)", "fields": ["publication-number"], "limit": 1})
-            corpo = " ".join(r.text.split())[:150]
-            if "api-docs" in url and r.status_code == 200:
-                _stampa_parametri_api(r)
-            log.info("[SONDA] %s %s → HTTP %s | %s", metodo, url, r.status_code, corpo)
+            log.info("[SONDA] %s %s → HTTP %s", metodo, url, r.status_code)
         except Exception as e:
             log.info("[SONDA] %s %s → errore %s", metodo, url, e)
-    try:
-        ip = requests.get("https://ipinfo.io/json", timeout=10).json()
-        log.info("[SONDA] questo server: paese %s, rete %s", ip.get("country"), ip.get("org"))
-    except Exception:
-        pass
+    _prova_parametri_anac()
+    _cerca_api_nel_sito()
 
 
 # ---------------------------------------------------------------------------
@@ -512,7 +639,7 @@ def sonda() -> None:
 # ---------------------------------------------------------------------------
 
 def passa_filtri(g: dict, profilo: dict) -> tuple[bool, str]:
-    testo = f"{g['oggetto']} {g['ente']} {g['luogo'] or ''}".lower()
+    testo = f"{g['oggetto']} {g['ente']} {g['luogo'] or ''} {' '.join(g['categorie'])}".lower()
 
     if g["scadenza"] and date.fromisoformat(g["scadenza"]) < datetime.now(timezone.utc).date():
         return False, "scaduta"
@@ -578,6 +705,7 @@ def valuta_con_ai(g: dict, profilo: dict) -> dict | None:
         f"Importo: {formatta_euro(g['importo']) if g['importo'] else 'n/d'}",
         f"Scadenza offerte: {g['scadenza'] or 'n/d'}",
         f"CPV: {', '.join(g['cpv']) or 'n/d'}",
+        f"Categorie: {', '.join(g['categorie']) or 'n/d'}",
         f"Luogo: {g['luogo'] or 'n/d'}",
     ]
 
@@ -655,6 +783,8 @@ def componi_messaggio(g: dict, valutazione: dict | None) -> str:
         righe.append(f"📍 {e(g['luogo'])}")
     if g["cpv"]:
         righe.append(f"🏷 CPV {e(', '.join(g['cpv'][:3]))}")
+    if g["categorie"]:
+        righe.append(f"🧱 {e(', '.join(g['categorie'][:3]))}")
     if g["cig"]:
         righe.append(f"🔖 CIG {e(g['cig'])}")
     if valutazione and valutazione["riassunto"]:
@@ -702,12 +832,14 @@ def main():
 
     profilo = carica_profilo()
     memoria = carica_memoria()
-    log.info("Memoria iniziale: %d gare | ultimi %d giorni | sorgente %s",
-             len(memoria), GIORNI_INDIETRO, SORGENTE)
+    log.info("Memoria iniziale: %d gare | sorgente %s | ultimo avviso ANAC visto: %s",
+             len([k for k in memoria if not k.startswith("_")]), SORGENTE,
+             (memoria.get("_stato") or {}).get("anac_ultima_pubblicazione", "nessuno"))
     if ESPLORA:
         sonda()
 
-    gare = scarica_gare()
+    stato = memoria.setdefault("_stato", {})
+    gare = scarica_gare(stato)
 
     scarti: dict[str, int] = {}
     inviati = 0
@@ -749,7 +881,7 @@ def main():
     else:
         salva_memoria(memoria)
     log.info("=== Fine. Notifiche: %d | Memoria: %d | Chiamate AI: %d ===",
-             inviati, len(memoria), _chiamate_ai)
+             inviati, len(memoria) - 1, _chiamate_ai)
 
 
 if __name__ == "__main__":
