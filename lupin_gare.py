@@ -213,7 +213,7 @@ def normalizza(avviso: dict) -> dict:
     scadenza = a_data(cerca(avviso, "termine_ricezione", "terminericezione", "scadenza",
                             "data_scadenza", "termine_presentazione"))
     pubblicazione = a_data(cerca(avviso, "data_pubblicazione", "dataPubblicazione"))
-    cpv = [str(c) for c in cerca(avviso, "cpv", tutti=True)][:5]
+    cpv = list(dict.fromkeys(str(c) for c in cerca(avviso, "cpv", tutti=True)))[:5]
     luogo = cerca(avviso, "luogo_esecuzione", "luogo", "provincia", "comune", "regione", "nuts")
     tipo = cerca(avviso, "tipo_appalto", "tipologia", "oggetto_principale_contratto", "tipo")
     url = None
@@ -262,52 +262,92 @@ def _estrai_lista(dati) -> tuple[list, bool]:
     return [], False
 
 
+def _get_anac(params: dict):
+    """Una richiesta all'API ANAC. Ritorna (json, None) oppure (None, errore)."""
+    try:
+        r = requests.get(ANAC_API_URL, params=params, timeout=45, headers=HEADERS_BROWSER)
+    except Exception as e:
+        return None, f"errore di rete: {e}"
+    if r.status_code != 200:
+        return None, f"HTTP {r.status_code} su {r.url} → {' '.join(r.text.split())[:200]}"
+    try:
+        return r.json(), None
+    except ValueError:
+        return None, f"risposta non JSON → {' '.join(r.text.split())[:200]}"
+
+
+def _esplora_pagina_anac(lista: list[dict], pagina: int) -> None:
+    schede: dict[str, int] = {}
+    date_pub = []
+    for a in lista:
+        k = str(a.get("codiceScheda"))
+        schede[k] = schede.get(k, 0) + 1
+        d = a_data(cerca(a, "data_pubblicazione", "dataPubblicazione"))
+        if d:
+            date_pub.append(d)
+    log.info("[ESPLORA] ANAC pagina %d: tipi scheda %s | pubblicazione da %s a %s",
+             pagina, schede, min(date_pub, default=None), max(date_pub, default=None))
+    if pagina == 0:
+        for i, a in enumerate(lista[:2]):
+            log.info("[ESPLORA] ANAC avviso %d grezzo:\n%s", i,
+                     json.dumps(a, ensure_ascii=False, indent=1)[:6000])
+            log.info("[ESPLORA] ANAC avviso %d normalizzato: %s", i,
+                     json.dumps(normalizza(a), ensure_ascii=False))
+
+
 def scarica_avvisi_anac() -> list[dict] | None:
-    """Ritorna la lista avvisi, oppure None se ANAC non risponde."""
+    """Ritorna la lista avvisi, oppure None se ANAC non risponde.
+
+    Prima prova il filtro per data lato server. Se ANAC lo rifiuta (finora
+    risponde HTTP 500), scarica le pagine senza filtro e scarta in locale gli
+    avvisi più vecchi di GIORNI_INDIETRO, fermandosi alla prima pagina
+    interamente vecchia."""
     oggi = datetime.now(timezone.utc).date()
     inizio = oggi - timedelta(days=GIORNI_INDIETRO)
+    base = {"size": DIMENSIONE_PAGINA}
+    filtro_date = {
+        "dataPubblicazioneStart": inizio.isoformat(),
+        "dataPubblicazioneEnd": oggi.isoformat(),
+    }
+
+    dati, errore = _get_anac({**base, **filtro_date, "page": 0})
+    usa_filtro = dati is not None
+    if not usa_filtro:
+        log.warning("ANAC con filtro date: %s", errore)
+        log.info("Riprovo ANAC senza filtro date (filtro in locale)")
+        dati, errore = _get_anac({**base, "page": 0})
+        if dati is None:
+            log.error("ANAC %s", errore)
+            return None
+
     avvisi: list[dict] = []
-
     for pagina in range(MAX_PAGINE):
-        params = {
-            "dataPubblicazioneStart": inizio.isoformat(),
-            "dataPubblicazioneEnd": oggi.isoformat(),
-            "page": pagina,
-            "size": DIMENSIONE_PAGINA,
-        }
-        try:
-            r = requests.get(ANAC_API_URL, params=params, timeout=45,
-                             headers=HEADERS_BROWSER)
-        except Exception as e:
-            log.error("ANAC errore di rete: %s", e)
-            return avvisi or None
-        if r.status_code != 200:
-            log.error("ANAC HTTP %s su %s → %s", r.status_code, r.url,
-                      " ".join(r.text.split())[:200])
-            return avvisi or None
-        try:
-            dati = r.json()
-        except ValueError:
-            log.error("ANAC: risposta non JSON → %s", " ".join(r.text.split())[:200])
-            return avvisi or None
-
-        if ESPLORA and pagina == 0:
-            if isinstance(dati, dict):
-                log.info("[ESPLORA] chiavi di primo livello: %s", list(dati.keys()))
-            primi, _ = _estrai_lista(dati)
-            for i, a in enumerate(primi[:2]):
-                log.info("[ESPLORA] avviso %d grezzo:\n%s", i,
-                         json.dumps(a, ensure_ascii=False, indent=1)[:4000])
-                log.info("[ESPLORA] avviso %d normalizzato: %s", i,
-                         json.dumps(normalizza(a), ensure_ascii=False))
+        if pagina > 0:
+            time.sleep(1)
+            params = {**base, "page": pagina, **(filtro_date if usa_filtro else {})}
+            dati, errore = _get_anac(params)
+            if dati is None:
+                log.error("ANAC pagina %d: %s", pagina, errore)
+                break
 
         lista, altre = _estrai_lista(dati)
-        avvisi.extend(lista)
-        log.info("  pagina %d: %d avvisi", pagina, len(lista))
+        if ESPLORA and pagina < 3:
+            _esplora_pagina_anac(lista, pagina)
+
+        recenti = lista
+        if not usa_filtro:
+            recenti = []
+            for a in lista:
+                d = a_data(cerca(a, "data_pubblicazione", "dataPubblicazione"))
+                if d is None or d >= inizio:
+                    recenti.append(a)
+        avvisi.extend(recenti)
+        log.info("  ANAC pagina %d: %d avvisi (%d recenti)", pagina, len(lista), len(recenti))
+
         if not altre or not lista:
             break
-        time.sleep(1)
-
+        if not usa_filtro and not recenti:
+            break  # pagina interamente più vecchia del periodo richiesto
     return avvisi
 
 
@@ -356,12 +396,13 @@ def normalizza_ted(n: dict) -> dict:
     return {
         "id": f"T{pub}",
         "cig": None,
-        "oggetto": (_testo_ted(n.get("notice-title")) or "Oggetto non indicato").strip()[:400],
+        "oggetto": re.sub(r"^Italia\s*[–-]\s*", "",
+                          (_testo_ted(n.get("notice-title")) or "Oggetto non indicato").strip())[:400],
         "ente": (_testo_ted(n.get("buyer-name")) or "Ente non indicato").strip()[:150],
         "importo": None,
         "scadenza": _iso(a_data(_testo_ted(n.get("deadline-receipt-tender-date-lot")))),
         "pubblicazione": _iso(a_data(_testo_ted(n.get("publication-date")))),
-        "cpv": [str(c) for c in cpv][:5],
+        "cpv": list(dict.fromkeys(str(c) for c in cpv))[:5],
         "luogo": _testo_ted(n.get("buyer-city")) or _testo_ted(n.get("place-of-performance")),
         "tipo": _testo_ted(n.get("notice-type")),
         "url": f"https://ted.europa.eu/it/notice/-/detail/{pub}" if pub else "https://ted.europa.eu",
@@ -417,12 +458,31 @@ def scarica_gare() -> list[dict]:
     return [normalizza_ted(a) for a in grezzi]
 
 
+def _stampa_parametri_api(r) -> None:
+    """Dalla documentazione OpenAPI stampa i parametri accettati per gli avvisi."""
+    try:
+        doc = r.json()
+    except ValueError:
+        return
+    for path, metodi in (doc.get("paths") or {}).items():
+        if "avvis" not in path.lower():
+            continue
+        for metodo, op in metodi.items():
+            nomi = [f"{x.get('name')}({(x.get('schema') or {}).get('type', '?')}"
+                    f"{'/' + (x.get('schema') or {}).get('format') if (x.get('schema') or {}).get('format') else ''})"
+                    for x in op.get("parameters", []) if isinstance(x, dict)]
+            log.info("[SONDA] API %s %s → parametri: %s", metodo.upper(), path, ", ".join(nomi))
+
+
 def sonda() -> None:
     """Diagnostica: quali sorgenti rispondono da qui (solo con ESPLORA=1)."""
     prove = [
         ("GET", "https://pubblicitalegale.anticorruzione.it/"),
         ("GET", "https://pubblicitalegale.anticorruzione.it/bandi"),
         ("GET", ANAC_API_URL + "?page=0&size=1"),
+        ("GET", "https://pubblicitalegale.anticorruzione.it/api/v0/v3/api-docs"),
+        ("GET", "https://pubblicitalegale.anticorruzione.it/v3/api-docs"),
+        ("GET", "https://pubblicitalegale.anticorruzione.it/api/v3/api-docs"),
         ("GET", "https://dati.anticorruzione.it/opendata/api/3/action/package_list"),
         ("GET", "https://www.anticorruzione.it/"),
         ("POST", TED_API_URL),
@@ -435,6 +495,8 @@ def sonda() -> None:
                 r = requests.post(url, timeout=20, json={
                     "query": "buyer-country IN (ITA)", "fields": ["publication-number"], "limit": 1})
             corpo = " ".join(r.text.split())[:150]
+            if "api-docs" in url and r.status_code == 200:
+                _stampa_parametri_api(r)
             log.info("[SONDA] %s %s → HTTP %s | %s", metodo, url, r.status_code, corpo)
         except Exception as e:
             log.info("[SONDA] %s %s → errore %s", metodo, url, e)
@@ -461,11 +523,13 @@ def passa_filtri(g: dict, profilo: dict) -> tuple[bool, str]:
 
     parole = profilo["parole_chiave"]
     cpv_pref = profilo["cpv_prefissi"]
-    if parole or cpv_pref:
-        ok_parole = any(p.lower() in testo for p in parole)
-        ok_cpv = any(str(c).startswith(str(pref)) for c in g["cpv"] for pref in cpv_pref)
-        if not (ok_parole or ok_cpv):
+    if cpv_pref and g["cpv"]:
+        # Il CPV è la classificazione ufficiale: se c'è, decide lui. Le parole
+        # chiave da sole fanno passare troppo ("manutenzione" di barelle, software...)
+        if not any(str(c).startswith(str(pref)) for c in g["cpv"] for pref in cpv_pref):
             return False, "fuori settore"
+    elif parole and not any(p.lower() in testo for p in parole):
+        return False, "fuori settore"
 
     if profilo["luoghi"] and not any(l.lower() in testo for l in profilo["luoghi"]):
         return False, "fuori zona"
