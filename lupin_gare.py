@@ -31,7 +31,7 @@ Opzionali:
   ESPLORA=1        → stampa nei log esempi grezzi degli avvisi e
                      prova filtri e sorgenti (sonda)
   ANAC_SCHEDE=P    → tipi di scheda ANAC da tenere (prefissi, separati da virgola)
-  ANAC_MAX_PAGINE=80 → massimo di pagine ANAC da 100 avvisi per avvio
+  ANAC_MAX_PAGINE=30 → massimo di pagine ANAC da 1000 avvisi per avvio
   SORGENTE=auto    → anac | ted | auto (ANAC e, se non risponde, TED)
   ANAC_API_URL     → endpoint degli avvisi (default: Pubblicità Legale ANAC)
 """
@@ -82,7 +82,8 @@ DIMENSIONE_PAGINA = 100
 MAX_PAGINE = 30
 # ANAC pubblica migliaia di avvisi al giorno (soprattutto affidamenti diretti
 # già conclusi): servono più pagine e si tengono solo i tipi di scheda utili.
-ANAC_MAX_PAGINE = int(os.environ.get("ANAC_MAX_PAGINE", "80"))
+ANAC_MAX_PAGINE = int(os.environ.get("ANAC_MAX_PAGINE", "30"))
+ANAC_DIMENSIONE_PAGINA = 1000  # verificato: l'API accetta size=1000
 # Prefissi di codiceScheda da tenere. "P" = bandi e avvisi di gara (P1_16,
 # P2_16, P2_19...). AD = affidamenti diretti, A = esiti, M = modifiche.
 ANAC_SCHEDE = [x.strip() for x in os.environ.get("ANAC_SCHEDE", "P").split(",") if x.strip()]
@@ -122,6 +123,8 @@ def carica_profilo() -> dict:
         "parole_chiave": [],
         "parole_escluse": [],
         "cpv_prefissi": [],
+        "nature": [],
+        "categorie_soa": [],
         "luoghi": [],
         "importo_min": 0,
         "importo_max": 0,
@@ -265,11 +268,16 @@ def normalizza(avviso: dict) -> dict:
     for it in items:
         for c in it.get("categorie") or []:
             if isinstance(c, dict) and c.get("codice"):
-                voce = f"{c['codice']} {c.get('descrizione') or ''}".strip()
+                desc = (c.get("descrizione") or "").strip()
+                voce = desc if desc.startswith(c["codice"]) else f"{c['codice']} {desc}".strip()
                 if voce not in categorie:
                     categorie.append(voce)
-    luogo = cerca(items or avviso, "luogo_istat", "luogo_esecuzione", "luogo", "comune",
-                  "provincia", "regione", "nuts")
+    # luogo_istat a volte è il codice numerico del comune: si preferisce un nome
+    luogo = next((v for v in cerca(items or avviso, "luogo_istat", "luogo_nuts",
+                                   "luogo_esecuzione", "luogo", "comune", "provincia",
+                                   "regione", tutti=True)
+                  if not str(v).strip().isdigit()), None)
+    natura = cerca(items, "natura_principale")
     tipo = avviso.get("tipologia") or cerca(items, "natura_principale")
     url = None
     for v in cerca(avviso, "documenti_di_gara_link", "link", "url", tutti=True):
@@ -298,6 +306,7 @@ def normalizza(avviso: dict) -> dict:
         "luogo": str(luogo)[:80] if luogo else None,
         "tipo": str(tipo)[:60] if tipo else None,
         "scheda": avviso.get("codiceScheda"),
+        "natura": str(natura) if natura else None,
         "url": url or URL_RICERCA_ANAC,
     }
 
@@ -382,7 +391,7 @@ def scarica_avvisi_anac(dal: datetime | None = None) -> tuple[list[dict] | None,
     ci si ferma alla prima pagina interamente più vecchia di `dal` (ultimo
     avvio) o, al primo avvio, di GIORNI_INDIETRO giorni."""
     limite = dal or (datetime.now(timezone.utc) - timedelta(days=GIORNI_INDIETRO))
-    base = {"size": DIMENSIONE_PAGINA}
+    base = {"size": ANAC_DIMENSIONE_PAGINA}
 
     avvisi: list[dict] = []
     piu_recente: datetime | None = None
@@ -417,7 +426,7 @@ def scarica_avvisi_anac(dal: datetime | None = None) -> tuple[list[dict] | None,
                 avvisi.append(a)
                 if ESPLORA:
                     _esplora_esempio(a)
-        if pagina % 10 == 0 or not nuovi:
+        if pagina % 3 == 0 or not nuovi:
             log.info("  ANAC pagina %d: %d avvisi, %d nel periodo, %d utili finora",
                      pagina, len(lista), nuovi, len(avvisi))
 
@@ -491,6 +500,7 @@ def normalizza_ted(n: dict) -> dict:
         "cpv": list(dict.fromkeys(str(c) for c in cpv))[:5],
         "categorie": [],
         "scheda": None,
+        "natura": None,
         "luogo": _testo_ted(n.get("buyer-city")) or _testo_ted(n.get("place-of-performance")),
         "tipo": _testo_ted(n.get("notice-type")),
         "url": f"https://ted.europa.eu/it/notice/-/detail/{pub}" if pub else "https://ted.europa.eu",
@@ -638,9 +648,20 @@ def sonda() -> None:
 # Filtri profilo
 # ---------------------------------------------------------------------------
 
-def passa_filtri(g: dict, profilo: dict) -> tuple[bool, str]:
-    testo = f"{g['oggetto']} {g['ente']} {g['luogo'] or ''} {' '.join(g['categorie'])}".lower()
+def _codice_soa(voce: str) -> str | None:
+    """'OG 3 - STRADE...' → 'OG3'. None se non è una categoria SOA (OG/OS)."""
+    m = re.match(r"\s*(O[GS])\s*(\d+)", voce.upper())
+    return f"{m.group(1)}{int(m.group(2))}" if m else None
 
+
+def passa_filtri(g: dict, profilo: dict) -> tuple[bool, str]:
+    testo = f"{g['oggetto']} {g['ente']} {g['luogo'] or ''} {' '.join(g['categorie'])} " \
+            f"{' '.join(g['cpv'])}".lower()
+
+    if not g["scadenza"] and g["scheda"]:
+        # Sugli avvisi ANAC la scadenza c'è sempre per i bandi aperti; quelli
+        # senza sono per lo più vecchie procedure ripubblicate
+        return False, "senza scadenza"
     if g["scadenza"] and date.fromisoformat(g["scadenza"]) < datetime.now(timezone.utc).date():
         return False, "scaduta"
 
@@ -648,15 +669,25 @@ def passa_filtri(g: dict, profilo: dict) -> tuple[bool, str]:
         if p.lower() in testo:
             return False, f"esclusa ({p})"
 
+    nature = [n.lower() for n in profilo["nature"]]
+    if nature and g["natura"] and g["natura"].lower() not in nature:
+        return False, "fuori settore (natura)"
+
+    # Settore, dal criterio più affidabile disponibile per questa gara:
+    # 1) categorie SOA (OG/OS, solo ANAC), 2) CPV numerico (TED), 3) parole chiave
+    soa_profilo = {c for c in (_codice_soa(x) for x in profilo["categorie_soa"]) if c}
+    soa_gara = {c for c in (_codice_soa(x) for x in g["categorie"]) if c}
+    cpv_numerici = [c for c in g["cpv"] if str(c)[:2].isdigit()]
     parole = profilo["parole_chiave"]
-    cpv_pref = profilo["cpv_prefissi"]
-    if cpv_pref and g["cpv"]:
-        # Il CPV è la classificazione ufficiale: se c'è, decide lui. Le parole
-        # chiave da sole fanno passare troppo ("manutenzione" di barelle, software...)
-        if not any(str(c).startswith(str(pref)) for c in g["cpv"] for pref in cpv_pref):
-            return False, "fuori settore"
+    if soa_profilo and soa_gara:
+        if not soa_profilo & soa_gara:
+            return False, "fuori settore (SOA)"
+    elif profilo["cpv_prefissi"] and cpv_numerici:
+        if not any(str(c).startswith(str(pref)) for c in cpv_numerici
+                   for pref in profilo["cpv_prefissi"]):
+            return False, "fuori settore (CPV)"
     elif parole and not any(p.lower() in testo for p in parole):
-        return False, "fuori settore"
+        return False, "fuori settore (parole)"
 
     if profilo["luoghi"] and not any(l.lower() in testo for l in profilo["luoghi"]):
         return False, "fuori zona"
@@ -701,7 +732,7 @@ def valuta_con_ai(g: dict, profilo: dict) -> dict | None:
         "",
         f"Ente: {g['ente']}",
         f"Oggetto: {g['oggetto']}",
-        f"Tipo: {g['tipo'] or 'n/d'}",
+        f"Tipo: {g['tipo'] or 'n/d'} {('- ' + g['natura']) if g['natura'] else ''}",
         f"Importo: {formatta_euro(g['importo']) if g['importo'] else 'n/d'}",
         f"Scadenza offerte: {g['scadenza'] or 'n/d'}",
         f"CPV: {', '.join(g['cpv']) or 'n/d'}",
@@ -851,7 +882,8 @@ def main():
         dati = {k: g[k] for k in ("oggetto", "ente", "importo", "scadenza", "cig", "luogo")}
         dati["prima_vista"] = datetime.now(timezone.utc).isoformat()
         if not ok:
-            scarti[motivo_scarto.split(" ")[0]] = scarti.get(motivo_scarto.split(" ")[0], 0) + 1
+            chiave = motivo_scarto.split(" (")[0] if motivo_scarto.startswith("esclusa") else motivo_scarto
+            scarti[chiave] = scarti.get(chiave, 0) + 1
             dati["scartata"] = motivo_scarto
             memoria[g["id"]] = dati
             continue
