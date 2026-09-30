@@ -5,7 +5,9 @@ Versione sperimentale (2026-09)
 
 Stesso schema di Lupin case, applicato agli appalti pubblici:
 - Scarica i bandi pubblicati di recente sulla Piattaforma Pubblicità Legale
-  di ANAC (Banca Dati Nazionale dei Contratti Pubblici)
+  di ANAC (Banca Dati Nazionale dei Contratti Pubblici). Se ANAC non risponde,
+  usa TED (Gazzetta ufficiale UE), che però contiene solo le gare sopra soglia
+  europea
 - Tiene memoria delle gare già viste (gare_memoria.json)
 - Filtra secondo il profilo dell'azienda (profilo_gare.json): parole chiave,
   codici CPV, luoghi, importo, scadenza
@@ -26,7 +28,9 @@ Opzionali:
   AI_OFF=1         → disattiva la valutazione AI
   SOGLIA_SCORE=6   → notifica solo gare con punteggio >= 6 (default 0 = tutte)
   GIORNI_INDIETRO=2 → quanti giorni di pubblicazioni scaricare (default 2)
-  ESPLORA=1        → stampa nei log la struttura grezza dei primi avvisi ANAC
+  ESPLORA=1        → stampa nei log la struttura grezza dei primi avvisi e
+                     controlla quali sorgenti rispondono (sonda)
+  SORGENTE=auto    → anac | ted | auto (ANAC e, se non risponde, TED)
   ANAC_API_URL     → endpoint degli avvisi (default: Pubblicità Legale ANAC)
 """
 
@@ -58,6 +62,20 @@ ANAC_API_URL = os.environ.get(
     "ANAC_API_URL", "https://pubblicitalegale.anticorruzione.it/api/v0/avvisi"
 )
 URL_RICERCA_ANAC = "https://pubblicitalegale.anticorruzione.it/bandi"
+TED_API_URL = "https://api.ted.europa.eu/v3/notices/search"
+# anac = solo ANAC, ted = solo TED (UE), auto = ANAC e, se non risponde, TED
+SORGENTE = os.environ.get("SORGENTE", "auto").lower()
+HEADERS_BROWSER = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/128.0.0.0 Safari/537.36"
+    ),
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "it-IT,it;q=0.9,en;q=0.8",
+    "Referer": "https://pubblicitalegale.anticorruzione.it/bandi",
+    "Origin": "https://pubblicitalegale.anticorruzione.it",
+}
 DIMENSIONE_PAGINA = 100
 MAX_PAGINE = 30
 
@@ -244,7 +262,8 @@ def _estrai_lista(dati) -> tuple[list, bool]:
     return [], False
 
 
-def scarica_avvisi() -> list[dict]:
+def scarica_avvisi_anac() -> list[dict] | None:
+    """Ritorna la lista avvisi, oppure None se ANAC non risponde."""
     oggi = datetime.now(timezone.utc).date()
     inizio = oggi - timedelta(days=GIORNI_INDIETRO)
     avvisi: list[dict] = []
@@ -258,18 +277,19 @@ def scarica_avvisi() -> list[dict]:
         }
         try:
             r = requests.get(ANAC_API_URL, params=params, timeout=45,
-                             headers={"Accept": "application/json"})
+                             headers=HEADERS_BROWSER)
         except Exception as e:
             log.error("ANAC errore di rete: %s", e)
-            break
+            return avvisi or None
         if r.status_code != 200:
-            log.error("ANAC HTTP %s su %s → %s", r.status_code, r.url, r.text[:300])
-            break
+            log.error("ANAC HTTP %s su %s → %s", r.status_code, r.url,
+                      " ".join(r.text.split())[:200])
+            return avvisi or None
         try:
             dati = r.json()
         except ValueError:
-            log.error("ANAC: risposta non JSON → %s", r.text[:300])
-            break
+            log.error("ANAC: risposta non JSON → %s", " ".join(r.text.split())[:200])
+            return avvisi or None
 
         if ESPLORA and pagina == 0:
             if isinstance(dati, dict):
@@ -289,6 +309,140 @@ def scarica_avvisi() -> list[dict]:
         time.sleep(1)
 
     return avvisi
+
+
+# ---------------------------------------------------------------------------
+# Sorgente di riserva: TED (Gazzetta UE, solo gare sopra soglia europea)
+# ---------------------------------------------------------------------------
+
+CAMPI_TED = [
+    "publication-number", "publication-date", "notice-title", "buyer-name",
+    "buyer-city", "classification-cpv", "deadline-receipt-tender-date-lot",
+    "place-of-performance", "notice-type",
+]
+
+
+def _testo_ted(v, lingue=("ita", "eng")) -> str | None:
+    """I campi TED sono spesso {"ita": "..."} o {"ita": ["..."]} o liste."""
+    if v is None:
+        return None
+    if isinstance(v, dict):
+        for l in lingue:
+            if v.get(l):
+                return _testo_ted(v[l])
+        for x in v.values():
+            t = _testo_ted(x)
+            if t:
+                return t
+        return None
+    if isinstance(v, list):
+        for x in v:
+            t = _testo_ted(x)
+            if t:
+                return t
+        return None
+    return str(v)
+
+
+def _iso(d: date | None) -> str | None:
+    return d.isoformat() if d else None
+
+
+def normalizza_ted(n: dict) -> dict:
+    pub = n.get("publication-number") or ""
+    cpv = n.get("classification-cpv") or []
+    if not isinstance(cpv, list):
+        cpv = [cpv]
+    return {
+        "id": f"T{pub}",
+        "cig": None,
+        "oggetto": (_testo_ted(n.get("notice-title")) or "Oggetto non indicato").strip()[:400],
+        "ente": (_testo_ted(n.get("buyer-name")) or "Ente non indicato").strip()[:150],
+        "importo": None,
+        "scadenza": _iso(a_data(_testo_ted(n.get("deadline-receipt-tender-date-lot")))),
+        "pubblicazione": _iso(a_data(_testo_ted(n.get("publication-date")))),
+        "cpv": [str(c) for c in cpv][:5],
+        "luogo": _testo_ted(n.get("buyer-city")) or _testo_ted(n.get("place-of-performance")),
+        "tipo": _testo_ted(n.get("notice-type")),
+        "url": f"https://ted.europa.eu/it/notice/-/detail/{pub}" if pub else "https://ted.europa.eu",
+    }
+
+
+def scarica_avvisi_ted() -> list[dict]:
+    inizio = datetime.now(timezone.utc).date() - timedelta(days=GIORNI_INDIETRO)
+    query = f"buyer-country IN (ITA) AND publication-date>={inizio.strftime('%Y%m%d')}"
+    avvisi: list[dict] = []
+    for pagina in range(1, MAX_PAGINE + 1):
+        try:
+            r = requests.post(TED_API_URL, timeout=45, json={
+                "query": query, "fields": CAMPI_TED,
+                "page": pagina, "limit": DIMENSIONE_PAGINA,
+            })
+        except Exception as e:
+            log.error("TED errore di rete: %s", e)
+            break
+        if r.status_code != 200:
+            log.error("TED HTTP %s → %s", r.status_code, " ".join(r.text.split())[:400])
+            break
+        dati = r.json()
+        lista = dati.get("notices") or []
+        if ESPLORA and pagina == 1:
+            log.info("[ESPLORA] TED chiavi: %s | totale: %s", list(dati.keys()),
+                     dati.get("totalNoticeCount"))
+            for i, a in enumerate(lista[:2]):
+                log.info("[ESPLORA] TED avviso %d grezzo:\n%s", i,
+                         json.dumps(a, ensure_ascii=False, indent=1)[:3000])
+                log.info("[ESPLORA] TED avviso %d normalizzato: %s", i,
+                         json.dumps(normalizza_ted(a), ensure_ascii=False))
+        avvisi.extend(lista)
+        log.info("  TED pagina %d: %d avvisi", pagina, len(lista))
+        if len(lista) < DIMENSIONE_PAGINA:
+            break
+        time.sleep(1)
+    return avvisi
+
+
+def scarica_gare() -> list[dict]:
+    """Ritorna le gare già normalizzate dalla sorgente scelta."""
+    if SORGENTE in ("anac", "auto"):
+        grezzi = scarica_avvisi_anac()
+        if grezzi is not None:
+            log.info("Sorgente ANAC: %d avvisi", len(grezzi))
+            return [normalizza(a) for a in grezzi]
+        if SORGENTE == "anac":
+            return []
+        log.warning("ANAC non raggiungibile: passo a TED (solo gare sopra soglia UE)")
+    grezzi = scarica_avvisi_ted()
+    log.info("Sorgente TED: %d avvisi", len(grezzi))
+    return [normalizza_ted(a) for a in grezzi]
+
+
+def sonda() -> None:
+    """Diagnostica: quali sorgenti rispondono da qui (solo con ESPLORA=1)."""
+    prove = [
+        ("GET", "https://pubblicitalegale.anticorruzione.it/"),
+        ("GET", "https://pubblicitalegale.anticorruzione.it/bandi"),
+        ("GET", ANAC_API_URL + "?page=0&size=1"),
+        ("GET", "https://dati.anticorruzione.it/opendata/api/3/action/package_list"),
+        ("GET", "https://www.anticorruzione.it/"),
+        ("POST", TED_API_URL),
+    ]
+    for metodo, url in prove:
+        try:
+            if metodo == "GET":
+                r = requests.get(url, headers=HEADERS_BROWSER, timeout=20)
+            else:
+                r = requests.post(url, timeout=20, json={
+                    "query": "buyer-country IN (ITA)", "fields": ["publication-number"], "limit": 1})
+            corpo = " ".join(r.text.split())[:150]
+            log.info("[SONDA] %s %s → HTTP %s | %s", metodo, url, r.status_code, corpo)
+        except Exception as e:
+            log.info("[SONDA] %s %s → errore %s", metodo, url, e)
+    try:
+        ip = requests.get("https://ipinfo.io/json", timeout=10).json()
+        log.info("[SONDA] questo server: paese %s, rete %s", ip.get("country"), ip.get("org"))
+    except Exception:
+        pass
 
 
 # ---------------------------------------------------------------------------
@@ -484,16 +638,16 @@ def main():
 
     profilo = carica_profilo()
     memoria = carica_memoria()
-    log.info("Memoria iniziale: %d gare | ultimi %d giorni da %s",
-             len(memoria), GIORNI_INDIETRO, ANAC_API_URL)
+    log.info("Memoria iniziale: %d gare | ultimi %d giorni | sorgente %s",
+             len(memoria), GIORNI_INDIETRO, SORGENTE)
+    if ESPLORA:
+        sonda()
 
-    grezzi = scarica_avvisi()
-    log.info("Avvisi scaricati: %d", len(grezzi))
+    gare = scarica_gare()
 
     scarti: dict[str, int] = {}
     inviati = 0
-    for grezzo in grezzi:
-        g = normalizza(grezzo)
+    for g in gare:
         if g["id"] in memoria:
             continue
 
