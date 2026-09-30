@@ -9333,5 +9333,104 @@
     "score": 7,
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Via Ciceri Visconti 10//1, Milano"
+  },
+  "30957075": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo/mq 44% sopra media città. Sopravvalutato significativamente rispetto zone comparabili.",
+    "mq": 100,
+    "prezzo": 550000,
+    "prezzo_mq": 5500,
+    "prima_vista": "2026-09-30T08:01:10.116640+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Rampe San Giovanni Maggiore, Napoli"
+  },
+  "30957084": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo leggermente sopra media zona, trilocale standard senza particolarità evidenti",
+    "mq": 122,
+    "prezzo": 750000,
+    "prezzo_mq": 6148,
+    "prima_vista": "2026-09-30T08:00:25.020912+00:00",
+    "score": 5,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Carlo d'Adda 9, Milano"
+  },
+  "30957339": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo 17% sotto media Roma, quadrilocale 130mq, zona centrale Piazza Frua. Buon affare.",
+    "mq": 130,
+    "prezzo": 449000,
+    "prezzo_mq": 3454,
+    "prima_vista": "2026-09-30T08:00:43.044604+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Piazza Giuseppe Frua 20, Roma"
+  },
+  "30957357": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 28% sotto media Milano. Loft ben dimensionato a prezzo molto vantaggioso.",
+    "mq": 64,
+    "prezzo": 275000,
+    "prezzo_mq": 4297,
+    "prima_vista": "2026-09-30T08:00:21.484570+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Loft in Vendita, Via Luigi Pasteur 2, Milano"
+  },
+  "30957366": {
+    "città": "Firenze",
+    "motivo_ai": "Prezzo 23% sotto media Firenze. Buona superficie. Merita approfondimento.",
+    "mq": 137,
+    "prezzo": 558000,
+    "prezzo_mq": 4073,
+    "prima_vista": "2026-09-30T08:01:34.927565+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Giandomenico Romagnosi 7, Firenze"
+  },
+  "30957372": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo/mq 49% sotto media Roma. Sospetto: dati incompleti o immobile problematico.",
+    "mq": 140,
+    "prezzo": 299000,
+    "prezzo_mq": 2136,
+    "prima_vista": "2026-09-30T08:00:39.076952+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Ettore Scandale 87, Roma"
+  },
+  "30958275": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 73% sopra media Milano. Bilocale 40mq a 10375€/mq è sopravvalutato.",
+    "mq": 40,
+    "prezzo": 415000,
+    "prezzo_mq": 10375,
+    "prima_vista": "2026-09-30T08:00:18.654933+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Giuseppe Parini 3, Milano"
+  },
+  "30958677": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 16% sopra media zona. Quadrilocale in 87mq molto compatto.",
+    "mq": 87,
+    "prezzo": 385000,
+    "prezzo_mq": 4425,
+    "prima_vista": "2026-09-30T08:01:06.883855+00:00",
+    "score": 3,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Viale Letizia 4, Napoli"
+  },
+  "30958758": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 35% sotto media Milano, buona metratura. Verificare condizioni e ubicazione esatta.",
+    "mq": 120,
+    "prezzo": 469000,
+    "prezzo_mq": 3908,
+    "prima_vista": "2026-09-30T08:00:14.723809+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Bartolini 39, Milano"
   }
 }
