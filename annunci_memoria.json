@@ -8839,6 +8839,17 @@
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Napoli"
   },
+  "30940797": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo/mq del 55% sopra media città. Sopravvalutato significativamente.",
+    "mq": 70,
+    "prezzo": 259000,
+    "prezzo_mq": 3700,
+    "prima_vista": "2026-10-01T08:24:36.322865+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Vincenzo Gioberti 70, Torino"
+  },
   "30940935": {
     "città": "Roma",
     "motivo_ai": "Prezzo sensibilmente sotto media Roma, 21% convenienza, merita visita approfondita",
@@ -9575,5 +9586,137 @@
     "score": 7,
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Terni 42, Torino"
+  },
+  "30963078": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo 34% sotto media, sospetto. Dati incompleti: zona, piano, condizioni, motivo sconto.",
+    "mq": 65,
+    "prezzo": 179000,
+    "prezzo_mq": 2754,
+    "prima_vista": "2026-10-01T08:23:39.593114+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Roma"
+  },
+  "30963195": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo in linea con mercato, bilocale piccolo zona centrale Torino.",
+    "mq": 55,
+    "prezzo": 139000,
+    "prezzo_mq": 2527,
+    "prima_vista": "2026-10-01T08:24:33.840361+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Corso Monte Grappa 59, Torino"
+  },
+  "30963261": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo non disponibile, impossibile valutare. Dato cruciale mancante per analisi affidabile.",
+    "mq": 600,
+    "prezzo": null,
+    "prezzo_mq": null,
+    "prima_vista": "2026-10-01T08:25:02.406666+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Villa a schiera in Vendita, Via Nuova Toscanella, Napoli"
+  },
+  "30963345": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo sottodimensionato rispetto a media Roma. Verificare condizioni, ubicazione, legalità",
+    "mq": 45,
+    "prezzo": 119000,
+    "prezzo_mq": 2644,
+    "prima_vista": "2026-10-01T08:23:36.451176+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Roma"
+  },
+  "30963348": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo leggermente sotto media Torino, ma dati incompleti su condizioni e posizionamento esatto.",
+    "mq": 130,
+    "prezzo": 299000,
+    "prezzo_mq": 2300,
+    "prima_vista": "2026-10-01T08:24:31.231430+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Corso Canonico Giuseppe Allamano, Torino"
+  },
+  "30964104": {
+    "città": "Torino",
+    "motivo_ai": "Sopravvalutato del 27% rispetto media zona Torino",
+    "mq": 115,
+    "prezzo": 350000,
+    "prezzo_mq": 3043,
+    "prima_vista": "2026-10-01T08:24:28.707441+00:00",
+    "score": 3,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Santa Giulia 1, Torino"
+  },
+  "30964908": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 20% sopra media zona. Ubicazione prestigiosa non compensa sopravvalutazione.",
+    "mq": 120,
+    "prezzo": 570000,
+    "prezzo_mq": 4750,
+    "prima_vista": "2026-10-01T08:24:59.793884+00:00",
+    "score": 3,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Santa Lucia 76/a, Napoli"
+  },
+  "30967542": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo sotto media zona (-20%), metratura buona, locazione centrale Napoli.",
+    "mq": 102,
+    "prezzo": 320000,
+    "prezzo_mq": 3137,
+    "prima_vista": "2026-10-01T08:24:57.060696+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Francesco Galeota 8, Napoli"
+  },
+  "30971421": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 23% sotto media zona, 130 mq regolari, buona opportunità d'acquisto",
+    "mq": 130,
+    "prezzo": 395000,
+    "prezzo_mq": 3038,
+    "prima_vista": "2026-10-01T08:24:54.482507+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Girolamo Santacroce 10c, Napoli"
+  },
+  "30971424": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 25% sotto media Napoli, buon affare se condizioni e zona idonee",
+    "mq": 130,
+    "prezzo": 385000,
+    "prezzo_mq": 2962,
+    "prima_vista": "2026-10-01T08:24:51.863492+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Girolamo Santacroce 10c, Napoli"
+  },
+  "30971577": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo/mq quasi doppio media cittadina. Sopravvalutato o ubicazione premium non giustificata.",
+    "mq": 50,
+    "prezzo": 375000,
+    "prezzo_mq": 7500,
+    "prima_vista": "2026-10-01T08:24:49.300887+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Chiaia 120, Napoli"
+  },
+  "30971700": {
+    "città": "Firenze",
+    "motivo_ai": "Prezzo 27% sotto media Firenze. Bilocale compatto, potenziale buon affare.",
+    "mq": 60,
+    "prezzo": 230000,
+    "prezzo_mq": 3833,
+    "prima_vista": "2026-10-01T08:25:24.946509+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via dell'Agio, Firenze"
   }
 }
