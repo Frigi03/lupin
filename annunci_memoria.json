@@ -9818,6 +9818,17 @@
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Amedeo Cencelli, Roma"
   },
+  "30973185": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo sotto media cittadina, trilocale centrale, dimensione ragionevole. Buon affare.",
+    "mq": 92,
+    "prezzo": 214000,
+    "prezzo_mq": 2326,
+    "prima_vista": "2026-10-01T22:24:35.031110+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Piazza Ruggero Bonghi 6, Torino"
+  },
   "30973242": {
     "città": "Roma",
     "motivo_ai": "Prezzo/mq del 15% sopra media romana. Quadrilocale in 79mq molto compatto, poco spazio.",
@@ -9828,6 +9839,17 @@
     "score": 4,
     "sotto_media": false,
     "titolo": "Quadrilocale in Vendita, Via Arrigo Davila 112, Roma"
+  },
+  "30973599": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 37% sotto media Torino. Bilocale 96mq a 1510€/mq: occasione rara",
+    "mq": 96,
+    "prezzo": 145000,
+    "prezzo_mq": 1510,
+    "prima_vista": "2026-10-01T22:24:32.488594+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Gian Domenico Cassini 7, Torino"
   },
   "30974028": {
     "città": "Milano",
@@ -9850,6 +9872,17 @@
     "score": 8,
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Viale Lunigiana 12, Milano"
+  },
+  "30975225": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 27% sopra media Torino. Bilocale piccolo, ubicazione standard. Sopravvalutato.",
+    "mq": 55,
+    "prezzo": 168000,
+    "prezzo_mq": 3055,
+    "prima_vista": "2026-10-01T22:24:29.835817+00:00",
+    "score": 3,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Corso Francia 249/B, Torino"
   },
   "30975396": {
     "città": "Milano",
@@ -9906,6 +9939,17 @@
     "sotto_media": true,
     "titolo": "Appartamento in Vendita, Via Miano 57, Napoli"
   },
+  "30977124": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo sotto media zona (2211 vs 2395 €/mq). Quadrilocale 90mq, ubicazione centrale. Buon affare.",
+    "mq": 90,
+    "prezzo": 199000,
+    "prezzo_mq": 2211,
+    "prima_vista": "2026-10-01T22:24:27.067226+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Corso Unione Sovietica 209, Torino"
+  },
   "30977181": {
     "città": "Milano",
     "motivo_ai": "Prezzo leggermente sotto media zona, ma monolocale 25mq molto piccolo e limitante",
@@ -9938,5 +9982,16 @@
     "score": 3,
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Via Toledo 292, Napoli"
+  },
+  "30979029": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 21% sotto media Torino, buona metratura, affare interessante",
+    "mq": 143,
+    "prezzo": 269000,
+    "prezzo_mq": 1881,
+    "prima_vista": "2026-10-01T22:24:24.220580+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Corso Appio Claudio 9, Torino"
   }
 }
