@@ -8949,6 +8949,17 @@
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via delle Panche, Firenze"
   },
+  "30946164": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 25% sotto media zona. Bilocale 55mq a 1800€/mq, occasione rara Torino",
+    "mq": 55,
+    "prezzo": 99000,
+    "prezzo_mq": 1800,
+    "prima_vista": "2026-10-02T11:58:01.268220+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Monte Novegno 22, Torino"
+  },
   "30946467": {
     "città": "Torino",
     "motivo_ai": "Prezzo 13% sotto media Torino, trilocale 81mq a 2086€/mq, buon affare",
@@ -10004,5 +10015,82 @@
     "score": 7,
     "sotto_media": true,
     "titolo": "Appartamento in Vendita, Corso Appio Claudio 9, Torino"
+  },
+  "30982500": {
+    "città": "Firenze",
+    "motivo_ai": "Prezzo 16% sotto media Firenze. Terratetto unifamiliare buona metratura. Verifica accessibilità e condizioni strutturali",
+    "mq": 177,
+    "prezzo": 779000,
+    "prezzo_mq": 4401,
+    "prima_vista": "2026-10-02T11:59:21.641318+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Terratetto unifamiliare in Vendita, Via Niccolò da Uzzano 83, Firenze"
+  },
+  "30984927": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo in linea con media zona. Quadrilocale standard, nessun elemento distintivo positivo.",
+    "mq": 130,
+    "prezzo": 510000,
+    "prezzo_mq": 3923,
+    "prima_vista": "2026-10-02T11:58:55.929830+00:00",
+    "score": 5,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Edoardo Nicolardi , Napoli"
+  },
+  "30985764": {
+    "città": "Torino",
+    "motivo_ai": "Sopravvalutato +19% rispetto media Torino. Prezzo/mq alto, zona centrale ma nessun elemento di particolare appeal.",
+    "mq": 70,
+    "prezzo": 199000,
+    "prezzo_mq": 2843,
+    "prima_vista": "2026-10-02T11:57:58.580448+00:00",
+    "score": 4,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Santa Giulia 32, Torino"
+  },
+  "30986010": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo sotto media zona (-6%), trilocale 80mq, buon rapporto qualità-prezzo",
+    "mq": 80,
+    "prezzo": 179000,
+    "prezzo_mq": 2238,
+    "prima_vista": "2026-10-02T11:57:55.954820+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Augusto Nomis di Cossilla 23, Torino"
+  },
+  "30986049": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo/mq 58% sopra media cittadina. Sopravvalutato per bilocale 50mq.",
+    "mq": 50,
+    "prezzo": 189000,
+    "prezzo_mq": 3780,
+    "prima_vista": "2026-10-02T11:57:53.418365+00:00",
+    "score": 3,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Gaetano Donizetti 24, Torino"
+  },
+  "30986130": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo sotto media zona (-11%), metratura piccola ma accettabile per monolocale",
+    "mq": 40,
+    "prezzo": 140000,
+    "prezzo_mq": 3500,
+    "prima_vista": "2026-10-02T11:58:53.164425+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Monolocale in Vendita, Via Filippo Palizzi, Napoli"
+  },
+  "30986400": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 25% sopra media cittadina. Sopravvalutato rispetto a comparabili Torino.",
+    "mq": 163,
+    "prezzo": 485000,
+    "prezzo_mq": 2975,
+    "prima_vista": "2026-10-02T11:57:50.399683+00:00",
+    "score": 4,
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Pio Foà 82, Torino"
   }
 }
