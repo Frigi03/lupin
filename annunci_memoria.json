@@ -10016,6 +10016,28 @@
     "sotto_media": true,
     "titolo": "Appartamento in Vendita, Corso Appio Claudio 9, Torino"
   },
+  "30979455": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq astronomico (24688€ vs media 5969€). Quadrilocale 32mq fisicamente impossibile.",
+    "mq": 32,
+    "prezzo": 790000,
+    "prezzo_mq": 24688,
+    "prima_vista": "2026-10-02T17:30:18.869053+00:00",
+    "score": 1,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Cardinale Giovanni Cagliero 12, Milano"
+  },
+  "30982302": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 37% sopra media Milano. Sopravvalutato, evitare.",
+    "mq": 145,
+    "prezzo": 1190000,
+    "prezzo_mq": 8207,
+    "prima_vista": "2026-10-02T17:30:16.068819+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Roberto Sarfatti 7, Milano"
+  },
   "30982500": {
     "città": "Firenze",
     "motivo_ai": "Prezzo 16% sotto media Firenze. Terratetto unifamiliare buona metratura. Verifica accessibilità e condizioni strutturali",
@@ -10092,5 +10114,192 @@
     "score": 4,
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Via Pio Foà 82, Torino"
+  },
+  "30986535": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 45% sotto media. Sospetto: ubicazione pessima, seminterrato, o annuncio anomalo.",
+    "mq": 52,
+    "prezzo": 169000,
+    "prezzo_mq": 3250,
+    "prima_vista": "2026-10-02T17:30:13.180664+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Rogoredo 113/a, Milano"
+  },
+  "30988011": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo in linea col mercato torinese, trilocale standard senza particolarità evidenti.",
+    "mq": 75,
+    "prezzo": 179000,
+    "prezzo_mq": 2387,
+    "prima_vista": "2026-10-02T17:32:11.345347+00:00",
+    "score": 5,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Carlo Marochetti 19, Torino"
+  },
+  "30988014": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo/mq (5082€) doppio della media torinese (2399€). Dato anomalo, verificare accuratezza annuncio.",
+    "mq": 110,
+    "prezzo": 559000,
+    "prezzo_mq": 5082,
+    "prima_vista": "2026-10-02T17:32:08.503064+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Corso Dante 109, Torino"
+  },
+  "30988374": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo leggermente sopra media zona (+12%), trilocale decente ma senza particolari vantaggi",
+    "mq": 70,
+    "prezzo": 470000,
+    "prezzo_mq": 6714,
+    "prima_vista": "2026-10-02T17:30:10.035799+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Trebazio 6, Milano"
+  },
+  "30988506": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 20% sotto media Torino, buona metratura monolocale, zona centrale Via Ormea",
+    "mq": 55,
+    "prezzo": 105000,
+    "prezzo_mq": 1909,
+    "prima_vista": "2026-10-02T17:32:05.751752+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Monolocale in Vendita, Via Ormea 164, Torino"
+  },
+  "30988728": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 23% sotto media Milano. Bilocale compatto, zona Padova accessibile. Buon affare.",
+    "mq": 43,
+    "prezzo": 199000,
+    "prezzo_mq": 4628,
+    "prima_vista": "2026-10-02T17:30:07.073623+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Padova 213 a, Milano"
+  },
+  "30989052": {
+    "città": "Firenze",
+    "motivo_ai": "Prezzo 33% sotto media Firenze, buona metratura, zona centrale, occasione rara",
+    "mq": 113,
+    "prezzo": 398000,
+    "prezzo_mq": 3522,
+    "prima_vista": "2026-10-02T17:33:57.585451+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Felice Fontana, Firenze"
+  },
+  "30989451": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo sotto media zona (-14%), buona metratura, ubicazione centrale Milano",
+    "mq": 94,
+    "prezzo": 485000,
+    "prezzo_mq": 5160,
+    "prima_vista": "2026-10-02T17:30:04.278255+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Ponte Seveso 39, Milano"
+  },
+  "30989541": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 32% sotto media Torino. Quadrilocale 120mq a 1625€/mq è occasione rara.",
+    "mq": 120,
+    "prezzo": 195000,
+    "prezzo_mq": 1625,
+    "prima_vista": "2026-10-02T17:32:02.943817+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Giordano Bruno 40, Torino"
+  },
+  "30989718": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 30% sotto media Milano, trilocale buona metratura, occasione rara",
+    "mq": 85,
+    "prezzo": 355000,
+    "prezzo_mq": 4176,
+    "prima_vista": "2026-10-02T17:30:01.508021+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Cuzzi 12, Milano"
+  },
+  "30989721": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 134% sopra media Milano. 25mq microscopico. Sopravvalutato.",
+    "mq": 25,
+    "prezzo": 349000,
+    "prezzo_mq": 13960,
+    "prima_vista": "2026-10-02T17:29:58.302199+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Vico Magistretti 3, Milano"
+  },
+  "30989724": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 29% sotto media Milano, buona opportunità, verificare condizioni immobile",
+    "mq": 70,
+    "prezzo": 295000,
+    "prezzo_mq": 4214,
+    "prima_vista": "2026-10-02T17:29:55.559843+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Generale Mac Mahon 111, Milano"
+  },
+  "30989727": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo sotto media zona (-8%), trilocale compatto, zona centrale Torino.",
+    "mq": 63,
+    "prezzo": 138000,
+    "prezzo_mq": 2190,
+    "prima_vista": "2026-10-02T17:32:00.178548+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Frassineto 33, Torino"
+  },
+  "30989793": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo sotto media Milano (-13%), bilocale compatto in zona centrale, merita visita",
+    "mq": 50,
+    "prezzo": 259000,
+    "prezzo_mq": 5180,
+    "prima_vista": "2026-10-02T17:29:52.700137+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Dalmazio Birago 2, Milano"
+  },
+  "30990021": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 63% sopra media Milano. Bilocale 40mq molto piccolo, sopravvalutato.",
+    "mq": 40,
+    "prezzo": 389000,
+    "prezzo_mq": 9725,
+    "prima_vista": "2026-10-02T17:29:49.641132+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Giovanni Battista Niccolini 26, Milano"
+  },
+  "30990078": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 62% sotto media: sospetto asta, pignoramento o danno strutturale grave",
+    "mq": 50,
+    "prezzo": 45900,
+    "prezzo_mq": 918,
+    "prima_vista": "2026-10-02T17:31:57.338262+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Montanaro 51, Torino"
+  },
+  "30990084": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo/mq 59% sopra media cittadina. Trilocale standard, no vantaggi evidenti.",
+    "mq": 93,
+    "prezzo": 355000,
+    "prezzo_mq": 3817,
+    "prima_vista": "2026-10-02T17:31:54.237707+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via degli Artisti 13, Torino"
   }
 }
