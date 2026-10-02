@@ -9983,6 +9983,17 @@
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Via Toledo 292, Napoli"
   },
+  "30979002": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo/mq sotto media di zona (-4.6%), buona metratura, posizione centrale Corso Novara.",
+    "mq": 85,
+    "prezzo": 319000,
+    "prezzo_mq": 3753,
+    "prima_vista": "2026-10-02T04:12:03.929937+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Corso Novara 43, Napoli"
+  },
   "30979029": {
     "città": "Torino",
     "motivo_ai": "Prezzo 21% sotto media Torino, buona metratura, affare interessante",
