@@ -10049,6 +10049,17 @@
     "sotto_media": true,
     "titolo": "Terratetto unifamiliare in Vendita, Via Niccolò da Uzzano 83, Firenze"
   },
+  "30983970": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo leggermente sopra media zona. Trilocale 65mq standard, nessun elemento particolarmente vantaggioso.",
+    "mq": 65,
+    "prezzo": 280000,
+    "prezzo_mq": 4308,
+    "prima_vista": "2026-10-02T21:53:02.494447+00:00",
+    "score": 5,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Berengario 10, Roma"
+  },
   "30984927": {
     "città": "Napoli",
     "motivo_ai": "Prezzo in linea con media zona. Quadrilocale standard, nessun elemento distintivo positivo.",
@@ -10126,6 +10137,39 @@
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Via Rogoredo 113/a, Milano"
   },
+  "30986676": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo leggermente sopra media Roma (+14%), bilocale piccolo, zona da verificare",
+    "mq": 55,
+    "prezzo": 259000,
+    "prezzo_mq": 4709,
+    "prima_vista": "2026-10-02T21:52:59.925628+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via di Valleranello 62, Roma"
+  },
+  "30986709": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo 13% sotto media Roma, quadrilocale 140mq, buon potenziale investimento",
+    "mq": 140,
+    "prezzo": 499000,
+    "prezzo_mq": 3564,
+    "prima_vista": "2026-10-02T21:52:57.294576+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Viale Camillo Sabatini 102/Edificios3, Roma"
+  },
+  "30987240": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 41% sotto media zona Napoli. Quadrilocale 147mq a 2313€/mq. Occasione rara.",
+    "mq": 147,
+    "prezzo": 340000,
+    "prezzo_mq": 2313,
+    "prima_vista": "2026-10-02T21:54:40.133497+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Piazza Conte Camillo Benso di Cavour 61, Napoli"
+  },
   "30988011": {
     "città": "Torino",
     "motivo_ai": "Prezzo in linea col mercato torinese, trilocale standard senza particolarità evidenti.",
@@ -10192,6 +10236,28 @@
     "sotto_media": true,
     "titolo": "Appartamento in Vendita, Via Felice Fontana, Firenze"
   },
+  "30989166": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo/mq 57% sotto media Roma. Trilocale 100mq a 1790€/mq è occasione rara.",
+    "mq": 100,
+    "prezzo": 179000,
+    "prezzo_mq": 1790,
+    "prima_vista": "2026-10-02T21:52:54.552083+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Giuseppe De Piro 1, Roma"
+  },
+  "30989169": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo sotto media (-4.4%), trilocale ben dimensionato, zona centrale Roma",
+    "mq": 139,
+    "prezzo": 549000,
+    "prezzo_mq": 3950,
+    "prima_vista": "2026-10-02T21:52:51.930057+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Pasquale Revoltella 111, Roma"
+  },
   "30989451": {
     "città": "Milano",
     "motivo_ai": "Prezzo sotto media zona (-14%), buona metratura, ubicazione centrale Milano",
@@ -10202,6 +10268,17 @@
     "score": 7,
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Ponte Seveso 39, Milano"
+  },
+  "30989538": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo leggermente sopra media zona (+10%). Trilocale standard, dati completi.",
+    "mq": 70,
+    "prezzo": 320000,
+    "prezzo_mq": 4571,
+    "prima_vista": "2026-10-02T21:52:48.747531+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Viale Opita Oppio 64, Roma"
   },
   "30989541": {
     "città": "Torino",
@@ -10301,5 +10378,16 @@
     "score": 2,
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via degli Artisti 13, Torino"
+  },
+  "30991554": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo significativamente sotto media zona, 33% meno caro. Buon affare potenziale.",
+    "mq": 85,
+    "prezzo": 225000,
+    "prezzo_mq": 2647,
+    "prima_vista": "2026-10-02T21:54:37.424957+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Napoli"
   }
 }
