@@ -10192,6 +10192,17 @@
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Corso Dante 109, Torino"
   },
+  "30988089": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 17% sotto media, trilocale 85mq ben posizionato. Buon affare.",
+    "mq": 85,
+    "prezzo": 169000,
+    "prezzo_mq": 1988,
+    "prima_vista": "2026-10-03T13:04:44.187855+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Corso Orbassano 203, Torino"
+  },
   "30988374": {
     "città": "Milano",
     "motivo_ai": "Prezzo leggermente sopra media zona (+12%), trilocale decente ma senza particolari vantaggi",
@@ -10390,6 +10401,39 @@
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Napoli"
   },
+  "30993444": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo/mq 54% sopra media città. Attico sovrapprezzato, evitare.",
+    "mq": 117,
+    "prezzo": 434000,
+    "prezzo_mq": 3709,
+    "prima_vista": "2026-10-03T13:04:41.432226+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Attico in Vendita, Via Treviso 52, Torino"
+  },
+  "30993795": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo/mq 33% sopra media. Sopravvalutato rispetto mercato napolitano.",
+    "mq": 75,
+    "prezzo": 390000,
+    "prezzo_mq": 5200,
+    "prima_vista": "2026-10-03T13:05:02.325486+00:00",
+    "score": 3,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Corso Umberto I 22, Napoli"
+  },
+  "30995577": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo/mq il doppio della media cittadina. Sopravvalutato o dati errati.",
+    "mq": 110,
+    "prezzo": 529000,
+    "prezzo_mq": 4809,
+    "prima_vista": "2026-10-03T13:04:38.721828+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Corso Dante 109, Torino"
+  },
   "30996243": {
     "città": "Milano",
     "motivo_ai": "Prezzo/mq 13% sotto media Milano. Trilocale 80mq buona metratura. Affatto interessante.",
@@ -10400,5 +10444,71 @@
     "score": 7,
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Arbe 87, Milano"
+  },
+  "30996327": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo/mq 67% sopra media Napoli. Sopravvalutato, evitare.",
+    "mq": 75,
+    "prezzo": 490000,
+    "prezzo_mq": 6533,
+    "prima_vista": "2026-10-03T13:04:59.659221+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Rampe Brancaccio 9, Napoli"
+  },
+  "30996807": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo sotto media zona (-11%), quadrilocale 140mq, buon potenziale investimento.",
+    "mq": 140,
+    "prezzo": 750000,
+    "prezzo_mq": 5357,
+    "prima_vista": "2026-10-03T13:02:58.780977+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Giuseppe Pecchio 20, Milano"
+  },
+  "30997746": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 37% sopra media Milano. Trilocale caro per zona, sopravvalutato rispetto mercato.",
+    "mq": 115,
+    "prezzo": 949000,
+    "prezzo_mq": 8252,
+    "prima_vista": "2026-10-03T13:02:55.974250+00:00",
+    "score": 3,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Paolo Sarpi 26, Milano"
+  },
+  "30997926": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo leggermente sopra media zona. Bilocale piccolo, nulla speciale.",
+    "mq": 45,
+    "prezzo": 190000,
+    "prezzo_mq": 4222,
+    "prima_vista": "2026-10-03T13:04:56.775245+00:00",
+    "score": 5,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Belvedere 52, Napoli"
+  },
+  "30997953": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 4.7x sopra media. Dato chiaramente errato o annuncio fraudolento.",
+    "mq": 20,
+    "prezzo": 565000,
+    "prezzo_mq": 28250,
+    "prima_vista": "2026-10-03T13:02:52.786690+00:00",
+    "score": 1,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Grigna 21, Milano"
+  },
+  "30998325": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 52% sotto media: probabile annuncio sospetto, verificare condizioni immobile",
+    "mq": 120,
+    "prezzo": 139000,
+    "prezzo_mq": 1158,
+    "prima_vista": "2026-10-03T13:04:35.862970+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Strada del Drosso 158, Torino"
   }
 }
