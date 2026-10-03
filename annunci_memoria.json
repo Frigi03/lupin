@@ -10510,5 +10510,16 @@
     "score": 2,
     "sotto_media": true,
     "titolo": "Appartamento in Vendita, Strada del Drosso 158, Torino"
+  },
+  "30999291": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 41% sotto media Napoli, quadrilocale ampio, ubicazione centrale San Lucia",
+    "mq": 120,
+    "prezzo": 280000,
+    "prezzo_mq": 2333,
+    "prima_vista": "2026-10-03T17:47:45.765386+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Croci San Lucia al Monte, Napoli"
   }
 }
