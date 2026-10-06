@@ -10697,5 +10697,126 @@
     "score": 7,
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Vico Lungo Teatro Nuovo 100, Napoli"
+  },
+  "31011756": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 57% sotto media Napoli. Quadrilocale 130mq a 1692€/mq. Ottima opportunità investimento.",
+    "mq": 130,
+    "prezzo": 220000,
+    "prezzo_mq": 1692,
+    "prima_vista": "2026-10-06T08:37:27.187291+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Privata Antonio Imperatore 13, Napoli"
+  },
+  "31011849": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo/mq sotto media, piccolo ma in centro storico, conveniente",
+    "mq": 30,
+    "prezzo": 115000,
+    "prezzo_mq": 3833,
+    "prima_vista": "2026-10-06T08:37:24.456211+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Vico Purgatorio Ad Arco 28, Napoli"
+  },
+  "31012476": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 40% sopra media zona. Sopravvalutato rispetto mercato Napoli.",
+    "mq": 180,
+    "prezzo": 990000,
+    "prezzo_mq": 5500,
+    "prima_vista": "2026-10-06T08:37:21.177140+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Timavo, Napoli"
+  },
+  "31012497": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 3.5x sopra media Milano. Dato sospetto o errore inserimento annuncio.",
+    "mq": 90,
+    "prezzo": 1950000,
+    "prezzo_mq": 21667,
+    "prima_vista": "2026-10-06T08:35:31.305383+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Viale Luigi Majno 19, Milano"
+  },
+  "31012929": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 53% sotto media: segnali di rischio, verificare condizioni immobile",
+    "mq": 80,
+    "prezzo": 229000,
+    "prezzo_mq": 2862,
+    "prima_vista": "2026-10-06T08:35:28.587154+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Ponte Nuovo 10, Milano"
+  },
+  "31012953": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 11% sotto media Milano, bilocale in via consolidata, merita visita",
+    "mq": 70,
+    "prezzo": 377000,
+    "prezzo_mq": 5386,
+    "prima_vista": "2026-10-06T08:35:25.887677+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Lorenteggio 38, Milano"
+  },
+  "31012956": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo sotto media zona (-13%), bilocale 55mq in buona posizione centrale Milano",
+    "mq": 55,
+    "prezzo": 290000,
+    "prezzo_mq": 5273,
+    "prima_vista": "2026-10-06T08:35:23.049297+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Cenisio 32, Milano"
+  },
+  "31012995": {
+    "città": "Firenze",
+    "motivo_ai": "Prezzo 15% sotto media Firenze, quadrilocale buona dimensione, zona accessibile",
+    "mq": 81,
+    "prezzo": 360000,
+    "prezzo_mq": 4444,
+    "prima_vista": "2026-10-06T08:38:30.523088+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Faentina 10, Firenze"
+  },
+  "31013004": {
+    "città": "Firenze",
+    "motivo_ai": "Prezzo 36% sotto media zona. Sospetto: dati incompleti, difetti non dichiarati o errore annuncio.",
+    "mq": 128,
+    "prezzo": 428000,
+    "prezzo_mq": 3344,
+    "prima_vista": "2026-10-06T08:38:27.436556+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Faenza 66, Firenze"
+  },
+  "31013028": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 40% sotto media: sospetto dati incompleti o cattive condizioni",
+    "mq": 68,
+    "prezzo": 249000,
+    "prezzo_mq": 3662,
+    "prima_vista": "2026-10-06T08:35:20.090941+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Monolocale in Vendita, Via Matteo Civitali 23, Milano"
+  },
+  "31013625": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 40% sopra media zona. Quadrilocale 100mq a 3380€/mq vs 2406€/mq medio. Sopravvalutato.",
+    "mq": 100,
+    "prezzo": 338000,
+    "prezzo_mq": 3380,
+    "prima_vista": "2026-10-06T08:37:08.924965+00:00",
+    "score": 4,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Salbertrand, Torino"
   }
 }
