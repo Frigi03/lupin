@@ -10818,5 +10818,27 @@
     "score": 4,
     "sotto_media": false,
     "titolo": "Quadrilocale in Vendita, Via Salbertrand, Torino"
+  },
+  "31016148": {
+    "città": "Bologna",
+    "motivo_ai": "Prezzo sotto media zona (+12%), quadrilocale buone dimensioni, affare interessante",
+    "mq": 107,
+    "prezzo": 315000,
+    "prezzo_mq": 2944,
+    "prima_vista": "2026-10-06T16:35:35.507108+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Bologna"
+  },
+  "31018995": {
+    "città": "Firenze",
+    "motivo_ai": "Prezzo/mq 53% sotto media zona. Dati sospetti o immobile con difetti gravi non dichiarati.",
+    "mq": 90,
+    "prezzo": 220000,
+    "prezzo_mq": 2444,
+    "prima_vista": "2026-10-06T16:35:49.125602+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Terratetto unifamiliare in Vendita, Via della Cupola, Firenze"
   }
 }
