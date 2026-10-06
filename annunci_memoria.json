@@ -10521,5 +10521,181 @@
     "score": 9,
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Via Croci San Lucia al Monte, Napoli"
+  },
+  "31003524": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo/mq sotto media cittadina (-27%). Trilocale 90mq a buon prezzo, zona da verificare.",
+    "mq": 90,
+    "prezzo": 159000,
+    "prezzo_mq": 1767,
+    "prima_vista": "2026-10-06T01:10:13.617562+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Corso Unione Sovietica 493/22, Torino"
+  },
+  "31003809": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 24% sotto media zona. Monolocale compatto, buon affare relativo.",
+    "mq": 40,
+    "prezzo": 185000,
+    "prezzo_mq": 4625,
+    "prima_vista": "2026-10-06T01:08:19.112561+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Monolocale in Vendita, Via Cino da Pistoia 9, Milano"
+  },
+  "31003815": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 40% sotto media Milano. Verificare condizioni, ubicazione esatta, stato immobile.",
+    "mq": 117,
+    "prezzo": 430000,
+    "prezzo_mq": 3675,
+    "prima_vista": "2026-10-06T01:08:16.443961+00:00",
+    "score": 3,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Gabbro, Milano"
+  },
+  "31004262": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 39% sotto media Napoli. Piccolo ma affare raro, verifica condizioni strutturali.",
+    "mq": 50,
+    "prezzo": 120000,
+    "prezzo_mq": 2400,
+    "prima_vista": "2026-10-06T01:11:21.152569+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Vincenzo De Giaxa 2, Napoli"
+  },
+  "31004637": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo leggermente sopra media zona. Trilocale standard, nessun elemento speciale rilevato.",
+    "mq": 90,
+    "prezzo": 360000,
+    "prezzo_mq": 4000,
+    "prima_vista": "2026-10-06T01:11:18.498993+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Battistello Caracciolo 12, Napoli"
+  },
+  "31005156": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 16% sotto media Milano. Trilocale 70mq ben proporzionato, zona centrale",
+    "mq": 70,
+    "prezzo": 359000,
+    "prezzo_mq": 5129,
+    "prima_vista": "2026-10-06T01:08:13.785502+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Popoli Uniti 5, Milano"
+  },
+  "31006248": {
+    "città": "Firenze",
+    "motivo_ai": "Prezzo 40% sotto media zona Firenze. Buona metratura, ubicazione centrale. Occasione rara.",
+    "mq": 115,
+    "prezzo": 358000,
+    "prezzo_mq": 3113,
+    "prima_vista": "2026-10-06T01:12:53.374542+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Maestro Isacco, Firenze"
+  },
+  "31006290": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 29% sotto media zona. Bilocale 90mq a buon rapporto qualità-prezzo.",
+    "mq": 90,
+    "prezzo": 250000,
+    "prezzo_mq": 2778,
+    "prima_vista": "2026-10-06T01:11:15.928010+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Piazza Enrico De Nicola, Napoli"
+  },
+  "31006317": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 64% sopra media Milano. Bilocale 47mq molto caro, probabile sopravvalutazione.",
+    "mq": 47,
+    "prezzo": 469000,
+    "prezzo_mq": 9979,
+    "prima_vista": "2026-10-06T01:08:10.848186+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Achille Zezon 5, Milano"
+  },
+  "31006350": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo leggermente sotto media zona. Trilocale standard, nessun indizio particolare",
+    "mq": 100,
+    "prezzo": 380000,
+    "prezzo_mq": 3800,
+    "prima_vista": "2026-10-06T01:11:13.175826+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Napoli"
+  },
+  "31006686": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 31% sotto media, quadrilocale 90mq a 1667€/mq. Occasione rara.",
+    "mq": 90,
+    "prezzo": 150000,
+    "prezzo_mq": 1667,
+    "prima_vista": "2026-10-06T01:10:10.966791+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Cesare Reduzzi 5, Torino"
+  },
+  "31007433": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo/mq 59% sopra media Torino. Sopravvalutato rispetto al mercato locale.",
+    "mq": 130,
+    "prezzo": 499000,
+    "prezzo_mq": 3838,
+    "prima_vista": "2026-10-06T01:10:08.392150+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Giuseppe Piazzi, Torino"
+  },
+  "31007496": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 45% sotto media Torino. Bilocale compatto a 1317€/mq, ottima opportunità d'affari.",
+    "mq": 60,
+    "prezzo": 79000,
+    "prezzo_mq": 1317,
+    "prima_vista": "2026-10-06T01:10:04.822244+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Assisi 38, Torino"
+  },
+  "31007535": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 30% sotto media Torino, quadrilocale compatto, buona opportunità",
+    "mq": 82,
+    "prezzo": 139000,
+    "prezzo_mq": 1695,
+    "prima_vista": "2026-10-06T01:10:02.109067+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Guglielmo Reiss Romoli 81/17, Torino"
+  },
+  "31007727": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 36% sotto media zona Napoli. Quadrilocale con buona metratura a Capodimonte.",
+    "mq": 135,
+    "prezzo": 340000,
+    "prezzo_mq": 2519,
+    "prima_vista": "2026-10-06T01:11:10.597310+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Sant\\'Antonio a Capodimonte 46, Napoli"
+  },
+  "31008093": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo sotto media zona (-14%), bilocale ben dimensionato, centro storico. Verifica condizioni strutturali.",
+    "mq": 80,
+    "prezzo": 270000,
+    "prezzo_mq": 3375,
+    "prima_vista": "2026-10-06T01:11:07.914945+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Vico Lungo Teatro Nuovo 100, Napoli"
   }
 }
