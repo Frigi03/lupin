@@ -10687,6 +10687,17 @@
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Via Sant\\'Antonio a Capodimonte 46, Napoli"
   },
+  "31007982": {
+    "città": "Torino",
+    "motivo_ai": "Buon affare, prezzo 16% sotto media Torino, zona centrale, metratura generosa",
+    "mq": 198,
+    "prezzo": 399000,
+    "prezzo_mq": 2015,
+    "prima_vista": "2026-10-06T22:24:24.072297+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Corso Re Umberto 47, Torino"
+  },
   "31008093": {
     "città": "Napoli",
     "motivo_ai": "Prezzo sotto media zona (-14%), bilocale ben dimensionato, centro storico. Verifica condizioni strutturali.",
@@ -10819,6 +10830,17 @@
     "sotto_media": false,
     "titolo": "Quadrilocale in Vendita, Via Salbertrand, Torino"
   },
+  "31015284": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo/mq 50% sopra media Torino. Sopravvalutato rispetto zona.",
+    "mq": 220,
+    "prezzo": 799000,
+    "prezzo_mq": 3632,
+    "prima_vista": "2026-10-06T22:24:21.353618+00:00",
+    "score": 3,
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Corso Dante, Torino"
+  },
   "31016148": {
     "città": "Bologna",
     "motivo_ai": "Prezzo sotto media zona (+12%), quadrilocale buone dimensioni, affare interessante",
@@ -10829,6 +10851,39 @@
     "score": 7,
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Bologna"
+  },
+  "31018389": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo leggermente sotto media zona, quadrilocale standard, nessun elemento particolare",
+    "mq": 105,
+    "prezzo": 249000,
+    "prezzo_mq": 2371,
+    "prima_vista": "2026-10-06T22:24:18.584696+00:00",
+    "score": 5,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Corso Svizzera 9, Torino"
+  },
+  "31018653": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 10% sotto media zona, buona metratura, localizzazione centrale Torino.",
+    "mq": 175,
+    "prezzo": 380000,
+    "prezzo_mq": 2171,
+    "prima_vista": "2026-10-06T22:24:15.800766+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Vincenzo Monti 19, Torino"
+  },
+  "31018836": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo/mq 52% sopra media cittadina. Bilocale 35mq sottodimensionato e sopravvalutato.",
+    "mq": 35,
+    "prezzo": 128000,
+    "prezzo_mq": 3657,
+    "prima_vista": "2026-10-06T22:24:12.451765+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Rubiana 10, Torino"
   },
   "31018995": {
     "città": "Firenze",
