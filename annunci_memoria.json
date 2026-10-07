@@ -11049,5 +11049,93 @@
     "score": 7,
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Strada di Settimo 131, Torino"
+  },
+  "31026300": {
+    "città": "Bologna",
+    "motivo_ai": "Prezzo 34% sopra media Bologna. Trilocale piccolo, sopravvalutato.",
+    "mq": 77,
+    "prezzo": 345000,
+    "prezzo_mq": 4481,
+    "prima_vista": "2026-10-07T12:43:51.615165+00:00",
+    "score": 4,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Bellaria 1, Bologna"
+  },
+  "31026777": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo 21% sopra media ma zona centrale, superficie modesta, buona opportunità",
+    "mq": 64,
+    "prezzo": 320000,
+    "prezzo_mq": 5000,
+    "prima_vista": "2026-10-07T12:42:02.099255+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Aversa 23, Roma"
+  },
+  "31027548": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo leggermente superiore a media zona, ma buona posizione centrale Roma.",
+    "mq": 59,
+    "prezzo": 280000,
+    "prezzo_mq": 4746,
+    "prima_vista": "2026-10-07T12:41:59.616186+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Roberto Malatesta 312, Roma"
+  },
+  "31027809": {
+    "città": "Milano",
+    "motivo_ai": "Nuda proprietà sconta gravemente valore. Prezzo/mq 34% sotto media, ma usufruttuario limita reddito.",
+    "mq": 57,
+    "prezzo": 230000,
+    "prezzo_mq": 4035,
+    "prima_vista": "2026-10-07T12:41:44.614828+00:00",
+    "score": 3,
+    "sotto_media": true,
+    "titolo": "Bilocale in Nuda proprietà, Via Domenico Veneziano 7, Milano"
+  },
+  "31028484": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 50% sopra media zona. Sopravvalutato drasticamente rispetto mercato.",
+    "mq": 308,
+    "prezzo": 1800000,
+    "prezzo_mq": 5844,
+    "prima_vista": "2026-10-07T12:43:38.402430+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via del Parco Margherita 23, Napoli"
+  },
+  "31028976": {
+    "città": "Firenze",
+    "motivo_ai": "Sotto media zona 12%, bilocale centrale Firenze, buon rapporto prezzo-metratura",
+    "mq": 55,
+    "prezzo": 250000,
+    "prezzo_mq": 4545,
+    "prima_vista": "2026-10-07T12:44:44.644694+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Odorico da Pordenone, Firenze"
+  },
+  "31029009": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 43% sotto media: possibile annuncio fake o immobile problematico",
+    "mq": 80,
+    "prezzo": 280000,
+    "prezzo_mq": 3500,
+    "prima_vista": "2026-10-07T12:41:41.768950+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Viale Ungheria, Milano"
+  },
+  "31029360": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo leggermente sopra media zona. Trilocale standard senza particolari vantaggi evidenti.",
+    "mq": 81,
+    "prezzo": 340000,
+    "prezzo_mq": 4198,
+    "prima_vista": "2026-10-07T12:41:57.037617+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Viale Anicio Gallo 172, Roma"
   }
 }
