@@ -1,10 +1,11 @@
 name: Lupin Gare (ANAC)
 
 on:
-  # Programmazione disattivata finché il test manuale non conferma che i dati ANAC
-  # vengono letti bene. Per attivarla togli il commento alle due righe sotto.
-  # schedule:
-  #   - cron: '30 6,12,18 * * *'   # 3 volte al giorno
+  # ANAC pubblica gli avvisi in un unico blocco alle 06:00 UTC: un avvio al giorno,
+  # poco dopo, basta. Gli avvii programmati inviano davvero su Telegram e
+  # notificano solo le gare con punteggio AI >= 7.
+  schedule:
+    - cron: '47 6 * * *'   # ogni giorno alle 06:47 UTC (08:47 ora legale italiana)
   workflow_dispatch:
     inputs:
       dry_run:
@@ -18,7 +19,7 @@ on:
       soglia_score:
         description: 'Notifica solo gare con punteggio AI >= questo valore (0 = tutte)'
         type: string
-        default: '0'
+        default: '7'
       sorgente:
         description: 'Da dove prendere le gare'
         type: choice
@@ -27,7 +28,7 @@ on:
       giorni_indietro:
         description: 'Quanti giorni di pubblicazioni scaricare'
         type: string
-        default: '2'
+        default: '1'
 
 permissions:
   contents: write
@@ -61,9 +62,9 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           DRY_RUN: ${{ github.event_name == 'schedule' && '0' || (github.event.inputs.dry_run == 'true' && '1' || '0') }}
           ESPLORA: ${{ github.event.inputs.esplora == 'true' && '1' || '0' }}
-          SOGLIA_SCORE: ${{ github.event.inputs.soglia_score || '0' }}
+          SOGLIA_SCORE: ${{ github.event.inputs.soglia_score || '7' }}
           SORGENTE: ${{ github.event.inputs.sorgente || 'auto' }}
-          GIORNI_INDIETRO: ${{ github.event.inputs.giorni_indietro || '2' }}
+          GIORNI_INDIETRO: ${{ github.event.inputs.giorni_indietro || '1' }}
           MAX_CHIAMATE_AI: '60'
         run: python lupin_gare.py
 

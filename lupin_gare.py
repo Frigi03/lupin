@@ -870,10 +870,12 @@ def main():
         sonda()
 
     stato = memoria.setdefault("_stato", {})
+    stato_prima = dict(stato)
     gare = scarica_gare(stato)
 
     scarti: dict[str, int] = {}
     inviati = 0
+    senza_voto = 0
     for g in gare:
         if g["id"] in memoria:
             continue
@@ -889,6 +891,12 @@ def main():
             continue
 
         valutazione = valuta_con_ai(g, profilo)
+        if SOGLIA_SCORE and not valutazione:
+            # Con la soglia attiva non si invia una gara senza voto (limite di
+            # chiamate AI raggiunto o errore): non va in memoria, ci si riprova
+            # al prossimo avvio
+            senza_voto += 1
+            continue
         if valutazione:
             dati["score"] = valutazione["score"]
             dati["motivo_ai"] = valutazione["motivo"]
@@ -908,6 +916,11 @@ def main():
 
     if scarti:
         log.info("Scartate dai filtri: %s", scarti)
+    if senza_voto:
+        log.warning("%d gare non valutate dall'AI rimandate al prossimo avvio", senza_voto)
+        # Il segnalibro resta dov'era, così il prossimo avvio le riscarica
+        stato.clear()
+        stato.update(stato_prima)
     if DRY_RUN:
         log.info("DRY_RUN: memoria non salvata")
     else:
