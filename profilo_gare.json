@@ -1,5 +1,5 @@
 {
-  "_nota": "Profilo di ESEMPIO: modificalo con i dati dell'azienda cliente. Liste vuote = nessun filtro; importo 0 = nessun limite.",
+  "_nota": "Profilo di ESEMPIO: modificalo con i dati dell'azienda cliente. Liste vuote = nessun filtro; importo 0 = nessun limite. Per il settore conta prima categorie_soa (gare ANAC), poi cpv_prefissi (gare TED), poi parole_chiave. nature: Lavori, Servizi, Forniture.",
   "descrizione_azienda": "Piccola impresa edile: ristrutturazioni, manutenzione di edifici e scuole, piccole opere stradali. Fatturato circa 1 milione di euro, lavora in un raggio di 100 km.",
   "parole_chiave": [
     "manutenzione",
@@ -18,6 +18,14 @@
   ],
   "cpv_prefissi": [
     "45"
+  ],
+  "nature": [
+    "Lavori"
+  ],
+  "categorie_soa": [
+    "OG 1",
+    "OG 2",
+    "OG 3"
   ],
   "luoghi": [],
   "importo_min": 20000,
