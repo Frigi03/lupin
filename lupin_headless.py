@@ -62,7 +62,29 @@ POSTI = [
     {"nome": "Napoli",  "url": "https://www.wikicasa.it/vendita-case/napoli"},
     {"nome": "Bologna", "url": "https://www.wikicasa.it/vendita-case/bologna"},
     {"nome": "Firenze", "url": "https://www.wikicasa.it/vendita-case/firenze"},
+    {"nome": "Cagliari", "url": "https://www.wikicasa.it/vendita-case/cagliari"},
 ]
+
+# Comuni della Città metropolitana di Cagliari (ex provincia), i 10 più popolosi.
+# Hanno pochi annunci ciascuno: la media prezzo/mq si calcola sul gruppo intero.
+GRUPPO_PROV_CAGLIARI = "Provincia di Cagliari"
+for _nome, _slug in [
+    ("Quartu Sant'Elena", "quartu-sant-elena"),
+    ("Selargius", "selargius"),
+    ("Assemini", "assemini"),
+    ("Capoterra", "capoterra"),
+    ("Sestu", "sestu"),
+    ("Monserrato", "monserrato"),
+    ("Sinnai", "sinnai"),
+    ("Quartucciu", "quartucciu"),
+    ("Elmas", "elmas"),
+    ("Pula", "pula"),
+]:
+    POSTI.append({
+        "nome": _nome,
+        "url": f"https://www.wikicasa.it/vendita-case/{_slug}",
+        "gruppo": GRUPPO_PROV_CAGLIARI,
+    })
 
 logging.basicConfig(
     level=logging.INFO,
@@ -178,7 +200,7 @@ def valuta_con_ai(annuncio: dict, citta: str, media_zona: float | None) -> dict 
         f"Prezzo/mq: {annuncio.get('prezzo_mq') or 'n/d'} €/mq",
     ]
     if media_zona:
-        dati.append(f"Media prezzo/mq in città (dati Lupin): {media_zona} €/mq")
+        dati.append(f"Media prezzo/mq della zona (dati Lupin): {media_zona} €/mq")
     else:
         dati.append("Media di zona: non ancora disponibile")
 
@@ -301,11 +323,12 @@ def estrai_annunci(page) -> list[dict]:
     return risultati
 
 
-def media_prezzo_mq_zona(memoria: dict, citta: str) -> float | None:
-    """Media prezzo/mq calcolata sugli annunci già noti per quella città."""
+def media_prezzo_mq_zona(memoria: dict, zona: str) -> float | None:
+    """Media prezzo/mq calcolata sugli annunci già noti per quella zona
+    (la città, oppure il gruppo di comuni per le province)."""
     valori = [
         d["prezzo_mq"] for d in memoria.values()
-        if d.get("città") == citta and d.get("prezzo_mq")
+        if (d.get("zona") or d.get("città")) == zona and d.get("prezzo_mq")
     ]
     return round(mean(valori)) if len(valori) >= 5 else None
 
@@ -429,11 +452,19 @@ def missione(citta: dict, memoria: dict) -> tuple[int, dict]:
     aggiornamenti: dict = {}
     inviati = 0
 
+    zona = citta.get("gruppo", nome)
+
     log.info("▶ %s", nome)
 
-    media_zona = media_prezzo_mq_zona(memoria, nome)
+    media_zona = media_prezzo_mq_zona(memoria, zona)
     if media_zona:
-        log.info("  Media prezzo/mq %s: €%s", nome, media_zona)
+        log.info("  Media prezzo/mq %s: €%s", zona, media_zona)
+
+    # Primo passaggio su un posto nuovo: gli annunci già online vengono solo
+    # memorizzati (servono anche per la media), senza notificarli tutti insieme.
+    primo_passaggio = not any(d.get("città") == nome for d in memoria.values())
+    if primo_passaggio:
+        log.info("  Primo passaggio su %s: memorizzo gli annunci senza notificarli", nome)
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
@@ -469,6 +500,7 @@ def missione(citta: dict, memoria: dict) -> tuple[int, dict]:
                 ora = datetime.now(timezone.utc).isoformat()
                 dati = {
                     "città": nome,
+                    "zona": zona,
                     "prima_vista": ora,
                     "prezzo": a["prezzo"],
                     "mq": a["mq"],
@@ -480,6 +512,10 @@ def missione(citta: dict, memoria: dict) -> tuple[int, dict]:
                 if a["prezzo_mq"] and media_zona:
                     sotto_media = a["prezzo_mq"] <= media_zona * (1 - SOGLIA_SOTTO_MEDIA)
                 dati["sotto_media"] = sotto_media
+
+                if primo_passaggio:
+                    aggiornamenti[a["id"]] = dati
+                    continue
 
                 # --- Valutazione AI ---
                 valutazione = valuta_con_ai(a, nome, media_zona)
