@@ -15,7 +15,7 @@ Novità rispetto alla versione con arricchimento dati:
 Variabili d'ambiente richieste (GitHub Secrets):
   TELEGRAM_TOKEN, TELEGRAM_CHAT_ID, ANTHROPIC_API_KEY
 Opzionali:
-  DRY_RUN=1        → nessun invio Telegram reale
+  DRY_RUN=1        → nessun invio Telegram reale e memoria non salvata
   AI_OFF=1         → disattiva la valutazione AI
   SOGLIA_SCORE=7   → notifica solo annunci con punteggio >= 7 (default 0 = tutti)
   TEST_AI=3        → valuta 3 annunci già noti per città e stampa i punteggi nei log,
@@ -30,7 +30,7 @@ import random
 import logging
 from datetime import datetime, timezone
 from pathlib import Path
-from statistics import mean
+from statistics import median
 
 import requests
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeout
@@ -39,7 +39,8 @@ TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 FILE_MEMORIA = Path("annunci_memoria.json")
-DRY_RUN = os.environ.get("DRY_RUN", "0") == "1"
+# Il workflow passa "true"/"false" (checkbox), a mano si usa "1"
+DRY_RUN = os.environ.get("DRY_RUN", "0").strip().lower() in ("1", "true", "yes")
 AI_OFF = os.environ.get("AI_OFF", "0") == "1"
 SOGLIA_SCORE = int(os.environ.get("SOGLIA_SCORE", "0"))  # 0 = notifica tutto
 MAX_CHIAMATE_AI = int(os.environ.get("MAX_CHIAMATE_AI", "60"))  # tetto costi per run
@@ -259,16 +260,48 @@ def barra_score(score: int) -> str:
 # Estrazione e arricchimento
 # ---------------------------------------------------------------------------
 
-def estrai_mq(text: str) -> int | None:
-    """Cerca pattern tipo '80 mq', '80 m²', '80mq' nel testo dell'annuncio."""
-    m = re.search(r"(\d{2,4})\s*m(?:q|²|2)\b", text, re.IGNORECASE)
-    if m:
-        try:
-            val = int(m.group(1))
-            if 10 <= val <= 2000:
-                return val
-        except ValueError:
-            pass
+# Superficie minima plausibile per tipo di immobile (dal titolo dell'annuncio).
+# Serve a scartare i "mq" che non sono la casa: giardino, terrazzo, box...
+MQ_MINIMI = [
+    ("monolocale", 15), ("bilocale", 30), ("trilocale", 45), ("quadrilocale", 60),
+    ("5 locali", 70), ("plurilocale", 70), ("villa", 60), ("casale", 60),
+    ("rustico", 40), ("attico", 35), ("loft", 25),
+]
+MQ_MINIMO_DEFAULT = 20
+PAROLE_NON_CASA = (
+    "giardino", "terrazz", "balcon", "box", "garage", "cantina", "posto auto",
+    "soffitta", "lastrico", "cortile", "terreno", "veranda", "portico", "taverna",
+    "solaio", "magazzino", "lotto",
+)
+
+
+def mq_minimo(titolo: str) -> int:
+    t = (titolo or "").lower()
+    for parola, minimo in MQ_MINIMI:
+        if parola in t:
+            return minimo
+    return MQ_MINIMO_DEFAULT
+
+
+def estrai_mq(text: str, titolo: str = "") -> int | None:
+    """Superficie della casa dal testo dell'annuncio ('80 mq', '80 m²', '80mq').
+
+    Tra tutti i valori trovati scarta quelli preceduti da parole come giardino,
+    terrazzo o box e quelli troppo piccoli per il tipo di immobile (un trilocale
+    di 20 mq non esiste), e tiene il primo rimasto."""
+    minimo = mq_minimo(titolo)
+    fine_precedente = 0
+    for m in re.finditer(r"(\d{2,4})\s*m(?:q|²|2)\b", text, re.IGNORECASE):
+        # Si guarda solo il testo subito prima del numero, senza risalire oltre
+        # il valore precedente o l'inizio riga ("Giardino 20 mq\n85 mq": l'85 è la casa)
+        inizio = max(m.start() - 25, fine_precedente, text.rfind("\n", 0, m.start()) + 1)
+        prima = text[inizio:m.start()].lower()
+        fine_precedente = m.end()
+        if any(p in prima for p in PAROLE_NON_CASA):
+            continue
+        val = int(m.group(1))
+        if minimo <= val <= 2000:
+            return val
     return None
 
 
@@ -296,9 +329,6 @@ def estrai_annunci(page) -> list[dict]:
                 except ValueError:
                     pass
 
-            mq = estrai_mq(text)
-            prezzo_mq = round(prezzo / mq) if (prezzo and mq) else None
-
             titolo = ""
             for lk in art.locator("a[href*='/annuncio/']").all():
                 t = (lk.inner_text() or "").strip()
@@ -308,6 +338,9 @@ def estrai_annunci(page) -> list[dict]:
             if not titolo:
                 lines = [ln.strip() for ln in text.split("\n") if ln.strip()]
                 titolo = lines[1] if len(lines) > 1 else (lines[0] if lines else f"Annuncio #{aid}")
+
+            mq = estrai_mq(text, titolo)
+            prezzo_mq = round(prezzo / mq) if (prezzo and mq) else None
 
             risultati.append({
                 "id": aid,
@@ -324,13 +357,17 @@ def estrai_annunci(page) -> list[dict]:
 
 
 def media_prezzo_mq_zona(memoria: dict, zona: str) -> float | None:
-    """Media prezzo/mq calcolata sugli annunci già noti per quella zona
-    (la città, oppure il gruppo di comuni per le province)."""
+    """Prezzo/mq tipico della zona (la città, o il gruppo di comuni per le province).
+
+    È la mediana, non la media: pochi valori sbagliati non la spostano. Si
+    ignorano anche i record già in memoria con superfici non plausibili, salvati
+    prima che estrai_mq le scartasse."""
     valori = [
         d["prezzo_mq"] for d in memoria.values()
         if (d.get("zona") or d.get("città")) == zona and d.get("prezzo_mq")
+        and (d.get("mq") or 0) >= mq_minimo(d.get("titolo", ""))
     ]
-    return round(mean(valori)) if len(valori) >= 5 else None
+    return round(median(valori)) if len(valori) >= 5 else None
 
 
 def giorni_online(prima_vista_iso: str) -> int:
@@ -578,7 +615,7 @@ def missione(citta: dict, memoria: dict) -> tuple[int, dict]:
 def main():
     log.info("=== LUPIN %s ===", datetime.now().strftime("%Y-%m-%d %H:%M"))
     if DRY_RUN:
-        log.info("Modalità DRY_RUN (nessun Telegram reale)")
+        log.info("Modalità DRY_RUN (nessun Telegram reale, memoria non salvata)")
     if AI_OFF or not ANTHROPIC_API_KEY:
         log.info("Valutazione AI disattivata")
     else:
@@ -595,7 +632,12 @@ def main():
         totale += inviati
         time.sleep(random.uniform(4, 8))
 
-    salva_memoria(memoria)
+    if DRY_RUN:
+        # Altrimenti gli annunci "inviati" per finta risulterebbero già visti
+        # e non verrebbero mai notificati davvero
+        log.info("DRY_RUN: memoria non salvata")
+    else:
+        salva_memoria(memoria)
     log.info("=== Fine. Notifiche: %d | Memoria: %d | Chiamate AI: %d ===",
              totale, len(memoria), _chiamate_ai)
 
