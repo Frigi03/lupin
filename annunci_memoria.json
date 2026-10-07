@@ -335,6 +335,19 @@
     "titolo": "Quadrilocale in Vendita, Assemini",
     "zona": "Provincia di Cagliari"
   },
+  "28269747": {
+    "città": "Monserrato",
+    "motivo_ai": "Prezzo sotto media zona (-6%), 100mq quadrilocale, ubicazione centrale Monserrato",
+    "mq": 100,
+    "prezzo": 185000,
+    "prezzo_mq": 1850,
+    "prima_vista": "2026-10-07T19:49:05.647570+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Cixerri 42, Monserrato",
+    "url": "https://www.wikicasa.it/annuncio/28269747",
+    "zona": "Provincia di Cagliari"
+  },
   "28382337": {
     "città": "Selargius",
     "mq": 150,
@@ -13790,6 +13803,19 @@
     "titolo": "Bilocale in Vendita, Via Saluzzo 51, Torino",
     "zona": "Torino"
   },
+  "31031496": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo leggermente sopra media zona (+6%). Bilocale standard, posizione centrale. Nulla eccezionale.",
+    "mq": 60,
+    "prezzo": 134000,
+    "prezzo_mq": 2233,
+    "prima_vista": "2026-10-07T19:45:28.140303+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Corso Vercelli 256, Torino",
+    "url": "https://www.wikicasa.it/annuncio/31031496",
+    "zona": "Torino"
+  },
   "31032132": {
     "città": "Quartu Sant'Elena",
     "mq": 53,
@@ -13799,5 +13825,96 @@
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Cilea, Quartu Sant'Elena",
     "zona": "Provincia di Cagliari"
+  },
+  "31032318": {
+    "città": "Milano",
+    "motivo_ai": "Attico a Milano, prezzo leggermente sopra media ma accettabile, buona superficie",
+    "mq": 106,
+    "prezzo": 535000,
+    "prezzo_mq": 5047,
+    "prima_vista": "2026-10-07T19:44:59.812013+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Attico in Vendita, Milano",
+    "url": "https://www.wikicasa.it/annuncio/31032318",
+    "zona": "Milano"
+  },
+  "31032321": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo leggermente sopra media zona (+3.3%), trilocale standard senza particolari caratteristiche.",
+    "mq": 106,
+    "prezzo": 535000,
+    "prezzo_mq": 5047,
+    "prima_vista": "2026-10-07T19:44:57.094421+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Milano",
+    "url": "https://www.wikicasa.it/annuncio/31032321",
+    "zona": "Milano"
+  },
+  "31032390": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 82% sopra media zona. Sospetto, richiedere chiarimenti immediati.",
+    "mq": 102,
+    "prezzo": 389000,
+    "prezzo_mq": 3814,
+    "prima_vista": "2026-10-07T19:45:25.558799+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Piazza Francesco Borromini 78, Torino",
+    "url": "https://www.wikicasa.it/annuncio/31032390",
+    "zona": "Torino"
+  },
+  "31032486": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo/mq 70% sotto media zona. Occasione rara, da verificare immediatamente.",
+    "mq": 170,
+    "prezzo": 250000,
+    "prezzo_mq": 1471,
+    "prima_vista": "2026-10-07T19:44:54.503015+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Marazzani 7, Milano",
+    "url": "https://www.wikicasa.it/annuncio/31032486",
+    "zona": "Milano"
+  },
+  "31032708": {
+    "città": "Sestu",
+    "motivo_ai": "Prezzo leggermente sopra media zona (+5%), dimensione adeguata, dati completi",
+    "mq": 160,
+    "prezzo": 330000,
+    "prezzo_mq": 2062,
+    "prima_vista": "2026-10-07T19:48:50.999286+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Casa indipendente in Vendita, Via San Lorenzo Snc, Sestu",
+    "url": "https://www.wikicasa.it/annuncio/31032708",
+    "zona": "Provincia di Cagliari"
+  },
+  "31032798": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo/mq 90% sopra media zona. Sopravvalutato drasticamente rispetto mercato.",
+    "mq": 123,
+    "prezzo": 490000,
+    "prezzo_mq": 3984,
+    "prima_vista": "2026-10-07T19:45:22.915321+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via San Secondo 49/B, Torino",
+    "url": "https://www.wikicasa.it/annuncio/31032798",
+    "zona": "Torino"
+  },
+  "31033581": {
+    "città": "Milano",
+    "motivo_ai": "Trilocale sottovalutato 28% rispetto media zona. Prezzo/mq molto conveniente.",
+    "mq": 80,
+    "prezzo": 280000,
+    "prezzo_mq": 3500,
+    "prima_vista": "2026-10-07T19:44:51.615581+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Luigi Sordello, Milano",
+    "url": "https://www.wikicasa.it/annuncio/31033581",
+    "zona": "Milano"
   }
 }
