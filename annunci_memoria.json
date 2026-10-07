@@ -1,9 +1,409 @@
 {
+  "15287295": {
+    "città": "Elmas",
+    "mq": 30,
+    "prezzo": 215000,
+    "prezzo_mq": 7167,
+    "prima_vista": "2026-10-07T16:08:10.091447+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Elmas",
+    "zona": "Provincia di Cagliari"
+  },
+  "16104473": {
+    "città": "Assemini",
+    "mq": 620,
+    "prezzo": 115000,
+    "prezzo_mq": 185,
+    "prima_vista": "2026-10-07T16:07:08.039163+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Via Tuveri, Assemini",
+    "zona": "Provincia di Cagliari"
+  },
+  "16908135": {
+    "città": "Sestu",
+    "mq": 50,
+    "prezzo": 90000,
+    "prezzo_mq": 1800,
+    "prima_vista": "2026-10-07T16:07:29.213250+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Giacomo Leopardi 1, Sestu",
+    "zona": "Provincia di Cagliari"
+  },
+  "17053452": {
+    "città": "Quartucciu",
+    "mq": 90,
+    "prezzo": 169000,
+    "prezzo_mq": 1878,
+    "prima_vista": "2026-10-07T16:07:59.539711+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Vico Burcei 4, Quartucciu",
+    "zona": "Provincia di Cagliari"
+  },
+  "17095481": {
+    "città": "Pula",
+    "mq": null,
+    "prezzo": 48838,
+    "prezzo_mq": null,
+    "prima_vista": "2026-10-07T16:08:18.559202+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Asta, Via Circonvallazione N.19 09069 Maracalagonis (Ca), Pula",
+    "zona": "Provincia di Cagliari"
+  },
+  "17888731": {
+    "città": "Monserrato",
+    "mq": 300,
+    "prezzo": 169000,
+    "prezzo_mq": 563,
+    "prima_vista": "2026-10-07T16:07:39.393304+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Vico VI del Redentore, Monserrato",
+    "zona": "Provincia di Cagliari"
+  },
+  "19085716": {
+    "città": "Quartucciu",
+    "mq": 100,
+    "prezzo": 245000,
+    "prezzo_mq": 2450,
+    "prima_vista": "2026-10-07T16:07:59.539705+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Saragat 19, Quartucciu",
+    "zona": "Provincia di Cagliari"
+  },
+  "19784110": {
+    "città": "Quartucciu",
+    "mq": 75,
+    "prezzo": 155000,
+    "prezzo_mq": 2067,
+    "prima_vista": "2026-10-07T16:07:59.539696+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Talana 12, Quartucciu",
+    "zona": "Provincia di Cagliari"
+  },
+  "20178602": {
+    "città": "Quartucciu",
+    "mq": 180,
+    "prezzo": 250000,
+    "prezzo_mq": 1389,
+    "prima_vista": "2026-10-07T16:07:59.539628+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Is Concias, Quartucciu",
+    "zona": "Provincia di Cagliari"
+  },
   "24271084": {
     "prima_vista": "2026-08-07T02:42:18.613430+00:00"
   },
+  "24302926": {
+    "città": "Sestu",
+    "mq": 35,
+    "prezzo": 380000,
+    "prezzo_mq": 10857,
+    "prima_vista": "2026-10-07T16:07:29.213246+00:00",
+    "sotto_media": false,
+    "titolo": "Villa a schiera in Vendita, Sestu",
+    "zona": "Provincia di Cagliari"
+  },
+  "24532171": {
+    "città": "Monserrato",
+    "mq": 215,
+    "prezzo": 280000,
+    "prezzo_mq": 1302,
+    "prima_vista": "2026-10-07T16:07:39.393301+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Monserrato",
+    "zona": "Provincia di Cagliari"
+  },
   "24793489": {
     "prima_vista": "2026-08-07T02:42:18.613452+00:00"
+  },
+  "24964246": {
+    "città": "Assemini",
+    "mq": 80,
+    "prezzo": 150000,
+    "prezzo_mq": 1875,
+    "prima_vista": "2026-10-07T16:07:08.039157+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Via Principe di Piemonte 138, Assemini",
+    "zona": "Provincia di Cagliari"
+  },
+  "25412785": {
+    "città": "Sinnai",
+    "mq": null,
+    "prezzo": 64617,
+    "prezzo_mq": null,
+    "prima_vista": "2026-10-07T16:07:48.362212+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Asta, Via Michelangelo 39 39, Sinnai",
+    "zona": "Provincia di Cagliari"
+  },
+  "25865719": {
+    "città": "Monserrato",
+    "mq": 80,
+    "prezzo": 260000,
+    "prezzo_mq": 3250,
+    "prima_vista": "2026-10-07T16:07:39.393289+00:00",
+    "sotto_media": false,
+    "titolo": "Casa indipendente in Vendita, Via Quinto Fabio Massimo 9, Monserrato",
+    "zona": "Provincia di Cagliari"
+  },
+  "25962439": {
+    "città": "Pula",
+    "mq": 193,
+    "prezzo": 127000,
+    "prezzo_mq": 658,
+    "prima_vista": "2026-10-07T16:08:18.559199+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Via XX Settembre 20, Pula",
+    "zona": "Provincia di Cagliari"
+  },
+  "27204379": {
+    "città": "Elmas",
+    "mq": 400,
+    "prezzo": 349000,
+    "prezzo_mq": 872,
+    "prima_vista": "2026-10-07T16:08:10.091445+00:00",
+    "sotto_media": true,
+    "titolo": "Villa unifamiliare in Vendita, Elmas",
+    "zona": "Provincia di Cagliari"
+  },
+  "27228682": {
+    "città": "Selargius",
+    "mq": 75,
+    "prezzo": 245000,
+    "prezzo_mq": 3267,
+    "prima_vista": "2026-10-07T16:06:57.543186+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via San Lussorio, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
+  "27228688": {
+    "città": "Selargius",
+    "mq": 75,
+    "prezzo": 287000,
+    "prezzo_mq": 3827,
+    "prima_vista": "2026-10-07T16:06:57.543184+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via San Lussorio, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
+  "27228691": {
+    "città": "Selargius",
+    "mq": 75,
+    "prezzo": 278000,
+    "prezzo_mq": 3707,
+    "prima_vista": "2026-10-07T16:06:57.543181+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via San Lussorio, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
+  "27316642": {
+    "città": "Selargius",
+    "mq": 200,
+    "prezzo": 299000,
+    "prezzo_mq": 1495,
+    "prima_vista": "2026-10-07T16:06:57.543178+00:00",
+    "sotto_media": true,
+    "titolo": "Villa in Vendita, Via dei Garofani 11, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
+  "27340081": {
+    "città": "Selargius",
+    "mq": 45,
+    "prezzo": 184000,
+    "prezzo_mq": 4089,
+    "prima_vista": "2026-10-07T16:06:57.543174+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via San Lussorio, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
+  "27369475": {
+    "città": "Quartucciu",
+    "mq": 40,
+    "prezzo": 270000,
+    "prezzo_mq": 6750,
+    "prima_vista": "2026-10-07T16:07:59.539613+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Quartucciu",
+    "zona": "Provincia di Cagliari"
+  },
+  "27369478": {
+    "città": "Quartucciu",
+    "mq": 118,
+    "prezzo": 420000,
+    "prezzo_mq": 3559,
+    "prima_vista": "2026-10-07T16:07:59.539607+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Quartucciu",
+    "zona": "Provincia di Cagliari"
+  },
+  "27369481": {
+    "città": "Quartucciu",
+    "mq": 185,
+    "prezzo": 620000,
+    "prezzo_mq": 3351,
+    "prima_vista": "2026-10-07T16:07:59.539602+00:00",
+    "sotto_media": false,
+    "titolo": "Attico in Vendita, Quartucciu",
+    "zona": "Provincia di Cagliari"
+  },
+  "27369484": {
+    "città": "Quartucciu",
+    "mq": 30,
+    "prezzo": 240000,
+    "prezzo_mq": 8000,
+    "prima_vista": "2026-10-07T16:07:59.539597+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Quartucciu",
+    "zona": "Provincia di Cagliari"
+  },
+  "27369487": {
+    "città": "Quartucciu",
+    "mq": 25,
+    "prezzo": 240000,
+    "prezzo_mq": 9600,
+    "prima_vista": "2026-10-07T16:07:59.539592+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Quartucciu",
+    "zona": "Provincia di Cagliari"
+  },
+  "27372862": {
+    "città": "Monserrato",
+    "mq": 160,
+    "prezzo": 179000,
+    "prezzo_mq": 1119,
+    "prima_vista": "2026-10-07T16:07:39.393286+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Via Attilio Regolo 40, Monserrato",
+    "zona": "Provincia di Cagliari"
+  },
+  "27417682": {
+    "città": "Pula",
+    "mq": 90,
+    "prezzo": 178000,
+    "prezzo_mq": 1978,
+    "prima_vista": "2026-10-07T16:08:18.559221+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Francesco Crispi 71b, Pula",
+    "zona": "Provincia di Cagliari"
+  },
+  "27469840": {
+    "città": "Elmas",
+    "mq": 90,
+    "prezzo": 220000,
+    "prezzo_mq": 2444,
+    "prima_vista": "2026-10-07T16:08:10.091435+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Via Asquer di Flumini, Elmas",
+    "zona": "Provincia di Cagliari"
+  },
+  "27750265": {
+    "città": "Cagliari",
+    "mq": 100,
+    "prezzo": 285000,
+    "prezzo_mq": 2850,
+    "prima_vista": "2026-10-07T16:06:37.925529+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via dei Passeri 8, Cagliari",
+    "zona": "Cagliari"
+  },
+  "27750274": {
+    "città": "Cagliari",
+    "mq": 115,
+    "prezzo": 315000,
+    "prezzo_mq": 2739,
+    "prima_vista": "2026-10-07T16:06:37.925524+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via dei Passeri 4, Cagliari",
+    "zona": "Cagliari"
+  },
+  "27770458": {
+    "città": "Pula",
+    "mq": 95,
+    "prezzo": 480000,
+    "prezzo_mq": 5053,
+    "prima_vista": "2026-10-07T16:08:18.559218+00:00",
+    "sotto_media": false,
+    "titolo": "Villa in Vendita, Guardia Longa, Pula",
+    "zona": "Provincia di Cagliari"
+  },
+  "28091496": {
+    "città": "Assemini",
+    "mq": 135,
+    "prezzo": 147000,
+    "prezzo_mq": 1089,
+    "prima_vista": "2026-10-07T16:07:08.039153+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Assemini",
+    "zona": "Provincia di Cagliari"
+  },
+  "28382337": {
+    "città": "Selargius",
+    "mq": 150,
+    "prezzo": 175000,
+    "prezzo_mq": 1167,
+    "prima_vista": "2026-10-07T16:06:57.543171+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Milano, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
+  "28407354": {
+    "città": "Sinnai",
+    "mq": 95,
+    "prezzo": 330000,
+    "prezzo_mq": 3474,
+    "prima_vista": "2026-10-07T16:07:48.362157+00:00",
+    "sotto_media": false,
+    "titolo": "Villa unifamiliare in Vendita, Via delle Azalee 17, Sinnai",
+    "zona": "Provincia di Cagliari"
+  },
+  "28550487": {
+    "città": "Pula",
+    "mq": 108,
+    "prezzo": 398000,
+    "prezzo_mq": 3685,
+    "prima_vista": "2026-10-07T16:08:18.559215+00:00",
+    "sotto_media": false,
+    "titolo": "Villa a schiera in Vendita, Località Suergius De Mari Snc, Pula",
+    "zona": "Provincia di Cagliari"
+  },
+  "28751193": {
+    "città": "Monserrato",
+    "mq": 25,
+    "prezzo": 205000,
+    "prezzo_mq": 8200,
+    "prima_vista": "2026-10-07T16:07:39.393299+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Monserrato",
+    "zona": "Provincia di Cagliari"
+  },
+  "28957398": {
+    "città": "Assemini",
+    "mq": null,
+    "prezzo": 220000,
+    "prezzo_mq": null,
+    "prima_vista": "2026-10-07T16:07:08.039087+00:00",
+    "sotto_media": false,
+    "titolo": "Casa indipendente in Vendita, Via Olimpia, Assemini",
+    "zona": "Provincia di Cagliari"
+  },
+  "28961634": {
+    "città": "Sestu",
+    "mq": 26,
+    "prezzo": 300000,
+    "prezzo_mq": 11538,
+    "prima_vista": "2026-10-07T16:07:29.213241+00:00",
+    "sotto_media": false,
+    "titolo": "Villa in Vendita, Sestu",
+    "zona": "Provincia di Cagliari"
+  },
+  "28966476": {
+    "città": "Quartucciu",
+    "mq": 70,
+    "prezzo": 230000,
+    "prezzo_mq": 3286,
+    "prima_vista": "2026-10-07T16:07:59.539587+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Don Minzoni, Quartucciu",
+    "zona": "Provincia di Cagliari"
   },
   "28976289": {
     "prima_vista": "2026-08-07T02:42:18.613461+00:00"
@@ -11,26 +411,756 @@
   "29004516": {
     "prima_vista": "2026-08-07T02:42:18.613465+00:00"
   },
+  "29097546": {
+    "città": "Monserrato",
+    "mq": 75,
+    "prezzo": 258000,
+    "prezzo_mq": 3440,
+    "prima_vista": "2026-10-07T16:07:39.393284+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via San Filippo, Monserrato",
+    "zona": "Provincia di Cagliari"
+  },
+  "29116971": {
+    "città": "Selargius",
+    "mq": 300,
+    "prezzo": 206000,
+    "prezzo_mq": 687,
+    "prima_vista": "2026-10-07T16:06:57.543166+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Via Crimea, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
+  "29144685": {
+    "città": "Quartucciu",
+    "mq": 30,
+    "prezzo": 265000,
+    "prezzo_mq": 8833,
+    "prima_vista": "2026-10-07T16:07:59.539664+00:00",
+    "sotto_media": false,
+    "titolo": "Attico in Vendita, Via Mandas 2, Quartucciu",
+    "zona": "Provincia di Cagliari"
+  },
+  "29219709": {
+    "città": "Quartucciu",
+    "mq": 20,
+    "prezzo": 239000,
+    "prezzo_mq": 11950,
+    "prima_vista": "2026-10-07T16:07:59.539581+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Chilliani, Quartucciu",
+    "zona": "Provincia di Cagliari"
+  },
+  "29292963": {
+    "città": "Selargius",
+    "mq": 11,
+    "prezzo": 259000,
+    "prezzo_mq": 23545,
+    "prima_vista": "2026-10-07T16:06:57.543160+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Buozzi Snc, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
   "29335101": {
     "prima_vista": "2026-08-07T02:42:18.613468+00:00"
+  },
+  "29346801": {
+    "città": "Sinnai",
+    "mq": 170,
+    "prezzo": 155000,
+    "prezzo_mq": 912,
+    "prima_vista": "2026-10-07T16:07:48.362208+00:00",
+    "sotto_media": true,
+    "titolo": "Villa a schiera in Vendita, Sinnai",
+    "zona": "Provincia di Cagliari"
+  },
+  "29436097": {
+    "città": "Assemini",
+    "mq": 120,
+    "prezzo": 259000,
+    "prezzo_mq": 2158,
+    "prima_vista": "2026-10-07T16:07:08.039179+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Assemini",
+    "zona": "Provincia di Cagliari"
+  },
+  "29453047": {
+    "città": "Quartucciu",
+    "mq": 83,
+    "prezzo": 230000,
+    "prezzo_mq": 2771,
+    "prima_vista": "2026-10-07T16:07:59.539658+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Don Minzoni 2, Quartucciu",
+    "zona": "Provincia di Cagliari"
+  },
+  "29458705": {
+    "città": "Quartucciu",
+    "mq": 140,
+    "prezzo": 65000,
+    "prezzo_mq": 464,
+    "prima_vista": "2026-10-07T16:07:59.539652+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Via Cirene 3, Quartucciu",
+    "zona": "Provincia di Cagliari"
+  },
+  "29461132": {
+    "città": "Assemini",
+    "mq": 92,
+    "prezzo": 165000,
+    "prezzo_mq": 1793,
+    "prima_vista": "2026-10-07T16:07:08.039177+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Assemini",
+    "zona": "Provincia di Cagliari"
+  },
+  "29488975": {
+    "città": "Assemini",
+    "mq": 20,
+    "prezzo": 180000,
+    "prezzo_mq": 9000,
+    "prima_vista": "2026-10-07T16:07:08.039148+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Assemini",
+    "zona": "Provincia di Cagliari"
+  },
+  "29488978": {
+    "città": "Assemini",
+    "mq": 20,
+    "prezzo": 189000,
+    "prezzo_mq": 9450,
+    "prima_vista": "2026-10-07T16:07:08.039143+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Assemini",
+    "zona": "Provincia di Cagliari"
+  },
+  "29488981": {
+    "città": "Assemini",
+    "mq": 66,
+    "prezzo": 185000,
+    "prezzo_mq": 2803,
+    "prima_vista": "2026-10-07T16:07:08.039138+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Assemini",
+    "zona": "Provincia di Cagliari"
+  },
+  "29488984": {
+    "città": "Assemini",
+    "mq": 62,
+    "prezzo": 175000,
+    "prezzo_mq": 2823,
+    "prima_vista": "2026-10-07T16:07:08.039132+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Assemini",
+    "zona": "Provincia di Cagliari"
+  },
+  "29488987": {
+    "città": "Assemini",
+    "mq": 75,
+    "prezzo": 195000,
+    "prezzo_mq": 2600,
+    "prima_vista": "2026-10-07T16:07:08.039127+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Assemini",
+    "zona": "Provincia di Cagliari"
+  },
+  "29506261": {
+    "città": "Selargius",
+    "mq": 130,
+    "prezzo": 350000,
+    "prezzo_mq": 2692,
+    "prima_vista": "2026-10-07T16:06:57.543154+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Via Roma 172, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
+  "29530489": {
+    "città": "Sinnai",
+    "mq": null,
+    "prezzo": 119000,
+    "prezzo_mq": null,
+    "prima_vista": "2026-10-07T16:07:48.362153+00:00",
+    "sotto_media": false,
+    "titolo": "Casa indipendente in Vendita, Viale delle Libellule 38, Sinnai",
+    "zona": "Provincia di Cagliari"
+  },
+  "29580892": {
+    "città": "Sinnai",
+    "mq": 50,
+    "prezzo": 369000,
+    "prezzo_mq": 7380,
+    "prima_vista": "2026-10-07T16:07:48.362176+00:00",
+    "sotto_media": false,
+    "titolo": "Casa indipendente in Vendita, Sinnai",
+    "zona": "Provincia di Cagliari"
+  },
+  "29589817": {
+    "città": "Sinnai",
+    "mq": 230,
+    "prezzo": 220000,
+    "prezzo_mq": 957,
+    "prima_vista": "2026-10-07T16:07:48.362235+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Via Roma, Sinnai",
+    "zona": "Provincia di Cagliari"
+  },
+  "29589994": {
+    "città": "Monserrato",
+    "mq": 120,
+    "prezzo": 295000,
+    "prezzo_mq": 2458,
+    "prima_vista": "2026-10-07T16:07:39.393330+00:00",
+    "sotto_media": true,
+    "titolo": "Villa in Vendita, Via Frontino 14, Monserrato",
+    "zona": "Provincia di Cagliari"
+  },
+  "29624887": {
+    "città": "Sinnai",
+    "mq": 108,
+    "prezzo": 209000,
+    "prezzo_mq": 1935,
+    "prima_vista": "2026-10-07T16:07:48.362231+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Caravaggio 3, Sinnai",
+    "zona": "Provincia di Cagliari"
+  },
+  "29626762": {
+    "città": "Pula",
+    "mq": 700,
+    "prezzo": 850000,
+    "prezzo_mq": 1214,
+    "prima_vista": "2026-10-07T16:08:18.559196+00:00",
+    "sotto_media": true,
+    "titolo": "Villa in Vendita, Viale delle Ore 24, Pula",
+    "zona": "Provincia di Cagliari"
+  },
+  "29634595": {
+    "città": "Sinnai",
+    "mq": 90,
+    "prezzo": 195000,
+    "prezzo_mq": 2167,
+    "prima_vista": "2026-10-07T16:07:48.362172+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Corsica 8, Sinnai",
+    "zona": "Provincia di Cagliari"
+  },
+  "29661898": {
+    "città": "Monserrato",
+    "mq": 109,
+    "prezzo": 194000,
+    "prezzo_mq": 1780,
+    "prima_vista": "2026-10-07T16:07:39.393281+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Columella Snc, Monserrato",
+    "zona": "Provincia di Cagliari"
+  },
+  "29674642": {
+    "città": "Sestu",
+    "mq": 60,
+    "prezzo": 195000,
+    "prezzo_mq": 3250,
+    "prima_vista": "2026-10-07T16:07:29.213278+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Caracalla Snc, Sestu",
+    "zona": "Provincia di Cagliari"
+  },
+  "29703361": {
+    "città": "Selargius",
+    "mq": 105,
+    "prezzo": 265000,
+    "prezzo_mq": 2524,
+    "prima_vista": "2026-10-07T16:06:57.543149+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Bezzecca 53, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
+  "29704522": {
+    "città": "Pula",
+    "mq": null,
+    "prezzo": 340000,
+    "prezzo_mq": null,
+    "prima_vista": "2026-10-07T16:08:18.559194+00:00",
+    "sotto_media": false,
+    "titolo": "Villa in Vendita, Comunione La Saia, Pula",
+    "zona": "Provincia di Cagliari"
   },
   "29708278": {
     "prima_vista": "2026-08-07T02:42:18.613471+00:00"
   },
+  "29726392": {
+    "città": "Quartucciu",
+    "mq": 93,
+    "prezzo": 410000,
+    "prezzo_mq": 4409,
+    "prima_vista": "2026-10-07T16:07:59.539574+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Don Minzoni, Quartucciu",
+    "zona": "Provincia di Cagliari"
+  },
+  "29764948": {
+    "città": "Selargius",
+    "mq": 70,
+    "prezzo": 230000,
+    "prezzo_mq": 3286,
+    "prima_vista": "2026-10-07T16:06:57.543145+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
+  "29764963": {
+    "città": "Selargius",
+    "mq": 85,
+    "prezzo": 278000,
+    "prezzo_mq": 3271,
+    "prima_vista": "2026-10-07T16:06:57.543140+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
+  "29801326": {
+    "città": "Selargius",
+    "mq": 160,
+    "prezzo": 399000,
+    "prezzo_mq": 2494,
+    "prima_vista": "2026-10-07T16:06:57.543136+00:00",
+    "sotto_media": true,
+    "titolo": "Villa a schiera in Vendita, Via Piero della Francesca, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
+  "29864830": {
+    "città": "Pula",
+    "mq": 67,
+    "prezzo": 225000,
+    "prezzo_mq": 3358,
+    "prima_vista": "2026-10-07T16:08:18.559212+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Collina, Pula",
+    "zona": "Provincia di Cagliari"
+  },
+  "29878060": {
+    "città": "Sestu",
+    "mq": 28,
+    "prezzo": 195000,
+    "prezzo_mq": 6964,
+    "prima_vista": "2026-10-07T16:07:29.213273+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Caracalla Snc , Sestu",
+    "zona": "Provincia di Cagliari"
+  },
+  "29879851": {
+    "città": "Assemini",
+    "mq": 250,
+    "prezzo": 380000,
+    "prezzo_mq": 1520,
+    "prima_vista": "2026-10-07T16:07:08.039174+00:00",
+    "sotto_media": true,
+    "titolo": "Villa unifamiliare in Vendita, Assemini",
+    "zona": "Provincia di Cagliari"
+  },
+  "29896894": {
+    "città": "Sinnai",
+    "mq": 130,
+    "prezzo": 220000,
+    "prezzo_mq": 1692,
+    "prima_vista": "2026-10-07T16:07:48.362228+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Matteotti 16, Sinnai",
+    "zona": "Provincia di Cagliari"
+  },
+  "29943610": {
+    "città": "Sestu",
+    "mq": 150,
+    "prezzo": 295000,
+    "prezzo_mq": 1967,
+    "prima_vista": "2026-10-07T16:07:29.213237+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Via Nuova 51, Sestu",
+    "zona": "Provincia di Cagliari"
+  },
+  "29961334": {
+    "città": "Monserrato",
+    "mq": 243,
+    "prezzo": 119000,
+    "prezzo_mq": 490,
+    "prima_vista": "2026-10-07T16:07:39.393325+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Via dei Gracchi 36, Monserrato",
+    "zona": "Provincia di Cagliari"
+  },
+  "29969590": {
+    "città": "Sinnai",
+    "mq": 120,
+    "prezzo": 90000,
+    "prezzo_mq": 750,
+    "prima_vista": "2026-10-07T16:07:48.362203+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Sinnai",
+    "zona": "Provincia di Cagliari"
+  },
+  "29977804": {
+    "città": "Quartucciu",
+    "mq": 58,
+    "prezzo": 100000,
+    "prezzo_mq": 1724,
+    "prima_vista": "2026-10-07T16:07:59.539646+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Nazionale 181/a, Quartucciu",
+    "zona": "Provincia di Cagliari"
+  },
+  "29981839": {
+    "città": "Sestu",
+    "mq": 70,
+    "prezzo": 170000,
+    "prezzo_mq": 2429,
+    "prima_vista": "2026-10-07T16:07:29.213233+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Monte Sabotino 10, Sestu",
+    "zona": "Provincia di Cagliari"
+  },
+  "29985634": {
+    "città": "Pula",
+    "mq": 230,
+    "prezzo": 335000,
+    "prezzo_mq": 1457,
+    "prima_vista": "2026-10-07T16:08:18.559210+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Via Cagliari 2, Pula",
+    "zona": "Provincia di Cagliari"
+  },
+  "30035464": {
+    "città": "Quartu Sant'Elena",
+    "mq": 190,
+    "prezzo": 259000,
+    "prezzo_mq": 1363,
+    "prima_vista": "2026-10-07T16:06:48.346781+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via delle Azalee 22, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
+  },
+  "30039802": {
+    "città": "Monserrato",
+    "mq": 38,
+    "prezzo": 210000,
+    "prezzo_mq": 5526,
+    "prima_vista": "2026-10-07T16:07:39.393320+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Monserrato",
+    "zona": "Provincia di Cagliari"
+  },
+  "30051148": {
+    "città": "Monserrato",
+    "mq": 65,
+    "prezzo": 59000,
+    "prezzo_mq": 908,
+    "prima_vista": "2026-10-07T16:07:39.393297+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Vico Aeronautica 5, Monserrato",
+    "zona": "Provincia di Cagliari"
+  },
+  "30052006": {
+    "città": "Monserrato",
+    "mq": 55,
+    "prezzo": 87000,
+    "prezzo_mq": 1582,
+    "prima_vista": "2026-10-07T16:07:39.393294+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Via 31 Marzo 1943 4, Monserrato",
+    "zona": "Provincia di Cagliari"
+  },
+  "30087067": {
+    "città": "Sestu",
+    "mq": 80,
+    "prezzo": 233000,
+    "prezzo_mq": 2912,
+    "prima_vista": "2026-10-07T16:07:29.213228+00:00",
+    "sotto_media": true,
+    "titolo": "Villa a schiera in Vendita, Sestu",
+    "zona": "Provincia di Cagliari"
+  },
   "30091309": {
     "prima_vista": "2026-08-07T02:42:18.613475+00:00"
+  },
+  "30114478": {
+    "città": "Sinnai",
+    "mq": 80,
+    "prezzo": 180000,
+    "prezzo_mq": 2250,
+    "prima_vista": "2026-10-07T16:07:48.362223+00:00",
+    "sotto_media": true,
+    "titolo": "Villa a schiera in Vendita, Sinnai",
+    "zona": "Provincia di Cagliari"
+  },
+  "30115864": {
+    "città": "Pula",
+    "mq": 135,
+    "prezzo": 330000,
+    "prezzo_mq": 2444,
+    "prima_vista": "2026-10-07T16:08:18.559207+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Azara 12, Pula",
+    "zona": "Provincia di Cagliari"
+  },
+  "30128140": {
+    "città": "Selargius",
+    "mq": 500,
+    "prezzo": 290000,
+    "prezzo_mq": 580,
+    "prima_vista": "2026-10-07T16:06:57.543131+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
+  "30136291": {
+    "città": "Pula",
+    "mq": 43,
+    "prezzo": 160000,
+    "prezzo_mq": 3721,
+    "prima_vista": "2026-10-07T16:08:18.559191+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via del Borgo Snc, Pula",
+    "zona": "Provincia di Cagliari"
+  },
+  "30142942": {
+    "città": "Selargius",
+    "mq": 300,
+    "prezzo": 149000,
+    "prezzo_mq": 497,
+    "prima_vista": "2026-10-07T16:06:57.543127+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Via San Lussorio 9, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
+  "30160459": {
+    "città": "Sinnai",
+    "mq": 95,
+    "prezzo": 239000,
+    "prezzo_mq": 2516,
+    "prima_vista": "2026-10-07T16:07:48.362149+00:00",
+    "sotto_media": true,
+    "titolo": "Villa a schiera in Vendita, Via del Lentischio 42, Sinnai",
+    "zona": "Provincia di Cagliari"
+  },
+  "30162616": {
+    "città": "Quartucciu",
+    "mq": 25,
+    "prezzo": 170000,
+    "prezzo_mq": 6800,
+    "prima_vista": "2026-10-07T16:07:59.539568+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Tunisi 9, Quartucciu",
+    "zona": "Provincia di Cagliari"
+  },
+  "30166816": {
+    "città": "Monserrato",
+    "mq": 97,
+    "prezzo": 249000,
+    "prezzo_mq": 2567,
+    "prima_vista": "2026-10-07T16:07:39.393312+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Cesare Cabras 46, Monserrato",
+    "zona": "Provincia di Cagliari"
+  },
+  "30180340": {
+    "città": "Sestu",
+    "mq": 80,
+    "prezzo": 115000,
+    "prezzo_mq": 1438,
+    "prima_vista": "2026-10-07T16:07:29.213268+00:00",
+    "sotto_media": true,
+    "titolo": "Rustico in Vendita, Via Asproni, Sestu",
+    "zona": "Provincia di Cagliari"
+  },
+  "30180781": {
+    "città": "Pula",
+    "mq": 75,
+    "prezzo": 196000,
+    "prezzo_mq": 2613,
+    "prima_vista": "2026-10-07T16:08:18.559205+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Asproni, Pula",
+    "zona": "Provincia di Cagliari"
+  },
+  "30194875": {
+    "città": "Sestu",
+    "mq": 219,
+    "prezzo": 369000,
+    "prezzo_mq": 1685,
+    "prima_vista": "2026-10-07T16:07:29.213224+00:00",
+    "sotto_media": true,
+    "titolo": "Villa a schiera in Vendita, Vico I Bruxelles, Sestu",
+    "zona": "Provincia di Cagliari"
+  },
+  "30202741": {
+    "città": "Sinnai",
+    "mq": 90,
+    "prezzo": 230000,
+    "prezzo_mq": 2556,
+    "prima_vista": "2026-10-07T16:07:48.362169+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Sinnai",
+    "zona": "Provincia di Cagliari"
+  },
+  "30213451": {
+    "città": "Sinnai",
+    "mq": 300,
+    "prezzo": 755000,
+    "prezzo_mq": 2517,
+    "prima_vista": "2026-10-07T16:07:48.362144+00:00",
+    "sotto_media": true,
+    "titolo": "Villa in Vendita, Torre delle Stelle Snc, Sinnai",
+    "zona": "Provincia di Cagliari"
+  },
+  "30214885": {
+    "città": "Sinnai",
+    "mq": 144,
+    "prezzo": 55080,
+    "prezzo_mq": 382,
+    "prima_vista": "2026-10-07T16:07:48.362199+00:00",
+    "sotto_media": true,
+    "titolo": "Villa in Asta, Via G. E. Spicer, 6, 09048 Tasonis Ca, Italia 6, Sinnai",
+    "zona": "Provincia di Cagliari"
+  },
+  "30232753": {
+    "città": "Selargius",
+    "mq": 144,
+    "prezzo": 239000,
+    "prezzo_mq": 1660,
+    "prima_vista": "2026-10-07T16:06:57.543123+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Magellano 14, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
+  "30273340": {
+    "città": "Monserrato",
+    "mq": 80,
+    "prezzo": 230000,
+    "prezzo_mq": 2875,
+    "prima_vista": "2026-10-07T16:07:39.393279+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via San Gavino Monreale, Monserrato",
+    "zona": "Provincia di Cagliari"
   },
   "30305838": {
     "prima_vista": "2026-08-07T02:42:18.613481+00:00"
   },
+  "30320916": {
+    "città": "Sestu",
+    "mq": 84,
+    "prezzo": 179000,
+    "prezzo_mq": 2131,
+    "prima_vista": "2026-10-07T16:07:29.213219+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Trincea delle Frasche , Sestu",
+    "zona": "Provincia di Cagliari"
+  },
+  "30336381": {
+    "città": "Monserrato",
+    "mq": 172,
+    "prezzo": 249000,
+    "prezzo_mq": 1448,
+    "prima_vista": "2026-10-07T16:07:39.393276+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Via Sant'Ilario 27, Monserrato",
+    "zona": "Provincia di Cagliari"
+  },
+  "30360510": {
+    "città": "Assemini",
+    "mq": 123,
+    "prezzo": 45000,
+    "prezzo_mq": 366,
+    "prima_vista": "2026-10-07T16:07:08.039113+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Asta, Via Carmine, 116, 09032 Assemini Ca, Italia 116, Assemini",
+    "zona": "Provincia di Cagliari"
+  },
+  "30362097": {
+    "città": "Sestu",
+    "mq": 160,
+    "prezzo": null,
+    "prezzo_mq": null,
+    "prima_vista": "2026-10-07T16:07:29.213264+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Livorno Snc, Sestu",
+    "zona": "Provincia di Cagliari"
+  },
+  "30366099": {
+    "città": "Assemini",
+    "mq": 150,
+    "prezzo": 249000,
+    "prezzo_mq": 1660,
+    "prima_vista": "2026-10-07T16:07:08.039122+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Assemini",
+    "zona": "Provincia di Cagliari"
+  },
+  "30370995": {
+    "città": "Sestu",
+    "mq": 175,
+    "prezzo": 780000,
+    "prezzo_mq": 4457,
+    "prima_vista": "2026-10-07T16:07:29.213215+00:00",
+    "sotto_media": false,
+    "titolo": "Villa unifamiliare in Vendita, Via San Gemiliano 159, Sestu",
+    "zona": "Provincia di Cagliari"
+  },
+  "30376554": {
+    "città": "Sinnai",
+    "mq": 198,
+    "prezzo": 375000,
+    "prezzo_mq": 1894,
+    "prima_vista": "2026-10-07T16:07:48.362219+00:00",
+    "sotto_media": true,
+    "titolo": "Villa a schiera in Vendita, Via dei Garofani 23, Sinnai",
+    "zona": "Provincia di Cagliari"
+  },
   "30413409": {
     "prima_vista": "2026-08-07T02:42:18.613485+00:00"
+  },
+  "30419367": {
+    "città": "Assemini",
+    "mq": 659,
+    "prezzo": 420000,
+    "prezzo_mq": 637,
+    "prima_vista": "2026-10-07T16:07:08.039118+00:00",
+    "sotto_media": true,
+    "titolo": "Villa in Vendita, Villa Via Sicilia 16, Assemini",
+    "zona": "Provincia di Cagliari"
   },
   "30420513": {
     "prima_vista": "2026-08-07T02:42:18.613488+00:00"
   },
   "30421668": {
     "prima_vista": "2026-08-07T02:42:18.613491+00:00"
+  },
+  "30422226": {
+    "città": "Assemini",
+    "mq": 121,
+    "prezzo": null,
+    "prezzo_mq": null,
+    "prima_vista": "2026-10-07T16:07:08.039109+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Asta, Via Manzoni, 6 6, Assemini",
+    "zona": "Provincia di Cagliari"
+  },
+  "30424002": {
+    "città": "Elmas",
+    "mq": 138,
+    "prezzo": 249000,
+    "prezzo_mq": 1804,
+    "prima_vista": "2026-10-07T16:08:10.091410+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Milazzo , Elmas",
+    "zona": "Provincia di Cagliari"
+  },
+  "30435315": {
+    "città": "Quartu Sant'Elena",
+    "mq": 175,
+    "prezzo": 330000,
+    "prezzo_mq": 1886,
+    "prima_vista": "2026-10-07T16:06:48.346766+00:00",
+    "sotto_media": false,
+    "titolo": "Villa in Vendita, Via Corbezzolo 29, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
   },
   "30438468": {
     "prima_vista": "2026-08-07T02:42:18.613494+00:00"
@@ -68,6 +1198,36 @@
   "30452562": {
     "prima_vista": "2026-08-07T02:42:18.613500+00:00"
   },
+  "30455565": {
+    "città": "Monserrato",
+    "mq": 210,
+    "prezzo": 270000,
+    "prezzo_mq": 1286,
+    "prima_vista": "2026-10-07T16:07:39.393310+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Vico II Giuseppe Zuddas 4, Monserrato",
+    "zona": "Provincia di Cagliari"
+  },
+  "30456630": {
+    "città": "Pula",
+    "mq": null,
+    "prezzo": 2200000,
+    "prezzo_mq": null,
+    "prima_vista": "2026-10-07T16:08:18.559189+00:00",
+    "sotto_media": false,
+    "titolo": "Casa indipendente in Vendita, Viale Nora Sn, Pula",
+    "zona": "Provincia di Cagliari"
+  },
+  "30456633": {
+    "città": "Pula",
+    "mq": null,
+    "prezzo": 1800000,
+    "prezzo_mq": null,
+    "prima_vista": "2026-10-07T16:08:18.559186+00:00",
+    "sotto_media": false,
+    "titolo": "Casa indipendente in Vendita, Viale Nora Sn, Pula",
+    "zona": "Provincia di Cagliari"
+  },
   "30460500": {
     "prima_vista": "2026-08-07T02:42:18.613502+00:00"
   },
@@ -95,6 +1255,16 @@
   "30460869": {
     "prima_vista": "2026-08-07T02:42:18.613535+00:00"
   },
+  "30468270": {
+    "città": "Assemini",
+    "mq": 294,
+    "prezzo": 119000,
+    "prezzo_mq": 405,
+    "prima_vista": "2026-10-07T16:07:08.039071+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Via IV Novembre, Assemini",
+    "zona": "Provincia di Cagliari"
+  },
   "30491649": {
     "città": "Firenze",
     "mq": 74,
@@ -104,11 +1274,31 @@
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via del Pesciolino, Firenze"
   },
+  "30495804": {
+    "città": "Assemini",
+    "mq": 150,
+    "prezzo": 290000,
+    "prezzo_mq": 1933,
+    "prima_vista": "2026-10-07T16:07:08.039168+00:00",
+    "sotto_media": true,
+    "titolo": "Villa a schiera in Vendita, Assemini",
+    "zona": "Provincia di Cagliari"
+  },
   "30500667": {
     "prima_vista": "2026-08-07T02:42:18.613538+00:00"
   },
   "30506256": {
     "prima_vista": "2026-08-07T02:42:18.613540+00:00"
+  },
+  "30508638": {
+    "città": "Pula",
+    "mq": 288,
+    "prezzo": 620000,
+    "prezzo_mq": 2153,
+    "prima_vista": "2026-10-07T16:08:18.559183+00:00",
+    "sotto_media": true,
+    "titolo": "Villa in Vendita, Via Monte Santo 12, Pula",
+    "zona": "Provincia di Cagliari"
   },
   "30517917": {
     "città": "Firenze",
@@ -149,17 +1339,97 @@
     "sotto_media": false,
     "titolo": "Monolocale in Vendita, Via Francesco Baracca, Firenze"
   },
+  "30531603": {
+    "città": "Monserrato",
+    "mq": 30,
+    "prezzo": 260000,
+    "prezzo_mq": 8667,
+    "prima_vista": "2026-10-07T16:07:39.393308+00:00",
+    "sotto_media": false,
+    "titolo": "Casa indipendente in Vendita, Monserrato",
+    "zona": "Provincia di Cagliari"
+  },
   "30541371": {
     "prima_vista": "2026-08-07T02:42:18.613546+00:00"
   },
   "30542055": {
     "prima_vista": "2026-08-07T02:42:18.613548+00:00"
   },
+  "30544098": {
+    "città": "Sinnai",
+    "mq": 60,
+    "prezzo": 190000,
+    "prezzo_mq": 3167,
+    "prima_vista": "2026-10-07T16:07:48.362164+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Sinnai",
+    "zona": "Provincia di Cagliari"
+  },
   "30544470": {
     "prima_vista": "2026-08-07T02:42:18.613551+00:00"
   },
   "30544815": {
     "prima_vista": "2026-08-07T02:42:18.613553+00:00"
+  },
+  "30545784": {
+    "città": "Sinnai",
+    "mq": null,
+    "prezzo": 55848,
+    "prezzo_mq": null,
+    "prima_vista": "2026-10-07T16:07:48.362196+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Asta, Via Sant Isidoro, 88, 09048 Sinnai Ca, Italia 88, Sinnai",
+    "zona": "Provincia di Cagliari"
+  },
+  "30546954": {
+    "città": "Sinnai",
+    "mq": 249,
+    "prezzo": 980000,
+    "prezzo_mq": 3936,
+    "prima_vista": "2026-10-07T16:07:48.362215+00:00",
+    "sotto_media": false,
+    "titolo": "Villa in Vendita, Sinnai",
+    "zona": "Provincia di Cagliari"
+  },
+  "30551313": {
+    "città": "Selargius",
+    "mq": 30,
+    "prezzo": 190000,
+    "prezzo_mq": 6333,
+    "prima_vista": "2026-10-07T16:06:57.543118+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Daniele Manin 31, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
+  "30551316": {
+    "città": "Selargius",
+    "mq": 110,
+    "prezzo": 210000,
+    "prezzo_mq": 1909,
+    "prima_vista": "2026-10-07T16:06:57.543113+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Daniele Manin 31, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
+  "30551349": {
+    "città": "Cagliari",
+    "mq": 25,
+    "prezzo": 250000,
+    "prezzo_mq": 10000,
+    "prima_vista": "2026-10-07T16:06:37.925521+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Montevecchio 23, Cagliari",
+    "zona": "Cagliari"
+  },
+  "30553500": {
+    "città": "Quartucciu",
+    "mq": 60,
+    "prezzo": 157000,
+    "prezzo_mq": 2617,
+    "prima_vista": "2026-10-07T16:07:59.539623+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Quartucciu",
+    "zona": "Provincia di Cagliari"
   },
   "30553803": {
     "prima_vista": "2026-08-07T02:42:18.613556+00:00"
@@ -218,8 +1488,38 @@
   "30567591": {
     "prima_vista": "2026-08-07T02:42:18.613591+00:00"
   },
+  "30567597": {
+    "città": "Quartu Sant'Elena",
+    "mq": 60,
+    "prezzo": 245000,
+    "prezzo_mq": 4083,
+    "prima_vista": "2026-10-07T16:06:48.346877+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Alessandro Stradella, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
+  },
+  "30572259": {
+    "città": "Monserrato",
+    "mq": 15,
+    "prezzo": 254000,
+    "prezzo_mq": 16933,
+    "prima_vista": "2026-10-07T16:07:39.393273+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Capocaccia , Monserrato",
+    "zona": "Provincia di Cagliari"
+  },
   "30573033": {
     "prima_vista": "2026-08-07T02:42:18.613595+00:00"
+  },
+  "30573411": {
+    "città": "Sinnai",
+    "mq": 500,
+    "prezzo": 220000,
+    "prezzo_mq": 440,
+    "prima_vista": "2026-10-07T16:07:48.362161+00:00",
+    "sotto_media": true,
+    "titolo": "Villa in Vendita, Sinnai",
+    "zona": "Provincia di Cagliari"
   },
   "30573888": {
     "prima_vista": "2026-08-07T02:42:18.613598+00:00"
@@ -229,6 +1529,56 @@
   },
   "30574326": {
     "prima_vista": "2026-08-07T02:42:18.613604+00:00"
+  },
+  "30575340": {
+    "città": "Pula",
+    "mq": 99,
+    "prezzo": 112363,
+    "prezzo_mq": 1135,
+    "prima_vista": "2026-10-07T16:08:18.559248+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Asta, S.da Statale 195 Sulcitana, 33, 09050 Pula Ca, Italia 195, Pula",
+    "zona": "Provincia di Cagliari"
+  },
+  "30575343": {
+    "città": "Pula",
+    "mq": null,
+    "prezzo": null,
+    "prezzo_mq": null,
+    "prima_vista": "2026-10-07T16:08:18.559243+00:00",
+    "sotto_media": false,
+    "titolo": "Immobile residenziale in Asta, Strada Statale 195, 33, 09050 Pula Ca, Italia 195, Pula",
+    "zona": "Provincia di Cagliari"
+  },
+  "30575346": {
+    "città": "Pula",
+    "mq": null,
+    "prezzo": null,
+    "prezzo_mq": null,
+    "prima_vista": "2026-10-07T16:08:18.559239+00:00",
+    "sotto_media": false,
+    "titolo": "Immobile residenziale in Asta, Strada Statale 195, 33, 09050 Pula Ca, Italia 195, Pula",
+    "zona": "Provincia di Cagliari"
+  },
+  "30575349": {
+    "città": "Pula",
+    "mq": null,
+    "prezzo": null,
+    "prezzo_mq": null,
+    "prima_vista": "2026-10-07T16:08:18.559230+00:00",
+    "sotto_media": false,
+    "titolo": "Immobile residenziale in Asta, Strada Statale 195, 33, 09050 Pula Ca, Italia 195, Pula",
+    "zona": "Provincia di Cagliari"
+  },
+  "30575355": {
+    "città": "Pula",
+    "mq": 131,
+    "prezzo": 99871,
+    "prezzo_mq": 762,
+    "prima_vista": "2026-10-07T16:08:18.559228+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Asta, S.da Statale 195 Sulcitana, 33, 09050 Pula Ca, Italia 195, Pula",
+    "zona": "Provincia di Cagliari"
   },
   "30576006": {
     "prima_vista": "2026-08-07T02:42:18.613608+00:00"
@@ -259,6 +1609,46 @@
   },
   "30583296": {
     "prima_vista": "2026-08-07T02:42:18.613624+00:00"
+  },
+  "30583863": {
+    "città": "Selargius",
+    "mq": 35,
+    "prezzo": 243000,
+    "prezzo_mq": 6943,
+    "prima_vista": "2026-10-07T16:06:57.543108+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Sant'Anna 44, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
+  "30583869": {
+    "città": "Quartu Sant'Elena",
+    "mq": 52,
+    "prezzo": 149000,
+    "prezzo_mq": 2865,
+    "prima_vista": "2026-10-07T16:06:48.346875+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via P. Mascagni 4, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
+  },
+  "30583872": {
+    "città": "Quartu Sant'Elena",
+    "mq": 65,
+    "prezzo": 189000,
+    "prezzo_mq": 2908,
+    "prima_vista": "2026-10-07T16:06:48.346872+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via P. Mascagni 4, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
+  },
+  "30583887": {
+    "città": "Monserrato",
+    "mq": 20,
+    "prezzo": 185000,
+    "prezzo_mq": 9250,
+    "prima_vista": "2026-10-07T16:07:39.393292+00:00",
+    "sotto_media": false,
+    "titolo": "Casa indipendente in Vendita, Monserrato",
+    "zona": "Provincia di Cagliari"
   },
   "30584487": {
     "prima_vista": "2026-08-07T02:42:18.613627+00:00"
@@ -323,6 +1713,16 @@
   "30592374": {
     "prima_vista": "2026-08-07T02:42:18.613683+00:00"
   },
+  "30592668": {
+    "città": "Pula",
+    "mq": null,
+    "prezzo": 324445,
+    "prezzo_mq": null,
+    "prima_vista": "2026-10-07T16:08:18.559226+00:00",
+    "sotto_media": false,
+    "titolo": "Villa in Asta, Consorzio Is Molas, 09050 Is Molas Ca, Italia 09050, Pula",
+    "zona": "Provincia di Cagliari"
+  },
   "30592743": {
     "prima_vista": "2026-08-07T02:42:18.613686+00:00"
   },
@@ -334,6 +1734,16 @@
   },
   "30598497": {
     "prima_vista": "2026-08-07T02:42:18.613694+00:00"
+  },
+  "30598680": {
+    "città": "Assemini",
+    "mq": null,
+    "prezzo": null,
+    "prezzo_mq": null,
+    "prima_vista": "2026-10-07T16:07:08.039105+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Asta, Via Alcide De Gasperi, 09032 Assemini Ca, Italia 09032, Assemini",
+    "zona": "Provincia di Cagliari"
   },
   "30599034": {
     "prima_vista": "2026-08-07T02:42:18.613700+00:00"
@@ -403,6 +1813,16 @@
   },
   "30602976": {
     "prima_vista": "2026-08-07T02:42:18.613758+00:00"
+  },
+  "30603297": {
+    "città": "Elmas",
+    "mq": 181,
+    "prezzo": 398000,
+    "prezzo_mq": 2199,
+    "prima_vista": "2026-10-07T16:08:10.091431+00:00",
+    "sotto_media": true,
+    "titolo": "Villa a schiera in Vendita, Via C. Dettori 76, Elmas",
+    "zona": "Provincia di Cagliari"
   },
   "30604110": {
     "prima_vista": "2026-08-07T02:42:18.613763+00:00"
@@ -593,6 +2013,16 @@
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Via Bernardo Pasquini 6, Firenze"
   },
+  "30627232": {
+    "città": "Cagliari",
+    "mq": 301,
+    "prezzo": 470000,
+    "prezzo_mq": 1561,
+    "prima_vista": "2026-10-07T16:06:37.925517+00:00",
+    "sotto_media": false,
+    "titolo": "Villa in Vendita, Via Nicola Valle 31, Cagliari",
+    "zona": "Cagliari"
+  },
   "30627862": {
     "città": "Torino",
     "mq": 85,
@@ -755,6 +2185,16 @@
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via Cipro, Roma"
   },
+  "30640609": {
+    "città": "Sestu",
+    "mq": 490,
+    "prezzo": 136231,
+    "prezzo_mq": 278,
+    "prima_vista": "2026-10-07T16:07:29.213283+00:00",
+    "sotto_media": true,
+    "titolo": "Immobile residenziale in Asta, Loc. San Gemiliano, Sestu",
+    "zona": "Provincia di Cagliari"
+  },
   "30643078": {
     "città": "Roma",
     "mq": 330,
@@ -799,6 +2239,16 @@
     "prima_vista": "2026-08-12T09:09:30.729088+00:00",
     "sotto_media": false,
     "titolo": "Monolocale in Vendita, Ada Negri 2, Milano"
+  },
+  "30646159": {
+    "città": "Sestu",
+    "mq": 70,
+    "prezzo": 203000,
+    "prezzo_mq": 2900,
+    "prima_vista": "2026-10-07T16:07:29.213259+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Giulio Cesare Snc, Sestu",
+    "zona": "Provincia di Cagliari"
   },
   "30650587": {
     "città": "Firenze",
@@ -1718,6 +3168,16 @@
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Cenisio 77, Milano"
   },
+  "30686775": {
+    "città": "Monserrato",
+    "mq": 115,
+    "prezzo": 270000,
+    "prezzo_mq": 2348,
+    "prima_vista": "2026-10-07T16:07:39.393306+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via San Bachisio Snc, Monserrato",
+    "zona": "Provincia di Cagliari"
+  },
   "30686883": {
     "città": "Torino",
     "mq": 45,
@@ -1862,6 +3322,16 @@
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Sant'Antonio a Capodimonte 46, Napoli"
   },
+  "30691722": {
+    "città": "Quartu Sant'Elena",
+    "mq": 180,
+    "prezzo": 285000,
+    "prezzo_mq": 1583,
+    "prima_vista": "2026-10-07T16:06:48.346868+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Diaz Armando 131, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
+  },
   "30692208": {
     "città": "Bologna",
     "mq": 70,
@@ -1997,6 +3467,16 @@
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via Francesco Orsoni, Bologna"
   },
+  "30698901": {
+    "città": "Selargius",
+    "mq": 100,
+    "prezzo": 210000,
+    "prezzo_mq": 2100,
+    "prima_vista": "2026-10-07T16:06:57.543104+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Matteotti, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
   "30699282": {
     "città": "Torino",
     "mq": 100,
@@ -2068,6 +3548,16 @@
     "prima_vista": "2026-08-29T16:14:02.121344+00:00",
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Via Luigi Chiarelli, Milano"
+  },
+  "30707079": {
+    "città": "Quartucciu",
+    "mq": 44,
+    "prezzo": 240000,
+    "prezzo_mq": 5455,
+    "prima_vista": "2026-10-07T16:07:59.539639+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Selargius 27, Quartucciu",
+    "zona": "Provincia di Cagliari"
   },
   "30708534": {
     "città": "Napoli",
@@ -2600,6 +4090,36 @@
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Galleria Buenos Aires 4, Milano"
   },
+  "30722634": {
+    "città": "Quartu Sant'Elena",
+    "mq": 162,
+    "prezzo": 248000,
+    "prezzo_mq": 1531,
+    "prima_vista": "2026-10-07T16:06:48.346866+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Panzini 16, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
+  },
+  "30722637": {
+    "città": "Quartu Sant'Elena",
+    "mq": 30,
+    "prezzo": 328000,
+    "prezzo_mq": 10933,
+    "prima_vista": "2026-10-07T16:06:48.346863+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Solferino 12a, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
+  },
+  "30722640": {
+    "città": "Quartu Sant'Elena",
+    "mq": 220,
+    "prezzo": 659000,
+    "prezzo_mq": 2995,
+    "prima_vista": "2026-10-07T16:06:48.346860+00:00",
+    "sotto_media": false,
+    "titolo": "Villa in Vendita, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
+  },
   "30722838": {
     "città": "Napoli",
     "mq": 280,
@@ -2752,6 +4272,16 @@
     "prima_vista": "2026-09-02T14:08:30.522645+00:00",
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Via Speranzella 5, Napoli"
+  },
+  "30730959": {
+    "città": "Quartu Sant'Elena",
+    "mq": 80,
+    "prezzo": 310000,
+    "prezzo_mq": 3875,
+    "prima_vista": "2026-10-07T16:06:48.346857+00:00",
+    "sotto_media": false,
+    "titolo": "Villa a schiera in Vendita, Via dei Larici Snc, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
   },
   "30730989": {
     "città": "Torino",
@@ -2987,6 +4517,16 @@
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Piazza San Carlo 161, Torino"
   },
+  "30735285": {
+    "città": "Selargius",
+    "mq": 89,
+    "prezzo": 185000,
+    "prezzo_mq": 2079,
+    "prima_vista": "2026-10-07T16:06:57.543099+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Quintino Sella 7, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
   "30738576": {
     "città": "Napoli",
     "mq": 142,
@@ -3022,6 +4562,16 @@
     "prima_vista": "2026-09-03T08:34:20.158030+00:00",
     "sotto_media": true,
     "titolo": "Appartamento in Vendita, Via Girolamo Santacroce 19g, Napoli"
+  },
+  "30742110": {
+    "città": "Pula",
+    "mq": 800,
+    "prezzo": 440000,
+    "prezzo_mq": 550,
+    "prima_vista": "2026-10-07T16:08:18.559180+00:00",
+    "sotto_media": true,
+    "titolo": "Villa in Vendita, Km 47,6, Pula",
+    "zona": "Provincia di Cagliari"
   },
   "30742131": {
     "città": "Milano",
@@ -3464,6 +5014,16 @@
     "sotto_media": false,
     "titolo": "Quadrilocale in Vendita, Via Giovanni Francesco Napione 24, Torino"
   },
+  "30755793": {
+    "città": "Selargius",
+    "mq": 227,
+    "prezzo": 220000,
+    "prezzo_mq": 969,
+    "prima_vista": "2026-10-07T16:06:57.543093+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Via Pisacane 25, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
   "30757929": {
     "città": "Napoli",
     "mq": 65,
@@ -3517,6 +5077,16 @@
     "prima_vista": "2026-09-05T08:03:27.984034+00:00",
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Darix Togni 2, Milano"
+  },
+  "30758931": {
+    "città": "Cagliari",
+    "mq": 182,
+    "prezzo": 470000,
+    "prezzo_mq": 2582,
+    "prima_vista": "2026-10-07T16:06:37.925512+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Giovanni Maria Angioy 18, Cagliari",
+    "zona": "Cagliari"
   },
   "30758964": {
     "città": "Roma",
@@ -4247,6 +5817,16 @@
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, 2ª Traversa Divisione Siena, Napoli"
   },
+  "30785742": {
+    "città": "Quartucciu",
+    "mq": 120,
+    "prezzo": 259000,
+    "prezzo_mq": 2158,
+    "prima_vista": "2026-10-07T16:07:59.539563+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Rosselli, Quartucciu",
+    "zona": "Provincia di Cagliari"
+  },
   "30785769": {
     "città": "Milano",
     "mq": 52,
@@ -4391,6 +5971,16 @@
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Corso Rosselli 73, Torino"
   },
+  "30792789": {
+    "città": "Quartu Sant'Elena",
+    "mq": 10,
+    "prezzo": 220000,
+    "prezzo_mq": 22000,
+    "prima_vista": "2026-10-07T16:06:48.346854+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Puccini, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
+  },
   "30794418": {
     "città": "Roma",
     "mq": 108,
@@ -4480,6 +6070,16 @@
     "prima_vista": "2026-09-10T14:05:10.129925+00:00",
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Viale Ungheria, Milano"
+  },
+  "30796377": {
+    "città": "Monserrato",
+    "mq": 93,
+    "prezzo": 125000,
+    "prezzo_mq": 1344,
+    "prima_vista": "2026-10-07T16:07:39.393271+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Via Lucano Snc, Monserrato",
+    "zona": "Provincia di Cagliari"
   },
   "30796809": {
     "città": "Milano",
@@ -5066,6 +6666,16 @@
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Via Dardanelli, Roma"
   },
+  "30819480": {
+    "città": "Sinnai",
+    "mq": null,
+    "prezzo": 215000,
+    "prezzo_mq": null,
+    "prima_vista": "2026-10-07T16:07:48.362193+00:00",
+    "sotto_media": false,
+    "titolo": "Casa indipendente in Vendita, Sinnai",
+    "zona": "Provincia di Cagliari"
+  },
   "30819519": {
     "città": "Milano",
     "mq": 55,
@@ -5092,6 +6702,16 @@
     "prima_vista": "2026-09-14T21:34:35.579169+00:00",
     "sotto_media": true,
     "titolo": "Appartamento in Vendita, Via delle Ghiacciaie, Firenze"
+  },
+  "30819915": {
+    "città": "Sinnai",
+    "mq": 115,
+    "prezzo": 175000,
+    "prezzo_mq": 1522,
+    "prima_vista": "2026-10-07T16:07:48.362188+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Sinnai",
+    "zona": "Provincia di Cagliari"
   },
   "30820074": {
     "città": "Napoli",
@@ -5489,6 +7109,16 @@
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Vincenzo Gioberti 80, Torino"
   },
+  "30830457": {
+    "città": "Sinnai",
+    "mq": 137,
+    "prezzo": 69750,
+    "prezzo_mq": 509,
+    "prima_vista": "2026-10-07T16:07:48.362184+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Asta, Via Roccheddas, 59a, 09048 Sinnai Ca, Italia 59a, Sinnai",
+    "zona": "Provincia di Cagliari"
+  },
   "30830973": {
     "città": "Bologna",
     "mq": 46,
@@ -5615,6 +7245,16 @@
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Roma"
   },
+  "30838332": {
+    "città": "Pula",
+    "mq": 60,
+    "prezzo": 220000,
+    "prezzo_mq": 3667,
+    "prima_vista": "2026-10-07T16:08:18.559176+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Santa Margherita Sn, Pula",
+    "zona": "Provincia di Cagliari"
+  },
   "30838413": {
     "città": "Bologna",
     "mq": 106,
@@ -5623,6 +7263,16 @@
     "prima_vista": "2026-09-16T10:56:41.703597+00:00",
     "sotto_media": false,
     "titolo": "Quadrilocale in Vendita, Via Fondazza, Bologna"
+  },
+  "30838530": {
+    "città": "Quartucciu",
+    "mq": 167,
+    "prezzo": 369000,
+    "prezzo_mq": 2210,
+    "prima_vista": "2026-10-07T16:07:59.539556+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Via Camillo Benso di Cavour 33, Quartucciu",
+    "zona": "Provincia di Cagliari"
   },
   "30838794": {
     "città": "Bologna",
@@ -5641,6 +7291,16 @@
     "prima_vista": "2026-09-16T16:12:36.870452+00:00",
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Mercadante 46, Torino"
+  },
+  "30839958": {
+    "città": "Monserrato",
+    "mq": 137,
+    "prezzo": 225000,
+    "prezzo_mq": 1642,
+    "prima_vista": "2026-10-07T16:07:39.393268+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Nepote 51, Monserrato",
+    "zona": "Provincia di Cagliari"
   },
   "30840363": {
     "città": "Roma",
@@ -5786,6 +7446,16 @@
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Roma"
   },
+  "30843816": {
+    "città": "Sestu",
+    "mq": 70,
+    "prezzo": 79000,
+    "prezzo_mq": 1129,
+    "prima_vista": "2026-10-07T16:07:29.213255+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via 26 Ottobre, Sestu",
+    "zona": "Provincia di Cagliari"
+  },
   "30843948": {
     "città": "Napoli",
     "mq": 45,
@@ -5830,6 +7500,16 @@
     "prima_vista": "2026-09-17T21:01:46.296185+00:00",
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Piazza Stampalia 7, Torino"
+  },
+  "30847359": {
+    "città": "Quartu Sant'Elena",
+    "mq": 100,
+    "prezzo": 230000,
+    "prezzo_mq": 2300,
+    "prima_vista": "2026-10-07T16:06:48.346849+00:00",
+    "sotto_media": false,
+    "titolo": "Casa indipendente in Vendita, Via del Brigantino 5, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
   },
   "30847506": {
     "città": "Firenze",
@@ -5893,6 +7573,16 @@
     "prima_vista": "2026-09-17T17:56:51.880870+00:00",
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Viale Monza 8, Milano"
+  },
+  "30849717": {
+    "città": "Sestu",
+    "mq": 65,
+    "prezzo": 79000,
+    "prezzo_mq": 1215,
+    "prima_vista": "2026-10-07T16:07:29.213210+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via 26 Ottobre, Sestu",
+    "zona": "Provincia di Cagliari"
   },
   "30849726": {
     "città": "Milano",
@@ -6203,6 +7893,16 @@
     "score": 4,
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via Pace 23, Milano"
+  },
+  "30855288": {
+    "città": "Sinnai",
+    "mq": 300,
+    "prezzo": 140000,
+    "prezzo_mq": 467,
+    "prima_vista": "2026-10-07T16:07:48.362180+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Sinnai",
+    "zona": "Provincia di Cagliari"
   },
   "30855297": {
     "città": "Torino",
@@ -6551,6 +8251,16 @@
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via Agucchi, Bologna"
   },
+  "30867648": {
+    "città": "Quartu Sant'Elena",
+    "mq": 800,
+    "prezzo": 489000,
+    "prezzo_mq": 611,
+    "prima_vista": "2026-10-07T16:06:48.346844+00:00",
+    "sotto_media": false,
+    "titolo": "Villa in Vendita, Via Pablo Picasso 18, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
+  },
   "30867663": {
     "città": "Milano",
     "motivo_ai": "Prezzo sotto media zona (-18%). Bilocale 60mq a 4917€/mq, buona opportunità Milano.",
@@ -6837,6 +8547,16 @@
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Via Riccardo Zandonai, Firenze"
   },
+  "30874308": {
+    "città": "Quartu Sant'Elena",
+    "mq": 117,
+    "prezzo": 99000,
+    "prezzo_mq": 846,
+    "prima_vista": "2026-10-07T16:06:48.346839+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Eleonora d'Arborea, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
+  },
   "30874671": {
     "città": "Milano",
     "motivo_ai": "Prezzo 13% sopra media Milano. Trilocale buona metratura, posizione centrale. Nulla di eccezionale.",
@@ -7057,6 +8777,16 @@
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Via Antonio E Vittorio Scialoja 22/Bis, Torino"
   },
+  "30879429": {
+    "città": "Quartu Sant'Elena",
+    "mq": 59,
+    "prezzo": 180000,
+    "prezzo_mq": 3051,
+    "prima_vista": "2026-10-07T16:06:48.346834+00:00",
+    "sotto_media": false,
+    "titolo": "Casa indipendente in Vendita, Via Liri 171, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
+  },
   "30879462": {
     "città": "Firenze",
     "motivo_ai": "Prezzo 26% sotto media Firenze, trilocale a buon prezzo, zona centrale merita visita",
@@ -7111,6 +8841,16 @@
     "score": 2,
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Corso Vittorio Emanuele II 100, Torino"
+  },
+  "30882816": {
+    "città": "Sestu",
+    "mq": 73,
+    "prezzo": 159000,
+    "prezzo_mq": 2178,
+    "prima_vista": "2026-10-07T16:07:29.213206+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Gagarin 13, Sestu",
+    "zona": "Provincia di Cagliari"
   },
   "30883134": {
     "città": "Roma",
@@ -7277,6 +9017,16 @@
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Via Mercadante 57, Torino"
   },
+  "30887385": {
+    "città": "Elmas",
+    "mq": 98,
+    "prezzo": 260000,
+    "prezzo_mq": 2653,
+    "prima_vista": "2026-10-07T16:08:10.091441+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Miraglia 23, Elmas",
+    "zona": "Provincia di Cagliari"
+  },
   "30887685": {
     "città": "Milano",
     "motivo_ai": "Prezzo sotto media zona (-12%), buona dimensione, ubicazione centrale Milano",
@@ -7320,6 +9070,16 @@
     "score": 7,
     "sotto_media": false,
     "titolo": "Quadrilocale in Vendita, Viale Colli Aminei, Napoli"
+  },
+  "30888765": {
+    "città": "Assemini",
+    "mq": 160,
+    "prezzo": 180000,
+    "prezzo_mq": 1125,
+    "prima_vista": "2026-10-07T16:07:08.039101+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Assemini",
+    "zona": "Provincia di Cagliari"
   },
   "30888885": {
     "città": "Milano",
@@ -7607,6 +9367,16 @@
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Gaverina, Roma"
   },
+  "30899985": {
+    "città": "Sestu",
+    "mq": 84,
+    "prezzo": 168000,
+    "prezzo_mq": 2000,
+    "prima_vista": "2026-10-07T16:07:29.213201+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Cocco Ortu 20, Sestu",
+    "zona": "Provincia di Cagliari"
+  },
   "30900000": {
     "città": "Roma",
     "motivo_ai": "Prezzo 22% sotto media Roma. Bilocale compatto, buona opportunità d'investimento.",
@@ -7672,6 +9442,16 @@
     "score": 2,
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Via Chiaia 120, Napoli"
+  },
+  "30900612": {
+    "città": "Sestu",
+    "mq": 65,
+    "prezzo": 315000,
+    "prezzo_mq": 4846,
+    "prima_vista": "2026-10-07T16:07:29.213196+00:00",
+    "sotto_media": false,
+    "titolo": "Casa indipendente in Vendita, Via Dante, Sestu",
+    "zona": "Provincia di Cagliari"
   },
   "30905832": {
     "città": "Milano",
@@ -7749,6 +9529,16 @@
     "score": 3,
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via Luca Signorelli 12, Milano"
+  },
+  "30909690": {
+    "città": "Pula",
+    "mq": 335,
+    "prezzo": 749000,
+    "prezzo_mq": 2236,
+    "prima_vista": "2026-10-07T16:08:18.559163+00:00",
+    "sotto_media": true,
+    "titolo": "Villa in Vendita, Via Alfonso Lamarmora 26, Pula",
+    "zona": "Provincia di Cagliari"
   },
   "30909735": {
     "città": "Milano",
@@ -8179,6 +9969,16 @@
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Circonvallazione Nomentana 402, Roma"
   },
+  "30927849": {
+    "città": "Sinnai",
+    "mq": 120,
+    "prezzo": 229000,
+    "prezzo_mq": 1908,
+    "prima_vista": "2026-10-07T16:07:48.362123+00:00",
+    "sotto_media": true,
+    "titolo": "Villa in Vendita, Via Sebastiano Perra 100, Sinnai",
+    "zona": "Provincia di Cagliari"
+  },
   "30929094": {
     "città": "Milano",
     "motivo_ai": "Prezzo leggermente sopra media zona Milano, nessun elemento di sconto apparente",
@@ -8585,6 +10385,16 @@
     "score": 1,
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via Pietro Sommariva 80, Roma"
+  },
+  "30936297": {
+    "città": "Quartu Sant'Elena",
+    "mq": 105,
+    "prezzo": 950000,
+    "prezzo_mq": 9048,
+    "prima_vista": "2026-10-07T16:06:48.346830+00:00",
+    "sotto_media": false,
+    "titolo": "Villa in Vendita, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
   },
   "30937089": {
     "città": "Firenze",
@@ -9268,6 +11078,16 @@
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Galleria Buenos Aires 4, Milano"
   },
+  "30952311": {
+    "città": "Sestu",
+    "mq": 26,
+    "prezzo": 119000,
+    "prezzo_mq": 4577,
+    "prima_vista": "2026-10-07T16:07:29.213191+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Monserrato 302, Sestu",
+    "zona": "Provincia di Cagliari"
+  },
   "30952524": {
     "città": "Napoli",
     "motivo_ai": "Prezzo 61% sotto media zona, occasione rara se integro e regolare",
@@ -9355,6 +11175,36 @@
     "score": 7,
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Via Ciceri Visconti 10//1, Milano"
+  },
+  "30953832": {
+    "città": "Quartu Sant'Elena",
+    "mq": 1300,
+    "prezzo": 395000,
+    "prezzo_mq": 304,
+    "prima_vista": "2026-10-07T16:06:48.346825+00:00",
+    "sotto_media": false,
+    "titolo": "Villa in Vendita, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
+  },
+  "30956178": {
+    "città": "Quartu Sant'Elena",
+    "mq": 203,
+    "prezzo": 349000,
+    "prezzo_mq": 1719,
+    "prima_vista": "2026-10-07T16:06:48.346821+00:00",
+    "sotto_media": false,
+    "titolo": "Casa indipendente in Vendita, Via Carlo De Cristoforis, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
+  },
+  "30956505": {
+    "città": "Selargius",
+    "mq": 200,
+    "prezzo": 173000,
+    "prezzo_mq": 865,
+    "prima_vista": "2026-10-07T16:06:57.543088+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Daniele Manin, Selargius",
+    "zona": "Provincia di Cagliari"
   },
   "30957075": {
     "città": "Napoli",
@@ -9675,6 +11525,16 @@
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Corso Canonico Giuseppe Allamano, Torino"
   },
+  "30963684": {
+    "città": "Pula",
+    "mq": 138,
+    "prezzo": 60398,
+    "prezzo_mq": 438,
+    "prima_vista": "2026-10-07T16:08:18.559224+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Asta, Via XXV Aprile, 27/29, 09050 Pula Ca, Italia 27, Pula",
+    "zona": "Provincia di Cagliari"
+  },
   "30964044": {
     "città": "Milano",
     "motivo_ai": "Prezzo 44% sotto media Milano. Quadrilocale 215mq a 3349€/mq, affare raro.",
@@ -9851,6 +11711,16 @@
     "sotto_media": false,
     "titolo": "Quadrilocale in Vendita, Via Arrigo Davila 112, Roma"
   },
+  "30973533": {
+    "città": "Selargius",
+    "mq": 67,
+    "prezzo": 274000,
+    "prezzo_mq": 4090,
+    "prima_vista": "2026-10-07T16:06:57.543082+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Sant'Antonio Snc, Selargius",
+    "zona": "Provincia di Cagliari"
+  },
   "30973599": {
     "città": "Torino",
     "motivo_ai": "Prezzo 37% sotto media Torino. Bilocale 96mq a 1510€/mq: occasione rara",
@@ -9883,6 +11753,16 @@
     "score": 8,
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Viale Lunigiana 12, Milano"
+  },
+  "30974472": {
+    "città": "Quartucciu",
+    "mq": 81,
+    "prezzo": 129750,
+    "prezzo_mq": 1602,
+    "prima_vista": "2026-10-07T16:07:59.539634+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Asta, Viale Salvo d'Acquisto, 73, 09044 Quartucciu Ca, Italia 73, Quartucciu",
+    "zona": "Provincia di Cagliari"
   },
   "30975225": {
     "città": "Torino",
@@ -10027,6 +11907,16 @@
     "sotto_media": false,
     "titolo": "Quadrilocale in Vendita, Via Cardinale Giovanni Cagliero 12, Milano"
   },
+  "30981567": {
+    "città": "Quartu Sant'Elena",
+    "mq": 40,
+    "prezzo": 94000,
+    "prezzo_mq": 2350,
+    "prima_vista": "2026-10-07T16:06:48.346816+00:00",
+    "sotto_media": false,
+    "titolo": "Monolocale in Vendita, Via Mercadante 10, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
+  },
   "30982302": {
     "città": "Milano",
     "motivo_ai": "Prezzo/mq 37% sopra media Milano. Sopravvalutato, evitare.",
@@ -10037,6 +11927,16 @@
     "score": 2,
     "sotto_media": false,
     "titolo": "Quadrilocale in Vendita, Via Roberto Sarfatti 7, Milano"
+  },
+  "30982497": {
+    "città": "Cagliari",
+    "mq": 120,
+    "prezzo": 280000,
+    "prezzo_mq": 2333,
+    "prima_vista": "2026-10-07T16:06:37.925499+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Piazza Michele Amari 1, Cagliari",
+    "zona": "Cagliari"
   },
   "30982500": {
     "città": "Firenze",
@@ -10060,6 +11960,16 @@
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via Berengario 10, Roma"
   },
+  "30984453": {
+    "città": "Sestu",
+    "mq": 67,
+    "prezzo": 115000,
+    "prezzo_mq": 1716,
+    "prima_vista": "2026-10-07T16:07:29.213287+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Rodolfo Morandi 3, Sestu",
+    "zona": "Provincia di Cagliari"
+  },
   "30984927": {
     "città": "Napoli",
     "motivo_ai": "Prezzo in linea con media zona. Quadrilocale standard, nessun elemento distintivo positivo.",
@@ -10081,6 +11991,16 @@
     "score": 4,
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via Santa Giulia 32, Torino"
+  },
+  "30985773": {
+    "città": "Monserrato",
+    "mq": 106,
+    "prezzo": 157000,
+    "prezzo_mq": 1481,
+    "prima_vista": "2026-10-07T16:07:39.393266+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via San Filippo 12, Monserrato",
+    "zona": "Provincia di Cagliari"
   },
   "30986010": {
     "città": "Torino",
@@ -10236,6 +12156,16 @@
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Via Padova 213 a, Milano"
   },
+  "30988827": {
+    "città": "Elmas",
+    "mq": 249,
+    "prezzo": 170000,
+    "prezzo_mq": 683,
+    "prima_vista": "2026-10-07T16:08:10.091438+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Buscaglia 6, Elmas",
+    "zona": "Provincia di Cagliari"
+  },
   "30989052": {
     "città": "Firenze",
     "motivo_ai": "Prezzo 33% sotto media Firenze, buona metratura, zona centrale, occasione rara",
@@ -10390,6 +12320,16 @@
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Via degli Artisti 13, Torino"
   },
+  "30990183": {
+    "città": "Quartucciu",
+    "mq": 1274,
+    "prezzo": 125000,
+    "prezzo_mq": 98,
+    "prima_vista": "2026-10-07T16:07:59.539714+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Via delle Camelie, Quartucciu",
+    "zona": "Provincia di Cagliari"
+  },
   "30991554": {
     "città": "Napoli",
     "motivo_ai": "Prezzo significativamente sotto media zona, 33% meno caro. Buon affare potenziale.",
@@ -10400,6 +12340,26 @@
     "score": 8,
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Napoli"
+  },
+  "30992451": {
+    "città": "Sestu",
+    "mq": 245,
+    "prezzo": 285000,
+    "prezzo_mq": 1163,
+    "prima_vista": "2026-10-07T16:07:29.213187+00:00",
+    "sotto_media": true,
+    "titolo": "Villa unifamiliare in Vendita, Via San Gemiliano, Sestu",
+    "zona": "Provincia di Cagliari"
+  },
+  "30993129": {
+    "città": "Cagliari",
+    "mq": 150,
+    "prezzo": 389000,
+    "prezzo_mq": 2593,
+    "prima_vista": "2026-10-07T16:06:37.925637+00:00",
+    "sotto_media": false,
+    "titolo": "Villa bifamiliare in Vendita, Via Is Corrias Snc , Cagliari",
+    "zona": "Cagliari"
   },
   "30993444": {
     "città": "Torino",
@@ -10456,6 +12416,16 @@
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Rampe Brancaccio 9, Napoli"
   },
+  "30996804": {
+    "città": "Cagliari",
+    "mq": 92,
+    "prezzo": 249000,
+    "prezzo_mq": 2707,
+    "prima_vista": "2026-10-07T16:06:37.925633+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Ludovico Ariosto 1, Cagliari",
+    "zona": "Cagliari"
+  },
   "30996807": {
     "città": "Milano",
     "motivo_ai": "Prezzo sotto media zona (-11%), quadrilocale 140mq, buon potenziale investimento.",
@@ -10466,6 +12436,26 @@
     "score": 7,
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Via Giuseppe Pecchio 20, Milano"
+  },
+  "30997611": {
+    "città": "Cagliari",
+    "mq": 48,
+    "prezzo": 149000,
+    "prezzo_mq": 3104,
+    "prima_vista": "2026-10-07T16:06:37.925628+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via dei Colombi 38, Cagliari",
+    "zona": "Cagliari"
+  },
+  "30997614": {
+    "città": "Cagliari",
+    "mq": 46,
+    "prezzo": 110000,
+    "prezzo_mq": 2391,
+    "prima_vista": "2026-10-07T16:06:37.925623+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Vittorio Veneto 14, Cagliari",
+    "zona": "Cagliari"
   },
   "30997746": {
     "città": "Milano",
@@ -10500,6 +12490,26 @@
     "sotto_media": false,
     "titolo": "Quadrilocale in Vendita, Via Grigna 21, Milano"
   },
+  "30998145": {
+    "città": "Quartu Sant'Elena",
+    "mq": 145,
+    "prezzo": 215000,
+    "prezzo_mq": 1483,
+    "prima_vista": "2026-10-07T16:06:48.346812+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Francesco Cilea, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
+  },
+  "30998148": {
+    "città": "Quartu Sant'Elena",
+    "mq": 74,
+    "prezzo": 175000,
+    "prezzo_mq": 2365,
+    "prima_vista": "2026-10-07T16:06:48.346806+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Francesco Cilea, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
+  },
   "30998325": {
     "città": "Torino",
     "motivo_ai": "Prezzo 52% sotto media: probabile annuncio sospetto, verificare condizioni immobile",
@@ -10510,6 +12520,26 @@
     "score": 2,
     "sotto_media": true,
     "titolo": "Appartamento in Vendita, Strada del Drosso 158, Torino"
+  },
+  "30999024": {
+    "città": "Quartu Sant'Elena",
+    "mq": 100,
+    "prezzo": 120000,
+    "prezzo_mq": 1200,
+    "prima_vista": "2026-10-07T16:06:48.346802+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Francesco Cilea 51, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
+  },
+  "30999039": {
+    "città": "Assemini",
+    "mq": 40,
+    "prezzo": 95000,
+    "prezzo_mq": 2375,
+    "prima_vista": "2026-10-07T16:07:08.039056+00:00",
+    "sotto_media": true,
+    "titolo": "Monolocale in Vendita, Via Sulcis 22, Assemini",
+    "zona": "Provincia di Cagliari"
   },
   "30999291": {
     "città": "Napoli",
@@ -10522,6 +12552,46 @@
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Via Croci San Lucia al Monte, Napoli"
   },
+  "30999342": {
+    "città": "Cagliari",
+    "mq": 131,
+    "prezzo": 249000,
+    "prezzo_mq": 1901,
+    "prima_vista": "2026-10-07T16:06:37.925618+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Cornalias 24, Cagliari",
+    "zona": "Cagliari"
+  },
+  "30999348": {
+    "città": "Cagliari",
+    "mq": 103,
+    "prezzo": 209000,
+    "prezzo_mq": 2029,
+    "prima_vista": "2026-10-07T16:06:37.925613+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Conte Rosso 9, Cagliari",
+    "zona": "Cagliari"
+  },
+  "31002141": {
+    "città": "Cagliari",
+    "mq": 86,
+    "prezzo": 299000,
+    "prezzo_mq": 3477,
+    "prima_vista": "2026-10-07T16:06:37.925607+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Cagliari",
+    "zona": "Cagliari"
+  },
+  "31003110": {
+    "città": "Assemini",
+    "mq": 50,
+    "prezzo": 110000,
+    "prezzo_mq": 2200,
+    "prima_vista": "2026-10-07T16:07:08.039081+00:00",
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Assemini",
+    "zona": "Provincia di Cagliari"
+  },
   "31003524": {
     "città": "Torino",
     "motivo_ai": "Prezzo/mq sotto media cittadina (-27%). Trilocale 90mq a buon prezzo, zona da verificare.",
@@ -10532,6 +12602,16 @@
     "score": 7,
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Corso Unione Sovietica 493/22, Torino"
+  },
+  "31003569": {
+    "città": "Assemini",
+    "mq": 140,
+    "prezzo": 217000,
+    "prezzo_mq": 1550,
+    "prima_vista": "2026-10-07T16:07:08.039096+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Assemini",
+    "zona": "Provincia di Cagliari"
   },
   "31003809": {
     "città": "Milano",
@@ -10632,6 +12712,16 @@
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Napoli"
   },
+  "31006500": {
+    "città": "Sestu",
+    "mq": 90,
+    "prezzo": 278000,
+    "prezzo_mq": 3089,
+    "prima_vista": "2026-10-07T16:07:29.213181+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Giulio Cesare Snc, Sestu",
+    "zona": "Provincia di Cagliari"
+  },
   "31006686": {
     "città": "Torino",
     "motivo_ai": "Prezzo 31% sotto media, quadrilocale 90mq a 1667€/mq. Occasione rara.",
@@ -10642,6 +12732,16 @@
     "score": 9,
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Via Cesare Reduzzi 5, Torino"
+  },
+  "31007088": {
+    "città": "Quartucciu",
+    "mq": 90,
+    "prezzo": 105000,
+    "prezzo_mq": 1167,
+    "prima_vista": "2026-10-07T16:07:59.539537+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Quartucciu",
+    "zona": "Provincia di Cagliari"
   },
   "31007433": {
     "città": "Torino",
@@ -10698,6 +12798,16 @@
     "sotto_media": true,
     "titolo": "Appartamento in Vendita, Corso Re Umberto 47, Torino"
   },
+  "31007997": {
+    "città": "Cagliari",
+    "mq": 154,
+    "prezzo": 349000,
+    "prezzo_mq": 2266,
+    "prima_vista": "2026-10-07T16:06:37.925603+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Ospedale 00, Cagliari",
+    "zona": "Cagliari"
+  },
   "31008093": {
     "città": "Napoli",
     "motivo_ai": "Prezzo sotto media zona (-14%), bilocale ben dimensionato, centro storico. Verifica condizioni strutturali.",
@@ -10708,6 +12818,296 @@
     "score": 7,
     "sotto_media": true,
     "titolo": "Bilocale in Vendita, Vico Lungo Teatro Nuovo 100, Napoli"
+  },
+  "31008102": {
+    "città": "Sestu",
+    "mq": 80,
+    "prezzo": 182000,
+    "prezzo_mq": 2275,
+    "prima_vista": "2026-10-07T16:07:29.213164+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Trincea delle Frasche 26, Sestu",
+    "zona": "Provincia di Cagliari"
+  },
+  "31008381": {
+    "città": "Assemini",
+    "mq": 111,
+    "prezzo": 69516,
+    "prezzo_mq": 626,
+    "prima_vista": "2026-10-07T16:07:08.039092+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Asta, Via Cagliari, 209, 09032 Assemini Ca, Italia 209, Assemini",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009614": {
+    "città": "Capoterra",
+    "mq": 25,
+    "prezzo": 141000,
+    "prezzo_mq": 5640,
+    "prima_vista": "2026-10-07T16:07:18.190124+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via della Vittoria, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009617": {
+    "città": "Capoterra",
+    "mq": 100,
+    "prezzo": 160000,
+    "prezzo_mq": 1600,
+    "prima_vista": "2026-10-07T16:07:18.190119+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via della Vittoria, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009629": {
+    "città": "Capoterra",
+    "mq": 75,
+    "prezzo": 194000,
+    "prezzo_mq": 2587,
+    "prima_vista": "2026-10-07T16:07:18.190115+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Trieste, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009632": {
+    "città": "Cagliari",
+    "mq": 105,
+    "prezzo": 200000,
+    "prezzo_mq": 1905,
+    "prima_vista": "2026-10-07T16:06:37.925598+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Monfalcone 24, Cagliari",
+    "zona": "Cagliari"
+  },
+  "31009638": {
+    "città": "Capoterra",
+    "mq": 30,
+    "prezzo": 172000,
+    "prezzo_mq": 5733,
+    "prima_vista": "2026-10-07T16:07:18.190109+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Sicilia, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009647": {
+    "città": "Capoterra",
+    "mq": 90,
+    "prezzo": 175000,
+    "prezzo_mq": 1944,
+    "prima_vista": "2026-10-07T16:07:18.190105+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Sicilia, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009650": {
+    "città": "Capoterra",
+    "mq": 70,
+    "prezzo": 175000,
+    "prezzo_mq": 2500,
+    "prima_vista": "2026-10-07T16:07:18.190098+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Trieste, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009653": {
+    "città": "Capoterra",
+    "mq": null,
+    "prezzo": 182000,
+    "prezzo_mq": null,
+    "prima_vista": "2026-10-07T16:07:18.190096+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Sicilia, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009656": {
+    "città": "Cagliari",
+    "mq": 144,
+    "prezzo": 295000,
+    "prezzo_mq": 2049,
+    "prima_vista": "2026-10-07T16:06:37.925593+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Gaetano Donizetti 52, Cagliari",
+    "zona": "Cagliari"
+  },
+  "31009662": {
+    "città": "Capoterra",
+    "mq": 20,
+    "prezzo": 187000,
+    "prezzo_mq": 9350,
+    "prima_vista": "2026-10-07T16:07:18.190093+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Palestrina, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009665": {
+    "città": "Capoterra",
+    "mq": 20,
+    "prezzo": 175000,
+    "prezzo_mq": 8750,
+    "prima_vista": "2026-10-07T16:07:18.190089+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Palestrina, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009668": {
+    "città": "Capoterra",
+    "mq": 22,
+    "prezzo": 197000,
+    "prezzo_mq": 8955,
+    "prima_vista": "2026-10-07T16:07:18.190084+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Palestrina, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009671": {
+    "città": "Capoterra",
+    "mq": 20,
+    "prezzo": 180000,
+    "prezzo_mq": 9000,
+    "prima_vista": "2026-10-07T16:07:18.190079+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Palestrina, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009674": {
+    "città": "Capoterra",
+    "mq": 300,
+    "prezzo": 64000,
+    "prezzo_mq": 213,
+    "prima_vista": "2026-10-07T16:07:18.190075+00:00",
+    "sotto_media": true,
+    "titolo": "Casale in Vendita, Via Matteotti 56, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009677": {
+    "città": "Capoterra",
+    "mq": 20,
+    "prezzo": 185000,
+    "prezzo_mq": 9250,
+    "prima_vista": "2026-10-07T16:07:18.190070+00:00",
+    "sotto_media": false,
+    "titolo": "Casale in Vendita, Via Palestrina, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009680": {
+    "città": "Capoterra",
+    "mq": 22,
+    "prezzo": 190000,
+    "prezzo_mq": 8636,
+    "prima_vista": "2026-10-07T16:07:18.190066+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Palestrina, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009683": {
+    "città": "Capoterra",
+    "mq": 254,
+    "prezzo": 219000,
+    "prezzo_mq": 862,
+    "prima_vista": "2026-10-07T16:07:18.190061+00:00",
+    "sotto_media": true,
+    "titolo": "Villa in Vendita, Via Battisti 37, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009689": {
+    "città": "Capoterra",
+    "mq": 24,
+    "prezzo": 219000,
+    "prezzo_mq": 9125,
+    "prima_vista": "2026-10-07T16:07:18.190056+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Milano, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009692": {
+    "città": "Capoterra",
+    "mq": 25,
+    "prezzo": 225000,
+    "prezzo_mq": 9000,
+    "prima_vista": "2026-10-07T16:07:18.190052+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Milano, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009698": {
+    "città": "Capoterra",
+    "mq": 121,
+    "prezzo": 43000,
+    "prezzo_mq": 355,
+    "prima_vista": "2026-10-07T16:07:18.190047+00:00",
+    "sotto_media": true,
+    "titolo": "Casale in Vendita, Via Morosini 8, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009707": {
+    "città": "Capoterra",
+    "mq": 186,
+    "prezzo": 75000,
+    "prezzo_mq": 403,
+    "prima_vista": "2026-10-07T16:07:18.190043+00:00",
+    "sotto_media": true,
+    "titolo": "Villa in Vendita, Via Alessandro Manzoni 6, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009710": {
+    "città": "Capoterra",
+    "mq": 270,
+    "prezzo": 449000,
+    "prezzo_mq": 1663,
+    "prima_vista": "2026-10-07T16:07:18.190038+00:00",
+    "sotto_media": true,
+    "titolo": "Villa in Vendita, Str. 24, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009713": {
+    "città": "Capoterra",
+    "mq": 25,
+    "prezzo": 216000,
+    "prezzo_mq": 8640,
+    "prima_vista": "2026-10-07T16:07:18.190033+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Milano, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009719": {
+    "città": "Capoterra",
+    "mq": 24,
+    "prezzo": 215000,
+    "prezzo_mq": 8958,
+    "prima_vista": "2026-10-07T16:07:18.190027+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via Milano, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009722": {
+    "città": "Capoterra",
+    "mq": 96,
+    "prezzo": 115000,
+    "prezzo_mq": 1198,
+    "prima_vista": "2026-10-07T16:07:18.190023+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Lazio 5a, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31009725": {
+    "città": "Capoterra",
+    "mq": 68,
+    "prezzo": 115000,
+    "prezzo_mq": 1691,
+    "prima_vista": "2026-10-07T16:07:18.190017+00:00",
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via G. Marconi 11, Capoterra",
+    "zona": "Provincia di Cagliari"
+  },
+  "31011609": {
+    "città": "Elmas",
+    "mq": 82,
+    "prezzo": 225000,
+    "prezzo_mq": 2744,
+    "prima_vista": "2026-10-07T16:08:10.091428+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Tramontana 1, Elmas",
+    "zona": "Provincia di Cagliari"
   },
   "31011756": {
     "città": "Napoli",
@@ -10752,6 +13152,16 @@
     "score": 2,
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Viale Luigi Majno 19, Milano"
+  },
+  "31012626": {
+    "città": "Assemini",
+    "mq": 81,
+    "prezzo": 179000,
+    "prezzo_mq": 2210,
+    "prima_vista": "2026-10-07T16:07:08.039076+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Sacco, Assemini",
+    "zona": "Provincia di Cagliari"
   },
   "31012929": {
     "città": "Milano",
@@ -10874,6 +13284,16 @@
     "sotto_media": false,
     "titolo": "Quadrilocale in Vendita, Via Luca Giordano 51, Napoli"
   },
+  "31017954": {
+    "città": "Cagliari",
+    "mq": 34,
+    "prezzo": 148000,
+    "prezzo_mq": 4353,
+    "prima_vista": "2026-10-07T16:06:37.925587+00:00",
+    "sotto_media": false,
+    "titolo": "Monolocale in Vendita, Via Campania 18, Cagliari",
+    "zona": "Cagliari"
+  },
   "31018266": {
     "città": "Milano",
     "motivo_ai": "Prezzo 26% sotto media Milano, bilocale buona dimensione, zona centrale.",
@@ -10940,6 +13360,36 @@
     "sotto_media": true,
     "titolo": "Terratetto unifamiliare in Vendita, Via della Cupola, Firenze"
   },
+  "31019094": {
+    "città": "Cagliari",
+    "mq": 127,
+    "prezzo": 189000,
+    "prezzo_mq": 1488,
+    "prima_vista": "2026-10-07T16:06:37.925582+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via La Nurra 45, Cagliari",
+    "zona": "Cagliari"
+  },
+  "31019199": {
+    "città": "Selargius",
+    "mq": 109,
+    "prezzo": 279000,
+    "prezzo_mq": 2560,
+    "prima_vista": "2026-10-07T16:06:57.543065+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Goceano , Selargius",
+    "zona": "Provincia di Cagliari"
+  },
+  "31019349": {
+    "città": "Quartucciu",
+    "mq": null,
+    "prezzo": 210000,
+    "prezzo_mq": null,
+    "prima_vista": "2026-10-07T16:07:59.539618+00:00",
+    "sotto_media": false,
+    "titolo": "Villa unifamiliare in Vendita, Quartucciu",
+    "zona": "Provincia di Cagliari"
+  },
   "31019481": {
     "città": "Roma",
     "motivo_ai": "Prezzo leggermente sopra media Roma (+9%). Bilocale standard, dati completi.",
@@ -10961,6 +13411,16 @@
     "score": 3,
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Viale Certosa 45, Milano"
+  },
+  "31019709": {
+    "città": "Cagliari",
+    "mq": 81,
+    "prezzo": 195000,
+    "prezzo_mq": 2407,
+    "prima_vista": "2026-10-07T16:06:37.925576+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Viale Marconi 33, Cagliari",
+    "zona": "Cagliari"
   },
   "31020213": {
     "città": "Roma",
@@ -10995,6 +13455,16 @@
     "sotto_media": false,
     "titolo": "Quadrilocale in Vendita, Viale Francesco Crispi 5/a, Milano"
   },
+  "31020825": {
+    "città": "Quartu Sant'Elena",
+    "mq": 110,
+    "prezzo": 169000,
+    "prezzo_mq": 1536,
+    "prima_vista": "2026-10-07T16:06:48.346798+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
+  },
   "31021083": {
     "città": "Roma",
     "motivo_ai": "Prezzo straordinariamente basso, 64% sotto media: verificare dati, asta, nuda proprietà o problemi strutturali",
@@ -11006,6 +13476,56 @@
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Roma"
   },
+  "31021302": {
+    "città": "Cagliari",
+    "mq": 164,
+    "prezzo": 490000,
+    "prezzo_mq": 2988,
+    "prima_vista": "2026-10-07T16:06:37.925570+00:00",
+    "sotto_media": false,
+    "titolo": "Appartamento in Vendita, Via Cagna 41, Cagliari",
+    "zona": "Cagliari"
+  },
+  "31023414": {
+    "città": "Monserrato",
+    "mq": 143,
+    "prezzo": 259000,
+    "prezzo_mq": 1811,
+    "prima_vista": "2026-10-07T16:07:39.393261+00:00",
+    "sotto_media": true,
+    "titolo": "Appartamento in Vendita, Via Zuddas, Monserrato",
+    "zona": "Provincia di Cagliari"
+  },
+  "31023441": {
+    "città": "Cagliari",
+    "mq": 95,
+    "prezzo": 279000,
+    "prezzo_mq": 2937,
+    "prima_vista": "2026-10-07T16:06:37.925564+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Piave , Cagliari",
+    "zona": "Cagliari"
+  },
+  "31023447": {
+    "città": "Cagliari",
+    "mq": 101,
+    "prezzo": 429000,
+    "prezzo_mq": 4248,
+    "prima_vista": "2026-10-07T16:06:37.925558+00:00",
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Via dei Monsoni 00, Cagliari",
+    "zona": "Cagliari"
+  },
+  "31023465": {
+    "città": "Cagliari",
+    "mq": 87,
+    "prezzo": 279000,
+    "prezzo_mq": 3207,
+    "prima_vista": "2026-10-07T16:06:37.925553+00:00",
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Vesalio, Cagliari",
+    "zona": "Cagliari"
+  },
   "31024998": {
     "città": "Napoli",
     "motivo_ai": "Prezzo 30% sopra media Napoli. Sopravvalutato rispetto al mercato locale.",
@@ -11016,6 +13536,16 @@
     "score": 3,
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Viale Michelangelo, Napoli"
+  },
+  "31025301": {
+    "città": "Capoterra",
+    "mq": 110,
+    "prezzo": 250000,
+    "prezzo_mq": 2273,
+    "prima_vista": "2026-10-07T16:07:18.190003+00:00",
+    "sotto_media": true,
+    "titolo": "Villa a schiera in Vendita, Via Berna 10, Capoterra",
+    "zona": "Provincia di Cagliari"
   },
   "31026084": {
     "città": "Torino",
@@ -11072,6 +13602,16 @@
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Via Aversa 23, Roma"
   },
+  "31027212": {
+    "città": "Cagliari",
+    "mq": 54,
+    "prezzo": 212700,
+    "prezzo_mq": 3939,
+    "prima_vista": "2026-10-07T16:06:37.925546+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Logudoro 18, Cagliari",
+    "zona": "Cagliari"
+  },
   "31027548": {
     "città": "Roma",
     "motivo_ai": "Prezzo leggermente superiore a media zona, ma buona posizione centrale Roma.",
@@ -11094,6 +13634,40 @@
     "sotto_media": true,
     "titolo": "Bilocale in Nuda proprietà, Via Domenico Veneziano 7, Milano"
   },
+  "31027848": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 55% sotto media zona. Potenziale frode o dati incompleti. Verificare condizioni reali.",
+    "mq": 88,
+    "prezzo": 95000,
+    "prezzo_mq": 1080,
+    "prima_vista": "2026-10-07T16:05:50.282426+00:00",
+    "score": 2,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Piazza Nazario Sauro 24, Torino",
+    "zona": "Torino"
+  },
+  "31028373": {
+    "città": "Monserrato",
+    "mq": 111,
+    "prezzo": 290000,
+    "prezzo_mq": 2613,
+    "prima_vista": "2026-10-07T16:07:39.393250+00:00",
+    "sotto_media": true,
+    "titolo": "Casa indipendente in Vendita, Via Giosso 5, Monserrato",
+    "zona": "Provincia di Cagliari"
+  },
+  "31028427": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 21% sotto media zona. Quadrilocale buone dimensioni, buon affare da approfondire.",
+    "mq": 115,
+    "prezzo": 219900,
+    "prezzo_mq": 1912,
+    "prima_vista": "2026-10-07T16:05:47.680380+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Quadrilocale in Vendita, Via Mercadante 74, Torino",
+    "zona": "Torino"
+  },
   "31028484": {
     "città": "Napoli",
     "motivo_ai": "Prezzo 50% sopra media zona. Sopravvalutato drasticamente rispetto mercato.",
@@ -11104,6 +13678,28 @@
     "score": 2,
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Via del Parco Margherita 23, Napoli"
+  },
+  "31028724": {
+    "città": "Cagliari",
+    "mq": 33,
+    "prezzo": 164000,
+    "prezzo_mq": 4970,
+    "prima_vista": "2026-10-07T16:06:37.925540+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Giovanni Siotto Pintor, Cagliari",
+    "zona": "Cagliari"
+  },
+  "31028799": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 51% sotto media zona. Bilocale 67mq a 1179€/mq. Occasione rara.",
+    "mq": 67,
+    "prezzo": 79000,
+    "prezzo_mq": 1179,
+    "prima_vista": "2026-10-07T16:05:45.035254+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Luini 45/d, Torino",
+    "zona": "Torino"
   },
   "31028976": {
     "città": "Firenze",
@@ -11137,5 +13733,71 @@
     "score": 6,
     "sotto_media": false,
     "titolo": "Trilocale in Vendita, Viale Anicio Gallo 172, Roma"
+  },
+  "31030848": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo 5% sotto media zona, quadrilocale standard, nessun elemento particolare rilevato.",
+    "mq": 128,
+    "prezzo": 742400,
+    "prezzo_mq": 5800,
+    "prima_vista": "2026-10-07T16:04:33.122952+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Quadrilocale in Vendita, Piazza dei Daini 3, Milano",
+    "zona": "Milano"
+  },
+  "31030965": {
+    "città": "Elmas",
+    "mq": 90,
+    "prezzo": 225000,
+    "prezzo_mq": 2500,
+    "prima_vista": "2026-10-07T16:08:10.091424+00:00",
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Elmas",
+    "zona": "Provincia di Cagliari"
+  },
+  "31031085": {
+    "città": "Roma",
+    "motivo_ai": "Prezzo leggermente sopra media zona (+11%), bilocale standard senza particolari caratteristiche",
+    "mq": 60,
+    "prezzo": 275000,
+    "prezzo_mq": 4583,
+    "prima_vista": "2026-10-07T16:05:28.316120+00:00",
+    "score": 6,
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Tuscolana, Roma",
+    "zona": "Roma"
+  },
+  "31031151": {
+    "città": "Quartu Sant'Elena",
+    "mq": 35,
+    "prezzo": 94000,
+    "prezzo_mq": 2686,
+    "prima_vista": "2026-10-07T16:06:48.346792+00:00",
+    "sotto_media": false,
+    "titolo": "Monolocale in Vendita, Via Danimarca 97, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
+  },
+  "31031208": {
+    "città": "Torino",
+    "motivo_ai": "Prezzo 30% sotto media zona, bilocale compatto, occasione interessante Torino",
+    "mq": 55,
+    "prezzo": 93000,
+    "prezzo_mq": 1691,
+    "prima_vista": "2026-10-07T16:05:42.367871+00:00",
+    "score": 8,
+    "sotto_media": true,
+    "titolo": "Bilocale in Vendita, Via Saluzzo 51, Torino",
+    "zona": "Torino"
+  },
+  "31032132": {
+    "città": "Quartu Sant'Elena",
+    "mq": 53,
+    "prezzo": 129000,
+    "prezzo_mq": 2434,
+    "prima_vista": "2026-10-07T16:06:48.346787+00:00",
+    "sotto_media": false,
+    "titolo": "Bilocale in Vendita, Via Cilea, Quartu Sant'Elena",
+    "zona": "Provincia di Cagliari"
   }
 }
