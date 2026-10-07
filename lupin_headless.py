@@ -543,6 +543,7 @@ def missione(citta: dict, memoria: dict) -> tuple[int, dict]:
                     "mq": a["mq"],
                     "prezzo_mq": a["prezzo_mq"],
                     "titolo": a["titolo"],
+                    "url": a["url"],  # serve al report settimanale per i link
                 }
 
                 sotto_media = False

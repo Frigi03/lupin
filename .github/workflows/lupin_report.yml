@@ -1,0 +1,48 @@
+name: Lupin Report settimanale
+
+on:
+  schedule:
+    - cron: '7 16 * * 0'   # ogni domenica alle 16:07 UTC (18:07 ora legale italiana)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Modalità test (stampa il report nei log, niente Telegram)'
+        type: boolean
+        default: true
+      zone:
+        description: 'Zone da riepilogare, separate da virgola'
+        type: string
+        default: 'Cagliari,Provincia di Cagliari'
+      giorni:
+        description: 'Ampiezza del periodo in giorni'
+        type: string
+        default: '7'
+
+permissions:
+  contents: read
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: Installa dipendenze
+        run: pip install requests
+
+      - name: Genera e invia il report
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DRY_RUN: ${{ github.event_name == 'schedule' && '0' || (github.event.inputs.dry_run == 'true' && '1' || '0') }}
+          REPORT_ZONE: ${{ github.event.inputs.zone || 'Cagliari,Provincia di Cagliari' }}
+          REPORT_GIORNI: ${{ github.event.inputs.giorni || '7' }}
+        run: python lupin_report.py
