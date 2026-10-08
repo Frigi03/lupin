@@ -87,6 +87,12 @@ for _nome, _slug in [
         "gruppo": GRUPPO_PROV_CAGLIARI,
     })
 
+# Cagliari e provincia vanno visitate per prime: le valutazioni AI per giro sono
+# limitate (MAX_CHIAMATE_AI) e le grandi città, con molti annunci nuovi, le
+# esaurirebbero prima di arrivare qui. Il report settimanale dipende da questi punteggi.
+_sardegna = [p for p in POSTI if p["nome"] == "Cagliari" or p.get("gruppo") == GRUPPO_PROV_CAGLIARI]
+POSTI = _sardegna + [p for p in POSTI if p not in _sardegna]
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
