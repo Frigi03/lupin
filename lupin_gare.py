@@ -28,6 +28,8 @@ Opzionali:
   AI_OFF=1         → disattiva la valutazione AI
   SOGLIA_SCORE=6   → notifica solo gare con punteggio >= 6 (default 0 = tutte)
   GIORNI_INDIETRO=2 → quanti giorni di pubblicazioni scaricare (default 2)
+  RIPROVA=1        → (solo test) ignora memoria e segnalibro: rivaluta gli
+                     ultimi GIORNI_INDIETRO giorni come se fosse il primo avvio
   ESPLORA=1        → stampa nei log esempi grezzi degli avvisi e
                      prova filtri e sorgenti (sonda)
   ANAC_SCHEDE=P    → tipi di scheda ANAC da tenere (prefissi, separati da virgola)
@@ -56,6 +58,7 @@ FILE_PROFILO = Path("profilo_gare.json")
 DRY_RUN = os.environ.get("DRY_RUN", "0") == "1"
 AI_OFF = os.environ.get("AI_OFF", "0") == "1"
 ESPLORA = os.environ.get("ESPLORA", "0") == "1"
+RIPROVA = os.environ.get("RIPROVA", "0") == "1"
 SOGLIA_SCORE = int(os.environ.get("SOGLIA_SCORE", "0") or 0)
 MAX_CHIAMATE_AI = int(os.environ.get("MAX_CHIAMATE_AI", "60"))
 GIORNI_INDIETRO = int(os.environ.get("GIORNI_INDIETRO", "2") or 2)
@@ -903,6 +906,9 @@ def main():
 
     profilo = carica_profilo()
     memoria = carica_memoria()
+    if RIPROVA:
+        log.info("RIPROVA: memoria e segnalibro ignorati per questo avvio")
+        memoria = {"_stato": {}}
     log.info("Memoria iniziale: %d gare | sorgente %s | ultimo avviso ANAC visto: %s",
              len([k for k in memoria if not k.startswith("_")]), SORGENTE,
              (memoria.get("_stato") or {}).get("anac_ultima_pubblicazione", "nessuno"))
@@ -915,6 +921,7 @@ def main():
 
     scarti: dict[str, int] = {}
     inviati = 0
+    notificate: list[dict] = []
     senza_voto = 0
     for g in gare:
         if g["id"] in memoria:
@@ -948,6 +955,7 @@ def main():
 
         if invia_telegram(componi_messaggio(g, valutazione)):
             inviati += 1
+            notificate.append(g | {"score": (valutazione or {}).get("score")})
             memoria[g["id"]] = dati
             log.info("  ✓ %s", g["id"])
             time.sleep(1.3)
@@ -967,6 +975,16 @@ def main():
         salva_memoria(memoria)
     log.info("=== Fine. Notifiche: %d | Memoria: %d | Chiamate AI: %d ===",
              inviati, len(memoria) - 1, _chiamate_ai)
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        # Riepilogo come annotazioni: si leggono dalla pagina dell'avvio senza aprire i log
+        def ann(titolo, testo):
+            print(f"::notice title={titolo}::" + " ".join(str(testo).split()).replace("%", "%25"))
+        ann("Lupin Gare", f"{len(gare)} avvisi scaricati, {inviati} gare notificate"
+                          f"{' (DRY_RUN)' if DRY_RUN else ''}. Scarti: {scarti or 'nessuno'}")
+        for g in notificate[:8]:
+            imp = f"{g['importo']:,.0f} €".replace(",", ".") if g.get("importo") else "importo n/d"
+            ann(f"Gara {g.get('score') or '-'}/10", f"{g['oggetto'][:150]} | {g['ente']} | {g['luogo'] or ''} | "
+                f"{imp} | scade {g['scadenza'] or 'n/d'} | CIG {g['cig'] or 'n/d'}")
 
 
 if __name__ == "__main__":
