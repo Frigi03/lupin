@@ -25,6 +25,10 @@ on:
         type: choice
         options: [auto, anac, ted]
         default: auto
+      riprova:
+        description: 'Test: ignora memoria e segnalibro (solo con modalità test)'
+        type: boolean
+        default: false
       giorni_indietro:
         description: 'Quanti giorni di pubblicazioni scaricare'
         type: string
@@ -62,6 +66,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           DRY_RUN: ${{ github.event_name == 'schedule' && '0' || (github.event.inputs.dry_run == 'true' && '1' || '0') }}
           ESPLORA: ${{ github.event.inputs.esplora == 'true' && '1' || '0' }}
+          RIPROVA: ${{ github.event.inputs.riprova == 'true' && github.event.inputs.dry_run == 'true' && '1' || '0' }}
           SOGLIA_SCORE: ${{ github.event.inputs.soglia_score || '7' }}
           SORGENTE: ${{ github.event.inputs.sorgente || 'auto' }}
           GIORNI_INDIETRO: ${{ github.event.inputs.giorni_indietro || '1' }}

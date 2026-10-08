@@ -28,6 +28,8 @@ Opzionali:
   AI_OFF=1         → disattiva la valutazione AI
   SOGLIA_SCORE=6   → notifica solo gare con punteggio >= 6 (default 0 = tutte)
   GIORNI_INDIETRO=2 → quanti giorni di pubblicazioni scaricare (default 2)
+  RIPROVA=1        → (solo test) ignora memoria e segnalibro: rivaluta gli
+                     ultimi GIORNI_INDIETRO giorni come se fosse il primo avvio
   ESPLORA=1        → stampa nei log esempi grezzi degli avvisi e
                      prova filtri e sorgenti (sonda)
   ANAC_SCHEDE=P    → tipi di scheda ANAC da tenere (prefissi, separati da virgola)
@@ -56,6 +58,7 @@ FILE_PROFILO = Path("profilo_gare.json")
 DRY_RUN = os.environ.get("DRY_RUN", "0") == "1"
 AI_OFF = os.environ.get("AI_OFF", "0") == "1"
 ESPLORA = os.environ.get("ESPLORA", "0") == "1"
+RIPROVA = os.environ.get("RIPROVA", "0") == "1"
 SOGLIA_SCORE = int(os.environ.get("SOGLIA_SCORE", "0") or 0)
 MAX_CHIAMATE_AI = int(os.environ.get("MAX_CHIAMATE_AI", "60"))
 GIORNI_INDIETRO = int(os.environ.get("GIORNI_INDIETRO", "2") or 2)
@@ -126,6 +129,7 @@ def carica_profilo() -> dict:
         "nature": [],
         "categorie_soa": [],
         "luoghi": [],
+        "regioni": [],
         "importo_min": 0,
         "importo_max": 0,
     }
@@ -277,6 +281,11 @@ def normalizza(avviso: dict) -> dict:
                                    "luogo_esecuzione", "luogo", "comune", "provincia",
                                    "regione", tutti=True)
                   if not str(v).strip().isdigit()), None)
+    # Codici di luogo per il filtro per regione (ISTAT del comune, NUTS)
+    istat = next((str(v).strip() for v in cerca(items or avviso, "luogo_istat", "codice_istat", tutti=True)
+                  if str(v).strip().isdigit()), None)
+    nuts = next((str(v).strip().upper() for v in cerca(items or avviso, "luogo_nuts", "nuts", tutti=True)
+                 if re.match(r"^IT[A-Z0-9]", str(v).strip().upper())), None)
     natura = cerca(items, "natura_principale")
     tipo = avviso.get("tipologia") or cerca(items, "natura_principale")
     url = None
@@ -304,6 +313,8 @@ def normalizza(avviso: dict) -> dict:
         "cpv": cpv,
         "categorie": categorie[:4],
         "luogo": str(luogo)[:80] if luogo else None,
+        "istat": istat,
+        "nuts": nuts,
         "tipo": str(tipo)[:60] if tipo else None,
         "scheda": avviso.get("codiceScheda"),
         "natura": str(natura) if natura else None,
@@ -502,6 +513,8 @@ def normalizza_ted(n: dict) -> dict:
         "scheda": None,
         "natura": None,
         "luogo": _testo_ted(n.get("buyer-city")) or _testo_ted(n.get("place-of-performance")),
+        "istat": None,
+        "nuts": next((c for c in re.findall(r"\bIT[A-Z0-9]{1,3}\b", json.dumps(n.get("place-of-performance") or ""))), None),
         "tipo": _testo_ted(n.get("notice-type")),
         "url": f"https://ted.europa.eu/it/notice/-/detail/{pub}" if pub else "https://ted.europa.eu",
     }
@@ -648,6 +661,34 @@ def sonda() -> None:
 # Filtri profilo
 # ---------------------------------------------------------------------------
 
+# Regioni riconosciute dal campo "regioni" del profilo: prefissi ISTAT delle
+# province (anche quelle soppresse, ancora presenti in alcuni avvisi), prefisso
+# NUTS e parole che indicano la regione nel nome dell'ente o del luogo (per TED
+# e per gli avvisi senza codici).
+REGIONI = {
+    "sardegna": {
+        "istat": ("090", "091", "092", "095", "104", "105", "106", "107", "111"),
+        "nuts": "ITG2",
+        "parole": ("sardegna", "cagliari", "sassari", "nuoro", "oristano", "olbia", "gallura",
+                   "ogliastra", "sulcis", "iglesias", "carbonia", "campidano", "quartu",
+                   "alghero", "tempio pausania", "lanusei", "tortoli", "sanluri", "villacidro",
+                   "abbanoa", "anas sardegna", "forestas", "arst"),
+    },
+}
+
+
+def in_regione(g: dict, regione: str) -> bool:
+    r = REGIONI.get(regione.strip().lower())
+    if not r:
+        return True  # regione non in elenco: nessun filtro, meglio una gara in più che una persa
+    if g.get("istat") and g["istat"].zfill(6)[:3] in r["istat"]:
+        return True
+    if g.get("nuts") and g["nuts"].startswith(r["nuts"]):
+        return True
+    testo = f"{g.get('ente') or ''} {g.get('luogo') or ''}".lower()
+    return any(re.search(rf"\b{re.escape(p)}\b", testo) for p in r["parole"])
+
+
 def _codice_soa(voce: str) -> str | None:
     """'OG 3 - STRADE...' → 'OG3'. None se non è una categoria SOA (OG/OS)."""
     m = re.match(r"\s*(O[GS])\s*(\d+)", voce.upper())
@@ -689,6 +730,8 @@ def passa_filtri(g: dict, profilo: dict) -> tuple[bool, str]:
     elif parole and not any(p.lower() in testo for p in parole):
         return False, "fuori settore (parole)"
 
+    if profilo["regioni"] and not any(in_regione(g, r) for r in profilo["regioni"]):
+        return False, "fuori regione"
     if profilo["luoghi"] and not any(l.lower() in testo for l in profilo["luoghi"]):
         return False, "fuori zona"
 
@@ -863,6 +906,9 @@ def main():
 
     profilo = carica_profilo()
     memoria = carica_memoria()
+    if RIPROVA:
+        log.info("RIPROVA: memoria e segnalibro ignorati per questo avvio")
+        memoria = {"_stato": {}}
     log.info("Memoria iniziale: %d gare | sorgente %s | ultimo avviso ANAC visto: %s",
              len([k for k in memoria if not k.startswith("_")]), SORGENTE,
              (memoria.get("_stato") or {}).get("anac_ultima_pubblicazione", "nessuno"))
@@ -875,6 +921,7 @@ def main():
 
     scarti: dict[str, int] = {}
     inviati = 0
+    notificate: list[dict] = []
     senza_voto = 0
     for g in gare:
         if g["id"] in memoria:
@@ -908,6 +955,7 @@ def main():
 
         if invia_telegram(componi_messaggio(g, valutazione)):
             inviati += 1
+            notificate.append(g | {"score": (valutazione or {}).get("score")})
             memoria[g["id"]] = dati
             log.info("  ✓ %s", g["id"])
             time.sleep(1.3)
@@ -927,6 +975,16 @@ def main():
         salva_memoria(memoria)
     log.info("=== Fine. Notifiche: %d | Memoria: %d | Chiamate AI: %d ===",
              inviati, len(memoria) - 1, _chiamate_ai)
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        # Riepilogo come annotazioni: si leggono dalla pagina dell'avvio senza aprire i log
+        def ann(titolo, testo):
+            print(f"::notice title={titolo}::" + " ".join(str(testo).split()).replace("%", "%25"))
+        ann("Lupin Gare", f"{len(gare)} avvisi scaricati, {inviati} gare notificate"
+                          f"{' (DRY_RUN)' if DRY_RUN else ''}. Scarti: {scarti or 'nessuno'}")
+        for g in notificate[:8]:
+            imp = f"{g['importo']:,.0f} €".replace(",", ".") if g.get("importo") else "importo n/d"
+            ann(f"Gara {g.get('score') or '-'}/10", f"{g['oggetto'][:150]} | {g['ente']} | {g['luogo'] or ''} | "
+                f"{imp} | scade {g['scadenza'] or 'n/d'} | CIG {g['cig'] or 'n/d'}")
 
 
 if __name__ == "__main__":
