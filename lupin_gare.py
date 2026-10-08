@@ -126,6 +126,7 @@ def carica_profilo() -> dict:
         "nature": [],
         "categorie_soa": [],
         "luoghi": [],
+        "regioni": [],
         "importo_min": 0,
         "importo_max": 0,
     }
@@ -277,6 +278,11 @@ def normalizza(avviso: dict) -> dict:
                                    "luogo_esecuzione", "luogo", "comune", "provincia",
                                    "regione", tutti=True)
                   if not str(v).strip().isdigit()), None)
+    # Codici di luogo per il filtro per regione (ISTAT del comune, NUTS)
+    istat = next((str(v).strip() for v in cerca(items or avviso, "luogo_istat", "codice_istat", tutti=True)
+                  if str(v).strip().isdigit()), None)
+    nuts = next((str(v).strip().upper() for v in cerca(items or avviso, "luogo_nuts", "nuts", tutti=True)
+                 if re.match(r"^IT[A-Z0-9]", str(v).strip().upper())), None)
     natura = cerca(items, "natura_principale")
     tipo = avviso.get("tipologia") or cerca(items, "natura_principale")
     url = None
@@ -304,6 +310,8 @@ def normalizza(avviso: dict) -> dict:
         "cpv": cpv,
         "categorie": categorie[:4],
         "luogo": str(luogo)[:80] if luogo else None,
+        "istat": istat,
+        "nuts": nuts,
         "tipo": str(tipo)[:60] if tipo else None,
         "scheda": avviso.get("codiceScheda"),
         "natura": str(natura) if natura else None,
@@ -502,6 +510,8 @@ def normalizza_ted(n: dict) -> dict:
         "scheda": None,
         "natura": None,
         "luogo": _testo_ted(n.get("buyer-city")) or _testo_ted(n.get("place-of-performance")),
+        "istat": None,
+        "nuts": next((c for c in re.findall(r"\bIT[A-Z0-9]{1,3}\b", json.dumps(n.get("place-of-performance") or ""))), None),
         "tipo": _testo_ted(n.get("notice-type")),
         "url": f"https://ted.europa.eu/it/notice/-/detail/{pub}" if pub else "https://ted.europa.eu",
     }
@@ -648,6 +658,34 @@ def sonda() -> None:
 # Filtri profilo
 # ---------------------------------------------------------------------------
 
+# Regioni riconosciute dal campo "regioni" del profilo: prefissi ISTAT delle
+# province (anche quelle soppresse, ancora presenti in alcuni avvisi), prefisso
+# NUTS e parole che indicano la regione nel nome dell'ente o del luogo (per TED
+# e per gli avvisi senza codici).
+REGIONI = {
+    "sardegna": {
+        "istat": ("090", "091", "092", "095", "104", "105", "106", "107", "111"),
+        "nuts": "ITG2",
+        "parole": ("sardegna", "cagliari", "sassari", "nuoro", "oristano", "olbia", "gallura",
+                   "ogliastra", "sulcis", "iglesias", "carbonia", "campidano", "quartu",
+                   "alghero", "tempio pausania", "lanusei", "tortoli", "sanluri", "villacidro",
+                   "abbanoa", "anas sardegna", "forestas", "arst"),
+    },
+}
+
+
+def in_regione(g: dict, regione: str) -> bool:
+    r = REGIONI.get(regione.strip().lower())
+    if not r:
+        return True  # regione non in elenco: nessun filtro, meglio una gara in più che una persa
+    if g.get("istat") and g["istat"].zfill(6)[:3] in r["istat"]:
+        return True
+    if g.get("nuts") and g["nuts"].startswith(r["nuts"]):
+        return True
+    testo = f"{g.get('ente') or ''} {g.get('luogo') or ''}".lower()
+    return any(re.search(rf"\b{re.escape(p)}\b", testo) for p in r["parole"])
+
+
 def _codice_soa(voce: str) -> str | None:
     """'OG 3 - STRADE...' → 'OG3'. None se non è una categoria SOA (OG/OS)."""
     m = re.match(r"\s*(O[GS])\s*(\d+)", voce.upper())
@@ -689,6 +727,8 @@ def passa_filtri(g: dict, profilo: dict) -> tuple[bool, str]:
     elif parole and not any(p.lower() in testo for p in parole):
         return False, "fuori settore (parole)"
 
+    if profilo["regioni"] and not any(in_regione(g, r) for r in profilo["regioni"]):
+        return False, "fuori regione"
     if profilo["luoghi"] and not any(l.lower() in testo for l in profilo["luoghi"]):
         return False, "fuori zona"
 

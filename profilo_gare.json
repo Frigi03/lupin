@@ -1,6 +1,6 @@
 {
-  "_nota": "Profilo di ESEMPIO: modificalo con i dati dell'azienda cliente. Liste vuote = nessun filtro; importo 0 = nessun limite. Per il settore conta prima categorie_soa (gare ANAC), poi cpv_prefissi (gare TED), poi parole_chiave. nature: Lavori, Servizi, Forniture.",
-  "descrizione_azienda": "Piccola impresa edile: ristrutturazioni, manutenzione di edifici e scuole, piccole opere stradali. Fatturato circa 1 milione di euro, lavora in un raggio di 100 km.",
+  "_nota": "Profilo di ESEMPIO: modificalo con i dati dell'azienda cliente. Liste vuote = nessun filtro; regioni: per ora \"Sardegna\" (filtra per codice ISTAT/NUTS del luogo); importo 0 = nessun limite. Per il settore conta prima categorie_soa (gare ANAC), poi cpv_prefissi (gare TED), poi parole_chiave. nature: Lavori, Servizi, Forniture.",
+  "descrizione_azienda": "Piccola impresa edile in Sardegna: ristrutturazioni, manutenzione di edifici e scuole, piccole opere stradali. Fatturato circa 1 milione di euro, lavora in tutta la Sardegna.",
   "parole_chiave": [
     "manutenzione",
     "ristrutturazione",
@@ -28,6 +28,9 @@
     "OG 3"
   ],
   "luoghi": [],
+  "regioni": [
+    "Sardegna"
+  ],
   "importo_min": 20000,
   "importo_max": 1500000
 }
