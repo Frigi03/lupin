@@ -4748,6 +4748,19 @@
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via Generale Mac Mahon 117, Milano"
   },
+  "30743208": {
+    "città": "Capoterra",
+    "motivo_ai": "Prezzo perfettamente in linea con la media di zona, nulla di eccezionale.",
+    "mq": 76,
+    "prezzo": 149000,
+    "prezzo_mq": 1961,
+    "prima_vista": "2026-10-08T08:37:38.882475+00:00",
+    "score": 5,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Treviso 128, Capoterra",
+    "url": "https://www.wikicasa.it/annuncio/30743208",
+    "zona": "Provincia di Cagliari"
+  },
   "30743406": {
     "città": "Milano",
     "mq": 75,
@@ -7486,6 +7499,19 @@
     "prima_vista": "2026-09-17T21:02:09.541224+00:00",
     "sotto_media": false,
     "titolo": "Bilocale in Vendita, Corso Umberto I 22, Napoli"
+  },
+  "30846114": {
+    "città": "Capoterra",
+    "motivo_ai": "Prezzo 16% sotto media zona, trilocale buona metratura, affare interessante.",
+    "mq": 82,
+    "prezzo": 135000,
+    "prezzo_mq": 1646,
+    "prima_vista": "2026-10-08T08:37:35.871153+00:00",
+    "score": 7,
+    "sotto_media": true,
+    "titolo": "Trilocale in Vendita, Via Sardegna 55, Capoterra",
+    "url": "https://www.wikicasa.it/annuncio/30846114",
+    "zona": "Provincia di Cagliari"
   },
   "30846291": {
     "città": "Bologna",
