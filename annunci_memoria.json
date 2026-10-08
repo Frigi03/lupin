@@ -13904,6 +13904,19 @@
     "url": "https://www.wikicasa.it/annuncio/31032798",
     "zona": "Torino"
   },
+  "31032849": {
+    "città": "Napoli",
+    "motivo_ai": "Prezzo 22% sotto media zona. Buona metratura. Occasione rara per Napoli centro.",
+    "mq": 32,
+    "prezzo": 82000,
+    "prezzo_mq": 2562,
+    "prima_vista": "2026-10-08T00:01:55.417818+00:00",
+    "score": 9,
+    "sotto_media": true,
+    "titolo": "Monolocale in Vendita, Vico Santa Luciella 14, Napoli",
+    "url": "https://www.wikicasa.it/annuncio/31032849",
+    "zona": "Napoli"
+  },
   "31033581": {
     "città": "Milano",
     "motivo_ai": "Trilocale sottovalutato 28% rispetto media zona. Prezzo/mq molto conveniente.",
