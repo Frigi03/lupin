@@ -60,7 +60,8 @@ jobs:
 
       - name: Esegui Lupin Gare
         env:
-          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          # Bot dedicato alle gare (@lupinanacBot) se c'è il suo token, altrimenti quello di Lupin Case
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN_GARE || secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TELEGRAM_CHAT_ID_GARE: ${{ secrets.TELEGRAM_CHAT_ID_GARE }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
