@@ -66,6 +66,10 @@ DRY_RUN = os.environ.get("DRY_RUN", "0") == "1"
 AI_OFF = os.environ.get("AI_OFF", "0") == "1"
 ESPLORA = os.environ.get("ESPLORA", "0") == "1"
 RIPROVA = os.environ.get("RIPROVA", "0") == "1"
+# RECUPERO=1: riscarica GIORNI_INDIETRO giorni ignorando il segnalibro (la memoria
+# resta: niente doppioni) e rivaluta le gare scartate solo per punteggio sotto
+# l'attuale SOGLIA_SCORE. Le gare scadute restano escluse dai filtri.
+RECUPERO = os.environ.get("RECUPERO", "0") == "1"
 SOGLIA_SCORE = int(os.environ.get("SOGLIA_SCORE", "0") or 0)
 MAX_CHIAMATE_AI = int(os.environ.get("MAX_CHIAMATE_AI", "60"))
 GIORNI_INDIETRO = int(os.environ.get("GIORNI_INDIETRO", "2") or 2)
@@ -993,6 +997,16 @@ def main():
         sonda()
 
     stato = memoria.setdefault("_stato", {})
+    if RECUPERO:
+        segnalibro = stato.pop("anac_ultima_pubblicazione", None)
+        riaperte = 0
+        for k in [k for k in memoria if not k.startswith("_")]:
+            m = re.fullmatch(r"score (\d+)", str(memoria[k].get("scartata") or ""))
+            if m and SOGLIA_SCORE and int(m.group(1)) >= SOGLIA_SCORE:
+                del memoria[k]
+                riaperte += 1
+        log.info("RECUPERO: ultimi %d giorni, segnalibro ignorato (%s), %d gare riaperte per la nuova soglia",
+                 GIORNI_INDIETRO, segnalibro or "nessuno", riaperte)
     stato_prima = dict(stato)
     gare = scarica_gare(stato)
 

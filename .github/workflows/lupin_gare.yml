@@ -5,7 +5,7 @@ on:
   # ritardare (anche di ore) o saltare un avvio programmato, quindi ce ne sono
   # quattro: il primo che parte invia le gare, gli altri trovano già tutto in
   # memoria e non mandano doppioni. Gli avvii programmati inviano davvero su
-  # Telegram e notificano solo le gare con punteggio AI >= 7.
+  # Telegram e notificano solo le gare con punteggio AI >= 5.
   schedule:
     - cron: '17 6 * * *'   # 08:17 ora legale italiana
     - cron: '47 6 * * *'   # 08:47
@@ -38,6 +38,10 @@ on:
         description: 'Quanti giorni di pubblicazioni scaricare'
         type: string
         default: '1'
+      recupero:
+        description: 'Recupero: riscarica i giorni indicati ignorando il segnalibro e manda le gare non scadute mai inviate'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -78,6 +82,7 @@ jobs:
           SOGLIA_SCORE: ${{ github.event.inputs.soglia_score || '5' }}
           SORGENTE: ${{ github.event.inputs.sorgente || 'auto' }}
           GIORNI_INDIETRO: ${{ github.event.inputs.giorni_indietro || '1' }}
+          RECUPERO: ${{ github.event.inputs.recupero == 'true' && '1' || '0' }}
           MAX_CHIAMATE_AI: '60'
         run: python lupin_gare.py
 
