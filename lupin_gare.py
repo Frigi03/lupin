@@ -24,6 +24,13 @@ Variabili d'ambiente (GitHub Secrets):
   TELEGRAM_TOKEN, TELEGRAM_CHAT_ID, ANTHROPIC_API_KEY
 Opzionali:
   TELEGRAM_CHAT_ID_GARE → chat dedicata alle gare (default: TELEGRAM_CHAT_ID)
+  PROFILI_GARE     → (GitHub Secret) profili delle imprese clienti, in JSON:
+                     una lista di oggetti con gli stessi campi di profilo_gare.json
+                     più "id" (breve e anonimo, es. "c1": finisce nella memoria
+                     pubblica), "chat_id" (chat Telegram dell'impresa),
+                     "attivo" (true/false) e "fine_prova" (AAAA-MM-GG, facoltativo).
+                     Il profilo di profilo_gare.json resta e continua a scrivere
+                     nella chat di TELEGRAM_CHAT_ID_GARE.
   DRY_RUN=1        → nessun invio Telegram reale e memoria non salvata
   AI_OFF=1         → disattiva la valutazione AI
   SOGLIA_SCORE=6   → notifica solo gare con punteggio >= 6 (default 0 = tutte)
@@ -120,8 +127,8 @@ def salva_memoria(memoria: dict) -> None:
         json.dump(memoria, f, ensure_ascii=False, indent=2, sort_keys=True)
 
 
-def carica_profilo() -> dict:
-    profilo = {
+def _profilo_base() -> dict:
+    return {
         "descrizione_azienda": "",
         "parole_chiave": [],
         "parole_escluse": [],
@@ -133,10 +140,73 @@ def carica_profilo() -> dict:
         "importo_min": 0,
         "importo_max": 0,
     }
+
+
+def carica_profilo() -> dict:
+    profilo = _profilo_base()
     if FILE_PROFILO.exists():
         with FILE_PROFILO.open("r", encoding="utf-8") as f:
             profilo.update({k: v for k, v in json.load(f).items() if not k.startswith("_")})
     return profilo
+
+
+def carica_profili() -> list[dict]:
+    """Ritorna i profili da servire in questo avvio: prima quello di
+    profilo_gare.json (id "", chat TELEGRAM_CHAT_ID_GARE), poi le imprese
+    clienti del secret PROFILI_GARE. Ogni profilo ha anche "_id" e "_chat"."""
+    principale = carica_profilo()
+    principale["_id"] = ""
+    principale["_chat"] = TELEGRAM_CHAT_ID
+    principale["_nome"] = "principale"
+    profili = [principale]
+
+    grezzo = os.environ.get("PROFILI_GARE", "").strip()
+    if not grezzo:
+        return profili
+    try:
+        lista = json.loads(grezzo)
+    except json.JSONDecodeError as e:
+        log.error("PROFILI_GARE non è JSON valido (%s): uso solo il profilo principale", e)
+        return profili
+    if isinstance(lista, dict):
+        lista = [lista]
+
+    oggi = datetime.now(timezone.utc).date()
+    visti: set[str] = set()
+    for i, dati in enumerate(lista):
+        if not isinstance(dati, dict):
+            log.warning("PROFILI_GARE[%d]: non è un oggetto, ignorato", i)
+            continue
+        pid = str(dati.get("id") or "").strip()
+        chat = str(dati.get("chat_id") or "").strip()
+        if not re.fullmatch(r"[A-Za-z0-9_-]{1,20}", pid) or pid in visti:
+            log.warning("PROFILI_GARE[%d]: \"id\" mancante, non valido o doppio: ignorato", i)
+            continue
+        visti.add(pid)
+        if not chat:
+            log.warning("Profilo %s: manca chat_id, ignorato", pid)
+            continue
+        if dati.get("attivo") is False:
+            log.info("Profilo %s: non attivo, saltato", pid)
+            continue
+        fine = a_data(dati.get("fine_prova"))
+        if fine and fine < oggi:
+            log.info("Profilo %s: prova finita il %s, saltato", pid, fine.isoformat())
+            continue
+        profilo = _profilo_base()
+        profilo.update({k: v for k, v in dati.items()
+                        if k in profilo and not k.startswith("_")})
+        profilo["_id"] = pid
+        profilo["_chat"] = chat
+        profilo["_nome"] = pid
+        profili.append(profilo)
+    return profili
+
+
+def chiave_memoria(profilo: dict, gid: str) -> str:
+    """Il profilo principale usa l'id della gara (come prima), gli altri
+    "<id profilo>:<id gara>", così ogni impresa ha la sua memoria."""
+    return f"{profilo['_id']}:{gid}" if profilo["_id"] else gid
 
 
 # ---------------------------------------------------------------------------
@@ -765,9 +835,12 @@ PROMPT_SISTEMA = (
 )
 
 
+_limite_ai = MAX_CHIAMATE_AI
+
+
 def valuta_con_ai(g: dict, profilo: dict) -> dict | None:
     global _chiamate_ai
-    if AI_OFF or not ANTHROPIC_API_KEY or _chiamate_ai >= MAX_CHIAMATE_AI:
+    if AI_OFF or not ANTHROPIC_API_KEY or _chiamate_ai >= _limite_ai:
         return None
 
     dati = [
@@ -869,15 +942,16 @@ def componi_messaggio(g: dict, valutazione: dict | None) -> str:
     return "\n".join(righe)
 
 
-def invia_telegram(testo: str) -> bool:
-    if DRY_RUN or not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
+def invia_telegram(testo: str, chat_id: str = "") -> bool:
+    chat_id = chat_id or TELEGRAM_CHAT_ID
+    if DRY_RUN or not TELEGRAM_TOKEN or not chat_id:
         log.info("[DRY] %s", testo.replace("\n", " | ")[:300])
         return True
     try:
         r = requests.post(
             f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
             json={
-                "chat_id": TELEGRAM_CHAT_ID,
+                "chat_id": chat_id,
                 "text": testo,
                 "parse_mode": "HTML",
                 "disable_web_page_preview": True,
@@ -904,7 +978,10 @@ def main():
     if AI_OFF or not ANTHROPIC_API_KEY:
         log.info("Valutazione AI disattivata")
 
-    profilo = carica_profilo()
+    global _limite_ai
+    profili = carica_profili()
+    _limite_ai = MAX_CHIAMATE_AI * len(profili)
+    log.info("Profili attivi: %s", ", ".join(p["_nome"] for p in profili))
     memoria = carica_memoria()
     if RIPROVA:
         log.info("RIPROVA: memoria e segnalibro ignorati per questo avvio")
@@ -923,44 +1000,58 @@ def main():
     inviati = 0
     notificate: list[dict] = []
     senza_voto = 0
-    for g in gare:
-        if g["id"] in memoria:
-            continue
-
-        ok, motivo_scarto = passa_filtri(g, profilo)
-        dati = {k: g[k] for k in ("oggetto", "ente", "importo", "scadenza", "cig", "luogo")}
-        dati["prima_vista"] = datetime.now(timezone.utc).isoformat()
-        if not ok:
-            chiave = motivo_scarto.split(" (")[0] if motivo_scarto.startswith("esclusa") else motivo_scarto
-            scarti[chiave] = scarti.get(chiave, 0) + 1
-            dati["scartata"] = motivo_scarto
-            memoria[g["id"]] = dati
-            continue
-
-        valutazione = valuta_con_ai(g, profilo)
-        if SOGLIA_SCORE and not valutazione:
-            # Con la soglia attiva non si invia una gara senza voto (limite di
-            # chiamate AI raggiunto o errore): non va in memoria, ci si riprova
-            # al prossimo avvio
-            senza_voto += 1
-            continue
-        if valutazione:
-            dati["score"] = valutazione["score"]
-            dati["motivo_ai"] = valutazione["motivo"]
-            if valutazione["score"] < SOGLIA_SCORE:
-                dati["scartata"] = f"score {valutazione['score']}"
-                memoria[g["id"]] = dati
-                log.info("  – %s scartata (score %d)", g["id"], valutazione["score"])
+    per_profilo: dict[str, int] = {p["_nome"]: 0 for p in profili}
+    for profilo in profili:
+        for g in gare:
+            chiave = chiave_memoria(profilo, g["id"])
+            if chiave in memoria:
                 continue
 
-        if invia_telegram(componi_messaggio(g, valutazione)):
-            inviati += 1
-            notificate.append(g | {"score": (valutazione or {}).get("score")})
-            memoria[g["id"]] = dati
-            log.info("  ✓ %s", g["id"])
-            time.sleep(1.3)
-        else:
-            log.warning("  ✗ fallito invio %s", g["id"])
+            ok, motivo_scarto = passa_filtri(g, profilo)
+            dati = {k: g[k] for k in ("oggetto", "ente", "importo", "scadenza", "cig", "luogo")}
+            dati["prima_vista"] = datetime.now(timezone.utc).isoformat()
+            if not ok:
+                if not profilo["_id"]:
+                    chiave_s = motivo_scarto.split(" (")[0] if motivo_scarto.startswith("esclusa") else motivo_scarto
+                    scarti[chiave_s] = scarti.get(chiave_s, 0) + 1
+                    dati["scartata"] = motivo_scarto
+                    memoria[chiave] = dati
+                else:
+                    # Per le imprese clienti si tiene in memoria solo l'esito,
+                    # senza ripetere i dati della gara
+                    memoria[chiave] = {"scartata": motivo_scarto}
+                continue
+
+            valutazione = valuta_con_ai(g, profilo)
+            if SOGLIA_SCORE and not valutazione:
+                # Con la soglia attiva non si invia una gara senza voto (limite di
+                # chiamate AI raggiunto o errore): non va in memoria, ci si riprova
+                # al prossimo avvio
+                senza_voto += 1
+                continue
+            if not profilo["_id"]:
+                registro = dati
+            else:
+                registro = {"prima_vista": dati["prima_vista"]}
+            if valutazione:
+                registro["score"] = valutazione["score"]
+                registro["motivo_ai"] = valutazione["motivo"]
+                if valutazione["score"] < SOGLIA_SCORE:
+                    registro["scartata"] = f"score {valutazione['score']}"
+                    memoria[chiave] = registro
+                    log.info("  – [%s] %s scartata (score %d)", profilo["_nome"], g["id"], valutazione["score"])
+                    continue
+
+            if invia_telegram(componi_messaggio(g, valutazione), profilo["_chat"]):
+                inviati += 1
+                per_profilo[profilo["_nome"]] += 1
+                if not profilo["_id"]:
+                    notificate.append(g | {"score": (valutazione or {}).get("score")})
+                memoria[chiave] = registro
+                log.info("  ✓ [%s] %s", profilo["_nome"], g["id"])
+                time.sleep(1.3)
+            else:
+                log.warning("  ✗ [%s] fallito invio %s", profilo["_nome"], g["id"])
 
     if scarti:
         log.info("Scartate dai filtri: %s", scarti)
@@ -979,6 +1070,8 @@ def main():
         # Riepilogo come annotazioni: si leggono dalla pagina dell'avvio senza aprire i log
         def ann(titolo, testo):
             print(f"::notice title={titolo}::" + " ".join(str(testo).split()).replace("%", "%25"))
+        if len(profili) > 1:
+            ann("Profili", " · ".join(f"{k}: {v} gare" for k, v in per_profilo.items()))
         ann("Lupin Gare", f"{len(gare)} avvisi scaricati, {inviati} gare notificate"
                           f"{' (DRY_RUN)' if DRY_RUN else ''}. Scarti: {scarti or 'nessuno'}")
         for g in notificate[:8]:
