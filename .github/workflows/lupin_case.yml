@@ -1,0 +1,63 @@
+name: Lupin Case (raccolta annunci Sardegna)
+
+on:
+  schedule:
+    - cron: '13 2 * * *'   # una volta al giorno, di notte (04:13 ora legale italiana)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Modalità test (memoria non salvata)'
+        type: boolean
+        default: true
+      province:
+        description: 'Solo queste province, separate da virgola (ca,ss,ot,nu,og,or,ci,vs). Vuoto = tutte'
+        type: string
+        default: ''
+      max_pagine:
+        description: 'Tetto di pagine per provincia'
+        type: string
+        default: '120'
+
+permissions:
+  contents: write
+
+# Stesso gruppo di Lupin gare: i due job non salvano mai in contemporanea
+concurrency:
+  group: lupin-memoria
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: Installa dipendenze
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+
+      - name: Raccogli gli annunci
+        env:
+          DRY_RUN: ${{ github.event.inputs.dry_run || '0' }}
+          PROVINCE: ${{ github.event.inputs.province || '' }}
+          MAX_PAGINE: ${{ github.event.inputs.max_pagine || '120' }}
+        run: python lupin_case.py
+
+      - name: Salva memoria
+        if: always()
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add annunci_memoria.json
+          git commit -m "chore: update memoria annunci [skip ci]" || exit 0
+          git pull --rebase origin main
+          git push origin main
