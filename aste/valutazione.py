@@ -20,6 +20,7 @@ Uso:
 Nessun dato personale: niente nomi di debitori, solo dati dell'immobile.
 """
 
+import html
 import json
 import sys
 from pathlib import Path
@@ -155,28 +156,31 @@ def _euro(n: float) -> str:
 
 
 def messaggio(v: dict) -> str:
-    """Testo pronto per Telegram (Markdown semplice)."""
-    titolo = v.get("descrizione") or "Immobile"
+    """Testo pronto per Telegram (parse_mode HTML, come Lupin gare)."""
+    def e(x, quote=False):
+        return html.escape(x, quote=quote)
+    titolo = e(v.get("descrizione") or "Immobile")
+    zona = f" (zona {e(v['zona'])})" if v["zona"] else ""
     righe = [
-        f"🏠 *{titolo}* – {v['comune']}" + (f" (zona {v['zona']})" if v["zona"] else ""),
+        f"🏠 <b>{titolo} – {e(v['comune'])}</b>{zona}",
         f"{v['mq']:.0f} mq · prezzo base {_euro(v['prezzo_base'])} ({_euro(v['prezzo_mq_base'])}/mq)",
         f"Offerta minima: {_euro(v['offerta_minima'])}",
         f"Valore di zona: {_euro(v['valore_omi']['medio'])} "
-        f"({_euro(v['omi_mq']['min'])}–{_euro(v['omi_mq']['max'])}/mq, fonte {v['fonte']})",
-        f"Sconto sul valore di zona: *{v['sconto_base']:.0%}* "
+        f"({_euro(v['omi_mq']['min'])}–{_euro(v['omi_mq']['max'])}/mq, fonte {e(v['fonte'])})",
+        f"Sconto sul valore di zona: <b>{v['sconto_base']:.0%}</b> "
         f"(con l'offerta minima {v['sconto_offerta_minima']:.0%})",
-        f"Giudizio: *{v['giudizio']}* · {v['punteggio']}/10",
+        f"Giudizio: <b>{e(v['giudizio'])}</b> · {v['punteggio']}/10",
     ]
     if v["controllo_annunci"]:
         c = v["controllo_annunci"]
         righe.append(f"Annunci in vendita nel comune: {_euro(c['prezzo_mq_richiesto'])}/mq richiesti "
                      f"({c['annunci']} annunci)")
     for a in v["avvisi"]:
-        righe.append(f"⚠️ {a}")
+        righe.append(f"⚠️ {e(a)}")
     if v.get("data_asta"):
-        righe.append(f"Asta: {v['data_asta']}")
+        righe.append(f"📅 Asta: {e(str(v['data_asta']))}")
     if v.get("link"):
-        righe.append(v["link"])
+        righe.append(f'🔗 <a href="{e(v["link"], quote=True)}">Apri l\'avviso di vendita</a>')
     return "\n".join(righe)
 
 
