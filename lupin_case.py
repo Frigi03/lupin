@@ -13,7 +13,7 @@ le città fuori Sardegna raccolte in passato, non vengono toccati.
 Variabili d'ambiente opzionali:
   DRY_RUN=1          → non salva la memoria (solo log)
   PROVINCE=ca,ss     → solo queste province (default: tutte)
-  MAX_PAGINE=120     → tetto di pagine per provincia
+  MAX_PAGINE=1       → pagine per provincia (Wikicasa blocca con Cloudflare le pagine oltre la prima)
 """
 
 import os
@@ -29,7 +29,7 @@ from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeo
 
 FILE_MEMORIA = Path("annunci_memoria.json")
 DRY_RUN = os.environ.get("DRY_RUN", "0").strip().lower() in ("1", "true", "yes")
-MAX_PAGINE = int(os.environ.get("MAX_PAGINE", "120"))
+MAX_PAGINE = int(os.environ.get("MAX_PAGINE", "1"))
 
 MIN_PREZZO = 10_000
 MAX_PREZZO = 5_000_000

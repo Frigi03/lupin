@@ -14,9 +14,9 @@ on:
         type: string
         default: ''
       max_pagine:
-        description: 'Tetto di pagine per provincia'
+        description: 'Pagine per provincia (oltre la prima Wikicasa blocca le richieste)'
         type: string
-        default: '120'
+        default: '1'
 
 permissions:
   contents: write
@@ -49,7 +49,7 @@ jobs:
         env:
           DRY_RUN: ${{ github.event.inputs.dry_run || '0' }}
           PROVINCE: ${{ github.event.inputs.province || '' }}
-          MAX_PAGINE: ${{ github.event.inputs.max_pagine || '120' }}
+          MAX_PAGINE: ${{ github.event.inputs.max_pagine || '1' }}
         run: python lupin_case.py
 
       - name: Salva memoria
