@@ -1666,6 +1666,19 @@
     "titolo": "Trilocale in Vendita, Via P. Mascagni 4, Quartu Sant'Elena",
     "zona": "Provincia di Cagliari"
   },
+  "30583884": {
+    "città": "Capoterra",
+    "motivo_ai": "Prezzo 8% sotto media zona, trilocale buona metratura, affari interessanti a Capoterra",
+    "mq": 76,
+    "prezzo": 135000,
+    "prezzo_mq": 1776,
+    "prima_vista": "2026-10-10T04:28:05.079673+00:00",
+    "score": 7,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Frutti d'Oro, Capoterra",
+    "url": "https://www.wikicasa.it/annuncio/30583884",
+    "zona": "Provincia di Cagliari"
+  },
   "30583887": {
     "città": "Monserrato",
     "mq": 20,
@@ -14864,6 +14877,32 @@
     "sotto_media": false,
     "titolo": "Monolocale in Vendita, Via Paruta 6, Milano",
     "url": "https://www.wikicasa.it/annuncio/31056285",
+    "zona": "Milano"
+  },
+  "31058820": {
+    "città": "Sinnai",
+    "motivo_ai": "Prezzo/mq 88% sopra media zona. Sopravvalutato o dati errati.",
+    "mq": 88,
+    "prezzo": 320000,
+    "prezzo_mq": 3636,
+    "prima_vista": "2026-10-10T04:28:38.894249+00:00",
+    "score": 2,
+    "sotto_media": false,
+    "titolo": "Villa a schiera in Vendita, Via dei Garofani 23, Sinnai",
+    "url": "https://www.wikicasa.it/annuncio/31058820",
+    "zona": "Provincia di Cagliari"
+  },
+  "31059528": {
+    "città": "Milano",
+    "motivo_ai": "Prezzo in linea con media zona. Trilocale standard, nessun elemento sconto.",
+    "mq": 85,
+    "prezzo": 415000,
+    "prezzo_mq": 4882,
+    "prima_vista": "2026-10-10T04:29:26.124569+00:00",
+    "score": 5,
+    "sotto_media": false,
+    "titolo": "Trilocale in Vendita, Via Natale Battaglia 20, Milano",
+    "url": "https://www.wikicasa.it/annuncio/31059528",
     "zona": "Milano"
   }
 }
