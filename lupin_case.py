@@ -239,6 +239,11 @@ def apri_lista(page, url: str) -> bool:
         if tentativo == 1:
             page.wait_for_timeout(random.randint(3000, 6000))
     log.warning("  Nessun annuncio su %s", url)
+    try:
+        corpo = " ".join((page.locator("body").inner_text(timeout=5000) or "").split())[:400]
+        log.warning("  [DIAG] titolo=%r url=%s body=%s", page.title(), page.url, corpo)
+    except Exception:
+        pass
     return False
 
 
