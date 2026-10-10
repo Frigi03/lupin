@@ -116,14 +116,23 @@ def _carica() -> dict:
 
 
 def riferimento(comune: str, zona: str | None = None,
-                tipologia: str | None = None) -> dict | None:
+                tipologia: str | None = None, fasce: tuple | None = None) -> dict | None:
     """Valori OMI per un comune (o una sua zona). None se il comune non è nei dati.
+
+    fasce: senza zona, limita il calcolo a queste fasce OMI (es. ("B", "C", "D") = centro,
+    semicentro e periferia, escluse zone suburbane e rurali); se nessuna zona del comune
+    è in quelle fasce, usa tutte le zone.
 
     Ritorna {"comune", "zona", "min", "max", "medio", "tipologie"} in €/mq."""
     c = _carica()["comuni"].get(normalizza(comune))
     if not c:
         return None
-    zone = [c["zone"][zona]] if zona and zona in c["zone"] else list(c["zone"].values())
+    if zona and zona in c["zone"]:
+        zone = [c["zone"][zona]]
+    else:
+        zone = list(c["zone"].values())
+        if fasce:
+            zone = [z for z in zone if z.get("fascia") in fasce] or zone
     tipi = (tipologia,) if tipologia else TIPOLOGIE_CASA
     valori = [t for z in zone for n, t in z["tipologie"].items() if n in tipi]
     if not valori:
