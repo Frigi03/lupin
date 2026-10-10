@@ -34,6 +34,8 @@ def normalizza(nome: str) -> str:
     """'QUARTU SANT`ELENA' e "Quartu Sant'Elena" diventano la stessa chiave."""
     s = unicodedata.normalize("NFKD", nome or "").encode("ascii", "ignore").decode()
     s = s.replace("`", "'").upper()
+    # OMI scrive le vocali accentate con un apice finale: "TORTOLI`" = Tortolì
+    s = re.sub(r"'(?=\s|$)", "", s)
     s = re.sub(r"[^A-Z0-9' ]", " ", s)
     return re.sub(r"\s+", " ", s).strip()
 
