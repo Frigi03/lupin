@@ -1447,6 +1447,18 @@
     "titolo": "Appartamento in Vendita, Via Montevecchio 23, Cagliari",
     "zona": "Cagliari"
   },
+  "30551379": {
+    "città": "Villaspeciosa",
+    "mq": 70,
+    "prezzo": 136000,
+    "prezzo_mq": 1943,
+    "prima_vista": "2026-10-11T08:53:59.010523+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Trilocale in Vendita, Via Iglesias 5, Villaspeciosa",
+    "url": "https://www.wikicasa.it/annuncio/30551379",
+    "zona": "Provincia di Cagliari"
+  },
   "30553500": {
     "città": "Quartucciu",
     "mq": 60,
@@ -5518,6 +5530,18 @@
     "sotto_media": true,
     "titolo": "Trilocale in Vendita, Via San Giusto 16, Milano"
   },
+  "30773217": {
+    "città": "Muravera",
+    "mq": 85,
+    "prezzo": 128000,
+    "prezzo_mq": 1506,
+    "prima_vista": "2026-10-11T08:53:59.010523+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Trilocale in Vendita, Via San Leonardo 4, Muravera",
+    "url": "https://www.wikicasa.it/annuncio/30773217",
+    "zona": "Provincia di Cagliari"
+  },
   "30773229": {
     "città": "Firenze",
     "mq": 80,
@@ -5823,6 +5847,18 @@
     "prima_vista": "2026-09-09T03:11:00.713480+00:00",
     "sotto_media": false,
     "titolo": "Appartamento in Vendita, Via Mario Giuriati 17, Milano"
+  },
+  "30783345": {
+    "città": "Domus de Maria",
+    "mq": 300,
+    "prezzo": 670000,
+    "prezzo_mq": 2233,
+    "prima_vista": "2026-10-11T08:53:59.010523+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Villa in Vendita, Via Alcide De Gasperi 17, Domus de Maria",
+    "url": "https://www.wikicasa.it/annuncio/30783345",
+    "zona": "Provincia di Cagliari"
   },
   "30783930": {
     "città": "Napoli",
@@ -10089,6 +10125,18 @@
     "score": 8,
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Via Ubaldino Peruzzi 63, Roma"
+  },
+  "30929262": {
+    "città": "Uta",
+    "mq": 250,
+    "prezzo": 425000,
+    "prezzo_mq": 1700,
+    "prima_vista": "2026-10-11T08:53:59.010523+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Villa in Vendita, Via Is Prunixeddas 84a, Uta",
+    "url": "https://www.wikicasa.it/annuncio/30929262",
+    "zona": "Provincia di Cagliari"
   },
   "30929268": {
     "città": "Firenze",
@@ -14450,6 +14498,18 @@
     "url": "https://www.wikicasa.it/annuncio/31045191",
     "zona": "Torino"
   },
+  "31046736": {
+    "città": "Uta",
+    "mq": 135,
+    "prezzo": 185000,
+    "prezzo_mq": 1370,
+    "prima_vista": "2026-10-11T08:53:59.010523+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Trilocale in Vendita, Via Sassari, Uta",
+    "url": "https://www.wikicasa.it/annuncio/31046736",
+    "zona": "Provincia di Cagliari"
+  },
   "31047729": {
     "città": "Torino",
     "motivo_ai": "Prezzo 15% sopra media zona. Metratura ampia, ma nessun indicatore di affare particolare.",
@@ -14904,5 +14964,17 @@
     "titolo": "Trilocale in Vendita, Via Natale Battaglia 20, Milano",
     "url": "https://www.wikicasa.it/annuncio/31059528",
     "zona": "Milano"
+  },
+  "31066035": {
+    "città": "Uta",
+    "mq": 83,
+    "prezzo": 160000,
+    "prezzo_mq": 1928,
+    "prima_vista": "2026-10-11T08:53:59.010523+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Trilocale in Vendita, Via Piero della Francesca 22, Uta",
+    "url": "https://www.wikicasa.it/annuncio/31066035",
+    "zona": "Provincia di Cagliari"
   }
 }
