@@ -15276,5 +15276,113 @@
     "titolo": "Trilocale in Vendita, Via Piero della Francesca 22, Uta",
     "url": "https://www.wikicasa.it/annuncio/31066035",
     "zona": "Provincia di Cagliari"
+  },
+  "31072812": {
+    "città": "Quartu Sant'Elena",
+    "mq": 160,
+    "prezzo": 650000,
+    "prezzo_mq": 4062,
+    "prima_vista": "2026-10-14T07:40:37.384194+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Villa in Vendita, Via delle Orchidee 99, Quartu Sant'Elena",
+    "url": "https://www.wikicasa.it/annuncio/31072812",
+    "zona": "Provincia di Cagliari"
+  },
+  "31072887": {
+    "città": "Cagliari",
+    "mq": 45,
+    "prezzo": 200000,
+    "prezzo_mq": 4444,
+    "prima_vista": "2026-10-14T07:40:37.384194+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Bilocale in Vendita, Cagliari",
+    "url": "https://www.wikicasa.it/annuncio/31072887",
+    "zona": "Provincia di Cagliari"
+  },
+  "31072992": {
+    "città": "Sarroch",
+    "mq": 200,
+    "prezzo": 490000,
+    "prezzo_mq": 2450,
+    "prima_vista": "2026-10-14T07:40:37.384194+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Villa in Vendita, Sarroch",
+    "url": "https://www.wikicasa.it/annuncio/31072992",
+    "zona": "Provincia di Cagliari"
+  },
+  "31073256": {
+    "città": "Villa San Pietro",
+    "mq": 78,
+    "prezzo": 185000,
+    "prezzo_mq": 2372,
+    "prima_vista": "2026-10-14T07:40:37.384194+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Trilocale in Vendita, Viale Sardegna 89, Villa San Pietro",
+    "url": "https://www.wikicasa.it/annuncio/31073256",
+    "zona": "Provincia di Cagliari"
+  },
+  "31080327": {
+    "città": "Sinnai",
+    "mq": 80,
+    "prezzo": 207000,
+    "prezzo_mq": 2588,
+    "prima_vista": "2026-10-14T07:40:37.384194+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Quadrilocale in Vendita, Sinnai",
+    "url": "https://www.wikicasa.it/annuncio/31080327",
+    "zona": "Provincia di Cagliari"
+  },
+  "31085583": {
+    "città": "Quartucciu",
+    "mq": 53,
+    "prezzo": 149000,
+    "prezzo_mq": 2811,
+    "prima_vista": "2026-10-14T07:40:37.384194+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Bilocale in Vendita, Via delle Serre, Quartucciu",
+    "url": "https://www.wikicasa.it/annuncio/31085583",
+    "zona": "Provincia di Cagliari"
+  },
+  "31085868": {
+    "città": "Cagliari",
+    "mq": 70,
+    "prezzo": 195000,
+    "prezzo_mq": 2786,
+    "prima_vista": "2026-10-14T07:40:37.384194+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Trilocale in Vendita, Via Falletti, Cagliari",
+    "url": "https://www.wikicasa.it/annuncio/31085868",
+    "zona": "Provincia di Cagliari"
+  },
+  "31087503": {
+    "città": "Muravera",
+    "mq": 300,
+    "prezzo": 390000,
+    "prezzo_mq": 1300,
+    "prima_vista": "2026-10-14T07:40:37.384194+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Villa in Nuda proprietà, Via delle Rose 67, Muravera",
+    "url": "https://www.wikicasa.it/annuncio/31087503",
+    "zona": "Provincia di Cagliari"
+  },
+  "31089492": {
+    "città": "Domus de Maria",
+    "mq": 105,
+    "prezzo": 269000,
+    "prezzo_mq": 2562,
+    "prima_vista": "2026-10-14T07:40:37.384194+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Villa a schiera in Vendita, Via Petrarca, Domus de Maria",
+    "url": "https://www.wikicasa.it/annuncio/31089492",
+    "zona": "Provincia di Cagliari"
   }
 }
