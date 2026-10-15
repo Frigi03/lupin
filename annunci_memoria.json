@@ -15384,5 +15384,53 @@
     "titolo": "Villa a schiera in Vendita, Via Petrarca, Domus de Maria",
     "url": "https://www.wikicasa.it/annuncio/31089492",
     "zona": "Provincia di Cagliari"
+  },
+  "31100742": {
+    "città": "Quartu Sant'Elena",
+    "mq": 96,
+    "prezzo": 195000,
+    "prezzo_mq": 2031,
+    "prima_vista": "2026-10-15T07:28:51.219117+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Loft in Vendita, Via Guglielmo Marconi 00, Quartu Sant'Elena",
+    "url": "https://www.wikicasa.it/annuncio/31100742",
+    "zona": "Provincia di Cagliari"
+  },
+  "31100796": {
+    "città": "Monserrato",
+    "mq": 95,
+    "prezzo": 130000,
+    "prezzo_mq": 1368,
+    "prima_vista": "2026-10-15T07:28:51.219117+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Appartamento in Vendita, Via Marco Claudio Marcello 34, Monserrato",
+    "url": "https://www.wikicasa.it/annuncio/31100796",
+    "zona": "Provincia di Cagliari"
+  },
+  "31104735": {
+    "città": "Decimomannu",
+    "mq": 92,
+    "prezzo": 225000,
+    "prezzo_mq": 2446,
+    "prima_vista": "2026-10-15T07:28:51.219117+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Quadrilocale in Vendita, Via Sandro Pertini 27, Decimomannu",
+    "url": "https://www.wikicasa.it/annuncio/31104735",
+    "zona": "Provincia di Cagliari"
+  },
+  "31105905": {
+    "città": "Quartu Sant'Elena",
+    "mq": 105,
+    "prezzo": 379000,
+    "prezzo_mq": 3610,
+    "prima_vista": "2026-10-15T07:28:51.219117+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Casa indipendente in Vendita, Via Giosuè Carducci 42, Quartu Sant'Elena",
+    "url": "https://www.wikicasa.it/annuncio/31105905",
+    "zona": "Provincia di Cagliari"
   }
 }
