@@ -15432,5 +15432,41 @@
     "titolo": "Casa indipendente in Vendita, Via Giosuè Carducci 42, Quartu Sant'Elena",
     "url": "https://www.wikicasa.it/annuncio/31105905",
     "zona": "Provincia di Cagliari"
+  },
+  "31110066": {
+    "città": "Elmas",
+    "mq": 80,
+    "prezzo": 239000,
+    "prezzo_mq": 2988,
+    "prima_vista": "2026-10-16T07:12:05.738346+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Trilocale in Vendita, Via Golfo di Orosei 14, Elmas",
+    "url": "https://www.wikicasa.it/annuncio/31110066",
+    "zona": "Provincia di Cagliari"
+  },
+  "31113654": {
+    "città": "Cagliari",
+    "mq": 120,
+    "prezzo": 229000,
+    "prezzo_mq": 1908,
+    "prima_vista": "2026-10-16T07:12:05.738346+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Quadrilocale in Vendita, Via Gaetano Donizetti 52, Cagliari",
+    "url": "https://www.wikicasa.it/annuncio/31113654",
+    "zona": "Provincia di Cagliari"
+  },
+  "31117890": {
+    "città": "Cagliari",
+    "mq": 137,
+    "prezzo": 204000,
+    "prezzo_mq": 1489,
+    "prima_vista": "2026-10-16T07:12:05.738346+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Trilocale in Vendita, Via Flumentepido , Cagliari",
+    "url": "https://www.wikicasa.it/annuncio/31117890",
+    "zona": "Provincia di Cagliari"
   }
 }
