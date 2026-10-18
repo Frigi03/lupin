@@ -15564,5 +15564,29 @@
     "titolo": "Villa a schiera in Vendita, Via Cagliari 00, Villasor",
     "url": "https://www.wikicasa.it/annuncio/31130829",
     "zona": "Provincia di Cagliari"
+  },
+  "31137495": {
+    "città": "Cagliari",
+    "mq": 105,
+    "prezzo": 299000,
+    "prezzo_mq": 2848,
+    "prima_vista": "2026-10-18T07:15:23.040323+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Trilocale in Vendita, Via Ugo Foscolo, Cagliari",
+    "url": "https://www.wikicasa.it/annuncio/31137495",
+    "zona": "Provincia di Cagliari"
+  },
+  "31138515": {
+    "città": "Cagliari",
+    "mq": 115,
+    "prezzo": 189000,
+    "prezzo_mq": 1643,
+    "prima_vista": "2026-10-18T07:15:23.040323+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Trilocale in Nuda proprietà, Via Domenico Cimarosa 32, Cagliari",
+    "url": "https://www.wikicasa.it/annuncio/31138515",
+    "zona": "Provincia di Cagliari"
   }
 }
