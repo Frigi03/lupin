@@ -15277,6 +15277,30 @@
     "url": "https://www.wikicasa.it/annuncio/31066035",
     "zona": "Provincia di Cagliari"
   },
+  "31070184": {
+    "città": "Sorso",
+    "mq": 180,
+    "prezzo": 178000,
+    "prezzo_mq": 989,
+    "prima_vista": "2026-10-22T07:38:28.189723+00:00",
+    "provincia": "SS",
+    "regione": "Sardegna",
+    "titolo": "Appartamento in Vendita, Sp81, Sorso",
+    "url": "https://www.wikicasa.it/annuncio/31070184",
+    "zona": "Provincia di Sassari"
+  },
+  "31071456": {
+    "città": "Alghero",
+    "mq": 128,
+    "prezzo": 395000,
+    "prezzo_mq": 3086,
+    "prima_vista": "2026-10-22T07:38:28.189723+00:00",
+    "provincia": "SS",
+    "regione": "Sardegna",
+    "titolo": "Attico in Vendita, Via Salvatore Diez 7a, Alghero",
+    "url": "https://www.wikicasa.it/annuncio/31071456",
+    "zona": "Provincia di Sassari"
+  },
   "31072812": {
     "città": "Quartu Sant'Elena",
     "mq": 160,
@@ -15384,6 +15408,30 @@
     "titolo": "Villa a schiera in Vendita, Via Petrarca, Domus de Maria",
     "url": "https://www.wikicasa.it/annuncio/31089492",
     "zona": "Provincia di Cagliari"
+  },
+  "31091748": {
+    "città": "Sassari",
+    "mq": 120,
+    "prezzo": 130000,
+    "prezzo_mq": 1083,
+    "prima_vista": "2026-10-22T07:38:28.189723+00:00",
+    "provincia": "SS",
+    "regione": "Sardegna",
+    "titolo": "Quadrilocale in Vendita, Sassari",
+    "url": "https://www.wikicasa.it/annuncio/31091748",
+    "zona": "Provincia di Sassari"
+  },
+  "31098753": {
+    "città": "Sassari",
+    "mq": 72,
+    "prezzo": 75000,
+    "prezzo_mq": 1042,
+    "prima_vista": "2026-10-22T07:38:28.189723+00:00",
+    "provincia": "SS",
+    "regione": "Sardegna",
+    "titolo": "Trilocale in Vendita, Via Giuseppe Meridda, LI Punti, Sassari",
+    "url": "https://www.wikicasa.it/annuncio/31098753",
+    "zona": "Provincia di Sassari"
   },
   "31100742": {
     "città": "Quartu Sant'Elena",
@@ -15636,6 +15684,18 @@
     "titolo": "Trilocale in Vendita, Via San Antonio 29, Decimoputzu",
     "url": "https://www.wikicasa.it/annuncio/31153455",
     "zona": "Provincia di Cagliari"
+  },
+  "31154622": {
+    "città": "Sassari",
+    "mq": 80,
+    "prezzo": 210000,
+    "prezzo_mq": 2625,
+    "prima_vista": "2026-10-22T07:38:28.189723+00:00",
+    "provincia": "SS",
+    "regione": "Sardegna",
+    "titolo": "Trilocale in Vendita, Sassari",
+    "url": "https://www.wikicasa.it/annuncio/31154622",
+    "zona": "Provincia di Sassari"
   },
   "31155696": {
     "città": "Cagliari",
