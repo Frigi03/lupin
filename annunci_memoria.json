@@ -657,6 +657,18 @@
     "titolo": "Quadrilocale in Vendita, Via Corsica 8, Sinnai",
     "zona": "Provincia di Cagliari"
   },
+  "29647750": {
+    "città": "Tempio Pausania",
+    "mq": 650,
+    "prezzo": 295000,
+    "prezzo_mq": 454,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Villa in Vendita, Via Giacomo Puccini, Tempio Pausania",
+    "url": "https://www.wikicasa.it/annuncio/29647750",
+    "zona": "Gallura Nord-Est Sardegna"
+  },
   "29661898": {
     "città": "Monserrato",
     "mq": 109,
@@ -699,6 +711,18 @@
   },
   "29708278": {
     "prima_vista": "2026-08-07T02:42:18.613471+00:00"
+  },
+  "29714665": {
+    "città": "San Teodoro",
+    "mq": 88,
+    "prezzo": 285000,
+    "prezzo_mq": 3239,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Casa indipendente in Vendita, Via Madrid, San Teodoro",
+    "url": "https://www.wikicasa.it/annuncio/29714665",
+    "zona": "Gallura Nord-Est Sardegna"
   },
   "29726392": {
     "città": "Quartucciu",
@@ -1012,6 +1036,18 @@
     "sotto_media": true,
     "titolo": "Quadrilocale in Vendita, Sinnai",
     "zona": "Provincia di Cagliari"
+  },
+  "30203440": {
+    "città": "Arzachena",
+    "mq": 70,
+    "prezzo": 280000,
+    "prezzo_mq": 4000,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Appartamento in Vendita, Arzachena",
+    "url": "https://www.wikicasa.it/annuncio/30203440",
+    "zona": "Gallura Nord-Est Sardegna"
   },
   "30213451": {
     "città": "Sinnai",
@@ -1488,6 +1524,18 @@
     "sotto_media": false,
     "titolo": "Villa in Vendita, Sinnai",
     "zona": "Provincia di Cagliari"
+  },
+  "30551298": {
+    "città": "Trinità d'Agultu e Vignola",
+    "mq": 130,
+    "prezzo": 110000,
+    "prezzo_mq": 846,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Quadrilocale in Vendita, Via Luigino Cossu 13, Trinità d'Agultu e Vignola",
+    "url": "https://www.wikicasa.it/annuncio/30551298",
+    "zona": "Gallura Nord-Est Sardegna"
   },
   "30551313": {
     "città": "Selargius",
@@ -15457,6 +15505,18 @@
     "url": "https://www.wikicasa.it/annuncio/31100796",
     "zona": "Provincia di Cagliari"
   },
+  "31103688": {
+    "città": "Olbia",
+    "mq": 40,
+    "prezzo": 85000,
+    "prezzo_mq": 2125,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Bilocale in Vendita, Via Lombardi 4, Olbia",
+    "url": "https://www.wikicasa.it/annuncio/31103688",
+    "zona": "Gallura Nord-Est Sardegna"
+  },
   "31104735": {
     "città": "Decimomannu",
     "mq": 92,
@@ -15493,6 +15553,18 @@
     "url": "https://www.wikicasa.it/annuncio/31110066",
     "zona": "Provincia di Cagliari"
   },
+  "31111809": {
+    "città": "Palau",
+    "mq": 100,
+    "prezzo": 449000,
+    "prezzo_mq": 4490,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Quadrilocale in Vendita, Palau",
+    "url": "https://www.wikicasa.it/annuncio/31111809",
+    "zona": "Gallura Nord-Est Sardegna"
+  },
   "31113654": {
     "città": "Cagliari",
     "mq": 120,
@@ -15516,6 +15588,30 @@
     "titolo": "Trilocale in Vendita, Via Flumentepido , Cagliari",
     "url": "https://www.wikicasa.it/annuncio/31117890",
     "zona": "Provincia di Cagliari"
+  },
+  "31118961": {
+    "città": "Olbia",
+    "mq": 160,
+    "prezzo": 285000,
+    "prezzo_mq": 1781,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Quadrilocale in Vendita, Via Salvatore Fera 8, Olbia",
+    "url": "https://www.wikicasa.it/annuncio/31118961",
+    "zona": "Gallura Nord-Est Sardegna"
+  },
+  "31120803": {
+    "città": "San Teodoro",
+    "mq": 70,
+    "prezzo": 285000,
+    "prezzo_mq": 4071,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Villa in Vendita, Via di La Stritta, Snc, San Teodoro",
+    "url": "https://www.wikicasa.it/annuncio/31120803",
+    "zona": "Gallura Nord-Est Sardegna"
   },
   "31127028": {
     "città": "Sinnai",
@@ -15613,6 +15709,30 @@
     "url": "https://www.wikicasa.it/annuncio/31130829",
     "zona": "Provincia di Cagliari"
   },
+  "31137000": {
+    "città": "Santa Teresa Gallura",
+    "mq": 150,
+    "prezzo": 730000,
+    "prezzo_mq": 4867,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Villa in Vendita, Santa Teresa Gallura",
+    "url": "https://www.wikicasa.it/annuncio/31137000",
+    "zona": "Gallura Nord-Est Sardegna"
+  },
+  "31137009": {
+    "città": "San Teodoro",
+    "mq": 113,
+    "prezzo": 476000,
+    "prezzo_mq": 4212,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Villa in Vendita, San Teodoro",
+    "url": "https://www.wikicasa.it/annuncio/31137009",
+    "zona": "Gallura Nord-Est Sardegna"
+  },
   "31137495": {
     "città": "Cagliari",
     "mq": 105,
@@ -15649,6 +15769,18 @@
     "url": "https://www.wikicasa.it/annuncio/31141965",
     "zona": "Provincia di Cagliari"
   },
+  "31144629": {
+    "città": "Arzachena",
+    "mq": 177,
+    "prezzo": null,
+    "prezzo_mq": null,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Villa unifamiliare in Vendita, Via della Bolina 37, Arzachena",
+    "url": "https://www.wikicasa.it/annuncio/31144629",
+    "zona": "Gallura Nord-Est Sardegna"
+  },
   "31146087": {
     "città": "Cagliari",
     "mq": 69,
@@ -15673,6 +15805,30 @@
     "url": "https://www.wikicasa.it/annuncio/31147728",
     "zona": "Provincia di Cagliari"
   },
+  "31152438": {
+    "città": "Budoni",
+    "mq": 179,
+    "prezzo": 720000,
+    "prezzo_mq": 4022,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Villa in Vendita, Budoni",
+    "url": "https://www.wikicasa.it/annuncio/31152438",
+    "zona": "Gallura Nord-Est Sardegna"
+  },
+  "31152882": {
+    "città": "Olbia",
+    "mq": 104,
+    "prezzo": 350000,
+    "prezzo_mq": 3365,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Appartamento in Vendita, Via Guido Cavalcanti 5, Olbia",
+    "url": "https://www.wikicasa.it/annuncio/31152882",
+    "zona": "Gallura Nord-Est Sardegna"
+  },
   "31153455": {
     "città": "Decimoputzu",
     "mq": 100,
@@ -15684,6 +15840,18 @@
     "titolo": "Trilocale in Vendita, Via San Antonio 29, Decimoputzu",
     "url": "https://www.wikicasa.it/annuncio/31153455",
     "zona": "Provincia di Cagliari"
+  },
+  "31153647": {
+    "città": "Olbia",
+    "mq": 240,
+    "prezzo": 950000,
+    "prezzo_mq": 3958,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Villa unifamiliare in Vendita, Strada Statale 125 Orientale Sarda, Olbia",
+    "url": "https://www.wikicasa.it/annuncio/31153647",
+    "zona": "Gallura Nord-Est Sardegna"
   },
   "31154622": {
     "città": "Sassari",
@@ -15768,5 +15936,137 @@
     "titolo": "Trilocale in Vendita, Via Tempio 7, Capoterra",
     "url": "https://www.wikicasa.it/annuncio/31162566",
     "zona": "Provincia di Cagliari"
+  },
+  "31164201": {
+    "città": "Olbia",
+    "mq": 96,
+    "prezzo": 330000,
+    "prezzo_mq": 3438,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Trilocale in Vendita, Olbia",
+    "url": "https://www.wikicasa.it/annuncio/31164201",
+    "zona": "Gallura Nord-Est Sardegna"
+  },
+  "31165350": {
+    "città": "Palau",
+    "mq": 91,
+    "prezzo": 1500000,
+    "prezzo_mq": 16484,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Villa in Vendita, Palau",
+    "url": "https://www.wikicasa.it/annuncio/31165350",
+    "zona": "Gallura Nord-Est Sardegna"
+  },
+  "31166127": {
+    "città": "Olbia",
+    "mq": 60,
+    "prezzo": 240000,
+    "prezzo_mq": 4000,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Trilocale in Vendita, Olbia",
+    "url": "https://www.wikicasa.it/annuncio/31166127",
+    "zona": "Gallura Nord-Est Sardegna"
+  },
+  "31167396": {
+    "città": "Budoni",
+    "mq": 120,
+    "prezzo": 475000,
+    "prezzo_mq": 3958,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Casa indipendente in Vendita, Budoni",
+    "url": "https://www.wikicasa.it/annuncio/31167396",
+    "zona": "Gallura Nord-Est Sardegna"
+  },
+  "31172358": {
+    "città": "Palau",
+    "mq": 56,
+    "prezzo": 163000,
+    "prezzo_mq": 2911,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Trilocale in Vendita, Loc. Stazzu Pulcheddu, Palau",
+    "url": "https://www.wikicasa.it/annuncio/31172358",
+    "zona": "Gallura Nord-Est Sardegna"
+  },
+  "31173354": {
+    "città": "Olbia",
+    "mq": 300,
+    "prezzo": 650000,
+    "prezzo_mq": 2167,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Villa in Vendita, Via Raica 78, Olbia",
+    "url": "https://www.wikicasa.it/annuncio/31173354",
+    "zona": "Gallura Nord-Est Sardegna"
+  },
+  "31173396": {
+    "città": "Golfo Aranci",
+    "mq": 240,
+    "prezzo": 780000,
+    "prezzo_mq": 3250,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Rustico in Vendita, Via Sopramonte 8, Golfo Aranci",
+    "url": "https://www.wikicasa.it/annuncio/31173396",
+    "zona": "Gallura Nord-Est Sardegna"
+  },
+  "31176678": {
+    "città": "Budoni",
+    "mq": 162,
+    "prezzo": 638000,
+    "prezzo_mq": 3938,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Villa in Vendita, Budoni",
+    "url": "https://www.wikicasa.it/annuncio/31176678",
+    "zona": "Gallura Nord-Est Sardegna"
+  },
+  "31176681": {
+    "città": "Olbia",
+    "mq": 60,
+    "prezzo": 250000,
+    "prezzo_mq": 4167,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Trilocale in Vendita, Olbia",
+    "url": "https://www.wikicasa.it/annuncio/31176681",
+    "zona": "Gallura Nord-Est Sardegna"
+  },
+  "31176684": {
+    "città": "Berchidda",
+    "mq": 90,
+    "prezzo": 109000,
+    "prezzo_mq": 1211,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Casa indipendente in Vendita, Berchidda",
+    "url": "https://www.wikicasa.it/annuncio/31176684",
+    "zona": "Gallura Nord-Est Sardegna"
+  },
+  "31177980": {
+    "città": "Tempio Pausania",
+    "mq": 63,
+    "prezzo": 219000,
+    "prezzo_mq": 3476,
+    "prima_vista": "2026-10-23T07:36:46.051287+00:00",
+    "provincia": "OT",
+    "regione": "Sardegna",
+    "titolo": "Trilocale in Vendita, Via Caduti di Nassyria 1, Tempio Pausania",
+    "url": "https://www.wikicasa.it/annuncio/31177980",
+    "zona": "Gallura Nord-Est Sardegna"
   }
 }
