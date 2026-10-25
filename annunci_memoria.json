@@ -15985,6 +15985,30 @@
     "url": "https://www.wikicasa.it/annuncio/31167396",
     "zona": "Gallura Nord-Est Sardegna"
   },
+  "31169646": {
+    "città": "Monserrato",
+    "mq": 41,
+    "prezzo": 75000,
+    "prezzo_mq": 1829,
+    "prima_vista": "2026-10-25T07:37:07.530249+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Casa indipendente in Vendita, Monserrato",
+    "url": "https://www.wikicasa.it/annuncio/31169646",
+    "zona": "Provincia di Cagliari"
+  },
+  "31171986": {
+    "città": "Quartu Sant'Elena",
+    "mq": 85,
+    "prezzo": 189000,
+    "prezzo_mq": 2224,
+    "prima_vista": "2026-10-25T07:37:07.530249+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Casa indipendente in Vendita, Via Giovanni Maria Angioy, Quartu Sant'Elena",
+    "url": "https://www.wikicasa.it/annuncio/31171986",
+    "zona": "Provincia di Cagliari"
+  },
   "31172358": {
     "città": "Palau",
     "mq": 56,
@@ -16020,6 +16044,18 @@
     "titolo": "Rustico in Vendita, Via Sopramonte 8, Golfo Aranci",
     "url": "https://www.wikicasa.it/annuncio/31173396",
     "zona": "Gallura Nord-Est Sardegna"
+  },
+  "31173411": {
+    "città": "Muravera",
+    "mq": 85,
+    "prezzo": 123000,
+    "prezzo_mq": 1447,
+    "prima_vista": "2026-10-25T07:37:07.530249+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Trilocale in Vendita, Via San Leonardo 4, Muravera",
+    "url": "https://www.wikicasa.it/annuncio/31173411",
+    "zona": "Provincia di Cagliari"
   },
   "31176678": {
     "città": "Budoni",
@@ -16068,5 +16104,125 @@
     "titolo": "Trilocale in Vendita, Via Caduti di Nassyria 1, Tempio Pausania",
     "url": "https://www.wikicasa.it/annuncio/31177980",
     "zona": "Gallura Nord-Est Sardegna"
+  },
+  "31178100": {
+    "città": "Siliqua",
+    "mq": 400,
+    "prezzo": 85000,
+    "prezzo_mq": 212,
+    "prima_vista": "2026-10-25T07:37:07.530249+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Casa indipendente in Vendita, Via Marconi 7/9, Siliqua",
+    "url": "https://www.wikicasa.it/annuncio/31178100",
+    "zona": "Provincia di Cagliari"
+  },
+  "31179822": {
+    "città": "Cagliari",
+    "mq": 54,
+    "prezzo": 159000,
+    "prezzo_mq": 2944,
+    "prima_vista": "2026-10-25T07:37:07.530249+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Bilocale in Vendita, Via Carlo Baudi, Cagliari",
+    "url": "https://www.wikicasa.it/annuncio/31179822",
+    "zona": "Provincia di Cagliari"
+  },
+  "31180374": {
+    "città": "Uta",
+    "mq": 101,
+    "prezzo": 179000,
+    "prezzo_mq": 1772,
+    "prima_vista": "2026-10-25T07:37:07.530249+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Trilocale in Vendita, Vico I Roma 00, Uta",
+    "url": "https://www.wikicasa.it/annuncio/31180374",
+    "zona": "Provincia di Cagliari"
+  },
+  "31180752": {
+    "città": "Pula",
+    "mq": 70,
+    "prezzo": 135000,
+    "prezzo_mq": 1929,
+    "prima_vista": "2026-10-25T07:37:07.530249+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Trilocale in Vendita, Via San Raimondo 34, Pula",
+    "url": "https://www.wikicasa.it/annuncio/31180752",
+    "zona": "Provincia di Cagliari"
+  },
+  "31183653": {
+    "città": "Selargius",
+    "mq": 47,
+    "prezzo": 99000,
+    "prezzo_mq": 2106,
+    "prima_vista": "2026-10-25T07:37:07.530249+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Bilocale in Vendita, Via San Martino, Selargius",
+    "url": "https://www.wikicasa.it/annuncio/31183653",
+    "zona": "Provincia di Cagliari"
+  },
+  "31186350": {
+    "città": "Cagliari",
+    "mq": 301,
+    "prezzo": 455000,
+    "prezzo_mq": 1512,
+    "prima_vista": "2026-10-25T07:37:07.530249+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Villa in Vendita, Via Nicola Valle 31, Cagliari",
+    "url": "https://www.wikicasa.it/annuncio/31186350",
+    "zona": "Provincia di Cagliari"
+  },
+  "31187166": {
+    "città": "Cagliari",
+    "mq": 164,
+    "prezzo": 635000,
+    "prezzo_mq": 3872,
+    "prima_vista": "2026-10-25T07:37:07.530249+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Appartamento in Vendita, Via Luigi Galvani 29, Cagliari",
+    "url": "https://www.wikicasa.it/annuncio/31187166",
+    "zona": "Provincia di Cagliari"
+  },
+  "31187169": {
+    "città": "Cagliari",
+    "mq": 110,
+    "prezzo": 850000,
+    "prezzo_mq": 7727,
+    "prima_vista": "2026-10-25T07:37:07.530249+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Villa in Vendita, Via Angelo Poliziano 6, Cagliari",
+    "url": "https://www.wikicasa.it/annuncio/31187169",
+    "zona": "Provincia di Cagliari"
+  },
+  "31190019": {
+    "città": "Castiadas",
+    "mq": 220,
+    "prezzo": 620000,
+    "prezzo_mq": 2818,
+    "prima_vista": "2026-10-25T07:37:07.530249+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Masseria in Vendita, Località Is Ortixeddus,, Castiadas",
+    "url": "https://www.wikicasa.it/annuncio/31190019",
+    "zona": "Provincia di Cagliari"
+  },
+  "31192932": {
+    "città": "Quartu Sant'Elena",
+    "mq": 77,
+    "prezzo": 149000,
+    "prezzo_mq": 1935,
+    "prima_vista": "2026-10-25T07:37:07.530249+00:00",
+    "provincia": "CA",
+    "regione": "Sardegna",
+    "titolo": "Trilocale in Vendita, Via XX Settembre , Quartu Sant'Elena",
+    "url": "https://www.wikicasa.it/annuncio/31192932",
+    "zona": "Provincia di Cagliari"
   }
 }
