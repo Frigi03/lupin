@@ -99,6 +99,16 @@
     "scadenza": "2026-11-05",
     "scartata": "fuori regione"
   },
+  "A0078a4bb-ec4b-4a12-a406-7e23636d2843": {
+    "cig": null,
+    "ente": "AZIENDA SANITARIA PROVINCIALE DI COSENZA",
+    "importo": null,
+    "luogo": null,
+    "oggetto": "AVVISO DI CONSULTAZIONE PRELIMINARE DI MERCATO ART. 77 D.LGS. N. 36/2023 - VERIFICA DEI PRESUPPOSTI PER L'EVENTUALE RICORSO ALL'ART. 76, COMMA 2, LETT.B) - DISPOSITIVO OMNIA SECURE.",
+    "prima_vista": "2026-11-09T16:21:59.162827+00:00",
+    "scadenza": null,
+    "scartata": "senza scadenza"
+  },
   "A008a4dc2-8e2a-4bed-8481-f0c5bcf5587d": {
     "cig": "BD5506AB98",
     "ente": "COMUNE DI ANCONA",
@@ -279,6 +289,16 @@
     "scadenza": "2026-11-18",
     "scartata": "fuori regione"
   },
+  "A01337e4d-eedd-4d30-bc02-87b705d46735": {
+    "cig": "BDB05C1B28",
+    "ente": "COMUNE DI FANO ADRIANO",
+    "importo": 8196.0,
+    "luogo": "FANO ADRIANO",
+    "oggetto": "Fornitura e posa in opera di luminarie natalizie, albero natalizio, per vie ed edifici pubblici e di culto, in occasione delle festività natalizie e di fine anno 2026 presso il Capoluogo e la Frazione di Cerqueto.",
+    "prima_vista": "2026-11-09T16:21:59.162506+00:00",
+    "scadenza": "2026-11-13",
+    "scartata": "fuori settore (natura)"
+  },
   "A013ac0b8-a0f1-4ab0-8f48-0480d4ac6199": {
     "cig": "BD4C2604BB",
     "ente": "PROVINCIA DI BRESCIA",
@@ -449,6 +469,16 @@
     "scadenza": "2026-10-27",
     "scartata": "scaduta"
   },
+  "A01ff0c00-67c5-4658-bdac-0668c2845a98": {
+    "cig": "BDB193F10C",
+    "ente": "COMUNE DI CARUGATE",
+    "importo": 757794.1,
+    "luogo": "BERGAMO",
+    "oggetto": "CONCESSIONE DEL SERVIZIO DI RISTORAZIONE, MEDIANTE BAR, PRESSO L'ISTITUTO B. BELOTTI DI BERGAMO",
+    "prima_vista": "2026-11-09T16:21:59.162997+00:00",
+    "scadenza": "2026-12-10",
+    "scartata": "fuori settore (natura)"
+  },
   "A02051512-5db8-4840-9e3d-eec9790a0746": {
     "cig": "BD60B91D00",
     "ente": "COMUNE DI APIRO",
@@ -597,6 +627,16 @@
     "oggetto": "FORNITURA DI ENERGIA ELETTRICA IMMOBILI COMUNALI",
     "prima_vista": "2026-10-21T11:51:30.111314+00:00",
     "scadenza": "2026-11-05",
+    "scartata": "fuori settore (natura)"
+  },
+  "A03489101-a629-412b-b531-fe70c62bc31d": {
+    "cig": "BDA9FD1C0E",
+    "ente": "REGIONE AUTONOMA FRIULI VENEZIA GIULIA",
+    "importo": 1248000.0,
+    "luogo": "TRIESTE",
+    "oggetto": "Procedura aperta ex art. 71 del D.Lgs. n. 36/2023 per la stipula di Convenzioni aventi ad oggetto l’affidamento del servizio di manutenzione e riparazione del parco mezzi in dotazione ad Amministrazioni locali della Regione autonoma Friuli Venezia Giulia - 2^ ed. [Codice iniziativa: 26PGR318].",
+    "prima_vista": "2026-11-09T16:21:59.162552+00:00",
+    "scadenza": "2026-12-10",
     "scartata": "fuori settore (natura)"
   },
   "A03602569-4b7d-43ed-91c1-2b7d33903d4d": {
@@ -879,6 +919,16 @@
     "scadenza": "2026-10-20",
     "scartata": "fuori settore (natura)"
   },
+  "A04fe3fd1-b82b-404e-8e48-c0fcbec5942f": {
+    "cig": "BDAEF4C2F1",
+    "ente": "COMUNE DI FIRENZE",
+    "importo": 2150000.0,
+    "luogo": "FIRENZE",
+    "oggetto": "2 Accordi Quadro da stipularsi con un solo operatore economico ai sensi dell’art. 59 comma 3 del D.Lgs. 36 2023, relativi agli “Interventi di riqualificazione stradale quartieri 2, 3, 4 e 5”, Codici Opera 250073 – 250121",
+    "prima_vista": "2026-11-09T16:21:59.161645+00:00",
+    "scadenza": "2026-12-04",
+    "scartata": "fuori regione"
+  },
   "A0511170f-465c-4d61-ba95-3ef487581070": {
     "cig": "B2E9BEEBD8",
     "ente": "COMUNE DI CORTE FRANCA",
@@ -1018,6 +1068,16 @@
     "prima_vista": "2026-10-14T11:54:37.166485+00:00",
     "scadenza": "2026-10-29",
     "scartata": "fuori regione"
+  },
+  "A05b33820-aeab-4de7-88e1-ac81dc1ecd7c": {
+    "cig": "BDA8F3FF71",
+    "ente": "INTERCENTER-ER AGENZIA REGIONALE SVILUPPO MERCATI TELEMATICI",
+    "importo": 473250.6,
+    "luogo": "BOLOGNA",
+    "oggetto": "Procedura aperta per la fornitura di miscele nutrizionali per via enterale e supplementi nutrizionali orali diretti ad ospedali, strutture convenzionate e utenti domiciliati nel territorio della Regione Emilia-Romagna - 4^ edizione",
+    "prima_vista": "2026-11-09T16:21:59.162367+00:00",
+    "scadenza": "2026-12-21",
+    "scartata": "fuori settore (natura)"
   },
   "A05b4d536-a0a6-4e83-b4c4-d731e2d448a5": {
     "cig": "BD65EA8E62",
@@ -1919,6 +1979,16 @@
     "scadenza": "2026-11-24",
     "scartata": "fuori settore (natura)"
   },
+  "A09cad52e-5dfb-4682-9208-f32c543cc1b9": {
+    "cig": "BDB181C0E8",
+    "ente": "COMUNE DI MAGLIANO ALFIERI",
+    "importo": 846404.63,
+    "luogo": "MAGLIANO ALFIERI",
+    "oggetto": "COMUNE DI MAGLIANO ALFIERI – AFFIDAMENTO IN CONCESSIONE DEL SERVIZIO DI GESTIONE DELL’IMPIANTO COMUNALE DI PADEL SITO IN VIA IV NOVEMBRE N. 74 PER IL PERIODO 01/01/2027 – 31/12/2031, CON FACOLTA’ DI RINNOVO PER ULTERIORI CINQUE ANNI",
+    "prima_vista": "2026-11-09T16:21:59.162818+00:00",
+    "scadenza": "2026-11-30",
+    "scartata": "fuori settore (natura)"
+  },
   "A09e8528f-9bad-4272-91be-48f9cf62ea4c": {
     "cig": "BD0FD5FC0A",
     "ente": "AZIENDA SANITARIA LOCALE ROMA 5",
@@ -1999,6 +2069,16 @@
     "prima_vista": "2026-11-03T14:18:45.910174+00:00",
     "scadenza": "2026-11-19",
     "scartata": "fuori settore (natura)"
+  },
+  "A0a1ff552-122d-4be4-976b-84af98d8e389": {
+    "cig": "BDAFAAE7A5",
+    "ente": "COMUNE DI SCANO DI MONTIFERRO",
+    "importo": 76800.0,
+    "luogo": "SCANO DI MONTIFERRO",
+    "oggetto": "SERVIZIO DI RICOVERO CANI RANDAGI E MORSICATORI",
+    "prima_vista": "2026-11-09T16:21:59.162135+00:00",
+    "scadenza": "2026-11-08",
+    "scartata": "scaduta"
   },
   "A0a227f55-513a-4299-94c8-83d4a5a8fa2f": {
     "cig": "BD6B06D8D9",
@@ -2431,6 +2511,16 @@
     "scadenza": "2026-10-30",
     "scartata": "fuori settore (natura)"
   },
+  "A0d8a2fbe-28b0-4041-9832-5fe8261dff36": {
+    "cig": "BDAC87668A",
+    "ente": "GIUBILEO 2025 SPA",
+    "importo": 7200000.0,
+    "luogo": "ROMA",
+    "oggetto": "LAVAP26078.Affidamento della progettazione esecutiva e dei lavori necessari per assicurare la riqualificazione delle stazioni della Metro A Repubblica, Vittorio Emanuele e Re di Roma- , intervento n 101 all. 1 DPCM 11.06.2024",
+    "prima_vista": "2026-11-09T16:21:59.162454+00:00",
+    "scadenza": "2026-12-09",
+    "scartata": "fuori regione"
+  },
   "A0da3eb73-04a0-444f-b25e-6e2ca6b86748": {
     "cig": "BD0C76F952",
     "ente": "COMUNE DI MACOMER",
@@ -2640,6 +2730,26 @@
     "prima_vista": "2026-10-12T15:28:03.682327+00:00",
     "scadenza": null,
     "scartata": "senza scadenza"
+  },
+  "A0ea31c4c-1ad7-43a3-8274-306e55a4b594": {
+    "cig": "BDB2653BE4",
+    "ente": "TRENITALIA S.P.A.",
+    "importo": 1205400.0,
+    "luogo": "ROMA",
+    "oggetto": "PN 11083 per l'affidamento in appalto della Revisione decennale con collaudo della “bombola antincendio cat. 506988\"",
+    "prima_vista": "2026-11-09T16:21:59.162244+00:00",
+    "scadenza": "2026-11-09",
+    "scartata": "fuori settore (natura)"
+  },
+  "A0eb1bcfb-6559-47fb-8cc4-d1518cd4a704": {
+    "cig": "BDB07EE6D0",
+    "ente": "COMUNE DI LOANO",
+    "importo": 90337.5,
+    "luogo": "LOANO",
+    "oggetto": "CONCESSIONE SERVIZIO GESTIONE CASETTE DELL'ACQUA",
+    "prima_vista": "2026-11-09T16:21:59.161741+00:00",
+    "scadenza": "2026-11-26",
+    "scartata": "fuori settore (natura)"
   },
   "A0eb39926-806e-48b2-bb2e-2a05c3c3f5f7": {
     "cig": "BDA3704014",
@@ -2909,6 +3019,16 @@
     "oggetto": "Acquisto appalto per trasporto scolastico uscite didattiche e gite",
     "prima_vista": "2026-11-03T14:18:45.911866+00:00",
     "scadenza": "2026-11-06",
+    "scartata": "fuori settore (natura)"
+  },
+  "A0fcf702e-cb93-426d-aff4-6c1424294de5": {
+    "cig": "BDADF0C9FE",
+    "ente": "COMUNE DI COSENZA",
+    "importo": 572396.31,
+    "luogo": "COSENZA",
+    "oggetto": "Gara europea a procedura aperta, da aggiudicare con il criterio dell'offerta economicamente più vantaggiosa sulla base del miglior rapporto qualità/prezzo ai sensi degli artt. 71 e 108, comma 2, lett. b), del D.Lgs. n. 36/2023, per l'affidamento dei servizi di architettura e ingegneria — da svolgersi con metodi e strumenti di gestione informativa digitale delle costruzioni ai sensi dell’art. 43 de",
+    "prima_vista": "2026-11-09T16:21:59.161457+00:00",
+    "scadenza": "2026-12-09",
     "scartata": "fuori settore (natura)"
   },
   "A0ffe7693-9b86-4d08-bfe4-882e4c153860": {
@@ -4143,6 +4263,16 @@
     "scadenza": "2026-11-06",
     "scartata": "fuori settore (natura)"
   },
+  "A164a6b51-eefc-4cf2-89e4-c9a820ec5e43": {
+    "cig": "BD98FF7547",
+    "ente": "SOCIETA' ABRUZZESE PER SERVIZIO IDRICO INTEGRATO SPA - IN BREVE S.A.S.I. - S.P.A.",
+    "importo": 2882628.35,
+    "luogo": "CHIETI",
+    "oggetto": "FSC 2021-2027. Intervento “Razionalizzazione del sistema depurativo e adeguamento strutturale, impiantistico e tecnologico degli impianti di depurazione delle aree montane, collinari e pedemontane con sistema di essiccamento solare dei fanghi, Lotto funzionale” - CLP: 2026FSC03 “Riefficientamento funzionale del sistema depurativo ed essiccamento solare fanghi”",
+    "prima_vista": "2026-11-09T16:21:59.161668+00:00",
+    "scadenza": "2026-12-04",
+    "scartata": "fuori settore (SOA)"
+  },
   "A165d2875-df4e-45cd-8341-74c32e399c65": {
     "cig": "BD702C2A23",
     "ente": "COMUNE DI CASSANO MAGNAGO",
@@ -4321,6 +4451,16 @@
     "oggetto": "PROC. AP. TEL. PER MATERIALE SANITARIO VARIO UTILE ALLA CORRETTA GESTIONE DEL RISCHIO CLINICO CORRELATO SUDDIVISO IN 15 LOTTI IN FAVORE DEL PPB PER 60 MESI",
     "prima_vista": "2026-10-08T14:05:44.319628+00:00",
     "scadenza": "2026-11-11",
+    "scartata": "fuori settore (natura)"
+  },
+  "A1732e990-06ac-4662-95e4-8b58e92ac4c8": {
+    "cig": "BDA887DBCE",
+    "ente": "AZIENDA SANITARIA UNIVERSITARIA INTEGRATA DEL TRENTINO",
+    "importo": 5949600.0,
+    "luogo": "TRENTO",
+    "oggetto": "PROCEDURA APERTA SOPRA SOGLIA DI RILEVANZA EUROPEA PER L’AFFIDAMENTO, MEDIANTE ACCORDO QUADRO MULTIOPERATORE, DEL SERVIZIO DI SELEZIONE, PREPARAZIONE, ESTRAZIONE, MANIPOLAZIONE, STOCCAGGIO E SPEDIZIONE DI GAMETI PER TECNICHE DI PROCREAZIONE MEDICALMENTE ASSISTITA, OCCORRENTE ALL’AZIENDA SANITARIA UNIVERSITARIA INTEGRATA DEL TRENTINO (CAPOFILA) E ALL’AZIENDA SANITARIA DELL’ALTO ADIGE",
+    "prima_vista": "2026-11-09T16:21:59.162141+00:00",
+    "scadenza": "2026-12-15",
     "scartata": "fuori settore (natura)"
   },
   "A173fcbe4-a039-4870-a74f-c33992526c9f": {
@@ -4713,6 +4853,16 @@
     "scadenza": "2026-11-04",
     "scartata": "fuori regione"
   },
+  "A18f38f37-7e1d-49bf-b3aa-859109395752": {
+    "cig": "BDAF39F477",
+    "ente": "COMUNE DI BEINASCO",
+    "importo": 1504765.0,
+    "luogo": "BEINASCO",
+    "oggetto": "Procedura aperta per l’affidamento in concessione dei servizi di gestione del complesso sportivo Spinelli – Marletti",
+    "prima_vista": "2026-11-09T16:21:59.162643+00:00",
+    "scadenza": "2026-12-09",
+    "scartata": "fuori settore (natura)"
+  },
   "A18fd5b18-4e72-4df9-b19a-19679c6a1074": {
     "cig": "BDA974E5E5",
     "ente": "QUARTIER GENERALE ITALIANO PRESSO L'ALLIED JOINT FORCE COMMAND HQ NAPLES",
@@ -4873,6 +5023,16 @@
     "scadenza": "2026-11-02",
     "scartata": "scaduta"
   },
+  "A1992c8ad-19dc-4a28-b980-bab36c7d3a9f": {
+    "cig": "BDA77925C2",
+    "ente": "TECNOSERVICECAMERE S.C.P.A.",
+    "importo": 2295000.0,
+    "luogo": "TORINO",
+    "oggetto": "PROCEDURA APERTA SOPRA SOGLIA EUROPEA PER LA CONCLUSIONE DI UN ACCORDO QUADRO CON UN UNICO OPERATORE ECONOMICO, AI SENSI DELL'ART. 59 DEL CODICE, PER LA FORNITURA DI MATERIALE E PRODOTTI PER L'IGIENE, CONFORMI AI CAM, PER L'INTERO TERRITORIO NAZIONALE",
+    "prima_vista": "2026-11-09T16:21:59.161346+00:00",
+    "scadenza": "2026-12-09",
+    "scartata": "fuori settore (natura)"
+  },
   "A19aab626-94aa-4f77-b3fe-8685f2fa3366": {
     "cig": "BD3279DC12",
     "ente": "EMPORIUM SOCIETA' COOPERATIVA",
@@ -4902,6 +5062,16 @@
     "prima_vista": "2026-10-09T14:43:19.498180+00:00",
     "scadenza": null,
     "scartata": "senza scadenza"
+  },
+  "A19b98562-d446-4c85-a21d-19756b805e66": {
+    "cig": "BDB0A8F232",
+    "ente": "COMUNE DI MALETTO",
+    "importo": 817466.93,
+    "luogo": "BIANCAVILLA",
+    "oggetto": "LAVORI DI MESSA IN SICUREZZA DEL SISTEMA VIARIO COMPRENDENTE LA VIA ANGELICA DI COLLEGAMENTO CON LA VIABILITA' URBANA PRINCIPALE DELL'ABITATO",
+    "prima_vista": "2026-11-09T16:21:59.162868+00:00",
+    "scadenza": "2026-11-26",
+    "scartata": "fuori regione"
   },
   "A19c1e078-e9e1-41a9-8f8f-bed3251dbb08": {
     "cig": "BD41F3A257",
@@ -5151,6 +5321,16 @@
     "oggetto": "AVVISO ESPLORATIVO DI MANIFESTAZIONE DI INTERESSE - BENI E SERVIZI FINALIZZATO ALL'EVENTUALE AFFIDAMENTO DIRETTO AI SENSI DELL'ART. 50, COMMA 1, LETT. B), DEL D.Lgs. n. 36/2023 - FASE ESPLORATIVA TECNICA - SENZA OFFERTA ECONOMICA - SATURIMETRO PORTATILE A DITO",
     "prima_vista": "2026-11-04T14:35:19.201460+00:00",
     "scadenza": "2026-11-18",
+    "scartata": "fuori settore (natura)"
+  },
+  "A1b803921-8340-4d67-8079-0c4d7fb3379c": {
+    "cig": "BDA9CFC5C6",
+    "ente": "SO.G.I.N.-SOCIETA' GESTIONE IMPIANTI NUCLEARI SPA",
+    "importo": 972757.88,
+    "luogo": "ROMA",
+    "oggetto": "C0251S26 Accordo Quadro per Servizi di manutenzione e assistenza tecnica delle cabine e della strumentazione della rete di monitoraggio della qualità dell’aria",
+    "prima_vista": "2026-11-09T16:21:59.162766+00:00",
+    "scadenza": "2026-12-16",
     "scartata": "fuori settore (natura)"
   },
   "A1b82fbd4-fd73-4a9b-9899-ad8a4ee8c871": {
@@ -6224,6 +6404,16 @@
     "scadenza": "2026-12-10",
     "scartata": "fuori settore (natura)"
   },
+  "A21b9b52f-0c5a-45ad-b13f-4c192cbc84a0": {
+    "cig": "BDAAE46A38",
+    "ente": "CUC COMUNI DI VIADANA COMMESSAGGIO GAZZUOLO SAN MARTINO DALL'ARGINE",
+    "importo": 559170.0,
+    "luogo": "GOITO",
+    "oggetto": "CUC per Goito: AFFIDAMENTO DEI SERVIZI DI ACCERTAMENTO E RISCOSSIONE CUP E RISCOSSIONE COATTIVA",
+    "prima_vista": "2026-11-09T16:21:59.161461+00:00",
+    "scadenza": "2026-12-10",
+    "scartata": "fuori settore (natura)"
+  },
   "A21c0c739-d95a-462a-ae0e-78e02c94e48d": {
     "cig": "BD46B27A40",
     "ente": "AZIENDA SANITARIA LOCALE BA",
@@ -6241,6 +6431,16 @@
     "luogo": "Roma",
     "oggetto": "Manutenzione di prodotti informatici hardware (MWIT03) Il presente avviso annulla e sostituisce il precedente",
     "prima_vista": "2026-10-09T14:43:19.493086+00:00",
+    "scadenza": null,
+    "scartata": "senza scadenza"
+  },
+  "A21d80cc4-2f8b-4108-8d5e-3e2205efff35": {
+    "cig": null,
+    "ente": "UNIVERSITA' DEGLI STUDI DI ROMA 'LA SAPIENZA'",
+    "importo": null,
+    "luogo": null,
+    "oggetto": "AVVISO ESPLORATIVO DI MERCATO FINALIZZATO ALLACQUISIZIONE DI MANIFESTAZIONE DI INTERESSE, CORREDATE DI RELATIVA PROPOSTA TECNICA, PER IL SUCCESSIVO AFFIDAMENTO DIRETTO AI SENSI ART.50 LETT. B) DEL D.LGS 36/2023, DEL SERVIZIO SPECIALISTICO DI RICERCA, PROGETTAZIONE SPERIMENTALE E SVILUPPO PER IL PROGETTO NEUROSCIENZE E PROGETTAZIONE DEGLI AMBIENTI SPAZIALI CUP B53C24001530006",
+    "prima_vista": "2026-11-09T16:21:59.161649+00:00",
     "scadenza": null,
     "scartata": "senza scadenza"
   },
@@ -6283,6 +6483,16 @@
     "prima_vista": "2026-10-23T11:42:00.976702+00:00",
     "scadenza": "2026-11-30",
     "scartata": "fuori settore (natura)"
+  },
+  "A21efcec3-2adf-4dad-8f79-a9ae140a7c86": {
+    "cig": "BDB357BDC4",
+    "ente": "COMUNE DI PONTE DI LEGNO",
+    "importo": 249980.0,
+    "luogo": "PONTE DI LEGNO",
+    "oggetto": "OPERE DI MANUTENZIONE STRAORDINARIA DELLA STRADA VASP DOSSO DI MEDA NEL COMUNE DI PONTE DI LEGNO",
+    "prima_vista": "2026-11-09T16:21:59.161720+00:00",
+    "scadenza": "2026-12-08",
+    "scartata": "fuori regione"
   },
   "A21fb2ff8-7e59-45af-b554-decd6ae05bfe": {
     "cig": "BD64CC7D53",
@@ -6404,6 +6614,16 @@
     "scadenza": "2026-10-17",
     "scartata": "fuori settore (natura)"
   },
+  "A228f8696-5330-460a-9d34-1290f4f3a731": {
+    "cig": "BDB1DBF7B3",
+    "ente": "UNIONE DEI COMUNI MONTANI DEL CASENTINO",
+    "importo": 150456.52,
+    "luogo": "CHIUSI DELLA VERNA",
+    "oggetto": "INDAGINE DI MERCATO BANDO REG. TOSCANA CSR 2023-27 SRG06 CUP D91G26000130008 LOTTO 1 ADEGUAMENTO FUNZIONALE RETE VIARIA DOCCIONE GUALANCIOLE CHIUSI DELLA VERNA",
+    "prima_vista": "2026-11-09T16:21:59.161517+00:00",
+    "scadenza": "2026-11-24",
+    "scartata": "fuori regione"
+  },
   "A22edf838-90dc-4130-9900-66004097d435": {
     "cig": "BDAD3A1DDA",
     "ente": "COMUNE DI MARANO PRINCIPATO",
@@ -6464,6 +6684,16 @@
     "scadenza": "2026-12-14",
     "scartata": "fuori settore (SOA)"
   },
+  "A231ed0be-f6af-4b6b-8b45-f902dffac951": {
+    "cig": "BDAB49709F",
+    "ente": "UNIVERSITA' DEGLI STUDI DI MILANO",
+    "importo": 447541.2,
+    "luogo": "MILANO",
+    "oggetto": "SGa 26_955 - Procedura aperta ex art.71 del D.Lgs. 36/2023 per l'affidamento del servizio di raccolta dati nell'ambito della survey denominata SOCIAL 60+, per l'Università degli Studi di Milano, per un periodo di 12 mesi.",
+    "prima_vista": "2026-11-09T16:21:59.162623+00:00",
+    "scadenza": "2026-12-10",
+    "scartata": "fuori settore (natura)"
+  },
   "A232e8bdf-3bb5-4ad1-b17f-7ad9f6918eae": {
     "cig": "BD2776B56E",
     "ente": "COMUNE DI MODENA",
@@ -6502,6 +6732,16 @@
     "oggetto": "Comune di Germignaga - Servizio di refezione scolastica per gli alunni della scuola primaria a ridotto impatto ambientale, ai sensi del Piano d'Azione Nazionale sul Green Public Procurement e ai CAM approvati con D.M. 10 marzo 2020, per gli anni scolastici 2026/2027 (con inizio al 01/01/2027) - A.S. 2027/2028 e con opzione annualità di proroga per l'A.S. 2028/2029",
     "prima_vista": "2026-10-14T11:54:37.167550+00:00",
     "scadenza": "2026-11-16",
+    "scartata": "fuori settore (natura)"
+  },
+  "A235ae6dd-3b03-40fc-b18b-20c659c98f63": {
+    "cig": "BDB0002D3F",
+    "ente": "AZIENDA SANITARIA LOCALE",
+    "importo": 660000.0,
+    "luogo": "SALERNO",
+    "oggetto": "CONSULTAZIONE PRELIMINARE DI MERCATO E AVVISO VOLONTARIO PER LA TRASPARENZA PREVENTIVA (AI SENSI DELL' ART.77 E DELL' ART.86 DEL D.LGS 36/2023 PER L'AFFIDAMENTO DELLA FORNITURA DI IMPIANTI COCLEARI A 22 ELETTRODI CON SPESSORE RIDOTTO E POSSIBILITA' DI AGGIORNAMENTO DA AGGIORNAMENTO DA DESTINARE ALL' U.O.C OTORINOLARINGOIATRIA DEL P.O. DI NOCERA INFERIORE DELL' ASL DI SALERNO, PROPREDEUTICA ALL'ESP",
+    "prima_vista": "2026-11-09T16:21:59.162794+00:00",
+    "scadenza": "2026-11-23",
     "scartata": "fuori settore (natura)"
   },
   "A235e19c3-c969-4fd0-b6c2-9039679fe611": {
@@ -6652,6 +6892,16 @@
     "oggetto": "AFFIDAMENTO DEL SERVIZIO DI SORVEGLIANZA SANITARIA E NOMINA DEL MEDICO COMPETENTE AI SENSI DEL DECRETO LEGISLATIVO 9 APRILE 2008, N. 81 E S.M.I.",
     "prima_vista": "2026-10-13T14:13:43.712066+00:00",
     "scadenza": "2026-10-30",
+    "scartata": "fuori settore (natura)"
+  },
+  "A23dfd8c3-0a64-4efd-a1a4-f8901d8952b9": {
+    "cig": "BDB2346765",
+    "ente": "COMUNE DI CONVERSANO",
+    "importo": 196270.0,
+    "luogo": "CONVERSANO",
+    "oggetto": "PROCEDURA NEGOZIATA AI SENSI DELL’ART. 50, COMMA 1, LETTERA E) DEL D.LGS. N. 36/2023 DA ESPLETARE SULLA PIATTAFORMA MEPA PER L’AFFIDAMENTO DEI SERVIZI DI ATTUAZIONE DEL PROGRAMMA “P.I.P.P.I.”",
+    "prima_vista": "2026-11-09T16:21:59.162131+00:00",
+    "scadenza": "2026-11-23",
     "scartata": "fuori settore (natura)"
   },
   "A23e44344-b836-479d-a473-bad6c0cbfcdb": {
@@ -6934,6 +7184,16 @@
     "scadenza": "2026-11-23",
     "scartata": "fuori settore (natura)"
   },
+  "A25ea9310-ef7c-4c71-9d71-aeafedc14a55": {
+    "cig": "BDA1C220DF",
+    "ente": "COMUNE DI ABBIATEGRASSO",
+    "importo": 1668167.99,
+    "luogo": "ABBIATEGRASSO",
+    "oggetto": "LAVORI PER LA REALIZZAZIONE DI UNA NUOVA STRUTTURA PER LO SPORT MULTIFUNZIONALE PRESSO LO STADIO INVERNIZZI – CUP C45B25000070004",
+    "prima_vista": "2026-11-09T16:21:59.161793+00:00",
+    "scadenza": "2026-11-24",
+    "scartata": "fuori regione"
+  },
   "A25ee3fac-3cb5-4dde-877e-010169749d00": {
     "cig": "BD3C7DB880",
     "ente": "PROVINCIA DI CROTONE",
@@ -7164,6 +7424,16 @@
     "scadenza": "2026-11-16",
     "scartata": "fuori settore (natura)"
   },
+  "A2712a1b7-e108-41a3-a32a-147e9dd855aa": {
+    "cig": "BDAF33904C",
+    "ente": "TRIBUNALE PER I MINORENNI DI CAGLIARI",
+    "importo": 0.01,
+    "luogo": "CAGLIARI",
+    "oggetto": "Concessione di spazi all'interno del Tribunale Minorenni di Cagliari per l'installazione e la messa in esercizio di distributori automatici",
+    "prima_vista": "2026-11-09T16:21:59.161471+00:00",
+    "scadenza": "2026-11-20",
+    "scartata": "fuori settore (natura)"
+  },
   "A2713d8f9-73a1-41c2-9e70-6bef929b4432": {
     "cig": "BD73B1EC7F",
     "ente": "GUARDIA DI FINANZA REPARTO TECNICO LOGISTICO E AMMINISTRATIVO SARDEGNA",
@@ -7264,6 +7534,16 @@
     "scadenza": "2026-11-26",
     "scartata": "fuori settore (natura)"
   },
+  "A277bda82-2e4b-4952-b7a2-73e5859a30dd": {
+    "cig": "BDAB8A8BAB",
+    "ente": "CUC DEI COMUNI DI CAROLEI CASTROLIBERO CERISANO DOMANICO DIPIGNANO MARANO MARCHESATO MARANO PRINCIPATO MENDICINO PATERNO CALABRO",
+    "importo": 2408019.54,
+    "luogo": "DIPIGNANO",
+    "oggetto": "SERVIZIO DI RACCOLTA E TRASPORTO DEI RIFIUTI URBANI E DEI SERVIZI COMPLEMENTARI DEL COMUNE DI DIPIGNANO DELLA DURATA DI 5 ANNI.",
+    "prima_vista": "2026-11-09T16:21:59.161745+00:00",
+    "scadenza": "2026-12-11",
+    "scartata": "fuori settore (natura)"
+  },
   "A2781eda4-0510-43d3-93ab-40c7bc3fc136": {
     "cig": "BD4455A88A",
     "ente": "COMUNE DI CATTOLICA",
@@ -7282,6 +7562,16 @@
     "oggetto": "TIRANTERIE E ZATTERONI UNIFICATI PER APPARECCHI DEL BINARIO",
     "prima_vista": "2026-10-23T11:42:00.977332+00:00",
     "scadenza": "2026-11-05",
+    "scartata": "fuori settore (natura)"
+  },
+  "A27af0b92-708a-48c2-86cd-76dc5ef80bec": {
+    "cig": "BDB31FFDAA",
+    "ente": "COMUNE DI MIGNANO MONTE LUNGO",
+    "importo": 314509.8,
+    "luogo": "MIGNANO MONTE LUNGO",
+    "oggetto": "AFFIDAMENTO IN CONCESSIONE DELLA GESTIONE INTEGRATA DEI SERVIZI CIMITERIALI E DELL’ILLUMINAZIONE VOTIVA DEI CIMITERI COMUNALI",
+    "prima_vista": "2026-11-09T16:21:59.162697+00:00",
+    "scadenza": "2026-12-07",
     "scartata": "fuori settore (natura)"
   },
   "A27bf9b15-b247-4d6d-bdc4-008823fabbc6": {
@@ -7473,6 +7763,16 @@
     "prima_vista": "2026-10-20T11:39:08.451590+00:00",
     "scadenza": "2026-11-19",
     "scartata": "fuori regione"
+  },
+  "A289a6c2a-1849-42e3-a8a6-f9a1d5667d20": {
+    "cig": "BDA6DE9CF7",
+    "ente": "AZIENDA OSPEDALIERA UNIVERSITARIA LUIGI VANVITELLI",
+    "importo": 24600.0,
+    "luogo": "NAPOLI",
+    "oggetto": "FORNITURA TRIENNALE DI DISPOSITIVI MEDICI PER LE UU.OO.CC. DI UROLOGIA E GINECOLOGIA DELL’A.O.U. “LUIGI VANVITELLI”.",
+    "prima_vista": "2026-11-09T16:21:59.162147+00:00",
+    "scadenza": "2026-12-17",
+    "scartata": "fuori settore (natura)"
   },
   "A28aedc4b-ef66-4e92-92b1-97d7eef009c0": {
     "cig": "BD46A2BA4B",
@@ -7774,6 +8074,16 @@
     "scadenza": "2026-11-20",
     "scartata": "fuori settore (natura)"
   },
+  "A2a60604e-3bcd-4124-b5de-9996fb28f3b5": {
+    "cig": "BDA6ACECE9",
+    "ente": "PROVINCIA DI BERGAMO",
+    "importo": 144000.0,
+    "luogo": "VAL BREMBILLA",
+    "oggetto": "STAZIONE UNICA APPALTANTE PROVINCIA DI BERGAMO. COMUNE DI VAL BREMBILLA (BG). SERVIZIO DI SGOMBERO NEVE E DI SPARGIMENTO SALE E SABBIA SULLE STRADE E MARCIAPIEDI COMUNALI STAGIONI INVERNALI 2026/2027 – 2027/2028 – 2028/2029. N. 2 LOTTI FUNZIONALI.",
+    "prima_vista": "2026-11-09T16:21:59.162781+00:00",
+    "scadenza": "2026-11-22",
+    "scartata": "fuori settore (natura)"
+  },
   "A2a643fad-52e3-4706-a9ef-524d3cc73809": {
     "cig": "BD7CDBDB5C",
     "ente": "UNIONE DEI COMUNI DEL GERREI",
@@ -7954,6 +8264,16 @@
     "scadenza": "2026-11-11",
     "scartata": "fuori settore (SOA)"
   },
+  "A2bb5266a-cc78-43c8-87a0-0808f1df626e": {
+    "cig": "BDA82697C2",
+    "ente": "COMUNE DI SASSARI",
+    "importo": 954000.0,
+    "luogo": "SASSARI",
+    "oggetto": "PROCEDURA APERTA TELEMATICA SOPRA SOGLIA COMUNITARIA SUDDIVISA IN TRE (3) LOTTI FUNZIONALI PER L'AFFIDAMENTO DEI SERVIZI DI MANUTENZIONE ORDINARIA, STRAORDINARIA E RIPARAZIONI VEICOLI (LOTTO 1), SOSTITUZIONE E RIPARAZIONE PNEUMATICI (LOTTO 2) E LAVAGGIO (LOTTO 3) DEL PARCO MACCHINE COMUNALE PER IL QUADRIENNIO 2027-2031, CON OPZIONE DI PROROGA BIENNALE. CUI S00239740905202600019.",
+    "prima_vista": "2026-11-09T16:21:59.161362+00:00",
+    "scadenza": "2026-12-10",
+    "scartata": "fuori settore (natura)"
+  },
   "A2bb81577-0e37-4c19-a2af-6f2dae392394": {
     "cig": "BD3325DB18",
     "ente": "COMUNE DI TARANTO",
@@ -8093,6 +8413,16 @@
     "prima_vista": "2026-10-08T14:05:44.319692+00:00",
     "scadenza": null,
     "scartata": "senza scadenza"
+  },
+  "A2c863aa2-1e09-4dca-9c76-4c13c6816d9e": {
+    "cig": "BDA98E01A4",
+    "ente": "AGENZIA REGIONALE EMERGENZA URGENZA",
+    "importo": 2240516.46,
+    "luogo": "COMO",
+    "oggetto": "GARA EUROPEA A PROCEDURA APERTA PER L’AFFIDAMENTO DEL SERVIZIO ANTINCENDIO NECESSARIO ALLE BASI HEMS DI COMO, MILANO E SONDRIO PER LA DURATA DI 36 MESI",
+    "prima_vista": "2026-11-09T16:21:59.161594+00:00",
+    "scadenza": "2026-12-09",
+    "scartata": "fuori settore (natura)"
   },
   "A2c8e415e-f612-4bfd-9637-45e74cd8f726": {
     "cig": "BD9AA7C7BC",
@@ -8454,6 +8784,16 @@
     "scadenza": null,
     "scartata": "senza scadenza"
   },
+  "A2ec149d6-5539-404a-983d-21bca7a0df92": {
+    "cig": "BDB381B853",
+    "ente": "AMMINISTRAZIONE COMUNALE DI BIANCHI",
+    "importo": 50068.65,
+    "luogo": "ROGLIANO",
+    "oggetto": "AVVISO PUBBLICO PER LA VENDITA DEL MATERIALE LEGNOSO DERIVANTE DAL “PROGETTO DI TAGLIO FORESTALE SUL COMPARTO COLTURALE N. 7 DEL PGF DEL COMUNE DI BIANCHI (CS) FOGLIO 28 PARTICELLE 11, 17, 18, 22, 23, 24, 25, 29 – FOGLIO 29 PARTICELLE 3, 37 LOCALITÀ FRATE ANTONIO/CURSARO IN AGRO DEL COMUNE DI COLOSIMI (CS)",
+    "prima_vista": "2026-11-09T16:21:59.162612+00:00",
+    "scadenza": "2026-12-09",
+    "scartata": "fuori settore (natura)"
+  },
   "A2ed2f64e-3116-42e6-8a1b-1149df328a73": {
     "cig": "BD0D26DB81",
     "ente": "A.P.S.P. - PICCOLO SPEDALE",
@@ -8472,6 +8812,16 @@
     "oggetto": "Implementazione software",
     "prima_vista": "2026-11-05T14:42:12.215439+00:00",
     "scadenza": "2026-11-06",
+    "scartata": "fuori settore (natura)"
+  },
+  "A2edb01d3-cd98-491c-a810-547d9cd12019": {
+    "cig": "BDAAF82EFC",
+    "ente": "AZIENDA SANITARIA LOCALE BA",
+    "importo": 1404664.75,
+    "luogo": "BARI",
+    "oggetto": "PROCEDURA APERTA TELEMATICA, AI SENSI DEGLI ARTT. 25 E 71 DEL D.LGS 36/2023 S.M.I., PER L’AFFIDAMENTO DEL SERVIZIO DI TRASPORTO ASSISTITO DESTINATO A SOGGETTI DIVERSAMENTE ABILI PRESSO I CENTRI RIABILITATIVI DELLA PROVINCIA DI BARI",
+    "prima_vista": "2026-11-09T16:21:59.162753+00:00",
+    "scadenza": "2026-12-16",
     "scartata": "fuori settore (natura)"
   },
   "A2eea7746-0afe-4014-967e-f1e1bbe1e97f": {
@@ -8954,6 +9304,16 @@
     "scadenza": "2026-12-11",
     "scartata": "fuori settore (natura)"
   },
+  "A327a405f-2ad0-428e-a572-c3e60e734576": {
+    "cig": "BDA96633F8",
+    "ente": "COMUNE DI BRUGHERIO",
+    "importo": 408240.0,
+    "luogo": "BRUGHERIO",
+    "oggetto": "affidamento di servizi mediante procedura aperta",
+    "prima_vista": "2026-11-09T16:21:59.161852+00:00",
+    "scadenza": "2026-11-25",
+    "scartata": "fuori settore (natura)"
+  },
   "A32919df2-30c3-4977-8197-ce83bb4c9121": {
     "cig": "BD999DE13B",
     "ente": "CENTRALE UNICA DI COMMITTENZA DEI COMUNI DI TORRE DEL GRECO E TRECASE",
@@ -8963,6 +9323,16 @@
     "prima_vista": "2026-11-02T15:57:25.637956+00:00",
     "scadenza": "2026-12-03",
     "scartata": "fuori regione"
+  },
+  "A32958ace-5f24-4690-8a1b-d5c9672863e6": {
+    "cig": "BDB388A3EE",
+    "ente": "COMUNE DI ZAPPONETA",
+    "importo": 74400.0,
+    "luogo": "ZAPPONETA",
+    "oggetto": "PN “Scuola e competenze” 2021-2027 - FESR - Azione RSO4.2.A5.A - Progetto RSO4.2.A5.A-FESRPN-PU-2026-47 - Fornitura, trasporto, montaggio e posa in opera di arredi didattici innovativi per i servizi educativi 0-6 anni nei Comuni di Zapponeta, Ordona e Castelluccio dei Sauri - Lotti 1, 2 e 3 - CUP B24D25003260007",
+    "prima_vista": "2026-11-09T16:21:59.162234+00:00",
+    "scadenza": "2026-11-25",
+    "scartata": "fuori settore (natura)"
   },
   "A329af119-6d57-40c0-854d-49ca9fe6e608": {
     "cig": "BD8C37B657",
@@ -9373,6 +9743,16 @@
     "prima_vista": "2026-10-09T11:13:48.253158+00:00",
     "scadenza": "2026-11-12",
     "scartata": "fuori settore (natura)"
+  },
+  "A351d6683-c602-4b9a-a65c-ba3e6805673b": {
+    "cig": null,
+    "ente": "ISTITUTO POLIGRAFICO E ZECCA DELLO STATO - SOCIETA' PER AZIONI IN BREVE IPZS S.P.A.",
+    "importo": null,
+    "luogo": null,
+    "oggetto": "Preparazione della procedura di acquisizione del servizio di manutenzione programmata, a guasto e fornitura ricambi per i trasmettitori di consistenza di BTG Instruments AB installati presso la Macchina Continua 1, in uso presso lo Stabilimento di Foggia",
+    "prima_vista": "2026-11-09T16:21:59.163026+00:00",
+    "scadenza": null,
+    "scartata": "senza scadenza"
   },
   "A3525d1ef-4e2d-4a0c-9b4a-959a42738890": {
     "cig": "BD4750B3BB",
@@ -10133,6 +10513,16 @@
     "oggetto": "SERVIZIO SGOMBERO NEVE",
     "prima_vista": "2026-10-20T11:39:08.554429+00:00",
     "scadenza": "2026-10-29",
+    "scartata": "fuori settore (natura)"
+  },
+  "A394c5a43-6a40-4c99-b724-ce3657ee0007": {
+    "cig": "BDA8C76312",
+    "ente": "AZIENDA USL TOSCANA NORD OVEST",
+    "importo": 309026.4,
+    "luogo": "LUCCA",
+    "oggetto": "Procedura aperta per l'affidamento del servizio di di conduzione e manutenzione degli impianti di depurazione per il trattamento dei reflui nei Po di Barga, Castelnuovo di Garfagnana, Cittadella della Salute di Cdm e RSA S. Cataldo",
+    "prima_vista": "2026-11-09T16:21:59.162518+00:00",
+    "scadenza": "2026-12-07",
     "scartata": "fuori settore (natura)"
   },
   "A394f4490-8aa8-4db7-bf88-4cececf04add": {
@@ -11055,6 +11445,16 @@
     "scadenza": "2026-11-16",
     "scartata": "fuori regione"
   },
+  "A3d96d8d8-08ac-4ee0-8b03-d6d8e5caf771": {
+    "cig": "BDB15D9319",
+    "ente": "COMUNE DI SANTO STEFANO D'ASPROMONTE",
+    "importo": 70000.0,
+    "luogo": "SANTO STEFANO IN ASPROMONTE",
+    "oggetto": "Affidamento del servizio di refezione Scolastica nelle scuole dell'infanzia e primarie di 1° grado del Comune di SANTO STEFANO IN ASPROMONTE RC per gli anni scolastici 2026-2027 e 2028 -2029. Approvazione Avviso di indagine di mercato per manifestazione di interesse a partecipare alla gara.",
+    "prima_vista": "2026-11-09T16:21:59.162824+00:00",
+    "scadenza": "2026-11-20",
+    "scartata": "fuori settore (natura)"
+  },
   "A3d989de1-f208-4e9a-8ce2-6232e20b8306": {
     "cig": "BD7F8486E7",
     "ente": "AZIENDA SANITARIA PROVINCIALE DI COSENZA",
@@ -11285,6 +11685,16 @@
     "scadenza": "2026-11-23",
     "scartata": "fuori settore (natura)"
   },
+  "A3ebba661-e680-45e4-a7a5-869426af54ca": {
+    "cig": "BD8425638B",
+    "ente": "QUESTURA DI GENOVA",
+    "importo": 25725.0,
+    "luogo": "GENOVA",
+    "oggetto": "Affidamento del servizio in concessione della distribuzione automatica di alimenti e bevande calde e fredde ai sensi degli artt. 176, 177, 178,179 e 182 del D.lgs. 36/2023 Codice dei Contratti pubblici per il triennio 2027-2030",
+    "prima_vista": "2026-11-09T16:21:59.161653+00:00",
+    "scadenza": "2026-11-08",
+    "scartata": "scaduta"
+  },
   "A3ebf9476-c8fc-4c5e-8cda-a241893f566a": {
     "cig": "BD3876DD37",
     "ente": "CENTRALE DI COMMITTENZA FRA I COMUNI DI PORCIA, CASARSA DELLA DELIZIA, PRATA DI PORDENONE E ZOPPOLA",
@@ -11485,6 +11895,16 @@
     "scadenza": "2026-12-09",
     "scartata": "fuori settore (natura)"
   },
+  "A3fc02501-877d-4243-aaf2-b56bb0a66984": {
+    "cig": "BDA8D2A79B",
+    "ente": "CINECA CONSORZIO INTERUNIVERSITARIO",
+    "importo": 13392000.0,
+    "luogo": "CASALECCHIO DI RENO",
+    "oggetto": "SERVIZI DI MANUTENZIONE IMPIANTI TECNOLOGICI E SPECIALI PER LE SEDI CINECA E RELATIVI SERVIZI CONNESSI",
+    "prima_vista": "2026-11-09T16:21:59.162215+00:00",
+    "scadenza": "2026-12-09",
+    "scartata": "fuori settore (natura)"
+  },
   "A3fc19038-9a1a-4e5b-9dc1-8f38fed93a5a": {
     "cig": "BDA6AD0E8F",
     "ente": "UNIVERSITA DEGLI STUDI DI FERRARA",
@@ -11635,6 +12055,16 @@
     "scadenza": "2026-12-02",
     "scartata": "fuori settore (natura)"
   },
+  "A40ab01d1-bb38-47ef-a6f4-81cb8d349e6b": {
+    "cig": "BDAB9371B0",
+    "ente": "CENTRALE UNICA DI COMMITTENZA DEI COMUNI DI TORRE DEL GRECO E TRECASE",
+    "importo": 5792640.88,
+    "luogo": "TORRE DEL GRECO",
+    "oggetto": "APPALTO MISTO",
+    "prima_vista": "2026-11-09T16:21:59.163016+00:00",
+    "scadenza": "2026-12-11",
+    "scartata": "fuori settore (SOA)"
+  },
   "A40b29260-857a-4550-a183-1aa84a7dc60c": {
     "cig": "BD3D25A1E4",
     "ente": "UNIVERSITA' DEGLI STUDI DI TORINO",
@@ -11735,6 +12165,16 @@
     "scadenza": "2026-10-19",
     "scartata": "fuori settore (natura)"
   },
+  "A41a0917f-f896-4432-b7bb-7dfe2c259957": {
+    "cig": "BDAC5FCB57",
+    "ente": "COMUNE DI MONOPOLI",
+    "importo": 3568675.76,
+    "luogo": "MONOPOLI",
+    "oggetto": "Affidamento del Servizio di gestione della biblioteca civica “P. Rendella” e dell’infopoint del Comune di Monopoli. Gara europea a procedura aperta tramite PAD Empulia.",
+    "prima_vista": "2026-11-09T16:21:59.162017+00:00",
+    "scadenza": "2026-12-10",
+    "scartata": "fuori settore (natura)"
+  },
   "A41a83dc8-3329-4887-880b-6746b5030ee0": {
     "cig": "BD7EE00AE7",
     "ente": "COMUNE DI FONTE NUOVA",
@@ -11743,6 +12183,16 @@
     "oggetto": "GARA A PROCEDURA APERTA, AI SENSI DELL'ART 71 DEL D.LGS 36/2023, PER L'AFFIDAMENTO DEL SERVIZIO DI SGRETARIATO SOCIALE DEL COMUNE DI FONTE NUOVA, CON IL CRITERIO DELL’OFFERTA ECONOMICAMENTE PIÙ VANTAGGIOSA SULLA BASE DEL MIGLIOR RAPPORTO QUALITÀ/PREZZO",
     "prima_vista": "2026-10-26T13:06:22.022392+00:00",
     "scadenza": "2026-11-29",
+    "scartata": "fuori settore (natura)"
+  },
+  "A41a8a1df-0b36-4975-912b-b97c465e42cd": {
+    "cig": "BDABB3568C",
+    "ente": "AZIENDA REGIONALE DI COORDINAMENTO PER LA SALUTE",
+    "importo": 1428000.0,
+    "luogo": "UDINE",
+    "oggetto": "25SER001 SERVIZIO DI NUTRIZIONE PARENTERALE DOMICILIARE",
+    "prima_vista": "2026-11-09T16:21:59.161840+00:00",
+    "scadenza": "2026-12-14",
     "scartata": "fuori settore (natura)"
   },
   "A41ae1fe4-609f-4efc-87ec-763a64a1f7de": {
@@ -11945,6 +12395,16 @@
     "prima_vista": "2026-10-13T14:13:43.711528+00:00",
     "scadenza": "2026-10-19",
     "scartata": "fuori settore (SOA)"
+  },
+  "A429aa913-191e-43c1-8a99-f788ffc3d97a": {
+    "cig": "BDABA3641E",
+    "ente": "CONSORZIO INDUSTRIALE PROVINCIALE DI NUORO",
+    "importo": 465000.0,
+    "luogo": "NUORO",
+    "oggetto": "Procedura aperta per la fornitura di n. 1 vaglio stazionario a tamburo rotante alimentato elettricamente per il Consorzio Industriale Provinciale di Nuoro",
+    "prima_vista": "2026-11-09T16:21:59.160713+00:00",
+    "scadenza": "2026-12-05",
+    "scartata": "fuori settore (natura)"
   },
   "A42b73a74-ab5c-44ff-aeb6-62cabee2a771": {
     "cig": "BD62E90E33",
@@ -12434,6 +12894,16 @@
     "oggetto": "Gara europea a procedura aperta ai sensi dell'art. 71 del d.lgs. n. 36/2023 per l'affidamento del servizio di supporto alla gestione delle procedure afferenti agli atti sanzionatori della Polizia Locale di Perugia.",
     "prima_vista": "2026-11-04T14:35:19.201943+00:00",
     "scadenza": "2026-12-10",
+    "scartata": "fuori settore (natura)"
+  },
+  "A462aa680-edbf-45c4-b16b-d36f7a5cb894": {
+    "cig": "BD4B858D8A",
+    "ente": "AGENZIA CAMPANA PER L'EDILIZIA RESIDENZIALE",
+    "importo": 668854.64,
+    "luogo": "CASERTA",
+    "oggetto": "Accordo Quadro per l'affidamento di opere fognarie",
+    "prima_vista": "2026-11-09T16:21:59.161862+00:00",
+    "scadenza": "2026-11-12",
     "scartata": "fuori settore (natura)"
   },
   "A462af318-0814-4d77-aeb4-06db71018fcc": {
@@ -12986,6 +13456,16 @@
     "scadenza": null,
     "scartata": "senza scadenza"
   },
+  "A4867ebab-6353-4080-bef0-511e715e7bb4": {
+    "cig": "BDB37B3282",
+    "ente": "AGENZIA LOCALE DI SVILUPPO AREA NOLA s.c.p.a.",
+    "importo": 973933.33,
+    "luogo": "SAVIANO",
+    "oggetto": "COMUNE DI SAVIANO (NA): AVVISO PUBBLICO ESPLORATIVO PER MANIFESTAZIONE DI INTERESSE FINALIZZATA ALL’ESPLETAMENTO DI PROCEDURA NEGOZIATA PREVIA INDAGINE DI MERCATO AI SENSI DELL’ART. EX ART. 187 DEL D.LGS N.36/2023 E SS.MM. II. PER LA CONCESSIONE DELLA GESTIONE DELL'AUDITORIUM COMUNALE \\\"VINCENZO SORRENTINO\\\" SITO IN VIA FALCONE E BORSELLINO, PER LA DURATA DI ANNI 4 (QUATTRO) E MESI 8 (OTTO), DAL 1",
+    "prima_vista": "2026-11-09T16:21:59.162090+00:00",
+    "scadenza": "2026-11-25",
+    "scartata": "fuori settore (natura)"
+  },
   "A4868f9ad-6f8f-4228-a907-cb8b12275c58": {
     "cig": "BCCE4D758E",
     "ente": "COMUNE DI CHIARAMONTI",
@@ -13276,6 +13756,16 @@
     "scadenza": "2026-11-30",
     "scartata": "fuori settore (natura)"
   },
+  "A4a99391e-f0c0-4423-b259-8afffc53e602": {
+    "cig": "BDA9840D97",
+    "ente": "UNIONE DEI COMUNI NORD EST TORINO",
+    "importo": 555409.86,
+    "luogo": "BORGARO TORINESE",
+    "oggetto": "PROCEDURA TELEMATICA APERTA PER L' AFFIDAMENTO DEL SERVIZIO DI GESTIONE DEL CIMITERO COMUNALE DI BORGARO TORINESE PER UNA DURATA DI 36 MESI NEL PERIODO 1.1.2027 - 31.12.2029, OLTRE EVENTUALE RINNOVO PER ULTERIORI 36 MESI (AI SENSI DELL'ART. 120 CO. 10 DEL D.LGS. 36/2023",
+    "prima_vista": "2026-11-09T16:21:59.162775+00:00",
+    "scadenza": "2026-12-14",
+    "scartata": "fuori settore (natura)"
+  },
   "A4aa0c11f-fad3-43b6-9322-8fa7a14b180b": {
     "cig": "BD8CFDABD3",
     "ente": "CONSIGLIO NAZIONALE DELLE RICERCHE",
@@ -13494,6 +13984,16 @@
     "oggetto": "Fornitura della piattaforma digitale integrata adattata all'interoperabilità con la piattaforma digitale di Ateneo, a supporto della Comunità di pratica e del Centro di Ricerca DARE della durata di 60 mesi, con pagamento anticipato, nell'ambito dell'iniziativa di ricerca denominata DARE - Digital Lifelong Prevention",
     "prima_vista": "2026-11-04T14:35:19.202587+00:00",
     "scadenza": "2026-11-10",
+    "scartata": "fuori settore (natura)"
+  },
+  "A4c2659d2-25e7-41f1-ade4-5bdc05b9fb2c": {
+    "cig": "BDAF20307A",
+    "ente": "COMUNE DI CASERTA",
+    "importo": 150000.0,
+    "luogo": "CASERTA",
+    "oggetto": "Affidamento del servizio di ideazione, organizzazione, promozione e realizzazione del \"Programma di eventi, iniziative e attività di animazione\" finalizzato all'attuazione del \"Piano Strategico Cultura e Turismo 2026\", a valere sulle risorse del Fondo di Rotazione ex lege n. 183/1987 dell'Accordo per la Coesione (Delibera CIPESS n. 70/2024), di cui alla Delibera di Giunta Regionale della Campania ",
+    "prima_vista": "2026-11-09T16:21:59.162761+00:00",
+    "scadenza": "2026-11-20",
     "scartata": "fuori settore (natura)"
   },
   "A4c2cafef-df8e-4be2-a304-603ffe5dac50": {
@@ -13746,6 +14246,16 @@
     "scadenza": "2027-01-15",
     "scartata": "fuori settore (natura)"
   },
+  "A4d8b4f03-1c33-4cfc-984b-2b5489f25119": {
+    "cig": "BD9D91AFF9",
+    "ente": "TRENITALIA S.P.A.",
+    "importo": 739200.0,
+    "luogo": "ROMA",
+    "oggetto": "11058 relativa all’affidamento in appalto della fornitura di “materiali di produzione/progettazione OCLAP”.",
+    "prima_vista": "2026-11-09T16:21:59.161675+00:00",
+    "scadenza": "2026-11-03",
+    "scartata": "scaduta"
+  },
   "A4da0e2e6-24a9-4e7c-a343-9249332de4b2": {
     "cig": "BD167BE3C8",
     "ente": "CENTRALE UNICA DI COMMITTENZA - COMUNE DI ERICE",
@@ -13816,6 +14326,16 @@
     "scadenza": "2026-11-03",
     "scartata": "fuori settore (natura)"
   },
+  "A4df35afc-f68a-406d-84d1-b55e8405e188": {
+    "cig": "BDA99A6508",
+    "ente": "UNIONE DEI COMUNI MONTEDORO",
+    "importo": 301993.47,
+    "luogo": "TORRE SANTA SUSANNA",
+    "oggetto": "SERVIZIO DI TRASPORTO SCOLASTICO DEGLI ALUNNI DELLA SCUOLA DELL'OBBLIGO E ALUNNI DISABILI RESIDENTI NEL TERRITORIO COMUNALE DI TORRE SANTA SUSANNA PER 36 MESI (CON FACOLTÀ DI OPZIONE PER ULTERIORI 24 MESI).",
+    "prima_vista": "2026-11-09T16:21:59.162122+00:00",
+    "scadenza": "2026-11-30",
+    "scartata": "fuori settore (natura)"
+  },
   "A4df46587-3c28-4853-9098-190e5d3e960d": {
     "cig": "BD1B51EDD9",
     "ente": "AZIENDA UNITA' SANITARIA LOCALE RIETI",
@@ -13844,6 +14364,26 @@
     "oggetto": "Servizio di pulizia, di disinfezione e disinfestazione, smaltimento rifiuti speciali e facchinaggio della sede EPAP",
     "prima_vista": "2026-10-07T15:57:24.230991+00:00",
     "scadenza": "2026-10-26",
+    "scartata": "fuori settore (natura)"
+  },
+  "A4e101470-2770-4a05-a366-aeda775b7621": {
+    "cig": "BDA902F582",
+    "ente": "UNIONE DEI COMUNI CIRCODARIO DELL'EMPOLESE VALDELSA",
+    "importo": 811350.02,
+    "luogo": "MONTELUPO FIORENTINO",
+    "oggetto": "S0426 Montelupo Fiorentino - Procedura aperta ai sensi dell’art. 71 del decreto legislativo 36/2023 per l’affidamento della gestione integrata dei servizi museali, bibliotecari e di informazione turistica del MMAB (Montelupo museo archivio e biblioteca) annualità 2027-2029",
+    "prima_vista": "2026-11-09T16:21:59.162948+00:00",
+    "scadenza": "2026-12-01",
+    "scartata": "fuori settore (natura)"
+  },
+  "A4e27b191-807b-416d-9069-f079ca529b95": {
+    "cig": "BDB26B5CC3",
+    "ente": "ROMA CAPITALE",
+    "importo": 846666.66,
+    "luogo": "ROMA",
+    "oggetto": "Consultazione preliminare di mercato per l’indizione di una procedura negoziata senza previa pubblicazione del bando di gara, ai sensi dell’art.76, comma 2, lett. b) del D.lgs. 36/2023, per l’acquisto di un servizio “Software as a Service (SaaS) per il funzionamento degli ambienti Unisys del Data Center di Roma Capitale, dal 1.1.2027 al 31.1.2027\\\"",
+    "prima_vista": "2026-11-09T16:21:59.161262+00:00",
+    "scadenza": "2026-11-15",
     "scartata": "fuori settore (natura)"
   },
   "A4e59e0de-ce06-4e7e-b074-436c2df59a09": {
@@ -13916,6 +14456,16 @@
     "scadenza": null,
     "scartata": "senza scadenza"
   },
+  "A4ede55b3-f1d0-4ad6-ab14-fbeca1dc716b": {
+    "cig": "BDADA6C8ED",
+    "ente": "AGENZIA DEL DEMANIO",
+    "importo": 1865182.02,
+    "luogo": "CASALE MONFERRATO",
+    "oggetto": "ALD0009 - Casale Monferrato - CASA del Carabiniere - Progettazione e verifica - Procedura aperta in 2 lotti",
+    "prima_vista": "2026-11-09T16:21:59.161523+00:00",
+    "scadenza": "2026-12-17",
+    "scartata": "fuori settore (natura)"
+  },
   "A4ee93394-6bc7-44d1-a7d1-41ed737712e4": {
     "cig": "BD318E45CD",
     "ente": "CENTRALE UNICA DI COMMITTENZA u201CLA DORMIENTE DEL SANNIOu201D",
@@ -13984,6 +14534,16 @@
     "oggetto": "AV 58/2026 - Accordo Quadro volto all'affidamento del servizio di manutenzione ordinaria, straordinaria e pronto intervento su cabine elettriche di MT/BT",
     "prima_vista": "2026-10-08T14:05:04.862137+00:00",
     "scadenza": "2026-11-09",
+    "scartata": "fuori settore (natura)"
+  },
+  "A4f4595f5-60c5-4482-bc3d-df214607960b": {
+    "cig": "BDB004A8AB",
+    "ente": "COMUNE DI SUBBIANO",
+    "importo": 100800.0,
+    "luogo": "SUBBIANO",
+    "oggetto": "Procedura negoziata, preceduta da avviso di manifestazione di interesse, per l'affidamento del servizio di tesoreria del Comune di Subbiano - Periodo 01 01 2027 - 31 12 2031",
+    "prima_vista": "2026-11-09T16:21:59.162094+00:00",
+    "scadenza": "2026-11-25",
     "scartata": "fuori settore (natura)"
   },
   "A4f4c3592-06fc-4465-8296-a88744f0c904": {
@@ -14224,6 +14784,16 @@
     "oggetto": "Procedura aperta per l’affidamento in concessione del servizio di ristoro con l'installazione e la gestione di macchine distributrici di alimenti, bevande ed acqua presso le sedi della Camera di commercio di Milano Monza Brianza Lodi e delle sue società partecipate per la durata di cinque anni",
     "prima_vista": "2026-10-29T13:04:50.431103+00:00",
     "scadenza": "2026-11-27",
+    "scartata": "fuori settore (natura)"
+  },
+  "A50db1ed6-73ed-4ddf-868a-5e356b0ca975": {
+    "cig": "BDACFC2C0E",
+    "ente": "ROMA CAPITALE",
+    "importo": 1708301.13,
+    "luogo": "ROMA",
+    "oggetto": "Servizi a favore di donne di accoglienza vittime di tratta",
+    "prima_vista": "2026-11-09T16:21:59.162970+00:00",
+    "scadenza": "2026-12-10",
     "scartata": "fuori settore (natura)"
   },
   "A50dd156f-6b06-40e5-9ae5-b0c39805b29a": {
@@ -14526,6 +15096,16 @@
     "scadenza": "2026-11-18",
     "scartata": "fuori settore (natura)"
   },
+  "A522cc937-70d6-47e6-81c6-b224e07a436b": {
+    "cig": "BDAB4EE868",
+    "ente": "AZIENDA SANITARIA LOCALE BA",
+    "importo": 1397192.84,
+    "luogo": "BARI",
+    "oggetto": "FSC 2021/2027. Intervento di \"Messa in sicurezza e rifunzionalizzazione dell'ex Centrale del Latte nel Comune di Bari da destinare a sede del Distretto Socio Sanitario Unico della ASL Bari\". Procedura aperta sopra soglia comunitaria, ai sensi dell’art. 71 del D. Lgs. n. 36/2023 e s.m.i., per l’affidamento dei servizi di ingegneria e architettura relativi alla progettazione di fattibilità tecnico-e",
+    "prima_vista": "2026-11-09T16:21:59.163004+00:00",
+    "scadenza": "2026-12-14",
+    "scartata": "fuori settore (natura)"
+  },
   "A52437992-3d06-4297-8f36-4cd797f31e5f": {
     "cig": "BD1D59F092",
     "ente": "PROVINCIA DI FOGGIA",
@@ -14746,6 +15326,16 @@
     "scadenza": "2026-10-30",
     "scartata": "fuori settore (natura)"
   },
+  "A53a65e6e-d58f-4413-8043-2c51f4888864": {
+    "cig": "BD29207ADD",
+    "ente": "PRINCIPIA S.P.A.",
+    "importo": 235112288.22,
+    "luogo": "MILANO",
+    "oggetto": "lavori per la realizzazione del nuovo “Headquarters” della Fondazione Human Technopole",
+    "prima_vista": "2026-11-09T16:21:59.162741+00:00",
+    "scadenza": "2026-12-04",
+    "scartata": "fuori regione"
+  },
   "A53aed39f-9eae-4c63-80f8-f12caecc57a0": {
     "cig": "BD7ADFE8C0",
     "ente": "SNAM FSRU ITALIA S.R.L.",
@@ -14774,6 +15364,16 @@
     "oggetto": "Servizio di rilevazione delle indagini obbligatorie Istat sui prezzi al consumo e indagine multiscopo per il Comune di Brescia per il periodo 1.1.2027 - 30.06.2029",
     "prima_vista": "2026-10-19T13:19:00.602694+00:00",
     "scadenza": "2026-11-03",
+    "scartata": "fuori settore (natura)"
+  },
+  "A53ce6437-edb5-4f3a-8b66-40e8eec8b22d": {
+    "cig": "BDABED32B6",
+    "ente": "INFRASTRUTTURE E TELECOMUNICAZIONI PER L'ITALIA SPA",
+    "importo": 393375.42,
+    "luogo": "ROMA",
+    "oggetto": "PROCEDURA TELEMATICA APERTA AI SENSI DELL’ART. 71 DEL D.LGS. N. 36/2023, CON AGGIUDICAZIONE MEDIANTE IL CRITERIO DEL MINOR PREZZO AI SENSI DELL’ARTICOLO 108, COMMA 3, DEL CITATO DECRETO, PER LA FORNITURA E RINNOVO DI LICENZE “APPIAN”",
+    "prima_vista": "2026-11-09T16:21:59.161813+00:00",
+    "scadenza": "2026-11-23",
     "scartata": "fuori settore (natura)"
   },
   "A53d6b774-77d4-4a89-bfba-64c6592961ef": {
@@ -14824,6 +15424,16 @@
     "oggetto": "PROCEDURA APERTA TELEMATICA, PER LAGGIUDICAZIONE DEL SERVIZIO DI NOLEGGIO, FULL SERVICE, SENZA CONDUCENTE, DEI MEZZI NECESSARI PER LA RACCOLTA DEI RIFIUTI E SERVIZI CONNESSI ALLIGIENE URBANA NEI COMUNI FACENTI PARTE DEL BACINO DI AFFIDAMENTO PROVINCIALE DELLA PROVINCIA DI SAVONA SERVITI DALLA STAZIONE APPALTANTE, SUDDIVISO IN N. 16 LOTTI DISTINTI.",
     "prima_vista": "2026-10-28T12:58:10.780026+00:00",
     "scadenza": "2026-11-30",
+    "scartata": "fuori settore (natura)"
+  },
+  "A53ed3b96-838c-4eef-9f55-c4af70a23ddd": {
+    "cig": "BDAC3A7EAD",
+    "ente": "DIFESA SERVIZI SPA",
+    "importo": 7200000.0,
+    "luogo": "ROMA",
+    "oggetto": "Affidamento in concessione della gestione economica e della valorizzazione degli immobili e delle attività di business museum del compendio museale dell'Aeronautica Militare di Vigna di Valle, incluso il patrimonio storico-culturale inalienabile ivi custodito. Comprende la gestione dei servizi museali e delle attività economiche connesse, secondo disciplinare e allegati. Il concessionario assume i",
+    "prima_vista": "2026-11-09T16:21:59.162514+00:00",
+    "scadenza": "2027-01-20",
     "scartata": "fuori settore (natura)"
   },
   "A53f10c87-e1cc-46c2-9e24-4f3ca9ff1b94": {
@@ -14986,6 +15596,16 @@
     "scadenza": "2026-11-12",
     "scartata": "fuori settore (natura)"
   },
+  "A54ae3101-0ae5-4064-9ec8-455a67c9fa1e": {
+    "cig": "BDAF20B712",
+    "ente": "COMUNE DI VITTORIO VENETO",
+    "importo": 292500.0,
+    "luogo": "VITTORIO VENETO",
+    "oggetto": "PROCEDURA APERTA, AI SENSI DELL'ART. 187 DEL D.LGS. 36/2023, PER L’AFFIDAMENTO IN CONCESSIONE DEL SERVIZIO DI SOMMINISTRAZIONE DI BEVANDE E ALIMENTI MEDIANTE DISTRIBUTORI AUTOMATICI PRESSO LE SEDI VARIE E GLI EDIFICI SCOLASTICI DEL COMUNE DI VITTORIO VENETO PER IL QUINQUIENNIO 2026 - 2031",
+    "prima_vista": "2026-11-09T16:21:59.161847+00:00",
+    "scadenza": "2026-12-07",
+    "scartata": "fuori settore (natura)"
+  },
   "A54b585ee-6f35-48fd-8754-efd041dc4a08": {
     "cig": "BD3207CA09",
     "ente": "COMANDO REGIONE CARABINIERI SICILIA",
@@ -15116,6 +15736,16 @@
     "scadenza": "2026-10-09",
     "scartata": "fuori settore (natura)"
   },
+  "A551b9f4e-bdc2-4506-8e50-d29e95c454e4": {
+    "cig": "BDADFBDC0E",
+    "ente": "UNIVERSITA' DEGLI STUDI DI BERGAMO",
+    "importo": 2180000.0,
+    "luogo": "BERGAMO",
+    "oggetto": "Procedura aperta ex art. 71 del D.Lgs. n. 36/2023 per la conclusione di accordi quadro per servizi di architettura e ingegneria, con suddivisione in tre lotti territoriali: Lotto 1: Bergamo - Città Alta; Lotto 2: Bergamo - Città Bassa; Lotto 3: Dalmine",
+    "prima_vista": "2026-11-09T16:21:59.162807+00:00",
+    "scadenza": "2026-12-10",
+    "scartata": "fuori settore (natura)"
+  },
   "A552e85c6-271f-4523-9c6b-0d82978025fc": {
     "cig": "BD8E2950CC",
     "ente": "COMO ACQUA SRL",
@@ -15195,6 +15825,16 @@
     "prima_vista": "2026-10-22T11:55:24.443554+00:00",
     "scadenza": "2026-10-30",
     "scartata": "fuori settore (SOA)"
+  },
+  "A55b5174b-f1ed-40c4-9942-b8178463f347": {
+    "cig": "BDA9BA176B",
+    "ente": "PREFETTURA DI CUNEO",
+    "importo": 748000.0,
+    "luogo": "CUNEO",
+    "oggetto": "procedura aperta ai sensi dell'articolo 71 del decreto legislativo n.36/2023 per l'affidamento del servizio di recupero, custodia e acquisto dei veicoli oggetto di provvedimenti di sequestro amministrativo, fermo o confisca ai sensi dell'articolo 214 bis del decreto legislativo n.285/92. Ambito territoriale della provincia di Cuneo",
+    "prima_vista": "2026-11-09T16:21:59.161726+00:00",
+    "scadenza": "2026-12-15",
+    "scartata": "fuori settore (natura)"
   },
   "A55b597ac-7f93-4e5a-9208-e7ebe3d83215": {
     "cig": "BD889689B3",
@@ -16038,6 +16678,16 @@
     "scadenza": "2026-11-27",
     "scartata": "fuori settore (SOA)"
   },
+  "A5a526772-4ab6-4ec4-a85d-149c91a99efd": {
+    "cig": "BDA9EA32D9",
+    "ente": "AMET SPA",
+    "importo": 74250.0,
+    "luogo": "TRANI",
+    "oggetto": "PROCEDURA APERTA TELEMATICA, SUDDIVISA IN OTTO LOTTI, PER L’AFFIDAMENTO DEI SERVIZI ASSICURATIVI DI AMET S.p.A.",
+    "prima_vista": "2026-11-09T16:21:59.161286+00:00",
+    "scadenza": "2026-12-07",
+    "scartata": "fuori settore (natura)"
+  },
   "A5a52c8c3-43b5-48ec-8238-25e4dfb28324": {
     "cig": "BD2945301C",
     "ente": "COMUNE DI NICHELINO",
@@ -16418,6 +17068,16 @@
     "scadenza": "2026-10-26",
     "scartata": "fuori settore (natura)"
   },
+  "A5bfd1064-765f-4498-9b3f-77dc5f5b0faf": {
+    "cig": "BDB106A734",
+    "ente": "COMUNE DI PRIOCCA",
+    "importo": 26250.0,
+    "luogo": "PRIOCCA",
+    "oggetto": "COMUNE DI PRIOCCA - PROCEDURA APERTA, CON IL CRITERIO DELL’OFFERTA ECONOMICAMENTE PIU’ VANTAGGIOSA, PER L’AFFIDAMENTO DEL SERVIZIO DI TESORERIA COMUNALE PER IL PERIODO 01/01/2027 – 31/12/2031, CON FACOLTA’ DI RINNOVO PER ULTERIORI CINQUE ANNI",
+    "prima_vista": "2026-11-09T16:21:59.162984+00:00",
+    "scadenza": "2026-12-10",
+    "scartata": "fuori settore (natura)"
+  },
   "A5c10f7ad-0655-44aa-a792-76c567d4dadf": {
     "cig": "BD9429598B",
     "ente": "CENTRALE UNICA DI COMMITTENZA DEL TAVOLIERE",
@@ -16687,6 +17347,16 @@
     "prima_vista": "2026-10-09T14:43:19.493665+00:00",
     "scadenza": "2026-11-09",
     "scartata": "fuori regione"
+  },
+  "A5daf9f8e-0c18-4408-b6bc-236c0e505d94": {
+    "cig": "BDA9DA513E",
+    "ente": "UNIONE DI COMUNI CITTA TERRITORIO VAL VIBRATA",
+    "importo": 3329280.0,
+    "luogo": "SANT'OMERO",
+    "oggetto": "PROCEDURA APERTA",
+    "prima_vista": "2026-11-09T16:21:59.161252+00:00",
+    "scadenza": "2026-12-10",
+    "scartata": "fuori settore (natura)"
   },
   "A5db86041-8e12-4269-ac71-6abf20f12466": {
     "cig": "BD6C26D37F",
@@ -16978,6 +17648,16 @@
     "scadenza": "2026-12-04",
     "scartata": "fuori regione"
   },
+  "A5f30bf1d-7d5a-4a52-93f2-a98bc82b031a": {
+    "cig": "BDB3947FE2",
+    "ente": "COMUMITA' MONTANA ZONA XIX DEL LAZIO",
+    "importo": 69129.83,
+    "luogo": "VENTOTENE",
+    "oggetto": "Riqualificazione dell'area di Parata Grande mediante la realizzazione di un campo da padel ed un campo di calcetto presso l'impianto sportivo comunale\" PER CONTO DEL COMUNE DI VENTOTENE (LT)",
+    "prima_vista": "2026-11-09T16:21:59.161339+00:00",
+    "scadenza": "2026-11-23",
+    "scartata": "fuori regione"
+  },
   "A5f565608-8208-494c-8a8c-669f1e95153e": {
     "cig": "BD396F7FF6",
     "ente": "SNAM FSRU ITALIA S.R.L.",
@@ -17128,6 +17808,16 @@
     "scadenza": "2026-11-20",
     "scartata": "fuori settore (natura)"
   },
+  "A604183fb-e12a-4e11-8e72-af582808f964": {
+    "cig": "BDAFDEF70F",
+    "ente": "COMUNE DI TORINO",
+    "importo": 406263.0,
+    "luogo": "TORINO",
+    "oggetto": "Procedura negoziata G01129. Concessione della gestione sociale in regime di convenzione dell'impianto sportivo comunale sito in Viale Parco Michelotti 21/A",
+    "prima_vista": "2026-11-09T16:21:59.162649+00:00",
+    "scadenza": "2026-12-11",
+    "scartata": "fuori settore (natura)"
+  },
   "A604335e7-3b4d-4787-9db5-93907a6aa751": {
     "cig": "BD7F8497BA",
     "ente": "COMUNE DI CITTA' DI CASTELLO",
@@ -17216,6 +17906,16 @@
     "oggetto": "NAACQO10-26 - Fornitura conglomerato bituminoso a freddo",
     "prima_vista": "2026-10-27T12:15:12.110491+00:00",
     "scadenza": "2026-11-10",
+    "scartata": "fuori settore (natura)"
+  },
+  "A609a18b5-d8f4-4efb-822e-789a43ff38ae": {
+    "cig": "BDAD2E41E6",
+    "ente": "MINISTERO DELLE INFRASTRUTTURE E DEI TRASPORTI -PROVVEDITORATO INTERREGIONALE PER LE OPERE PUBBLICHE DEL PIEMONTE, LA VALLE D'AOSTA E LA LIGURIA",
+    "importo": 764103.84,
+    "luogo": "BORGOMANERO",
+    "oggetto": "PROCEDURA APERTA, AI SENSI DELL'ART. 71 DEL D.LGS. 36/2023 E S.M.I. PER L'AFFIDAMENTO DEL SERVIZIO, DA SVOLGERSI IN MODALITA BIM, DI COORDINAMENTO DELLA SICUREZZA IN FASE DI ESECUZIONE, CON OPZIONE DI AFFIDAMENTO DEI SERVIZI DI DIREZIONE OPERATIVA, DI ISPETTORI DI CANTIERE, DI CONTABILITA e assistenza alla D.L. per presentazione SCIA antincendio, PER I LAVORI DI REALIZZAZIONE DEL NUOVO PADIGLIONE ",
+    "prima_vista": "2026-11-09T16:21:59.162747+00:00",
+    "scadenza": "2026-12-20",
     "scartata": "fuori settore (natura)"
   },
   "A60adea74-41dc-4f11-8b35-53401c0c5215": {
@@ -17369,6 +18069,16 @@
     "scadenza": "2026-11-17",
     "scartata": "fuori regione"
   },
+  "A61b0d477-12ee-4fec-a6cc-33de017e32cc": {
+    "cig": "BDADA3AFA8",
+    "ente": "COMUNE DI ALBANELLA",
+    "importo": 337797.84,
+    "luogo": "SALERNO",
+    "oggetto": "vedi documenti di gara",
+    "prima_vista": "2026-11-09T16:21:59.162989+00:00",
+    "scadenza": "2026-11-24",
+    "scartata": "fuori settore (natura)"
+  },
   "A61badd57-a695-4282-969a-207b96992b1a": {
     "cig": "BD815355B4",
     "ente": "FEDERAZIONE DEI COMUNI DEL CAMPOSAMPIERESE",
@@ -17429,6 +18139,16 @@
     "scadenza": "2026-11-30",
     "scartata": "fuori settore (natura)"
   },
+  "A62083b9b-e6d3-47a7-b3f2-69c17404214d": {
+    "cig": "BC8429FF7B",
+    "ente": "AZIENDA SANITARIA UNIVERSITARIA FRIULI CENTRALE",
+    "importo": 658810.0,
+    "luogo": "UDINE",
+    "oggetto": "FC25SER146 Rev",
+    "prima_vista": "2026-11-09T16:21:59.161378+00:00",
+    "scadenza": "2026-12-07",
+    "scartata": "fuori settore (natura)"
+  },
   "A62295a68-38bb-4aa9-a7a1-1ec8dec4e13b": {
     "cig": "BD8316DF20",
     "ente": "COMUNE DI ROBBIO",
@@ -17448,6 +18168,16 @@
     "prima_vista": "2026-10-21T11:51:30.112223+00:00",
     "scadenza": "2026-11-26",
     "scartata": "fuori regione"
+  },
+  "A623adcc7-6bc2-47ce-960d-b08bde661185": {
+    "cig": "BDACC40702",
+    "ente": "BANCA D'ITALIA",
+    "importo": 2962000.0,
+    "luogo": "ROMA",
+    "oggetto": "25PR170 - Indagini statistiche campionarie sui bilanci delle famiglie italiane",
+    "prima_vista": "2026-11-09T16:21:59.162887+00:00",
+    "scadenza": "2026-12-21",
+    "scartata": "fuori settore (natura)"
   },
   "A623e8151-1755-4bf2-877c-2eb83a94dce5": {
     "cig": "BDA012AF7E",
@@ -17909,6 +18639,16 @@
     "scadenza": null,
     "scartata": "senza scadenza"
   },
+  "A64ac2c76-d3c3-4437-8be1-9e76fd7efe9d": {
+    "cig": null,
+    "ente": "CONSORZIO DI BONIFICA DELLE MARCHE",
+    "importo": null,
+    "luogo": null,
+    "oggetto": "MESSA IN VENDITA DI UN PULMINO VOLKSWAGEN TRANSPORTER KOMBI 9 POSTI - KM: 15.550 - ANNO DI IMMATRICOLAZIONE: 2019 - COLORE: Bianco Candy",
+    "prima_vista": "2026-11-09T16:21:59.162962+00:00",
+    "scadenza": null,
+    "scartata": "senza scadenza"
+  },
   "A64b0bddf-4ad4-4c7e-9eee-0db793ecda1c": {
     "cig": "BD8CDBBBBA",
     "ente": "PROVINCIA DI FOGGIA",
@@ -18039,6 +18779,16 @@
     "scadenza": "2026-11-09",
     "scartata": "fuori regione"
   },
+  "A6580b8c4-1990-4b1e-81ba-98b60f1111ab": {
+    "cig": "BD65479707",
+    "ente": "UNIVERSITA DEGLI STUDI DI FERRARA",
+    "importo": 30000.0,
+    "luogo": "FERRARA",
+    "oggetto": "Servizio di sviluppo e realizzazione di laboratori didattici presso il Centec Living Lab",
+    "prima_vista": "2026-11-09T16:21:59.162125+00:00",
+    "scadenza": "2026-11-12",
+    "scartata": "fuori settore (natura)"
+  },
   "A65941599-96ad-424d-a97f-58d43de83943": {
     "cig": "BD291120B2",
     "ente": "BANCA D'ITALIA",
@@ -18158,6 +18908,16 @@
     "prima_vista": "2026-11-03T14:18:45.912155+00:00",
     "scadenza": "2026-12-03",
     "scartata": "fuori settore (natura)"
+  },
+  "A65e6d9b6-8780-4e69-a369-44ec02f2d920": {
+    "cig": "BDAFBF557F",
+    "ente": "UNIONE DEI COMUNI CIRCODARIO DELL'EMPOLESE VALDELSA",
+    "importo": 485776.16,
+    "luogo": "CASTELFIORENTINO",
+    "oggetto": "L0226 CASTELFIORENTINO - Procedura aperta sotto soglia con inversione procedimentale per l’appalto di lavori di efficientamento energetico del Palazzo Comunale - PR FESR 2021-2027 CUP C34J24000330001",
+    "prima_vista": "2026-11-09T16:21:59.162362+00:00",
+    "scadenza": "2026-11-24",
+    "scartata": "fuori regione"
   },
   "A65eb90ee-242c-4705-a6ef-e375f99d15fc": {
     "cig": "BD3B03B988",
@@ -18709,6 +19469,16 @@
     "scadenza": "2026-10-10",
     "scartata": "fuori settore (natura)"
   },
+  "A6954c703-4e06-475a-a551-c7cc1b72830d": {
+    "cig": "BD99015E06",
+    "ente": "SOCIETA' ABRUZZESE PER SERVIZIO IDRICO INTEGRATO SPA - IN BREVE S.A.S.I. - S.P.A.",
+    "importo": 1152793.85,
+    "luogo": "CHIETI",
+    "oggetto": "FSC 2021-2027. Intervento “Razionalizzazione del sistema depurativo e adeguamento strutturale, impiantistico e tecnologico degli impianti di depurazione delle aree montane, collinari e pedemontane con sistema di essiccamento solare dei fanghi, Lotto funzionale” - CLP: 2026FSC01 “Razionalizzazione ed ottimizzazione del sistema depurativo Asse Sangro-Sinello”",
+    "prima_vista": "2026-11-09T16:21:59.162490+00:00",
+    "scadenza": "2026-12-04",
+    "scartata": "fuori settore (SOA)"
+  },
   "A6964ef80-693a-4e6f-bb54-546f45739823": {
     "cig": "BCCD3C70F9",
     "ente": "AZIENDA TRASPORTI MILANESI S.P.A.",
@@ -18849,6 +19619,16 @@
     "scadenza": "2026-10-20",
     "scartata": "fuori regione"
   },
+  "A69ead2f1-339c-4d96-8fd8-bfcab6366128": {
+    "cig": "BD34EB2C75",
+    "ente": "ISTITUTO NAZIONALE DELLA PREVIDENZA SOCIALE",
+    "importo": 547013.83,
+    "luogo": "ASCOLI PICENO",
+    "oggetto": "Procedura aperta telematica sottosoglia comunitaria, art.71 del D.lgs. n.36 2023 e ss.mm.ii., per affidamento dei Lavori di miglioramento sismico immobile da adibirsi a Direzione Provinciale INPS di Ascoli Piceno, Via Malaspina 15 17",
+    "prima_vista": "2026-11-09T16:21:59.162417+00:00",
+    "scadenza": "2026-11-25",
+    "scartata": "fuori regione"
+  },
   "A6a247387-bd95-44ae-82b3-509718310f10": {
     "cig": "BD8C44D3A4",
     "ente": "AZIENDA OSPEDALIERA UNIVERSITARIA CONSORZIALE POLICLINICO BARI",
@@ -18868,6 +19648,16 @@
     "prima_vista": "2026-10-09T14:43:19.494499+00:00",
     "scadenza": "2026-11-12",
     "scartata": "fuori regione"
+  },
+  "A6a3ff9c2-08e2-49e1-9a3d-555e3f945791": {
+    "cig": "BDA8F14BF6",
+    "ente": "AZIENDA OSPEDALIERA UNIVERSITARIA LUIGI VANVITELLI",
+    "importo": 553500.0,
+    "luogo": "NAPOLI",
+    "oggetto": "Fornitura triennale di guaine per fibroscopio e DM vari per UOC ORL ed UOSD Riabilitazione Generale e Specialistica",
+    "prima_vista": "2026-11-09T16:21:59.162896+00:00",
+    "scadenza": "2026-12-15",
+    "scartata": "fuori settore (natura)"
   },
   "A6a4158ee-f68e-4d01-9e76-0ccdf55e4b99": {
     "cig": "BD798F4C14",
@@ -19129,6 +19919,16 @@
     "scadenza": "2026-11-10",
     "scartata": "fuori settore (SOA)"
   },
+  "A6b8dec98-effe-4ec1-8565-92eef575e060": {
+    "cig": "BDB1EAA9A0",
+    "ente": "COMUNE DI LECCE",
+    "importo": 1188578.92,
+    "luogo": "LECCE",
+    "oggetto": "PROCEDURA APERTA EX ART. 71 E ART. 44 (APPALTO INTEGRATO) PER CIS LECCE BRINDISI COSTA ADRIATICA FONDO DI SVILUPPO E COESIONE 2014-2020 DELIBERA CIPESS N. 31/2022 CODICE CIS A1_19 “CIS L’ECOMUSEO DELLE BONIFICHE – LOTTO 2B Affidamento congiunto della progettazione esecutiva e dell’esecuzione dei lavori DI RIQUALIFICAZIONE FUNZIONALE EX SCUOLA RURALE DI BORGO PIAVE. CUP: C84J22000050005 - CUI:L8000",
+    "prima_vista": "2026-11-09T16:21:59.162937+00:00",
+    "scadenza": "2026-11-24",
+    "scartata": "fuori regione"
+  },
   "A6bb23e6c-81f3-484a-90bb-bc711c70b5f9": {
     "cig": "BD4AEDEB8B",
     "ente": "CONSIAG SERVIZI COMUNI SRL",
@@ -19327,6 +20127,16 @@
     "oggetto": "servizio di presidio nei centri di raccolta rifiuti in alcuni Comuni soci di Net S.p.A.",
     "prima_vista": "2026-10-13T14:13:43.710519+00:00",
     "scadenza": "2026-11-12",
+    "scartata": "fuori settore (natura)"
+  },
+  "A6c83561a-0ebd-4664-8888-996feab34d5b": {
+    "cig": "BDB098BBA0",
+    "ente": "UNIONE COMUNI SAVENA-IDICE",
+    "importo": 81967.21,
+    "luogo": "PIANORO",
+    "oggetto": "SERVIZIO DI EDUCATIVA DI STRADA E DI PROSSIMITÀ RIVOLTO A PREADOLESCENTI E ADOLESCENTI NEL TERRITORIO DEL COMUNE DI PIANORO – AVVISO MANIFESTAZIONE DI INTERESSE",
+    "prima_vista": "2026-11-09T16:21:59.162790+00:00",
+    "scadenza": "2026-11-23",
     "scartata": "fuori settore (natura)"
   },
   "A6c86ebc1-53d9-499a-9c25-6ec79bc337b3": {
@@ -19829,6 +20639,16 @@
     "scadenza": "2026-10-30",
     "scartata": "fuori settore (natura)"
   },
+  "A6f0ceb7c-1f25-460d-99e1-791ede46eec1": {
+    "cig": "BDA6D1D4A1",
+    "ente": "AZIENDA SANITARIA LOCALE BT",
+    "importo": 1396.74,
+    "luogo": "ANDRIA",
+    "oggetto": "PROCEDURA APERTA MULTILOTTO AI SENSI DELL’ART. 71 D.LGS. N. 36/2023 E S.M.I. PER LA FORNITURA IN SOMMINISTRAZIONE, PER LA DURATA DI 36 MESI, DI PRODOTTI PER LA DIAGNOSI ALLERGOLOGICA PER LE ESIGENZE DELLA ASL BT.",
+    "prima_vista": "2026-11-09T16:21:59.162534+00:00",
+    "scadenza": "2026-12-14",
+    "scartata": "fuori settore (natura)"
+  },
   "A6f1a4343-e985-499b-90ac-5ede6424420e": {
     "cig": "BD3AA5D20D",
     "ente": "UNIONE DEI COMUNI DELLA BASSA ROMAGNA",
@@ -20030,6 +20850,16 @@
     "scadenza": "2026-11-23",
     "scartata": "fuori settore (natura)"
   },
+  "A7007319c-5548-484e-9639-1fc5df1ff46f": {
+    "cig": null,
+    "ente": "REGIONE AUTONOMA FRIULI VENEZIA GIULIA",
+    "importo": null,
+    "luogo": null,
+    "oggetto": "82_2026 - UD - Avviso pubblico di consultazione di mercato per la fornitura di materiale inerte",
+    "prima_vista": "2026-11-09T16:21:59.162784+00:00",
+    "scadenza": null,
+    "scartata": "senza scadenza"
+  },
   "A7040089a-4ce2-4e78-886a-a179542564af": {
     "cig": "BD79BE2701",
     "ente": "AZIENDA SANITARIALOCALE NAPOLI 1 CENTRO",
@@ -20078,6 +20908,26 @@
     "oggetto": "\"Puliamo il mare\" Raccolta delle plastiche in ambiente marino e studio del fenomeno",
     "prima_vista": "2026-10-26T13:06:22.022540+00:00",
     "scadenza": "2026-10-27",
+    "scartata": "fuori settore (natura)"
+  },
+  "A707561b2-b156-4277-97d6-241b572f9ee6": {
+    "cig": "BDB38795E6",
+    "ente": "ISTITUTO SUPERIORE FALCONE",
+    "importo": 35000.0,
+    "luogo": "GALLARATE",
+    "oggetto": "Indagine di mercato finalizzata all individuazione degli operatori economici da invitare alla successiva procedura negoziata sotto soglia per l affidamento della fornitura annuale di derrate alimentari di vario genere e prodotti monouso ad uso alimentare destinati al funzionamento della didattica e dell attività aperta a terzi dell Istituto Superiore Falcone di Gallarate con validità dal 01-02-27 ",
+    "prima_vista": "2026-11-09T16:21:59.160685+00:00",
+    "scadenza": "2026-11-25",
+    "scartata": "fuori settore (natura)"
+  },
+  "A708e18c8-da70-4709-93f4-1c3bacd57765": {
+    "cig": "BDAAB886EA",
+    "ente": "PROVINCIA DI AVELLINO",
+    "importo": 593720.47,
+    "luogo": "MERCOGLIANO",
+    "oggetto": "PROCEDURA APERTA SUDDIVISA IN LOTTI PER SERVIZI TECNICI DI ARCHITETTURA ED INGEGNERIA NECESSARI PER LA REALIZZAZIONE DELL' INTERVENTO DENOMINATO <<TURISMO DELLE RADICI RITORNO ALLE ANTICHE DIMORE IRPINE TRA CONSERVAZIONE E INNOVAZIONE - LINEA 2 VALORIZZAZIONE DEL CAMMINO DI GUGLIELMO PATRONO DELL'IRPINIA>>",
+    "prima_vista": "2026-11-09T16:21:59.162152+00:00",
+    "scadenza": "2026-11-27",
     "scartata": "fuori settore (natura)"
   },
   "A70b7220e-6a07-411b-8a6b-42b2f6f29f4d": {
@@ -20781,6 +21631,16 @@
     "scadenza": "2026-10-20",
     "scartata": "fuori settore (natura)"
   },
+  "A7464df64-cb64-4d95-96cd-5988d22bdf9d": {
+    "cig": "BDAA3BD896",
+    "ente": "AZIENDA OSP.UNIVERS. FEDER.II",
+    "importo": 232645.0,
+    "luogo": "NAPOLI",
+    "oggetto": "PRATICA 1556/2026 – PROCEDURA APERTA, AI SENSI DELL’ART. 71 DEL CODICE, PER L'AFFIDAMENTO DELLA FORNITURA, ARTICOLATA IN DUE LOTTI, DI GEL EMOSTATICO STERILE A BASE DI GELATINA DI ORIGINE ANIMALE E TROMBINA UMANA, CON AGGIUDICAZIONE AI SENSI DELL’ART. 108, CO. 1, DEL CODICE, NEI CONFRONTI DELL’OFFERTA ECONOMICAMENTE PIÙ VANTAGGIOSA DETERMINATA SULLA BASE DEL MIGLIOR RAPPORTO PREZZO QUALITÀ (OEPV),",
+    "prima_vista": "2026-11-09T16:21:59.161603+00:00",
+    "scadenza": "2026-12-15",
+    "scartata": "fuori settore (natura)"
+  },
   "A74879c6a-963b-4d3f-b3db-74e4455abee8": {
     "cig": "BCA006F4E6",
     "ente": "AUTOSTRADE PER L'ITALIA S.P.A.",
@@ -21413,6 +22273,16 @@
     "scadenza": "2026-11-10",
     "scartata": "fuori settore (natura)"
   },
+  "A78101a74-ab18-4400-84c8-6a039ef1e357": {
+    "cig": "BDB259A33C",
+    "ente": "COMUNE DI ROZZANO",
+    "importo": 58600.0,
+    "luogo": "ROZZANO",
+    "oggetto": "AFFIDAMENTO SERVIZO PIS",
+    "prima_vista": "2026-11-09T16:21:59.162220+00:00",
+    "scadenza": "2026-11-20",
+    "scartata": "fuori settore (natura)"
+  },
   "A7817fbdf-5fb8-4872-9efb-4da9d24f5a86": {
     "cig": "BD913F8221",
     "ente": "AZIENDA SANITARIA LOCALE LECCE",
@@ -21675,6 +22545,16 @@
     "scadenza": "2026-12-10",
     "scartata": "fuori settore (natura)"
   },
+  "A7972a962-67cd-46b6-9cd9-6d5deeeee24c": {
+    "cig": "BDA95EE36B",
+    "ente": "AUTORITA' DI SISTEMA PORTUALE DEL MARE DI SARDEGNA",
+    "importo": 10141966.01,
+    "luogo": "CAGLIARI",
+    "oggetto": "SERVIZIO DI PRESIDIO DEI VARCHI DI ACCESSO ALLAREA STERILE, CONTROLLO DI SICUREZZA DEI PASSEGGERI, DEI VEICOLI, DEI BAGAGLI AL SEGUITO E DELLA MERCE, DA SVOLGERSI CON LAUSILIO DI SISTEMI TVCC E SERVIZIO DI RONDA DA EFFETTUARSI NEL PORTO DI CAGLIARI",
+    "prima_vista": "2026-11-09T16:21:59.161351+00:00",
+    "scadenza": "2026-12-09",
+    "scartata": "fuori settore (natura)"
+  },
   "A7992a7ae-16a3-4efb-9714-687e5b0111fb": {
     "cig": "BC2AC11789",
     "ente": "AQUAPUR MULTISERVIZI S.P.A.",
@@ -21867,6 +22747,16 @@
     "scadenza": null,
     "scartata": "senza scadenza"
   },
+  "A7a80987b-47e4-4c06-949b-c0c5416d0ff4": {
+    "cig": null,
+    "ente": "UNIVERSITA' DEGLI STUDI DI ROMA 'LA SAPIENZA'",
+    "importo": null,
+    "luogo": null,
+    "oggetto": "AVVISO ESPLORATIVO DI MERCATO FINALIZZATO ALLACQUISIZIONE DI MANIFESTAZIONE DI INTERESSE, CORREDATE DI RELATIVA PROPOSTA TECNICA, PER IL SUCCESSIVO AFFIDAMENTO DIRETTO AI SENSI ART.50 LETT. B) DEL D.LGS 36/2023, DEL SERVIZIO SPECIALISTICO DI RICERCA, PROGETTAZIONE SPERIMENTALE E SVILUPPO PER IL PROGETTO NEUROSCIENZE E PROGETTAZIONE DEGLI AMBIENTI SPAZIALI CUP B53C24001530006",
+    "prima_vista": "2026-11-09T16:21:59.162637+00:00",
+    "scadenza": null,
+    "scartata": "senza scadenza"
+  },
   "A7a86f126-a3c4-421a-858e-e8d408574819": {
     "cig": "BD3E28E0EE",
     "ente": "RAI RADIOTELEVISIONE ITALIANA S.P.A.",
@@ -21886,6 +22776,16 @@
     "prima_vista": "2026-10-09T14:43:19.499250+00:00",
     "scadenza": "2026-11-02",
     "scartata": "fuori settore (natura)"
+  },
+  "A7ac2f208-017a-4a92-a3a8-05ae7c4d2c7d": {
+    "cig": "BDB03A6E5B",
+    "ente": "CITTA' METROPOLITANA DI REGGIO CALABRIA",
+    "importo": 1431150.0,
+    "luogo": "REGGIO DI CALABRIA",
+    "oggetto": "Procedura aperta, suddivisa in lotti, per l'affidamento dei lavori di: MACROLOTTO 2. Manutenzione straordinaria, adeguamento normativo e miglioramento delle condizioni di sicurezza della viabilità Area Interna \\\"Ionico Serre\\\". Interventi puntuali progressive varie SP9:SS106 - Confine Provinciale; SP129dism: Gatticello - Confine Provinciale e viabilità limitrofa\\\". C.U.P.: B57H22002190001.MACROLOT",
+    "prima_vista": "2026-11-09T16:21:59.161880+00:00",
+    "scadenza": "2026-11-26",
+    "scartata": "fuori settore (SOA)"
   },
   "A7ac8e6f2-9ad5-4fe7-b91d-f248584e901d": {
     "cig": "BD397B4BEF",
@@ -23079,6 +23979,16 @@
     "scadenza": "2026-11-23",
     "scartata": "fuori settore (natura)"
   },
+  "A80a48bde-c749-41d6-9e85-ba7acb92a427": {
+    "cig": "BD5C9B96FF",
+    "ente": "CONSORZIO VALORIZZAZIONE RIFIUTI 14",
+    "importo": 964815.14,
+    "luogo": "CARIGNANO",
+    "oggetto": "CONTROLLO DEI SERVIZI SUL TERRITORIO CONSORTILE NEL RISPETTO DEI CAM",
+    "prima_vista": "2026-11-09T16:21:59.162493+00:00",
+    "scadenza": "2026-11-18",
+    "scartata": "fuori settore (natura)"
+  },
   "A80be3d3d-a3de-4f59-9906-b3398d451ae4": {
     "cig": "BD682EDC9C",
     "ente": "AMMINISTRAZIONE PROVINCIALE IMPERIA",
@@ -23669,6 +24579,16 @@
     "scadenza": "2026-11-24",
     "scartata": "fuori settore (natura)"
   },
+  "A838e2e5c-1dea-49ac-8ecd-1f8968e1e90e": {
+    "cig": "BDA9A085E7",
+    "ente": "AUTORITA' DI BACINO DISTRETTUALE DELL'APPENNINO SETTENTRIONALE",
+    "importo": 173100.13,
+    "luogo": "FIRENZE",
+    "oggetto": "VERIFICA DELLA PROGETTAZIONE DI FATTIBILITÀ TECNICO ECONOMICA DELL’INTERVENTO “RIUTILIZZO DEI REFLUI CIVILI DEPURATI PER IL FLOROVIVAISMO DI PISTOIA” CUP: H53F22001990001",
+    "prima_vista": "2026-11-09T16:21:59.161737+00:00",
+    "scadenza": "2026-12-05",
+    "scartata": "fuori settore (natura)"
+  },
   "A83ab690e-f76b-478d-98c8-c3e5e508b5ba": {
     "cig": "BC7DA51C4C",
     "ente": "AGENZIA DEL DEMANIO",
@@ -23857,6 +24777,16 @@
     "oggetto": "Procedura aperta, ai sensi dell'art. 71 del d.lgs. 36/2023, finalizzata alla conclusione di un Accordo Quadro della durata di anni 3, per l'affidamento del servizio di gestione delle attività formative di tutto il personale dell'Azienda Trasporti Messina S.p.A.",
     "prima_vista": "2026-11-06T14:17:53.960946+00:00",
     "scadenza": "2026-12-11",
+    "scartata": "fuori settore (natura)"
+  },
+  "A84aa6b22-acb9-4fef-8133-f6b84d37c8b9": {
+    "cig": "BDABF26733",
+    "ente": "AZIENDA SANITARIA LOCALE",
+    "importo": 2211340.0,
+    "luogo": "SALERNO",
+    "oggetto": "PROCEDURA TELEMATICA APERTA, AI SENSI DELL’ART. 71 DEL D. LGS. N. 36/2023 E S.M.I., PER L’AFFIDAMENTO, PER LA DURATA DI ANNI 3 (TRE), DEL “SERVIZIO ACCALAPPIAMENTO CANI E GATTI RANDAGI, SINANTROPI E FAUNA SELVATICA E DI CUSTODIA E GESTIONE DEGLI ANIMALI PRESSO CANILI SANITARI DEL TERRITORIO DELL’ASL SALERNO” DA AGGIUDICARSI CON IL CRITERIO DELL’OFFERTA ECONOMICAMENTE PIÙ VANTAGGIOSA",
+    "prima_vista": "2026-11-09T16:21:59.161829+00:00",
+    "scadenza": "2026-12-17",
     "scartata": "fuori settore (natura)"
   },
   "A84bd8439-07e9-483d-b4b6-f0016cd80d14": {
@@ -24218,6 +25148,16 @@
     "prima_vista": "2026-10-14T11:54:37.166521+00:00",
     "scadenza": "2026-11-02",
     "scartata": "fuori settore (natura)"
+  },
+  "A86ad91bc-a993-4667-a4d7-a66a6b838fe2": {
+    "cig": "BD3AF3F993",
+    "ente": "SO.G.I.N.-SOCIETA' GESTIONE IMPIANTI NUCLEARI SPA",
+    "importo": 542907.98,
+    "luogo": "LATINA",
+    "oggetto": "C0112L26 - Procedura aperta avente ad oggetto il \"Servizio di progettazione e di monitoraggio della biodiversità e Lavori di realizzazione dell’area umida nell’esistente Fossa B presso la Centrale di Latina (LT)\"",
+    "prima_vista": "2026-11-09T16:21:59.162211+00:00",
+    "scadenza": "2026-11-23",
+    "scartata": "fuori settore (SOA)"
   },
   "A86b3c83d-d610-47b2-bb10-e9f9b0c92315": {
     "cig": "BD4A6BE714",
@@ -24599,6 +25539,16 @@
     "scadenza": "2026-11-25",
     "scartata": "fuori settore (natura)"
   },
+  "A891a66da-77e9-479a-8523-6d86307f35ec": {
+    "cig": "BDAB9BADC7",
+    "ente": "CONSIGLIO NAZIONALE DELLE RICERCHE",
+    "importo": 18750.0,
+    "luogo": "NAPOLI",
+    "oggetto": "FORNITURA DI STRUMENTAZIONE DA INTEGRARE AL ROV (REMOTELY OPERATED VEHICLE) AEGIR 250 DA UTILIZZARE A BORDO DELLA N/R GAIA BLU SUDDIVISO IN 8 LOTTI FUNZIONALI",
+    "prima_vista": "2026-11-09T16:21:59.162458+00:00",
+    "scadenza": "2026-12-09",
+    "scartata": "fuori settore (natura)"
+  },
   "A891a92d3-1dc9-40ce-b9dc-4aa067968a47": {
     "cig": "BD74AAB1BC",
     "ente": "COMUNE DI ANCONA",
@@ -24799,6 +25749,16 @@
     "scadenza": "2026-11-11",
     "scartata": "fuori settore (natura)"
   },
+  "A8a59d253-c36b-43d1-a7d4-b86060c6d0da": {
+    "cig": null,
+    "ente": "ISTITUTO POLIGRAFICO E ZECCA DELLO STATO - SOCIETA' PER AZIONI IN BREVE IPZS S.P.A.",
+    "importo": null,
+    "luogo": null,
+    "oggetto": "Avviso di Indagine di mercato - SERVIZIO DI MANUTENZIONE A GUASTO E FORNITURA DI RICAMBI E CONSUMABILI PER LA SVILUPPATRICE HEIGHTS TWP1250",
+    "prima_vista": "2026-11-09T16:21:59.162941+00:00",
+    "scadenza": null,
+    "scartata": "senza scadenza"
+  },
   "A8a610dd3-8c97-4dbb-b99f-6ddafd9272bf": {
     "cig": "BD5ED93CEA",
     "ente": "COMUNITA' RIVIERA FRIULANA",
@@ -24899,6 +25859,16 @@
     "scadenza": "2026-10-30",
     "scartata": "fuori settore (natura)"
   },
+  "A8ad72b55-5fe4-4ae2-953c-aa871667cca5": {
+    "cig": "B144AE473D",
+    "ente": "ANAS - SOCIETA' PER AZIONI",
+    "importo": 118465.39,
+    "luogo": "ACQUASANTA TERME",
+    "oggetto": "ANAIACQ002-24 Servizio di CSE in ordine ai lavori sulla S.S. 4 - Piano di potenziamento e riqualificazione SIL ACMSAN00544",
+    "prima_vista": "2026-11-09T16:21:59.162692+00:00",
+    "scadenza": "2024-05-16",
+    "scartata": "scaduta"
+  },
   "A8af03cc2-4978-4603-8082-982d16d3d9fb": {
     "cig": "BD728178D3",
     "ente": "CITTA' METROPOLITANA DI MESSINA",
@@ -24918,6 +25888,16 @@
     "prima_vista": "2026-10-14T11:54:40.797175+00:00",
     "scadenza": "2026-11-13",
     "scartata": "fuori regione"
+  },
+  "A8b226672-171d-405b-ba93-c3dee83c75da": {
+    "cig": "BDB0FDA061",
+    "ente": "COMUNE DI SAN MAURO TORINESE",
+    "importo": 500.0,
+    "luogo": "SAN MAURO TORINESE",
+    "oggetto": "CONCESSIONE DEL SERVIZIO DI GESTIONE DELL’IMPIANTO DI PUBBLICO SPETTACOLO “CINEMA TEATRO PIERO GOBETTI” DEL COMUNE DI SAN MAURO TORINESE",
+    "prima_vista": "2026-11-09T16:21:59.162979+00:00",
+    "scadenza": "2026-11-27",
+    "scartata": "fuori settore (natura)"
   },
   "A8b244763-fbd8-4a21-b744-4d7112f1ec55": {
     "cig": null,
@@ -25069,6 +26049,16 @@
     "scadenza": "2026-11-02",
     "scartata": "fuori settore (natura)"
   },
+  "A8bfcd98c-5b63-40f6-96dc-772c3f77d81d": {
+    "cig": "BB6FBD0E4D",
+    "ente": "COMUNE DI STROZZA",
+    "importo": 246000.0,
+    "luogo": "STROZZA",
+    "oggetto": "LAVORI RIQUALIFICAZIONE CAMPO SPORTIVO",
+    "prima_vista": "2026-11-09T16:21:59.162965+00:00",
+    "scadenza": "2026-05-21",
+    "scartata": "scaduta"
+  },
   "A8c05597d-8c26-4331-a7a3-b089c3c3053d": {
     "cig": "BD2B63ED88",
     "ente": "AZIENDA SOCIO-SANITARIA TERRITORIALE NORD MILANO",
@@ -25087,6 +26077,16 @@
     "oggetto": "PROVV.073_2026 Gara ponte a procedura aperta sopra soglia comunitaria suddivisa in lotti, ai sensi dell'art. 71 e 58 del D.Lgs. n. 36/2023 e s.m.i., con aggiudicazione all'offerta economicamente più vantaggiosa, per la fornitura di reagenti per la determinazione di indagini/esami relativi ai settori di tossicologia, batteriologia, VES, POCT e relativo noleggio apparecchiature in service con assist",
     "prima_vista": "2026-10-27T12:15:12.109247+00:00",
     "scadenza": "2026-11-04",
+    "scartata": "fuori settore (natura)"
+  },
+  "A8c1c4a99-367e-43f9-8e93-cd7e4061e58e": {
+    "cig": "BDA8F04EC1",
+    "ente": "CONSORZIO DI BONIFICA DELLA SARDEGNA CENTRALE",
+    "importo": 1128947.16,
+    "luogo": "LULA",
+    "oggetto": "Gara a procedura aperta telematica per l’appalto dei servizi tecnici di ingegneria e architettura relativi alla redazione del Progetto di Fattibilità Tecnico-Economica (PFTE), del Progetto Esecutivo (PE), alla Direzione dei Lavori (DL) e al Coordinamento della Sicurezza in fase di Esecuzione (CSE), nonché delle indagini e prove di laboratorio, relativi all'intervento denominato \"EINSTEIN TELESCOPE",
+    "prima_vista": "2026-11-09T16:21:59.161272+00:00",
+    "scadenza": "2026-12-07",
     "scartata": "fuori settore (natura)"
   },
   "A8c1f8b92-8a48-4996-ac97-a0c0bc2aeacf": {
@@ -25277,6 +26277,16 @@
     "oggetto": "Servizio di manutenzione ordinaria delle attrezzature, dell’essiccatore e delle apparecchiature del reparto macellazione, compresi i compressori aria delle pompe e del serbatoio refrigerato per accumulo sangue di lavorazione e l’impianto multipressione dello Stabilimento “Centro Carni” sito in viale Palmiro Togliatti 1280\\\"",
     "prima_vista": "2026-10-19T13:19:00.602190+00:00",
     "scadenza": "2026-11-15",
+    "scartata": "fuori settore (natura)"
+  },
+  "A8d5826a4-9978-4ca9-8df3-5175acc7d62f": {
+    "cig": "BDAD2E1F68",
+    "ente": "COMUNE DI BENEVENTO",
+    "importo": 310477.35,
+    "luogo": "BENEVENTO",
+    "oggetto": "Fornitura di arredi didattici innovativi per gli asili nido di via L. Pezzella e via C. Nuzzolo e per la scuola dell'infanzia di via A. Zazo, con il criterio dell'offerta economicamente più vantaggiosa a prezzo fisso (art. 108, comma 5) | PN \"Scuola e Competenze\" 2021-2027 | Avviso prot. n. 22870 del 03.02.2026 | Progetto RSO4.2.A5.A-FESRPN-CA-2026-15 | CUP: J84D25003980007",
+    "prima_vista": "2026-11-09T16:21:59.162115+00:00",
+    "scadenza": "2026-11-23",
     "scartata": "fuori settore (natura)"
   },
   "A8d680212-a64a-4c75-9c5a-46e7ed3ec9b0": {
@@ -25719,6 +26729,16 @@
     "scadenza": "2026-11-06",
     "scartata": "fuori settore (natura)"
   },
+  "A8fc6082c-9d58-4f86-8c99-6807c359e1e2": {
+    "cig": "BDAB9DB904",
+    "ente": "SILEA SPA - SOCIETA' INTERCOMUNALE LECCHESE PER L'ECOLOGIA E L'AMBIENTE PER AZIONI",
+    "importo": 3524525.83,
+    "luogo": "LECCO",
+    "oggetto": "Servizio di pulizia caditoie stradali e spurgo pozzetti, compreso il trasporto ad impianto di destino e smaltimento dei rifiuti provenienti da tale attività",
+    "prima_vista": "2026-11-09T16:21:59.161836+00:00",
+    "scadenza": "2026-12-09",
+    "scartata": "fuori settore (natura)"
+  },
   "A8fd5f7be-1787-4319-a17b-ee8598834f14": {
     "cig": "BD75952926",
     "ente": "AMMINISTRAZIONE PROVINCIALE DI VITERBO",
@@ -25839,6 +26859,16 @@
     "prima_vista": "2026-10-15T11:31:36.989099+00:00",
     "scadenza": "2026-11-16",
     "scartata": "fuori regione"
+  },
+  "A90c1b987-5d8b-4e2a-871b-a08b8ebad575": {
+    "cig": "BDB00DAF7E",
+    "ente": "CONSIP S.P.A.",
+    "importo": 1882233.6,
+    "luogo": "ROMA",
+    "oggetto": "Avviso di indagine di mercato per l'acquisizioni di licenze Zend, servizi di supporto specialistico e di formazione per Sogei",
+    "prima_vista": "2026-11-09T16:21:59.162891+00:00",
+    "scadenza": "2026-11-20",
+    "scartata": "fuori settore (natura)"
   },
   "A90ce5a23-0db6-437a-bbb7-c34bf84fd694": {
     "cig": "BD6828FF09",
@@ -26250,6 +27280,16 @@
     "scadenza": "2026-11-28",
     "scartata": "fuori settore (natura)"
   },
+  "A92b6a886-43a3-4c97-aa0b-f1b927e34747": {
+    "cig": "BDA830F0C1",
+    "ente": "AZIENDA OSPEDALIERA UNIVERSITARIA LUIGI VANVITELLI",
+    "importo": 630000.0,
+    "luogo": "NAPOLI",
+    "oggetto": "Fornitura in noleggio quinquennale di sistemi per stampanti per vetrini di cito/istologia e di immunoistochimica, comprensiva di materiale di consumo, da destinare alle attività della U.O.C. di Anatomia Patologica dell’A.O.U. Luigi Vanvitelli",
+    "prima_vista": "2026-11-09T16:21:59.162800+00:00",
+    "scadenza": "2026-12-17",
+    "scartata": "fuori settore (natura)"
+  },
   "A92bc26e2-45b2-414c-b617-3b00e401d02f": {
     "cig": "BD4CB82E19",
     "ente": "POLITECNICO DI BARI",
@@ -26520,6 +27560,16 @@
     "scadenza": "2026-11-10",
     "scartata": "fuori settore (natura)"
   },
+  "A941dc951-7c9b-4a29-8e67-fefc5c769780": {
+    "cig": "BDAB68CE0B",
+    "ente": "POLICLINICO UMBERTO I",
+    "importo": 2143260.0,
+    "luogo": "ROMA",
+    "oggetto": "Procedura aperta telematica, ai sensi dell’art. 71 del D.Lgs. 36/2023, per l’affidamento della fornitura in service di n.1 strumento per chirurgia oculare vitreo-retinica per le necessità della UOSD Chirurgia Vitreo-Retinica dell’Azienda Ospedaliero-Universitaria Policlinico Umberto I di Roma",
+    "prima_vista": "2026-11-09T16:21:59.162227+00:00",
+    "scadenza": "2026-12-17",
+    "scartata": "fuori settore (natura)"
+  },
   "A941fc369-f1be-4632-849c-16514f4f646e": {
     "cig": "BD92384686",
     "ente": "AZIENDA SOCIO-SANITARIA TERRITORIALE DI CREMONA",
@@ -26548,6 +27598,16 @@
     "oggetto": "SERVIZI AUSILIARI ALLE ATTIVITÀ DEL SERVIZIO BIBLIOTECARIO ASSOCIATO DEI COMUNI DI TERRANUOVA BRACCIOLINI E LORO CIUFFENNA",
     "prima_vista": "2026-11-05T14:42:12.216398+00:00",
     "scadenza": "2026-12-09",
+    "scartata": "fuori settore (natura)"
+  },
+  "A94434b8a-5605-4aa5-901a-52e818be53c4": {
+    "cig": "BD4CEB4126",
+    "ente": "UNIONE RENO-GALLIERA",
+    "importo": 347693.69,
+    "luogo": "SAN PIETRO IN CASALE",
+    "oggetto": "PROCEDURA APERTA PER L'AFFIDAMENTO DEL SERVIZIO DI BROKERAGGIO ASSICURATIVO PER UNA DURATA DI QUATTRO ANNI CON POSSIBILITA DI RINNOVO, PER I COMUNI DI CASTEL MAGGIORE, BENTIVOGLIO, SAN PIETRO IN CASALE, GALLIERA E ASP PIANURA EST",
+    "prima_vista": "2026-11-09T16:21:59.161680+00:00",
+    "scadenza": "2026-11-11",
     "scartata": "fuori settore (natura)"
   },
   "A94497cb0-2069-4225-b16b-d05d0636761f": {
@@ -26970,6 +28030,16 @@
     "scadenza": "2026-10-28",
     "scartata": "fuori settore (natura)"
   },
+  "A961400dc-705f-4f3c-a700-140eaa501232": {
+    "cig": "BDB2A69B14",
+    "ente": "AZIENDA OSP.UNIVERS. FEDER.II",
+    "importo": 215590.0,
+    "luogo": "NAPOLI",
+    "oggetto": "IdM - INDAGINE ESPLORATIVA DI MERCATO PER L’INDIVIDUAZIONE DEGLI O.E. DA INVITARE ALLA SUCCESSIVA PROCEDURA NEGOZIATA DI CUI ALL’ART. 50, CO. 1, LETT. E), DEL D.LGS. 36/2023 AI FINI DELL’AFFIDAMENTO DELLA FORNITURA DI BANCHI DI ASPIRAZIONE PER DISSEZIONE E RIDUZIONE PER LE ESIGENZE DELL’ U.O.C. ANATOMIA PATOLOGICA DELL’A.O.U. FEDERICO II",
+    "prima_vista": "2026-11-09T16:21:59.162268+00:00",
+    "scadenza": "2026-11-23",
+    "scartata": "fuori settore (natura)"
+  },
   "A961bf993-07ea-430b-899e-cb3fa8ed87fb": {
     "cig": null,
     "ente": "ISTITUTO POLIGRAFICO E ZECCA DELLO STATO - SOCIETA' PER AZIONI IN BREVE IPZS S.P.A.",
@@ -27268,6 +28338,16 @@
     "oggetto": "AFFIDAMENTO IN CONCESSIONE DEL SERVIZIO DI GESTIONE, UTILIZZO E ANIMAZIONE DEL PIANO TERRA DELL’IMMOBILE DEL COMUNE DI CASTRIGNANO DEI GRECI DENOMINATO “EX SCUOLA DON GNOCCHI”.",
     "prima_vista": "2026-10-22T11:55:24.444596+00:00",
     "scadenza": "2026-11-19",
+    "scartata": "fuori settore (natura)"
+  },
+  "A98512565-fd3f-47d3-b831-55fab4b6ed2b": {
+    "cig": "BD765217CF",
+    "ente": "ACEA ATO 2 S.P.A.",
+    "importo": 2850000.0,
+    "luogo": "ROMA",
+    "oggetto": "5189/EBE: Servizio di trasporto acqua potabile a mezzo autobotti",
+    "prima_vista": "2026-11-09T16:21:59.161802+00:00",
+    "scadenza": "2026-11-13",
     "scartata": "fuori settore (natura)"
   },
   "A9858fd13-a6af-44a0-b234-69a5ce9fbc2e": {
@@ -28753,6 +29833,16 @@
     "scadenza": "2026-11-02",
     "scartata": "fuori regione"
   },
+  "Aa1a82f86-96ae-4650-b955-22c3fd2d9eed": {
+    "cig": "BDB26C4925",
+    "ente": "COMUNE DI FLORIDIA",
+    "importo": 139900.0,
+    "luogo": "FLORIDIA",
+    "oggetto": "MANIFESTAZIONE D'INTERESSE PER L'INDIVIDUAZIONE DI OPERATORI ECONOMICI INTERESSATI AL SERVIZIO DI CONFERIMENTO/SELEZIONE/VALORIZZAZIONE E SMALTIMENTO DEI RIFIUTI BIODEGRADABILI E SFALCI DI POTATURA",
+    "prima_vista": "2026-11-09T16:21:59.161466+00:00",
+    "scadenza": "2026-11-19",
+    "scartata": "fuori settore (natura)"
+  },
   "Aa1cc6499-ff23-444c-b623-417e0e02a730": {
     "cig": "BD1FB84615",
     "ente": "ISTITUTO ITALIANO DI TECNOLOGIA",
@@ -28893,6 +29983,16 @@
     "scadenza": "2026-11-18",
     "scartata": "fuori settore (natura)"
   },
+  "Aa28d4b35-8e69-44ee-81c0-d254c65dfc61": {
+    "cig": "BDA6A5483D",
+    "ente": "LIGURIA DIGITALE",
+    "importo": 6000.0,
+    "luogo": "GENOVA",
+    "oggetto": "Servizi di assistenza tecnica e manutenzione del sw Portale di pubblicazione dei referti radiologici",
+    "prima_vista": "2026-11-09T16:21:59.161539+00:00",
+    "scadenza": "2026-11-22",
+    "scartata": "fuori settore (natura)"
+  },
   "Aa28eebc6-6415-42b4-a9ea-6e4d1dbc7fba": {
     "cig": "BD11112DA7",
     "ente": "OSPEDALE DI SASSUOLO S.P.A. UNICO SOCIO",
@@ -28951,6 +30051,16 @@
     "oggetto": "AVVISO INDAGINE DI MERCATO PER FORNITURA E DISTRIBUZIONE MATERIALE INFORMATICO DI CONSUMO COMPRENSIVO DI APPLICATIVO PER LA GESTIONE DEGLI ORDINI ON-LINE. TRIENNIO 2027-2029",
     "prima_vista": "2026-10-15T11:31:36.989153+00:00",
     "scadenza": "2026-10-29",
+    "scartata": "fuori settore (natura)"
+  },
+  "Aa2c83a23-5626-4e92-a5b0-7b38dd14e730": {
+    "cig": "BDAD43EF69",
+    "ente": "AEROPORTI DI PUGLIA - SOCIETA' PER AZIONI (IN SIGLA S.P.A.)",
+    "importo": 600000.0,
+    "luogo": "BARI",
+    "oggetto": "PROCEDURA APERTA IN MODALITÀ TELEMATICA PER L’AFFIDAMENTO DEI SERVIZI A PRESIDIO DELLA CYBERSECURITY DI AEROPORTI DI PUGLIA",
+    "prima_vista": "2026-11-09T16:21:59.162879+00:00",
+    "scadenza": "2026-12-21",
     "scartata": "fuori settore (natura)"
   },
   "Aa2cf4ffd-0489-432f-b50a-ae4279378bc9": {
@@ -29052,6 +30162,16 @@
     "prima_vista": "2026-10-21T11:51:30.110734+00:00",
     "scadenza": "2026-11-05",
     "scartata": "fuori settore (SOA)"
+  },
+  "Aa3929dbe-a88f-4d54-a59f-877a7318e42d": {
+    "cig": "BDB015A921",
+    "ente": "COMUNE DI MARINA DI GIOIOSA IONICA",
+    "importo": 144309.58,
+    "luogo": "MARINA DI GIOIOSA IONICA",
+    "oggetto": "Procedura per l'affidamento della fornitura e posa di una Serra idroponica e Sistema sensor/dati meteo ambientali relativa al progetto:“LA CITTÀ DEL SORRISO - COLTIVIAMO COMUNITÀ”CUP: J37B25000090005",
+    "prima_vista": "2026-11-09T16:21:59.162601+00:00",
+    "scadenza": "2026-11-10",
+    "scartata": "fuori settore (natura)"
   },
   "Aa3a79925-baa8-4a61-be87-49e524eb8862": {
     "cig": "BD3DB9E752",
@@ -29884,6 +31004,16 @@
     "scadenza": "2026-11-12",
     "scartata": "fuori regione"
   },
+  "Aa8ce7278-f994-4a18-a03e-f3d60e1d2603": {
+    "cig": "B756BB5FB5",
+    "ente": "ANAS - SOCIETA' PER AZIONI",
+    "importo": 140768.69,
+    "luogo": "BELFORTE DEL CHIENTI",
+    "oggetto": "ANAIACQ002-25 Servizi indagini propedeutiche alla progettazione definitiva ed esecutiva in ordine ai lavori SS.SS. 502- 78- Belforte del Chienti Sarnano- Lavori di adeguamento e/o miglioramento tecnico funzionale della sezione stradale in T.S.",
+    "prima_vista": "2026-11-09T16:21:59.162831+00:00",
+    "scadenza": "2025-07-09",
+    "scartata": "scaduta"
+  },
   "Aa8e0b465-a3ca-4385-86cb-9c89c26290ad": {
     "cig": "BD789514B5",
     "ente": "PROVINCIA DI MACERATA",
@@ -30244,6 +31374,16 @@
     "scadenza": "2026-11-11",
     "scartata": "fuori settore (natura)"
   },
+  "Aaab00c1e-6ab7-4caa-ab57-995642ad15ee": {
+    "cig": "BDAC32FBA7",
+    "ente": "AUSINO - S.P.A.  SERVIZI IDRICI INTEGRATI",
+    "importo": 1985563.82,
+    "luogo": "CAVA DE' TIRRENI",
+    "oggetto": "Servizio di pulizia manutentiva delle reti fognarie gestite da Ausino S.p.A., concernente pulizia, caricamento, prelievo, trasporto e smaltimento finale di rifiuti di cui ai codici EER 190802, 200304, 200306 per la durata di anni tre",
+    "prima_vista": "2026-11-09T16:21:59.162771+00:00",
+    "scadenza": "2026-12-16",
+    "scartata": "fuori settore (natura)"
+  },
   "Aaab794ab-509f-4479-973a-cb0299ddcf99": {
     "cig": "BD3737FAEA",
     "ente": "COMUNE DI MAIERA",
@@ -30474,6 +31614,16 @@
     "oggetto": "affidamento dei servizi di vigilanza armata e non armata presso il PdE e il Macro",
     "prima_vista": "2026-10-09T11:13:48.253163+00:00",
     "scadenza": "2026-11-16",
+    "scartata": "fuori settore (natura)"
+  },
+  "Aac1cf922-75fd-40a9-9b3c-9fe8cc2d64d3": {
+    "cig": "BDB3454A54",
+    "ente": "REPARTO TECNICO LOGISTICO AMMIN.VO PER ISTITUTI D'ISTRUZIONE DELLA GUARDIA DI FINANZA",
+    "importo": 18500.0,
+    "luogo": "ROMA",
+    "oggetto": "Servizio di guida e supporto tecnico per atleta ipovedente Chiara Mazzel, occorrente per le esigenze del Centro Sportivo V Nucleo Atleti della Guardia di Finanza.",
+    "prima_vista": "2026-11-09T16:21:59.161731+00:00",
+    "scadenza": "2026-11-30",
     "scartata": "fuori settore (natura)"
   },
   "Aac22a6b9-65c0-4c86-a365-850050bc14df": {
@@ -30756,6 +31906,16 @@
     "scadenza": "2026-11-06",
     "scartata": "fuori settore (SOA)"
   },
+  "Aad698164-9eb5-4e1d-934f-5a76d2be5250": {
+    "cig": "BDB2A29645",
+    "ente": "UNIONE DEI COMUNI AMIATA VAL D'ORCIA",
+    "importo": 29878.75,
+    "luogo": "PIANCASTAGNAIO",
+    "oggetto": "ANNO EDUCATIVO 2026 2027. PROGETTO PR FSE + 2021-2027 ATTIVITÀ PAD 2.F.13 – PROGETTI EDUCATIVI ZONALI PEZ SCOLARE - PR FSE + 2021-2027 ATTIVITÀ PAD 2.F.14 – PROMOZIONE DELLA QUALITÀ DEL SISTEMA INTEGRATO 0-6 PEZ INFANZIA",
+    "prima_vista": "2026-11-09T16:21:59.162476+00:00",
+    "scadenza": "2026-11-09",
+    "scartata": "fuori settore (natura)"
+  },
   "Aad6bfb8a-3289-4646-800c-206e09bf09bd": {
     "cig": "BD2EE2D5F4",
     "ente": "AZIENDA SANITARIA LOCALE TO4",
@@ -30885,6 +32045,16 @@
     "prima_vista": "2026-10-28T12:58:10.780055+00:00",
     "scadenza": "2026-11-27",
     "scartata": "fuori settore (natura)"
+  },
+  "Aae0dcc2e-450c-4df2-8495-f19719172b57": {
+    "cig": null,
+    "ente": "ANAS - SOCIETA' PER AZIONI",
+    "importo": null,
+    "luogo": null,
+    "oggetto": "ELENCO FORNITORI SERVIZI E FORNITURE",
+    "prima_vista": "2026-11-09T16:21:59.162237+00:00",
+    "scadenza": null,
+    "scartata": "senza scadenza"
   },
   "Aae264fcf-9dda-4575-b7b3-018c1c6c59e7": {
     "cig": "BCFC78D012",
@@ -31045,6 +32215,16 @@
     "prima_vista": "2026-10-27T12:15:12.109867+00:00",
     "scadenza": "2026-11-26",
     "scartata": "fuori settore (natura)"
+  },
+  "Aaf1f0cb7-8fe4-4249-bc37-155b819c047c": {
+    "cig": "BDB272CEF6",
+    "ente": "COMUNE DI SESTU",
+    "importo": 706485.84,
+    "luogo": "SESTU",
+    "oggetto": "AVVISO PUBBLICO PER L’ACQUISIZIONE DI MANIFESTAZIONI INTERESSE PER L’INDIVIDUAZIONE DEGLI OPERATORI ECONOMICI DA INVITARE ALLA PROCEDURA NEGOZIATA, AI SENSI DELL’ART. 50 COMMA 1 LETT. C) DEL D. LGS. 36/2023, DA SVOLGERSI TRAMITE LA PIATTAFORMA DI APPROVVIGIONAMENTO DIGITALE (PAD) SARDEGNA CAT PER L’AFFIDAMENTO DEI “LAVORI DI COSTRUZIONE DELLA STRADA DI COLLEGAMENTO FRA LA VIA SAN GEMILIANO E LA VI",
+    "prima_vista": "2026-11-09T16:21:59.161955+00:00",
+    "scadenza": "2026-11-23",
+    "scartata": "fuori regione"
   },
   "Aaf49aca7-8fa6-4975-997a-9b1e90551906": {
     "cig": "BD0858A895",
@@ -31838,6 +33018,16 @@
     "scadenza": "2026-11-23",
     "scartata": "fuori settore (natura)"
   },
+  "Ab3112702-31e5-4407-a18e-d08b77d24daa": {
+    "cig": "BDB2935CE8",
+    "ente": "CONSORZIO CEV",
+    "importo": 243355.52,
+    "luogo": "TAGLIO DI PO",
+    "oggetto": "Affidamento in concessione con carattere di urgenza del servizio di gestione del canone unico patrimoniale e del servizio di riscossione coattiva degli avvisi di accertamento IMU nel Comune di Taglio di Po (RO)",
+    "prima_vista": "2026-11-09T16:21:59.161368+00:00",
+    "scadenza": "2026-11-27",
+    "scartata": "fuori settore (natura)"
+  },
   "Ab37ab40b-178c-4976-b931-5bdb20af06d2": {
     "cig": "BD810C18F1",
     "ente": "COMUNE DI RAVENNA",
@@ -32428,6 +33618,16 @@
     "scadenza": "2026-10-17",
     "scartata": "fuori settore (natura)"
   },
+  "Ab6120434-5956-45d4-894c-648fe9b3f462": {
+    "cig": "BDB303755F",
+    "ente": "COMUNE DI ANDRIA",
+    "importo": 210000.0,
+    "luogo": "ANDRIA",
+    "oggetto": "INDAGINE DI MERCATO PER SUCCESSIVA PROCEDURA NEGOZIATA SENZA BANDO ART .50 COMMA 1 LETTERA E) DEL D.LGS 36/2023 MEDIANTE PIATTAFORMA DIGITALE TUTTOGARE PER L'AFFIDAMENTO DEL SERVIZIO DI TESORERIA COMUNALE PER IL PERIODO 2027-2031 CON EVENTUALE RINNOVO PER ULTERIORI 24 MESI.",
+    "prima_vista": "2026-11-09T16:21:59.162617+00:00",
+    "scadenza": "2026-11-23",
+    "scartata": "fuori settore (natura)"
+  },
   "Ab613eb31-4d9d-4d10-87ba-c2d44570c543": {
     "cig": "BDA8A20595",
     "ente": "AZIENDA SANITARIA PROVINCIALE DI COSENZA",
@@ -32446,6 +33646,16 @@
     "oggetto": "Sistema analitico con metodica Immunoblotting, per la ricerca degli anticorpi anti-antigeni nucleari estraibili",
     "prima_vista": "2026-11-04T14:35:19.201662+00:00",
     "scadenza": "2026-11-20",
+    "scartata": "fuori settore (natura)"
+  },
+  "Ab620b629-37e2-4ec7-b924-f5d8e2ee7dad": {
+    "cig": "BDB1A3B101",
+    "ente": "TRENORD S.R.L.",
+    "importo": 15000000.0,
+    "luogo": "MILANO",
+    "oggetto": "ATTIVITA' DI GESTIONE DELLA RETE E CONNETTIVITA'_DS",
+    "prima_vista": "2026-11-09T16:21:59.161588+00:00",
+    "scadenza": "2026-11-09",
     "scartata": "fuori settore (natura)"
   },
   "Ab623859a-b4ec-4828-a61b-d5255bdd5a2f": {
@@ -33228,6 +34438,16 @@
     "scadenza": "2026-11-03",
     "scartata": "fuori regione"
   },
+  "Aba5c6be5-43e6-4346-91f2-272854fc2902": {
+    "cig": "BDB1A307EB",
+    "ente": "COMUNE DI PAOLA",
+    "importo": 469199.64,
+    "luogo": "FUSCALDO",
+    "oggetto": "PROCEDURA APERTA PER L’APPALTO DEL SERVIZIO DI GESTIONE DEL MICRONIDO COMUNALE DI FUSCALDO A.S.2026/2027 – 2027/2028 – 2028/2029 - QUOTA SERVIZI ASILI NIDO FELS ANNUALITA' 2025 /2026 - FONDO RISORSE 0-6 ANNUALITÀ VARIE",
+    "prima_vista": "2026-11-09T16:21:59.161858+00:00",
+    "scadenza": "2026-12-07",
+    "scartata": "fuori settore (natura)"
+  },
   "Aba5d2062-b6f9-4cc1-aec3-3df319c5280d": {
     "cig": "BD846EAAB3",
     "ente": "AZIENDA SANITARIA PROVINCIALE DI COSENZA",
@@ -33518,6 +34738,16 @@
     "scadenza": "2026-11-12",
     "scartata": "fuori settore (natura)"
   },
+  "Abbca989f-6f7f-4823-99b8-3fd3094588b7": {
+    "cig": null,
+    "ente": "ISTITUTO POLIGRAFICO E ZECCA DELLO STATO - SOCIETA' PER AZIONI IN BREVE IPZS S.P.A.",
+    "importo": null,
+    "luogo": null,
+    "oggetto": "Consultazione preliminare di mercato art. 77 D.Lgs. n. 36/2023 - servizio di manutenzione a guasto e fornitura di ricambi dei trituratori ISVE in uso presso lo stabilimento OCV e PT di Roma",
+    "prima_vista": "2026-11-09T16:21:59.162020+00:00",
+    "scadenza": null,
+    "scartata": "senza scadenza"
+  },
   "Abbd28862-1034-4ac3-8056-5d7c6fe4b9cf": {
     "cig": "BD4AAF7327",
     "ente": "AZIENDA SERVIZI MUNICIPALI RIETI SPA",
@@ -33707,6 +34937,16 @@
     "prima_vista": "2026-10-09T11:13:46.594141+00:00",
     "scadenza": "2026-11-17",
     "scartata": "fuori settore (natura)"
+  },
+  "Abcb3c3c0-3450-442f-ba7e-82ee28b1eff5": {
+    "cig": "BDAA340171",
+    "ente": "FEDERAZIONE DEI COMUNI DEL CAMPOSAMPIERESE",
+    "importo": 5985000.0,
+    "luogo": "TREVISO",
+    "oggetto": "vedi disciplinare/documento di gara",
+    "prima_vista": "2026-11-09T16:21:59.162003+00:00",
+    "scadenza": "2026-12-10",
+    "scartata": "fuori regione"
   },
   "Abcdbc610-a134-46e9-8cc0-c0a9576c2a6f": {
     "cig": "BD2D9DB122",
@@ -34160,6 +35400,16 @@
     "scadenza": "2026-11-18",
     "scartata": "fuori settore (natura)"
   },
+  "Abf85971c-169c-43ce-a10e-618f88e5d8ca": {
+    "cig": "BDA997D333",
+    "ente": "INFOCAMERE SCPA",
+    "importo": 456420.0,
+    "luogo": "PADOVA",
+    "oggetto": "GE2621 - Strumento per Privileged Access Management (PAM)",
+    "prima_vista": "2026-11-09T16:21:59.161535+00:00",
+    "scadenza": "2026-12-04",
+    "scartata": "fuori settore (natura)"
+  },
   "Abfa69b92-8a4c-4da3-b630-d0268045cf54": {
     "cig": "BD570DF468",
     "ente": "COMUNE DI PIZZO",
@@ -34327,6 +35577,16 @@
     "luogo": null,
     "oggetto": "Lavori di realizzazione impianti fotovoltaici galleggianti presso gli invasi irrigui di Fabbiano, Caolzio, Molinazzo e Moronasco.",
     "prima_vista": "2026-10-26T13:06:22.021508+00:00",
+    "scadenza": null,
+    "scartata": "senza scadenza"
+  },
+  "Ac06cb45e-36be-466f-82be-5cf02863415f": {
+    "cig": null,
+    "ente": "ENTE AUTONOMO VOLTURNO SRL",
+    "importo": null,
+    "luogo": null,
+    "oggetto": "INDAGINE DI MERCATO FORNITURA RICAMBI ORIGINALI ON-CONDITION MANUTENZIONE CORRETTIVA ACCOPPIATORI AUTOMATICI DELLNER ROTABILI METROSTAR",
+    "prima_vista": "2026-11-09T16:21:59.162973+00:00",
     "scadenza": null,
     "scartata": "senza scadenza"
   },
@@ -34720,6 +35980,16 @@
     "scadenza": "2026-11-30",
     "scartata": "fuori settore (natura)"
   },
+  "Ac277ef4f-5b9b-4cb7-8b76-bbef6980cd60": {
+    "cig": "BDAA027309",
+    "ente": "ACQUEVENETE S.P.A.",
+    "importo": 3934035.0,
+    "luogo": "MONSELICE",
+    "oggetto": "Affidamento – mediante accordo quadro – dei lavori di esecuzione di allacciamenti utenza alle reti idriche e fognarie",
+    "prima_vista": "2026-11-09T16:21:59.162470+00:00",
+    "scadenza": "2026-12-10",
+    "scartata": "fuori settore (SOA)"
+  },
   "Ac27f93b5-7b8f-4eb4-bdf0-8abf08243e85": {
     "cig": "BD61D512D7",
     "ente": "ANAS - SOCIETA' PER AZIONI",
@@ -35000,6 +36270,16 @@
     "scadenza": "2026-11-16",
     "scartata": "fuori settore (natura)"
   },
+  "Ac3b51cda-04c5-462a-82ae-9b8aece794b7": {
+    "cig": "BDB18128A5",
+    "ente": "AZIENDA SOCIO SANITARIA TERRITORIALE DEI SETTE LAGHI",
+    "importo": 85482.8,
+    "luogo": "VARESE",
+    "oggetto": "Consumabili ventilatore polmonare",
+    "prima_vista": "2026-11-09T16:21:59.162627+00:00",
+    "scadenza": "2026-11-23",
+    "scartata": "fuori settore (natura)"
+  },
   "Ac3ccc767-c45f-4484-b317-0502ae2deaec": {
     "cig": "BD43792924",
     "ente": "AZIENDA SOCIO SANITARIA TERRITORIALE (ASST) DELLA VALLE OLONA",
@@ -35210,6 +36490,16 @@
     "scadenza": "2026-10-22",
     "scartata": "fuori settore (natura)"
   },
+  "Ac4b318a8-d580-4904-8dcf-ca7a98d36187": {
+    "cig": "BD3F43956C",
+    "ente": "COMUNE DI MODENA",
+    "importo": 2567500.0,
+    "luogo": "MODENA",
+    "oggetto": "Affidamenti di tre servizi assicurativi del Comune di Modena dal 31/12/2026 al 31/12/2029: Lotto 1 (All Risks beni immobili e mobili), Lotto 2 (RCT/RCO), Lotto 3 (CVT danni a mezzi privati in missione)",
+    "prima_vista": "2026-11-09T16:21:59.162955+00:00",
+    "scadenza": "2026-11-12",
+    "scartata": "fuori settore (natura)"
+  },
   "Ac4bdf916-ee47-4e37-baeb-00743c7e8e5b": {
     "cig": "BD3114D264",
     "ente": "COMUNE DI POLISTENA",
@@ -35330,6 +36620,16 @@
     "scadenza": "2026-11-11",
     "scartata": "fuori regione"
   },
+  "Ac54d4c96-f727-4a70-a953-60a49d32ceba": {
+    "cig": "BD28AB2DE9",
+    "ente": "CASSA DEPOSITI E PRESTITI SOCIETA' PER AZIONI",
+    "importo": 16558492.0,
+    "luogo": "ROMA",
+    "oggetto": "PROCEDURA DI GARA APERTA AI SENSI DELL’ART. 71 D. LGS. N. 36/2023 - AFFIDAMENTO DEI SERVIZI DI PULIZIA ED IGIENE AMBIENTALE",
+    "prima_vista": "2026-11-09T16:21:59.162873+00:00",
+    "scadenza": "2026-12-10",
+    "scartata": "fuori settore (natura)"
+  },
   "Ac552fb25-71c2-4233-ad59-0a3b66d4092d": {
     "cig": "BD36636454",
     "ente": "AZIENDA REGIONALE PER L'INNOVAZIONE E GLI ACQUISTI S.P.A., IN BREVE 'ARIA S.P.A.'",
@@ -35449,6 +36749,16 @@
     "prima_vista": "2026-10-28T12:58:10.779638+00:00",
     "scadenza": "2026-06-26",
     "scartata": "scaduta"
+  },
+  "Ac5f8b7e3-a80e-4dc7-92f1-26d10508f594": {
+    "cig": "BDA8D47F87",
+    "ente": "COMUNE DI BUCCINASCO",
+    "importo": 747360.0,
+    "luogo": "BUCCINASCO",
+    "oggetto": "PROCEDURA APERTA PER L'AFFIDAMENTO DELLA FORNITURA DI BUONI REGALO PER DIPENDENTI COMUNALI AVENTI DIRITTO - ANNI 2027/2029",
+    "prima_vista": "2026-11-09T16:21:59.161750+00:00",
+    "scadenza": "2026-12-18",
+    "scartata": "fuori settore (natura)"
   },
   "Ac603676e-4d90-489d-8cef-2aba909c9c3d": {
     "cig": "BD6B0B6518",
@@ -35961,6 +37271,16 @@
     "scadenza": "2026-12-03",
     "scartata": "fuori settore (natura)"
   },
+  "Ac8931509-1c09-44dd-a4ad-a5f3591fd7bc": {
+    "cig": "BDB2326CFB",
+    "ente": "PROVINCIA DI BRESCIA",
+    "importo": 169125.0,
+    "luogo": "PORTO MANTOVANO",
+    "oggetto": "GESTIONE DEL SERVIZIO DI TESORERIA COMUNALE PER ANNI 5 DAL 01/01/2027 AL 31/12/2031 PROROGABILE PER ULTERIORI 5 ANNI – COMUNE DI PORTO MANTOVANO (MN)",
+    "prima_vista": "2026-11-09T16:21:59.162107+00:00",
+    "scadenza": "2026-11-24",
+    "scartata": "fuori settore (natura)"
+  },
   "Ac897cbea-92dd-4b63-b2c4-9135e186794b": {
     "cig": "BD6197EAEF",
     "ente": "COMUNE DI SAN DONATO NINEA",
@@ -36251,6 +37571,16 @@
     "scadenza": "2026-11-13",
     "scartata": "fuori regione"
   },
+  "Aca3ed6b5-ed44-4f3f-88cd-dc093a46a240": {
+    "cig": "BDAF213DAA",
+    "ente": "COMUNITA' MONTANA SEBINO BRESCIANO",
+    "importo": 212339.34,
+    "luogo": "MARONE",
+    "oggetto": "CUC2026_14 – COMUNE DI MARONE (BS) – Lavori di “Rifacimento muro strutturale di contenimento e completamento del piazzale antistante la Via Vesto” in Comune di Marone.",
+    "prima_vista": "2026-11-09T16:21:59.162594+00:00",
+    "scadenza": "2026-11-22",
+    "scartata": "fuori regione"
+  },
   "Aca4334c7-3361-4506-acba-70698d03009e": {
     "cig": "BD4FBBDB2B",
     "ente": "CENTRALE UNICA DI COMMITTENZA DELL'AREA SELE-PICENTINI",
@@ -36510,6 +37840,16 @@
     "prima_vista": "2026-10-21T11:51:30.112447+00:00",
     "scadenza": "2026-12-01",
     "scartata": "fuori regione"
+  },
+  "Acb8096a2-0ca1-4de3-98bd-b2ae57a70c11": {
+    "cig": "BDB2BAF81B",
+    "ente": "COMUNE DI BOARA PISANI",
+    "importo": 224903.25,
+    "luogo": "BOARA PISANI",
+    "oggetto": "AFFIDAMENTO IN CONCESSIONE DEL SERVIZIO DI RISTORAZIONE SCOLASTICA A RIDOTTO IMPATTO AMBIENTALE. AA.SS. 2026/2027 - 2027/2028 - 2028/2029",
+    "prima_vista": "2026-11-09T16:21:59.162959+00:00",
+    "scadenza": "2026-11-24",
+    "scartata": "fuori settore (natura)"
   },
   "Acb974419-68a4-433e-9a7d-8bffbe4e9501": {
     "cig": "BCDF1534FF",
@@ -36820,6 +38160,16 @@
     "oggetto": "P.A. per conto del Comune di San Giorgio Morgeto (capofila) per l’affidamento, mediante contratto di concessione ex art. 176 e seguenti del D.lgs. n. 36 del 2023, del servizio di gestione di aree camper in due lotti distinti ubicati a San Giorgio Morgeto (Lotto 1) e a Oppido Mamertina(Lotto 2)- 2^ esperimento",
     "prima_vista": "2026-10-13T14:13:43.712445+00:00",
     "scadenza": "2026-10-29",
+    "scartata": "fuori settore (natura)"
+  },
+  "Acd263ec7-8f10-4155-b88a-7d554873cf37": {
+    "cig": "BDAD660200",
+    "ente": "CENTRALE UNICA DI COMMITTENZA MATINO E PARABITA",
+    "importo": 14400.0,
+    "luogo": "MATINO",
+    "oggetto": "Procedura aperta per l’affidamento in concessione della gestione del Teatro Comunale \"G. Peschiulli\" e degli annessi vani e laboratori, situati in Piazza Primiceri a Matino",
+    "prima_vista": "2026-11-09T16:21:59.162500+00:00",
+    "scadenza": "2026-11-24",
     "scartata": "fuori settore (natura)"
   },
   "Acd4ac3e8-e691-45b6-acdf-4600b065ad84": {
@@ -37202,6 +38552,16 @@
     "scadenza": "2026-11-26",
     "scartata": "fuori settore (natura)"
   },
+  "Acfcc125d-35bc-4f72-9bc5-65dd0405919d": {
+    "cig": "BDA1AEF386",
+    "ente": "TEATRO LIRICO DI CAGLIARI FONDAZIONE",
+    "importo": 279458.7,
+    "luogo": "CAGLIARI",
+    "oggetto": "FORNITURA E POSA IN OPERA DI N. 788 POLTRONE PER LA PLATEA DEL TEATRO LIRICO DI CAGLIARI INCLUSA LA RIMOZIONE E LO SMALTIMENTO DI QUELLE ESISTENTI",
+    "prima_vista": "2026-11-09T16:21:59.162528+00:00",
+    "scadenza": "2026-12-17",
+    "scartata": "fuori settore (natura)"
+  },
   "Acfd2a3c8-b7bb-449d-a83a-07713940eddd": {
     "cig": "BD54235242",
     "ente": "C.U.C AGRORINASCE",
@@ -37462,6 +38822,16 @@
     "scadenza": "2026-10-27",
     "scartata": "fuori regione"
   },
+  "Ad0e348d2-6b75-480e-a565-bb09a4679326": {
+    "cig": "BDADDEDD26",
+    "ente": "ETRA SPA SOCIETA' BENEFIT",
+    "importo": 950537.4,
+    "luogo": "BASSANO DEL GRAPPA",
+    "oggetto": "Appalto n.116/2026 - A.Q. servizio di trasporto scarti triturati (CER 19.12.12) della selezione rifiuti ingombranti dal Polo di trattamento rifiuti di Bassano del Grappa (VI)",
+    "prima_vista": "2026-11-09T16:21:59.162024+00:00",
+    "scadenza": "2026-12-10",
+    "scartata": "fuori settore (natura)"
+  },
   "Ad0f31518-92f2-4408-bcd4-85a2a5186e23": {
     "cig": "BCEE050D25",
     "ente": "UNIVERSITA' DEGLI STUDI DI MILANO",
@@ -37470,6 +38840,16 @@
     "oggetto": "SGa 26_958 - Acquisizione di computer laptop con display da 14 e da 16 pollici per il personale tecnico-amministrativo e bibliotecario dell'Università",
     "prima_vista": "2026-10-08T14:05:44.319314+00:00",
     "scadenza": "2026-10-13",
+    "scartata": "fuori settore (natura)"
+  },
+  "Ad0f3afb5-c24e-43df-a2fc-583aacc87620": {
+    "cig": "BDAF39D2D1",
+    "ente": "SOCIETA' MULTISERVIZI ROVERETO S.R.L.",
+    "importo": 17000.0,
+    "luogo": "ROVERETO",
+    "oggetto": "AVVISO DI INDAGINE DI MERCATO FINALIZZATA A PROCEDURA NEGOZIATA SENZA BANDO PER IL SERVIZIO PIANO NEVE 2026/2027",
+    "prima_vista": "2026-11-09T16:21:59.161356+00:00",
+    "scadenza": "2026-11-17",
     "scartata": "fuori settore (natura)"
   },
   "Ad0f8fa21-c74c-47d8-936f-35f86d7b19db": {
@@ -37712,6 +39092,16 @@
     "scadenza": "2026-10-15",
     "scartata": "fuori settore (natura)"
   },
+  "Ad29599d8-8fa9-4ffa-952d-b2287311d9a6": {
+    "cig": "BDACF1909B",
+    "ente": "POLICLINICO UMBERTO I",
+    "importo": 140000.0,
+    "luogo": "ROMA",
+    "oggetto": "Procedura aperta telematica, ai sensi dell’art. 71 del D.Lgs. 36/2023, per l'affidamento della fornitura di n. 3 colonne endoscopiche da destinare ai blocchi operatori di Neurochirurgia, Chirurgia Maxillo-Facciale e Chirurgia Otorinolaringoiatrica e di n. 1 colonna laparoscopica da destinare al blocco operatorio di Chirurgia Urologica, suddivisa in 4 lotti, per le necessità dell’Azienda Ospedalier",
+    "prima_vista": "2026-11-09T16:21:59.161821+00:00",
+    "scadenza": "2026-12-10",
+    "scartata": "fuori settore (natura)"
+  },
   "Ad299b2b6-e64a-4ff9-b30a-4974c69905da": {
     "cig": "BDAC68A089",
     "ente": "COMUNE DI BRONI",
@@ -37780,6 +39170,16 @@
     "oggetto": "Concessione del servizio di gestione del Centro Diurno Socio Terapeutico Riabilitativo per persone con disabilità \"San Carlo\" di Castelnuovo Scrivia, comprensivo di interventi strumentali di adeguamento normativo e tecnico funzionale nel fabbricato ospitante.",
     "prima_vista": "2026-10-30T12:58:27.873009+00:00",
     "scadenza": "2026-11-18",
+    "scartata": "fuori settore (natura)"
+  },
+  "Ad2e28c09-5080-4e63-866b-419236d216c1": {
+    "cig": "BDAFD0886E",
+    "ente": "REGIONE AUTONOMA FRIULI VENEZIA GIULIA",
+    "importo": 10085250.0,
+    "luogo": "UDINE",
+    "oggetto": "24FAR001.83.CUC Farmaci esclusivi- EZMEKLY",
+    "prima_vista": "2026-11-09T16:21:59.162371+00:00",
+    "scadenza": "2026-11-20",
     "scartata": "fuori settore (natura)"
   },
   "Ad2e3b15a-5817-4176-899b-d0fe06a78e5b": {
@@ -38010,6 +39410,16 @@
     "oggetto": "Affidamento in concessione del servizio di gestione Bar - Sala Convegno Unica del Battaglione Trasmissioni VULTURE di NOCERA INFERIORE, per un periodo di 36 mesi",
     "prima_vista": "2026-10-14T11:54:37.166646+00:00",
     "scadenza": "2026-11-07",
+    "scartata": "fuori settore (natura)"
+  },
+  "Ad4110126-4f54-408c-a110-fc63c1693db3": {
+    "cig": "BDABA01860",
+    "ente": "ASSOCIAZIONE CONSORTILE COLLINA MATERANA",
+    "importo": 754800.0,
+    "luogo": "ATELLA",
+    "oggetto": "Gara europea a procedura aperta per l'affidamento del servizio di refezione scolastica per l'asilo nido, la scuola dell'infanzia e la scuola primaria nel comune di Atella (PZ) per il periodo scolastico 2026/2027 - 2027/2028 2028/2029",
+    "prima_vista": "2026-11-09T16:21:59.161373+00:00",
+    "scadenza": "2026-11-27",
     "scartata": "fuori settore (natura)"
   },
   "Ad4213551-b5f8-4329-b07a-d6b895927a1c": {
@@ -39343,6 +40753,16 @@
     "scadenza": "2026-10-20",
     "scartata": "fuori regione"
   },
+  "Adb70cdde-df63-4ebb-86a7-9d3a4aec119c": {
+    "cig": "BD673EEC91",
+    "ente": "COMUNE DI PESCO SANNITA",
+    "importo": 2016979.02,
+    "luogo": "GINESTRA DEGLI SCHIAVONI",
+    "oggetto": "LAVORI DI RIAMMAGLIAMENTO MIGLIORAMENTO RIQUALIFICAZIONE E MESSA IN SICUREZZA DELLA STRADA PROVINCIALE GINESTRA MALVIZZE (SP 47 ex 125 – Benevento e SP 273 II Tratto – Avellino). FSC 2021–2027 – PSC 2021–2027.",
+    "prima_vista": "2026-11-09T16:21:59.162197+00:00",
+    "scadenza": "2026-12-10",
+    "scartata": "fuori regione"
+  },
   "Adb87a70d-956e-4b85-aa84-2085249b0e6d": {
     "cig": "BD9B9B252B",
     "ente": "COMUNE DI TOLVE",
@@ -39640,6 +41060,16 @@
     "luogo": "REGGIO DI CALABRIA",
     "oggetto": "Procedura aperta di importo superiore alla soglia di rilevanza europea, afferente al settore ordinario, per l’Affidamento in Accordo Quadro con quattro operatori economici ai sensi degli artt. 71 e 59, comma 4, lett a) della fornitura di arredi sanitari e non, con applicazione del criterio dell’offerta economicamente più vantaggiosa, per la durata di quattro anni.",
     "prima_vista": "2026-10-12T15:28:03.682893+00:00",
+    "scadenza": "2026-11-16",
+    "scartata": "fuori settore (natura)"
+  },
+  "Adcdc2309-e662-4f48-a83a-75ddac51a774": {
+    "cig": "BDAF3ABE5B",
+    "ente": "CENTRALE UNICA DI COMMITTENZA UNIONE DEI COMUNI VALLE DEL CEDRINO",
+    "importo": 131581.86,
+    "luogo": "LOCULI",
+    "oggetto": "Indagine di mercato per l’acquisizione di manifestazioni d’interesse per la partecipazione alla Procedura negoziata senza previa pubblicazione di un bando di gara ai sensi dell’art. 50 comma 1 lettera e) del D. Lgs n. 36/2023 per l’affidamento del Servizio di didattica della Scuola Paritaria dell’infanzia Nannaò integrata con le sezioni sperimentale e primavera – anno scolastico 2026/2027 nel Comu",
+    "prima_vista": "2026-11-09T16:21:59.161531+00:00",
     "scadenza": "2026-11-16",
     "scartata": "fuori settore (natura)"
   },
@@ -40333,6 +41763,26 @@
     "scadenza": "2026-10-12",
     "scartata": "fuori settore (natura)"
   },
+  "Ae0d26117-5f06-476f-910d-60a51670ea39": {
+    "cig": "BDB33F9F3A",
+    "ente": "IPAB VERONESI DR. GERMANO",
+    "importo": 139000.0,
+    "luogo": "SAN PIETRO IN CARIANO",
+    "oggetto": "AVVISO DI MANIFESTAZIONE RISERVATA AGLI OPERATORI ECONOMICI DI CUI ALL'ART. 61 DEL D. LGS 36/2023 PER IL SERVIZIO DI NOLEGGIO E LAVANDERIA DELL'ENTE DA 01/01/2027 a 30/06/2028",
+    "prima_vista": "2026-11-09T16:21:59.162538+00:00",
+    "scadenza": "2026-11-21",
+    "scartata": "fuori settore (natura)"
+  },
+  "Ae0dc18be-2651-4a0d-b259-d843d933cad3": {
+    "cig": "BDAF69DC94",
+    "ente": "AZIENDAOSPEDALIERO-UNIVERSITARIA MAGGIORE DELLA CARITA'",
+    "importo": 18000.0,
+    "luogo": "NOVARA",
+    "oggetto": "FORNITURA DI UN RISCALDATORE PER SANGUE ED INFUSIONI OCCORRENTE ALLA SCDU MEDICINA E CHIRURGIA D’ACCETTAZIONE E D’URGENZA DELL’AOU MAGGIORE DELLA CARITA’ DI NOVARA",
+    "prima_vista": "2026-11-09T16:21:59.162524+00:00",
+    "scadenza": "2026-11-18",
+    "scartata": "fuori settore (natura)"
+  },
   "Ae0e41bb6-018b-481d-9778-8c96fdde6363": {
     "cig": "BD4D9437BA",
     "ente": "COMUNE DI TRIGGIANO",
@@ -40582,6 +42032,16 @@
     "oggetto": "SERVIZIO DI TRASPORTO SCOLASTICO, ANNI 2026-2027 E 2027-2028 - COMUNE DI LUSTRA",
     "prima_vista": "2026-10-13T14:13:43.712033+00:00",
     "scadenza": "2026-11-18",
+    "scartata": "fuori settore (natura)"
+  },
+  "Ae2b478a3-3fc0-44a1-a650-556e025d4336": {
+    "cig": "BDAB4F2BB4",
+    "ente": "AZIENDA SOCIO-SANITARIA TERRITORIALE DI CREMONA",
+    "importo": 338629.78,
+    "luogo": "CREMONA",
+    "oggetto": "GARA EUROPEA A PROCEDURA APERTA AI SENSI DEGLI ART. 14 E 71 DEL D.LGS 36/2023 PER L’AFFIDAMENTO DEL SERVIZIO DI COORDINAMENTO DELLA SICUREZZA IN FASE DI ESECUZIONE RELATIVAMENTE AGLI INTERVENTI VOLTI ALL’ADEGUAMENTO DELLE FACCIATE E DELLE COPERTURE DEL P.O. DI OGLIO PO FINALIZZATI ALLA RIQUALIFICAZIONE EDILIZIA CON EFFICIENTAMENTO ENERGETICO DELLE AREE SANITARIE E ALL’ADEGUAMENTO SISMICO DELLE STR",
+    "prima_vista": "2026-11-09T16:21:59.162634+00:00",
+    "scadenza": "2026-12-09",
     "scartata": "fuori settore (natura)"
   },
   "Ae2b83f9b-fd9c-4a72-8f6e-44bb3b7e6558": {
@@ -41114,6 +42574,16 @@
     "scadenza": "2026-11-06",
     "scartata": "fuori settore (natura)"
   },
+  "Ae5846125-833b-493e-906e-5f02b2352f75": {
+    "cig": "BDB2E71EB5",
+    "ente": "COMUNE DI PIAZZOLA SUL BRENTA",
+    "importo": 100000.0,
+    "luogo": "PIAZZOLA SUL BRENTA",
+    "oggetto": "Affidamento del servizio di tesoreria comunale per il periodo dal 01/01/2027 al 31/12/2031",
+    "prima_vista": "2026-11-09T16:21:59.161797+00:00",
+    "scadenza": "2026-11-30",
+    "scartata": "fuori settore (natura)"
+  },
   "Ae58c332f-07b3-4cdb-921d-ad4dc78fd7c8": {
     "cig": "BD66100D85",
     "ente": "MINISTERO DELL'INTERNO PREFETTURA UTG DI FORLI'-CESENA",
@@ -41202,6 +42672,16 @@
     "oggetto": "PROCEDURA APERTA PER L’AFFIDAMENTO IN CONCESSIONE DEL SERVIZIO DI GESTIONE DEL CANONE UNICO PATRIMONIALE, DEL CANONE MERCATALE E DELLA RISCOSSIONE COATTIVA DELLE ENTRATE DEL COMUNE DI NEMBRO (BG)",
     "prima_vista": "2026-10-09T14:43:19.496779+00:00",
     "scadenza": "2026-11-03",
+    "scartata": "fuori settore (natura)"
+  },
+  "Ae5f89779-c873-4a55-bb98-e9e2f482537c": {
+    "cig": "BDB2E6CA96",
+    "ente": "COMUNE DI BARLETTA",
+    "importo": 239859.5,
+    "luogo": "BARLETTA",
+    "oggetto": "Procedura negoziata per l'affidamento del CENTRO ANTIVIOLENZA COMUNALE SAMAN ABBAS",
+    "prima_vista": "2026-11-09T16:21:59.162249+00:00",
+    "scadenza": "2026-11-27",
     "scartata": "fuori settore (natura)"
   },
   "Ae609cb99-4a02-42b4-b9eb-c1b5398fd934": {
@@ -41463,6 +42943,16 @@
     "prima_vista": "2026-11-03T14:18:45.911639+00:00",
     "scadenza": "2026-12-10",
     "scartata": "fuori settore (natura)"
+  },
+  "Ae76e42e2-361b-4f1a-96c1-cd5c1c2ebc43": {
+    "cig": "BDAFBF44AC",
+    "ente": "COMUNE DI RAGUSA",
+    "importo": 421035.9,
+    "luogo": "RAGUSA",
+    "oggetto": "Lavori di manutenzione straordinaria dell'immobile ove è allocata la Scuola dello Sport da destinare a sede universitaria-III Stralcio-CUP:F64E21006580003",
+    "prima_vista": "2026-11-09T16:21:59.162307+00:00",
+    "scadenza": "2026-11-26",
+    "scartata": "fuori regione"
   },
   "Ae770a051-720c-4bb8-92e6-f2b3af6c8d5a": {
     "cig": "BD7CA156F4",
@@ -41934,6 +43424,16 @@
     "scadenza": "2026-11-20",
     "scartata": "fuori settore (natura)"
   },
+  "Ae9e6c777-15ef-4130-b55e-8c67664658d7": {
+    "cig": "BDAF757614",
+    "ente": "SOCIETA' ABRUZZESE PER SERVIZIO IDRICO INTEGRATO SPA - IN BREVE S.A.S.I. - S.P.A.",
+    "importo": 1059191.28,
+    "luogo": "CHIETI",
+    "oggetto": "FESR 2021-2027. Intervento “Riparazione e sostituzione reti idriche nel comprensorio teatino - I stralcio funzionale, Interconnessioni schemi idrici - stralcio funzionale, Interventi di efficientamento su pozzi esistenti” - CLP: 2025FESR02 “Aumento e stabilizzazione della disponibilità idrica nel Comune di Guardiagrele e nei comuni limitrofi attraverso un efficientamento e miglior utilizzo della r",
+    "prima_vista": "2026-11-09T16:21:59.161448+00:00",
+    "scadenza": "2026-12-09",
+    "scartata": "fuori regione"
+  },
   "Ae9e854d9-f05d-4cbc-8f54-16569afbd434": {
     "cig": "BD618B878B",
     "ente": "COMUNE DI APRICENA",
@@ -42003,6 +43503,16 @@
     "prima_vista": "2026-10-27T12:15:12.107914+00:00",
     "scadenza": "2026-10-23",
     "scartata": "scaduta"
+  },
+  "Aea4d29ea-1fa7-4ba4-84bc-32d19a37258f": {
+    "cig": "BDA9F436E1",
+    "ente": "COMUNITA' RIVIERA FRIULANA",
+    "importo": 1406603.45,
+    "luogo": "LIGNANO SABBIADORO",
+    "oggetto": "AFFIDAMENTO DEL SERVIZIO EDUICATIVO PER I CENTRI ESTIVI DEL COMUNE DI LIGNANO SABBIADORO TRIENNIO 2027-2028-2029",
+    "prima_vista": "2026-11-09T16:21:59.162812+00:00",
+    "scadenza": "2026-12-09",
+    "scartata": "fuori settore (natura)"
   },
   "Aea52bd2e-55a1-491f-9942-5f8e8922bca4": {
     "cig": "BD7758B36A",
@@ -42224,6 +43734,16 @@
     "scadenza": "2026-11-23",
     "scartata": "fuori settore (natura)"
   },
+  "Aeb806676-30bc-4c1f-8f30-42e1963c1936": {
+    "cig": "BDB29F8DD3",
+    "ente": "COMUNE DI FIRENZE",
+    "importo": 907347.88,
+    "luogo": "FIRENZE",
+    "oggetto": "“Biblioteca delle Oblate” nell’ambito del progetto PN Metro Plus e Città medie sud 2021-2027, Priorità 2, codice progetto multintervento FI2.1.2.1a7, codice opera 240054, CUP H14H23000570007",
+    "prima_vista": "2026-11-09T16:21:59.162688+00:00",
+    "scadenza": "2026-11-12",
+    "scartata": "fuori regione"
+  },
   "Aeb9df432-a923-41ea-a53d-b84679232739": {
     "cig": "BD4B726109",
     "ente": "COMUNITA' SILE",
@@ -42344,6 +43864,16 @@
     "scadenza": "2026-11-16",
     "scartata": "fuori settore (natura)"
   },
+  "Aec2ebb06-60ed-499e-88b7-45945a480711": {
+    "cig": "BDB3960487",
+    "ente": "COMUNE DI CASTELSARACENO",
+    "importo": 202045.92,
+    "luogo": "POTENZA",
+    "oggetto": "“RECAP – RETE ECOLOGICA COMUNALE PER L’AMBIENTE E IL PAESAGGIO” AFFIDAMENTO DEI LAVORI MEDIANTE PROCEDURA NEGOZIATA SENZA BANDO, AI SENSI DELL’ART. 50, COMMA 1, LETT. C), DEL D.LGS. N. 36/2023. – CUP E11B21002760002 –",
+    "prima_vista": "2026-11-09T16:21:59.161583+00:00",
+    "scadenza": "2026-11-16",
+    "scartata": "fuori regione"
+  },
   "Aec51369d-3e16-42e4-a0b0-d02dbfb003bd": {
     "cig": "BD582179FF",
     "ente": "COMUNE DI IMPERIA",
@@ -42423,6 +43953,16 @@
     "prima_vista": "2026-10-09T14:43:19.494033+00:00",
     "scadenza": null,
     "scartata": "senza scadenza"
+  },
+  "Aece84c75-c1f3-43eb-ac7f-6744096a3e8f": {
+    "cig": "BDACE0C29E",
+    "ente": "AZIENDA USL DI IMOLA",
+    "importo": 462462.0,
+    "luogo": "BOLOGNA",
+    "oggetto": "PA per la fornitura in acquisto di stampanti per bio-cassette da destinare all’UU.OO di Anatomia Patologica per l’Azienda USL di Imola e Bologna e per l’Azienda Ospedaliera di Ferrara– lotto unico.",
+    "prima_vista": "2026-11-09T16:21:59.162544+00:00",
+    "scadenza": "2026-12-14",
+    "scartata": "fuori settore (natura)"
   },
   "Aecfd4c2c-af88-440a-ba40-1ad06d55d2c2": {
     "cig": "BD455752F4",
@@ -42654,6 +44194,16 @@
     "scadenza": "2026-11-30",
     "scartata": "fuori settore (natura)"
   },
+  "Aede78dc0-814f-4dd7-bd32-7602f2bff2f1": {
+    "cig": "BDB2DD7F9F",
+    "ente": "AMMINISTRAZIONE PROVINCIALE SALERNO",
+    "importo": 4011225.81,
+    "luogo": "MONTECORVINO ROVELLA",
+    "oggetto": "Lavori urgenti di messa in sicurezza, ripristino e consolidamento a seguito di dissesti e movimenti franosi sulla S.R. 164 al km 12+500 nel Comune di Montecorvino Rovella (SA) – 1° Stralcio: CUP H77H24001080002 e 2° Stralcio: CUP H77H24001090002",
+    "prima_vista": "2026-11-09T16:21:59.162074+00:00",
+    "scadenza": "2026-12-14",
+    "scartata": "fuori regione"
+  },
   "Aedf606f9-5502-4dfd-b435-02c19aae1998": {
     "cig": "BD4C7FD694",
     "ente": "AGENZIA NAZIONALE PER LA SICUREZZA DELLE FERROVIE E DELLE INFRASTRUTTURE STRADALI E AUTOSTRADALI",
@@ -42802,6 +44352,16 @@
     "oggetto": "GARA N. 620/2026 PER LA FORNITURA DEL FARMACO ESCLUSIVO CAR T CARVYKTI 2",
     "prima_vista": "2026-10-27T12:15:12.111096+00:00",
     "scadenza": "2026-10-29",
+    "scartata": "fuori settore (natura)"
+  },
+  "Aef548abb-4ce6-4e36-89b4-447164f157f6": {
+    "cig": "BD0A00639F",
+    "ente": "AZIENDA SANITARIA PROVINCIALE",
+    "importo": 14880.0,
+    "luogo": "TRAPANI",
+    "oggetto": "PROCEDURA APERTA TELEMATICA PER L'AFFIDAMENTO DELLA FORNITURA, IN SOMMINISTRAZIONE QUADRIENNALE, DI DISPOSITIVI MEDICI E MATERIALI DI CONSUMO OCCORRENTI ALLE UU.OO. DI NEONATOLOGIA E TERAPIA INTENSIVA NEONATALE DELL'AZIENDA SANITARIA PROVINCIALE DI TRAPANI",
+    "prima_vista": "2026-11-09T16:21:59.162605+00:00",
+    "scadenza": "2026-11-23",
     "scartata": "fuori settore (natura)"
   },
   "Aef6e50e1-cc81-496c-9056-4d0310ff3397": {
@@ -43504,6 +45064,16 @@
     "scadenza": "2026-11-26",
     "scartata": "fuori settore (natura)"
   },
+  "Af34c415e-fb6b-46ef-bfea-4b0948834d08": {
+    "cig": "BDA7E2FADC",
+    "ente": "AZIENDA SANITARIA LOCALE BT",
+    "importo": 432420.0,
+    "luogo": "ANDRIA",
+    "oggetto": "Procedura telematica aperta ex art. 71 D.lgs. 36/2023 per l’attivazione della fornitura in service triennale di sistema di litotrissia extracorporea corredata di tutti gli ausili per la UOC Urologia presso il P.O. di Andria.",
+    "prima_vista": "2026-11-09T16:21:59.162101+00:00",
+    "scadenza": "2026-12-15",
+    "scartata": "fuori settore (natura)"
+  },
   "Af37589d1-9c3b-4c85-992b-237b1af61852": {
     "cig": "BD2BC38C21",
     "ente": "STAZIONE UNICA APPALTANTE CITTA' DI POMEZIA - CITTA' DI APRILIA",
@@ -43945,6 +45515,16 @@
     "scadenza": "2026-11-18",
     "scartata": "fuori settore (natura)"
   },
+  "Af60ddb27-7e1a-4b82-83de-6b38314ce31f": {
+    "cig": null,
+    "ente": "ISTITUTO POLIGRAFICO E ZECCA DELLO STATO - SOCIETA' PER AZIONI IN BREVE IPZS S.P.A.",
+    "importo": null,
+    "luogo": null,
+    "oggetto": "Avviso di indagine di mercato per l’individuazione degli Operatori Economici per l’affidamento della fornitura di workstation AIO 27AT certificate per elaborazione dati classificati per Area CIS in uso presso lo Stabilimento OCV e PT di Roma",
+    "prima_vista": "2026-11-09T16:21:59.162993+00:00",
+    "scadenza": null,
+    "scartata": "senza scadenza"
+  },
   "Af62088df-56b0-427e-90c3-97fd8d6d4fea": {
     "cig": "BD51F263DA",
     "ente": "LEGIONE CARABINIERI PIEMONTE E VALLE D'AOSTA",
@@ -44225,6 +45805,16 @@
     "scadenza": "2026-10-20",
     "scartata": "fuori settore (natura)"
   },
+  "Af8061cc6-dd0a-432e-b5b0-50fb2f714f8d": {
+    "cig": "BDB16024EE",
+    "ente": "COMUNE DI RIMINI",
+    "importo": 267696.7,
+    "luogo": "RIMINI",
+    "oggetto": "programma nazionale inclusione lotta alla poverta 2021 2027 opere edili ed allestimento spazio multifunzione di esperienza per adolescenza",
+    "prima_vista": "2026-11-09T16:21:59.161918+00:00",
+    "scadenza": "2026-11-23",
+    "scartata": "fuori regione"
+  },
   "Af80bcfa9-ed65-4510-98f4-12408de86551": {
     "cig": "BCF61D1BDE",
     "ente": "UNIVERSITA' DEGLI STUDI DI ROMA TOR VERGATA",
@@ -44303,6 +45893,16 @@
     "oggetto": "Procedura aperta servizio assistenza tecnica programmazione, gestione e controllo attività finanziate da Regione Lombardia relative a offerta formativa apprendistato professionalizzante e controlli amministrativi",
     "prima_vista": "2026-10-09T14:43:19.499297+00:00",
     "scadenza": "2026-11-04",
+    "scartata": "fuori settore (natura)"
+  },
+  "Af87b0ea3-44f4-4781-88a8-fe5607c8035b": {
+    "cig": "BCD7CA6C4F",
+    "ente": "AZIENDA REGIONALE PER L'INNOVAZIONE E GLI ACQUISTI S.P.A., IN BREVE 'ARIA S.P.A.'",
+    "importo": 96559246.58,
+    "luogo": "MILANO",
+    "oggetto": "ARIA_2026_001 Procedura aperta multilotto ai sensi dell’art. 71 del D.Lgs. n. 36/2023, per l’aff., in AQ ai sensi dell’art. 59 comma 4 lettera b) del D.Lgs. n. 36/2023, del servizio di gestione e man. delle app. elettromedicali",
+    "prima_vista": "2026-11-09T16:21:59.162704+00:00",
+    "scadenza": "2026-12-09",
     "scartata": "fuori settore (natura)"
   },
   "Af8880dc2-60d6-4052-9c98-4c572b9458e0": {
@@ -44905,6 +46505,16 @@
     "scadenza": "2026-10-21",
     "scartata": "fuori settore (natura)"
   },
+  "Afc821f5f-3e5d-45cd-ad3e-8c65f642a8ea": {
+    "cig": "BCF8C63D2E",
+    "ente": "POSTE ITALIANE SPA",
+    "importo": 1769841.66,
+    "luogo": "ROMA",
+    "oggetto": "Fornitura in noleggio breve di veicoli leggeri servizio postale - 4 Lotti",
+    "prima_vista": "2026-11-09T16:21:59.162254+00:00",
+    "scadenza": "2026-11-11",
+    "scartata": "fuori settore (natura)"
+  },
   "Afc855775-23b7-4076-81ed-a1e9fdbe3156": {
     "cig": "BD1FB84615",
     "ente": "ISTITUTO ITALIANO DI TECNOLOGIA",
@@ -44923,6 +46533,16 @@
     "oggetto": "PROCEDURA APERTA PER L AFFIDAMENTO, IN UNICO LOTTO, DEL SERVIZIO DI PULIZIA DEL PARCO ROTABILE E DEGLI IMMOBILI DI AIR CAMPANIA S.P.A. DEI BACINI DI CASERTA-NAPOLI-SALERNO COMPRENSIVO DI SERVIZI ACCESSORI",
     "prima_vista": "2026-11-06T14:17:53.958000+00:00",
     "scadenza": "2026-12-21",
+    "scartata": "fuori settore (natura)"
+  },
+  "Afc9e494d-bb70-4f41-82d8-22ee03d1cb36": {
+    "cig": "BDAC933283",
+    "ente": "ISTITUTO NAZIONALE DELLA PREVIDENZA SOCIALE",
+    "importo": 338808.76,
+    "luogo": "ANAGNI",
+    "oggetto": "Procedura aperta telematica indetta ai sensi art. 71 del D.lgs. n. 36 2023, per affidamento dei servizi di architettura e ingegneria di importo pari o superiore alle soglie di rilevanza europea di cui articolo 14 del decreto legislativo 31 marzo 2023, n. 36, per affidamento dei Servizi di Ingegneria e Architettura per rilievi, indagini, modellazione informativa BIM e verifiche di vulnerabilita sis",
+    "prima_vista": "2026-11-09T16:21:59.161807+00:00",
+    "scadenza": "2026-12-15",
     "scartata": "fuori settore (natura)"
   },
   "Afcb92055-e420-46d1-bd81-ad6030ec46fc": {
@@ -44944,6 +46564,16 @@
     "prima_vista": "2026-10-09T14:43:19.498726+00:00",
     "scadenza": "2026-10-18",
     "scartata": "fuori settore (SOA)"
+  },
+  "Afce49e93-5735-4af2-9c1d-c6adceaf59de": {
+    "cig": "BDABD5FFB6",
+    "ente": "COMUNE DI FINALE LIGURE",
+    "importo": 5195.15,
+    "luogo": "FINALE LIGURE",
+    "oggetto": "BANDO DI GARA DELLA PROCEDURA AD EVIDENZA PUBBLICA PER L'ASSEGNAZIONE DI 4 CONCESSIONI DEMANIALI A FINALITÀ TURISTICO-RICREATIVA, DI CUI 3 ESERCIZI DI SOMMINISTRAZIONE / RISTORANTI/ SALA DANCING E UNA TURISTICO RICETTIVA/AREA SOSTA CAMPER",
+    "prima_vista": "2026-11-09T16:21:59.162261+00:00",
+    "scadenza": "2026-12-11",
+    "scartata": "fuori settore (natura)"
   },
   "Afcef5c3a-fa23-4c1f-93f2-ca19fd8b181a": {
     "cig": "BDACF93547",
@@ -45055,6 +46685,16 @@
     "scadenza": "2026-11-06",
     "scartata": "fuori settore (natura)"
   },
+  "Afdbdd857-d8ce-4ed6-bd8a-3106f570f98d": {
+    "cig": "BDAFFCE259",
+    "ente": "PROVINCIA DI BRESCIA",
+    "importo": 707763.61,
+    "luogo": "BORNO",
+    "oggetto": "PROCEDURA APERTA PER L’AFFIDAMENTO DEL SERVIZIO DI GESTIONE DELL’ASILO NIDO COMUNALE “LA NUVOLA” A FAVORE DEL COMUNE DI BORNO (BS).",
+    "prima_vista": "2026-11-09T16:21:59.162011+00:00",
+    "scadenza": "2026-12-09",
+    "scartata": "fuori settore (natura)"
+  },
   "Afdc38664-b54e-4e03-82b8-e2f02255e992": {
     "cig": "BD6D821C71",
     "ente": "CITTA' METROPOLITANA DI MESSINA",
@@ -45064,6 +46704,16 @@
     "prima_vista": "2026-10-21T11:51:30.111981+00:00",
     "scadenza": "2026-11-26",
     "scartata": "fuori regione"
+  },
+  "Afdf0022f-cac3-4107-992e-fa184ac76850": {
+    "cig": "BDAC58377E",
+    "ente": "5 T S.R.L.",
+    "importo": 750000.0,
+    "luogo": "TORINO",
+    "oggetto": "Procedura ad evidenza pubblica atta alla stipula di un Accordo Quadro con un unico operatore economico, in conformità a quanto stabilito dall’art. 59 del D.lgs. n. 36/2023 s.m.i., sul quale basare la costituzione di “contratti specifici” di servizi di somministrazione di lavoro a tempo determinato delle figure professionali di cui al vigente CCNL autoferrotranvieri, da impiegare per le necessità d",
+    "prima_vista": "2026-11-09T16:21:59.160704+00:00",
+    "scadenza": "2026-12-09",
+    "scartata": "fuori settore (natura)"
   },
   "Afdf9a67b-8aec-49d2-ab86-3683d7ab524b": {
     "cig": "BD4F183ABA",
@@ -45165,6 +46815,16 @@
     "scadenza": "2026-11-06",
     "scartata": "fuori settore (natura)"
   },
+  "Afef6a339-9969-4c3d-9037-492e4a0c3e50": {
+    "cig": "BDAC66FA3E",
+    "ente": "FONDAZIONE LIRICO-SINFONICA PETRUZZELLI E TEATRI DI BARI",
+    "importo": 19000.0,
+    "luogo": "BARI",
+    "oggetto": "Servizio di sopratitolazione",
+    "prima_vista": "2026-11-09T16:21:59.161607+00:00",
+    "scadenza": "2026-12-10",
+    "scartata": "fuori settore (natura)"
+  },
   "Aff050fd9-5ff3-425f-a040-53e5fe66ff92": {
     "cig": "BD86A4CD98",
     "ente": "COMUNE DI RAVENNA",
@@ -45224,6 +46884,16 @@
     "prima_vista": "2026-10-29T13:04:50.429371+00:00",
     "scadenza": "2026-11-08",
     "scartata": "fuori settore (natura)"
+  },
+  "Aff55a9f9-938c-49c1-97dc-a3dacb4f09f6": {
+    "cig": "BDB2A5BF85",
+    "ente": "COMUNE DI SANT'ANGELO A CUPOLO",
+    "importo": 2175960.06,
+    "luogo": "SANT'ANGELO A CUPOLO",
+    "oggetto": "Lavori di Riammagliamento e rifunzionalizzazione delle S.P. 13 ed S.P. 18 (nel territorio di Sant'Angelo a Cupolo) con la S.P. 86 (nel Comune di San Nicola Manfredi)",
+    "prima_vista": "2026-11-09T16:21:59.161243+00:00",
+    "scadenza": "2026-12-10",
+    "scartata": "fuori regione"
   },
   "Aff7bf946-4c9c-40b9-8209-dd23b613f7d0": {
     "cig": "BD80A84310",
@@ -45305,6 +46975,26 @@
     "scadenza": "2026-11-30",
     "scartata": "fuori regione"
   },
+  "Affdce7f9-cb4f-465b-a0b7-ac583aa3a76e": {
+    "cig": "BDAB203FF4",
+    "ente": "CONSIP S.P.A.",
+    "importo": 23760000.0,
+    "luogo": "ROMA",
+    "oggetto": "Gara europea a procedura aperta per l’affidamento di un Accordo Quadro per ogni lotto ai sensi dell’art. 59, comma 3 del d.lgs.n. 36/2023, avente ad oggetto la fornitura di veicoli blindati in acquisto - ID 3042",
+    "prima_vista": "2026-11-09T16:21:59.163023+00:00",
+    "scadenza": "2027-01-22",
+    "scartata": "fuori settore (natura)"
+  },
+  "Affde9c65-9f51-434d-9c04-322079f803d8": {
+    "cig": "BDB303C97E",
+    "ente": "II.SS. GALILEO GALILEI CANICATTI'",
+    "importo": 8473.0,
+    "luogo": "CANICATTI'",
+    "oggetto": "Progetto FESR Realizzazione di laboratori innovativi e avanzati per lo sviluppo di specifiche competenze tecniche e professionali connesse con i relativi indirizzi di studio - RSO4.2.A3.B-FESRPNSI-2025-72",
+    "prima_vista": "2026-11-09T16:21:59.162883+00:00",
+    "scadenza": "2026-11-11",
+    "scartata": "fuori settore (natura)"
+  },
   "Afffdd6ec-26db-4680-a4a9-6acfc5e8523d": {
     "cig": "BAD276F96D",
     "ente": "AQUASER",
@@ -45326,6 +47016,6 @@
     "scartata": "fuori settore (natura)"
   },
   "_stato": {
-    "anac_ultima_pubblicazione": "2026-11-06T07:00:00.999000+00:00"
+    "anac_ultima_pubblicazione": "2026-11-09T07:00:00.999000+00:00"
   }
 }
